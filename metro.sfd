@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312091404
+ModificationTime: 1312091588
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -49,16 +49,15 @@ MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 72 12 6
+WinInfo: 1572 12 6
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65536 140
+BeginChars: 65536 142
 
 StartChar: uni0661
 Encoding: 1633 1633 0
@@ -665,8 +664,9 @@ SplineSet
  144 255 176 275 208 282 c 0
  216 284 225 284 233 285 c 0
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFECA
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFECC
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFECB
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFECA
 EndChar
 
 StartChar: uni063A
@@ -688,6 +688,8 @@ SplineSet
  177 405 l 4xe8
 EndSplineSet
 Refer: 17 1593 S 1 0 0 1 0 0 2
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFED0
+Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFECF
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFECE
 EndChar
 
@@ -812,7 +814,7 @@ SplineSet
  469 388 449 408 449 433 c 0xfe
  449 458 469 478 494 478 c 0
 EndSplineSet
-Refer: 138 1647 N 1 0 0 1 0 0 2
+Refer: 137 1647 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE9F
@@ -1167,7 +1169,7 @@ SplineSet
  363 463 383 483 408 483 c 0
  409 483 l 0
 EndSplineSet
-Refer: 139 1697 N 1 0 0 1 0 0 2
+Refer: 138 1697 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFC37
@@ -2667,7 +2669,7 @@ SplineSet
  363 463 383 483 408 483 c 0
  409 483 l 0
 EndSplineSet
-Refer: 139 1697 N 1 0 0 1 0 0 2
+Refer: 138 1697 N 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFED2
 EndChar
 
@@ -2696,7 +2698,7 @@ SplineSet
  469 388 449 408 449 433 c 0xfe
  449 458 469 478 494 478 c 0
 EndSplineSet
-Refer: 138 1647 N 1 0 0 1 0 0 2
+Refer: 137 1647 N 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFED6
 EndChar
 
@@ -3278,8 +3280,8 @@ Fore
 Refer: 17 1593 S 1 0 0 1 0 0 2
 EndChar
 
-StartChar: uniFECD
-Encoding: 65229 65229 119
+StartChar: uniFECE
+Encoding: 65230 65230 119
 Width: 377
 VWidth: 0
 Flags: W
@@ -3288,30 +3290,19 @@ VStem: 50 90<-142 0> 131 91<321.481 398.519>
 LayerCount: 2
 Fore
 SplineSet
-177 405 m 4xe8
- 202 405 222 385 222 360 c 4
- 222 335 202 315 177 315 c 4
- 176 315 l 4
- 151 315 131 335 131 360 c 4
- 131 385 151 405 176 405 c 4
- 177 405 l 4xe8
+177 405 m 0xe8
+ 202 405 222 385 222 360 c 0
+ 222 335 202 315 177 315 c 0
+ 176 315 l 0
+ 151 315 131 335 131 360 c 0
+ 131 385 151 405 176 405 c 0
+ 177 405 l 0xe8
 EndSplineSet
-Refer: 17 1593 S 1 0 0 1 0 0 2
-EndChar
-
-StartChar: uniFECE
-Encoding: 65230 65230 120
-Width: 446
-VWidth: 0
-Flags: W
-HStem: 0 90<0 113 211.227 396> 238 90<163.242 338.615>
-LayerCount: 2
-Fore
-Refer: 41 65227 S 1 0 0 1 0 0 2
+Refer: 17 1593 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEAA
-Encoding: 65194 65194 121
+Encoding: 65194 65194 120
 Width: 363
 VWidth: 0
 Flags: W
@@ -3323,7 +3314,7 @@ Refer: 37 1583 S 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEAC
-Encoding: 65196 65196 122
+Encoding: 65196 65196 121
 Width: 363
 VWidth: 0
 Flags: W
@@ -3335,7 +3326,7 @@ Refer: 37 1583 S 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE94
-Encoding: 65172 65172 123
+Encoding: 65172 65172 122
 Width: 371
 VWidth: 654
 Flags: W
@@ -3363,7 +3354,7 @@ Refer: 78 1607 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEEA
-Encoding: 65258 65258 124
+Encoding: 65258 65258 123
 Width: 371
 VWidth: 654
 Flags: W
@@ -3375,7 +3366,7 @@ Refer: 78 1607 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEF6
-Encoding: 65270 65270 125
+Encoding: 65270 65270 124
 Width: 338
 VWidth: 1426
 Flags: W
@@ -3389,7 +3380,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE82
 EndChar
 
 StartChar: uniFEF8
-Encoding: 65272 65272 126
+Encoding: 65272 65272 125
 Width: 338
 VWidth: 1426
 Flags: W
@@ -3403,7 +3394,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE84
 EndChar
 
 StartChar: uniFEFA
-Encoding: 65274 65274 127
+Encoding: 65274 65274 126
 Width: 338
 VWidth: 1426
 Flags: W
@@ -3417,7 +3408,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE88
 EndChar
 
 StartChar: uniFEE0
-Encoding: 65248 65248 128
+Encoding: 65248 65248 127
 Width: 165
 VWidth: 0
 Flags: W
@@ -3429,7 +3420,7 @@ Refer: 60 65247 S 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEFC
-Encoding: 65276 65276 129
+Encoding: 65276 65276 128
 Width: 338
 VWidth: 1426
 Flags: W
@@ -3442,7 +3433,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE8E
 EndChar
 
 StartChar: uniFEDE
-Encoding: 65246 65246 130
+Encoding: 65246 65246 129
 Width: 453
 VWidth: 0
 Flags: W
@@ -3466,7 +3457,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFE90
-Encoding: 65168 65168 131
+Encoding: 65168 65168 130
 Width: 616
 VWidth: -468
 Flags: W
@@ -3478,7 +3469,7 @@ Refer: 26 1576 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE96
-Encoding: 65174 65174 132
+Encoding: 65174 65174 131
 Width: 616
 VWidth: -468
 Flags: W
@@ -3490,7 +3481,7 @@ Refer: 27 1578 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE9A
-Encoding: 65178 65178 133
+Encoding: 65178 65178 132
 Width: 616
 VWidth: -468
 Flags: W
@@ -3502,7 +3493,7 @@ Refer: 28 1579 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE9E
-Encoding: 65182 65182 134
+Encoding: 65182 65182 133
 Width: 449
 VWidth: 0
 Flags: W
@@ -3514,7 +3505,7 @@ Refer: 14 1580 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEA2
-Encoding: 65186 65186 135
+Encoding: 65186 65186 134
 Width: 449
 VWidth: 0
 Flags: W
@@ -3526,7 +3517,7 @@ Refer: 15 1581 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEA6
-Encoding: 65190 65190 136
+Encoding: 65190 65190 135
 Width: 449
 VWidth: 0
 Flags: W
@@ -3538,7 +3529,7 @@ Refer: 16 1582 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFFFF
-Encoding: 65535 65535 137
+Encoding: 65535 65535 136
 Width: 449
 VWidth: 0
 Flags: W
@@ -3550,7 +3541,7 @@ Refer: 14 1580 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni066F
-Encoding: 1647 1647 138
+Encoding: 1647 1647 137
 Width: 674
 VWidth: 0
 Flags: W
@@ -3600,7 +3591,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06A1
-Encoding: 1697 1697 139
+Encoding: 1697 1697 138
 Width: 741
 VWidth: -480
 Flags: W
@@ -3645,6 +3636,39 @@ SplineSet
  595 203 577 216 555 223 c 0
  549 225 543 226 537 226 c 0
 EndSplineSet
+EndChar
+
+StartChar: uniFECF
+Encoding: 65231 65231 139
+Width: 446
+VWidth: 0
+Flags: W
+HStem: 0 90<0 113 211.227 396> 238 90<163.242 338.615>
+LayerCount: 2
+Fore
+Refer: 41 65227 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uniFECC
+Encoding: 65228 65228 140
+Width: 396
+VWidth: 0
+Flags: W
+HStem: 0 90<0 113 211.227 396> 238 90<163.242 338.615>
+LayerCount: 2
+Fore
+Refer: 41 65227 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uniFED0
+Encoding: 65232 65232 141
+Width: 396
+VWidth: 0
+Flags: W
+HStem: 0 90<0 113 211.227 396> 238 90<163.242 338.615>
+LayerCount: 2
+Fore
+Refer: 139 65231 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
