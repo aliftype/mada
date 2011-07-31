@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312067012
+ModificationTime: 1312089035
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -54,7 +54,7 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64548 12 6
+WinInfo: 65184 12 6
 BeginPrivate: 0
 EndPrivate
 BeginChars: 65536 129
@@ -355,7 +355,6 @@ SplineSet
  140 42 98 0 50 0 c 1
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE8E
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE8E
 EndChar
 
 StartChar: uni0633
@@ -399,7 +398,6 @@ SplineSet
  365 -80 l 1
  365 322 l 1
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEB2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEB2
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEB4
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEB3
@@ -470,7 +468,6 @@ SplineSet
  569 560 l 4xd8
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEB6
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEB6
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEB8
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEB7
 EndChar
@@ -522,7 +519,6 @@ SplineSet
  366 -72 l 1
  366 236 l 1
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEBA
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEBA
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEBC
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEBB
@@ -582,7 +578,6 @@ SplineSet
  443 379 463 399 488 399 c 0
  489 399 l 0xdb
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEBE
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEBE
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEC0
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEBF
@@ -796,7 +791,6 @@ SplineSet
  144 255 176 275 208 282 c 0
  216 284 225 284 233 285 c 0
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFECA
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFECA
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFECB
 EndChar
@@ -1358,6 +1352,7 @@ SplineSet
  147.609 388 127.609 408 127.609 433 c 0
  127.609 458 147.609 478 172.609 478 c 0
 EndSplineSet
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE94
 EndChar
 
 StartChar: uni066E
@@ -1654,6 +1649,7 @@ SplineSet
  362 -70 l 6
  363 557 l 5
 EndSplineSet
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEE0
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEDF
 EndChar
 
@@ -1725,7 +1721,6 @@ SplineSet
  342 163 367 166 400 168 c 6
  402 168 l 5
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEF0
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEF0
 EndChar
 
@@ -2290,7 +2285,6 @@ SplineSet
  278.619 178 336.619 200 385.619 198 c 0
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFBAF
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFBAF
 EndChar
 
 StartChar: uniFBAF
@@ -2361,7 +2355,6 @@ SplineSet
  253 324 l 0
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEE6
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEE6
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEE8
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEE7
 EndChar
@@ -2406,7 +2399,6 @@ SplineSet
  125 84 l 5
  125 560 l 5
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEC2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEC2
 EndChar
 
@@ -2856,7 +2848,6 @@ SplineSet
  299 160 l 1
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEAE
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEAE
 EndChar
 
 StartChar: uni0648
@@ -2897,7 +2888,6 @@ SplineSet
  283 211 262 233 235 233 c 0
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEEE
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEEE
 EndChar
 
 StartChar: uni0632
@@ -2931,7 +2921,6 @@ SplineSet
  230 231 210 251 210 276 c 0
  210 301 230 321 255 321 c 0
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEB0
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEB0
 EndChar
 
@@ -2975,7 +2964,6 @@ SplineSet
  125 84 l 5
  125 560 l 5
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEC6
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEC6
 EndChar
 
@@ -3025,7 +3013,6 @@ SplineSet
  140 42 98 0 50 0 c 1
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE82
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE82
 EndChar
 
 StartChar: uni0623
@@ -3049,7 +3036,6 @@ SplineSet
  140 42 98 0 50 0 c 1
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE84
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE84
 EndChar
 
 StartChar: uni0625
@@ -3072,7 +3058,6 @@ SplineSet
  140 90 l 1
  140 42 98 0 50 0 c 1
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE88
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE88
 EndChar
 
@@ -3113,7 +3098,6 @@ SplineSet
  284 196 l 2
  283 211 262 233 235 233 c 0
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE86
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE86
 EndChar
 
@@ -3161,7 +3145,6 @@ SplineSet
  402 168 l 5
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE8A
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE8A
 EndChar
 
 StartChar: uni0647
@@ -3199,6 +3182,7 @@ SplineSet
  280.609 89 l 2
  281.609 280 l 1
 EndSplineSet
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEEA
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEEC
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEEB
 EndChar
@@ -3246,7 +3230,6 @@ SplineSet
  342 163 367 166 400 168 c 6
  402 168 l 5
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEF2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEF2
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEF4
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEF3
@@ -3305,7 +3288,6 @@ SplineSet
  363 463 383 483 408 483 c 0
  409 483 l 0
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFED2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFED2
 EndChar
 
@@ -3371,7 +3353,6 @@ SplineSet
  469 388 449 408 449 433 c 0xfe
  449 458 469 478 494 478 c 0
 EndSplineSet
-Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFED6
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFED6
 EndChar
 
