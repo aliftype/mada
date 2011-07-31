@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312091905
+ModificationTime: 1312092267
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -55,10 +55,10 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60 12 6
+WinInfo: 0 12 6
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65536 142
+BeginChars: 65537 143
 
 StartChar: uni0661
 Encoding: 1633 1633 0
@@ -1224,39 +1224,27 @@ StartChar: uni0643
 Encoding: 1603 1603 35
 Width: 510
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0 90<98 370> 238 66<134 189> 332 66<248 298>
 VStem: 98 10<0 90> 134 139<240.028 303.5> 165 133<333.25 395.972> 370 90<90 560>
 LayerCount: 2
 Fore
 SplineSet
-370 560 m 5xf2
- 460 560 l 5
- 460 89 l 6
- 460 41 418 0 370 0 c 6
- 98 0 l 5
- 98 90 l 5
- 370 90 l 6
- 370 560 l 5xf2
-50 90 m 5
- 108 90 l 5
- 108 0 l 5
- 98 0 l 5
- 50 90 l 5
-298 398 m 5xf6
- 298 333 l 5xf6
- 248 332 l 5
- 270 284 l 6
- 272 280 273 275 273 271 c 4
- 273 253 258 238 240 238 c 6
- 134 238 l 5
- 134 304 l 5xfa
- 189 304 l 5
- 168 352 l 6
- 166 356 165 361 165 365 c 4
- 165 383 180 398 198 398 c 6
- 298 398 l 5xf6
+370 560 m 1xf2
+ 460 560 l 1
+ 460 89 l 2
+ 460 41 418 0 370 0 c 2
+ 98 0 l 1
+ 98 90 l 1
+ 370 90 l 2
+ 370 560 l 1xf2
+50 90 m 1
+ 108 90 l 1
+ 108 0 l 1
+ 98 0 l 1
+ 50 90 l 1
 EndSplineSet
+Refer: 142 -1 S 1 0 0 1 216 238 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEDA
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEDB
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEDC
@@ -2485,12 +2473,13 @@ StartChar: uni0623
 Encoding: 1571 1571 74
 Width: 191
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0 21<50 74> 89 1<50 140>
 VStem: 50 90<59.7382 560>
 LayerCount: 2
 Fore
-Refer: 9 1575 S 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 96 600 2
+Refer: 9 1575 N 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE84
 EndChar
 
@@ -2498,12 +2487,13 @@ StartChar: uni0625
 Encoding: 1573 1573 75
 Width: 191
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0 21<50 74> 89 1<50 140>
 VStem: 50 90<59.7382 560>
 LayerCount: 2
 Fore
-Refer: 9 1575 S 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 76 -200 2
+Refer: 9 1575 N 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE88
 EndChar
 
@@ -2511,12 +2501,13 @@ StartChar: uni0624
 Encoding: 1572 1572 76
 Width: 424
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: -170 90<50 260.2> 0 90<159.658 284> 233 90<193.625 276.16>
 VStem: 284 90<-55.3379 0 90 223.188>
 LayerCount: 2
 Fore
-Refer: 69 1608 S 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 247 423 2
+Refer: 69 1608 N 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE86
 EndChar
 
@@ -2524,45 +2515,13 @@ StartChar: uni0626
 Encoding: 1574 1574 77
 Width: 552
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: -160 90<159.201 399.002> 77 91<395.411 502>
 VStem: 50 90<-50.4022 162>
 LayerCount: 2
 Fore
-SplineSet
-402 168 m 5
- 403 168 l 5
- 502 167 l 5
- 502 77 l 5
- 404 78 l 6
- 400 78 397 77 394 77 c 5
- 404 65 417 49 432 33 c 4
- 446 18 460 3 472 -13 c 4
- 484 -29 496 -46 499 -73 c 4
- 500 -86 497 -103 489 -116 c 4
- 481 -129 468 -138 456 -144 c 4
- 431 -156 404 -159 367 -160 c 6
- 366 -160 l 5
- 295 -159 228 -164 169 -150 c 4
- 139 -143 110 -130 88 -105 c 4
- 66 -80 53 -46 50 -8 c 6
- 50 -6 l 5
- 50 -5 l 5
- 50 162 l 5
- 140 162 l 5
- 140 -2 l 5
- 142 -25 148 -37 155 -44 c 4
- 162 -52 171 -58 190 -62 c 4
- 227 -71 291 -69 365 -70 c 4
- 366 -70 l 4
- 381 -70 391 -68 400 -67 c 5
- 392 -56 379 -43 366 -29 c 4
- 339 -1 308 23 294 68 c 4
- 290 79 288 94 292 109 c 4
- 296 124 307 138 319 146 c 4
- 342 163 367 166 400 168 c 6
- 402 168 l 5
-EndSplineSet
+Refer: 142 -1 N 1 0 0 1 246 258 2
+Refer: 38 1609 N 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE8A
 EndChar
 
@@ -2610,45 +2569,12 @@ StartChar: uni064A
 Encoding: 1610 1610 79
 Width: 552
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: -160 90<159.201 399.002> 77 91<395.411 502>
 VStem: 50 90<-50.4022 162>
 LayerCount: 2
 Fore
-SplineSet
-402 168 m 5
- 403 168 l 5
- 502 167 l 5
- 502 77 l 5
- 404 78 l 6
- 400 78 397 77 394 77 c 5
- 404 65 417 49 432 33 c 4
- 446 18 460 3 472 -13 c 4
- 484 -29 496 -46 499 -73 c 4
- 500 -86 497 -103 489 -116 c 4
- 481 -129 468 -138 456 -144 c 4
- 431 -156 404 -159 367 -160 c 6
- 366 -160 l 5
- 295 -159 228 -164 169 -150 c 4
- 139 -143 110 -130 88 -105 c 4
- 66 -80 53 -46 50 -8 c 6
- 50 -6 l 5
- 50 -5 l 5
- 50 162 l 5
- 140 162 l 5
- 140 -2 l 5
- 142 -25 148 -37 155 -44 c 4
- 162 -52 171 -58 190 -62 c 4
- 227 -71 291 -69 365 -70 c 4
- 366 -70 l 4
- 381 -70 391 -68 400 -67 c 5
- 392 -56 379 -43 366 -29 c 4
- 339 -1 308 23 294 68 c 4
- 290 79 288 94 292 109 c 4
- 296 124 307 138 319 146 c 4
- 342 163 367 166 400 168 c 6
- 402 168 l 5
-EndSplineSet
+Refer: 38 1609 S 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEF2
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEF4
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEF3
@@ -3094,12 +3020,12 @@ StartChar: uniFE86
 Encoding: 65158 65158 104
 Width: 374
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: -170 90<50 260.2> 0 90<159.658 284> 233 90<193.625 276.16>
 VStem: 284 90<-55.3379 0 90 223.188>
 LayerCount: 2
 Fore
-Refer: 66 65262 S 1 0 0 1 0 0 2
+Refer: 76 1572 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE82
@@ -3118,24 +3044,26 @@ StartChar: uniFE84
 Encoding: 65156 65156 106
 Width: 141
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0 21<117 141> 89 1<51 141>
 VStem: 51 90<59.7382 560>
 LayerCount: 2
 Fore
-Refer: 83 65166 S 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 96 600 2
+Refer: 83 65166 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE88
 Encoding: 65160 65160 107
 Width: 141
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0 21<117 141> 89 1<51 141>
 VStem: 51 90<59.7382 560>
 LayerCount: 2
 Fore
-Refer: 83 65166 S 1 0 0 1 0 0 2
+Refer: 142 -1 N 1 0 0 1 76 -200 2
+Refer: 83 65166 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni064E
@@ -3666,12 +3594,36 @@ StartChar: uniFEDA
 Encoding: 65242 65242 141
 Width: 460
 VWidth: 0
-Flags: W
+Flags: HW
 HStem: 0 90<98 370> 238 66<134 189> 332 66<248 298>
 VStem: 98 10<0 90> 134 139<240.028 303.5> 165 133<333.25 395.972> 370 90<90 560>
 LayerCount: 2
 Fore
 Refer: 35 1603 S 1 0 0 1 0 0 2
+EndChar
+
+StartChar: smallhamza
+Encoding: 65536 -1 142
+Width: 0
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+82 160 m 1xf6
+ 82 95 l 1xf6
+ 32 94 l 1
+ 54 46 l 2
+ 56 42 57 37 57 33 c 0
+ 57 15 42 0 24 0 c 2
+ -82 0 l 1
+ -82 66 l 1xfa
+ -27 66 l 1
+ -48 114 l 2
+ -50 118 -51 123 -51 127 c 0
+ -51 145 -36 160 -18 160 c 2
+ 82 160 l 1xf6
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
