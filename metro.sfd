@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312090389
+ModificationTime: 1312090564
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -55,10 +55,10 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 12 6
+WinInfo: 36 12 6
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65536 131
+BeginChars: 65536 134
 
 StartChar: uni0661
 Encoding: 1633 1633 0
@@ -945,8 +945,9 @@ SplineSet
  290 -81 310 -61 335 -61 c 0
 EndSplineSet
 Refer: 30 1646 S 1 0 0 1 0 0 2
-Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFE92
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE90
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFE91
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFE92
 EndChar
 
 StartChar: uni062A
@@ -978,8 +979,9 @@ SplineSet
  258 412 l 0
 EndSplineSet
 Refer: 30 1646 S 1 0 0 1 0 0 2
-Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFE98
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE96
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFE97
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFE98
 EndChar
 
 StartChar: uni062B
@@ -1020,8 +1022,9 @@ SplineSet
  333 493 l 0xba
 EndSplineSet
 Refer: 30 1646 S 1 0 0 1 0 0 2
-Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFE9C
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFE9A
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFE9B
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFE9C
 EndChar
 
 StartChar: uni0629
@@ -3600,6 +3603,42 @@ SplineSet
  362 -70 l 6
  363 557 l 5
 EndSplineSet
+EndChar
+
+StartChar: uniFE90
+Encoding: 65168 65168 131
+Width: 616
+VWidth: -468
+Flags: W
+HStem: -151 90<296.481 374.519> 0 90<159.396 526.002>
+VStem: 52 90<136 252> 290 91<-144.519 -67.4806> 526 90<90 252>
+LayerCount: 2
+Fore
+Refer: 26 1576 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uniFE96
+Encoding: 65174 65174 132
+Width: 616
+VWidth: -468
+Flags: W
+HStem: 0 90<159.396 526.002> 323 90<218.481 257 258 296.519 372.481 451.519>
+VStem: 52 90<136 252> 366 92<329.481 406.519> 526 90<90 252>
+LayerCount: 2
+Fore
+Refer: 27 1578 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: uniFE9A
+Encoding: 65178 65178 133
+Width: 616
+VWidth: -468
+Flags: W
+HStem: 0 90<159.396 526.002> 323 90<218.481 257 258 296.519 372.481 451.519> 403 90<293.481 372.519>
+VStem: 52 90<136 252> 287 92<409.481 486.519> 366 92<329.481 406.519> 526 90<90 252>
+LayerCount: 2
+Fore
+Refer: 28 1579 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
