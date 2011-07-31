@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312090302
+ModificationTime: 1312090389
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -55,7 +55,7 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60 12 6
+WinInfo: 0 12 6
 BeginPrivate: 0
 EndPrivate
 BeginChars: 65536 131
@@ -2887,21 +2887,14 @@ EndChar
 
 StartChar: uniFE8E
 Encoding: 65166 65166 83
-Width: 215
+Width: 141
 VWidth: 0
 Flags: W
+HStem: 0 21<117 141> 89 1<51 141>
+VStem: 51 90<59.7382 560>
 LayerCount: 2
 Fore
-SplineSet
-140 560 m 1
- 50 560 l 1
- 51 89 l 2
- 51 41 93 0 141 0 c 2
- 215 0 l 1
- 215 90 l 1
- 141 90 l 2
- 140 560 l 1
-EndSplineSet
+Refer: 9 1575 N -1 0 0 1 191 0 2
 EndChar
 
 StartChar: uniFE92
@@ -3243,9 +3236,11 @@ EndChar
 
 StartChar: uniFE82
 Encoding: 65154 65154 105
-Width: 215
+Width: 141
 VWidth: 0
 Flags: W
+HStem: 0 21<117 141> 89 1<51 141>
+VStem: 51 90<59.7382 560>
 LayerCount: 2
 Fore
 Refer: 83 65166 S 1 0 0 1 0 0 2
@@ -3253,9 +3248,11 @@ EndChar
 
 StartChar: uniFE84
 Encoding: 65156 65156 106
-Width: 215
+Width: 141
 VWidth: 0
 Flags: W
+HStem: 0 21<117 141> 89 1<51 141>
+VStem: 51 90<59.7382 560>
 LayerCount: 2
 Fore
 Refer: 83 65166 S 1 0 0 1 0 0 2
@@ -3263,9 +3260,11 @@ EndChar
 
 StartChar: uniFE88
 Encoding: 65160 65160 107
-Width: 215
+Width: 141
 VWidth: 0
 Flags: W
+HStem: 0 21<117 141> 89 1<51 141>
+VStem: 51 90<59.7382 560>
 LayerCount: 2
 Fore
 Refer: 83 65166 S 1 0 0 1 0 0 2
