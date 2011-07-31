@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312089035
+ModificationTime: 1312089186
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -44,7 +44,6 @@ Lookup: 1 8 0 "'init' Initial Forms in Arabic lookup 0"  {"'init' Initial Forms 
 Lookup: 1 8 0 "'medi' Medial Forms in Arabic lookup 1"  {"'medi' Medial Forms in Arabic lookup 1-1"  } ['medi' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 1 8 0 "'fina' Terminal Forms in Arabic lookup 2"  {"'fina' Terminal Forms in Arabic lookup 2-1"  } ['fina' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 4 8 1 "'rlig' Required Ligatures in Arabic lookup 3"  {"'rlig' Required Ligatures in Arabic lookup 3-1"  } ['rlig' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures in Arabic lookup 4"  {} ['liga' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 
