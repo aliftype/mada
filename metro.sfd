@@ -14,13 +14,14 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 398 194582295 711436]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312089186
+ModificationTime: 1312089312
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -53,7 +54,7 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65184 12 6
+WinInfo: 65232 12 6
 BeginPrivate: 0
 EndPrivate
 BeginChars: 65536 129
@@ -2142,6 +2143,7 @@ SplineSet
  247 88 l 2
  247 173 l 1
 EndSplineSet
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEDF uniFE8E
 EndChar
 
@@ -4025,6 +4027,7 @@ SplineSet
  247 88 l 2
  247 173 l 1
 EndSplineSet
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEDF uniFE88
 EndChar
 
@@ -4057,6 +4060,7 @@ SplineSet
  247 88 l 2
  247 173 l 1
 EndSplineSet
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEDF uniFE84
 EndChar
 
@@ -4914,7 +4918,7 @@ EndChar
 
 StartChar: uniFEF6
 Encoding: 65270 65270 125
-Width: 388
+Width: 338
 VWidth: 1426
 Flags: W
 HStem: -2 90<50 130.452 166 247>
@@ -4941,12 +4945,13 @@ SplineSet
  247 88 l 2
  247 173 l 1
 EndSplineSet
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE82
 EndChar
 
 StartChar: uniFEF8
 Encoding: 65272 65272 126
-Width: 388
+Width: 338
 VWidth: 1426
 Flags: W
 HStem: -2 90<50 130.452 166 247>
@@ -4973,12 +4978,13 @@ SplineSet
  247 88 l 2
  247 173 l 1
 EndSplineSet
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE84
 EndChar
 
 StartChar: uniFEFA
 Encoding: 65274 65274 127
-Width: 388
+Width: 338
 VWidth: 1426
 Flags: W
 HStem: -2 90<50 130.452 166 247>
@@ -5005,6 +5011,7 @@ SplineSet
  247 88 l 2
  247 173 l 1
 EndSplineSet
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE88
 EndChar
 
