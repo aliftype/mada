@@ -14,13 +14,14 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 398 194582295 711436]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312089738
+ModificationTime: 1312089833
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -53,10 +54,10 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65244 12 6
+WinInfo: 1584 12 6
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65536 130
+BeginChars: 65536 131
 
 StartChar: uni0661
 Encoding: 1633 1633 0
@@ -1648,8 +1649,9 @@ SplineSet
  362 -70 l 6
  363 557 l 5
 EndSplineSet
-Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEE0
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEDE
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEDF
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEE0
 EndChar
 
 StartChar: uni062F
@@ -5065,6 +5067,30 @@ SplineSet
  247 173 l 1
 EndSplineSet
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEE0 uniFE8E
+EndChar
+
+StartChar: uniFEDE
+Encoding: 65246 65246 130
+Width: 453
+VWidth: 0
+Flags: W
+HStem: -160 90<140 362>
+VStem: 50 90<-70 90> 362 90<-70 557>
+LayerCount: 2
+Fore
+SplineSet
+363 557 m 5
+ 453 557 l 5
+ 452 -71 l 6
+ 452 -119 411 -160 363 -160 c 4
+ 140 -160 l 6
+ 92 -160 50 -118 50 -70 c 6
+ 50 90 l 5
+ 140 90 l 5
+ 140 -70 l 5
+ 362 -70 l 6
+ 363 557 l 5
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
