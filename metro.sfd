@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312092953
+ModificationTime: 1312092998
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -49,16 +49,15 @@ MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 12 6
+WinInfo: 1548 12 6
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65537 143
+BeginChars: 65537 144
 
 StartChar: uni0661
 Encoding: 1633 1633 0
@@ -3657,6 +3656,32 @@ SplineSet
  -50 118 -51 123 -51 127 c 0
  -51 145 -36 160 -18 160 c 2
  82 160 l 1xd0
+EndSplineSet
+EndChar
+
+StartChar: uni0621
+Encoding: 1569 1569 143
+Width: 264
+VWidth: 0
+Flags: HW
+HStem: 0 66<50 105> 94 66<164 214>
+VStem: 50 139<2.02771 65.5> 81 133<95.25 157.972>
+LayerCount: 2
+Fore
+SplineSet
+214 160 m 1xd0
+ 214 95 l 1xd0
+ 164 94 l 1
+ 186 46 l 2
+ 188 42 189 37 189 33 c 0
+ 189 15 174 0 156 0 c 2
+ 50 0 l 1
+ 50 66 l 1xe0
+ 105 66 l 1
+ 84 114 l 2
+ 82 118 81 123 81 127 c 0
+ 81 145 96 160 114 160 c 2
+ 214 160 l 1xd0
 EndSplineSet
 EndChar
 EndChars
