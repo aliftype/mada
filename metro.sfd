@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312232851
+ModificationTime: 1312233210
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -56,7 +56,7 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 24 12 5
+WinInfo: 96 12 5
 BeginPrivate: 10
 BlueValues 3 [0]
 OtherBlues 2 []
@@ -1793,22 +1793,22 @@ EndChar
 
 StartChar: uniFEDF
 Encoding: 65247 65247 60
-Width: 214
+Width: 264
 VWidth: 0
 Flags: W
-HStem: 0 90<0 74>
-VStem: 74 90<90 560>
+HStem: 0 90<0 124>
+VStem: 124 90<90 560>
 LayerCount: 2
 Fore
 SplineSet
-74 560 m 1
- 164 560 l 1
- 164 89 l 2
- 164 41 122 0 74 0 c 2
+124 560 m 5
+ 214 560 l 5
+ 214 89 l 6
+ 214 41 172 0 124 0 c 6
  0 0 l 1
  0 90 l 1
- 74 90 l 25
- 74 560 l 1
+ 124 90 l 29
+ 124 560 l 5
 EndSplineSet
 EndChar
 
@@ -2772,11 +2772,11 @@ EndChar
 
 StartChar: uniFEE0
 Encoding: 65248 65248 127
-Width: 165
+Width: 214
 VWidth: 0
-Flags: W
-HStem: 0 90<0 74>
-VStem: 74 90<90 560>
+Flags: WO
+HStem: 0 90<0 124>
+VStem: 124 90<90 560>
 LayerCount: 2
 Fore
 Refer: 60 65247 N 1 0 0 1 0 0 2
