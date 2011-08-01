@@ -14,13 +14,14 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 XUID: [1021 398 194582295 711436]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312226430
+ModificationTime: 1312226700
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -330,11 +331,11 @@ VStem: 50 90<59.7382 560>
 LayerCount: 2
 Fore
 SplineSet
-51 560 m 1
+50 560 m 1
  141 560 l 1
  140 89 l 1
  50 89 l 1
- 51 560 l 1
+ 50 560 l 1
 50 0 m 1
  50 90 l 1
  140 90 l 1
@@ -988,7 +989,7 @@ LayerCount: 2
 Fore
 SplineSet
 370 560 m 1xf2
- 460 560 l 1
+ 460 560 l 5
  460 89 l 2
  460 41 418 0 370 0 c 2
  98 0 l 1
@@ -1013,12 +1014,12 @@ Width: 502
 VWidth: 0
 Flags: W
 HStem: -160 90<140 362>
-VStem: 50 90<-70 90> 362 90<-70 557>
+VStem: 50 90<-70 90> 362 90<-70 560>
 LayerCount: 2
 Fore
 SplineSet
-362 557 m 1
- 452 557 l 1
+362 560 m 1
+ 452 560 l 1
  452 -71 l 2
  452 -119 411 -160 363 -160 c 2
  140 -160 l 2
@@ -1027,7 +1028,7 @@ SplineSet
  140 90 l 1
  140 -70 l 1
  362 -70 l 25
- 362 557 l 1
+ 362 560 l 1
 EndSplineSet
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEDE
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEDF
@@ -1521,7 +1522,7 @@ SplineSet
  248 560 l 1xa0
 247 175 m 1
  232 145 206 116 166 90 c 1
- 247 90 l 2
+ 247 90 l 25
  247 175 l 1
 EndSplineSet
 LCarets2: 1 0 
@@ -1725,7 +1726,7 @@ Width: 586
 VWidth: 0
 Flags: W
 HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29>
-VStem: 118 90<89 565> 443 90<90 220.649>
+VStem: 118 90<89 560> 443 90<90 220.649>
 LayerCount: 2
 Fore
 SplineSet
@@ -1747,11 +1748,11 @@ SplineSet
  288 167 260 130 230 90 c 1
  443 90 l 1
  443 108 443 127 443 145 c 0
-118 565 m 1
- 208 565 l 1
+118 560 m 1
+ 208 560 l 1
  208 89 l 1
  118 89 l 1
- 118 565 l 1
+ 118 560 l 1
 EndSplineSet
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEC4
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEC3
@@ -2010,7 +2011,7 @@ Width: 586
 VWidth: 0
 Flags: W
 HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29> 470 90<305.481 384.519>
-VStem: 118 90<89 565> 299 92<476.481 553.519> 443 90<90 220.649>
+VStem: 118 90<89 560> 299 92<476.481 553.519> 443 90<90 220.649>
 LayerCount: 2
 Fore
 Refer: 162 -1 N 1 0 0 1 345 470 2
@@ -2637,7 +2638,7 @@ Width: 533
 VWidth: 0
 Flags: W
 HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29>
-VStem: 118 90<89 565> 443 90<90 220.649>
+VStem: 118 90<89 560> 443 90<90 220.649>
 LayerCount: 2
 Fore
 Refer: 56 1591 N 1 0 0 1 0 0 2
@@ -2649,7 +2650,7 @@ Width: 533
 VWidth: 0
 Flags: W
 HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29> 470 90<305.481 384.519>
-VStem: 118 90<89 565> 299 92<476.481 553.519> 443 90<90 220.649>
+VStem: 118 90<89 560> 299 92<476.481 553.519> 443 90<90 220.649>
 LayerCount: 2
 Fore
 Refer: 71 1592 N 1 0 0 1 0 0 2
@@ -2778,7 +2779,7 @@ HStem: 0 90<0 74>
 VStem: 74 90<90 560>
 LayerCount: 2
 Fore
-Refer: 60 65247 S 1 0 0 1 0 0 2
+Refer: 60 65247 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEFC
@@ -2801,7 +2802,7 @@ Width: 452
 VWidth: 0
 Flags: W
 HStem: -160 90<140 362>
-VStem: 50 90<-70 90> 362 90<-70 557>
+VStem: 50 90<-70 90> 362 90<-70 560>
 LayerCount: 2
 Fore
 Refer: 36 1604 N 1 0 0 1 0 0 2
@@ -3067,7 +3068,7 @@ Width: 533
 VWidth: 0
 Flags: W
 HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29>
-VStem: 68 90<89 565> 393 90<90 220.649>
+VStem: 68 90<89 560> 393 90<90 220.649>
 LayerCount: 2
 Fore
 Refer: 56 1591 N 1 0 0 1 -50 0 2
@@ -3079,7 +3080,7 @@ Width: 483
 VWidth: 0
 Flags: W
 HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29>
-VStem: 68 90<89 565> 393 90<90 220.649>
+VStem: 68 90<89 560> 393 90<90 220.649>
 LayerCount: 2
 Fore
 Refer: 56 1591 N 1 0 0 1 -50 0 2
@@ -3091,7 +3092,7 @@ Width: 533
 VWidth: 0
 Flags: W
 HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29> 470 90<255.481 334.519>
-VStem: 68 90<89 565> 249 92<476.481 553.519> 393 90<90 220.649>
+VStem: 68 90<89 560> 249 92<476.481 553.519> 393 90<90 220.649>
 LayerCount: 2
 Fore
 Refer: 71 1592 N 1 0 0 1 -50 0 2
@@ -3103,7 +3104,7 @@ Width: 483
 VWidth: 0
 Flags: W
 HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29> 470 90<255.481 334.519>
-VStem: 68 90<89 565> 249 92<476.481 553.519> 393 90<90 220.649>
+VStem: 68 90<89 560> 249 92<476.481 553.519> 393 90<90 220.649>
 LayerCount: 2
 Fore
 Refer: 71 1592 N 1 0 0 1 -50 0 2
