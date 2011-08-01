@@ -14,14 +14,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 XUID: [1021 398 194582295 711436]
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312225684
+ModificationTime: 1312226430
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -57,7 +56,17 @@ DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
 WinInfo: 96 12 6
-BeginPrivate: 0
+BeginPrivate: 10
+BlueValues 3 [0]
+OtherBlues 2 []
+BlueFuzz 1 1
+BlueScale 8 0.039625
+BlueShift 1 7
+StdHW 4 [90]
+StdVW 4 [90]
+StemSnapH 30 [1 6 11 21 43 50 66 84 90 270]
+StemSnapV 39 [4 10 44 50 90 133 139 161 184 268 323]
+ExpansionFactor 4 0.06
 EndPrivate
 BeginChars: 65543 165
 
@@ -2000,10 +2009,11 @@ Encoding: 1592 1592 71
 Width: 586
 VWidth: 0
 Flags: W
-HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29>
-VStem: 118 90<89 565> 443 90<90 220.649>
+HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29> 470 90<305.481 384.519>
+VStem: 118 90<89 565> 299 92<476.481 553.519> 443 90<90 220.649>
 LayerCount: 2
 Fore
+Refer: 162 -1 N 1 0 0 1 345 470 2
 Refer: 56 1591 N 1 0 0 1 0 0 2
 Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEC8
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEC7
@@ -2015,10 +2025,11 @@ Encoding: 1584 1584 72
 Width: 413
 VWidth: 0
 Flags: W
-HStem: 0 90<50 273>
-VStem: 273 90<90 155.077>
+HStem: 0 90<50 273> 470 90<108.481 187.519>
+VStem: 102 92<476.481 553.519> 273 90<90 155.077>
 LayerCount: 2
 Fore
+Refer: 162 -1 N 1 0 0 1 148 470 2
 Refer: 37 1583 N 1 0 0 1 0 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEAC
 EndChar
@@ -2056,7 +2067,7 @@ Width: 191
 VWidth: 0
 Flags: W
 HStem: -200 66<-6 49> -106 66<108 158> 0 21<50 74> 89 1<50 140>
-VStem: -6 139<-197.972 -134.5> 25 133<-104.75 -42.028> 50 90<59.7382 560>
+VStem: -6 139<-197.972 -134.5> 25 133<-104.75 -42.0277> 50 90<59.7382 560>
 LayerCount: 2
 Fore
 Refer: 142 -1 N 1 0 0 1 76 -200 2
@@ -2513,7 +2524,7 @@ Width: 141
 VWidth: 0
 Flags: W
 HStem: -200 66<-6 49> -106 66<108 158> 0 21<117 141> 89 1<51 141>
-VStem: -6 139<-197.972 -134.5> 25 133<-104.75 -42.028> 51 90<59.7382 560>
+VStem: -6 139<-197.972 -134.5> 25 133<-104.75 -42.0277> 51 90<59.7382 560>
 LayerCount: 2
 Fore
 Refer: 142 -1 N 1 0 0 1 76 -200 2
@@ -2637,11 +2648,11 @@ Encoding: 65222 65222 117
 Width: 533
 VWidth: 0
 Flags: W
-HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29>
-VStem: 118 90<89 565> 443 90<90 220.649>
+HStem: 0 90<50 132.117 230 443> 233 90<337.483 429.29> 470 90<305.481 384.519>
+VStem: 118 90<89 565> 299 92<476.481 553.519> 443 90<90 220.649>
 LayerCount: 2
 Fore
-Refer: 56 1591 N 1 0 0 1 0 0 2
+Refer: 71 1592 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFECA
@@ -2685,11 +2696,11 @@ Encoding: 65196 65196 121
 Width: 363
 VWidth: 0
 Flags: W
-HStem: 0 90<50 273>
-VStem: 273 90<90 155.077>
+HStem: 0 90<50 273> 470 90<108.481 187.519>
+VStem: 102 92<476.481 553.519> 273 90<90 155.077>
 LayerCount: 2
 Fore
-Refer: 37 1583 N 1 0 0 1 0 0 2
+Refer: 72 1584 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE94
@@ -2957,9 +2968,11 @@ Encoding: 65231 65231 138
 Width: 391
 VWidth: 0
 Flags: W
-HStem: 0 90<0 128.922 217.002 341> 258 90<160.781 338.615>
+HStem: 0 90<0 128.922 217.002 341> 258 90<160.781 338.615> 470 90<108.481 187.519>
+VStem: 102 92<476.481 553.519>
 LayerCount: 2
 Fore
+Refer: 162 -1 N 1 0 0 1 148 470 2
 Refer: 41 65227 N 1 0 0 1 0 0 3
 EndChar
 
@@ -2979,7 +2992,8 @@ Encoding: 65232 65232 140
 Width: 341
 VWidth: 0
 Flags: W
-HStem: 0 90<0 128.922 217.002 341> 258 90<160.781 338.615>
+HStem: 0 90<0 128.922 217.002 341> 258 90<160.781 338.615> 470 90<108.481 187.519>
+VStem: 102 92<476.481 553.519>
 LayerCount: 2
 Fore
 Refer: 138 65231 N 1 0 0 1 0 0 2
@@ -3052,7 +3066,7 @@ Encoding: 65219 65219 144
 Width: 533
 VWidth: 0
 Flags: W
-HStem: 0 90<0 82.117 180 393> 233 90<287.483 379.29>
+HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29>
 VStem: 68 90<89 565> 393 90<90 220.649>
 LayerCount: 2
 Fore
@@ -3064,7 +3078,7 @@ Encoding: 65220 65220 145
 Width: 483
 VWidth: 0
 Flags: W
-HStem: 0 90<0 82.117 180 393> 233 90<287.483 379.29>
+HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29>
 VStem: 68 90<89 565> 393 90<90 220.649>
 LayerCount: 2
 Fore
@@ -3076,11 +3090,11 @@ Encoding: 65223 65223 146
 Width: 533
 VWidth: 0
 Flags: W
-HStem: 0 90<0 82.117 180 393> 233 90<287.483 379.29>
-VStem: 68 90<89 565> 393 90<90 220.649>
+HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29> 470 90<255.481 334.519>
+VStem: 68 90<89 565> 249 92<476.481 553.519> 393 90<90 220.649>
 LayerCount: 2
 Fore
-Refer: 56 1591 N 1 0 0 1 -50 0 2
+Refer: 71 1592 N 1 0 0 1 -50 0 2
 EndChar
 
 StartChar: uniFEC8
@@ -3088,11 +3102,11 @@ Encoding: 65224 65224 147
 Width: 483
 VWidth: 0
 Flags: W
-HStem: 0 90<0 82.117 180 393> 233 90<287.483 379.29>
-VStem: 68 90<89 565> 393 90<90 220.649>
+HStem: 0 90<0 82.1172 180 393> 233 90<287.483 379.29> 470 90<255.481 334.519>
+VStem: 68 90<89 565> 249 92<476.481 553.519> 393 90<90 220.649>
 LayerCount: 2
 Fore
-Refer: 56 1591 N 1 0 0 1 -50 0 2
+Refer: 71 1592 N 1 0 0 1 -50 0 2
 EndChar
 
 StartChar: initialbaa
