@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312217525
+ModificationTime: 1312218013
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -58,7 +58,7 @@ FitToEm: 1
 WinInfo: 84 12 6
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65538 149
+BeginChars: 65539 150
 
 StartChar: uni0661
 Encoding: 1633 1633 0
@@ -1035,7 +1035,7 @@ SplineSet
  219 -67 233 -59 233 -36 c 2
  233 43 l 1
  323 43 l 1
- 323 16 323 -38 323 -38 c 2
+ 323 -38 l 2
  322 -75 306 -109 281 -129 c 0
  256 -149 226 -157 197 -157 c 0
 197 247 m 0
@@ -2179,55 +2179,48 @@ EndChar
 
 StartChar: uniFE91
 Encoding: 65169 65169 63
-Width: 385
+Width: 298
 VWidth: 0
 Flags: W
-HStem: -248 90<162.481 201 203 241.519> 0 90<0 245>
-VStem: 156 92<-241.519 -164.481> 245 90<90 320>
+HStem: -248 90<81.4806 120 122 160.519> 0 90<0 158>
+VStem: 75 92<-241.519 -164.481> 158 90<90 320>
 LayerCount: 2
 Fore
 SplineSet
-245 320 m 1xd0
- 335 320 l 1
- 335 90 l 2
- 335 42 293 0 245 0 c 2
- 0 0 l 1
- 0 90 l 1
- 245 90 l 25
- 245 320 l 1xd0
-202 -248 m 0
- 203 -248 l 0
- 228 -248 248 -228 248 -203 c 0
- 248 -178 228 -158 203 -158 c 0
- 202 -158 l 0
- 201 -158 l 0
- 176 -158 156 -178 156 -203 c 0xe0
- 156 -228 176 -248 201 -248 c 0
- 202 -248 l 0
+121 -248 m 0xe0
+ 122 -248 l 0
+ 147 -248 167 -228 167 -203 c 0
+ 167 -178 147 -158 122 -158 c 0
+ 121 -158 l 0
+ 120 -158 l 0
+ 95 -158 75 -178 75 -203 c 0
+ 75 -228 95 -248 120 -248 c 0
+ 121 -248 l 0xe0
 EndSplineSet
+Refer: 149 -1 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEE7
 Encoding: 65255 65255 64
-Width: 385
+Width: 298
 VWidth: 0
 Flags: W
-HStem: 0 90<0 245> 470 90<172.481 251.519>
-VStem: 166 92<476.481 553.519> 245 90<90 320>
+HStem: 0 90<0 158> 470 90<84.4806 163.519>
+VStem: 78 92<476.481 553.519> 158 90<90 320>
 LayerCount: 2
 Fore
 SplineSet
-212 560 m 0xe0
- 213 560 l 0
- 238 560 258 540 258 515 c 0
- 258 490 238 470 213 470 c 0
- 212 470 l 0
- 211 470 l 0
- 186 470 166 490 166 515 c 0
- 166 540 186 560 211 560 c 0
- 212 560 l 0xe0
+124 560 m 0xe0
+ 125 560 l 0
+ 150 560 170 540 170 515 c 0
+ 170 490 150 470 125 470 c 0
+ 124 470 l 0
+ 123 470 l 0
+ 98 470 78 490 78 515 c 0
+ 78 540 98 560 123 560 c 0
+ 124 560 l 0xe0
 EndSplineSet
-Refer: 148 -1 N 1 0 0 1 0 0 2
+Refer: 149 -1 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFEF3
@@ -2616,11 +2609,11 @@ EndChar
 
 StartChar: uniFE92
 Encoding: 65170 65170 84
-Width: 335
+Width: 248
 VWidth: 0
 Flags: W
-HStem: -248 90<162.481 201 203 241.519> 0 90<0 245>
-VStem: 156 92<-241.519 -164.481> 245 90<90 320>
+HStem: -248 90<81.4806 120 122 160.519> 0 90<0 158>
+VStem: 75 92<-241.519 -164.481> 158 90<90 320>
 LayerCount: 2
 Fore
 Refer: 63 65169 N 1 0 0 1 0 0 2
@@ -2818,11 +2811,11 @@ EndChar
 
 StartChar: uniFEE8
 Encoding: 65256 65256 96
-Width: 335
+Width: 248
 VWidth: 0
 Flags: W
-HStem: 0 90<0 245> 470 90<172.481 251.519>
-VStem: 166 92<476.481 553.519> 245 90<90 320>
+HStem: 0 90<0 158> 470 90<84.4806 163.519>
+VStem: 78 92<476.481 553.519> 158 90<90 320>
 LayerCount: 2
 Fore
 Refer: 64 65255 N 1 0 0 1 0 0 2
@@ -3569,7 +3562,7 @@ Fore
 Refer: 56 1591 N 1 0 0 1 -50 0 2
 EndChar
 
-StartChar: initialdotlessbaa
+StartChar: initialbaa
 Encoding: 65537 -1 148
 Width: 385
 VWidth: 0
@@ -3587,6 +3580,27 @@ SplineSet
  0 90 l 1
  245 90 l 25
  245 320 l 1
+EndSplineSet
+EndChar
+
+StartChar: narrowinitialbaa
+Encoding: 65538 -1 149
+Width: 298
+VWidth: 0
+Flags: W
+HStem: 0 90<0 158>
+VStem: 158 90<90 320>
+LayerCount: 2
+Fore
+SplineSet
+158 320 m 1
+ 248 320 l 1
+ 248 90 l 2
+ 248 42 206 0 158 0 c 2
+ 0 0 l 1
+ 0 90 l 1
+ 158 90 l 25
+ 158 320 l 1
 EndSplineSet
 EndChar
 EndChars
