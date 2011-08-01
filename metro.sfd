@@ -56,7 +56,7 @@ NameList: AGL without afii
 DisplaySize: -96
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 84 12 5
+WinInfo: 24 12 5
 BeginPrivate: 10
 BlueValues 3 [0]
 OtherBlues 2 []
@@ -2217,8 +2217,9 @@ SplineSet
  421 97 440 103 444 123 c 0
  452 168 407 222 393 230 c 0
 EndSplineSet
-Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEE4
+Substitution2: "'fina' Terminal Forms in Arabic lookup 2-1" uniFEE2
 Substitution2: "'init' Initial Forms in Arabic lookup 0-1" uniFEE3
+Substitution2: "'medi' Medial Forms in Arabic lookup 1-1" uniFEE4
 EndChar
 
 StartChar: uniFE8E
