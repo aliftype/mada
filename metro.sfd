@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1312056181
-ModificationTime: 1312229247
+ModificationTime: 1312230114
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -1470,8 +1470,8 @@ Encoding: 65275 65275 49
 Width: 388
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Back
 SplineSet
@@ -1506,24 +1506,21 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-248 560 m 1xa0
+145 560 m 1
+ 248 277 l 1
+ 248 560 l 1
  338 560 l 1
- 337 89 l 2xa0
- 337 41 295 0 247 0 c 2
+ 338 90 l 2
+ 338 42 295 0 247 0 c 2
  50 0 l 1
  50 90 l 1
- 100 90 l 1
- 118 100 134 113 147 128 c 0
- 165 150 177 179 176 222 c 2
- 176 223 l 1xc0
- 76 565 l 1
- 162 590 l 1
- 248 297 l 1
- 248 560 l 1xa0
-247 175 m 1
- 232 145 206 116 166 90 c 1
+ 123 100 176 120 176 203 c 1
+ 50 560 l 1
+ 145 560 l 1
+247 155 m 1
+ 232 125 190 102 146 90 c 1
  247 90 l 25
- 247 175 l 1
+ 247 155 l 1
 EndSplineSet
 LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic lookup 3-1" uniFEDF uniFE8E
@@ -2413,8 +2410,8 @@ Encoding: 65273 65273 98
 Width: 388
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Fore
 Refer: 49 65275 N 1 0 0 1 0 0 2
@@ -2427,8 +2424,8 @@ Encoding: 65271 65271 99
 Width: 388
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Fore
 Refer: 49 65275 N 1 0 0 1 0 0 2
@@ -2441,8 +2438,8 @@ Encoding: 65269 65269 100
 Width: 388
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Fore
 Refer: 49 65275 N 1 0 0 1 0 0 2
@@ -2737,8 +2734,8 @@ Encoding: 65270 65270 124
 Width: 338
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Fore
 Refer: 49 65275 N 1 0 0 1 0 0 2
@@ -2751,8 +2748,8 @@ Encoding: 65272 65272 125
 Width: 338
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Fore
 Refer: 49 65275 N 1 0 0 1 0 0 2
@@ -2765,8 +2762,8 @@ Encoding: 65274 65274 126
 Width: 338
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Fore
 Refer: 49 65275 N 1 0 0 1 0 0 2
@@ -2791,8 +2788,8 @@ Encoding: 65276 65276 128
 Width: 338
 VWidth: 1426
 Flags: W
-HStem: 0 90<50 130.452 166 247>
-VStem: 176 161<176.056 246.94> 248 89<90 175 297 560>
+HStem: 0 90<50 129.234 146 247>
+VStem: 248 90<90 155 277 560>
 LayerCount: 2
 Fore
 Refer: 49 65275 N 1 0 0 1 0 0 2
