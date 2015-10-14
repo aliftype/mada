@@ -20,7 +20,7 @@ XUID: [1021 670 513581992 4353041]
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1444496159
-ModificationTime: 1444752118
+ModificationTime: 1444835330
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -38,16 +38,15 @@ OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
 Encoding: UnicodeBmp
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 27 9
+WinInfo: 65455 13 9
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65561 60
+BeginChars: 65563 63
 
 StartChar: uni0627
 Encoding: 1575 1575 0
@@ -1227,7 +1226,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65537
+StartChar: uni0647.medi
 Encoding: 65537 -1 29
 Width: 1000
 VWidth: 0
@@ -1257,7 +1256,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65538
+StartChar: u0644_u0627.isol
 Encoding: 65538 -1 30
 Width: 1000
 VWidth: 0
@@ -1302,7 +1301,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65539
+StartChar: u0644_u0627.isol.alt1
 Encoding: 65539 -1 31
 Width: 1000
 VWidth: 0
@@ -1328,7 +1327,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65540
+StartChar: u0644_u0627.isol.alt2
 Encoding: 65540 -1 32
 Width: 1000
 VWidth: 0
@@ -1354,7 +1353,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65541
+StartChar: uni0648.fina
 Encoding: 65541 -1 33
 Width: 1000
 VWidth: 0
@@ -1382,7 +1381,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65542
+StartChar: uni0631.fina
 Encoding: 65542 -1 34
 Width: 1000
 VWidth: 0
@@ -1408,7 +1407,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65543
+StartChar: uni0644.int
 Encoding: 65543 -1 35
 Width: 1000
 VWidth: 0
@@ -1430,7 +1429,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65544
+StartChar: uni0633.init
 Encoding: 65544 -1 36
 Width: 1000
 VWidth: 0
@@ -1468,7 +1467,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65545
+StartChar: uni066E.init
 Encoding: 65545 -1 37
 Width: 1000
 VWidth: 0
@@ -1490,7 +1489,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65546
+StartChar: uni06BA.fina
 Encoding: 65546 -1 38
 Width: 1000
 VWidth: 0
@@ -1520,7 +1519,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65547
+StartChar: uni0649.fina.alt1
 Encoding: 65547 -1 39
 Width: 1000
 VWidth: 0
@@ -1550,7 +1549,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65548
+StartChar: uni0649.fina.alt2
 Encoding: 65548 -1 40
 Width: 1000
 VWidth: 0
@@ -1588,7 +1587,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65549
+StartChar: uni0639.init
 Encoding: 65549 -1 41
 Width: 1000
 VWidth: 0
@@ -1610,7 +1609,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65550
+StartChar: uni0647.init.alt1
 Encoding: 65550 -1 42
 Width: 1000
 VWidth: 0
@@ -1640,7 +1639,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65551
+StartChar: uni0647.init.alt2
 Encoding: 65551 -1 43
 Width: 1000
 VWidth: 0
@@ -1672,7 +1671,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65552
+StartChar: uni0647.init
 Encoding: 65552 -1 44
 Width: 1000
 VWidth: 0
@@ -1702,7 +1701,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65553
+StartChar: uni0647.init.alt3
 Encoding: 65553 -1 45
 Width: 1000
 VWidth: 0
@@ -1734,7 +1733,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65554
+StartChar: uni062D.init
 Encoding: 65554 -1 46
 Width: 1000
 VWidth: 0
@@ -1761,7 +1760,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65555
+StartChar: uni0643.init
 Encoding: 65555 -1 47
 Width: 1000
 VWidth: 0
@@ -1787,7 +1786,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65556
+StartChar: uni0635.init
 Encoding: 65556 -1 48
 Width: 1000
 VWidth: 0
@@ -1806,18 +1805,18 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-398 69 m 0
- 502 213 602 362 718 319 c 0
- 768 298 792 253 794 171 c 2
- 797 104 l 2
- 798 75 775 52 744 52 c 2
- 203 52 l 1
+398 69 m 4
+ 502 213 602 362 718 319 c 4
+ 768 298 792 253 794 171 c 6
+ 797 104 l 6
+ 798 75 775 52 744 52 c 6
+ 203 52 l 5
 341 277 m 1
  341 98 l 1
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65557
+StartChar: uni0643_uni0627.isol
 Encoding: 65557 -1 49
 Width: 1000
 VWidth: 0
@@ -1845,7 +1844,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65558
+StartChar: uni06D2.fina
 Encoding: 65558 -1 50
 Width: 1000
 VWidth: 0
@@ -2061,7 +2060,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65560
+StartChar: uni06A1.fina
 Encoding: 65560 -1 59
 Width: 1000
 VWidth: 0
@@ -2079,6 +2078,82 @@ SplineSet
  449 266 414 183 454 117 c 0
  501 39 571 53 672 53 c 2
  934 53 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni066F
+Encoding: 1647 1647 60
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+SplineSet
+66 99 m 1
+ 66 -53 l 2
+ 66 -111 108 -147 165 -147 c 2
+ 657 -147 l 2
+ 691 -147 712 -120 712 -93 c 2
+ 712 191 l 2
+ 712 319 570 344 498 298 c 0
+ 449 266 414 183 454 117 c 0
+ 501 39 571 53 672 53 c 2
+EndSplineSet
+Fore
+SplineSet
+136 189 m 1
+ 136 -53 l 2
+ 136 -111 178 -147 235 -147 c 2
+ 657 -147 l 2
+ 691 -147 712 -120 712 -93 c 2
+ 712 191 l 2
+ 712 319 570 344 498 298 c 0
+ 449 266 414 183 454 117 c 0
+ 501 39 571 53 672 53 c 2
+EndSplineSet
+EndChar
+
+StartChar: uni066F.fina
+Encoding: 65561 -1 61
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+136 189 m 1
+ 136 -53 l 2
+ 136 -111 178 -147 235 -147 c 2
+ 657 -147 l 2
+ 691 -147 712 -120 712 -93 c 2
+ 712 191 l 2
+ 712 319 570 344 498 298 c 0
+ 449 266 414 183 454 117 c 0
+ 501 39 571 53 672 53 c 2
+ 934 53 l 1
+EndSplineSet
+EndChar
+
+StartChar: uni066F.init
+Encoding: 65562 -1 62
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+SplineSet
+672 53 m 6
+ 934 53 l 5
+EndSplineSet
+Fore
+SplineSet
+305 53 m 13
+ 657 53 l 2
+ 691 53 712 80 712 107 c 2
+ 712 331 l 2
+ 712 459 570 484 498 438 c 0
+ 449 406 414 323 454 257 c 0
+ 501 179 571 193 672 193 c 2
 EndSplineSet
 EndChar
 EndChars
