@@ -1,8 +1,8 @@
 SplineFontDB: 3.0
-FontName: m1
-FullName: m1
-FamilyName: m1
-Weight: Medium
+FontName: m2
+FullName: m2
+FamilyName: m2
+Weight: Black
 Copyright: Created by Khaled Hosny with Sorts Mill Tools 2.1.0_alpha1 <http://bitbucket.org/sortsmill/sortsmill-tools>
 UComments: "2015-10-10: Created." 
 Version: 001.000
@@ -20,7 +20,12 @@ FSType: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1444496159
-ModificationTime: 1444912471
+ModificationTime: 1444912915
+PfmFamily: 17
+TTFWeight: 900
+TTFWidth: 5
+LineGap: 90
+VLineGap: 0
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -37,14 +42,15 @@ HheadDOffset: 1
 OS2Vendor: 'PfEd'
 MarkAttachClasses: 1
 DEI: 91125
+LangName: 1033 
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -96
+DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 36 6 5
+WinInfo: 0 9 8
 BeginPrivate: 0
 EndPrivate
 BeginChars: 65564 64
