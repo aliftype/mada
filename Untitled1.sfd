@@ -20,7 +20,7 @@ XUID: [1021 670 513581992 4353041]
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1444496159
-ModificationTime: 1444839119
+ModificationTime: 1444912744
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -44,10 +44,10 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 13 9
+WinInfo: 0 9 8
 BeginPrivate: 0
 EndPrivate
-BeginChars: 65563 63
+BeginChars: 65564 64
 
 StartChar: uni0627
 Encoding: 1575 1575 0
@@ -2206,6 +2206,16 @@ SplineSet
  449 406 414 323 454 257 c 0
  501 179 571 193 672 193 c 2
 EndSplineSet
+EndChar
+
+StartChar: uni0627.fina
+Encoding: 65563 -1 63
+Width: 1000
+VWidth: 34
+Flags: W
+LayerCount: 2
+Fore
+Refer: 35 -1 N -1 0 0 1 1052 0 2
 EndChar
 EndChars
 EndSplineFont

@@ -2,7 +2,7 @@ SplineFontDB: 3.0
 FontName: m0
 FullName: m0
 FamilyName: m0
-Weight: Medium
+Weight: Thin
 Copyright: Created by Khaled Hosny with Sorts Mill Tools 2.1.0_alpha1 <http://bitbucket.org/sortsmill/sortsmill-tools>
 UComments: "2015-10-10: Created." 
 Version: 001.000
@@ -20,7 +20,12 @@ FSType: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1444496159
-ModificationTime: 1444912420
+ModificationTime: 1444912995
+PfmFamily: 17
+TTFWeight: 100
+TTFWidth: 5
+LineGap: 90
+VLineGap: 0
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -34,17 +39,17 @@ HheadAscent: 0
 HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
-OS2Vendor: 'PfEd'
+OS2Vendor: 'BLQ '
 MarkAttachClasses: 1
 DEI: 91125
 Encoding: UnicodeBmp
 Compacted: 1
 UnicodeInterp: none
 NameList: AGL For New Fonts
-DisplaySize: -96
+DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 36 6 5
+WinInfo: 0 9 8
 BeginPrivate: 0
 EndPrivate
 BeginChars: 65564 64
@@ -2667,7 +2672,7 @@ SplineSet
 EndSplineSet
 EndChar
 
-StartChar: NameMe.65563
+StartChar: uni0627.fina
 Encoding: 65563 -1 63
 Width: 1000
 VWidth: 34
