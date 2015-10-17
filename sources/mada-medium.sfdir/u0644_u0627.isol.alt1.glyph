@@ -1,0 +1,24 @@
+StartChar: u0644_u0627.isol.alt1
+Encoding: 65539 -1 31
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+568 660 m 1
+ 673 660 l 1
+ 673 104 l 2
+ 673 44 624 0 567 0 c 2
+ 379 0 l 1
+ 379 105 l 1
+ 587 105 l 17
+ 588 105 568 84 568 84 c 1
+ 568 660 l 1
+385.5 658 m 1
+ 490.5 658 l 1
+ 490.5 157 l 1
+ 385.5 157 l 1
+ 385.5 658 l 1
+EndSplineSet
+EndChar

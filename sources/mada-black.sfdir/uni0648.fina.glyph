@@ -1,0 +1,16 @@
+StartChar: uni0648.fina
+Encoding: 65541 -1 33
+Width: 1000
+VWidth: 34
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+750 172 m 1
+ 750 0 l 1
+ 605 0 l 1
+ 605 172 l 1
+ 750 172 l 1
+EndSplineSet
+Refer: 13 1608 N 1 0 0 1 0 0 2
+EndChar

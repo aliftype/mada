@@ -1,0 +1,19 @@
+StartChar: uni066E.init
+Encoding: 65545 -1 37
+Width: 1000
+VWidth: 34
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+585 410 m 1
+ 757 410 l 1
+ 757 138 l 2
+ 757 62 694 0 618 0 c 2
+ 329 0 l 1
+ 329 172 l 1
+ 605 172 l 1
+ 585 152 l 1
+ 585 410 l 1
+EndSplineSet
+EndChar
