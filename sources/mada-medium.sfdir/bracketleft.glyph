@@ -1,19 +1,19 @@
 StartChar: bracketleft
 Encoding: 91 91 50
-Width: 1000
+Width: 404
 VWidth: 0
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-570 768.5 m 1
- 570 663.5 l 1
- 481.5 663.5 l 1
- 481.5 -183.5 l 1
- 571 -183.5 l 1
- 571 -288.5 l 1
- 376.5 -288.5 l 1
- 376.5 768.5 l 1
- 570 768.5 l 1
+348.5 768.5 m 1
+ 348.5 663.5 l 1
+ 260 663.5 l 1
+ 260 -183.5 l 1
+ 349.5 -183.5 l 1
+ 349.5 -288.5 l 1
+ 155 -288.5 l 1
+ 155 768.5 l 1
+ 348.5 768.5 l 1
 EndSplineSet
 EndChar
