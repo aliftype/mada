@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="3">
+	<sources>
+		<source filename="mada-thin.ufo" name="thin">
+			<location>
+				<dimension name="weight" xvalue="0"/>
+			</location>
+		</source>
+		<source filename="mada-medium.ufo" name="medium">
+			<location>
+				<dimension name="weight" xvalue="500"/>
+			</location>
+		</source>
+		<source filename="mada-black.ufo" name="black">
+			<location>
+				<dimension name="weight" xvalue="1000"/>
+			</location>
+		</source>
+	</sources>
+	<instances>
+		<instance familyname="Mada" filename="../instances/thin/font.ufo" postscriptfontname="mada-extralight" stylename="Thin">
+			<location>
+				<dimension name="weight" xvalue="0"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance familyname="Mada" filename="../instances/light/font.ufo" postscriptfontname="mada-light" stylename="Light">
+			<location>
+				<dimension name="weight" xvalue="100"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance familyname="Mada" filename="../instances/regular/font.ufo" postscriptfontname="mada-regular" stylename="Regular">
+			<location>
+				<dimension name="weight" xvalue="368"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance familyname="Mada" filename="../instances/semibold/font.ufo" postscriptfontname="mada-semibold" stylename="Semibold">
+			<location>
+				<dimension name="weight" xvalue="600"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance familyname="Mada" filename="../instances/bold/font.ufo" postscriptfontname="mada-bold" stylename="Bold">
+			<location>
+				<dimension name="weight" xvalue="824"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance familyname="Mada" filename="../instances/black/font.ufo" postscriptfontname="mada-black" stylename="Black">
+			<location>
+				<dimension name="weight" xvalue="1000"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+	</instances>
+</designspace>
