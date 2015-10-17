@@ -1,0 +1,21 @@
+StartChar: bracketleft
+Encoding: 91 91 53
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+SplineSet
+569.989257812 716.360351562 m 5
+ 428.977539062 716.360351562 l 5
+ 428.977539062 -236.360351562 l 5
+ 571.022460938 -236.360351562 l 5
+EndSplineSet
+Fore
+SplineSet
+570 716 m 1
+ 429 716 l 1
+ 429 -236 l 1
+ 571 -236 l 1
+EndSplineSet
+EndChar

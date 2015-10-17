@@ -1,0 +1,21 @@
+StartChar: uni064B
+Encoding: 1611 1611 54
+Width: 0
+VWidth: 0
+Flags: W
+LayerCount: 2
+Back
+SplineSet
+194.4140625 180.337890625 m 1
+ -194.4140625 179.065429688 l 1
+194.4140625 29.62109375 m 1
+ -194.4140625 28.3486328125 l 1
+EndSplineSet
+Fore
+SplineSet
+194 179 m 1
+ -194 179 l 1
+194 29 m 1
+ -194 28 l 1
+EndSplineSet
+EndChar
