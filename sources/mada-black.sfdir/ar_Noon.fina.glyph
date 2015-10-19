@@ -1,0 +1,16 @@
+StartChar: arNoon.fina
+Encoding: 65564 -1 38
+Width: 744
+VWidth: 34
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+744 173 m 1
+ 744 1 l 1
+ 603 1 l 1
+ 603 173 l 1
+ 744 173 l 1
+EndSplineSet
+Refer: 24 -1 N 1 0 0 1 0 0 2
+EndChar

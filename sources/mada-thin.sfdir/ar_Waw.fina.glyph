@@ -1,0 +1,16 @@
+StartChar: arWaw.fina
+Encoding: 65559 -1 33
+Width: 500
+VWidth: -36
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+500 32 m 1
+ 500 0 l 1
+ 353 0 l 1
+ 353 32 l 1
+ 500 32 l 1
+EndSplineSet
+Refer: 13 -1 N 1 0 0 1 0 0 2
+EndChar

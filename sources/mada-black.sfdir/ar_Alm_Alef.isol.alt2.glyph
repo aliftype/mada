@@ -1,0 +1,24 @@
+StartChar: arAlmAlef.isol.alt2
+Encoding: 65558 -1 32
+Width: 716
+VWidth: 34
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+424 692 m 1
+ 596 692 l 1
+ 596 138 l 2
+ 596 62 533 0 457 0 c 2
+ 120 0 l 1
+ 120 172 l 1
+ 444 172 l 1
+ 424 152 l 1
+ 424 692 l 1
+192 598 m 1
+ 364 598 l 1
+ 364 93 l 1
+ 192 93 l 1
+ 192 598 l 1
+EndSplineSet
+EndChar

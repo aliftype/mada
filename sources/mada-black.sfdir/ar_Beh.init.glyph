@@ -1,0 +1,19 @@
+StartChar: arBeh.init
+Encoding: 65563 -1 37
+Width: 548
+VWidth: 34
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+256 410 m 1
+ 428 410 l 1
+ 428 138 l 2
+ 428 62 365 0 289 0 c 2
+ 0 0 l 1
+ 0 172 l 1
+ 276 172 l 1
+ 256 152 l 1
+ 256 410 l 1
+EndSplineSet
+EndChar
