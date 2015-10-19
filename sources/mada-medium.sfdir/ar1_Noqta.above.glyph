@@ -1,0 +1,15 @@
+StartChar: ar1Noqta.above
+Encoding: 65588 -1 68
+Width: 0
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-52.5 0 m 0
+ -52.5 28.98046875 -28.98046875 52.5 0 52.5 c 0
+ 28.98046875 52.5 52.5 28.98046875 52.5 0 c 0
+ 52.5 -28.98046875 28.98046875 -52.5 0 -52.5 c 0
+ -28.98046875 -52.5 -52.5 -28.98046875 -52.5 0 c 0
+EndSplineSet
+EndChar
