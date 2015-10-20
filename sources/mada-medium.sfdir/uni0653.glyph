@@ -1,7 +1,19 @@
 StartChar: uni0653
 Encoding: 1619 1619 128
-Width: 100
+Width: 0
 VWidth: 0
-Flags: W
+Flags: HW
 LayerCount: 2
+Fore
+SplineSet
+-104 0 m 1
+ -174 0 l 1
+ -174 53 l 2
+ -174 96 -141 125 -100 125 c 2
+ 139 125 l 1
+ 139 55 l 1
+ -124 55 l 1
+ -104 75 l 1
+ -104 0 l 1
+EndSplineSet
 EndChar
