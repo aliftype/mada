@@ -218,18 +218,14 @@ feature fina {
 #    sub uni0657 by uni0657.urd;
 #} locl;
 
-#lookup LamAlefIsol {
-#  sub arLam.init by arLam.init.2;
-#  sub arAlef.fina by arAlef.fina.2;
-#} LamAlefIsol;
-#
-#lookup LamAlefFina {
+#lookup LamAlef {
+#  sub arLam.init by arLam.init.1;
 #  sub arLam.medi by arLam.medi.1;
 #  sub arAlef.fina by arAlef.fina.1;
-#} LamAlefFina;
+#} LamAlef;
 #
 #feature rlig {
 #  lookupflag IgnoreMarks;
-#    sub arLam.init' lookup LamAlefIsol arAlef.fina' lookup LamAlefIsol;
-#    sub arLam.medi' lookup LamAlefFina arAlef.fina' lookup LamAlefFina;
+#    sub arLam.init' lookup LamAlef arAlef.fina' lookup LamAlef;
+#    sub arLam.medi' lookup LamAlef arAlef.fina' lookup LamAlef;
 #} rlig;

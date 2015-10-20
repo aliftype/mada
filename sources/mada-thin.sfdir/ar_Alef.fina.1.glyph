@@ -1,10 +1,10 @@
-StartChar: arAlmAlef.isol
-Encoding: 65556 -1 30
-Width: 362
+StartChar: arAlef.fina.1
+Encoding: 65557 -1 31
+Width: 0
 VWidth: -36
 Flags: HW
 LayerCount: 2
-Fore
+Back
 SplineSet
 235 199 m 1
  267 199 l 17
@@ -25,5 +25,18 @@ SplineSet
  255 33 l 2
  274 33 290 47 290 71 c 2
  290 624 l 1
+EndSplineSet
+Fore
+SplineSet
+235 199 m 1
+ 267 199 l 17
+ 256 136 220 77 129 26 c 1
+ 107 26 l 1
+ 132 40 237 97 235 199 c 1
+106 640 m 1
+ 136 648 l 1
+ 267 199 l 1
+ 237 191 l 1
+ 106 640 l 1
 EndSplineSet
 EndChar
