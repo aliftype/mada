@@ -1,0 +1,23 @@
+StartChar: arSad.head
+Encoding: 65607 -1 87
+Width: 0
+VWidth: -36
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-221 32 m 1
+ -221 0 l 1
+ 151 0 l 2
+ 190 0 221 31 220 69 c 2
+ 218 135 l 0
+ 216 220 189 274 131 298 c 0
+ -2 347 -106 181 -207 42 c 1
+ -182 24 l 17
+ -78 166 18 305 120 268 c 0
+ 163 250 184 214 186 135 c 0
+ 188 67 l 2
+ 189 48 174 32 151 32 c 2
+ -221 32 l 1
+EndSplineSet
+EndChar
