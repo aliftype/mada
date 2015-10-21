@@ -39,6 +39,7 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'BLQ '
+Lookup: 260 0 0 "'mark' Dot positioning"  {"'mark' Dot positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 
@@ -47,4 +48,5 @@ UnicodeInterp: none
 NameList: AGL For New Fonts
 BeginPrivate: 0
 EndPrivate
+AnchorClass2: "arDotAbove"  "'mark' Dot positioning-1" "arDotBelow"  "'mark' Dot positioning-1" "arHamzaAbove"  "'mark' Dot positioning-1" "arShartaAbove"  "'mark' Dot positioning-1" "arHamzaBelow"  "'mark' Dot positioning-1" 
 EndSplineFont
