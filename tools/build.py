@@ -5,6 +5,14 @@ import argparse
 from datetime import datetime
 from sortsmill import ffcompat as fontforge
 
+def handle_cloned_glyphs(font):
+    for glyph in font.glyphs():
+        if glyph.color == 0xff00ff:
+            assert len(glyph.references) == 1
+            base = glyph.references[0][0]
+            base = font[base]
+            glyph.anchorPoints = base.anchorPoints
+
 def merge(args):
     arabic = fontforge.open(args.arabicfile)
     arabic.encoding = "Unicode"
@@ -39,6 +47,8 @@ def merge(args):
 #   arabic.copyright = ". ".join(["Portions copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)",
 #                             "Portions " + latin.copyright[0].lower() + latin.copyright[1:].replace("(c)", "©")])
 #   arabic.copyright = arabic.copyright % years
+
+    handle_cloned_glyphs(arabic)
 
     en = "English (US)"
     arabic.appendSFNTName(en, "Designer", "Khaled Hosny")
