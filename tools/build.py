@@ -5,30 +5,6 @@ import argparse
 from datetime import datetime
 from sortsmill import ffcompat as fontforge
 
-def zeromarks(font):
-    """Since this is a fixed width font, we make all glyphs the same width (which allows
-    us to set isFixedPitch bit in the post table, that some application rely on
-    to identify fixed width fonts). Compliant layout engines will zero the mark
-    width when combined, so this is not an issue, but some non-compliant
-    engines like Core Text don’t do this and break the font, so we will zero
-    the width ourselves here to workaround this."""
-    langsystems = set()
-    for lookup in font.gpos_lookups:
-        for feature in font.getLookupInfo(lookup)[2]:
-            for langsys in feature[1]:
-                script = langsys[0]
-                for language in langsys[1]:
-                    langsystems.add((script, language))
-    fea = ""
-    for script, language in langsystems:
-        fea += "languagesystem %s %s;" % (script, language)
-    fea += "feature mark {"
-    for glyph in font.glyphs():
-        if glyph.glyphclass == "mark":
-            fea += "pos %s -%d;" % (glyph.glyphname, glyph.width)
-    fea += "} mark;"
-    font.mergeFeatureString(fea)
-
 def merge(args):
     arabic = fontforge.open(args.arabicfile)
     arabic.encoding = "Unicode"
@@ -63,8 +39,6 @@ def merge(args):
 #   arabic.copyright = ". ".join(["Portions copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)",
 #                             "Portions " + latin.copyright[0].lower() + latin.copyright[1:].replace("(c)", "©")])
 #   arabic.copyright = arabic.copyright % years
-
-    zeromarks(arabic)
 
     en = "English (US)"
     arabic.appendSFNTName(en, "Designer", "Khaled Hosny")
