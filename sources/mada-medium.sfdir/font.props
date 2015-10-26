@@ -48,5 +48,10 @@ UnicodeInterp: none
 NameList: AGL For New Fonts
 BeginPrivate: 0
 EndPrivate
+Grid
+-1000 624 m 4
+ 2000 624 l 4
+  Named: "Cap" 
+EndSplineSet
 AnchorClass2: "arHamzaBelow"  "'mark' Nuqta positioning-1" "arShartaAbove"  "'mark' Nuqta positioning-1" "arHamzaAbove"  "'mark' Nuqta positioning-1" "arNuqtaBelow"  "'mark' Nuqta positioning-1" "arNuqtaAbove"  "'mark' Nuqta positioning-1" "arAltNuqtaBelow"  "'mark' Nuqta positioning-1" 
 EndSplineFont

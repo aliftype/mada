@@ -4,12 +4,12 @@ Width: 480
 VWidth: -36
 Flags: HW
 AnchorPoint: "arNuqtaBelow" 227 -258 basechar 0
-AnchorPoint: "arNuqtaAbove" 424 710 basechar 0
+AnchorPoint: "arNuqtaAbove" 424 674 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-408 660 m 1
- 440 660 l 1
+408 624 m 1
+ 440 624 l 1
  440 -78 l 2
  440 -112.54296875 413.778320312 -148 370 -148 c 2
  111 -148 l 2
@@ -20,6 +20,6 @@ SplineSet
  72 -102.196289062 85.748046875 -116 111 -116 c 2
  370 -116 l 2
  394.221679688 -116 408 -97.45703125 408 -78 c 2
- 408 660 l 1
+ 408 624 l 1
 EndSplineSet
 EndChar

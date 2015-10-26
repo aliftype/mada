@@ -3,13 +3,13 @@ Encoding: 65545 -1 9
 Width: 683
 VWidth: 0
 Flags: HW
+AnchorPoint: "arNuqtaAbove" 424 674 basechar 0
 AnchorPoint: "arNuqtaBelow" 227 -258 basechar 0
-AnchorPoint: "arNuqtaAbove" 424 710 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-473 696 m 1
- 578 696 l 1
+473 624 m 1
+ 578 624 l 1
  578 -42 l 2
  578 -97.0185546875 533.758789062 -148.5 471.5 -148.5 c 2
  212.5 -148.5 l 2
@@ -20,6 +20,6 @@ SplineSet
  189.5 -43.5 l 9
  493.5 -43.5 l 17
  473 -64 l 9
- 473 696 l 1
+ 473 624 l 1
 EndSplineSet
 EndChar
