@@ -1,10 +1,10 @@
 StartChar: arSad.init
 Encoding: 65571 -1 45
-Width: 850
+Width: 900
 VWidth: 34
 Flags: HW
-AnchorPoint: "arNuqtaAbove" 258 562 basechar 0
-AnchorPoint: "arNuqtaBelow" 365 -149 basechar 0
+AnchorPoint: "arNuqtaAbove" 308 562 basechar 0
+AnchorPoint: "arNuqtaBelow" 415 -149 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -29,16 +29,16 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-196 0 m 1
+246 0 m 1
  0 0 l 1
  0 172 l 1
- 196 172 l 1
- 196 0 l 1
-52 311 m 1
- 224 311 l 1
- 224 92 l 1
- 52 92 l 1
- 52 311 l 1
+ 246 172 l 1
+ 246 0 l 1
+102 311 m 1
+ 274 311 l 1
+ 274 92 l 1
+ 102 92 l 1
+ 102 311 l 1
 EndSplineSet
-Refer: 87 -1 N 1 0 0 1 444 0 2
+Refer: 87 -1 N 1 0 0 1 494 0 2
 EndChar

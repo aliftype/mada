@@ -1,21 +1,21 @@
 StartChar: arReh.isol
 Encoding: 65539 -1 3
-Width: 567
+Width: 447
 VWidth: 34
 Flags: HW
-AnchorPoint: "arNuqtaBelow" 243 -380 basechar 0
-AnchorPoint: "arNuqtaAbove" 361 441 basechar 0
+AnchorPoint: "arNuqtaBelow" 123 -380 basechar 0
+AnchorPoint: "arNuqtaAbove" 241 441 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-275 221 m 1
- 447 221 l 1
- 447 3 l 2
- 447 -120.15234375 354.57421875 -230 222 -230 c 2
- 120 -230 l 1
- 120 -58 l 1
- 222 -58 l 2
- 251.42578125 -58 275 -37.84765625 275 3 c 2
- 275 221 l 1
+155 221 m 1
+ 327 221 l 1
+ 327 3 l 2
+ 327 -120.15234375 234.57421875 -230 102 -230 c 2
+ 0 -230 l 1
+ 0 -58 l 1
+ 102 -58 l 2
+ 131.42578125 -58 155 -37.84765625 155 3 c 2
+ 155 221 l 1
 EndSplineSet
 EndChar

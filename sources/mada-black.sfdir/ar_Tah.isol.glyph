@@ -1,10 +1,10 @@
 StartChar: arTah.isol
 Encoding: 65543 -1 7
-Width: 914
+Width: 964
 VWidth: 34
 Flags: HW
-AnchorPoint: "arNuqtaAbove" 554 562 basechar 0
-AnchorPoint: "arNuqtaBelow" 409 -110 basechar 0
+AnchorPoint: "arNuqtaAbove" 604 562 basechar 0
+AnchorPoint: "arNuqtaBelow" 459 -110 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -29,16 +29,16 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-260 0 m 1
+310 0 m 1
  120 0 l 1
  120 172 l 1
- 260 172 l 1
- 260 0 l 1
-166 624 m 1
- 338 624 l 1
- 338 122 l 1
- 166 122 l 1
- 166 624 l 1
+ 310 172 l 1
+ 310 0 l 1
+216 624 m 1
+ 388 624 l 1
+ 388 122 l 1
+ 216 122 l 1
+ 216 624 l 1
 EndSplineSet
-Refer: 87 -1 N 1 0 0 1 508 0 2
+Refer: 87 -1 N 1 0 0 1 558 0 2
 EndChar
