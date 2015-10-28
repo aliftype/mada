@@ -3,6 +3,10 @@ Encoding: 65578 -1 55
 Width: 360
 VWidth: 34
 Flags: HW
+AnchorPoint: "arNuqtaAbove" 176 684 basechar 0
+AnchorPoint: "arHamzaAbove" 176 684 basechar 0
+AnchorPoint: "arAltNuqtaBelow" 176 -49 basechar 0
+AnchorPoint: "arHamzaBelow" 176 -49 basechar 0
 LayerCount: 2
 Fore
 Refer: 35 -1 N -1 0 0 1 360 0 2
