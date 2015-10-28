@@ -1,0 +1,22 @@
+StartChar: arHeh.fina2
+Encoding: 65622 -1 163
+Width: 478
+VWidth: 34
+Flags: HW
+AnchorPoint: "arHamzaAbove" 254 382 basechar 0
+AnchorPoint: "arNuqtaAbove" 254 382 basechar 0
+AnchorPoint: "arNuqtaBelow" 299 -160 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+292 -108 m 1
+ 120 -108 l 1
+ 120 34 l 2
+ 120 110 183 172 259 172 c 2
+ 478 172 l 1
+ 478 0 l 1
+ 272 0 l 1
+ 292 20 l 1
+ 292 -108 l 1
+EndSplineSet
+EndChar
