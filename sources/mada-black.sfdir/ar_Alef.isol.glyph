@@ -1,19 +1,19 @@
 StartChar: arAlef.isol
 Encoding: 65536 -1 0
-Width: 412
+Width: 372
 VWidth: 34
 Flags: HW
-AnchorPoint: "arHamzaBelow" 196 -29 basechar 0
-AnchorPoint: "arHamzaAbove" 196 664 basechar 0
-AnchorPoint: "arNuqtaAbove" 196 664 basechar 0
-AnchorPoint: "arAltNuqtaBelow" 196 -29 basechar 0
+AnchorPoint: "arHamzaBelow" 176 -29 basechar 0
+AnchorPoint: "arHamzaAbove" 176 664 basechar 0
+AnchorPoint: "arNuqtaAbove" 176 664 basechar 0
+AnchorPoint: "arAltNuqtaBelow" 176 -29 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-120 624 m 1
- 292 624 l 1
- 292 193 l 2
- 292 95.888671875 245.364257812 1 120 1 c 1
- 120 624 l 1
+100 624 m 1
+ 272 624 l 1
+ 272 193 l 2
+ 272 95.888671875 225.364257812 1 100 1 c 1
+ 100 624 l 1
 EndSplineSet
 EndChar
