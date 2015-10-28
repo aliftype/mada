@@ -41,7 +41,7 @@ def merge(args):
 #       arabic.mergeFeatureString(latin_locl)
 
 #   # Set metadata
-#   arabic.version = args.version
+    arabic.version = args.version
 #   years = datetime.now().year == 2015 and 2015 or "2015-%s" % datetime.now().year
 
 #   arabic.copyright = ". ".join(["Portions copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)",
@@ -60,7 +60,7 @@ for the specific language, permissions and limitations governing your use of \
 this Font Software.')
 #   arabic.appendSFNTName(en, "Descriptor", "Aref Ruqaa is an Arabic typeface that aspires to capture the essence of \
 #the classical Ruqaa calligraphic style.")
-    arabic.appendSFNTName(en, "Sample Text", "الخط هندسة روحانية ظهرت بآلة جسمانية")
+    arabic.appendSFNTName(en, "Sample Text", "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار.")
 
     return arabic
 
