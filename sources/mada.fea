@@ -35,7 +35,7 @@ feature isol {
     sub uni0642 by arQaf.isol ar2Noqta.above;
     sub uni0643 by arKaf.isol arHamza.kaf;
     sub uni0644 by arLam.isol;
-    sub uni0645 by arMem.isol;
+    sub uni0645 by arMeem.isol;
     sub uni0646 by arNoon.isol ar1Noqta.above;
     sub uni0647 by arHeh.isol;
     sub uni0648 by arWaw.isol;
@@ -86,7 +86,7 @@ feature init {
     sub uni0642 by arFeh.init ar2Noqta.above;
     sub uni0643 by arKaf.init;
     sub uni0644 by arLam.init;
-    sub uni0645 by arMem.init;
+    sub uni0645 by arMeem.init;
     sub uni0646 by arBeh.init ar1Noqta.above;
     sub uni0647 by arHeh.init;
     sub uni0649 by arBeh.init;
@@ -127,7 +127,7 @@ feature medi {
     sub uni0642 by arFeh.medi ar2Noqta.above;
     sub uni0643 by arKaf.medi;
     sub uni0644 by arLam.medi;
-    sub uni0645 by arMem.medi;
+    sub uni0645 by arMeem.medi;
     sub uni0646 by arBeh.medi ar1Noqta.above;
     sub uni0647 by arHeh.medi;
     sub uni0649 by arBeh.medi;
@@ -178,7 +178,7 @@ feature fina {
     sub uni0642 by arQaf.fina ar2Noqta.above;
     sub uni0643 by arKaf.fina arHamza.kaf;
     sub uni0644 by arLam.fina;
-    sub uni0645 by arMem.fina;
+    sub uni0645 by arMeem.fina;
     sub uni0646 by arNoon.fina ar1Noqta.above;
     sub uni0647 by arHeh.fina;
     sub uni0648 by arWaw.fina;
