@@ -33,18 +33,17 @@ for glyph in font.glyphs():
         sub = sub[0]
         assert sub[1] == "MultSubs"
         names = sub[2:]
-        if names:
-            # build the composite on a temp glyph to prevent FontForge from
-            # using its built-in knowledge about components of some encoded
-            # glyphs.
-            temp_glyph.clear()
-            temp_glyph.addReference(names[0])
-            if len(names) > 1:
-                for name in names[1:]:
-                    temp_glyph.appendAccent(name)
-                temp_glyph.build()
-            glyph.clear()
-            glyph.references = temp_glyph.references
-            glyph.useRefsMetrics(names[0])
+        # build the composite on a temp glyph to prevent FontForge from
+        # using its built-in knowledge about components of some encoded
+        # glyphs.
+        temp_glyph.clear()
+        temp_glyph.addReference(names[0])
+        if len(names) > 1:
+            for name in names[1:]:
+                temp_glyph.appendAccent(name)
+            temp_glyph.build()
+        glyph.clear()
+        glyph.references = temp_glyph.references
+        glyph.useRefsMetrics(names[0])
 font.removeGlyph(temp_glyph)
 font.save()
