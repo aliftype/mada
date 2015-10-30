@@ -3,9 +3,11 @@ Encoding: 65550 -1 14
 Width: 544
 VWidth: -36
 Flags: HW
+AnchorPoint: "arMarkAbove" 207 193 basechar 0
 AnchorPoint: "arHamzaAbove" 207 193 basechar 0
-AnchorPoint: "arDotBelow" 279 -333 basechar 0
 AnchorPoint: "arDotAbove" 207 193 basechar 0
+AnchorPoint: "arMarkBelow" 279 -333 basechar 0
+AnchorPoint: "arDotBelow" 279 -333 basechar 0
 LayerCount: 2
 Fore
 SplineSet

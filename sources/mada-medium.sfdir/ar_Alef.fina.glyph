@@ -4,9 +4,10 @@ Width: 277
 VWidth: 34
 Flags: HW
 AnchorPoint: "arAltDotBelow" 136 -29 basechar 0
+AnchorPoint: "arHamzaBelow" 136 -29 basechar 0
+AnchorPoint: "arMarkAbove" 136 664 basechar 0
 AnchorPoint: "arDotAbove" 136 664 basechar 0
 AnchorPoint: "arHamzaAbove" 136 664 basechar 0
-AnchorPoint: "arHamzaBelow" 136 -29 basechar 0
 LayerCount: 2
 Fore
 Refer: 35 -1 N -1 0 0 1 277 0 2

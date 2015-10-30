@@ -40,6 +40,7 @@ HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'BLQ '
 Lookup: 260 0 0 "'mark' Dot positioning"  {"'mark' Dot positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark positioning"  {"'mark' Mark positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to dot positioning"  {"'mkmk' Mark to dot positioning-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -54,5 +55,5 @@ Grid
  2000 624 l 4
   Named: "Cap" 
 EndSplineSet
-AnchorClass2: "arMarkBelowDot"  "'mkmk' Mark to dot positioning-1" "arMarkAboveDot"  "'mkmk' Mark to dot positioning-1" "arHamzaBelow"  "'mark' Dot positioning-1" "arShartaAbove"  "'mark' Dot positioning-1" "arHamzaAbove"  "'mark' Dot positioning-1" "arDotBelow"  "'mark' Dot positioning-1" "arDotAbove"  "'mark' Dot positioning-1" "arAltDotBelow"  "'mark' Dot positioning-1" 
+AnchorClass2: "arMarkAbove"  "'mark' Mark positioning-1" "arMarkBelow"  "'mark' Mark positioning-1" "arMarkBelowDot"  "'mkmk' Mark to dot positioning-1" "arMarkAboveDot"  "'mkmk' Mark to dot positioning-1" "arHamzaBelow"  "'mark' Dot positioning-1" "arShartaAbove"  "'mark' Dot positioning-1" "arHamzaAbove"  "'mark' Dot positioning-1" "arDotBelow"  "'mark' Dot positioning-1" "arDotAbove"  "'mark' Dot positioning-1" "arAltDotBelow"  "'mark' Dot positioning-1" 
 EndSplineFont

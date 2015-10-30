@@ -3,6 +3,7 @@ Encoding: 65621 -1 162
 Width: 498
 VWidth: 34
 Flags: HW
+AnchorPoint: "arMarkAbove" 184 562 basechar 0
 AnchorPoint: "arDotAbove" 184 562 basechar 0
 LayerCount: 2
 Back

@@ -4,7 +4,9 @@ Width: 846
 VWidth: 34
 Flags: HW
 AnchorPoint: "arHamzaAbove" 360 311 basechar 0
+AnchorPoint: "arMarkBelow" 422 -109 basechar 0
 AnchorPoint: "arDotBelow" 422 -109 basechar 0
+AnchorPoint: "arMarkAbove" 623 673 basechar 0
 AnchorPoint: "arDotAbove" 623 673 basechar 0
 LayerCount: 2
 Fore

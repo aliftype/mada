@@ -3,8 +3,10 @@ Encoding: 65566 -1 40
 Width: 918
 VWidth: 34
 Flags: HW
+AnchorPoint: "arMarkAbove" 337 338 basechar 0
 AnchorPoint: "arHamzaAbove" 337 338 basechar 0
 AnchorPoint: "arDotAbove" 337 338 basechar 0
+AnchorPoint: "arMarkBelow" 409 -308 basechar 0
 AnchorPoint: "arDotBelow" 409 -308 basechar 0
 LayerCount: 2
 Fore

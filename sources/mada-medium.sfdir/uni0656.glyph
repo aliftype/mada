@@ -3,6 +3,7 @@ Encoding: 1622 1622 173
 Width: 0
 VWidth: -36
 Flags: HW
+AnchorPoint: "arMarkBelow" 0 0 mark 0
 AnchorPoint: "arMarkBelowDot" 0 0 mark 0
 LayerCount: 2
 Fore
