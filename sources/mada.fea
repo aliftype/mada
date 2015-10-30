@@ -5,7 +5,6 @@ languagesystem arab URD;
 
 feature isol {
   lookupflag IgnoreMarks;
-    sub uni0621 by arHamza.isol;
     sub uni0622 by arAlef.isol uni0653;
     sub uni0623 by arAlef.isol uni0654;
     sub uni0624 by arWaw.isol uni0654;
