@@ -1,0 +1,16 @@
+StartChar: uni0670
+Encoding: 1648 1648 164
+Width: 0
+VWidth: -36
+GlyphClass: 4
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-16 184 m 1
+ 16 184 l 1
+ 16 33 l 2
+ 16 19 5 1 -16 1 c 1
+ -16 184 l 1
+EndSplineSet
+EndChar
