@@ -59,8 +59,7 @@ This Font Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR \
 CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License \
 for the specific language, permissions and limitations governing your use of \
 this Font Software.')
-#   arabic.appendSFNTName(en, "Descriptor", "Aref Ruqaa is an Arabic typeface that aspires to capture the essence of \
-#the classical Ruqaa calligraphic style.")
+    arabic.appendSFNTName(en, "Descriptor", "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage.")
     arabic.appendSFNTName(en, "Sample Text", "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار.")
 
     return arabic
