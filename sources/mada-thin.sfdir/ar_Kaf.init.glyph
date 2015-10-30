@@ -2,8 +2,8 @@ StartChar: arKaf.init
 Encoding: 65570 -1 44
 Width: 598
 VWidth: -36
-Flags: HW
-AnchorPoint: "arMarkAbove" 189 619.994 basechar 0
+Flags: HWO
+AnchorPoint: "arMarkAbove" 329 619.994 basechar 0
 AnchorPoint: "arDotAbove" 189 619.994 basechar 0
 AnchorPoint: "arMarkBelow" 249 -149 basechar 0
 AnchorPoint: "arDotBelow" 249 -149 basechar 0
