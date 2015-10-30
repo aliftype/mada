@@ -3,6 +3,7 @@ Encoding: 65595 -1 75
 Width: 0
 VWidth: 0
 Flags: HW
+AnchorPoint: "arMarkBelowNuqta" 0 -330 basemark 0
 AnchorPoint: "arNuqtaBelow" 0 0 mark 0
 AnchorPoint: "arAltNuqtaBelow" 0 0 mark 0
 LayerCount: 2

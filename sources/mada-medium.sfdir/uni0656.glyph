@@ -3,7 +3,8 @@ Encoding: 1622 1622 173
 Width: 0
 VWidth: -36
 Flags: HW
+AnchorPoint: "arMarkBelowNuqta" 0 0 mark 0
 LayerCount: 2
 Fore
-Refer: 172 1648 N 1 0 0 1 0 0 2
+Refer: 172 1648 N 1 0 0 1 0 -178 2
 EndChar

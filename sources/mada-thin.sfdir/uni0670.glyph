@@ -4,13 +4,14 @@ Width: 0
 VWidth: -36
 GlyphClass: 4
 Flags: HW
+AnchorPoint: "arMarkAboveNuqta" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--16 184 m 1
- 16 184 l 1
- 16 33 l 2
- 16 19 5 1 -16 1 c 1
- -16 184 l 1
+-16 183 m 1
+ 16 183 l 1
+ 16 32 l 2
+ 16 18 5 0 -16 0 c 1
+ -16 183 l 1
 EndSplineSet
 EndChar

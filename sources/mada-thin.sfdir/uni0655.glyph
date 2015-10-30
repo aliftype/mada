@@ -4,8 +4,9 @@ Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: HW
-AnchorPoint: "arHamzaBelow" 0 181 mark 0
+AnchorPoint: "arMarkBelowNuqta" 0 -200 basemark 0
+AnchorPoint: "arHamzaBelow" 0 0 mark 0
 LayerCount: 2
 Fore
-Refer: 76 -1 N 1 0 0 1 0 0 2
+Refer: 76 -1 N 1 0 0 1 0 -143 2
 EndChar
