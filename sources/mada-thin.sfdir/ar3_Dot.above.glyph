@@ -1,11 +1,11 @@
-StartChar: ar3Noqta.above
+StartChar: ar3Dot.above
 Encoding: 65590 -1 70
 Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: HW
-AnchorPoint: "arMarkAboveNuqta" 0 200 basemark 0
-AnchorPoint: "arNuqtaAbove" 0 0 mark 0
+AnchorPoint: "arMarkAboveDot" 0 200 basemark 0
+AnchorPoint: "arDotAbove" 0 0 mark 0
 LayerCount: 2
 Fore
 Refer: 69 -1 N 1 0 0 1 0 0 2

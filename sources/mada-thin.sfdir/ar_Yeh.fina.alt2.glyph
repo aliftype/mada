@@ -4,8 +4,8 @@ Width: 768
 VWidth: -36
 Flags: HW
 AnchorPoint: "arHamzaAbove" 214 294 basechar 0
-AnchorPoint: "arNuqtaBelow" 304 -272.015 basechar 0
-AnchorPoint: "arNuqtaAbove" 214 294 basechar 0
+AnchorPoint: "arDotBelow" 304 -272.015 basechar 0
+AnchorPoint: "arDotAbove" 214 294 basechar 0
 LayerCount: 2
 Fore
 SplineSet

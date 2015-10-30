@@ -3,8 +3,8 @@ Encoding: 65555 -1 29
 Width: 653
 VWidth: 34
 Flags: HW
-AnchorPoint: "arNuqtaAbove" 293 233 basechar 0
-AnchorPoint: "arNuqtaBelow" 351 -401.021 basechar 0
+AnchorPoint: "arDotAbove" 293 233 basechar 0
+AnchorPoint: "arDotBelow" 351 -401.021 basechar 0
 LayerCount: 2
 Fore
 SplineSet
