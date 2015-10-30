@@ -40,13 +40,14 @@ def merge(args):
 #       latin_locl += "} locl;"
 #       arabic.mergeFeatureString(latin_locl)
 
-#   # Set metadata
+    # Set metadata
     arabic.version = args.version
-#   years = datetime.now().year == 2015 and 2015 or "2015-%s" % datetime.now().year
+    years = datetime.now().year == 2015 and 2015 or "2015-%s" % datetime.now().year
 
+    arabic.copyright = "Copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)"
 #   arabic.copyright = ". ".join(["Portions copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)",
 #                             "Portions " + latin.copyright[0].lower() + latin.copyright[1:].replace("(c)", "©")])
-#   arabic.copyright = arabic.copyright % years
+    arabic.copyright = arabic.copyright % years
 
     handle_cloned_glyphs(arabic)
 
