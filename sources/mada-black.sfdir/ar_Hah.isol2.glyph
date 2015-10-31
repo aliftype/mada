@@ -1,19 +1,17 @@
-StartChar: arHah.isol
-Encoding: 65537 -1 1
+StartChar: arHah.isol2
+Encoding: 65558 -1 32
 Width: 776
 VWidth: 34
 Flags: HW
 AnchorPoint: "arMarkBelow" 398 -95 basechar 0
-AnchorPoint: "arDotBelow" 398 -95 basechar 0
 AnchorPoint: "arMarkAbove" 408 607 basechar 0
 AnchorPoint: "arDotAbove" 408 607 basechar 0
+AnchorPoint: "arDotBelow" 518 -134 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-531 -189 m 1
- 531 -361 l 1
- 291 -361 l 2
- 197 -361 120 -287 120 -194 c 2
+292 -361 m 1
+ 197.319135224 -361 120 -287.606053974 120 -194 c 2
  120 -9 l 2
  120 80 189 173 298 173 c 2
  392 173 l 1
@@ -26,8 +24,6 @@ SplineSet
  656 157 672 1 523 1 c 2
  272 1 l 1
  292 21 l 1
- 292 -209 l 1
- 272 -189 l 1
- 531 -189 l 1
+ 292 -361 l 1
 EndSplineSet
 EndChar
