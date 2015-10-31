@@ -5,13 +5,13 @@ VWidth: 34
 Flags: HW
 AnchorPoint: "arMarkBelow" 559 -339 basechar 0
 AnchorPoint: "arDotBelow" 559 -339 basechar 0
-AnchorPoint: "arMarkAbove" 709 558.557 basechar 0
-AnchorPoint: "arDotAbove" 709 558.557 basechar 0
+AnchorPoint: "arMarkAbove" 709 559 basechar 0
+AnchorPoint: "arDotAbove" 709 559 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1074 171 m 1
- 1074 0 l 1
+1094 171 m 1
+ 1094 0 l 1
  776 0 l 2
  685 0 584 0 520 106 c 0
  450 221 509 349 591 403 c 0
@@ -31,7 +31,7 @@ SplineSet
  766 246 751 260 732 266 c 0
  712 273 690 266 677 252 c 0
  660 233 659 209 668 194 c 0
- 682 170 689 170 776 171 c 2
- 1074 171 l 1
+ 682 170 688.994140625 171 776 171 c 2
+ 1094 171 l 1
 EndSplineSet
 EndChar
