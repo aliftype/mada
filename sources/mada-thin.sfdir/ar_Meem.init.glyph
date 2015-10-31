@@ -1,10 +1,33 @@
 StartChar: arMeem.init
 Encoding: 65610 -1 90
-Width: 474
+Width: 475
 VWidth: 34
 Flags: HW
+AnchorPoint: "arDotAbove" 267 448 basechar 0
+AnchorPoint: "arMarkAbove" 267 448 basechar 0
+AnchorPoint: "arDotBelow" 189 -110 basechar 0
+AnchorPoint: "arMarkBelow" 189 -110 basechar 0
 LayerCount: 2
 Fore
-Refer: 11 -1 N 1 0 0 1 -40 0 2
-Colour: ff00ff
+SplineSet
+0 0 m 1
+ 0 32 l 1
+ 94 32 l 2
+ 126 32 135 50 136 70 c 2
+ 136 201 l 2
+ 136 236 148 265 169 285 c 0
+ 217 332 305 330 358 275 c 0
+ 411 219 435 169 435 125 c 0
+ 435 41 349 0 264 0 c 0
+ 166 0 l 1
+ 166 32 l 1
+ 264 32 l 0
+ 344 32 403 69 403 125 c 0
+ 403 157 384 200 334 253 c 0
+ 293 296 226 295 192 262 c 0
+ 178 248 168 228 168 201 c 2
+ 168 70 l 2
+ 167 38 146 0 94 0 c 2
+ 0 0 l 1
+EndSplineSet
 EndChar
