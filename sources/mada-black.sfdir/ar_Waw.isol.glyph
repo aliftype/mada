@@ -5,6 +5,7 @@ VWidth: 34
 Flags: HW
 AnchorPoint: "arMarkBelow" 219 -359 basechar 0
 AnchorPoint: "arDotBelow" 219 -359 basechar 0
+AnchorPoint: "arHamzaAbove" 283 553.924 basechar 0
 AnchorPoint: "arMarkAbove" 283 553.924 basechar 0
 AnchorPoint: "arDotAbove" 283 553.924 basechar 0
 LayerCount: 2
