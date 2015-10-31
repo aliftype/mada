@@ -3,8 +3,9 @@ Encoding: 65536 -1 0
 Width: 275
 VWidth: 0
 Flags: HW
+AnchorPoint: "arMarkBelow" 136 -29 basechar 0
 AnchorPoint: "arHamzaBelow" 136 -29 basechar 0
-AnchorPoint: "arAltDotBelow" 136 -29 basechar 0
+AnchorPoint: "arDotBelow" 136 -29 basechar 0
 AnchorPoint: "arMarkAbove" 136 664 basechar 0
 AnchorPoint: "arHamzaAbove" 136 664 basechar 0
 AnchorPoint: "arDotAbove" 136 664 basechar 0
@@ -13,8 +14,8 @@ Fore
 SplineSet
 85.5 624 m 1
  190.5 624 l 1
- 190.5 109.8203125 l 6
- 190.5 46.912109375 150.790039062 0.5 85 0.5 c 5
+ 190.5 109.8203125 l 2
+ 190.5 46.912109375 150.790039062 0.5 85 0.5 c 1
  85.5 624 l 1
 EndSplineSet
 EndChar
