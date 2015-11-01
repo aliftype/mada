@@ -52,8 +52,13 @@ NameList: AGL For New Fonts
 BeginPrivate: 0
 EndPrivate
 Grid
--1000 624 m 4
- 2000 624 l 4
+1000 0 m 25
+ -505 0 l 1
+ -505 105 l 1
+ 1000 105 l 1
+ 1000 0 l 25
+-1000 624 m 0
+ 2000 624 l 0
   Named: "Cap" 
 EndSplineSet
 AnchorClass2: "arMarkAbove"  "'mark' Mark positioning-1" "arMarkBelow"  "'mark' Mark positioning-1" "arMarkAboveDot"  "'mkmk' Mark to dot positioning-1" "arMarkBelowDot"  "'mkmk' Mark to dot positioning-1" "arHamzaBelow"  "'mark' Dot positioning-1" "arShartaAbove"  "'mark' Dot positioning-1" "arHamzaAbove"  "'mark' Dot positioning-1" "arDotBelow"  "'mark' Dot positioning-1" "arDotAbove"  "'mark' Dot positioning-1" 

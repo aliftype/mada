@@ -5,8 +5,8 @@ VWidth: 0
 Flags: HW
 AnchorPoint: "arMarkBelow" 381 -109 basechar 0
 AnchorPoint: "arDotBelow" 381 -109 basechar 0
-AnchorPoint: "arMarkAbove" 459 449.371 basechar 0
-AnchorPoint: "arDotAbove" 459 449.371 basechar 0
+AnchorPoint: "arMarkAbove" 459 449 basechar 0
+AnchorPoint: "arDotAbove" 459 449 basechar 0
 LayerCount: 2
 Fore
 SplineSet
