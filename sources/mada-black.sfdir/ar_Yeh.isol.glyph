@@ -3,30 +3,30 @@ Encoding: 65550 -1 14
 Width: 834
 VWidth: 34
 Flags: HW
-AnchorPoint: "arMarkAbove" 337 323 basechar 0
-AnchorPoint: "arHamzaAbove" 337 323 basechar 0
-AnchorPoint: "arDotAbove" 337 323 basechar 0
-AnchorPoint: "arMarkBelow" 459 -373 basechar 0
-AnchorPoint: "arDotBelow" 459 -373 basechar 0
+AnchorPoint: "arMarkAbove" 337 330 basechar 0
+AnchorPoint: "arHamzaAbove" 337 330 basechar 0
+AnchorPoint: "arDotAbove" 337 330 basechar 0
+AnchorPoint: "arMarkBelow" 459 -366 basechar 0
+AnchorPoint: "arDotBelow" 459 -366 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-714 225 m 5
- 714 53 l 5
- 606.5 53 l 1
- 613.375 69.875 l 1
- 683.538085938 -15.51171875 l 2
- 758.232421875 -106.413085938 686.720703125 -221 577 -221 c 2
- 347 -221 l 2
- 260.13671875 -221 120 -166.467773438 120 -10 c 2
- 120 216 l 1
- 292 216 l 1
- 292 -10 l 2
- 292 -35.5322265625 305.86328125 -49 347 -49 c 2
- 512 -49 l 1
- 498 -61 l 1
- 442.716796875 6.205078125 l 2
- 361.337890625 105.1328125 430.935546875 225 546 225 c 2
- 714 225 l 5
+714 232 m 1
+ 714 60 l 1
+ 606.5 60 l 1
+ 613.375 76.875 l 1
+ 683.538085938 -8.51171875 l 2
+ 758.232421875 -99.4130859375 686.720703125 -214 577 -214 c 2
+ 347 -214 l 2
+ 260.13671875 -214 120 -159.467773438 120 -3 c 2
+ 120 223 l 1
+ 292 223 l 1
+ 292 -3 l 2
+ 292 -28.5322265625 305.86328125 -42 347 -42 c 2
+ 512 -42 l 1
+ 498 -54 l 1
+ 442.716796875 13.205078125 l 2
+ 361.337890625 112.1328125 430.935546875 232 546 232 c 2
+ 714 232 l 1
 EndSplineSet
 EndChar
