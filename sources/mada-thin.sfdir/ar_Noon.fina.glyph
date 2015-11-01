@@ -6,11 +6,11 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-574 33 m 1
- 574 1 l 1
- 432 1 l 1
- 432 33 l 1
- 574 33 l 1
+574 32 m 1
+ 574 0 l 1
+ 432 0 l 1
+ 432 32 l 1
+ 574 32 l 1
 EndSplineSet
 Refer: 24 -1 N 1 0 0 1 0 0 2
 Colour: ff00ff

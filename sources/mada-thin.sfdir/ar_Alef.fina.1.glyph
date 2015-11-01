@@ -3,12 +3,12 @@ Encoding: 65557 -1 31
 Width: 0
 VWidth: -36
 Flags: HW
-AnchorPoint: "arHamzaBelow" 100 -99 basechar 0
-AnchorPoint: "arMarkBelow" 100 -99 basechar 0
-AnchorPoint: "arDotBelow" 100 -99 basechar 0
-AnchorPoint: "arHamzaAbove" 110 698 basechar 0
-AnchorPoint: "arMarkAbove" 110 698 basechar 0
-AnchorPoint: "arDotAbove" 110 698 basechar 0
+AnchorPoint: "arHamzaBelow" 100 -100 basechar 0
+AnchorPoint: "arMarkBelow" 100 -100 basechar 0
+AnchorPoint: "arDotBelow" 100 -100 basechar 0
+AnchorPoint: "arHamzaAbove" 110 697 basechar 0
+AnchorPoint: "arMarkAbove" 110 697 basechar 0
+AnchorPoint: "arDotAbove" 110 697 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -34,15 +34,15 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-235 199 m 1
- 267 199 l 17
- 256 136 220 77 129 26 c 1
- 107 26 l 1
- 132 40 237 97 235 199 c 1
-106 640 m 1
- 136 648 l 1
- 267 199 l 1
- 237 191 l 1
- 106 640 l 1
+235 198 m 1
+ 267 198 l 17
+ 256 135 220 76 129 25 c 1
+ 107 25 l 1
+ 132 39 237 96 235 198 c 1
+106 639 m 1
+ 136 647 l 1
+ 267 198 l 1
+ 237 190 l 1
+ 106 639 l 1
 EndSplineSet
 EndChar

@@ -3,10 +3,10 @@ Encoding: 65556 -1 30
 Width: 362
 VWidth: -36
 Flags: HW
-AnchorPoint: "arMarkBelow" 305 -99 basechar 0
-AnchorPoint: "arDotBelow" 305 -99 basechar 0
-AnchorPoint: "arMarkAbove" 305 724 basechar 0
-AnchorPoint: "arDotAbove" 305 724 basechar 0
+AnchorPoint: "arMarkBelow" 305 -100 basechar 0
+AnchorPoint: "arDotBelow" 305 -100 basechar 0
+AnchorPoint: "arMarkAbove" 305 723 basechar 0
+AnchorPoint: "arDotAbove" 305 723 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -34,12 +34,12 @@ Fore
 SplineSet
 290 624 m 1
  322 624 l 1
- 322 71 l 2
- 322 31 292 1 255 1 c 2
- 40 1 l 1
- 40 33 l 1
- 255 33 l 2
- 274 33 290 47 290 71 c 2
+ 322 70 l 2
+ 322 30 292 0 255 0 c 2
+ 40 0 l 1
+ 40 32 l 1
+ 255 32 l 2
+ 274 32 290 46 290 70 c 2
  290 624 l 1
 EndSplineSet
 EndChar
