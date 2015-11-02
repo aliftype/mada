@@ -10,7 +10,7 @@ AnchorPoint: "arDotAbove" 709 559 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1094 171 m 1
+1094 172 m 1
  1094 0 l 1
  776 0 l 2
  685 0 584 0 520 106 c 0
@@ -31,7 +31,7 @@ SplineSet
  766 246 751 260 732 266 c 0
  712 273 690 266 677 252 c 0
  660 233 659 209 668 194 c 0
- 682 170 688.994140625 171 776 171 c 2
- 1094 171 l 1
+ 682 170 689 172 776 172 c 2
+ 1094 172 l 1
 EndSplineSet
 EndChar
