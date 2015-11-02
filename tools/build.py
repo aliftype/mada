@@ -8,7 +8,7 @@ from sortsmill import ffcompat as fontforge
 def handle_cloned_glyphs(font):
     for glyph in font.glyphs():
         if glyph.color == 0xff00ff:
-            assert len(glyph.references) == 1
+            assert len(glyph.references) > 0
             base = glyph.references[0][0]
             base = font[base]
             glyph.anchorPoints = base.anchorPoints

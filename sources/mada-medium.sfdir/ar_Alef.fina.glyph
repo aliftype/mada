@@ -11,12 +11,6 @@ AnchorPoint: "arDotAbove" 136 664 basechar 0
 AnchorPoint: "arHamzaAbove" 136 664 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-297 105 m 1
- 297 0 l 1
- 266 0 l 1
- 266 105 l 1
- 297 105 l 1
-EndSplineSet
+Refer: 174 -1 N -1 0 0 1 282 0 2
 Refer: 35 -1 N -1 0 0 1 277 0 2
 EndChar

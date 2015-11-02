@@ -1,21 +1,21 @@
 StartChar: arGaf.isol
 Encoding: 65612 -1 152
-Width: 1022
+Width: 981
 VWidth: 0
 Flags: HW
-AnchorPoint: "arMarkAbove" 373 750 basechar 0
-AnchorPoint: "arDotAbove" 373 750 basechar 0
-AnchorPoint: "arMarkBelow" 503 -149 basechar 0
-AnchorPoint: "arDotBelow" 503 -149 basechar 0
-AnchorPoint: "arShartaAbove" 655 768 basechar 0
+AnchorPoint: "arMarkAbove" 353 750 basechar 0
+AnchorPoint: "arDotAbove" 353 750 basechar 0
+AnchorPoint: "arMarkBelow" 483 -149 basechar 0
+AnchorPoint: "arDotBelow" 483 -149 basechar 0
+AnchorPoint: "arShartaAbove" 635 768 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-302 172 m 1
- 446 0 l 1
- 284 0 l 1
- 140 172 l 1
- 302 172 l 1
+282 172 m 1
+ 426 0 l 1
+ 264 0 l 1
+ 120 172 l 1
+ 282 172 l 1
 EndSplineSet
-Refer: 61 -1 N 1 0 0 1 284 0 2
+Refer: 61 -1 N 1 0 0 1 264 0 2
 EndChar

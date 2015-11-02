@@ -1,0 +1,15 @@
+StartChar: extender
+Encoding: 65623 -1 174
+Width: 0
+VWidth: 34
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+15 172 m 1
+ 15 0 l 1
+ -15 0 l 1
+ -15 172 l 1
+ 15 172 l 1
+EndSplineSet
+EndChar

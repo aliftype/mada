@@ -1,12 +1,12 @@
 StartChar: arLam.init.1
 Encoding: 65556 -1 30
-Width: 713
+Width: 712
 VWidth: 34
 Flags: HW
-AnchorPoint: "arMarkBelow" 511 -99 basechar 0
-AnchorPoint: "arDotBelow" 511 -99 basechar 0
-AnchorPoint: "arMarkAbove" 511 710 basechar 0
-AnchorPoint: "arDotAbove" 511 710 basechar 0
+AnchorPoint: "arMarkBelow" 509 -99 basechar 0
+AnchorPoint: "arDotBelow" 509 -99 basechar 0
+AnchorPoint: "arMarkAbove" 509 710 basechar 0
+AnchorPoint: "arDotAbove" 509 710 basechar 0
 LayerCount: 2
 Back
 SplineSet
@@ -32,14 +32,14 @@ SplineSet
 EndSplineSet
 Fore
 SplineSet
-422 624 m 1
- 594 624 l 1
- 594 138 l 2
- 594 62 531 0 455 0 c 2
- 122 0 l 1
- 122 172 l 1
- 442 172 l 1
- 422 152 l 1
- 422 624 l 1
+420 624 m 1
+ 592 624 l 1
+ 592 138 l 2
+ 592 62 529 0 453 0 c 2
+ 120 0 l 1
+ 120 172 l 1
+ 440 172 l 1
+ 420 152 l 1
+ 420 624 l 1
 EndSplineSet
 EndChar

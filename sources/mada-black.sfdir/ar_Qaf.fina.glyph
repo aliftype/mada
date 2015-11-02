@@ -1,6 +1,6 @@
 StartChar: arQaf.fina
 Encoding: 65576 -1 53
-Width: 1004
+Width: 944
 VWidth: 34
 Flags: HW
 AnchorPoint: "arMarkBelow" 489 -338 basechar 0
@@ -10,8 +10,8 @@ AnchorPoint: "arDotAbove" 639 560 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1024 172 m 1
- 1024 0 l 1
+964 172 m 1
+ 964 0 l 1
  706 0 l 2
  615 0 514 0 450 106 c 0
  380 221 439 349 521 403 c 0
@@ -32,6 +32,6 @@ SplineSet
  642 273 620 266 607 252 c 0
  590 233 589 209 598 194 c 0
  612 170 619 172 706 172 c 2
- 1024 172 l 1
+ 964 172 l 1
 EndSplineSet
 EndChar
