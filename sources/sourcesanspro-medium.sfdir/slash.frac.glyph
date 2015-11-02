@@ -1,0 +1,17 @@
+StartChar: slash.frac
+Encoding: 1114690 -1 1726
+Width: 86
+Flags: MW
+HStem: -12 680<-167 251 -167 251>
+VStem: -167 418
+LayerCount: 2
+Fore
+SplineSet
+-167 -12 m 1
+ 195 668 l 1
+ 251 668 l 1
+ -111 -12 l 1
+ -167 -12 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

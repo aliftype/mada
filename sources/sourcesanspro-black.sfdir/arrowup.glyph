@@ -1,0 +1,23 @@
+StartChar: arrowup
+Encoding: 8593 8593 1776
+Width: 616
+Flags: MW
+HStem: -26 556<240 310 306 310 306 376>
+VStem: 240 136<-26 300 -26 300>
+LayerCount: 2
+Fore
+SplineSet
+240 -26 m 1
+ 240 300 l 1
+ 130 170 l 1
+ 38 250 l 1
+ 306 530 l 1
+ 310 530 l 1
+ 578 250 l 1
+ 486 170 l 1
+ 376 300 l 1
+ 376 -26 l 1
+ 240 -26 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

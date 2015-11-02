@@ -1,0 +1,20 @@
+StartChar: seven.subs
+Encoding: 8327 8327 1595
+Width: 380
+Flags: MW
+HStem: 96 104<50 214 50 352>
+VStem: 50 302<134 200 134 200 134 200> 112 132<-190 -190>
+LayerCount: 2
+Fore
+SplineSet
+112 -190 m 1xa0
+ 118 -74 150 -4 214 96 c 1
+ 50 96 l 1
+ 50 200 l 1
+ 352 200 l 1
+ 352 134 l 1xc0
+ 266 24 250 -60 244 -190 c 1
+ 112 -190 l 1xa0
+EndSplineSet
+Colour: ff0000
+EndChar

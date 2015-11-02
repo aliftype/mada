@@ -1,0 +1,17 @@
+StartChar: uni203E
+Encoding: 8254 8254 1173
+Width: 500
+Flags: MW
+HStem: 568 55<12 488 12 488>
+VStem: 12 476<568 623 568 623>
+LayerCount: 2
+Fore
+SplineSet
+12 568 m 1
+ 12 623 l 1
+ 488 623 l 1
+ 488 568 l 1
+ 12 568 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

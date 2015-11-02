@@ -1,0 +1,22 @@
+StartChar: Idotaccent.sc
+Encoding: 1114362 -1 1316
+Width: 232
+Flags: MW
+HStem: 0 21G<100 100 100 132> 490 20G<100 132 132 132> 604 70<107 125>
+VStem: 82 68<629 650> 100 32<0 510 0 510>
+LayerCount: 2
+Fore
+SplineSet
+100 0 m 1xe8
+ 100 510 l 1
+ 132 510 l 1
+ 132 0 l 1
+ 100 0 l 1xe8
+116 604 m 0xf0
+ 98 604 82 618 82 640 c 0
+ 82 660 98 674 116 674 c 0
+ 134 674 150 660 150 640 c 0
+ 150 618 134 604 116 604 c 0xf0
+EndSplineSet
+Colour: ff0000
+EndChar

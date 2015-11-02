@@ -1,0 +1,19 @@
+StartChar: one.sups
+Encoding: 185 185 1575
+Width: 367
+Flags: MW
+HStem: 703 82<87 236>
+VStem: 172 64<395 703 703 703>
+LayerCount: 2
+Fore
+SplineSet
+172 395 m 1
+ 172 703 l 1
+ 87 703 l 1
+ 87 745 l 1
+ 131 753 157 765 184 785 c 1
+ 236 785 l 1
+ 236 395 l 1
+ 172 395 l 1
+EndSplineSet
+EndChar

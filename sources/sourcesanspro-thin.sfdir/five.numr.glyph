@@ -1,0 +1,29 @@
+StartChar: five.numr
+Encoding: 1114643 -1 1621
+Width: 360
+Flags: MW
+HStem: 258 26<155 210 155 216> 500 26<166 210> 632 28<120 288 120 120>
+VStem: 280 30<360 425>
+LayerCount: 2
+Fore
+SplineSet
+180 258 m 0
+ 112 258 70 294 42 332 c 1
+ 66 350 l 1
+ 92 312 128 284 182 284 c 0
+ 238 284 280 328 280 392 c 0
+ 280 458 240 500 180 500 c 0
+ 142 500 116 480 94 462 c 1
+ 74 476 l 1
+ 94 660 l 1
+ 288 660 l 1
+ 288 632 l 1
+ 120 632 l 1
+ 106 504 l 1
+ 126 516 150 526 182 526 c 0
+ 254 526 310 480 310 392 c 0
+ 310 310 252 258 180 258 c 0
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" five.dnom
+Colour: ff0000
+EndChar

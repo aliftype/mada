@@ -1,0 +1,27 @@
+StartChar: one.tnum
+Encoding: 1114232 -1 1112
+Width: 497
+Flags: MW
+HStem: 0 68<79 225 79 225 307 439> 474 100<109 307>
+VStem: 225 82<68 474 474 474>
+LayerCount: 2
+Fore
+SplineSet
+79 0 m 1
+ 79 68 l 1
+ 225 68 l 1
+ 225 474 l 1
+ 109 474 l 1
+ 109 527 l 1
+ 167 537 209 553 244 574 c 1
+ 307 574 l 1
+ 307 68 l 1
+ 439 68 l 1
+ 439 0 l 1
+ 79 0 l 1
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" one
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" one.onum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" one.onum one
+Colour: ff0000
+EndChar

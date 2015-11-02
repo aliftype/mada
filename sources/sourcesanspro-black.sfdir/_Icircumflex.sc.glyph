@@ -1,0 +1,26 @@
+StartChar: Icircumflex.sc
+Encoding: 1114358 -1 1312
+Width: 316
+Flags: MW
+HStem: 0 21G<72 72 72 244> 512 20G<72 244 244 244> 652 74<156 160 156 156>
+VStem: 72 172<0 532 0 532>
+LayerCount: 2
+Fore
+SplineSet
+72 0 m 1
+ 72 532 l 1
+ 244 532 l 1
+ 244 0 l 1
+ 72 0 l 1
+-20 616 m 1
+ 64 726 l 1
+ 252 726 l 1
+ 336 616 l 1
+ 262 572 l 1
+ 160 652 l 1
+ 156 652 l 1
+ 54 572 l 1
+ -20 616 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

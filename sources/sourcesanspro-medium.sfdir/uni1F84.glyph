@@ -1,0 +1,68 @@
+StartChar: uni1F84
+Encoding: 8068 8068 835
+Width: 560
+GlyphClass: 3
+Flags: MW
+HStem: -201 55<338 342> -12 69<212.5 264.5> 429 69<233 289 203 290.5> 466 20G<432 513 513 513> 705 51<128 132>
+VStem: 46 85<178.5 299 178.5 317.5> 201 60<649 675> 254 62<-108 -107.5 -126 -62 -126 -62> 387 65<53 151.5>
+LayerCount: 2
+Fore
+SplineSet
+233 -12 m 0xed80
+ 122 -12 46 75 46 234 c 0
+ 46 401 147 498 259 498 c 0xed80
+ 319 498 381 463 409 371 c 1
+ 411 371 l 1
+ 432 486 l 1
+ 513 486 l 1xdd80
+ 487 358 452 196 452 107 c 0
+ 452 74 474 56 500 56 c 0
+ 511 56 524 60 534 64 c 1
+ 546 1 l 1
+ 532 -5 512 -12 483 -12 c 0
+ 425 -12 387 19 387 87 c 1
+ 384 87 l 1
+ 347 21 296 -12 233 -12 c 0xed80
+250 57 m 0
+ 314 57 376 126 382 208 c 1
+ 390 299 l 1
+ 363 405 313 429 268 429 c 0
+ 198 429 131 363 131 235 c 0
+ 131 122 175 57 250 57 c 0
+331 -201 m 0
+ 278 -201 254 -168 254 -108 c 2
+ 254 -62 l 1
+ 318 -62 l 1
+ 316 -79 316 -100 316 -115 c 0
+ 316 -137 330 -146 346 -146 c 0
+ 351 -146 355 -146 368 -143 c 1
+ 377 -192 l 1
+ 364 -197 353 -201 331 -201 c 0
+164 577 m 1xee80
+ 154 615 l 1
+ 181 622 201 636 201 662 c 0
+ 201 688 177 702 128 705 c 1
+ 132 756 l 1
+ 210 753 261 725 261 671 c 0
+ 261 612 212 588 164 577 c 1xee80
+296 569 m 1
+ 338 770 l 1
+ 412 756 l 1
+ 346 559 l 1
+ 296 569 l 1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 16 subtable" Alphaiotasub.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" uni1FB3 uni03130301
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" alpha uni0345 uni03130301
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" nu dx=0 dy=0 dh=-11 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FBE dx=0 dy=0 dh=6 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F77 dx=0 dy=0 dh=6 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F31 dx=0 dy=0 dh=6 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F30 dx=0 dy=0 dh=6 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" iotatonos dx=0 dy=0 dh=6 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" iota dx=0 dy=0 dh=6 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-11 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

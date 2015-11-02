@@ -1,0 +1,27 @@
+StartChar: uni0408.sc
+Encoding: 1114555 -1 1509
+Width: 412
+Flags: MW
+HStem: -12 30<154 213 154 227> 490 20G<282 314 314 314>
+VStem: 282 32<139 510>
+LayerCount: 2
+Fore
+SplineSet
+177 -12 m 0
+ 117 -12 71 17 44 64 c 1
+ 68 80 l 1
+ 96 36 130 18 178 18 c 0
+ 248 18 282 55 282 139 c 2
+ 282 510 l 1
+ 314 510 l 1
+ 314 135 l 2
+ 314 54 277 -12 177 -12 c 0
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0408.sc dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quotedblbase dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quotesinglbase dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" ellipsis dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" comma dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" period dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

@@ -1,0 +1,31 @@
+StartChar: question
+Encoding: 63 63 1148
+Width: 478
+Flags: MW
+HStem: -12 21G<197 255> -12 208<197 255> 544 138<201 233>
+VStem: 126 200<63 121> 274 164<462 512>
+LayerCount: 2
+Fore
+SplineSet
+152 244 m 1xa8
+ 132 374 274 430 274 494 c 0
+ 274 530 248 544 218 544 c 0
+ 184 544 162 526 136 502 c 1
+ 42 588 l 1
+ 91 644 160 682 240 682 c 0
+ 350 682 438 632 438 506 c 0
+ 438 386 292 354 302 244 c 1
+ 152 244 l 1xa8
+226 -12 m 0xb0
+ 168 -12 126 34 126 92 c 0
+ 126 150 168 196 226 196 c 0x70
+ 284 196 326 150 326 92 c 0
+ 326 34 284 -12 226 -12 c 0xb0
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 19 subtable" question.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" question.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BE dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BC dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quotedblright dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quoteright dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+EndChar

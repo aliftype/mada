@@ -1,0 +1,24 @@
+StartChar: imacron
+Encoding: 299 299 320
+Width: 246
+Flags: MW
+HStem: 0 21G<82 82 82 164> 466 20G<82 164 164 164> 601 57<-10 256 -10 256>
+VStem: 82 82<0 486 0 486>
+LayerCount: 2
+Fore
+SplineSet
+82 0 m 1
+ 82 486 l 1
+ 164 486 l 1
+ 164 0 l 1
+ 82 0 l 1
+-10 601 m 1
+ -10 658 l 1
+ 256 658 l 1
+ 256 601 l 1
+ -10 601 l 1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Imacron.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Imacron.sc
+Colour: ff0000
+EndChar

@@ -1,0 +1,28 @@
+StartChar: uni0457.a
+Encoding: 1114205 -1 1038
+Width: 257
+Flags: MW
+HStem: 588 98<50 76 181 207>
+VStem: 17 92<623 651> 87 82<0 486 0 486> 148 92<623 651>
+LayerCount: 2
+Fore
+SplineSet
+63 588 m 0xd0
+ 37 588 17 609 17 637 c 0
+ 17 665 37 686 63 686 c 0
+ 89 686 109 665 109 637 c 0
+ 109 609 89 588 63 588 c 0xd0
+194 588 m 0
+ 168 588 148 609 148 637 c 0
+ 148 665 168 686 194 686 c 0
+ 220 686 240 665 240 637 c 0
+ 240 609 220 588 194 588 c 0
+87 0 m 1xa0
+ 87 486 l 1
+ 169 486 l 1
+ 169 0 l 1
+ 87 0 l 1xa0
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" uni0457.a dx=0 dy=0 dh=14 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

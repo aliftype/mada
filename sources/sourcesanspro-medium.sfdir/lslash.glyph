@@ -1,0 +1,32 @@
+StartChar: lslash
+Encoding: 322 322 340
+Width: 262
+Flags: MW
+HStem: -12 68<142 193.5> 692 20G<86 168 168 168>
+VStem: 86 82<98 331 331 331 444 712>
+LayerCount: 2
+Fore
+SplineSet
+173 -12 m 0
+ 111 -12 86 27 86 98 c 2
+ 86 331 l 1
+ 29 295 l 1
+ -1 348 l 1
+ 86 401 l 1
+ 86 712 l 1
+ 168 712 l 1
+ 168 444 l 1
+ 222 479 l 1
+ 252 426 l 1
+ 168 374 l 1
+ 168 92 l 2
+ 168 66 179 56 191 56 c 0
+ 196 56 200 56 209 58 c 1
+ 220 -4 l 1
+ 209 -9 195 -12 173 -12 c 0
+EndSplineSet
+Substitution2: "'ss01' Style Set 1 lookup 36 subtable" lslash.a
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Lslash.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" Lslash.sc lslash.a
+Colour: ff0000
+EndChar

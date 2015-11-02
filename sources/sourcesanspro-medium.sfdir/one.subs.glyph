@@ -1,0 +1,20 @@
+StartChar: one.subs
+Encoding: 8321 8321 1589
+Width: 367
+Flags: MW
+HStem: 131 82<87 236>
+VStem: 172 64<-177 131 131 131>
+LayerCount: 2
+Fore
+SplineSet
+172 -177 m 1
+ 172 131 l 1
+ 87 131 l 1
+ 87 173 l 1
+ 131 181 157 193 184 213 c 1
+ 236 213 l 1
+ 236 -177 l 1
+ 172 -177 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

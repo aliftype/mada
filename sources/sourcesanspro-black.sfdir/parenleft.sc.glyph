@@ -1,0 +1,19 @@
+StartChar: parenleft.sc
+Encoding: 1114614 -1 1568
+Width: 360
+Flags: MW
+HStem: -130 776<200 200>
+VStem: 68 138<199.5 316.5 199.5 332>
+LayerCount: 2
+Fore
+SplineSet
+200 -130 m 1
+ 116 -13 68 110 68 258 c 0
+ 68 406 116 529 200 646 c 1
+ 308 602 l 1
+ 236 493 206 375 206 258 c 0
+ 206 141 236 23 308 -86 c 1
+ 200 -130 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

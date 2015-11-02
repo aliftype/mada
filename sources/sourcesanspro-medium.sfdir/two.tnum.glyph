@@ -1,0 +1,28 @@
+StartChar: two.tnum
+Encoding: 1114233 -1 1113
+Width: 497
+Flags: MW
+HStem: 0 71<276 452 276 452> 517 67<193 259.5>
+VStem: 338 80<349.5 431>
+LayerCount: 2
+Fore
+SplineSet
+40 0 m 1
+ 40 49 l 1
+ 230 207 338 303 338 396 c 0
+ 338 466 299 517 220 517 c 0
+ 166 517 120 484 83 441 c 1
+ 36 487 l 1
+ 89 546 146 584 229 584 c 0
+ 345 584 418 510 418 399 c 0
+ 418 291 313 199 169 65 c 1
+ 204 68 243 71 276 71 c 2
+ 452 71 l 1
+ 452 0 l 1
+ 40 0 l 1
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" two
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" two.onum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" two.onum two
+Colour: ff0000
+EndChar

@@ -1,0 +1,26 @@
+StartChar: uni0306
+Encoding: 774 774 1837
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 570 26<-37.5 37.5 -37.5 50.5>
+VStem: -146 26<716 720> 120 26<716 720>
+AnchorPoint: "Anchor-9" 0 502 mark 0
+AnchorPoint: "Anchor-0" 0 502 mark 0
+LayerCount: 2
+Fore
+SplineSet
+0 570 m 0
+ -101 570 -138 654 -146 716 c 1
+ -120 720 l 1
+ -112 662 -75 596 0 596 c 0
+ 75 596 112 662 120 720 c 1
+ 146 716 l 1
+ 138 654 101 570 0 570 c 0
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" uni0306.cap
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" uni0306.cap
+Substitution2: "'locl' Localized Forms in Cyrillic lookup 5 subtable" uni0306.c
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni0306.c uni0306.cap
+Colour: ff0000
+EndChar

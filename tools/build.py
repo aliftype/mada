@@ -18,35 +18,34 @@ def merge(args):
     arabic.encoding = "Unicode"
     arabic.mergeFeature(args.feature_file)
 
-#   latin = fontforge.open(args.latinfile)
-#   latin.encoding = "Unicode"
-#   latin.em = arabic.em
+    latin = fontforge.open(args.latinfile)
+    latin.encoding = "Unicode"
+    latin.em = arabic.em
 
-#   latin_locl = ""
-#   for glyph in latin.glyphs():
-#       if glyph.color == 0xff0000:
-#           latin.removeGlyph(glyph)
-#       else:
-#           if glyph.glyphname in arabic:
-#               name = glyph.glyphname
-#               glyph.unicode = -1
-#               glyph.glyphname = name + ".latin"
-#               if not latin_locl:
-#                   latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
-#               latin_locl += "sub %s by %s;" % (name, glyph.glyphname)
+    latin_locl = ""
+    for glyph in latin.glyphs():
+        if glyph.color == 0xff0000:
+            latin.removeGlyph(glyph)
+        else:
+            if glyph.glyphname in arabic:
+                name = glyph.glyphname
+                glyph.unicode = -1
+                glyph.glyphname = name + ".latin"
+                if not latin_locl:
+                    latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
+                latin_locl += "sub %s by %s;" % (name, glyph.glyphname)
 
-#   arabic.mergeFonts(latin)
-#   if latin_locl:
-#       latin_locl += "} locl;"
-#       arabic.mergeFeatureString(latin_locl)
+    arabic.mergeFonts(latin)
+    if latin_locl:
+        latin_locl += "} locl;"
+        arabic.mergeFeatureString(latin_locl)
 
     # Set metadata
     arabic.version = args.version
     years = datetime.now().year == 2015 and 2015 or "2015-%s" % datetime.now().year
 
-    arabic.copyright = "Copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)"
-#   arabic.copyright = ". ".join(["Portions copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)",
-#                             "Portions " + latin.copyright[0].lower() + latin.copyright[1:].replace("(c)", "©")])
+    arabic.copyright = ". ".join(["Portions copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)",
+                              "Portions " + latin.copyright[0].lower() + latin.copyright[1:].replace("(c)", "©")])
     arabic.copyright = arabic.copyright % years
 
     handle_cloned_glyphs(arabic)
@@ -67,7 +66,7 @@ this Font Software.')
 def main():
     parser = argparse.ArgumentParser(description="Create a version of Amiri with colored marks using COLR/CPAL tables.")
     parser.add_argument("arabicfile", metavar="FILE", help="input font to process")
-#   parser.add_argument("latinfile", metavar="FILE", help="input font to process")
+    parser.add_argument("latinfile", metavar="FILE", help="input font to process")
     parser.add_argument("--out-file", metavar="FILE", help="output font to write", required=True)
     parser.add_argument("--feature-file", metavar="FILE", help="output font to write", required=True)
     parser.add_argument("--version", metavar="version", help="version number", required=True)

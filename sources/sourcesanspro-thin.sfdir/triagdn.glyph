@@ -1,0 +1,19 @@
+StartChar: triagdn
+Encoding: 9660 9660 1787
+Width: 910
+Flags: MW
+HStem: -80 840<453 457 453 453>
+VStem: 55 800<758 760 758 760>
+LayerCount: 2
+Fore
+SplineSet
+855 760 m 1
+ 855 758 l 1
+ 457 -80 l 1
+ 453 -80 l 1
+ 55 758 l 1
+ 55 760 l 1
+ 855 760 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

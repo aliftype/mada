@@ -1,0 +1,23 @@
+StartChar: uni031D
+Encoding: 797 797 1867
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: -196 28<-86 -14 14 86 -86 -14>
+VStem: -14 28<-168 -62 -168 -62>
+AnchorPoint: "Anchor-4" 0 -22 mark 0
+LayerCount: 2
+Fore
+SplineSet
+86 -196 m 1
+ -86 -196 l 1
+ -86 -168 l 1
+ -14 -168 l 1
+ -14 -62 l 1
+ 14 -62 l 1
+ 14 -168 l 1
+ 86 -168 l 1
+ 86 -196 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,52 @@
+StartChar: uni1F2F
+Encoding: 7983 7983 676
+Width: 840
+GlyphClass: 3
+Flags: MW
+HStem: 0 21G<278 278 278 361 666 666 666 750> 309 72<361 666 361 666> 533 39<149 156> 592 45<124 148 124 165> 627 45<40 64> 636 20G<278 361 361 361 666 750 750 750> 648 20G<170 170>
+VStem: -24 42<596 602> 27 60<494.5 510.5 494.5 530.5> 170 42<662 668> 278 83<0 309 381 656> 666 84<0 309 309 309 381 656 0 656>
+LayerCount: 2
+Fore
+SplineSet
+278 0 m 1xd230
+ 278 656 l 1
+ 361 656 l 1
+ 361 381 l 1
+ 666 381 l 1
+ 666 656 l 1
+ 750 656 l 1xe4b0
+ 750 0 l 1
+ 666 0 l 1
+ 666 309 l 1
+ 361 309 l 1
+ 361 0 l 1
+ 278 0 l 1xd230
+121 439 m 1
+ 73 448 27 469 27 510 c 0
+ 27 551 71 569 149 572 c 1
+ 156 533 l 1
+ 107 530 87 520 87 501 c 0
+ 87 488 104 478 129 472 c 1
+ 121 439 l 1
+-24 602 m 1xc930
+ -19 648 1 672 45 672 c 0xc930
+ 93 672 108 637 140 637 c 0
+ 156 637 168 643 170 668 c 1
+ 212 662 l 1
+ 207 615 187 592 143 592 c 0xd270
+ 95 592 80 627 48 627 c 0
+ 32 627 20 621 18 596 c 1
+ -24 602 l 1xc930
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Eta.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Eta uni03120303
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Eta.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Omicron.sc dx=0 dy=0 dh=15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Theta.sc dx=0 dy=0 dh=15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Zeta.sc dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=28 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=28 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Tau.sc dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Chi.sc dx=0 dy=0 dh=23 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

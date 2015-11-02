@@ -1,0 +1,21 @@
+StartChar: uni0306.ccap
+Encoding: 1114701 -1 1840
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 705 46<-28 28 -28 55.5>
+VStem: -151 72<837 837> 79 72<837 837>
+AnchorPoint: "Anchor-1" 0 678 mark 0
+LayerCount: 2
+Fore
+SplineSet
+0 705 m 0
+ -111 705 -147 770 -151 837 c 1
+ -79 837 l 1
+ -77 790 -56 751 0 751 c 0
+ 56 751 77 790 79 837 c 1
+ 151 837 l 1
+ 147 770 111 705 0 705 c 0
+EndSplineSet
+Colour: ff0000
+EndChar

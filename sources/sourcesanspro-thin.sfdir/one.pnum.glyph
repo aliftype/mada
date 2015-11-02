@@ -1,0 +1,22 @@
+StartChar: one.pnum
+Encoding: 1114220 -1 1100
+Width: 336
+Flags: MW
+HStem: 0 21G<174 174 174 204> 580 22<60 174 60 60> 580 60<60 204>
+VStem: 174 30<0 580 580 580>
+LayerCount: 2
+Fore
+SplineSet
+174 0 m 1xb0
+ 174 580 l 1
+ 60 580 l 1xb0
+ 60 602 l 1xd0
+ 110 610 150 624 178 640 c 1
+ 204 640 l 1
+ 204 0 l 1
+ 174 0 l 1xb0
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" one.onum
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" one.onum
+Colour: ff0000
+EndChar

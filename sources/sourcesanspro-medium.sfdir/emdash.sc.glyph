@@ -1,0 +1,17 @@
+StartChar: emdash.sc
+Encoding: 1114613 -1 1567
+Width: 687
+Flags: MW
+HStem: 243 57<41 646 41 646>
+VStem: 41 605<243 300 243 300>
+LayerCount: 2
+Fore
+SplineSet
+41 243 m 1
+ 41 300 l 1
+ 646 300 l 1
+ 646 243 l 1
+ 41 243 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

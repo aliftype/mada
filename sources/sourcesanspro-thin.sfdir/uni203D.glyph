@@ -1,0 +1,36 @@
+StartChar: uni203D
+Encoding: 8253 8253 1195
+Width: 394
+Flags: MW
+HStem: -12 78<173 191> 654 28<165 232>
+VStem: 146 72<14 39> 166 32<488 550 488 550> 310 32<484.5 562>
+LayerCount: 2
+Fore
+SplineSet
+170 172 m 1x58
+ 166 488 l 1
+ 166 550 l 1
+ 198 550 l 1
+ 198 488 l 1
+ 194 302 l 1
+ 233 386 310 439 310 530 c 0
+ 310 594 274 654 190 654 c 0
+ 140 654 90 630 56 588 c 1
+ 36 606 l 1
+ 74 648 124 682 192 682 c 0
+ 288 682 342 614 342 532 c 0
+ 342 412 214 348 193 229 c 1
+ 192 172 l 1
+ 170 172 l 1x58
+182 -12 m 0xe8
+ 164 -12 146 2 146 26 c 0
+ 146 52 164 66 182 66 c 0
+ 200 66 218 52 218 26 c 0
+ 218 2 200 -12 182 -12 c 0xe8
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BE dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BC dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quotedblright dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quoteright dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

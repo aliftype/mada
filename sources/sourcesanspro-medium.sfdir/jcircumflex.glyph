@@ -1,0 +1,32 @@
+StartChar: jcircumflex
+Encoding: 309 309 328
+Width: 247
+Flags: MW
+HStem: -217 67<17 47 14.5 80.5> 466 20G<83 165 165 165> 681 59<122 126 122 122>
+VStem: 83 82<-55 486>
+LayerCount: 2
+Fore
+SplineSet
+32 -217 m 0
+ 2 -217 -23 -211 -40 -204 c 1
+ -23 -142 l 1
+ -11 -146 6 -150 23 -150 c 0
+ 71 -150 83 -114 83 -55 c 2
+ 83 486 l 1
+ 165 486 l 1
+ 165 -55 l 2
+ 165 -154 129 -217 32 -217 c 0
+-31 600 m 1
+ 83 740 l 1
+ 165 740 l 1
+ 279 600 l 1
+ 244 568 l 1
+ 126 681 l 1
+ 122 681 l 1
+ 4 568 l 1
+ -31 600 l 1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Jcircumflex.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Jcircumflex.sc
+Colour: ff0000
+EndChar

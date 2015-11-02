@@ -1,0 +1,34 @@
+StartChar: uni1E9E
+Encoding: 7838 7838 196
+Width: 636
+Flags: MW
+HStem: -12 30<380 458 380 461> 0 21G<100 132 100 100> 642 30<273 373>
+VStem: 100 32<0 412 0 424 0 505.5> 556 34<122 204>
+LayerCount: 2
+Fore
+SplineSet
+410 -12 m 0xb8
+ 342 -12 277 16 234 68 c 1
+ 258 92 l 1
+ 301 42 348 18 412 18 c 0xb8
+ 504 18 556 80 556 164 c 0
+ 556 244 518 308 330 338 c 1
+ 328 366 l 1
+ 488 542 l 1
+ 462 598 412 642 334 642 c 0
+ 212 642 132 572 132 412 c 2
+ 132 0 l 1
+ 100 0 l 1x78
+ 100 424 l 2
+ 100 587 200 672 336 672 c 0
+ 432 672 488 620 528 540 c 1
+ 366 364 l 1
+ 538 338 590 258 590 166 c 0
+ 590 64 512 -12 410 -12 c 0xb8
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" uni1E9E.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni1E9E.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" trademark dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" asterisk dx=0 dy=0 dh=-90 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

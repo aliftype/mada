@@ -1,0 +1,48 @@
+StartChar: Chi.sc
+Encoding: 1114506 -1 1460
+Width: 408
+GlyphClass: 2
+Flags: MW
+HStem: 0 21G<18 18 18 51 355 355 355 390> 490 20G<30 64 64 64 344 378 378 378>
+VStem: 18 372<0 0>
+AnchorPoint: "Anchor-4" 284 -22 basechar 0
+AnchorPoint: "Anchor-3" 284 0 basechar 0
+AnchorPoint: "Anchor-1" 285 582 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+18 0 m 1
+ 186 264 l 1
+ 30 510 l 1
+ 64 510 l 1
+ 160 357 l 2
+ 175 334 186 316 204 288 c 1
+ 208 288 l 1
+ 224 316 236 334 250 357 c 2
+ 344 510 l 1
+ 378 510 l 1
+ 222 262 l 1
+ 390 0 l 1
+ 355 0 l 1
+ 255 159 l 2
+ 239 184 224 209 204 239 c 1
+ 200 239 l 1
+ 182 209 166 184 151 159 c 2
+ 51 0 l 1
+ 18 0 l 1
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guillemotleft dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guilsinglleft dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" hyphen.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Omicron.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Theta.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quoteright.sc dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quoteleft.sc dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" periodcentered dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Tau.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Psi.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Alphaiotasub.sc dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Lambda.sc dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Alpha.sc dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

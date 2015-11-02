@@ -1,0 +1,25 @@
+StartChar: uni1FCE
+Encoding: 8142 8142 886
+Width: 542
+GlyphClass: 5
+Flags: MW
+HStem: 705 51<115 119>
+VStem: 188 60<649 675>
+LayerCount: 2
+Fore
+SplineSet
+151 577 m 1
+ 141 615 l 1
+ 168 622 188 636 188 662 c 0
+ 188 688 164 702 115 705 c 1
+ 119 756 l 1
+ 197 753 248 725 248 671 c 0
+ 248 612 199 588 151 577 c 1
+283 569 m 1
+ 325 770 l 1
+ 399 756 l 1
+ 333 559 l 1
+ 283 569 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

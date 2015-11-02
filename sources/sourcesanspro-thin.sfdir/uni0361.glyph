@@ -1,0 +1,19 @@
+StartChar: uni0361
+Encoding: 865 865 1896
+Width: 0
+Flags: MW
+HStem: 684 28<-80 80>
+VStem: -452 904<582 582>
+LayerCount: 2
+Fore
+SplineSet
+-440 562 m 1
+ -452 582 l 1
+ -320 664 -176 712 0 712 c 0
+ 176 712 320 664 452 582 c 1
+ 440 562 l 1
+ 314 642 160 684 0 684 c 0
+ -160 684 -314 642 -440 562 c 1
+EndSplineSet
+Colour: ff0000
+EndChar

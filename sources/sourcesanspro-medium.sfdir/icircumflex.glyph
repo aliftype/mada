@@ -1,0 +1,27 @@
+StartChar: icircumflex
+Encoding: 238 238 317
+Width: 246
+Flags: MW
+HStem: 0 21G<82 82 82 164> 466 20G<82 164 164 164> 681 59<121 125 121 121>
+VStem: 82 82<0 486 0 486>
+LayerCount: 2
+Fore
+SplineSet
+82 0 m 1
+ 82 486 l 1
+ 164 486 l 1
+ 164 0 l 1
+ 82 0 l 1
+-32 600 m 1
+ 82 740 l 1
+ 164 740 l 1
+ 278 600 l 1
+ 243 568 l 1
+ 125 681 l 1
+ 121 681 l 1
+ 3 568 l 1
+ -32 600 l 1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Icircumflex.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Icircumflex.sc
+EndChar

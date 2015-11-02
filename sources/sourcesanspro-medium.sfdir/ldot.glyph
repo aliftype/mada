@@ -1,0 +1,29 @@
+StartChar: ldot
+Encoding: 320 320 335
+Width: 362
+Flags: MW
+HStem: -12 68<138 189.5> 263 126<287.5 320> 692 20G<82 164 164 164>
+VStem: 82 82<98 712> 244 119<307 344>
+LayerCount: 2
+Fore
+SplineSet
+169 -12 m 0
+ 107 -12 82 27 82 98 c 2
+ 82 712 l 1
+ 164 712 l 1
+ 164 92 l 2
+ 164 66 175 56 187 56 c 0
+ 192 56 196 56 205 58 c 1
+ 216 -4 l 1
+ 205 -9 191 -12 169 -12 c 0
+304 263 m 0
+ 271 263 244 289 244 325 c 0
+ 244 363 271 389 304 389 c 0
+ 336 389 363 363 363 325 c 0
+ 363 289 336 263 304 263 c 0
+EndSplineSet
+Substitution2: "'ss01' Style Set 1 lookup 36 subtable" ldot.a
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Ldot.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" Ldot.sc ldot.a
+Colour: ff0000
+EndChar

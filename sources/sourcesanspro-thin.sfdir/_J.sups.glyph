@@ -1,0 +1,21 @@
+StartChar: J.sups
+Encoding: 1114662 -1 1642
+Width: 303
+Flags: MW
+HStem: 402 26<113 158 113 170.5>
+VStem: 212 29<530 842>
+LayerCount: 2
+Fore
+SplineSet
+131 402 m 0
+ 82 402 47 426 25 465 c 1
+ 47 479 l 1
+ 69 443 95 428 131 428 c 0
+ 185 428 212 460 212 530 c 2
+ 212 842 l 1
+ 241 842 l 1
+ 241 527 l 2
+ 241 457 210 402 131 402 c 0
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,33 @@
+StartChar: five.sc
+Encoding: 1114596 -1 1550
+Width: 505
+Flags: MW
+HStem: -11 130<195 240.5 195 292.5> 234 110<204 320.5> 392 140<221 433 221 221>
+VStem: 74 145 289 167<157.5 194>
+LayerCount: 2
+Fore
+SplineSet
+230 -11 m 0
+ 140 -11 71 20 22 66 c 1
+ 96 172 l 1
+ 131 145 174 119 216 119 c 0
+ 265 119 289 139 289 176 c 0
+ 289 212 258 234 221 234 c 0
+ 187 234 174 227 139 206 c 1
+ 67 252 l 1
+ 81 532 l 1
+ 433 532 l 1
+ 433 392 l 1
+ 221 392 l 1
+ 217 337 l 1
+ 236 342 254 344 270 344 c 0
+ 371 344 456 292 456 180 c 0
+ 456 60 355 -11 230 -11 c 0
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" six.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

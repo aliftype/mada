@@ -1,0 +1,36 @@
+StartChar: uni03080303
+Encoding: 1114723 -1 1903
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 588 91<-109 -83 83 109> 707 50<43 78.5 43 96.5> 756 50<-78.5 -43>
+VStem: -153 42<710 714> -142 91<620.5 646> 51 91<620.5 646> 111 42<799 803>
+AnchorPoint: "Anchor-9" 0 509 mark 0
+AnchorPoint: "Anchor-0" 0 509 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-153 714 m 1xb2
+ -150 766 -122 806 -71 806 c 0xb2
+ -1 806 19 757 67 757 c 0
+ 90 757 107 772 111 803 c 1
+ 153 799 l 1
+ 150 747 122 707 71 707 c 0xd2
+ 1 707 -19 756 -67 756 c 0
+ -90 756 -107 741 -111 710 c 1
+ -153 714 l 1xb2
+-96 588 m 0xac
+ -122 588 -142 608 -142 633 c 0
+ -142 659 -122 679 -96 679 c 0
+ -70 679 -51 659 -51 633 c 0
+ -51 608 -70 588 -96 588 c 0xac
+96 588 m 0
+ 70 588 51 608 51 633 c 0
+ 51 659 70 679 96 679 c 0
+ 122 679 142 659 142 633 c 0
+ 142 608 122 588 96 588 c 0
+EndSplineSet
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 10 subtable" uni0308 uni0342
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 10 subtable" uni0308 uni0303
+Colour: ff0000
+EndChar

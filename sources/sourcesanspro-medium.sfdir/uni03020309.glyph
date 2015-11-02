@@ -1,0 +1,35 @@
+StartChar: uni03020309
+Encoding: 1114732 -1 1912
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 642 54<-2 2 -2 -2> 750 41<80 87>
+VStem: 149 60<698.5 722>
+AnchorPoint: "Anchor-9" 0 509 mark 0
+AnchorPoint: "Anchor-0" 0 509 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-105 570 m 1
+ -134 604 l 1
+ -34 696 l 1
+ 34 696 l 1
+ 134 604 l 1
+ 105 570 l 1
+ 2 642 l 1
+ -2 642 l 1
+ -105 570 l 1
+116 635 m 1
+ 107 670 l 1
+ 132 677 149 688 149 709 c 0
+ 149 735 129 748 80 750 c 1
+ 87 791 l 1
+ 165 789 209 765 209 718 c 0
+ 209 665 163 646 116 635 c 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" uni03020309.cap
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" uni03020309.cap
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 10 subtable" uni0302 uni0309
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni03020309.cap
+Colour: ff0000
+EndChar

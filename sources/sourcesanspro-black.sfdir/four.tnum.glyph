@@ -1,0 +1,34 @@
+StartChar: four.tnum
+Encoding: 1114235 -1 1115
+Width: 540
+Flags: MW
+HStem: 78 130<182 290 182 290 450 518> 440 140<292 296 292 292>
+VStem: 290 160<-80 78 -80 78 208 290 290 311.5>
+LayerCount: 2
+Fore
+SplineSet
+290 -80 m 1
+ 290 78 l 1
+ 20 78 l 1
+ 20 198 l 1
+ 236 580 l 1
+ 450 580 l 1
+ 450 208 l 1
+ 518 208 l 1
+ 518 78 l 1
+ 450 78 l 1
+ 450 -80 l 1
+ 290 -80 l 1
+182 208 m 1
+ 290 208 l 1
+ 290 290 l 2
+ 290 333 294 397 296 440 c 1
+ 292 440 l 1
+ 276 402 258 360 240 322 c 1
+ 182 208 l 1
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" four
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" four.onum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" four.onum four
+Colour: ff0000
+EndChar

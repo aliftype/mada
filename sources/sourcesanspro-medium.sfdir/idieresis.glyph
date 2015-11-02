@@ -1,0 +1,28 @@
+StartChar: idieresis
+Encoding: 239 239 319
+Width: 246
+Flags: MW
+HStem: 0 21G<82 82 82 164> 466 20G<82 164 164 164> 587 100<12.5 41 205 233.5>
+VStem: -23 99<623 651> 82 82<0 486 0 486> 170 99<623 651>
+LayerCount: 2
+Fore
+SplineSet
+82 0 m 1
+ 82 486 l 1
+ 164 486 l 1
+ 164 0 l 1
+ 82 0 l 1
+27 587 m 0xf4
+ -2 587 -23 609 -23 637 c 0
+ -23 665 -2 687 27 687 c 0
+ 55 687 76 665 76 637 c 0
+ 76 609 55 587 27 587 c 0xf4
+219 587 m 0
+ 191 587 170 609 170 637 c 0
+ 170 665 191 687 219 687 c 0
+ 248 687 269 665 269 637 c 0
+ 269 609 248 587 219 587 c 0
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Idieresis.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Idieresis.sc
+EndChar

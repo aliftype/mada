@@ -1,0 +1,32 @@
+StartChar: four.sc
+Encoding: 1114595 -1 1549
+Width: 481
+Flags: MW
+HStem: 0 201<120 293 120 370> 138 63<120 293 120 293 370 447> 437 81<293 296 293 293>
+VStem: 293 77<0 138 0 138 201 334 334 348.5 437 437>
+LayerCount: 2
+Fore
+SplineSet
+293 0 m 1xb0
+ 293 138 l 1
+ 36 138 l 1
+ 36 192 l 1
+ 277 518 l 1
+ 370 518 l 1
+ 370 201 l 1
+ 447 201 l 1
+ 447 138 l 1
+ 370 138 l 1x70
+ 370 0 l 1
+ 293 0 l 1xb0
+120 201 m 1
+ 293 201 l 1
+ 293 334 l 2
+ 293 363 295 408 296 437 c 1
+ 293 437 l 1
+ 276 410 265 394 246 366 c 1
+ 120 201 l 1
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.sc dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

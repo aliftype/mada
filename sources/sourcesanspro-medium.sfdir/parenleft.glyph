@@ -1,0 +1,48 @@
+StartChar: parenleft
+Encoding: 40 40 1175
+Width: 303
+Flags: MW
+HStem: -176 908<214 214>
+VStem: 82 68<202 354 202 366>
+LayerCount: 2
+Fore
+SplineSet
+214 -176 m 1
+ 131 -42 82 102 82 278 c 0
+ 82 454 131 598 214 732 c 1
+ 265 708 l 1
+ 188 581 150 430 150 278 c 0
+ 150 126 188 -25 265 -152 c 1
+ 214 -176 l 1
+EndSplineSet
+Substitution2: "'subs' Subscript lookup 30 subtable" parenleft.subs
+Substitution2: "'sups' Superscript lookup 28 subtable" parenleft.sups
+Substitution2: "'dnom' Denominators lookup 23 subtable" parenleft.dnom
+Substitution2: "'numr' Numerators lookup 22 subtable" parenleft.numr
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 19 subtable" parenleft.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" parenleft.sc parenleft.numr parenleft.dnom parenleft.sups parenleft.subs
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" Jcircumflex dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" J dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0284 dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0283 dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0272 dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni025F dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0237 dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" jcircumflex dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" j dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni04C1 dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0496 dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0416 dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0463 dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni04F2 dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni04EE dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni040E dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0423 dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0408 dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0458 dx=0 dy=0 dh=80 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0424.sc dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0414 dx=0 dy=0 dh=20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0414.sc dx=0 dy=0 dh=20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni0434 dx=0 dy=0 dh=20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" uni041B.sc dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
+EndChar

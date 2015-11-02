@@ -1,0 +1,41 @@
+StartChar: uni1F3A
+Encoding: 7994 7994 681
+Width: 398
+GlyphClass: 3
+Flags: MW
+HStem: 0 21G<266 266 266 298> 640 20G<266 298 298 298> 646 26<-14 -12>
+VStem: 52 30<567 603> 266 32<0 660 0 660>
+LayerCount: 2
+Fore
+SplineSet
+266 0 m 1xb8
+ 266 660 l 1
+ 298 660 l 1xd8
+ 298 0 l 1
+ 266 0 l 1xb8
+166 484 m 1
+ 124 664 l 1
+ 160 670 l 1xb8
+ 190 490 l 1
+ 166 484 l 1
+14 486 m 1
+ 2 508 l 1
+ 30 526 52 552 52 582 c 0
+ 52 624 28 644 -14 646 c 1
+ -12 672 l 1
+ 36 670 82 646 82 586 c 0
+ 82 538 48 506 14 486 c 1
+EndSplineSet
+MultipleSubs2: "'ss04' Style Set 4 lookup 45 subtable" uni1FCD.cap I.a
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Iota.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Iota uni03130300
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Iota.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Omicron.sc dx=0 dy=0 dh=24 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Theta.sc dx=0 dy=0 dh=24 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Zeta.sc dx=0 dy=0 dh=15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=45 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=45 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Tau.sc dx=0 dy=0 dh=20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Chi.sc dx=0 dy=0 dh=36 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

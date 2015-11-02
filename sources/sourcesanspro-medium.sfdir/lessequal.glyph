@@ -1,0 +1,28 @@
+StartChar: lessequal
+Encoding: 8804 8804 1756
+Width: 497
+Flags: MW
+HStem: 0 62<34 463 34 463>
+VStem: 34 84<341 345 341 380 341 380>
+LayerCount: 2
+Fore
+SplineSet
+463 153 m 1
+ 34 306 l 1
+ 34 380 l 1
+ 463 533 l 1
+ 463 462 l 1
+ 253 389 l 1
+ 118 345 l 1
+ 118 341 l 1
+ 253 297 l 1
+ 463 224 l 1
+ 463 153 l 1
+34 0 m 1
+ 34 62 l 1
+ 463 62 l 1
+ 463 0 l 1
+ 34 0 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

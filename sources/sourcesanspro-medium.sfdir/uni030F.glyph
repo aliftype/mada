@@ -1,0 +1,28 @@
+StartChar: uni030F
+Encoding: 783 783 1854
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 568 193<-141 -100 -141 51>
+VStem: -199 295<589 733>
+AnchorPoint: "Anchor-9" 0 509 mark 0
+AnchorPoint: "Anchor-0" 0 509 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-100 568 m 1
+ -199 733 l 1
+ -141 761 l 1
+ -54 589 l 1
+ -100 568 l 1
+51 568 m 1
+ -49 733 l 1
+ 10 761 l 1
+ 96 589 l 1
+ 51 568 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" uni030F.cap
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" uni030F.cap
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni030F.cap
+Colour: ff0000
+EndChar

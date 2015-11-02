@@ -1,0 +1,30 @@
+StartChar: lozenge
+Encoding: 9674 9674 1795
+Width: 517
+Flags: MW
+HStem: -10 69<221 261 257 261 257 296> 601 69<257 261 257 257>
+VStem: 56 405<330 330>
+LayerCount: 2
+Fore
+SplineSet
+221 -10 m 1
+ 56 330 l 1
+ 221 670 l 1
+ 296 670 l 1
+ 461 330 l 1
+ 296 -10 l 1
+ 221 -10 l 1
+257 59 m 1
+ 261 59 l 1
+ 323 192 l 1
+ 388 330 l 1
+ 323 467 l 1
+ 261 601 l 1
+ 257 601 l 1
+ 194 467 l 1
+ 129 330 l 1
+ 194 192 l 1
+ 257 59 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

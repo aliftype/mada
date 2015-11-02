@@ -1,0 +1,25 @@
+StartChar: lslash.a
+Encoding: 1114172 -1 573
+Width: 257
+Flags: MW
+HStem: 0 21G<86 168 86 86> 692 20G<86 168 168 168>
+VStem: 86 82<0 331 331 331 444 712>
+LayerCount: 2
+Fore
+SplineSet
+29 295 m 1
+ -1 348 l 1
+ 86 401 l 1
+ 86 712 l 1
+ 168 712 l 1
+ 168 444 l 1
+ 222 479 l 1
+ 252 426 l 1
+ 168 374 l 1
+ 168 0 l 1
+ 86 0 l 1
+ 86 331 l 1
+ 29 295 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

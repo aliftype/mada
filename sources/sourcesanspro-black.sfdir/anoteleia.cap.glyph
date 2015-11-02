@@ -1,0 +1,17 @@
+StartChar: anoteleia.cap
+Encoding: 1114174 -1 871
+Width: 320
+Flags: MW
+HStem: 454 208<131 189>
+VStem: 60 200<529 587>
+LayerCount: 2
+Fore
+SplineSet
+160 454 m 0
+ 102 454 60 500 60 558 c 0
+ 60 616 102 662 160 662 c 0
+ 218 662 260 616 260 558 c 0
+ 260 500 218 454 160 454 c 0
+EndSplineSet
+Colour: ff0000
+EndChar

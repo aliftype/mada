@@ -1,0 +1,29 @@
+StartChar: i
+Encoding: 105 105 36
+Width: 288
+GlyphClass: 2
+Flags: MW
+HStem: 0 21G<58 58 58 230> 480 20G<58 230 230 230> 562 172<116 172>
+VStem: 48 192<623 673> 58 172<0 500 0 500>
+AnchorPoint: "Anchor-7" 190 0 basechar 0
+AnchorPoint: "Anchor-4" 144 -22 basechar 0
+AnchorPoint: "Anchor-0" 144 733 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+58 0 m 1xe8
+ 58 500 l 1
+ 230 500 l 1
+ 230 0 l 1
+ 58 0 l 1xe8
+144 562 m 0xf0
+ 88 562 48 598 48 648 c 0
+ 48 698 88 734 144 734 c 0
+ 200 734 240 698 240 648 c 0
+ 240 598 200 562 144 562 c 0xf0
+EndSplineSet
+Substitution2: "'sups' Superscript lookup 26 subtable" i.sups
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" I.sc
+Substitution2: "'locl' Localized Forms in Latin lookup 2 subtable" i.trk
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" i.trk I.sc i.sups
+EndChar

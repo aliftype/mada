@@ -1,0 +1,17 @@
+StartChar: period.sups
+Encoding: 1114620 -1 1586
+Width: 152
+Flags: MW
+HStem: 402 68<67 85>
+VStem: 44 64<425 447>
+LayerCount: 2
+Fore
+SplineSet
+76 402 m 0
+ 58 402 44 414 44 436 c 0
+ 44 458 58 470 76 470 c 0
+ 94 470 108 458 108 436 c 0
+ 108 414 94 402 76 402 c 0
+EndSplineSet
+Colour: ff0000
+EndChar

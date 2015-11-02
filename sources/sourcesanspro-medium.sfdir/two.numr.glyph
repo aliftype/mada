@@ -1,0 +1,25 @@
+StartChar: two.numr
+Encoding: 1114640 -1 1618
+Width: 367
+Flags: MW
+HStem: 266 55<155 320 155 320> 614 54<145.5 185>
+VStem: 237 63<504.5 557.5>
+LayerCount: 2
+Fore
+SplineSet
+52 266 m 1
+ 52 303 l 1
+ 173 412 237 473 237 532 c 0
+ 237 583 208 614 162 614 c 0
+ 129 614 100 589 78 557 c 1
+ 40 592 l 1
+ 70 637 117 668 170 668 c 0
+ 248 668 300 624 300 542 c 0
+ 300 467 238 406 155 321 c 1
+ 320 321 l 1
+ 320 266 l 1
+ 52 266 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" two.dnom
+Colour: ff0000
+EndChar

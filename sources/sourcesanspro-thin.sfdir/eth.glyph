@@ -1,0 +1,35 @@
+StartChar: eth
+Encoding: 240 240 441
+Width: 532
+Flags: MW
+HStem: -12 28<219 324 219 324> 412 28<210.5 294> 702 20G<172 172>
+VStem: 62 32<159 269 159 283> 432 32<186 261.5>
+LayerCount: 2
+Fore
+SplineSet
+266 -12 m 0
+ 162 -12 62 74 62 218 c 0
+ 62 348 144 440 270 440 c 0
+ 329 440 382 413 423 361 c 1
+ 405 465 361 537 303 594 c 1
+ 162 520 l 1
+ 150 542 l 1
+ 283 612 l 1
+ 245 646 201 674 156 700 c 1
+ 172 722 l 1
+ 221 695 268 664 310 626 c 1
+ 452 700 l 1
+ 464 678 l 1
+ 329 607 l 1
+ 409 526 464 415 464 250 c 0
+ 464 90 382 -12 266 -12 c 0
+266 16 m 0
+ 382 16 432 122 432 250 c 0
+ 432 273 431 295 429 315 c 1
+ 375 395 320 412 268 412 c 0
+ 153 412 94 320 94 218 c 0
+ 94 100 172 16 266 16 c 0
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Eth.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Eth.sc
+EndChar

@@ -1,0 +1,31 @@
+StartChar: five.tnum
+Encoding: 1114236 -1 1116
+Width: 472
+Flags: MW
+HStem: -82 28<180 270 180 274> 302 30<205 278> 542 28<132 390 132 132>
+VStem: 392 32<74 182>
+LayerCount: 2
+Fore
+SplineSet
+224 -82 m 0
+ 122 -82 66 -36 26 4 c 1
+ 46 26 l 1
+ 84 -14 134 -54 226 -54 c 0
+ 314 -54 392 20 392 128 c 0
+ 392 236 328 302 228 302 c 0
+ 178 302 144 284 106 258 c 1
+ 80 274 l 1
+ 104 570 l 1
+ 390 570 l 1
+ 390 542 l 1
+ 132 542 l 1
+ 110 296 l 1
+ 144 317 180 332 230 332 c 0
+ 338 332 424 270 424 130 c 0
+ 424 -6 324 -82 224 -82 c 0
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" five
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" five.onum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" five.onum five
+Colour: ff0000
+EndChar

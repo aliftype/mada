@@ -1,0 +1,36 @@
+StartChar: upsilontonos
+Encoding: 973 973 642
+Width: 492
+Flags: MW
+HStem: -12 28<206 284 206 290> 458 20G<74 104 104 104> 470 20G<380 380>
+VStem: 76 34 396 32<157 271>
+LayerCount: 2
+Fore
+SplineSet
+240 -12 m 0xb8
+ 150 -12 76 34 76 165 c 0
+ 76 230 80 295 80 360 c 0
+ 80 398 80 430 74 478 c 1
+ 104 478 l 1xd8
+ 110 444 110 412 110 372 c 0
+ 110 306 104 222 104 166 c 0
+ 104 52 170 16 242 16 c 0
+ 326 16 396 84 396 230 c 0
+ 396 312 386 392 350 480 c 1
+ 380 490 l 1
+ 414 402 428 318 428 229 c 0
+ 428 67 340 -12 240 -12 c 0xb8
+213 566 m 1
+ 263 752 l 1
+ 301 744 l 1
+ 237 560 l 1
+ 213 566 l 1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 15 subtable" Upsilon.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" pi dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" nu dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

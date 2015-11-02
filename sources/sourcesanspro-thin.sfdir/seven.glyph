@@ -1,0 +1,27 @@
+StartChar: seven
+Encoding: 55 55 1094
+Width: 472
+Flags: MW
+HStem: 0 21G<192 192 192 226> 612 28<44 388 44 430>
+VStem: 192 34<0 0>
+LayerCount: 2
+Fore
+SplineSet
+192 0 m 1
+ 202 264 258 430 388 612 c 1
+ 44 612 l 1
+ 44 640 l 1
+ 430 640 l 1
+ 430 622 l 1
+ 276 416 236 250 226 0 c 1
+ 192 0 l 1
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" seven.tnum
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" seven.pnum
+Substitution2: "'subs' Subscript lookup 30 subtable" seven.subs
+Substitution2: "'sups' Superscript lookup 28 subtable" seven.sups
+Substitution2: "'dnom' Denominators lookup 23 subtable" seven.dnom
+Substitution2: "'numr' Numerators lookup 22 subtable" seven.numr
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 18 subtable" seven.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" seven.sc seven.numr seven.dnom seven.sups seven.subs seven.pnum seven.tnum
+EndChar

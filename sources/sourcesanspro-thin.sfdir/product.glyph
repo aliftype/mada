@@ -1,0 +1,21 @@
+StartChar: product
+Encoding: 8719 8719 1772
+Width: 644
+Flags: MW
+HStem: 612 28<128 514 128 128>
+VStem: 96 32<-120 612 -120 640 -120 640> 514 34<-120 612 612 612>
+LayerCount: 2
+Fore
+SplineSet
+96 -120 m 1
+ 96 640 l 1
+ 548 640 l 1
+ 548 -120 l 1
+ 514 -120 l 1
+ 514 612 l 1
+ 128 612 l 1
+ 128 -120 l 1
+ 96 -120 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

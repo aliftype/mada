@@ -1,0 +1,36 @@
+StartChar: three
+Encoding: 51 51 1090
+Width: 540
+Flags: MW
+HStem: -12 138<205.5 256 205.5 312> 262 120<162 215 162 228.5> 512 134<213 255.5>
+VStem: 162 208<326 330 326 382 326 382> 300 172<436.5 473> 320 172<166 210>
+LayerCount: 2
+Fore
+SplineSet
+246 -12 m 0xe4
+ 143 -12 68 22 20 78 c 1
+ 98 186 l 1
+ 137 150 183 126 228 126 c 0
+ 284 126 320 146 320 186 c 0xe4
+ 320 234 295 262 162 262 c 1
+ 162 382 l 1xf0
+ 268 382 300 410 300 454 c 0
+ 300 492 277 512 234 512 c 0
+ 192 512 162 494 122 460 c 1
+ 36 564 l 1
+ 98 616 164 646 242 646 c 0
+ 382 646 472 582 472 467 c 0xe8
+ 472 406 438 360 370 330 c 1
+ 370 326 l 1xf0
+ 442 304 492 254 492 174 c 0
+ 492 54 378 -12 246 -12 c 0xe4
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" three.tnum
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" three.pnum
+Substitution2: "'subs' Subscript lookup 30 subtable" three.subs
+Substitution2: "'sups' Superscript lookup 28 subtable" three.sups
+Substitution2: "'dnom' Denominators lookup 23 subtable" three.dnom
+Substitution2: "'numr' Numerators lookup 22 subtable" three.numr
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 18 subtable" three.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" three.sc three.numr three.dnom three.sups three.subs three.pnum three.tnum
+EndChar

@@ -1,0 +1,24 @@
+StartChar: exclam.sc
+Encoding: 1114601 -1 1555
+Width: 248
+Flags: MW
+HStem: -12 21G<115 133> -12 78<115 133> 490 20G<108 140 140 140>
+VStem: 88 72<14 39> 108 32<448 510 448 510>
+LayerCount: 2
+Fore
+SplineSet
+112 172 m 1xa8
+ 108 448 l 1
+ 108 510 l 1
+ 140 510 l 1
+ 140 448 l 1
+ 136 172 l 1
+ 112 172 l 1xa8
+124 -12 m 0xb0
+ 106 -12 88 2 88 26 c 0
+ 88 52 106 66 124 66 c 0x70
+ 142 66 160 52 160 26 c 0
+ 160 2 142 -12 124 -12 c 0xb0
+EndSplineSet
+Colour: ff0000
+EndChar

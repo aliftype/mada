@@ -1,0 +1,45 @@
+StartChar: yen
+Encoding: 165 165 1704
+Width: 540
+Flags: MW
+HStem: 0 222<34 184 34 356> 142 80<34 184 34 184 356 506> 272 80<34 148 34 184 34 148 392 506> 614 20G<8 184 184 184 360 532 532 532>
+VStem: 184 172<0 142 0 142 222 272 0 272>
+LayerCount: 2
+Fore
+SplineSet
+184 0 m 1xb8
+ 184 142 l 1
+ 34 142 l 1
+ 34 222 l 1
+ 184 222 l 1
+ 184 272 l 1
+ 34 272 l 1
+ 34 352 l 1
+ 148 352 l 1
+ 8 634 l 1
+ 184 634 l 1
+ 224 516 l 2
+ 239 472 254 428 270 386 c 1
+ 274 386 l 1
+ 289 429 305 473 320 516 c 2
+ 360 634 l 1
+ 532 634 l 1
+ 392 352 l 1
+ 506 352 l 1
+ 506 272 l 1
+ 356 272 l 1
+ 356 222 l 1
+ 506 222 l 1
+ 506 142 l 1
+ 356 142 l 1x78
+ 356 0 l 1
+ 184 0 l 1xb8
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" nine.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+EndChar

@@ -1,0 +1,42 @@
+StartChar: uni1EDA.sc
+Encoding: 1114409 -1 1363
+Width: 626
+Flags: MW
+HStem: -12 140<284 343 284 393.5> 404 140<284 336 233.5 343>
+VStem: 44 176<225.5 312.5 225.5 358> 406 176<225.5 311.5 180 312.5> 492 142<568 604>
+LayerCount: 2
+Fore
+SplineSet
+314 -12 m 0xf0
+ 153 -12 44 91 44 269 c 0
+ 44 447 153 544 314 544 c 0
+ 358 544 398 537 433 522 c 1
+ 466 530 492 544 492 592 c 0
+ 492 616 483 637 476 650 c 1
+ 602 704 l 1
+ 618 684 634 644 634 604 c 0xe8
+ 634 527 583 485 514 467 c 1
+ 557 420 582 354 582 269 c 0
+ 582 91 473 -12 314 -12 c 0xf0
+314 128 m 0
+ 372 128 406 182 406 269 c 0
+ 406 356 372 404 314 404 c 0
+ 254 404 220 356 220 269 c 0
+ 220 182 254 128 314 128 c 0
+306 566 m 1
+ 230 652 l 1
+ 412 796 l 1
+ 502 686 l 1
+ 306 566 l 1
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" parenright.sc dx=0 dy=0 dh=20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quotesingle.sc dx=0 dy=0 dh=40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quoteright.sc dx=0 dy=0 dh=40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quoteleft.sc dx=0 dy=0 dh=40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quotedblbase dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quotesinglbase dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" ellipsis dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" comma dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" period dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

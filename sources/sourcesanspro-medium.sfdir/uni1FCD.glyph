@@ -1,0 +1,24 @@
+StartChar: uni1FCD
+Encoding: 8141 8141 884
+Width: 542
+Flags: MW
+HStem: 705 51<115 119>
+VStem: 188 60<649 675>
+LayerCount: 2
+Fore
+SplineSet
+151 577 m 1
+ 141 615 l 1
+ 168 622 188 636 188 662 c 0
+ 188 688 164 702 115 705 c 1
+ 119 756 l 1
+ 197 753 248 725 248 671 c 0
+ 248 612 199 588 151 577 c 1
+336 559 m 1
+ 273 756 l 1
+ 347 770 l 1
+ 386 569 l 1
+ 336 559 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

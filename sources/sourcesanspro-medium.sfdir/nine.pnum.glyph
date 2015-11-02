@@ -1,0 +1,33 @@
+StartChar: nine.pnum
+Encoding: 1114228 -1 1108
+Width: 525
+Flags: MW
+HStem: -12 68<194 259 194 280.5> 248 62<207.5 259.5> 585 65<209 280.5>
+VStem: 52 77<403.5 487 403.5 506> 383 77
+LayerCount: 2
+Fore
+SplineSet
+247 310 m 0
+ 289 310 340 335 381 395 c 1
+ 370 519 321 585 240 585 c 0
+ 178 585 129 529 129 445 c 0
+ 129 362 168 310 247 310 c 0
+217 -12 m 0
+ 149 -12 98 17 63 55 c 1
+ 109 107 l 1
+ 135 76 174 56 214 56 c 0
+ 304 56 380 126 383 330 c 1
+ 343 279 286 248 233 248 c 0
+ 123 248 52 314 52 445 c 0
+ 52 567 138 650 240 650 c 0
+ 366 650 460 548 460 343 c 0
+ 460 87 344 -12 217 -12 c 0
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" nine.onum
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" nine.onum
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.pnum dx=0 dy=0 dh=-24 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.pnum dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.pnum dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

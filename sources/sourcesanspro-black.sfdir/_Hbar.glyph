@@ -1,0 +1,40 @@
+StartChar: Hbar
+Encoding: 294 294 120
+Width: 722
+Flags: MW
+HStem: 0 21G<92 264 92 92 458 630 458 458> 258 150<264 458 264 458> 484 77 484 80<22 92 22 92 264 458 630 700> 484 166<22 264 22 264 92 264 92 458>
+VStem: 92 172<0 258 408 484 564 650> 458 172<0 258 258 258 408 484 0 484 564 650 0 650>
+LayerCount: 2
+Fore
+SplineSet
+22 484 m 1xce
+ 22 558 l 1
+ 92 564 l 1xe6
+ 92 650 l 1
+ 264 650 l 1xce
+ 264 564 l 1
+ 458 564 l 1xd6
+ 458 650 l 1
+ 630 650 l 1xce
+ 630 564 l 1
+ 700 564 l 1xd6
+ 700 484 l 1
+ 630 484 l 1
+ 630 0 l 1
+ 458 0 l 1
+ 458 258 l 1
+ 264 258 l 1
+ 264 0 l 1
+ 92 0 l 1
+ 92 484 l 1
+ 22 484 l 1xce
+264 408 m 1
+ 458 408 l 1
+ 458 484 l 1
+ 264 484 l 1xce
+ 264 408 l 1
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Hbar.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Hbar.sc
+Colour: ff0000
+EndChar

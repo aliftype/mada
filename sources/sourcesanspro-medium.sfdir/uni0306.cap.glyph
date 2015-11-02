@@ -1,0 +1,23 @@
+StartChar: uni0306.cap
+Encoding: 1114700 -1 1839
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 705 53<-28.5 28.5 -28.5 46.5>
+VStem: -146 50<834 842> 96 50<834 842>
+AnchorPoint: "Anchor-1" 0 678 mark 0
+LayerCount: 2
+Fore
+SplineSet
+0 705 m 0
+ -93 705 -138 764 -146 834 c 1
+ -96 842 l 1
+ -88 795 -57 758 0 758 c 0
+ 57 758 88 795 96 842 c 1
+ 146 834 l 1
+ 138 764 93 705 0 705 c 0
+EndSplineSet
+Substitution2: "'locl' Localized Forms in Cyrillic lookup 5 subtable" uni0306.ccap
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0306.ccap
+Colour: ff0000
+EndChar

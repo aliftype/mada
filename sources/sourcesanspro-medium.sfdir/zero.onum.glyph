@@ -1,0 +1,29 @@
+StartChar: zero.onum
+Encoding: 1114241 -1 1121
+Width: 518
+Flags: MW
+HStem: -12 66<217.5 296 217.5 319> 519 67<217.5 296>
+VStem: 52 80<214 360 214 386> 381 80<214 360>
+LayerCount: 2
+Fore
+SplineSet
+257 -12 m 0
+ 132 -12 52 89 52 287 c 0
+ 52 485 132 586 257 586 c 0
+ 381 586 461 485 461 287 c 0
+ 461 89 381 -12 257 -12 c 0
+257 54 m 0
+ 335 54 381 141 381 287 c 0
+ 381 433 335 519 257 519 c 0
+ 178 519 132 433 132 287 c 0
+ 132 141 178 54 257 54 c 0
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" zero.pnum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" zero.pnum
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.onum dx=0 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.onum dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.onum dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.onum dx=0 dy=0 dh=-13 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

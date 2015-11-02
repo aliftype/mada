@@ -1,0 +1,29 @@
+StartChar: zero.0
+Encoding: 1114217 -1 1097
+Width: 497
+Flags: MW
+HStem: -12 66<211 286.5 211 312.5> 259 132<232 265.5> 584 66<211 286.5>
+VStem: 44 76<229.5 413 229.5 428> 188 121<304 346> 377 76<229.5 413>
+LayerCount: 2
+Fore
+SplineSet
+249 -12 m 0
+ 121 -12 44 107 44 321 c 0
+ 44 535 121 650 249 650 c 0
+ 376 650 453 535 453 321 c 0
+ 453 107 376 -12 249 -12 c 0
+249 54 m 0
+ 324 54 377 138 377 321 c 0
+ 377 505 324 584 249 584 c 0
+ 173 584 120 505 120 321 c 0
+ 120 138 173 54 249 54 c 0
+249 259 m 0
+ 215 259 188 283 188 325 c 0
+ 188 367 215 391 249 391 c 0
+ 282 391 309 367 309 325 c 0
+ 309 283 282 259 249 259 c 0
+EndSplineSet
+Substitution2: "'salt' Stylistic Alternatives lookup 46 subtable" zero.0s
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" zero.0s
+Colour: ff0000
+EndChar

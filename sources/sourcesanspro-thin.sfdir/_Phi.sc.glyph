@@ -1,0 +1,37 @@
+StartChar: Phi.sc
+Encoding: 1114505 -1 1459
+Width: 613
+Flags: MW
+HStem: 59 26<226.5 291> 423 26<217 291>
+VStem: 48 33<204.5 305.5 204.5 315> 291 31<-18 59 -18 59 85 423 449 528> 533 32<205 306>
+LayerCount: 2
+Fore
+SplineSet
+533 255 m 0
+ 533 357 451 423 322 423 c 1
+ 322 85 l 1
+ 453 86 533 155 533 255 c 0
+81 255 m 0
+ 81 154 162 85 291 85 c 1
+ 291 423 l 1
+ 160 421 81 356 81 255 c 0
+291 -18 m 1
+ 291 59 l 1
+ 141 61 48 137 48 255 c 0
+ 48 375 143 449 291 449 c 1
+ 291 528 l 1
+ 322 528 l 1
+ 322 449 l 1
+ 472 447 565 374 565 255 c 0
+ 565 136 470 59 322 59 c 1
+ 322 -18 l 1
+ 291 -18 l 1
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Xi.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni203D dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni2048 dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni2047 dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" question dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Zeta.sc dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

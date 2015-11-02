@@ -1,0 +1,40 @@
+StartChar: dcroat
+Encoding: 273 273 283
+Width: 540
+Flags: MW
+HStem: -12 28<200 282 200 285> 0 21G<418 444 418 418> 430 28<215 291> 584 28<242 414 242 414> 584 138<242 444 414 444>
+VStem: 54 32<161 279 161 294> 414 30<64 64 100 364 364 364 488 584 0 584 612 722>
+LayerCount: 2
+Fore
+SplineSet
+252 -12 m 0xb6
+ 132 -12 54 70 54 222 c 0
+ 54 366 152 458 268 458 c 0
+ 326 458 366 436 416 398 c 1
+ 414 488 l 1
+ 414 584 l 1
+ 242 584 l 1
+ 242 612 l 1
+ 414 612 l 1xb6
+ 414 722 l 1
+ 444 722 l 1xae
+ 444 612 l 1
+ 520 612 l 1
+ 520 588 l 1
+ 444 584 l 1
+ 444 0 l 1
+ 418 0 l 1x76
+ 414 64 l 1
+ 412 64 l 1
+ 372 24 318 -12 252 -12 c 0xb6
+254 16 m 0
+ 310 16 360 46 414 100 c 1
+ 414 364 l 1
+ 360 412 316 430 266 430 c 0
+ 164 430 86 336 86 222 c 0
+ 86 100 146 16 254 16 c 0
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Dcroat.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Dcroat.sc
+Colour: ff0000
+EndChar

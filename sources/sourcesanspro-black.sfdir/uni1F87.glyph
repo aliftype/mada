@@ -1,0 +1,69 @@
+StartChar: uni1F87
+Encoding: 8071 8071 838
+Width: 608
+GlyphClass: 3
+Flags: MW
+HStem: -222 170<326.5 371 249 388> -12 140<257 264> 372 140<264 281 196 301> 480 20G<404 574 574 574> 563 52<335 345> 649 66<367 383> 730 92<330 350 330 381.5> 772 92<244 264>
+VStem: 32 176<207 296 207 332> 209 110<624.5 634 624.5 667> 249 120<-101.5 -52 -101.5 -52> 355 153
+LayerCount: 2
+Fore
+SplineSet
+236 -12 m 0xdda0
+ 112 -12 32 88 32 250 c 0
+ 32 414 138 512 254 512 c 0
+ 308 512 352 486 386 424 c 1
+ 390 424 l 1xed90
+ 404 500 l 1
+ 574 500 l 1
+ 548 390 508 240 508 170 c 0
+ 508 136 528 126 556 126 c 0
+ 565 126 576 128 588 132 c 1
+ 608 6 l 1
+ 588 -4 556 -12 512 -12 c 0xdd90
+ 438 -12 396 6 372 64 c 1
+ 368 64 l 1
+ 336 12 292 -12 236 -12 c 0xdda0
+278 128 m 0
+ 314 128 349 168 352 218 c 2
+ 358 302 l 1
+ 340 342 320 372 282 372 c 0xed90
+ 246 372 208 340 208 252 c 0
+ 208 162 236 128 278 128 c 0
+373 -222 m 0
+ 280 -222 249 -165 249 -81 c 2
+ 249 -52 l 1
+ 371 -52 l 1
+ 369 -66 369 -80 369 -88 c 0
+ 369 -115 386 -121 409 -121 c 0
+ 414 -121 417 -121 424 -120 c 1
+ 440 -210 l 1
+ 425 -217 403 -222 373 -222 c 0
+335 563 m 1xdd40
+ 265 570 209 594 209 647 c 0
+ 209 687 245 711 367 715 c 1
+ 383 649 l 1
+ 332 645 319 639 319 629 c 0
+ 319 620 329 617 345 615 c 1
+ 335 563 l 1xdd40
+135 744 m 1
+ 144 830 184 864 241 864 c 0xdd40
+ 295 864 317 822 343 822 c 0
+ 357 822 367 832 373 858 c 1
+ 459 850 l 1
+ 450 764 410 730 353 730 c 0xde40
+ 299 730 277 772 251 772 c 0
+ 237 772 227 762 221 736 c 1
+ 135 744 l 1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 16 subtable" Alphaiotasub.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" uni1FB3 uni03120303
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" alpha uni0345 uni03120303
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni03D1 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni03D0 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" theta dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" nu dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

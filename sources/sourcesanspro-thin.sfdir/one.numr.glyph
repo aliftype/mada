@@ -1,0 +1,21 @@
+StartChar: one.numr
+Encoding: 1114639 -1 1617
+Width: 360
+Flags: MW
+HStem: 600 22<96 178 96 96>
+VStem: 178 28<270 600 600 600>
+LayerCount: 2
+Fore
+SplineSet
+178 270 m 1
+ 178 600 l 1
+ 96 600 l 1
+ 96 622 l 1
+ 132 630 158 642 180 660 c 1
+ 206 660 l 1
+ 206 270 l 1
+ 178 270 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" one.dnom
+Colour: ff0000
+EndChar

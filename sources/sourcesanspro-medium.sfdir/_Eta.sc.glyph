@@ -1,0 +1,32 @@
+StartChar: Eta.sc
+Encoding: 1114491 -1 1445
+Width: 594
+GlyphClass: 2
+Flags: MW
+HStem: 0 21G<90 90 90 173 421 421 421 504> 235 72<173 421 173 421> 498 20G<90 173 173 173 421 504 504 504>
+VStem: 90 83<0 235 307 518> 421 83<0 235 235 235 307 518 0 518>
+AnchorPoint: "Anchor-4" 297 -22 basechar 0
+AnchorPoint: "Anchor-0" 297 563 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+90 0 m 1
+ 90 518 l 1
+ 173 518 l 1
+ 173 307 l 1
+ 421 307 l 1
+ 421 518 l 1
+ 504 518 l 1
+ 504 0 l 1
+ 421 0 l 1
+ 421 235 l 1
+ 173 235 l 1
+ 173 0 l 1
+ 90 0 l 1
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE9 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE8 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

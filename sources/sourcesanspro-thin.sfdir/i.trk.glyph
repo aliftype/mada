@@ -1,0 +1,24 @@
+StartChar: i.trk
+Encoding: 1114262 -1 1216
+Width: 222
+Flags: MW
+HStem: 0 21G<96 96 96 126> 458 20G<96 126 126 126> 600 68<103 121>
+VStem: 78 68<624 645> 96 30<0 478 0 478>
+LayerCount: 2
+Fore
+SplineSet
+96 0 m 1xe8
+ 96 478 l 1
+ 126 478 l 1
+ 126 0 l 1
+ 96 0 l 1xe8
+112 600 m 0xf0
+ 94 600 78 614 78 634 c 0
+ 78 656 94 668 112 668 c 0
+ 130 668 146 656 146 634 c 0
+ 146 614 130 600 112 600 c 0xf0
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Idotaccent.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Idotaccent.sc
+Colour: ff0000
+EndChar

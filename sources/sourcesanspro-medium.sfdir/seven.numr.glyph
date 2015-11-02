@@ -1,0 +1,21 @@
+StartChar: seven.numr
+Encoding: 1114645 -1 1623
+Width: 367
+Flags: MW
+HStem: 601 55<50 251 50 323>
+VStem: 131 67<266 266>
+LayerCount: 2
+Fore
+SplineSet
+131 266 m 1
+ 139 401 171 492 251 601 c 1
+ 50 601 l 1
+ 50 656 l 1
+ 323 656 l 1
+ 323 620 l 1
+ 228 499 206 402 198 266 c 1
+ 131 266 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" seven.dnom
+Colour: ff0000
+EndChar

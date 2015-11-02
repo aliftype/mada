@@ -1,0 +1,19 @@
+StartChar: anoteleia
+Encoding: 903 903 870
+Width: 249
+Flags: MW
+HStem: 349 126<108.5 141>
+VStem: 65 119<393 430>
+LayerCount: 2
+Fore
+SplineSet
+125 349 m 0
+ 92 349 65 375 65 411 c 0
+ 65 449 92 475 125 475 c 0
+ 157 475 184 449 184 411 c 0
+ 184 375 157 349 125 349 c 0
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" anoteleia.cap
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" anoteleia.cap
+Colour: ff0000
+EndChar

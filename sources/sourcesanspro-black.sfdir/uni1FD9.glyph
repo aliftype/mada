@@ -1,0 +1,27 @@
+StartChar: uni1FD9
+Encoding: 8153 8153 688
+Width: 316
+GlyphClass: 3
+Flags: MW
+HStem: 0 21G<72 72 72 244> 630 20G<72 244 244 244> 716 108<0 316 0 316>
+VStem: 72 172<0 650 0 650>
+LayerCount: 2
+Fore
+SplineSet
+72 0 m 1
+ 72 650 l 1
+ 244 650 l 1
+ 244 0 l 1
+ 72 0 l 1
+0 716 m 1
+ 0 824 l 1
+ 316 824 l 1
+ 316 716 l 1
+ 0 716 l 1
+EndSplineSet
+Substitution2: "'ss04' Style Set 4 lookup 44 subtable" Imacron.a
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Iota.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Iota uni0304
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" Iota.sc Imacron.a
+Colour: ff0000
+EndChar

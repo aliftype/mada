@@ -1,0 +1,34 @@
+StartChar: uni1E9E.sc
+Encoding: 1114432 -1 1386
+Width: 594
+Flags: MW
+HStem: -12 67<362 408 362 438.5> 0 21G<91 175 91 91> 463 67<267 337>
+VStem: 91 84<0 313 0 327 0 388> 466 85<113 161.5>
+LayerCount: 2
+Fore
+SplineSet
+388 -12 m 0xb8
+ 322 -12 268 15 234 49 c 1
+ 277 99 l 1
+ 309 68 343 55 381 55 c 0
+ 435 55 466 89 466 137 c 0xb8
+ 466 186 433 223 312 240 c 1
+ 306 286 l 1
+ 419 400 l 1
+ 400 435 365 463 309 463 c 0
+ 225 463 175 413 175 313 c 2
+ 175 0 l 1
+ 91 0 l 1x78
+ 91 327 l 2
+ 91 449 172 530 313 530 c 0
+ 410 530 473 475 502 397 c 1
+ 389 284 l 1
+ 500 262 551 213 551 136 c 0
+ 551 55 489 -12 388 -12 c 0xb8
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" hyphen.sc dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quotesingle.sc dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quoteright.sc dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" periodcentered dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

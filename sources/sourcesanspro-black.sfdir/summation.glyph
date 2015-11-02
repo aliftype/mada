@@ -1,0 +1,27 @@
+StartChar: summation
+Encoding: 8721 8721 1771
+Width: 546
+Flags: MW
+HStem: -120 144<240 534 240 534> 490 144<246 512 246 246>
+VStem: 28 506<-120 -20 -20 -20>
+LayerCount: 2
+Fore
+SplineSet
+28 -120 m 1
+ 28 -20 l 1
+ 222 256 l 1
+ 38 534 l 1
+ 38 634 l 1
+ 512 634 l 1
+ 512 490 l 1
+ 246 490 l 1
+ 246 486 l 1
+ 396 256 l 1
+ 240 28 l 1
+ 240 24 l 1
+ 534 24 l 1
+ 534 -120 l 1
+ 28 -120 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

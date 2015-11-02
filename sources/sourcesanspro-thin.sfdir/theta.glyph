@@ -1,0 +1,33 @@
+StartChar: theta
+Encoding: 952 952 615
+Width: 500
+Flags: MW
+HStem: -12 28<206.5 293 206.5 308> 352 28<100 400 100 400> 706 28<207 293>
+VStem: 68 32<352 352 352 380 352 481> 400 32<352 352 380 380>
+LayerCount: 2
+Fore
+SplineSet
+250 -12 m 0
+ 134 -12 68 98 68 364 c 0
+ 68 598 134 734 250 734 c 0
+ 366 734 432 598 432 364 c 0
+ 432 98 366 -12 250 -12 c 0
+250 706 m 0
+ 164 706 103 592 100 380 c 1
+ 400 380 l 1
+ 397 592 336 706 250 706 c 0
+250 16 m 0
+ 336 16 398 111 400 352 c 1
+ 100 352 l 1
+ 102 111 163 16 250 16 c 0
+EndSplineSet
+Substitution2: "'ss03' Style Set 3 lookup 42 subtable" uni03D1
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 15 subtable" Theta.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni03D1
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE5 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE4 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" rho dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

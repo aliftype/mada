@@ -1,0 +1,34 @@
+StartChar: iogonek
+Encoding: 303 303 324
+Width: 222
+GlyphClass: 3
+Flags: MW
+HStem: -202 28<103 124> 0 21G<96 98 96 96 126 126> 458 20G<96 126 126 126> 600 68<101 119>
+VStem: 36 30<-138 -98 -138 -97> 76 68<624 645> 96 30<0 478 0 478>
+LayerCount: 2
+Fore
+SplineSet
+114 -202 m 0xea
+ 70 -202 36 -176 36 -122 c 0xea
+ 36 -72 68 -34 98 0 c 1
+ 96 0 l 1
+ 96 478 l 1
+ 126 478 l 1
+ 126 0 l 1xe2
+ 96 -36 66 -76 66 -120 c 0
+ 66 -156 90 -174 116 -174 c 0
+ 134 -174 146 -170 160 -160 c 1
+ 174 -180 l 1
+ 160 -192 134 -202 114 -202 c 0xea
+110 600 m 0xf4
+ 92 600 76 614 76 634 c 0
+ 76 656 92 668 110 668 c 0
+ 128 668 144 656 144 634 c 0
+ 144 614 128 600 110 600 c 0xf4
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" iogonek.d
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Iogonek.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 11 subtable" i uni0328
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Iogonek.sc
+Colour: ff0000
+EndChar

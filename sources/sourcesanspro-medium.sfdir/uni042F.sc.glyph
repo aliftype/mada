@@ -1,0 +1,30 @@
+StartChar: uni042F.sc
+Encoding: 1114545 -1 1499
+Width: 522
+Flags: MW
+HStem: 0 21G<22 116 22 22 348 432 348 348> 209 59<261 348 261 348 253 348> 452 66<252 262 262 348>
+VStem: 54 80<332 396 332 424> 348 84<0 209 209 209 268 452 452 452>
+LayerCount: 2
+Fore
+SplineSet
+432 518 m 1
+ 432 0 l 1
+ 348 0 l 1
+ 348 209 l 1
+ 253 209 l 1
+ 116 0 l 1
+ 22 0 l 1
+ 174 218 l 1
+ 102 237 54 287 54 367 c 0
+ 54 481 137 518 252 518 c 2
+ 432 518 l 1
+261 268 m 2
+ 348 268 l 1
+ 348 452 l 1
+ 262 452 l 2
+ 178 452 134 429 134 363 c 0
+ 134 301 175 268 261 268 c 2
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04AE dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

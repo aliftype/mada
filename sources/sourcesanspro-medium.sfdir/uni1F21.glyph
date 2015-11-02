@@ -1,0 +1,42 @@
+StartChar: uni1F21
+Encoding: 7969 7969 765
+Width: 541
+GlyphClass: 3
+Flags: MW
+HStem: 0 21G<82 164 82 82> 427 71<297 337.5> 466 20G<75 150 150 150> 706 51<354 359>
+VStem: 82 82<0 318 0 353 0 372> 211 65<646 673.5 646 694.5> 388 77<227 308 -179 342.5>
+LayerCount: 2
+Fore
+SplineSet
+382 -179 m 1xde
+ 386 -20 388 157 388 297 c 0
+ 388 388 366 427 309 427 c 0xde
+ 256 427 219 400 164 318 c 1
+ 164 0 l 1
+ 82 0 l 1
+ 82 353 l 2
+ 82 391 81 435 75 486 c 1
+ 150 486 l 1xbe
+ 157 385 l 1
+ 160 385 l 1
+ 210 460 261 498 333 498 c 0
+ 427 498 465 432 465 308 c 2
+ 465 -179 l 1
+ 382 -179 l 1xde
+323 574 m 1
+ 265 584 211 608 211 666 c 0
+ 211 723 263 754 354 757 c 1
+ 359 706 l 1
+ 303 703 276 688 276 659 c 0
+ 276 633 300 620 332 612 c 1
+ 323 574 l 1
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 16 subtable" Eta.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" eta uni0312.g
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BE dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BC dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblright dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quoteright dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

@@ -1,0 +1,40 @@
+StartChar: eight
+Encoding: 56 56 1095
+Width: 540
+Flags: MW
+HStem: -12 118<250 291 250 337.5> 528 118<254.5 290>
+VStem: 42 147<157 198 157 199> 62 150<445 488 445 522> 334 138<444 480> 341 159<148 195>
+LayerCount: 2
+Fore
+SplineSet
+268 -12 m 0xe4
+ 139 -12 42 58 42 162 c 0xe4
+ 42 236 86 280 146 312 c 1
+ 146 316 l 1
+ 96 354 62 400 62 466 c 0
+ 62 578 150 646 274 646 c 0
+ 392 646 472 578 472 470 c 0xd8
+ 472 412 436 366 391 337 c 1
+ 391 333 l 1
+ 453 300 500 250 500 166 c 0
+ 500 64 407 -12 268 -12 c 0xe4
+306 378 m 1xd8
+ 324 404 334 430 334 458 c 0
+ 334 502 310 528 270 528 c 0
+ 239 528 212 510 212 466 c 0
+ 212 424 246 402 306 378 c 1xd8
+272 106 m 0xe4
+ 310 106 341 124 341 172 c 0
+ 341 218 297 236 222 268 c 1
+ 203 246 189 214 189 182 c 0
+ 189 132 228 106 272 106 c 0xe4
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" eight.tnum
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" eight.pnum
+Substitution2: "'subs' Subscript lookup 30 subtable" eight.subs
+Substitution2: "'sups' Superscript lookup 28 subtable" eight.sups
+Substitution2: "'dnom' Denominators lookup 23 subtable" eight.dnom
+Substitution2: "'numr' Numerators lookup 22 subtable" eight.numr
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 18 subtable" eight.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" eight.sc eight.numr eight.dnom eight.sups eight.subs eight.pnum eight.tnum
+EndChar

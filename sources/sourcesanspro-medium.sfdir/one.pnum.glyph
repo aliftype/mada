@@ -1,0 +1,23 @@
+StartChar: one.pnum
+Encoding: 1114220 -1 1100
+Width: 369
+Flags: MW
+HStem: 0 21G<167 167 167 249> 538 100<50 249>
+VStem: 167 82<0 538 538 538>
+LayerCount: 2
+Fore
+SplineSet
+167 0 m 1
+ 167 538 l 1
+ 50 538 l 1
+ 50 591 l 1
+ 109 601 151 617 186 638 c 1
+ 249 638 l 1
+ 249 0 l 1
+ 167 0 l 1
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" one.onum
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" one.onum
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.pnum dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

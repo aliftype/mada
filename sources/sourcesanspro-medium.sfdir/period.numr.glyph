@@ -1,0 +1,18 @@
+StartChar: period.numr
+Encoding: 1114650 -1 1628
+Width: 177
+Flags: MW
+HStem: 258 95<75.5 102>
+VStem: 43 91<291 319.5>
+LayerCount: 2
+Fore
+SplineSet
+89 258 m 0
+ 62 258 43 277 43 305 c 0
+ 43 334 62 353 89 353 c 0
+ 115 353 134 334 134 305 c 0
+ 134 277 115 258 89 258 c 0
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" period.dnom
+Colour: ff0000
+EndChar

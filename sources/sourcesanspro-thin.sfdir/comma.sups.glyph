@@ -1,0 +1,20 @@
+StartChar: comma.sups
+Encoding: 1114621 -1 1587
+Width: 152
+Flags: MW
+HStem: 408 62<70 79.5>
+VStem: 88 30<393 409>
+LayerCount: 2
+Fore
+SplineSet
+46 306 m 1
+ 34 328 l 1
+ 66 342 88 372 88 409 c 1
+ 85 408 81 408 78 408 c 0
+ 62 408 46 416 46 436 c 0
+ 46 458 62 470 78 470 c 0
+ 102 470 118 452 118 416 c 0
+ 118 370 88 326 46 306 c 1
+EndSplineSet
+Colour: ff0000
+EndChar

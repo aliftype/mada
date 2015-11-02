@@ -1,0 +1,22 @@
+StartChar: uni0304
+Encoding: 772 772 1833
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 601 57<-133 133 -133 133>
+VStem: -133 266<601 658 601 658>
+AnchorPoint: "Anchor-9" 0 509 mark 0
+AnchorPoint: "Anchor-0" 0 509 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-133 601 m 1
+ -133 658 l 1
+ 133 658 l 1
+ 133 601 l 1
+ -133 601 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" uni0304.cap
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" uni0304.cap
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0304.cap
+EndChar

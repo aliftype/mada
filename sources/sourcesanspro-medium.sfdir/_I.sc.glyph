@@ -1,0 +1,21 @@
+StartChar: I.sc
+Encoding: 1114271 -1 1225
+Width: 263
+GlyphClass: 2
+Flags: MW
+HStem: 0 21G<90 90 90 173> 498 20G<90 173 173 173>
+VStem: 90 83<0 518 0 518>
+AnchorPoint: "Anchor-8" 108 0 basechar 0
+AnchorPoint: "Anchor-4" 131 -22 basechar 0
+AnchorPoint: "Anchor-1" 131 563 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+90 0 m 1
+ 90 518 l 1
+ 173 518 l 1
+ 173 0 l 1
+ 90 0 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

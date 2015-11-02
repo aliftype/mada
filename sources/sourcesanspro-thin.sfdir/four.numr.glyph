@@ -1,0 +1,32 @@
+StartChar: four.numr
+Encoding: 1114642 -1 1620
+Width: 360
+Flags: MW
+HStem: 388 26<88 224 88 224 252 310> 610 50<224 252 224 252>
+VStem: 224 28<270 388 270 388 414 508 508 508 610 610>
+LayerCount: 2
+Fore
+SplineSet
+224 270 m 1
+ 224 388 l 1
+ 48 388 l 1
+ 48 404 l 1
+ 230 660 l 1
+ 252 660 l 1
+ 252 414 l 1
+ 310 414 l 1
+ 310 388 l 1
+ 252 388 l 1
+ 252 270 l 1
+ 224 270 l 1
+88 414 m 1
+ 224 414 l 1
+ 224 508 l 1
+ 228 610 l 1
+ 224 610 l 1
+ 166 526 l 1
+ 88 414 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" four.dnom
+Colour: ff0000
+EndChar

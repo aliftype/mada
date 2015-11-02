@@ -1,0 +1,20 @@
+StartChar: comma.dnom
+Encoding: 1114637 -1 1615
+Width: 177
+Flags: MW
+HStem: -1 88<78.5 90.5>
+VStem: 97 47<-15.5 0>
+LayerCount: 2
+Fore
+SplineSet
+49 -116 m 1
+ 33 -79 l 1
+ 73 -64 97 -37 97 0 c 1
+ 94 -1 92 -1 89 -1 c 0
+ 66 -1 44 13 44 41 c 0
+ 44 69 66 87 91 87 c 0
+ 124 87 144 62 144 14 c 0
+ 144 -45 108 -94 49 -116 c 1
+EndSplineSet
+Colour: ff0000
+EndChar

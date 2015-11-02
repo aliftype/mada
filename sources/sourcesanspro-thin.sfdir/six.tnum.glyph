@@ -1,0 +1,30 @@
+StartChar: six.tnum
+Encoding: 1114237 -1 1117
+Width: 472
+Flags: MW
+HStem: -12 28<205.5 301 205.5 306> 356 28<228.5 304> 624 28<233 307>
+VStem: 56 32<293 415.5 293 424> 398 32<139 234>
+LayerCount: 2
+Fore
+SplineSet
+260 -12 m 0
+ 132 -12 56 98 56 288 c 0
+ 56 560 166 652 288 652 c 0
+ 344 652 384 628 416 592 c 1
+ 396 570 l 1
+ 367 606 328 624 286 624 c 0
+ 180 624 88 538 88 293 c 1
+ 133 348 192 384 254 384 c 0
+ 366 384 430 314 430 186 c 0
+ 430 72 352 -12 260 -12 c 0
+262 16 m 0
+ 340 16 398 92 398 186 c 0
+ 398 282 356 356 252 356 c 0
+ 205 356 144 328 89 255 c 1
+ 96 116 149 16 262 16 c 0
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" six
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" six.onum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" six.onum six
+Colour: ff0000
+EndChar

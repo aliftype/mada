@@ -1,0 +1,30 @@
+StartChar: H
+Encoding: 72 72 9
+Width: 682
+GlyphClass: 2
+Flags: MW
+HStem: 0 21G<72 72 72 244 438 438 438 610> 258 150<244 438 244 438> 630 20G<72 244 244 244 438 610 610 610>
+VStem: 72 172<0 258 408 650> 438 172<0 258 258 258 408 650 0 650>
+AnchorPoint: "Anchor-4" 340 -22 basechar 0
+AnchorPoint: "Anchor-1" 340 672 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+72 0 m 1
+ 72 650 l 1
+ 244 650 l 1
+ 244 408 l 1
+ 438 408 l 1
+ 438 650 l 1
+ 610 650 l 1
+ 610 0 l 1
+ 438 0 l 1
+ 438 258 l 1
+ 244 258 l 1
+ 244 0 l 1
+ 72 0 l 1
+EndSplineSet
+Substitution2: "'sups' Superscript lookup 27 subtable" H.sups
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" H.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" H.sc H.sups
+EndChar

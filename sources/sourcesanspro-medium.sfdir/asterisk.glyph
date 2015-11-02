@@ -1,0 +1,27 @@
+StartChar: asterisk
+Encoding: 42 42 1185
+Width: 418
+Flags: MW
+HStem: 420 292<138 233 184 280>
+VStem: 179.5 58
+LayerCount: 2
+Fore
+SplineSet
+138 420 m 1
+ 98 449 l 1
+ 155 543 l 1
+ 58 583 l 1
+ 73 629 l 1
+ 175 604 l 1
+ 184 712 l 1
+ 233 712 l 1
+ 242 605 l 1
+ 345 629 l 1
+ 360 583 l 1
+ 263 543 l 1
+ 319 449 l 1
+ 280 420 l 1
+ 209 506 l 1
+ 138 420 l 1
+EndSplineSet
+EndChar

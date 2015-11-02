@@ -1,0 +1,21 @@
+StartChar: Iota
+Encoding: 921 921 583
+Width: 316
+GlyphClass: 5
+Flags: MW
+HStem: 0 21G<72 72 72 244> 630 20G<72 244 244 244>
+VStem: 72 172<0 650 0 650>
+LayerCount: 2
+Fore
+SplineSet
+72 0 m 1
+ 72 650 l 1
+ 244 650 l 1
+ 244 0 l 1
+ 72 0 l 1
+EndSplineSet
+Substitution2: "'ss04' Style Set 4 lookup 44 subtable" I.a
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Iota.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" Iota.sc I.a
+Colour: ff0000
+EndChar

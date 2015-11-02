@@ -1,0 +1,23 @@
+StartChar: l.sups
+Encoding: 737 737 1670
+Width: 158
+Flags: MW
+HStem: 402 26<99 106 99 107>
+VStem: 60 28<456 884>
+LayerCount: 2
+Fore
+SplineSet
+102 402 m 0
+ 72 402 60 420 60 456 c 2
+ 60 884 l 1
+ 88 884 l 1
+ 88 450 l 2
+ 88 434 94 428 104 428 c 0
+ 108 428 112 428 118 430 c 1
+ 124 406 l 1
+ 118 404 112 402 102 402 c 0
+EndSplineSet
+Substitution2: "'ss01' Style Set 1 lookup 36 subtable" l.supa
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" l.supa
+Colour: ff0000
+EndChar

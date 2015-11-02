@@ -1,0 +1,35 @@
+StartChar: d
+Encoding: 100 100 31
+Width: 540
+GlyphClass: 2
+Flags: MW
+HStem: -12 28<200 282 200 285> 0 21G<418 444 418 418> 462 28<215 291> 702 20G<414 444 444 444>
+VStem: 54 32<172 300 172 315> 414 30<64 64 100 396 396 396 520 722 0 722>
+AnchorPoint: "Anchor-4" 292 -22 basechar 0
+AnchorPoint: "Anchor-0" 380 730 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+252 -12 m 0xbc
+ 132 -12 54 76 54 238 c 0
+ 54 392 152 490 268 490 c 0
+ 326 490 366 468 416 430 c 1
+ 414 520 l 1
+ 414 722 l 1
+ 444 722 l 1
+ 444 0 l 1
+ 418 0 l 1x7c
+ 414 64 l 1
+ 412 64 l 1
+ 372 24 318 -12 252 -12 c 0xbc
+254 16 m 0
+ 310 16 360 46 414 100 c 1
+ 414 396 l 1
+ 360 444 316 462 266 462 c 0
+ 164 462 86 362 86 238 c 0
+ 86 106 146 16 254 16 c 0
+EndSplineSet
+Substitution2: "'sups' Superscript lookup 26 subtable" d.sups
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" D.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" D.sc d.sups
+EndChar

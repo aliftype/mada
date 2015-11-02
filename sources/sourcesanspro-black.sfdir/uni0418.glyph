@@ -1,0 +1,33 @@
+StartChar: uni0418
+Encoding: 1048 1048 914
+Width: 684
+GlyphClass: 2
+Flags: MW
+HStem: 0 21G<72 72 72 254 442 442 442 612> 630 20G<72 242 242 242 430 612 612 612>
+VStem: 72 170<422 462 462 650> 442 170<0 188 188 228>
+AnchorPoint: "Anchor-1" 346 682 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+72 0 m 1
+ 72 650 l 1
+ 242 650 l 1
+ 242 462 l 2
+ 242 382 228 284 220 214 c 1
+ 224 214 l 1
+ 286 360 l 1
+ 430 650 l 1
+ 612 650 l 1
+ 612 0 l 1
+ 442 0 l 1
+ 442 188 l 2
+ 442 268 456 362 464 436 c 1
+ 460 436 l 1
+ 398 291 l 1
+ 254 0 l 1
+ 72 0 l 1
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" uni0418.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0418.sc
+Colour: ff0000
+EndChar

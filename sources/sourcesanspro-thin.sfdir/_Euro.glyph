@@ -1,0 +1,51 @@
+StartChar: Euro
+Encoding: 8364 8364 1706
+Width: 472
+Flags: MW
+HStem: -12 28<255 335 255 341> 250 28<87 87 87 90 124 124 124 370> 358 28<24 89 123 410> 624 28<264 344>
+VStem: 86 34<314.5 328>
+LayerCount: 2
+Fore
+SplineSet
+304 -12 m 0
+ 188 -12 108 89 90 250 c 1
+ 24 250 l 1
+ 24 274 l 1
+ 87 278 l 1
+ 86 292 86 307 86 322 c 0
+ 86 334 86 346 87 358 c 1
+ 24 358 l 1
+ 24 382 l 1
+ 89 386 l 1
+ 106 551 192 652 320 652 c 0
+ 380 652 430 614 458 574 c 1
+ 436 554 l 1
+ 406 596 368 624 320 624 c 0
+ 208 624 138 533 123 386 c 1
+ 410 386 l 1
+ 410 358 l 1
+ 121 358 l 1
+ 120 346 120 334 120 322 c 0
+ 120 307 120 292 121 278 c 1
+ 370 278 l 1
+ 370 250 l 1
+ 124 250 l 1
+ 140 107 204 16 306 16 c 0
+ 364 16 405 44 446 100 c 1
+ 468 82 l 1
+ 427 24 378 -12 304 -12 c 0
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" nine.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" eight.onum dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.onum dx=0 dy=0 dh=22 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" four.onum dx=0 dy=0 dh=20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.onum dx=0 dy=0 dh=22 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.onum dx=0 dy=0 dh=30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.pnum dx=0 dy=0 dh=30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" four.pnum dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.pnum dx=0 dy=0 dh=30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.pnum dx=0 dy=0 dh=30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.pnum dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

@@ -1,0 +1,19 @@
+StartChar: triagup
+Encoding: 9650 9650 1783
+Width: 870
+Flags: MW
+HStem: -60 800<45 437 433 437 433 825>
+VStem: 45 780<-60 -58 -60 -58>
+LayerCount: 2
+Fore
+SplineSet
+45 -60 m 1
+ 45 -58 l 1
+ 433 740 l 1
+ 437 740 l 1
+ 825 -58 l 1
+ 825 -60 l 1
+ 45 -60 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

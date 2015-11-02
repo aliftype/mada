@@ -1,0 +1,24 @@
+StartChar: uni04CF
+Encoding: 1231 1231 1074
+Width: 298
+Flags: MW
+HStem: -12 21G<154 231> -12 138<154 261> 676 20G<58 230 230 230>
+VStem: 58 172<176 696>
+LayerCount: 2
+Fore
+SplineSet
+212 -12 m 0xb0
+ 96 -12 58 64 58 176 c 2
+ 58 696 l 1
+ 230 696 l 1
+ 230 170 l 2
+ 230 136 246 126 258 126 c 0
+ 264 126 268 126 276 128 c 1x70
+ 296 2 l 1
+ 278 -6 250 -12 212 -12 c 0xb0
+EndSplineSet
+Substitution2: "'ss01' Style Set 1 lookup 38 subtable" l.a
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 21 subtable" uni04C0.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni04C0.sc l.a
+Colour: ff0000
+EndChar

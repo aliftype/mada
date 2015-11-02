@@ -1,0 +1,41 @@
+StartChar: uni1F2C
+Encoding: 7980 7980 673
+Width: 1030
+GlyphClass: 3
+Flags: MW
+HStem: 0 21G<420 420 420 592 786 786 786 958> 258 150<592 786 592 786> 578 84<-8 12> 630 20G<372 372 420 592 592 592 786 958 958 958> 642 20G<12 12>
+VStem: 60 112<520.5 542.5> 420 172<0 258 408 650> 786 172<0 258 258 258 408 650 0 650>
+LayerCount: 2
+Fore
+SplineSet
+420 0 m 1xcb
+ 420 650 l 1
+ 592 650 l 1
+ 592 408 l 1
+ 786 408 l 1
+ 786 650 l 1
+ 958 650 l 1xd7
+ 958 0 l 1
+ 786 0 l 1
+ 786 258 l 1
+ 592 258 l 1
+ 592 0 l 1
+ 420 0 l 1xcb
+200 450 m 1
+ 228 670 l 1
+ 372 650 l 1
+ 308 430 l 1
+ 200 450 l 1
+42 426 m 1
+ 30 492 l 1
+ 46 500 60 509 60 532 c 0
+ 60 553 42 573 -8 578 c 1xe7
+ 12 662 l 1xcf
+ 124 658 172 614 172 550 c 0
+ 172 474 104 436 42 426 c 1
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Eta.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Eta uni03130301
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Eta.sc
+Colour: ff0000
+EndChar

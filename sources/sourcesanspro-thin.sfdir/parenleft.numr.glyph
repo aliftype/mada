@@ -1,0 +1,20 @@
+StartChar: parenleft.numr
+Encoding: 1114648 -1 1626
+Width: 212
+Flags: MW
+HStem: 200 526<152 152>
+VStem: 66 30<420 508 420 517>
+LayerCount: 2
+Fore
+SplineSet
+152 200 m 1
+ 96 276 66 356 66 464 c 0
+ 66 570 96 650 152 726 c 1
+ 170 712 l 1
+ 114 636 96 552 96 464 c 0
+ 96 376 114 292 170 214 c 1
+ 152 200 l 1
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" parenleft.dnom
+Colour: ff0000
+EndChar

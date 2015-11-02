@@ -1,0 +1,30 @@
+StartChar: nine.tnum
+Encoding: 1114240 -1 1120
+Width: 472
+Flags: MW
+HStem: -82 28<173 244.5 173 252> 170 28<160.5 242.5 160.5 248> 554 28<170 270.5>
+VStem: 34 32<325 424 325 434> 386 32
+LayerCount: 2
+Fore
+SplineSet
+216 198 m 0
+ 269 198 331 227 386 300 c 1
+ 382 447 329 554 212 554 c 0
+ 128 554 66 474 66 374 c 0
+ 66 276 105 198 216 198 c 0
+194 -82 m 0
+ 134 -82 92 -58 58 -22 c 1
+ 78 0 l 1
+ 110 -36 150 -54 196 -54 c 0
+ 293 -54 381 27 386 261 c 1
+ 340 206 282 170 214 170 c 0
+ 96 170 34 244 34 374 c 0
+ 34 494 117 582 214 582 c 0
+ 342 582 418 472 418 282 c 0
+ 418 10 310 -82 194 -82 c 0
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" nine
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" nine.onum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" nine.onum nine
+Colour: ff0000
+EndChar

@@ -1,0 +1,22 @@
+StartChar: asciicircum
+Encoding: 94 94 1759
+Width: 472
+Flags: MW
+HStem: 638 32<234 238 234 234>
+VStem: 68 336<292 292>
+LayerCount: 2
+Fore
+SplineSet
+68 292 m 1
+ 218 670 l 1
+ 254 670 l 1
+ 404 292 l 1
+ 372 292 l 1
+ 290 506 l 1
+ 238 638 l 1
+ 234 638 l 1
+ 182 506 l 1
+ 100 292 l 1
+ 68 292 l 1
+EndSplineSet
+EndChar

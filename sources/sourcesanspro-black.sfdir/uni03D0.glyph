@@ -1,0 +1,44 @@
+StartChar: uni03D0
+Encoding: 976 976 633
+Width: 604
+Flags: MW
+HStem: -12 148<292.5 341 292.5 391> 572 134<275 316>
+VStem: 58 160<250 265.5 265.5 270 217.5 456> 358 164<490.5 528> 404 168<187 236>
+LayerCount: 2
+Fore
+SplineSet
+324 -12 m 0xe8
+ 189 -12 58 62 58 250 c 2
+ 58 456 l 2
+ 58 598 131 706 292 706 c 0
+ 408 706 522 651 522 523 c 0xf0
+ 522 458 492 408 424 380 c 1
+ 424 376 l 1
+ 508 362 572 290 572 202 c 0
+ 572 52 458 -12 324 -12 c 0xe8
+224 448 m 0
+ 223 429 222 410 221 391 c 1
+ 339 421 358 458 358 504 c 0
+ 358 552 332 572 300 572 c 0xf0
+ 250 572 229 522 224 448 c 0
+318 136 m 0
+ 364 136 404 160 404 214 c 0
+ 404 258 378 296 316 296 c 0
+ 291 296 268 287 218 270 c 0
+ 218 269 218 268 218 263 c 0
+ 218 172 267 136 318 136 c 0
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE5 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE4 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" rho dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" pi dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BE dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BC dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblright dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quoteright dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" nu dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

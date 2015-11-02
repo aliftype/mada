@@ -1,0 +1,31 @@
+StartChar: uni0407
+Encoding: 1031 1031 947
+Width: 316
+Flags: MW
+HStem: 0 21G<72 72 72 244> 630 20G<72 244 244 244> 694 156<21 67 249 295>
+VStem: -34 156<750 794> 72 172<0 650 0 650> 194 156<750 794>
+LayerCount: 2
+Fore
+SplineSet
+72 0 m 1xe8
+ 72 650 l 1
+ 244 650 l 1
+ 244 0 l 1
+ 72 0 l 1xe8
+44 694 m 0xf4
+ -2 694 -34 728 -34 772 c 0
+ -34 816 -2 850 44 850 c 0
+ 90 850 122 816 122 772 c 0
+ 122 728 90 694 44 694 c 0xf4
+272 694 m 0
+ 226 694 194 728 194 772 c 0
+ 194 816 226 850 272 850 c 0
+ 318 850 350 816 350 772 c 0
+ 350 728 318 694 272 694 c 0
+EndSplineSet
+Substitution2: "Single Substitution lookup 49 subtable" uni0407.a
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" uni0407.sc
+MultipleSubs2: "Multiple Substitution lookup 7 subtable" I uni0308
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0407.sc
+Colour: ff0000
+EndChar

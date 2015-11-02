@@ -1,0 +1,31 @@
+StartChar: J.sc
+Encoding: 1114272 -1 1226
+Width: 438
+GlyphClass: 2
+Flags: MW
+HStem: -12 71<163 210 163 246> 498 20G<267 351 351 351>
+VStem: 267 84<163 518>
+AnchorPoint: "Anchor-4" 209 -22 basechar 0
+AnchorPoint: "Anchor-1" 303 563 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+190 -12 m 0
+ 117 -12 65 19 31 76 c 1
+ 89 117 l 1
+ 113 78 144 59 182 59 c 0
+ 238 59 267 87 267 163 c 2
+ 267 518 l 1
+ 351 518 l 1
+ 351 157 l 2
+ 351 64 302 -12 190 -12 c 0
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quotedblbase dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" quotesinglbase dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" ellipsis dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" comma dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" period dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Jcircumflex.sc dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" J.sc dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

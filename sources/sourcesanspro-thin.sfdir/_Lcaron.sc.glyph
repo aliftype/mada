@@ -1,0 +1,25 @@
+StartChar: Lcaron.sc
+Encoding: 1114373 -1 1327
+Width: 409
+Flags: MW
+HStem: 0 28<132 390 132 390> 490 20G<100 132 132 132>
+VStem: 100 32<28 510 28 510 28 510> 293 29
+LayerCount: 2
+Fore
+SplineSet
+100 0 m 1
+ 100 510 l 1
+ 132 510 l 1
+ 132 28 l 1
+ 390 28 l 1
+ 390 0 l 1
+ 100 0 l 1
+294 398 m 1
+ 292 602 l 1
+ 322 602 l 1
+ 322 554 l 1
+ 316 398 l 1
+ 294 398 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,22 @@
+StartChar: lacute.a
+Encoding: 1114165 -1 566
+Width: 246
+Flags: MW
+HStem: 0 21G<82 82 82 164> 692 20G<82 164 164 164>
+VStem: 82 82<0 712 0 712>
+LayerCount: 2
+Fore
+SplineSet
+82 0 m 1
+ 82 712 l 1
+ 164 712 l 1
+ 164 0 l 1
+ 82 0 l 1
+104 749 m 1
+ 67 791 l 1
+ 209 919 l 1
+ 256 864 l 1
+ 104 749 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

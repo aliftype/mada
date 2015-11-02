@@ -1,0 +1,36 @@
+StartChar: six.pnum
+Encoding: 1114225 -1 1105
+Width: 496
+Flags: MW
+HStem: -12 28<213.5 309 213.5 314> 356 28<236.5 312> 624 28<241 315>
+VStem: 64 32<293 415.5 293 424> 406 32<139 234>
+LayerCount: 2
+Fore
+SplineSet
+268 -12 m 0
+ 140 -12 64 98 64 288 c 0
+ 64 560 174 652 296 652 c 0
+ 352 652 392 628 424 592 c 1
+ 404 570 l 1
+ 375 606 336 624 294 624 c 0
+ 188 624 96 538 96 293 c 1
+ 141 348 200 384 262 384 c 0
+ 374 384 438 314 438 186 c 0
+ 438 72 360 -12 268 -12 c 0
+270 16 m 0
+ 348 16 406 92 406 186 c 0
+ 406 282 364 356 260 356 c 0
+ 213 356 152 328 97 255 c 1
+ 104 116 157 16 270 16 c 0
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" six.onum
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" six.onum
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" cent dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" nine.pnum dx=0 dy=0 dh=-8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.pnum dx=0 dy=0 dh=-18 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.pnum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

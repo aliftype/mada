@@ -1,0 +1,32 @@
+StartChar: three.tnum
+Encoding: 1114234 -1 1114
+Width: 472
+Flags: MW
+HStem: -82 28<186 277 186 284> 252 30<158 234 158 239> 554 28<198 269>
+VStem: 158 114<266 270 266 282 266 282> 364 32<388 466> 388 32<51 142>
+LayerCount: 2
+Fore
+SplineSet
+230 -82 m 0xf4
+ 128 -82 70 -34 30 8 c 1
+ 50 30 l 1
+ 88 -12 140 -54 232 -54 c 0
+ 322 -54 388 6 388 96 c 0xf4
+ 388 188 320 252 158 252 c 1
+ 158 282 l 1
+ 310 282 364 348 364 428 c 0
+ 364 504 310 554 228 554 c 0
+ 168 554 114 522 78 482 c 1
+ 58 504 l 1
+ 100 546 154 582 228 582 c 0
+ 322 582 396 526 396 430 c 0xf8
+ 396 344 342 293 272 270 c 1
+ 272 266 l 1
+ 352 250 420 190 420 98 c 0
+ 420 -12 338 -82 230 -82 c 0xf4
+EndSplineSet
+Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" three
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" three.onum
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" three.onum three
+Colour: ff0000
+EndChar

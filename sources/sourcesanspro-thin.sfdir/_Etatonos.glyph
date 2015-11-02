@@ -1,0 +1,39 @@
+StartChar: Etatonos
+Encoding: 905 905 601
+Width: 654
+Flags: MW
+HStem: 0 21G<120 120 120 152 522 522 522 554> 338 28<152 522 152 522> 640 20G<120 152 152 152 522 554 554 554> 644 20G<42 42> 650 20G<6 6>
+VStem: 120 32<0 338 366 660> 522 32<0 338 338 338 366 660 0 660>
+LayerCount: 2
+Fore
+SplineSet
+120 0 m 1xce
+ 120 660 l 1
+ 152 660 l 1
+ 152 366 l 1
+ 522 366 l 1
+ 522 660 l 1
+ 554 660 l 1xe6
+ 554 0 l 1
+ 522 0 l 1
+ 522 338 l 1
+ 152 338 l 1
+ 152 0 l 1
+ 120 0 l 1xce
+-24 490 m 1
+ 6 670 l 1xce
+ 42 664 l 1xd6
+ 0 484 l 1
+ -24 490 l 1
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Eta.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Eta.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Omicron.sc dx=0 dy=0 dh=24 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Theta.sc dx=0 dy=0 dh=24 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Zeta.sc dx=0 dy=0 dh=15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=45 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=45 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Tau.sc dx=0 dy=0 dh=20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Chi.sc dx=0 dy=0 dh=36 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

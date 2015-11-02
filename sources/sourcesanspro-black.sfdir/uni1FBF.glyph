@@ -1,0 +1,20 @@
+StartChar: uni1FBF
+Encoding: 8127 8127 880
+Width: 560
+GlyphClass: 5
+Flags: MW
+HStem: 566 66<220 232> 702 104<182 192>
+VStem: 260 124<652 673>
+LayerCount: 2
+Fore
+SplineSet
+232 566 m 1
+ 220 632 l 1
+ 242 635 260 642 260 662 c 0
+ 260 684 240 698 182 702 c 1
+ 192 806 l 1
+ 338 802 384 748 384 674 c 0
+ 384 602 314 570 232 566 c 1
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,20 @@
+StartChar: one.dnom
+Encoding: 1114625 -1 1603
+Width: 367
+Flags: MW
+HStem: 308 82<87 236>
+VStem: 172 64<0 308 308 308>
+LayerCount: 2
+Fore
+SplineSet
+172 0 m 1
+ 172 308 l 1
+ 87 308 l 1
+ 87 350 l 1
+ 131 358 157 370 184 390 c 1
+ 236 390 l 1
+ 236 0 l 1
+ 172 0 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

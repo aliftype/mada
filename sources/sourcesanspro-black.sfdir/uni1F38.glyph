@@ -1,0 +1,29 @@
+StartChar: uni1F38
+Encoding: 7992 7992 677
+Width: 496
+GlyphClass: 3
+Flags: MW
+HStem: 0 21G<252 252 252 424> 570 84<-8 12> 630 20G<252 424 424 424> 634 20G<12 12>
+VStem: 70 122<514 538.5> 252 172<0 650 0 650>
+LayerCount: 2
+Fore
+SplineSet
+252 0 m 1x94
+ 252 650 l 1
+ 424 650 l 1xac
+ 424 0 l 1
+ 252 0 l 1x94
+42 418 m 1
+ 30 484 l 1
+ 50 490 70 500 70 528 c 0
+ 70 549 50 565 -8 570 c 1xcc
+ 12 654 l 1x9c
+ 150 650 192 606 192 546 c 0
+ 192 460 124 424 42 418 c 1
+EndSplineSet
+MultipleSubs2: "'ss04' Style Set 4 lookup 45 subtable" uni1FBD.cap I.a
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Iota.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Iota uni0313.g
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Iota.sc
+Colour: ff0000
+EndChar

@@ -1,0 +1,22 @@
+StartChar: ldot.a
+Encoding: 1114167 -1 568
+Width: 288
+Flags: MW
+HStem: 0 21G<96 96 96 126> 284 78<246 264> 702 20G<96 126 126 126>
+VStem: 96 30<0 722 0 722> 219 72<310 335>
+LayerCount: 2
+Fore
+SplineSet
+96 0 m 1
+ 96 722 l 1
+ 126 722 l 1
+ 126 0 l 1
+ 96 0 l 1
+255 284 m 0
+ 237 284 219 298 219 322 c 0
+ 219 348 237 362 255 362 c 0
+ 273 362 291 348 291 322 c 0
+ 291 298 273 284 255 284 c 0
+EndSplineSet
+Colour: ff0000
+EndChar

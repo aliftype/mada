@@ -1,0 +1,28 @@
+StartChar: uni03060309.cap
+Encoding: 1114741 -1 1921
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 694 88<-22.5 22.5 -22.5 51> 808 52<-48 -36> 914 68<-84 -68>
+VStem: -20 108<876 892>
+AnchorPoint: "Anchor-1" 0 672 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-36 808 m 1
+ -48 860 l 1xf0
+ -32 863 -20 868 -20 884 c 0
+ -20 900 -33 910 -84 914 c 1
+ -68 982 l 1
+ 54 978 88 942 88 898 c 0
+ 88 836 35 812 -36 808 c 1
+0 694 m 0xb0
+ -102 694 -160 738 -170 834 c 1
+ -88 850 l 1
+ -77 804 -45 782 0 782 c 0
+ 45 782 77 804 88 850 c 1
+ 170 834 l 1
+ 160 738 102 694 0 694 c 0xb0
+EndSplineSet
+Colour: ff0000
+EndChar

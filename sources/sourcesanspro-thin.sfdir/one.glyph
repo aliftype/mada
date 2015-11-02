@@ -1,0 +1,31 @@
+StartChar: one
+Encoding: 49 49 1088
+Width: 472
+Flags: MW
+HStem: 0 28<86 238 86 238 268 410> 580 22<124 238 124 124> 580 60<124 268>
+VStem: 238 30<28 580 580 580>
+LayerCount: 2
+Fore
+SplineSet
+86 0 m 1xb0
+ 86 28 l 1
+ 238 28 l 1
+ 238 580 l 1
+ 124 580 l 1xb0
+ 124 602 l 1xd0
+ 174 610 214 624 242 640 c 1
+ 268 640 l 1
+ 268 28 l 1
+ 410 28 l 1
+ 410 0 l 1
+ 86 0 l 1xb0
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" one.tnum
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" one.pnum
+Substitution2: "'subs' Subscript lookup 30 subtable" one.subs
+Substitution2: "'sups' Superscript lookup 28 subtable" one.sups
+Substitution2: "'dnom' Denominators lookup 23 subtable" one.dnom
+Substitution2: "'numr' Numerators lookup 22 subtable" one.numr
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 18 subtable" one.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" one.sc one.numr one.dnom one.sups one.subs one.pnum one.tnum
+EndChar

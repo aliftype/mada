@@ -1,0 +1,31 @@
+StartChar: ordfeminine
+Encoding: 170 170 1630
+Width: 364
+Flags: MW
+HStem: 368 82<159.5 328 159.5 232> 514 68<208 208> 614 94<160 177.5>
+VStem: 26 114<465 481 465 497> 208 120<470 514 514 514>
+LayerCount: 2
+Fore
+SplineSet
+128 360 m 0
+ 64 360 26 408 26 462 c 0
+ 26 532 80 570 208 582 c 1
+ 205 605 191 614 164 614 c 0
+ 140 614 113 604 78 586 c 1
+ 36 664 l 1
+ 84 692 134 708 186 708 c 0
+ 272 708 328 660 328 554 c 2
+ 328 368 l 1
+ 232 368 l 1
+ 222 400 l 1
+ 218 400 l 1
+ 194 376 164 360 128 360 c 0
+169 450 m 0
+ 186 450 196 458 208 470 c 1
+ 208 514 l 1
+ 156 508 140 490 140 472 c 0
+ 140 458 150 450 169 450 c 0
+EndSplineSet
+Substitution2: "'ss02' Style Set 2 lookup 39 subtable" ordfeminine.a
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" ordfeminine.a
+EndChar

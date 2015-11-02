@@ -1,0 +1,32 @@
+StartChar: uni03D1
+Encoding: 977 977 634
+Width: 522
+Flags: MW
+HStem: -12 68<235 295.5 235 320.5> 336 55 656 68<213.5 241>
+VStem: 66 79<499 575.5 499 596> 88 77<132.5 198> 382 81
+LayerCount: 2
+Fore
+SplineSet
+145 541 m 0xf4
+ 145 457 192 370 382 396 c 1
+ 376 587 322 657 241 656 c 0
+ 186 656 145 610 145 541 c 0xf4
+259 -12 m 0xec
+ 151 -12 88 48 88 169 c 0
+ 88 227 88 256 80 291 c 1
+ 158 291 l 1
+ 166 269 165 232 165 179 c 0xec
+ 165 86 208 56 262 56 c 0
+ 329 56 379 112 382 341 c 1
+ 136 308 66 440 66 542 c 0xf4
+ 66 650 143 724 238 724 c 0
+ 386 724 463 600 463 362 c 0
+ 463 83 382 -12 259 -12 c 0xec
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE5 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE4 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" rho dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

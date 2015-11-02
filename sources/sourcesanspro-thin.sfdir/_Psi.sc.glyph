@@ -1,0 +1,35 @@
+StartChar: Psi.sc
+Encoding: 1114507 -1 1461
+Width: 579
+Flags: MW
+HStem: 0 21G<274 274 274 305> 202 26<218 274> 490 20G<72 103 103 103 274 305 305 305 476 507 507 507>
+VStem: 72 31<383 384 384 510> 274 31<0 202 0 202 228 510> 476 31<384 510>
+LayerCount: 2
+Fore
+SplineSet
+274 0 m 1
+ 274 202 l 1
+ 146 203 72 260 72 383 c 2
+ 72 510 l 1
+ 103 510 l 1
+ 103 384 l 2
+ 103 281 162 228 274 228 c 1
+ 274 510 l 1
+ 305 510 l 1
+ 305 228 l 1
+ 419 230 476 282 476 384 c 2
+ 476 510 l 1
+ 507 510 l 1
+ 507 383 l 2
+ 507 258 431 202 305 202 c 1
+ 305 0 l 1
+ 274 0 l 1
+EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni0394.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Alphaiotasub.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Lambda.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Alpha.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

@@ -1,0 +1,26 @@
+StartChar: quotedbl.sc
+Encoding: 1114606 -1 1560
+Width: 426
+Flags: MW
+HStem: 346 259<99 99 99 149 276 326 276 276>
+VStem: 81.5 85 258.5 85
+LayerCount: 2
+Fore
+SplineSet
+99 346 m 1
+ 83 513 l 1
+ 80 605 l 1
+ 168 605 l 1
+ 165 513 l 1
+ 149 346 l 1
+ 99 346 l 1
+276 346 m 1
+ 260 513 l 1
+ 257 605 l 1
+ 345 605 l 1
+ 342 513 l 1
+ 326 346 l 1
+ 276 346 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

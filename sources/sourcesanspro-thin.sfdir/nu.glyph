@@ -1,0 +1,28 @@
+StartChar: nu
+Encoding: 957 957 620
+Width: 434
+Flags: MW
+HStem: 0 32<202 226 222 226 222 236> 458 20G<12 12 380 412 412 412> 470 20G<40 40>
+VStem: 380 32<478 478>
+LayerCount: 2
+Fore
+SplineSet
+202 0 m 1xb0
+ 160 174 98 352 12 478 c 1xd0
+ 40 490 l 1xb0
+ 118 374 188 184 222 32 c 1
+ 226 32 l 1
+ 294 166 366 334 380 478 c 1
+ 412 478 l 1xd0
+ 389 314 326 162 236 0 c 1
+ 202 0 l 1xb0
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 15 subtable" Nu.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guillemotright dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guilsinglright dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE5 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE4 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" rho dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

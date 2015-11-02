@@ -1,0 +1,25 @@
+StartChar: radical
+Encoding: 8730 8730 1768
+Width: 557
+Flags: MW
+HStem: -95 90<281 311 307 311 307 344>
+VStem: 41 520<346 820>
+LayerCount: 2
+Fore
+SplineSet
+281 -95 m 1
+ 131 333 l 1
+ 60 301 l 1
+ 41 346 l 1
+ 174 405 l 1
+ 290 59 l 2
+ 297 38 302 16 307 -5 c 1
+ 311 -5 l 1
+ 315 16 319 38 323 59 c 2
+ 501 820 l 1
+ 561 820 l 1
+ 344 -95 l 1
+ 281 -95 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

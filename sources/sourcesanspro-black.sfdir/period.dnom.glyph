@@ -1,0 +1,17 @@
+StartChar: period.dnom
+Encoding: 1114636 -1 1614
+Width: 220
+Flags: MW
+HStem: -8 142<90 130>
+VStem: 40 140<42 82>
+LayerCount: 2
+Fore
+SplineSet
+110 -8 m 0
+ 70 -8 40 22 40 62 c 0
+ 40 102 70 134 110 134 c 0
+ 150 134 180 102 180 62 c 0
+ 180 22 150 -8 110 -8 c 0
+EndSplineSet
+Colour: ff0000
+EndChar

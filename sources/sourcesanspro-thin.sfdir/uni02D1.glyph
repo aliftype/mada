@@ -1,0 +1,17 @@
+StartChar: uni02D1
+Encoding: 721 721 1687
+Width: 208
+Flags: MW
+HStem: 256 94<100 100 100 108>
+VStem: 56 96<350 350>
+LayerCount: 2
+Fore
+SplineSet
+100 256 m 1
+ 56 350 l 1
+ 152 350 l 1
+ 108 256 l 1
+ 100 256 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

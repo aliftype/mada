@@ -1,0 +1,46 @@
+StartChar: uni1EDE
+Encoding: 7902 7902 178
+Width: 692
+Flags: MW
+HStem: -12 148<307 385 307 436> 514 148<307 372.5 256 385> 808 84<248 268>
+VStem: 44 176<269 387 269 435> 326 122<770 786> 472 176<269 381.5 221 387> 540 142<678.5 714>
+LayerCount: 2
+Fore
+SplineSet
+346 -12 m 0xf4
+ 166 -12 44 114 44 328 c 0
+ 44 542 166 662 346 662 c 0
+ 399 662 447 651 489 631 c 1
+ 521 643 540 657 540 700 c 0
+ 540 728 531 753 524 768 c 1
+ 650 818 l 1
+ 666 796 682 756 682 712 c 0xf2
+ 682 638 644 598 563 576 c 1
+ 617 519 648 435 648 328 c 0
+ 648 114 526 -12 346 -12 c 0xf4
+346 136 m 0
+ 424 136 472 210 472 328 c 0
+ 472 446 424 514 346 514 c 0
+ 268 514 220 446 220 328 c 0
+ 220 210 268 136 346 136 c 0
+298 688 m 1
+ 286 754 l 1
+ 308 757 326 762 326 778 c 0
+ 326 794 306 804 248 808 c 1
+ 268 892 l 1
+ 406 888 448 850 448 796 c 0xfc
+ 448 724 380 692 298 688 c 1
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" uni1EDE.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni1EDE.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0291 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0290 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E95 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E93 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zdotaccent dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zcaron dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zacute dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" z dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" trademark dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

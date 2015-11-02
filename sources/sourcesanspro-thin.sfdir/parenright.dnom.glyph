@@ -1,0 +1,19 @@
+StartChar: parenright.dnom
+Encoding: 1114635 -1 1613
+Width: 212
+Flags: MW
+HStem: -70 526<62 62>
+VStem: 116 30<150 238>
+LayerCount: 2
+Fore
+SplineSet
+62 -70 m 1
+ 42 -56 l 1
+ 98 22 116 106 116 194 c 0
+ 116 282 98 366 42 442 c 1
+ 62 456 l 1
+ 116 380 146 300 146 194 c 0
+ 146 86 116 6 62 -70 c 1
+EndSplineSet
+Colour: ff0000
+EndChar

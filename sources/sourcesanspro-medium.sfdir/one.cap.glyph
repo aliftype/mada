@@ -1,0 +1,24 @@
+StartChar: one.cap
+Encoding: 1114252 -1 1132
+Width: 497
+Flags: MW
+HStem: 0 68<79 225 79 225 307 439> 557 99<109 307>
+VStem: 225 82<68 557 557 557>
+LayerCount: 2
+Fore
+SplineSet
+79 0 m 1
+ 79 68 l 1
+ 225 68 l 1
+ 225 557 l 1
+ 109 557 l 1
+ 109 609 l 1
+ 167 620 209 635 244 656 c 1
+ 307 656 l 1
+ 307 68 l 1
+ 439 68 l 1
+ 439 0 l 1
+ 79 0 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

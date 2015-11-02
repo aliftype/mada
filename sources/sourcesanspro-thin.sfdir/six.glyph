@@ -1,0 +1,34 @@
+StartChar: six
+Encoding: 54 54 1093
+Width: 472
+Flags: MW
+HStem: -12 28<203.5 299 203.5 304> 356 28<226.5 302> 624 28<231 305>
+VStem: 54 32<293 415.5 293 424> 396 32<139 234>
+LayerCount: 2
+Fore
+SplineSet
+258 -12 m 0
+ 130 -12 54 98 54 288 c 0
+ 54 560 164 652 286 652 c 0
+ 342 652 382 628 414 592 c 1
+ 394 570 l 1
+ 365 606 326 624 284 624 c 0
+ 178 624 86 538 86 293 c 1
+ 131 348 190 384 252 384 c 0
+ 364 384 428 314 428 186 c 0
+ 428 72 350 -12 258 -12 c 0
+260 16 m 0
+ 338 16 396 92 396 186 c 0
+ 396 282 354 356 250 356 c 0
+ 203 356 142 328 87 255 c 1
+ 94 116 147 16 260 16 c 0
+EndSplineSet
+Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" six.tnum
+Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" six.pnum
+Substitution2: "'subs' Subscript lookup 30 subtable" six.subs
+Substitution2: "'sups' Superscript lookup 28 subtable" six.sups
+Substitution2: "'dnom' Denominators lookup 23 subtable" six.dnom
+Substitution2: "'numr' Numerators lookup 22 subtable" six.numr
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 18 subtable" six.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" six.sc six.numr six.dnom six.sups six.subs six.pnum six.tnum
+EndChar

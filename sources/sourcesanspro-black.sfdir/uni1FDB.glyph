@@ -1,0 +1,27 @@
+StartChar: uni1FDB
+Encoding: 8155 8155 680
+Width: 456
+GlyphClass: 3
+Flags: MW
+HStem: 0 21G<212 212 212 384> 630 20G<162 162 212 384 384 384>
+VStem: 212 172<0 650 0 650>
+LayerCount: 2
+Fore
+SplineSet
+212 0 m 1
+ 212 650 l 1
+ 384 650 l 1
+ 384 0 l 1
+ 212 0 l 1
+-10 450 m 1
+ 18 670 l 1
+ 162 650 l 1
+ 98 430 l 1
+ -10 450 l 1
+EndSplineSet
+MultipleSubs2: "'ss04' Style Set 4 lookup 45 subtable" tonos.cap I.a
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Iota.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Iota uni0301
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Iota.sc
+Colour: ff0000
+EndChar

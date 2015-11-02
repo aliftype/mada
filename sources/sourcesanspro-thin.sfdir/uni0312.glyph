@@ -1,0 +1,25 @@
+StartChar: uni0312
+Encoding: 786 786 1858
+Width: 0
+GlyphClass: 4
+Flags: MW
+HStem: 546 64<-5.5 3 -5.5 6>
+VStem: -40 28<609 624>
+AnchorPoint: "Anchor-9" 0 502 mark 0
+AnchorPoint: "Anchor-0" 0 502 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-2 546 m 0
+ -26 546 -40 566 -40 604 c 0
+ -40 644 -22 686 26 712 c 1
+ 40 690 l 1
+ 2 668 -12 640 -12 609 c 1
+ -9 610 -7 610 -4 610 c 0
+ 10 610 28 602 28 580 c 0
+ 28 556 14 546 -2 546 c 0
+EndSplineSet
+Substitution2: "'locl' Localized Forms in Greek lookup 4 subtable" uni0312.g
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0312.g
+Colour: ff0000
+EndChar

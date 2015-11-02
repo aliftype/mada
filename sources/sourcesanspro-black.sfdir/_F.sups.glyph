@@ -1,0 +1,23 @@
+StartChar: F.sups
+Encoding: 1114658 -1 1638
+Width: 363
+Flags: MW
+HStem: 523 99<167 312 167 312> 701 99<167 336 167 167>
+VStem: 47 120<368 523 622 701>
+LayerCount: 2
+Fore
+SplineSet
+47 368 m 1
+ 47 800 l 1
+ 336 800 l 1
+ 336 701 l 1
+ 167 701 l 1
+ 167 622 l 1
+ 312 622 l 1
+ 312 523 l 1
+ 167 523 l 1
+ 167 368 l 1
+ 47 368 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

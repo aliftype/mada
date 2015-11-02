@@ -1,0 +1,19 @@
+StartChar: parenright.subs
+Encoding: 8334 8334 1599
+Width: 237
+Flags: MW
+HStem: -256 546<86 86>
+VStem: 110 62<-26.5 62>
+LayerCount: 2
+Fore
+SplineSet
+86 -256 m 1
+ 39 -234 l 1
+ 90 -154 110 -71 110 18 c 0
+ 110 106 90 190 39 268 c 1
+ 86 290 l 1
+ 141 209 172 130 172 18 c 0
+ 172 -95 141 -175 86 -256 c 1
+EndSplineSet
+Colour: ff0000
+EndChar

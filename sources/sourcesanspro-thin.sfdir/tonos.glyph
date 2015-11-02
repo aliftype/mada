@@ -1,0 +1,17 @@
+StartChar: tonos
+Encoding: 900 900 874
+Width: 532
+Flags: MW
+HStem: 560 192<274 300>
+VStem: 250 88
+LayerCount: 2
+Fore
+SplineSet
+250 566 m 1
+ 300 752 l 1
+ 338 744 l 1
+ 274 560 l 1
+ 250 566 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

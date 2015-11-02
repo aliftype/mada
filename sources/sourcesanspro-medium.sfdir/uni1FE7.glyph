@@ -1,0 +1,53 @@
+StartChar: uni1FE7
+Encoding: 8167 8167 816
+Width: 510
+GlyphClass: 3
+Flags: MW
+HStem: -12 68<221 285 221 310> 466 20G<60 140 140 140> 478 20G<412 412> 588 91<135 161 327 353> 694 20G<91 91> 707 50<287 322.5 287 340.5> 756 50<165.5 201>
+VStem: 64 78<132.5 206 132.5 209> 91 42<710 714> 102 91<620.5 646> 295 91<620.5 646> 355 42<799 803> 372 83<177 277>
+LayerCount: 2
+Fore
+SplineSet
+249 -12 m 0xbb08
+ 133 -12 64 52 64 180 c 0
+ 64 238 68 295 68 353 c 0
+ 68 391 67 435 60 486 c 1
+ 140 486 l 1xdb08
+ 147 452 148 416 148 373 c 0
+ 148 318 142 236 142 176 c 0
+ 142 89 192 56 250 56 c 0
+ 320 56 372 114 372 240 c 0
+ 372 314 362 390 332 479 c 1
+ 412 498 l 1
+ 440 414 455 329 455 243 c 0
+ 455 78 371 -12 249 -12 c 0xbb08
+91 714 m 1xba88
+ 94 766 122 806 173 806 c 0xba88
+ 243 806 263 757 311 757 c 0
+ 334 757 351 772 355 803 c 1
+ 397 799 l 1
+ 394 747 366 707 315 707 c 0xb510
+ 245 707 225 756 177 756 c 0
+ 154 756 137 741 133 710 c 1
+ 91 714 l 1xba88
+148 588 m 0xba60
+ 122 588 102 608 102 633 c 0
+ 102 659 122 679 148 679 c 0
+ 174 679 193 659 193 633 c 0
+ 193 608 174 588 148 588 c 0xba60
+340 588 m 0
+ 314 588 295 608 295 633 c 0
+ 295 659 314 679 340 679 c 0
+ 366 679 386 659 386 633 c 0
+ 386 608 366 588 340 588 c 0
+EndSplineSet
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 16 subtable" Upsilondieresis.sc
+Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" upsilon uni03080303
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" pi dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" nu dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

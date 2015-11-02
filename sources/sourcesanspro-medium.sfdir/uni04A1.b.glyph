@@ -1,0 +1,28 @@
+StartChar: uni04A1.b
+Encoding: 1114213 -1 1063
+Width: 614
+Flags: MW
+HStem: 216 72<280 369 280 376 280 369> 419 67<26 280 26 198>
+VStem: 198 82<0 216 288 419 419 419>
+LayerCount: 2
+Fore
+SplineSet
+26 419 m 1
+ 26 486 l 1
+ 280 486 l 1
+ 280 288 l 1
+ 369 288 l 1
+ 499 486 l 1
+ 591 486 l 1
+ 434 260 l 1
+ 601 0 l 1
+ 511 0 l 1
+ 376 216 l 1
+ 280 216 l 1
+ 280 0 l 1
+ 198 0 l 1
+ 198 419 l 1
+ 26 419 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

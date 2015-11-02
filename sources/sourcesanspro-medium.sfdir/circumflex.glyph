@@ -1,0 +1,23 @@
+StartChar: circumflex
+Encoding: 710 710 1806
+Width: 542
+GlyphClass: 2
+Flags: MW
+HStem: 681 59<269 273 269 269>
+VStem: 116 310<600 600>
+AnchorPoint: "Anchor-0" 271 719 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+116 600 m 1
+ 230 740 l 1
+ 312 740 l 1
+ 426 600 l 1
+ 391 568 l 1
+ 273 681 l 1
+ 269 681 l 1
+ 151 568 l 1
+ 116 600 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,31 @@
+StartChar: four.dnom
+Encoding: 1114628 -1 1606
+Width: 380
+Flags: MW
+HStem: 80 80<144 212 144 212 322 380> 310 80<214 218 214 214>
+VStem: 212 110<0 80 0 80 160 190 190 190>
+LayerCount: 2
+Fore
+SplineSet
+212 0 m 1
+ 212 80 l 1
+ 32 80 l 1
+ 32 142 l 1
+ 164 390 l 1
+ 322 390 l 1
+ 322 160 l 1
+ 380 160 l 1
+ 380 80 l 1
+ 322 80 l 1
+ 322 0 l 1
+ 212 0 l 1
+144 160 m 1
+ 212 160 l 1
+ 212 190 l 1
+ 218 310 l 1
+ 214 310 l 1
+ 178 234 l 1
+ 144 160 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,20 @@
+StartChar: l.a
+Encoding: 1114164 -1 565
+Width: 246
+GlyphClass: 2
+Flags: MW
+HStem: 0 21G<82 82 82 164> 692 20G<82 164 164 164>
+VStem: 82 82<0 712 0 712>
+AnchorPoint: "Anchor-4" 123 -22 basechar 0
+AnchorPoint: "Anchor-0" 123 730 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+82 0 m 1
+ 82 712 l 1
+ 164 712 l 1
+ 164 0 l 1
+ 82 0 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,40 @@
+StartChar: uni1EDE
+Encoding: 7902 7902 178
+Width: 648
+Flags: MW
+HStem: -12 30<258 398 258 406> 642 30<258 350.5 250 398> 834 26<274 276>
+VStem: 60 34<237 427 237 436> 360 30<769 800> 550 34<706.5 737.5> 562 34<237 396.5 228 427>
+LayerCount: 2
+Fore
+SplineSet
+328 -12 m 0xfa
+ 172 -12 60 124 60 332 c 0
+ 60 540 172 672 328 672 c 0
+ 373 672 414 661 450 640 c 1
+ 519 651 550 683 550 730 c 0
+ 550 745 546 765 536 782 c 1
+ 566 798 l 1
+ 578 776 584 754 584 732 c 0xfc
+ 584 670 541 633 483 618 c 1
+ 553 561 596 461 596 332 c 0
+ 596 124 484 -12 328 -12 c 0xfa
+328 18 m 0
+ 468 18 562 142 562 332 c 0
+ 562 522 468 642 328 642 c 0
+ 188 642 94 522 94 332 c 0
+ 94 142 188 18 328 18 c 0
+302 704 m 1
+ 294 726 l 1
+ 332 738 360 754 360 784 c 0
+ 360 816 328 832 274 834 c 1
+ 276 860 l 1
+ 334 858 390 838 390 788 c 0
+ 390 738 346 718 302 704 c 1
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" uni1EDE.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni1EDE.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" slash dx=0 dy=0 dh=-22 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" trademark dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" registered dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar

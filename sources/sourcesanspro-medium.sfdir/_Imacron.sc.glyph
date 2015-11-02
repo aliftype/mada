@@ -1,0 +1,22 @@
+StartChar: Imacron.sc
+Encoding: 1114361 -1 1315
+Width: 263
+Flags: MW
+HStem: 0 21G<90 90 90 173> 498 20G<90 173 173 173> 619 57<-3 265 -3 265>
+VStem: 90 83<0 518 0 518>
+LayerCount: 2
+Fore
+SplineSet
+90 0 m 1
+ 90 518 l 1
+ 173 518 l 1
+ 173 0 l 1
+ 90 0 l 1
+-3 619 m 1
+ -3 676 l 1
+ 265 676 l 1
+ 265 619 l 1
+ -3 619 l 1
+EndSplineSet
+Colour: ff0000
+EndChar

@@ -1,0 +1,22 @@
+StartChar: uni1ECA.sc
+Encoding: 1114365 -1 1319
+Width: 263
+Flags: MW
+HStem: -206 108<115.5 146.5> 0 21G<90 90 90 173> 498 20G<90 173 173 173>
+VStem: 77 108<-168 -136.5> 90 83<0 518 0 518>
+LayerCount: 2
+Fore
+SplineSet
+90 0 m 1xe8
+ 90 518 l 1
+ 173 518 l 1
+ 173 0 l 1
+ 90 0 l 1xe8
+131 -206 m 0xf0
+ 100 -206 77 -184 77 -152 c 0
+ 77 -121 100 -98 131 -98 c 0
+ 162 -98 185 -121 185 -152 c 0
+ 185 -184 162 -206 131 -206 c 0xf0
+EndSplineSet
+Colour: ff0000
+EndChar

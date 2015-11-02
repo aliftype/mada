@@ -1,0 +1,34 @@
+StartChar: braceright
+Encoding: 125 125 1180
+Width: 270
+Flags: MW
+HStem: -152 22<18 50 18 48> 266 24<199 234> 686 22<18 48 48 50 18 48>
+VStem: 124 32 172 62<276 280 280 280>
+LayerCount: 2
+Fore
+SplineSet
+18 -152 m 1
+ 18 -130 l 1
+ 50 -130 l 2
+ 114 -130 130 -94 130 -22 c 0
+ 130 44 124 100 124 174 c 0
+ 124 228 134 264 172 276 c 1
+ 172 280 l 1
+ 134 292 124 326 124 382 c 0
+ 124 456 130 512 130 578 c 0
+ 130 650 114 686 50 686 c 2
+ 18 686 l 1
+ 18 708 l 1
+ 48 708 l 2
+ 120 708 156 682 156 582 c 0
+ 156 508 148 442 148 370 c 0xf0
+ 148 330 164 290 234 290 c 1
+ 234 266 l 1xf8
+ 164 266 148 226 148 184 c 0
+ 148 114 156 48 156 -26 c 0
+ 156 -126 120 -152 48 -152 c 2
+ 18 -152 l 1
+EndSplineSet
+Substitution2: "'c2sc' Capitals to Small Capitals lookup 19 subtable" braceright.sc
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" braceright.sc
+EndChar

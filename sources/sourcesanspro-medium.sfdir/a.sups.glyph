@@ -1,0 +1,32 @@
+StartChar: a.sups
+Encoding: 7491 7491 1659
+Width: 345
+Flags: MW
+HStem: 387 49<137 156.5> 673 51<157 197.5>
+VStem: 37 61<469 504.5 469 516> 236 62<476 561 561 561>
+LayerCount: 2
+Fore
+SplineSet
+136 387 m 0
+ 77 387 37 424 37 481 c 0
+ 37 551 98 586 236 600 c 1
+ 235 642 221 673 174 673 c 0
+ 139 673 100 656 73 639 c 1
+ 50 682 l 1
+ 83 702 131 724 183 724 c 0
+ 263 724 298 675 298 591 c 2
+ 298 395 l 1
+ 248 395 l 1
+ 241 432 l 1
+ 237 432 l 1
+ 210 408 177 387 136 387 c 0
+154 436 m 0
+ 181 436 207 449 236 476 c 1
+ 236 561 l 1
+ 133 550 98 523 98 486 c 0
+ 98 452 120 436 154 436 c 0
+EndSplineSet
+Substitution2: "'ss02' Style Set 2 lookup 39 subtable" a.supa
+Substitution2: "'aalt' Access All Alternates lookup 0 subtable" a.supa
+Colour: ff0000
+EndChar

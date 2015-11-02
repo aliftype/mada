@@ -1,0 +1,36 @@
+StartChar: lacute
+Encoding: 314 314 333
+Width: 255
+Flags: MW
+HStem: -12 68<138 189.5> 692 20G<82 164 164 164>
+VStem: 82 82<98 712>
+LayerCount: 2
+Fore
+SplineSet
+169 -12 m 0
+ 107 -12 82 27 82 98 c 2
+ 82 712 l 1
+ 164 712 l 1
+ 164 92 l 2
+ 164 66 175 56 187 56 c 0
+ 192 56 196 56 205 58 c 1
+ 216 -4 l 1
+ 205 -9 191 -12 169 -12 c 0
+102 749 m 1
+ 65 791 l 1
+ 207 919 l 1
+ 254 864 l 1
+ 102 749 l 1
+EndSplineSet
+Substitution2: "'ss01' Style Set 1 lookup 36 subtable" lacute.a
+Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Lacute.sc
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" Lacute.sc lacute.a
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0284 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0283 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0272 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni025F dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0237 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" jcircumflex dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" j dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+Colour: ff0000
+EndChar
