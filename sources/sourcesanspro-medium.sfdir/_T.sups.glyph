@@ -1,21 +1,21 @@
 StartChar: T.sups
 Encoding: 1114672 -1 1652
-Width: 356
+Width: 363
 Flags: MW
-HStem: 774 53<17 148 17 340 210 210 210 340>
-VStem: 148 62<395 774 395 774>
+HStem: 757 63<16 144 16 347 220 220 220 347>
+VStem: 144 76<388 757 388 757>
 LayerCount: 2
 Fore
 SplineSet
-148 395 m 1
- 148 774 l 1
- 17 774 l 1
- 17 827 l 1
- 340 827 l 1
- 340 774 l 1
- 210 774 l 1
- 210 395 l 1
- 148 395 l 1
+144 388 m 1
+ 144 757 l 1
+ 16 757 l 1
+ 16 820 l 1
+ 347 820 l 1
+ 347 757 l 1
+ 220 757 l 1
+ 220 388 l 1
+ 144 388 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

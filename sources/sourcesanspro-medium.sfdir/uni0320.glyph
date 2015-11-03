@@ -3,17 +3,17 @@ Encoding: 800 800 1870
 Width: 0
 GlyphClass: 4
 Flags: MW
-HStem: -177 47<-96 96 -96 96>
-VStem: -96 192<-177 -130 -177 -130>
+HStem: -182 55<-100 100 -100 100>
+VStem: -100 200<-182 -127 -182 -127>
 AnchorPoint: "Anchor-4" 0 -22 mark 0
 LayerCount: 2
 Fore
 SplineSet
--96 -177 m 1
- -96 -130 l 1
- 96 -130 l 1
- 96 -177 l 1
- -96 -177 l 1
+-100 -182 m 1
+ -100 -127 l 1
+ 100 -127 l 1
+ 100 -182 l 1
+ -100 -182 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

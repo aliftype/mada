@@ -1,21 +1,21 @@
 StartChar: bracketright.sc
 Encoding: 1114617 -1 1571
-Width: 303
+Width: 317
 Flags: MW
-HStem: -102 47<31 147 31 147 31 209> 558 47<31 147 31 209>
-VStem: 147 62<-55 558 558 558>
+HStem: -102 57<36 147 36 147 36 225> 551 57<36 147 36 225>
+VStem: 147 78<-45 551 551 551>
 LayerCount: 2
 Fore
 SplineSet
-31 -102 m 1
- 31 -55 l 1
- 147 -55 l 1
- 147 558 l 1
- 31 558 l 1
- 31 605 l 1
- 209 605 l 1
- 209 -102 l 1
- 31 -102 l 1
+36 -102 m 1
+ 36 -45 l 1
+ 147 -45 l 1
+ 147 551 l 1
+ 36 551 l 1
+ 36 608 l 1
+ 225 608 l 1
+ 225 -102 l 1
+ 36 -102 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

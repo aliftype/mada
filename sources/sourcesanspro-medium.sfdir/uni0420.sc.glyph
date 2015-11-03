@@ -1,58 +1,58 @@
 StartChar: uni0420.sc
 Encoding: 1114530 -1 1484
-Width: 518
+Width: 529
 Flags: MW
-HStem: 0 21G<90 90 90 173> 196 60<173 261 261 267 173 261> 452 66<173 259 173 173>
-VStem: 90 83<0 196 256 452> 395 81<323 392>
+HStem: 0 21G<85 85 85 190> 187 73<190 270 270 275 190 270> 439 82<190 268 190 190>
+VStem: 85 105<0 187 260 439> 388 101<321.5 383.5>
 LayerCount: 2
 Fore
 SplineSet
-90 0 m 1
- 90 518 l 1
- 267 518 l 2
- 390 518 476 478 476 361 c 0
- 476 248 389 196 267 196 c 2
- 173 196 l 1
- 173 0 l 1
- 90 0 l 1
-173 256 m 1
- 261 256 l 2
- 353 256 395 289 395 357 c 0
- 395 427 351 452 259 452 c 2
- 173 452 l 1
- 173 256 l 1
+85 0 m 1
+ 85 521 l 1
+ 275 521 l 2
+ 397 521 489 481 489 358 c 0
+ 489 239 395 187 275 187 c 2
+ 190 187 l 1
+ 190 0 l 1
+ 85 0 l 1
+190 260 m 1
+ 270 260 l 2
+ 350 260 388 291 388 352 c 0
+ 388 415 349 439 268 439 c 2
+ 190 439 l 1
+ 190 260 l 1
 EndSplineSet
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" hyphen.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04C1.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0496.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0416.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" hyphen.sc dx=0 dy=0 dh=-13 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0498.sc dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni042D.sc dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0417.sc dx=0 dy=0 dh=-40 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04F2.sc dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04EE.sc dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni040E.sc dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0423.sc dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quoteright.sc dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quotedblbase dx=0 dy=0 dh=-106 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quotesinglbase dx=0 dy=0 dh=-106 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" ellipsis dx=0 dy=0 dh=-106 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" comma dx=0 dy=0 dh=-106 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" period dx=0 dy=0 dh=-106 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04F2.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04EE.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni040E.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0423.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04B2.sc dx=0 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0425.sc dx=0 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quoteright.sc dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quotedblbase dx=0 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" quotesinglbase dx=0 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" ellipsis dx=0 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" comma dx=0 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" period dx=0 dy=0 dh=-105 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0462.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04A0.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni040B.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0402.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni042A.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0422.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0408.sc dx=0 dy=0 dh=-119 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04B2.sc dx=0 dy=0 dh=-24 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0425.sc dx=0 dy=0 dh=-24 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0409.sc dx=0 dy=0 dh=-45 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni041B.sc dx=0 dy=0 dh=-45 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0408.sc dx=0 dy=0 dh=-114 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0409.sc dx=0 dy=0 dh=-39 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni041B.sc dx=0 dy=0 dh=-39 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0405.sc dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0414.sc dx=0 dy=0 dh=-45 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04D0.sc dx=0 dy=0 dh=-36 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0410.sc dx=0 dy=0 dh=-36 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0414.sc dx=0 dy=0 dh=-39 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04D0.sc dx=0 dy=0 dh=-35 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0410.sc dx=0 dy=0 dh=-35 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

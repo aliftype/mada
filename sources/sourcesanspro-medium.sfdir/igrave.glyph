@@ -1,22 +1,22 @@
 StartChar: igrave
 Encoding: 236 236 315
-Width: 246
+Width: 256
 Flags: MW
-HStem: 0 21G<82 82 82 164> 466 20G<82 164 164 164>
-VStem: 82 82<0 486 0 486>
+HStem: 0 21G<76 76 76 180> 469 20G<76 180 180 180>
+VStem: 76 104<0 489 0 489>
 LayerCount: 2
 Fore
 SplineSet
-82 0 m 1
- 82 486 l 1
- 164 486 l 1
- 164 0 l 1
- 82 0 l 1
-137 573 m 1
- -20 726 l 1
- 38 781 l 1
- 179 614 l 1
- 137 573 l 1
+76 0 m 1
+ 76 489 l 1
+ 180 489 l 1
+ 180 0 l 1
+ 76 0 l 1
+134 573 m 1
+ -31 727 l 1
+ 41 796 l 1
+ 186 624 l 1
+ 134 573 l 1
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Igrave.sc
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Igrave.sc

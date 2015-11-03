@@ -1,17 +1,17 @@
 StartChar: bullet
 Encoding: 8226 8226 1171
-Width: 304
+Width: 318
 Flags: MW
-HStem: 143 241<122 182>
-VStem: 40 224<227 299>
+HStem: 136 254<126.5 191.5>
+VStem: 40 238<226 300>
 LayerCount: 2
 Fore
 SplineSet
-152 143 m 0
- 92 143 40 191 40 263 c 0
- 40 335 92 384 152 384 c 0
- 212 384 264 335 264 263 c 0
- 264 191 212 143 152 143 c 0
+159 136 m 0
+ 94 136 40 189 40 263 c 0
+ 40 337 94 390 159 390 c 0
+ 224 390 278 337 278 263 c 0
+ 278 189 224 136 159 136 c 0
 EndSplineSet
 Colour: ff0000
 EndChar

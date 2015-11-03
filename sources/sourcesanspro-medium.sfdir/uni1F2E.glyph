@@ -1,52 +1,52 @@
 StartChar: uni1F2E
 Encoding: 7982 7982 675
-Width: 840
+Width: 858
 GlyphClass: 3
 Flags: MW
-HStem: 0 21G<278 278 278 361 666 666 666 750> 309 72<361 666 361 666> 533 39<32 39> 592 45<124 148 124 165> 627 45<40 64> 636 20G<278 361 361 361 666 750 750 750> 648 20G<170 170>
-VStem: -24 42<596 602> 101 59<494.5 510.5> 170 42<662 668> 278 83<0 309 381 656> 666 84<0 309 309 309 381 656 0 656>
+HStem: 0 21G<285 285 285 390 669 669 669 774> 296 92<390 669 390 669> 519 46<32 41> 584 53<130.5 153.5 130.5 172.5> 618 53<46 69.5> 635 20G<285 390 390 390 669 774 774 774> 647 20G<175 175>
+VStem: -24 49<588 595> 100 71<484 498.5> 175 49<660 667> 285 105<0 296 388 655> 669 105<0 296 296 296 388 655 0 655>
 LayerCount: 2
 Fore
 SplineSet
-278 0 m 1xd230
- 278 656 l 1
- 361 656 l 1
- 361 381 l 1
- 666 381 l 1
- 666 656 l 1
- 750 656 l 1xc430
- 750 0 l 1
- 666 0 l 1
- 666 309 l 1
- 361 309 l 1
- 361 0 l 1
- 278 0 l 1xd230
--24 602 m 1xc930
- -19 648 1 672 45 672 c 0xc930
- 93 672 108 637 140 637 c 0
- 156 637 168 643 170 668 c 1
- 212 662 l 1
- 207 615 187 592 143 592 c 0xd270
- 95 592 80 627 48 627 c 0
- 32 627 20 621 18 596 c 1
- -24 602 l 1xc930
-67 439 m 1xf2b0
- 59 472 l 1
- 83 478 101 488 101 501 c 0
- 101 520 81 530 32 533 c 1
- 39 572 l 1
- 117 569 160 551 160 510 c 0
- 160 469 115 448 67 439 c 1xf2b0
+285 0 m 1xd030
+ 285 655 l 1
+ 390 655 l 1
+ 390 388 l 1
+ 669 388 l 1
+ 669 655 l 1
+ 774 655 l 1xc430
+ 774 0 l 1
+ 669 0 l 1
+ 669 296 l 1
+ 390 296 l 1
+ 390 0 l 1
+ 285 0 l 1xd030
+-24 595 m 1xc930
+ -18 649 4 671 50 671 c 0xc930
+ 98 671 115 637 146 637 c 0xd070
+ 161 637 172 643 175 667 c 1xd270
+ 224 660 l 1
+ 217 606 195 584 150 584 c 0xd070
+ 102 584 85 618 54 618 c 0
+ 38 618 28 612 25 588 c 1
+ -24 595 l 1xc930
+70 427 m 1
+ 61 465 l 1
+ 84 469 100 478 100 490 c 0
+ 100 507 82 516 32 519 c 1
+ 41 565 l 1
+ 130 561 171 542 171 501 c 0xf0b0
+ 171 457 123 435 70 427 c 1
 EndSplineSet
 Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Eta.sc
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Eta uni03130303
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Eta.sc
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Omicron.sc dx=0 dy=0 dh=15 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Theta.sc dx=0 dy=0 dh=15 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Zeta.sc dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=28 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=28 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Tau.sc dx=0 dy=0 dh=13 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Chi.sc dx=0 dy=0 dh=23 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Zeta.sc dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Omicron.sc dx=0 dy=0 dh=12 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Theta.sc dx=0 dy=0 dh=12 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Chi.sc dx=0 dy=0 dh=17 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=22 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=22 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Tau.sc dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

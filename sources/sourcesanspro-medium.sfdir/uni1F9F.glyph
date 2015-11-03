@@ -1,57 +1,60 @@
 StartChar: uni1F9F
 Encoding: 8095 8095 733
-Width: 1098
+Width: 1129
 GlyphClass: 3
 Flags: MW
-HStem: -12 68<1022.5 1028> 0 21G<278 278 278 361 666 666 666 750 1073 1073> 309 72<361 666 361 666> 533 39<149 156> 592 45<124 148 124 165> 627 45<40 64> 636 20G<278 361 361 361 666 750 750 750> 648 20G<170 170>
-VStem: -24 42<596 602> 27 60<494.5 510.5 494.5 530.5> 170 42<662 668> 278 83<0 309 381 656> 666 84<0 309 309 309 381 656 0 656> 920 77<101 143 81.5 406>
+HStem: -12 85<1056.5 1059.5> 0 21G<285 285 285 390 669 669 669 774> 296 92<390 669 390 669> 519 46<158 168> 584 53<130.5 153.5 130.5 172.5> 618 53<46 69.5> 635 20G<285 390 390 390 669 774 774 774> 647 20G<175 175>
+VStem: -24 49<588 595> 28 72<484 498.5 484 521.5> 175 49<660 667> 285 105<0 296 388 655> 669 105<0 296 296 296 388 655 0 655> 932 98<119 156 98.5 409>
 LayerCount: 2
 Fore
 SplineSet
-278 0 m 1x691c
- 278 656 l 1
- 361 656 l 1
- 361 381 l 1
- 666 381 l 1
- 666 656 l 1
- 750 656 l 1x725c
- 750 0 l 1
- 666 0 l 1
- 666 309 l 1
- 361 309 l 1
- 361 0 l 1
- 278 0 l 1x691c
-121 439 m 1
- 73 448 27 469 27 510 c 0
- 27 551 71 569 149 572 c 1
- 156 533 l 1
- 107 530 87 520 87 501 c 0
- 87 488 104 478 129 472 c 1
- 121 439 l 1
--24 602 m 1x649c
- -19 648 1 672 45 672 c 0x649c
- 93 672 108 637 140 637 c 0
- 156 637 168 643 170 668 c 1
- 212 662 l 1
- 207 615 187 592 143 592 c 0x693c
- 95 592 80 627 48 627 c 0
- 32 627 20 621 18 596 c 1
- -24 602 l 1x649c
-1014 -12 m 0xa91c
- 947 -12 920 29 920 101 c 2
- 920 406 l 1
- 1003 406 l 1
- 1000 299 997 191 997 95 c 0
- 997 68 1012 56 1033 56 c 0
- 1041 56 1051 58 1062 62 c 1
- 1073 0 l 1
- 1059 -7 1042 -12 1014 -12 c 0xa91c
+285 0 m 1x681c
+ 285 655 l 1
+ 390 655 l 1
+ 390 388 l 1
+ 669 388 l 1
+ 669 655 l 1
+ 774 655 l 1x725c
+ 774 0 l 1
+ 669 0 l 1
+ 669 296 l 1
+ 390 296 l 1
+ 390 0 l 1
+ 285 0 l 1x681c
+129 427 m 1
+ 76 435 28 457 28 501 c 0
+ 28 542 70 561 158 565 c 1
+ 168 519 l 1
+ 118 516 100 507 100 490 c 0
+ 100 478 115 469 138 465 c 1
+ 129 427 l 1
+-24 595 m 1x649c
+ -18 649 4 671 50 671 c 0x649c
+ 98 671 115 637 146 637 c 0x683c
+ 161 637 172 643 175 667 c 1x693c
+ 224 660 l 1
+ 217 606 195 584 150 584 c 0x683c
+ 102 584 85 618 54 618 c 0
+ 38 618 28 612 25 588 c 1
+ -24 595 l 1x649c
+1043 -12 m 0xa81c
+ 962 -12 932 37 932 119 c 2
+ 932 409 l 1
+ 1037 409 l 1
+ 1033 307 1030 199 1030 113 c 0
+ 1030 84 1045 73 1068 73 c 0
+ 1077 73 1087 75 1098 79 c 1
+ 1112 1 l 1
+ 1095 -6 1076 -12 1043 -12 c 0xa81c
 EndSplineSet
 Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Etaiotasub.sc
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" uni1FCC uni03120303
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Eta uni0345 uni03120303
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" Eta uni1FBE uni03120303
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Etaiotasub.sc
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni03D1 dx=0 dy=0 dh=-3 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni03D0 dx=0 dy=0 dh=-3 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" theta dx=0 dy=0 dh=-3 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni03DB dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni03D9 dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FF7 dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
@@ -93,55 +96,55 @@ PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" omega dx=0 dy=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" phi dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" sigma dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" omicron dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB7 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F87 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F86 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F85 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F84 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F83 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F82 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB4 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB2 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F81 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F80 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB3 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB6 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB1 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB0 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F07 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F06 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F05 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F04 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F03 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F02 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F71 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F70 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F01 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F00 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" alphatonos dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" alpha dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" pi dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BE dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BC dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblright dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quoteright dx=0 dy=0 dh=-27 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblbase dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotesinglbase dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" ellipsis dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" comma dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" period dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" semicolon dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" colon dx=0 dy=0 dh=7 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB7 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F87 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F86 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F85 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F84 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F83 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F82 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB4 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB2 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F81 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F80 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB3 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB6 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB1 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FB0 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F07 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F06 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F05 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F04 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F03 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F02 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F71 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F70 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F01 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F00 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" alphatonos dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" alpha dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" pi dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BE dx=0 dy=0 dh=-30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BC dx=0 dy=0 dh=-30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblright dx=0 dy=0 dh=-30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quoteright dx=0 dy=0 dh=-30 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblbase dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotesinglbase dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" ellipsis dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" comma dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" period dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" semicolon dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" colon dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" nu dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FBE dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F77 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F31 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F30 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" iotatonos dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" iota dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FBE dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F77 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F31 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1F30 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" iotatonos dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" iota dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

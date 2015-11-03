@@ -1,29 +1,29 @@
 StartChar: zero.onum
 Encoding: 1114241 -1 1121
-Width: 518
+Width: 527
 Flags: MW
-HStem: -12 66<217.5 296 217.5 319> 519 67<217.5 296>
-VStem: 52 80<214 360 214 386> 381 80<214 360>
+HStem: -12 82<226 298 226 325.5> 505 82<226 298>
+VStem: 50 99<220.5 355.5 220.5 386> 374 100<220.5 355.5>
 LayerCount: 2
 Fore
 SplineSet
-257 -12 m 0
- 132 -12 52 89 52 287 c 0
- 52 485 132 586 257 586 c 0
- 381 586 461 485 461 287 c 0
- 461 89 381 -12 257 -12 c 0
-257 54 m 0
- 335 54 381 141 381 287 c 0
- 381 433 335 519 257 519 c 0
- 178 519 132 433 132 287 c 0
- 132 141 178 54 257 54 c 0
+262 -12 m 0
+ 134 -12 50 91 50 288 c 0
+ 50 484 134 587 262 587 c 0
+ 389 587 474 484 474 288 c 0
+ 474 91 389 -12 262 -12 c 0
+262 70 m 0
+ 334 70 374 153 374 288 c 0
+ 374 423 334 505 262 505 c 0
+ 190 505 149 423 149 288 c 0
+ 149 153 190 70 262 70 c 0
 EndSplineSet
 Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" zero.pnum
 AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" zero.pnum
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.onum dx=0 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.onum dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.onum dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.onum dx=0 dy=0 dh=-29 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" five.onum dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.onum dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" two.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.onum dx=0 dy=0 dh=-13 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

@@ -1,47 +1,47 @@
 StartChar: Ntilde.sc
 Encoding: 1114386 -1 1340
-Width: 585
+Width: 592
 Flags: MW
-HStem: 0 21G<90 90 90 167 412 412 412 495> 0 101<412 429 425 429 425 495> 417 101<156 160 156 156> 498 20G<90 174 174 174 418 495 495 495> 593 61<350.5 386.5 350.5 406> 664 61<215.5 251.5>
-VStem: 90 77<0 245 0 518> 124 56<598 602> 418 77<275 518 0 518> 422 56<716 720>
+HStem: 0 21G<85 85 85 182 403 403 403 506> 0 125<403 423 419 423 419 506> 397 124<169 173 169 169> 501 20G<85 191 191 191 410 506 506 506> 589 75<353.5 386.5 353.5 409.5> 656 74<221.5 254.5> 699 20G<488 488>
+VStem: 85 97<0 212 0 521> 120 69<595 601> 410 96<311 521 0 521> 419 69<719 724>
 LayerCount: 2
 Fore
 SplineSet
-90 0 m 1x9680
- 90 518 l 1
- 174 518 l 1
- 365 212 l 1
- 425 101 l 1
- 429 101 l 1x5e80
- 425 153 418 219 418 275 c 2
- 418 518 l 1
- 495 518 l 1
- 495 0 l 1
- 412 0 l 1
- 220 306 l 1
- 160 417 l 1
- 156 417 l 1xa680
- 160 363 167 301 167 245 c 2
- 167 0 l 1
- 90 0 l 1x9680
-376 593 m 0
- 301 593 275 664 228 664 c 0
- 203 664 184 641 180 598 c 1
- 124 602 l 1x9580
- 128 678 166 725 226 725 c 0
- 301 725 327 654 374 654 c 0
- 399 654 417 677 422 720 c 1
- 478 716 l 1x9e40
- 474 639 436 593 376 593 c 0
+85 0 m 1x9b40
+ 85 521 l 1
+ 191 521 l 1
+ 360 240 l 1
+ 419 125 l 1
+ 423 125 l 1x5b40
+ 418 178 410 252 410 311 c 2
+ 410 521 l 1
+ 506 521 l 1
+ 506 0 l 1
+ 403 0 l 1
+ 232 281 l 1
+ 173 397 l 1
+ 169 397 l 1xab40
+ 174 341 182 271 182 212 c 2
+ 182 0 l 1
+ 85 0 l 1x9b40
+378 589 m 0
+ 304 589 276 656 233 656 c 0
+ 210 656 193 636 189 595 c 1
+ 120 601 l 1x94c0
+ 124 685 167 730 230 730 c 0
+ 304 730 332 664 375 664 c 0
+ 398 664 414 684 419 724 c 1
+ 488 719 l 1x9b20
+ 484 635 441 589 378 589 c 0
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF8 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF6 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF4 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E8E dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ydieresis dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ycircumflex dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Yacute dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ygrave dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Y dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF8 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF6 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF4 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E8E dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ydieresis dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ycircumflex dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Yacute dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ygrave dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Y dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

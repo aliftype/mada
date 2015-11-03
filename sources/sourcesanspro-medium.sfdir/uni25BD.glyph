@@ -1,23 +1,23 @@
 StartChar: uni25BD
 Encoding: 9661 9661 1788
-Width: 895
+Width: 889
 Flags: MW
-HStem: 687 58<148 747 148 148>
-VStem: 51 793<743 745 743 745>
+HStem: 669 70<168 722 168 168>
+VStem: 50 789<737 739 737 739>
 LayerCount: 2
 Fore
 SplineSet
-844 745 m 1
- 844 743 l 1
- 450 -80 l 1
- 446 -80 l 1
- 51 743 l 1
- 51 745 l 1
- 844 745 l 1
-747 687 m 1
- 148 687 l 1
- 448 48 l 1
- 747 687 l 1
+839 739 m 1
+ 839 737 l 1
+ 447 -80 l 1
+ 443 -80 l 1
+ 50 737 l 1
+ 50 739 l 1
+ 839 739 l 1
+722 669 m 1
+ 168 669 l 1
+ 445 76 l 1
+ 722 669 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

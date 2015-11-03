@@ -3,29 +3,29 @@ Encoding: 1114753 -1 1933
 Width: 0
 GlyphClass: 4
 Flags: MW
-HStem: 656 39<-62 -55> 715 50<42 71 42 89.5> 757 50<-71 -42>
-VStem: -141 47<715 719> 7 60<618 634> 94 47<803 807>
-AnchorPoint: "Anchor-9" 0 509 mark 0
-AnchorPoint: "Anchor-0" 0 509 mark 0
+HStem: 654 46<-68 -58> 718 61<40 67 40 88> 760 61<-67 -40>
+VStem: -146 57<720 725> 0 72<619.5 634> 89 57<814 820>
+AnchorPoint: "Anchor-9" 0 512 mark 0
+AnchorPoint: "Anchor-0" 0 512 mark 0
 LayerCount: 2
 Fore
 SplineSet
--141 719 m 1xb8
- -136 770 -114 807 -65 807 c 0xb8
- -6 807 23 765 61 765 c 0
- 81 765 89 779 94 807 c 1
- 141 803 l 1
- 136 752 114 715 65 715 c 0xdc
- 7 715 -23 757 -61 757 c 0
- -81 757 -89 743 -94 715 c 1
- -141 719 l 1xb8
--27 562 m 1
- -35 595 l 1
- -11 601 7 611 7 625 c 0
- 7 643 -13 654 -62 656 c 1
- -55 695 l 1
- 23 693 67 674 67 634 c 0
- 67 593 21 571 -27 562 c 1
+-146 725 m 1xb8
+ -140 784 -113 821 -63 821 c 0xb8
+ -5 821 22 779 58 779 c 0
+ 76 779 84 792 89 820 c 1
+ 146 814 l 1
+ 140 755 113 718 63 718 c 0xdc
+ 6 718 -22 760 -58 760 c 0
+ -76 760 -84 748 -89 720 c 1
+ -146 725 l 1xb8
+-29 563 m 1
+ -38 600 l 1
+ -16 605 0 613 0 626 c 0
+ 0 642 -18 652 -68 654 c 1
+ -58 700 l 1
+ 30 697 72 677 72 637 c 0
+ 72 593 23 571 -29 563 c 1
 EndSplineSet
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 10 subtable" uni0313.g uni0342
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 10 subtable" uni0313.g uni0303

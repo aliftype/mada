@@ -1,17 +1,17 @@
 StartChar: uni1FFD
 Encoding: 8189 8189 883
-Width: 542
+Width: 547
 Flags: MW
-HStem: 558 212<281 295>
-VStem: 238 128
+HStem: 557 221<273 304>
+VStem: 233 144
 LayerCount: 2
 Fore
 SplineSet
-238 569 m 1
- 281 770 l 1
- 366 755 l 1
- 295 558 l 1
- 238 569 l 1
+233 570 m 1
+ 273 778 l 1
+ 377 760 l 1
+ 304 557 l 1
+ 233 570 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

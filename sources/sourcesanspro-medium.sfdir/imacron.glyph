@@ -1,22 +1,22 @@
 StartChar: imacron
 Encoding: 299 299 320
-Width: 246
+Width: 256
 Flags: MW
-HStem: 0 21G<82 82 82 164> 466 20G<82 164 164 164> 601 57<-10 256 -10 256>
-VStem: 82 82<0 486 0 486>
+HStem: 0 21G<76 76 76 180> 469 20G<76 180 180 180> 598 69<-10 266 -10 266>
+VStem: 76 104<0 489 0 489>
 LayerCount: 2
 Fore
 SplineSet
-82 0 m 1
- 82 486 l 1
- 164 486 l 1
- 164 0 l 1
- 82 0 l 1
--10 601 m 1
- -10 658 l 1
- 256 658 l 1
- 256 601 l 1
- -10 601 l 1
+76 0 m 1
+ 76 489 l 1
+ 180 489 l 1
+ 180 0 l 1
+ 76 0 l 1
+-10 598 m 1
+ -10 667 l 1
+ 266 667 l 1
+ 266 598 l 1
+ -10 598 l 1
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Imacron.sc
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Imacron.sc

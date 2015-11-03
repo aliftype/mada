@@ -1,20 +1,20 @@
 StartChar: seven.cap
 Encoding: 1114258 -1 1138
-Width: 497
+Width: 507
 Flags: MW
-HStem: 586 70<44 362 44 455>
-VStem: 177 85<0 0>
+HStem: 0 21G<171 171 171 277> 566 89<44 351 44 465>
+VStem: 171 106<0 0>
 LayerCount: 2
 Fore
 SplineSet
-177 0 m 1
- 188 249 233 407 362 586 c 1
- 44 586 l 1
- 44 656 l 1
- 455 656 l 1
- 455 606 l 1
- 301 409 273 257 262 0 c 1
- 177 0 l 1
+171 0 m 1
+ 182 239 224 390 351 566 c 1
+ 44 566 l 1
+ 44 655 l 1
+ 465 655 l 1
+ 465 591 l 1
+ 313 400 288 256 277 0 c 1
+ 171 0 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

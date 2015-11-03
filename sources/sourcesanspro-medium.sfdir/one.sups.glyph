@@ -1,19 +1,19 @@
 StartChar: one.sups
 Encoding: 185 185 1575
-Width: 367
+Width: 370
 Flags: MW
-HStem: 703 82<87 236>
-VStem: 172 64<395 703 703 703>
+HStem: 687 91<84 249>
+VStem: 170 79<388 687 687 687>
 LayerCount: 2
 Fore
 SplineSet
-172 395 m 1
- 172 703 l 1
- 87 703 l 1
- 87 745 l 1
- 131 753 157 765 184 785 c 1
- 236 785 l 1
- 236 395 l 1
- 172 395 l 1
+170 388 m 1
+ 170 687 l 1
+ 84 687 l 1
+ 84 737 l 1
+ 131 745 156 757 185 778 c 1
+ 249 778 l 1
+ 249 388 l 1
+ 170 388 l 1
 EndSplineSet
 EndChar

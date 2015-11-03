@@ -1,22 +1,22 @@
 StartChar: hungarumlaut
 Encoding: 733 733 1818
-Width: 542
+Width: 547
 Flags: MW
-HStem: 568 193<220 261 261 371>
-VStem: 175 295<589 733>
+HStem: 567 201<222 253 253 382>
+VStem: 166 319<592 734>
 LayerCount: 2
 Fore
 SplineSet
-220 568 m 1
- 175 589 l 1
- 261 761 l 1
- 320 733 l 1
- 220 568 l 1
-371 568 m 1
- 325 589 l 1
- 412 761 l 1
- 470 733 l 1
- 371 568 l 1
+222 567 m 1
+ 166 592 l 1
+ 253 768 l 1
+ 324 734 l 1
+ 222 567 l 1
+382 567 m 1
+ 326 592 l 1
+ 413 768 l 1
+ 485 734 l 1
+ 382 567 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

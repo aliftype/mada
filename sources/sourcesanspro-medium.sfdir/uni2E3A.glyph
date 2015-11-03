@@ -2,16 +2,16 @@ StartChar: uni2E3A
 Encoding: 11834 11834 1166
 Width: 1500
 Flags: MW
-HStem: 223 57<41 1459 41 1459>
-VStem: 41 1418<223 280 223 280>
+HStem: 217 70<42 1458 42 1458>
+VStem: 42 1416<217 287 217 287>
 LayerCount: 2
 Fore
 SplineSet
-41 223 m 1
- 41 280 l 1
- 1459 280 l 1
- 1459 223 l 1
- 41 223 l 1
+42 217 m 1
+ 42 287 l 1
+ 1458 287 l 1
+ 1458 217 l 1
+ 42 217 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

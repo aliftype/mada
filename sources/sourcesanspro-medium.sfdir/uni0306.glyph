@@ -3,20 +3,20 @@ Encoding: 774 774 1837
 Width: 0
 GlyphClass: 4
 Flags: MW
-HStem: 571 55<-32.5 32.5 -32.5 53.5>
-VStem: -156 51<722 730> 105 51<722 730>
-AnchorPoint: "Anchor-9" 0 509 mark 0
-AnchorPoint: "Anchor-0" 0 509 mark 0
+HStem: 571 68<-30.5 30.5 -30.5 55>
+VStem: -161 63<724 735> 98 63<724 735>
+AnchorPoint: "Anchor-9" 0 512 mark 0
+AnchorPoint: "Anchor-0" 0 512 mark 0
 LayerCount: 2
 Fore
 SplineSet
 0 571 m 0
- -107 571 -151 648 -156 722 c 1
- -105 730 l 1
- -97 679 -65 626 0 626 c 0
- 65 626 97 679 105 730 c 1
- 156 722 l 1
- 151 648 107 571 0 571 c 0
+ -109 571 -156 646 -161 724 c 1
+ -98 735 l 1
+ -91 686 -61 639 0 639 c 0
+ 61 639 91 686 98 735 c 1
+ 161 724 l 1
+ 156 646 110 571 0 571 c 0
 EndSplineSet
 Substitution2: "Single Substitution lookup 49 subtable" uni0306.cap
 Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" uni0306.cap

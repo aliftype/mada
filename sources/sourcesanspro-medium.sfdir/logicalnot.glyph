@@ -1,18 +1,18 @@
 StartChar: logicalnot
 Encoding: 172 172 1763
-Width: 497
+Width: 507
 Flags: MW
-HStem: 299 62<34 397 34 463>
-VStem: 397 66<104 299 299 299>
+HStem: 292 76<34 394 34 473>
+VStem: 394 79<101 292 292 292>
 LayerCount: 2
 Fore
 SplineSet
-397 104 m 1
- 397 299 l 1
- 34 299 l 1
- 34 361 l 1
- 463 361 l 1
- 463 104 l 1
- 397 104 l 1
+394 101 m 1
+ 394 292 l 1
+ 34 292 l 1
+ 34 368 l 1
+ 473 368 l 1
+ 473 101 l 1
+ 394 101 l 1
 EndSplineSet
 EndChar

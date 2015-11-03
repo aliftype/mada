@@ -3,21 +3,21 @@ Encoding: 786 786 1858
 Width: 0
 GlyphClass: 4
 Flags: MW
-HStem: 564 84<-4.5 7 -4.5 9>
-VStem: -53 42
-AnchorPoint: "Anchor-9" 0 509 mark 0
-AnchorPoint: "Anchor-0" 0 509 mark 0
+HStem: 571 92<-3.5 9 -3.5 10>
+VStem: -58 47
+AnchorPoint: "Anchor-9" 0 512 mark 0
+AnchorPoint: "Anchor-0" 0 512 mark 0
 LayerCount: 2
 Fore
 SplineSet
--2 564 m 0
- -35 564 -53 588 -53 633 c 0
- -53 680 -29 724 28 750 c 1
- 46 718 l 1
- 8 700 -9 677 -11 647 c 1
- -8 648 -6 648 -3 648 c 0
- 17 648 38 634 38 608 c 0
- 38 579 20 564 -2 564 c 0
+-2 571 m 0
+ -38 571 -58 597 -58 645 c 0
+ -58 694 -31 740 29 766 c 1
+ 48 730 l 1
+ 11 713 -8 691 -11 662 c 1
+ -8 663 -5 663 -2 663 c 0
+ 20 663 43 648 43 620 c 0
+ 43 588 22 571 -2 571 c 0
 EndSplineSet
 Substitution2: "'locl' Localized Forms in Greek lookup 4 subtable" uni0312.g
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0312.g

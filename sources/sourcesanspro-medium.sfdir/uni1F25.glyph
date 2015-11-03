@@ -1,40 +1,40 @@
 StartChar: uni1F25
 Encoding: 7973 7973 771
-Width: 541
+Width: 548
 GlyphClass: 3
 Flags: MW
-HStem: 0 21G<82 164 82 82> 427 71<297 337.5> 466 20G<75 150 150 150> 705 51<268 272>
-VStem: 82 82<0 318 0 353 0 372> 139 60<649 675 649 698> 388 77<227 308 -179 342.5>
+HStem: 0 21G<76 180 76 76> 412 89<305.5 334> 469 20G<68 162 162 162> 704 61<272 277>
+VStem: 76 104<0 316 0 350 0 369.5> 133 72<651 675 651 702> 380 98<229 308 -178 337>
 LayerCount: 2
 Fore
 SplineSet
-382 -179 m 1xda
- 386 -20 388 157 388 297 c 0
- 388 388 366 427 309 427 c 0xda
- 256 427 219 400 164 318 c 1
- 164 0 l 1
- 82 0 l 1
- 82 353 l 2
- 82 391 81 435 75 486 c 1
- 150 486 l 1xba
- 157 385 l 1
- 160 385 l 1
- 210 460 261 498 333 498 c 0
- 427 498 465 432 465 308 c 2
- 465 -179 l 1
- 382 -179 l 1xda
-236 577 m 1xd6
- 188 588 139 612 139 671 c 0
- 139 725 190 753 268 756 c 1
- 272 705 l 1
- 223 702 199 688 199 662 c 0
- 199 636 218 622 245 615 c 1
- 236 577 l 1xd6
-296 569 m 1
- 339 770 l 1
- 413 756 l 1
- 346 559 l 1
- 296 569 l 1
+373 -178 m 1xda
+ 377 -21 380 163 380 295 c 0
+ 380 379 360 412 308 412 c 0
+ 261 412 227 386 180 316 c 1xda
+ 180 0 l 1
+ 76 0 l 1
+ 76 350 l 2
+ 76 389 75 437 68 489 c 1
+ 162 489 l 1xba
+ 170 393 l 1
+ 173 393 l 1
+ 220 462 270 501 341 501 c 0
+ 439 501 478 432 478 308 c 2
+ 478 -178 l 1
+ 373 -178 l 1xda
+238 576 m 1xd6
+ 187 586 133 611 133 674 c 0
+ 133 730 184 762 272 765 c 1
+ 277 704 l 1
+ 228 701 205 687 205 663 c 0
+ 205 639 224 627 248 621 c 1
+ 238 576 l 1xd6
+302 570 m 1
+ 342 778 l 1
+ 431 761 l 1
+ 362 558 l 1
+ 302 570 l 1
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 16 subtable" Eta.sc
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" eta uni03120301
@@ -42,6 +42,6 @@ PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BE dx=0 dy
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni02BC dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblright dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quoteright dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

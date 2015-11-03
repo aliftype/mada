@@ -1,33 +1,33 @@
 StartChar: three.sc
 Encoding: 1114594 -1 1548
-Width: 459
+Width: 471
 Flags: MW
-HStem: -12 66<178 245 178 267> 238 60<144 203.5 144 212> 466 64<186 238.5>
-VStem: 144 140<269 272 269 298 269 298> 304 83<364 412> 324 83<115.5 171>
+HStem: -12 82<183.5 245 183.5 273> 232 73<146 202 146 212> 453 80<190 239>
+VStem: 146 154<270 273 270 305 270 305> 297 103<363.5 406> 316 104<122.5 172>
 LayerCount: 2
 Fore
 SplineSet
-213 -12 m 0xf4
- 125 -12 62 22 23 62 c 1
- 63 114 l 1
- 98 82 143 54 213 54 c 0
- 277 54 324 89 324 142 c 0
- 324 200 280 238 144 238 c 1xf4
- 144 298 l 1
- 263 298 304 337 304 388 c 0
- 304 436 268 466 209 466 c 0
- 163 466 121 446 86 413 c 1
- 44 464 l 1
- 89 503 143 530 211 530 c 0
- 313 530 387 480 387 394 c 0xf8
- 387 334 345 294 284 272 c 1
- 284 269 l 1
- 353 254 407 209 407 138 c 0
- 407 44 321 -12 213 -12 c 0xf4
+217 -12 m 0xe4
+ 130 -12 63 20 23 63 c 1
+ 72 127 l 1
+ 106 96 151 70 216 70 c 0
+ 274 70 316 99 316 146 c 0xe4
+ 316 198 278 232 146 232 c 1
+ 146 305 l 1xf4
+ 258 305 297 338 297 385 c 0
+ 297 427 266 453 212 453 c 0
+ 168 453 129 435 94 403 c 1
+ 42 466 l 1
+ 90 507 146 533 214 533 c 0
+ 324 533 400 482 400 392 c 0xe8
+ 400 335 361 296 300 273 c 1
+ 300 270 l 1
+ 368 253 420 210 420 140 c 0
+ 420 44 329 -12 217 -12 c 0xe4
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.sc dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.sc dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" six.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.sc dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.sc dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.sc dx=0 dy=0 dh=-9 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

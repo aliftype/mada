@@ -1,20 +1,20 @@
 StartChar: comma.numr
 Encoding: 1114651 -1 1629
-Width: 177
+Width: 187
 Flags: MW
-HStem: 265 88<78.5 90.5>
-VStem: 97 47<250.5 266>
+HStem: 265 98<81.5 95 94 100>
+VStem: 100 55
 LayerCount: 2
 Fore
 SplineSet
-49 150 m 1
- 33 187 l 1
- 73 202 97 229 97 266 c 1
- 94 265 92 265 89 265 c 0
- 66 265 44 279 44 307 c 0
- 44 335 66 353 91 353 c 0
- 124 353 144 328 144 280 c 0
- 144 221 108 172 49 150 c 1
+50 144 m 1
+ 32 187 l 1
+ 76 203 101 228 100 265 c 1
+ 98 265 96 265 94 265 c 0
+ 68 265 43 281 43 313 c 0
+ 43 343 67 363 96 363 c 0
+ 133 363 155 335 155 282 c 0
+ 155 218 116 166 50 144 c 1
 EndSplineSet
 Substitution2: "Single Substitution lookup 49 subtable" comma.dnom
 Colour: ff0000

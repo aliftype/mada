@@ -1,25 +1,25 @@
 StartChar: one.onum
 Encoding: 1114242 -1 1122
-Width: 369
+Width: 383
 Flags: MW
-HStem: 0 21G<167 167 167 249> 474 100<50 249>
-VStem: 167 82<0 474 474 474>
+HStem: 0 21G<164 164 164 267> 459 66<46 164 46 46> 459 116<46 267>
+VStem: 164 103<0 459 459 459>
 LayerCount: 2
 Fore
 SplineSet
-167 0 m 1
- 167 474 l 1
- 50 474 l 1
- 50 527 l 1
- 109 537 151 553 186 574 c 1
- 249 574 l 1
- 249 0 l 1
- 167 0 l 1
+164 0 m 1xb0
+ 164 459 l 1
+ 46 459 l 1xb0
+ 46 525 l 1xd0
+ 108 536 151 552 189 575 c 1
+ 267 575 l 1
+ 267 0 l 1
+ 164 0 l 1xb0
 EndSplineSet
 Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" one.pnum
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" one.pnum
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" seven.onum dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.onum dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.onum dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" three.onum dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 0" one.onum dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

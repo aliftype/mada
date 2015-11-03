@@ -1,29 +1,29 @@
 StartChar: j
 Encoding: 106 106 37
-Width: 247
+Width: 257
 GlyphClass: 2
 Flags: MW
-HStem: -217 67<17 47 14.5 80.5> 466 20G<83 165 165 165> 586 106<109 140.5>
-VStem: 68 113<623.5 655> 83 82<-55 486>
-AnchorPoint: "Anchor-4" 59 -231 basechar 0
-AnchorPoint: "Anchor-0" 125 694 basechar 0
+HStem: -210 83<16.5 42.5 12 88> 469 20G<77 181 181 181> 580 122<111 148.5>
+VStem: 63 133<623.5 659.5> 77 104<-37 -35 -35 489>
+AnchorPoint: "Anchor-4" 66 -233 basechar 0
+AnchorPoint: "Anchor-0" 130 704 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-32 -217 m 0xe8
- 2 -217 -23 -211 -40 -204 c 1
- -23 -142 l 1
- -11 -146 6 -150 23 -150 c 0
- 71 -150 83 -114 83 -55 c 2
- 83 486 l 1
- 165 486 l 1
- 165 -55 l 2
- 165 -154 129 -217 32 -217 c 0xe8
-125 586 m 0xf0
- 93 586 68 608 68 639 c 0
- 68 671 93 692 125 692 c 0
- 156 692 181 671 181 639 c 0
- 181 608 156 586 125 586 c 0xf0
+33 -210 m 0xe8
+ 0 -210 -25 -204 -44 -197 c 1
+ -24 -119 l 1
+ -11 -123 4 -127 20 -127 c 0
+ 65 -127 77 -94 77 -37 c 2
+ 77 489 l 1
+ 181 489 l 1
+ 181 -35 l 2
+ 181 -138 143 -210 33 -210 c 0xe8
+130 580 m 0xf0
+ 92 580 63 606 63 641 c 0
+ 63 678 92 702 130 702 c 0
+ 167 702 196 678 196 641 c 0
+ 196 606 167 580 130 580 c 0xf0
 EndSplineSet
 Substitution2: "'sups' Superscript lookup 26 subtable" j.sups
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" J.sc

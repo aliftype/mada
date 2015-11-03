@@ -1,30 +1,30 @@
 StartChar: pi
 Encoding: 960 960 623
-Width: 586
+Width: 602
 Flags: MW
-HStem: -12 68<486.5 499> -5 21G<183 183> 0 21G<100 100> 418 68<92 135 212 384 212 212 464 464 464 561>
-VStem: 135 77<352.5 418> 379 77<87 127.5 87 135>
+HStem: -12 85<505 513> -6 21G<201 201> 0 21G<97 97 572 572> 405 84<92 132 21 578 229 382 229 229 482 482 482 578>
+VStem: 132 97<343 405> 377 98<103 139.5 103 147.5>
 LayerCount: 2
 Fore
 SplineSet
-485 -12 m 0x9c
- 408 -12 379 31 379 110 c 0
- 379 160 383 312 384 418 c 1
- 212 418 l 1
- 212 282 197 131 183 -5 c 1x5c
- 100 0 l 1x3c
- 122 137 135 287 135 418 c 1
- 22 418 l 1
- 22 481 l 1
- 92 486 l 1
- 561 486 l 1
- 561 418 l 1
- 464 418 l 1
- 458 308 456 151 456 104 c 0
- 456 70 471 56 502 56 c 0
- 510 56 523 58 541 62 c 1
- 552 -1 l 1
- 535 -7 513 -12 485 -12 c 0x9c
+497 -12 m 0x9c
+ 409 -12 377 39 377 126 c 0
+ 377 169 381 307 382 405 c 1
+ 229 405 l 1
+ 229 275 215 128 201 -6 c 1x5c
+ 97 0 l 1x3c
+ 119 136 132 281 132 405 c 1
+ 21 405 l 1
+ 21 484 l 1
+ 92 489 l 1
+ 578 489 l 1
+ 578 405 l 1
+ 482 405 l 1
+ 476 303 475 159 475 120 c 0
+ 475 86 490 73 520 73 c 0
+ 529 73 541 75 558 78 c 1
+ 572 0 l 1
+ 554 -6 529 -12 497 -12 c 0x9c
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 15 subtable" Pi.sc
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" tau dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
@@ -69,8 +69,8 @@ PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" omega dx=0 dy=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" phi dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" sigma dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" omicron dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" nu dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" gamma dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" nu dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" gamma dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" uni1FB7 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" uni1F87 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" uni1F86 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
@@ -98,7 +98,7 @@ PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" uni1F01 dx=0 dy
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" uni1F00 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" alphatonos dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" alpha dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" guillemotright dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" guilsinglright dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" guillemotright dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 4" guilsinglright dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

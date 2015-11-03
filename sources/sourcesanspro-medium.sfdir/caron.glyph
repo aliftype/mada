@@ -1,21 +1,21 @@
 StartChar: caron
 Encoding: 711 711 1807
-Width: 542
+Width: 547
 Flags: MW
-HStem: 574 59<230 273 269 273 269 312>
-VStem: 116 310<714 714>
+HStem: 575 70<221 275 271 275 271 325> 692 20G<109 109 437 437>
+VStem: 109 328<712 712>
 LayerCount: 2
 Fore
 SplineSet
-230 574 m 1
- 116 714 l 1
- 151 746 l 1
- 269 633 l 1
- 273 633 l 1
- 391 746 l 1
- 426 714 l 1
- 312 574 l 1
- 230 574 l 1
+221 575 m 1
+ 109 712 l 1
+ 151 751 l 1
+ 271 645 l 1
+ 275 645 l 1
+ 395 751 l 1
+ 437 712 l 1
+ 325 575 l 1
+ 221 575 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

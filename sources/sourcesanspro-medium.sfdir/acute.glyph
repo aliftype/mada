@@ -1,16 +1,16 @@
 StartChar: acute
 Encoding: 180 180 1805
-Width: 542
+Width: 547
 Flags: MW
-HStem: 573 208<257 356>
-VStem: 215 199<614 726>
+HStem: 573 223<267 360>
+VStem: 215 217<624 727>
 LayerCount: 2
 Fore
 SplineSet
-257 573 m 1
- 215 614 l 1
- 356 781 l 1
- 414 726 l 1
- 257 573 l 1
+267 573 m 1
+ 215 624 l 1
+ 360 796 l 1
+ 432 727 l 1
+ 267 573 l 1
 EndSplineSet
 EndChar

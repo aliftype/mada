@@ -1,44 +1,44 @@
 StartChar: Ohorn
 Encoding: 416 416 175
-Width: 664
+Width: 671
 GlyphClass: 2
 Flags: MW
-HStem: -12 73<276.5 393.5 276.5 417.5> 595 73<276.5 359 252.5 393.5>
-VStem: 55 86<249 412.5 249 436> 529 87<249 391.5 225.5 412.5> 546 74<696 729>
-AnchorPoint: "Anchor-4" 331 -22 basechar 0
-AnchorPoint: "Anchor-1" 335 678 basechar 0
+HStem: -12 91<283.5 391 283.5 421.5> 575 92<283.5 362 253 391>
+VStem: 52 108<253.5 406 253.5 435.5> 515 108<253.5 389 224.5 406> 545 90<691.5 725>
+AnchorPoint: "Anchor-4" 334 -22 basechar 0
+AnchorPoint: "Anchor-1" 337 677 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-335 -12 m 0xf0
- 170 -12 55 120 55 331 c 0
- 55 541 170 668 335 668 c 0
- 383 668 427 657 465 637 c 1
- 520 648 546 673 546 719 c 0
- 546 739 540 761 532 777 c 1
- 597 805 l 1
- 610 783 620 755 620 725 c 0xe8
- 620 658 579 620 513 603 c 1
- 577 545 616 452 616 331 c 0
- 616 120 500 -12 335 -12 c 0xf0
-335 61 m 0
- 452 61 529 167 529 331 c 0
- 529 494 452 595 335 595 c 0
- 218 595 141 494 141 331 c 0
- 141 167 218 61 335 61 c 0
+337 -12 m 0xf0
+ 169 -12 52 119 52 330 c 0
+ 52 541 169 667 337 667 c 0
+ 387 667 432 656 471 636 c 1
+ 520 647 545 669 545 714 c 0
+ 545 736 538 759 530 775 c 1
+ 610 808 l 1
+ 624 786 635 755 635 722 c 0xe8
+ 635 653 595 615 525 597 c 1
+ 587 539 623 448 623 330 c 0
+ 623 119 506 -12 337 -12 c 0xf0
+337 79 m 0
+ 445 79 515 177 515 330 c 0
+ 515 482 445 575 337 575 c 0
+ 230 575 160 482 160 330 c 0
+ 160 177 230 79 337 79 c 0
 EndSplineSet
 Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Ohorn.sc
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Ohorn.sc
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" slash dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0291 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0290 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E95 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E93 dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zdotaccent dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zcaron dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zacute dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" z dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" slash dx=0 dy=0 dh=-11 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0291 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0290 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E95 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E93 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zdotaccent dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zcaron dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" zacute dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" z dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" trademark dx=0 dy=0 dh=10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" registered dx=0 dy=0 dh=6 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" registered dx=0 dy=0 dh=5 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

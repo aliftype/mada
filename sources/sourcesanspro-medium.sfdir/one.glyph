@@ -1,24 +1,24 @@
 StartChar: one
 Encoding: 49 49 1088
-Width: 497
+Width: 507
 Flags: MW
-HStem: 0 68<79 225 79 225 307 439> 538 100<109 307>
-VStem: 225 82<68 538 538 538>
+HStem: 0 85<76 219 76 219 323 451> 521 65<102 219 102 102> 521 116<102 323>
+VStem: 219 104<85 521 521 521>
 LayerCount: 2
 Fore
 SplineSet
-79 0 m 1
- 79 68 l 1
- 225 68 l 1
- 225 538 l 1
- 109 538 l 1
- 109 591 l 1
- 167 601 209 617 244 638 c 1
- 307 638 l 1
- 307 68 l 1
- 439 68 l 1
- 439 0 l 1
- 79 0 l 1
+76 0 m 1xb0
+ 76 85 l 1
+ 219 85 l 1
+ 219 521 l 1
+ 102 521 l 1xb0
+ 102 586 l 1xd0
+ 164 598 207 614 245 637 c 1
+ 323 637 l 1
+ 323 85 l 1
+ 451 85 l 1
+ 451 0 l 1
+ 76 0 l 1xb0
 EndSplineSet
 Substitution2: "'onum' Oldstyle Figures lookup 32 subtable" one.tnum
 Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" one.pnum

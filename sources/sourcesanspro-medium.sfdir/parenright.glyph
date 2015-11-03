@@ -1,19 +1,19 @@
 StartChar: parenright
 Encoding: 41 41 1176
-Width: 303
+Width: 317
 Flags: MW
-HStem: -176 908<89 89>
-VStem: 153 68<202 354>
+HStem: -177 910<106 106>
+VStem: 153 85<203.5 352.5>
 LayerCount: 2
 Fore
 SplineSet
-89 -176 m 1
- 38 -152 l 1
- 115 -25 153 126 153 278 c 0
- 153 430 115 581 38 708 c 1
- 89 732 l 1
- 172 598 221 454 221 278 c 0
- 221 102 172 -42 89 -176 c 1
+106 -177 m 1
+ 41 -148 l 1
+ 117 -20 153 129 153 278 c 0
+ 153 427 117 576 41 704 c 1
+ 106 733 l 1
+ 189 598 238 454 238 278 c 0
+ 238 102 189 -42 106 -177 c 1
 EndSplineSet
 Substitution2: "'subs' Subscript lookup 30 subtable" parenright.subs
 Substitution2: "'sups' Superscript lookup 28 subtable" parenright.sups

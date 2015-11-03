@@ -1,24 +1,24 @@
 StartChar: one.tnum
 Encoding: 1114232 -1 1112
-Width: 497
+Width: 507
 Flags: MW
-HStem: 0 68<79 225 79 225 307 439> 474 100<109 307>
-VStem: 225 82<68 474 474 474>
+HStem: 0 85<76 219 76 219 323 451> 459 66<102 219 102 102> 459 116<102 323>
+VStem: 219 104<85 459 459 459>
 LayerCount: 2
 Fore
 SplineSet
-79 0 m 1
- 79 68 l 1
- 225 68 l 1
- 225 474 l 1
- 109 474 l 1
- 109 527 l 1
- 167 537 209 553 244 574 c 1
- 307 574 l 1
- 307 68 l 1
- 439 68 l 1
- 439 0 l 1
- 79 0 l 1
+76 0 m 1xb0
+ 76 85 l 1
+ 219 85 l 1
+ 219 459 l 1
+ 102 459 l 1xb0
+ 102 525 l 1xd0
+ 164 536 207 552 245 575 c 1
+ 323 575 l 1
+ 323 85 l 1
+ 451 85 l 1
+ 451 0 l 1
+ 76 0 l 1xb0
 EndSplineSet
 Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" one
 Substitution2: "'pnum' Proportional Numbers lookup 31 subtable" one.onum

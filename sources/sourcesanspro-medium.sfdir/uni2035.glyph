@@ -1,18 +1,18 @@
 StartChar: uni2035
 Encoding: 8245 8245 1798
-Width: 249
+Width: 266
 Flags: MW
-HStem: 449 241<113 145>
-VStem: 64 103
+HStem: 428 261<116 163>
+VStem: 60 124
 LayerCount: 2
 Fore
 SplineSet
-113 449 m 1
- 167 450 l 1
- 145 690 l 1
- 64 689 l 1
- 79 598 l 1
- 113 449 l 1
+116 428 m 1
+ 184 429 l 1
+ 163 689 l 1
+ 60 688 l 1
+ 78 585 l 1
+ 116 428 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

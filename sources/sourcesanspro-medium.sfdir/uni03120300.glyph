@@ -3,25 +3,25 @@ Encoding: 1114749 -1 1929
 Width: 0
 GlyphClass: 4
 Flags: MW
-HStem: 705 51<-33 -29>
-VStem: -162 60<649 675 649 698>
-AnchorPoint: "Anchor-9" 0 509 mark 0
-AnchorPoint: "Anchor-0" 0 509 mark 0
+HStem: 704 61<-34 -29>
+VStem: -173 72<651 675 651 702>
+AnchorPoint: "Anchor-9" 0 512 mark 0
+AnchorPoint: "Anchor-0" 0 512 mark 0
 LayerCount: 2
 Fore
 SplineSet
--65 577 m 1
- -113 588 -162 612 -162 671 c 0
- -162 725 -111 753 -33 756 c 1
- -29 705 l 1
- -78 702 -102 688 -102 662 c 0
- -102 636 -83 622 -56 615 c 1
- -65 577 l 1
-59 559 m 1
- -5 756 l 1
- 70 770 l 1
- 108 569 l 1
- 59 559 l 1
+-68 576 m 1
+ -119 586 -173 611 -173 674 c 0
+ -173 730 -122 762 -34 765 c 1
+ -29 704 l 1
+ -78 701 -101 687 -101 663 c 0
+ -101 639 -82 627 -58 621 c 1
+ -68 576 l 1
+61 558 m 1
+ -4 761 l 1
+ 85 778 l 1
+ 122 570 l 1
+ 61 558 l 1
 EndSplineSet
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 10 subtable" uni0312.g uni0300.g
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 10 subtable" uni0312.g uni0300

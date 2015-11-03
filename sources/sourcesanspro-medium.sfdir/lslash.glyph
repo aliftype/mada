@@ -1,29 +1,29 @@
 StartChar: lslash
 Encoding: 322 322 340
-Width: 262
+Width: 276
 Flags: MW
-HStem: -12 68<142 193.5> 692 20G<86 168 168 168>
-VStem: 86 82<98 331 331 331 444 712>
+HStem: -12 85<148 212.5> 688 20G<82 186 186 186>
+VStem: 82 104<116 313 313 313 452 708>
 LayerCount: 2
 Fore
 SplineSet
-173 -12 m 0
- 111 -12 86 27 86 98 c 2
- 86 331 l 1
- 29 295 l 1
- -1 348 l 1
- 86 401 l 1
- 86 712 l 1
- 168 712 l 1
- 168 444 l 1
- 222 479 l 1
- 252 426 l 1
- 168 374 l 1
- 168 92 l 2
- 168 66 179 56 191 56 c 0
- 196 56 200 56 209 58 c 1
- 220 -4 l 1
- 209 -9 195 -12 173 -12 c 0
+185 -12 m 0
+ 111 -12 82 36 82 116 c 2
+ 82 313 l 1
+ 29 280 l 1
+ -8 346 l 1
+ 82 400 l 1
+ 82 708 l 1
+ 186 708 l 1
+ 186 452 l 1
+ 238 484 l 1
+ 275 418 l 1
+ 186 365 l 1
+ 186 110 l 2
+ 186 83 198 73 210 73 c 0
+ 215 73 219 73 228 75 c 1
+ 242 -3 l 1
+ 228 -8 211 -12 185 -12 c 0
 EndSplineSet
 Substitution2: "'ss01' Style Set 1 lookup 36 subtable" lslash.a
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" Lslash.sc

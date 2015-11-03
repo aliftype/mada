@@ -1,43 +1,43 @@
 StartChar: Nacute.sc
 Encoding: 1114383 -1 1337
-Width: 585
+Width: 592
 Flags: MW
-HStem: 0 21G<90 90 90 167 412 412 412 495> 0 101<412 429 425 429 425 495> 417 101<156 160 156 156> 498 20G<90 174 174 174 418 495 495 495>
-VStem: 90 77<0 245 0 518> 418 77<275 518 0 518>
+HStem: 0 21G<85 85 85 182 403 403 403 506> 0 125<403 423 419 423 419 506> 397 124<169 173 169 169> 501 20G<85 191 191 191 410 506 506 506>
+VStem: 85 97<0 212 0 521> 410 96<311 521 0 521>
 LayerCount: 2
 Fore
 SplineSet
-90 0 m 1x9c
- 90 518 l 1
- 174 518 l 1
- 365 212 l 1
- 425 101 l 1
- 429 101 l 1x5c
- 425 153 418 219 418 275 c 2
- 418 518 l 1
- 495 518 l 1
- 495 0 l 1
- 412 0 l 1
- 220 306 l 1
- 160 417 l 1
- 156 417 l 1xac
- 160 363 167 301 167 245 c 2
- 167 0 l 1
- 90 0 l 1x9c
-284 581 m 1
- 247 623 l 1
- 389 751 l 1
- 436 696 l 1
- 284 581 l 1
+85 0 m 1x9c
+ 85 521 l 1
+ 191 521 l 1
+ 360 240 l 1
+ 419 125 l 1
+ 423 125 l 1x5c
+ 418 178 410 252 410 311 c 2
+ 410 521 l 1
+ 506 521 l 1
+ 506 0 l 1
+ 403 0 l 1
+ 232 281 l 1
+ 173 397 l 1
+ 169 397 l 1xac
+ 174 341 182 271 182 212 c 2
+ 182 0 l 1
+ 85 0 l 1x9c
+289 577 m 1
+ 243 630 l 1
+ 394 762 l 1
+ 452 693 l 1
+ 289 577 l 1
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF8 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF6 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF4 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E8E dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ydieresis dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ycircumflex dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Yacute dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ygrave dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Y dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF8 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF6 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1EF4 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni1E8E dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ydieresis dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ycircumflex dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Yacute dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Ygrave dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" Y dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

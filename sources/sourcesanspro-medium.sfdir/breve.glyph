@@ -1,21 +1,21 @@
 StartChar: breve
 Encoding: 728 728 1816
-Width: 542
+Width: 547
 GlyphClass: 2
 Flags: MW
-HStem: 571 55<238.5 303.5 238.5 324.5>
-VStem: 115 51<722 730> 376 51<722 730>
-AnchorPoint: "Anchor-0" 271 706 basechar 0
+HStem: 571 68<242.5 303.5 242.5 328>
+VStem: 112 63<724 735> 371 63<724 735>
+AnchorPoint: "Anchor-0" 273 709 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-271 571 m 0
- 164 571 120 648 115 722 c 1
- 166 730 l 1
- 174 679 206 626 271 626 c 0
- 336 626 368 679 376 730 c 1
- 427 722 l 1
- 422 648 378 571 271 571 c 0
+273 571 m 0
+ 164 571 117 646 112 724 c 1
+ 175 735 l 1
+ 182 686 212 639 273 639 c 0
+ 334 639 364 686 371 735 c 1
+ 434 724 l 1
+ 429 646 383 571 273 571 c 0
 EndSplineSet
 Colour: ff0000
 EndChar

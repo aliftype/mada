@@ -1,41 +1,41 @@
 StartChar: uni1E39
 Encoding: 7737 7737 338
-Width: 255
+Width: 265
 Flags: MW
-HStem: -206 108<142.5 173.5> -12 68<138 189.5> -4 21G<216 216> 692 20G<82 164 164 164> 822 57<-11 255 -11 255>
-VStem: 82 82<98 712> 104 108<-168 -136.5>
+HStem: -213 123<148.5 185.5> -12 85<142 206.5> -3 21G<236 236> 688 20G<76 180 180 180> 816 69<-11 265 -11 265>
+VStem: 76 104<116 708> 104 126<-169 -133>
 LayerCount: 2
 Fore
 SplineSet
-169 -12 m 0xdc
- 107 -12 82 27 82 98 c 2
- 82 712 l 1
- 164 712 l 1
- 164 92 l 2
- 164 66 175 56 187 56 c 0
- 192 56 196 56 205 58 c 1
- 216 -4 l 1
- 205 -9 191 -12 169 -12 c 0xdc
--11 822 m 1
- -11 879 l 1
- 255 879 l 1
- 255 822 l 1
- -11 822 l 1
-158 -206 m 0xba
- 127 -206 104 -184 104 -152 c 0
- 104 -121 127 -98 158 -98 c 0
- 189 -98 212 -121 212 -152 c 0
- 212 -184 189 -206 158 -206 c 0xba
+179 -12 m 0xdc
+ 105 -12 76 36 76 116 c 2
+ 76 708 l 1
+ 180 708 l 1
+ 180 110 l 2
+ 180 83 192 73 204 73 c 0
+ 209 73 213 73 222 75 c 1
+ 236 -3 l 1
+ 222 -8 205 -12 179 -12 c 0xdc
+-11 816 m 1
+ -11 885 l 1
+ 265 885 l 1
+ 265 816 l 1
+ -11 816 l 1
+167 -213 m 0xba
+ 130 -213 104 -187 104 -151 c 0
+ 104 -115 130 -90 167 -90 c 0
+ 204 -90 230 -115 230 -151 c 0
+ 230 -187 204 -213 167 -213 c 0xba
 EndSplineSet
 Substitution2: "'ss01' Style Set 1 lookup 36 subtable" uni1E39.a
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 20 subtable" uni1E38.sc
 AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni1E38.sc uni1E39.a
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0284 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0283 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0272 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni025F dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0237 dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" jcircumflex dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" j dx=0 dy=0 dh=8 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0284 dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0283 dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0272 dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni025F dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" uni0237 dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" jcircumflex dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 5" j dx=0 dy=0 dh=9 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

@@ -1,32 +1,32 @@
 StartChar: uni03D1
 Encoding: 977 977 634
-Width: 522
+Width: 531
 Flags: MW
-HStem: -12 68<235 295.5 235 320.5> 336 55 656 68<213.5 241>
-VStem: 66 79<499 575.5 499 596> 88 77<132.5 198> 382 81
+HStem: -12 85<243 298 243 330.5> 329 68 635 85<220 246>
+VStem: 61 97<493.5 561.5 493.5 588> 83 98<142.5 198> 374 102
 LayerCount: 2
 Fore
 SplineSet
-145 541 m 0xf4
- 145 457 192 370 382 396 c 1
- 376 587 322 657 241 656 c 0
- 186 656 145 610 145 541 c 0xf4
-259 -12 m 0xec
- 151 -12 88 48 88 169 c 0
- 88 227 88 256 80 291 c 1
- 158 291 l 1
- 166 269 165 232 165 179 c 0xec
- 165 86 208 56 262 56 c 0
- 329 56 379 112 382 341 c 1
- 136 308 66 440 66 542 c 0xf4
- 66 650 143 724 238 724 c 0
- 386 724 463 600 463 362 c 0
- 463 83 382 -12 259 -12 c 0xec
+158 531 m 0xf4
+ 158 456 199 379 373 400 c 1
+ 367 575 318 636 246 635 c 0
+ 194 635 158 592 158 531 c 0xf4
+264 -12 m 0xec
+ 144 -12 83 54 83 171 c 0
+ 83 225 83 255 75 289 c 1
+ 173 289 l 1
+ 181 269 181 230 181 185 c 0xec
+ 181 100 218 73 268 73 c 0
+ 328 73 371 121 374 334 c 1
+ 126 302 61 438 61 534 c 0xf4
+ 61 642 140 720 241 720 c 0
+ 394 720 476 595 476 360 c 0
+ 476 91 397 -12 264 -12 c 0xec
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-26 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE5 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE4 dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" rho dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

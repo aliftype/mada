@@ -1,50 +1,50 @@
 StartChar: uni1F56
 Encoding: 8022 8022 809
-Width: 510
+Width: 517
 GlyphClass: 3
 Flags: MW
-HStem: -12 68<221 285 221 310> 466 20G<60 140 140 140> 478 20G<412 412> 656 39<182 189> 699 20G<103 103> 715 50<286 315 286 333.5> 757 50<173 202>
-VStem: 64 78<132.5 206 132.5 209> 103 47<715 719> 251 60<618 634> 338 47<803 807> 372 83<177 277>
+HStem: -12 85<227 285.5 227 318> 469 20G<54 155 155 155> 481 20G<425 425> 654 46<182 192> 718 61<290 317 290 338> 760 61<183 210>
+VStem: 59 98<142 211 142 214> 104 57<720 725> 250 72<619.5 634> 339 57<814 820> 362 104<186 280>
 LayerCount: 2
 Fore
 SplineSet
-249 -12 m 0xab10
- 133 -12 64 52 64 180 c 0
- 64 238 68 295 68 353 c 0
- 68 391 67 435 60 486 c 1
- 140 486 l 1xcb10
- 147 452 148 416 148 373 c 0
- 148 318 142 236 142 176 c 0
- 142 89 192 56 250 56 c 0
- 320 56 372 114 372 240 c 0
- 372 314 362 390 332 479 c 1
- 412 498 l 1
- 440 414 455 329 455 243 c 0
- 455 78 371 -12 249 -12 c 0xab10
-103 719 m 1xaa90
- 108 770 130 807 179 807 c 0xaa90
- 238 807 267 765 305 765 c 0
- 325 765 333 779 338 807 c 1
- 385 803 l 1
- 380 752 358 715 309 715 c 0xa520
- 251 715 221 757 183 757 c 0
- 163 757 155 743 150 715 c 1
- 103 719 l 1xaa90
-217 562 m 1xb350
- 209 595 l 1
- 233 601 251 611 251 625 c 0
- 251 643 231 654 182 656 c 1
- 189 695 l 1
- 267 693 311 674 311 634 c 0
- 311 593 265 571 217 562 c 1xb350
+252 -12 m 0xb620
+ 126 -12 59 60 59 187 c 0
+ 59 241 63 296 63 350 c 0
+ 63 389 62 437 54 489 c 1
+ 155 489 l 1xd620
+ 162 455 163 417 163 373 c 0
+ 163 323 157 242 157 180 c 0
+ 157 104 201 73 253 73 c 0
+ 318 73 362 127 362 245 c 0
+ 362 315 353 389 324 478 c 1
+ 425 501 l 1
+ 451 419 466 334 466 249 c 0
+ 466 82 384 -12 252 -12 c 0xb620
+104 725 m 1xb520
+ 110 784 137 821 187 821 c 0xb520
+ 245 821 272 779 308 779 c 0
+ 326 779 334 792 339 820 c 1
+ 396 814 l 1
+ 390 755 363 718 313 718 c 0xba40
+ 256 718 228 760 192 760 c 0
+ 174 760 166 748 161 720 c 1
+ 104 725 l 1xb520
+221 563 m 1
+ 212 600 l 1
+ 234 605 250 613 250 626 c 0
+ 250 642 232 652 182 654 c 1
+ 192 700 l 1
+ 280 697 322 677 322 637 c 0xb6a0
+ 322 593 273 571 221 563 c 1
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 16 subtable" Upsilon.sc
 Ligature2: "'ccmp' Glyph Composition/Decomposition lookup 12 subtable" upsilon uni03130303
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" pi dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-16 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" lambda dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" pi dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" tau dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" nu dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" gamma dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-4 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" chi dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

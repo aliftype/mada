@@ -3,24 +3,24 @@ Encoding: 776 776 1843
 Width: 0
 GlyphClass: 4
 Flags: MW
-HStem: 587 100<-110.5 -82 82 110.5>
-VStem: -146 99<623 651> 47 99<623 651>
-AnchorPoint: "Anchor-9" 0 695 basemark 0
-AnchorPoint: "Anchor-9" 0 509 mark 0
-AnchorPoint: "Anchor-0" 0 509 mark 0
+HStem: 581 114<-117.5 -84 84 117.5>
+VStem: -158 114<622 654> 44 114<622 654>
+AnchorPoint: "Anchor-9" 0 703 basemark 0
+AnchorPoint: "Anchor-9" 0 512 mark 0
+AnchorPoint: "Anchor-0" 0 512 mark 0
 LayerCount: 2
 Fore
 SplineSet
--96 587 m 0
- -125 587 -146 609 -146 637 c 0
- -146 665 -125 687 -96 687 c 0
- -68 687 -47 665 -47 637 c 0
- -47 609 -68 587 -96 587 c 0
-96 587 m 0
- 68 587 47 609 47 637 c 0
- 47 665 68 687 96 687 c 0
- 125 687 146 665 146 637 c 0
- 146 609 125 587 96 587 c 0
+-101 581 m 0
+ -134 581 -158 606 -158 638 c 0
+ -158 670 -134 695 -101 695 c 0
+ -67 695 -44 670 -44 638 c 0
+ -44 606 -67 581 -101 581 c 0
+101 581 m 0
+ 67 581 44 606 44 638 c 0
+ 44 670 67 695 101 695 c 0
+ 134 695 158 670 158 638 c 0
+ 158 606 134 581 101 581 c 0
 EndSplineSet
 Substitution2: "Single Substitution lookup 49 subtable" uni0308.cap
 Substitution2: "'case' Case-Sensitive Forms lookup 35 subtable" uni0308.cap

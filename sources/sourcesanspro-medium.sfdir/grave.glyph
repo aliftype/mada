@@ -1,16 +1,16 @@
 StartChar: grave
 Encoding: 96 96 1804
-Width: 542
+Width: 547
 Flags: MW
-HStem: 573 208<186 285>
-VStem: 128 199<614 726>
+HStem: 573 223<186 279>
+VStem: 114 217<624 727>
 LayerCount: 2
 Fore
 SplineSet
-285 573 m 1
- 128 726 l 1
- 186 781 l 1
- 327 614 l 1
- 285 573 l 1
+279 573 m 1
+ 114 727 l 1
+ 186 796 l 1
+ 331 624 l 1
+ 279 573 l 1
 EndSplineSet
 EndChar

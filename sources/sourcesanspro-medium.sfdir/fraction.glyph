@@ -1,16 +1,16 @@
 StartChar: fraction
 Encoding: 8260 8260 1724
-Width: 86
+Width: 89
 Flags: MW
-HStem: -12 680<-167 251 -167 251>
-VStem: -167 418
+HStem: -12 21G<-168 -168 -168 -103> 647 20G<190 256 256 256>
+VStem: -168 424
 LayerCount: 2
 Fore
 SplineSet
--167 -12 m 1
- 195 668 l 1
- 251 668 l 1
- -111 -12 l 1
- -167 -12 l 1
+-168 -12 m 1
+ 190 667 l 1
+ 256 667 l 1
+ -103 -12 l 1
+ -168 -12 l 1
 EndSplineSet
 EndChar

@@ -1,38 +1,38 @@
 StartChar: uni0447
 Encoding: 1095 1095 1021
-Width: 512
+Width: 525
 GlyphClass: 2
 Flags: MW
-HStem: 0 21G<348 348 348 430> 184 67<224.5 274.5> 466 20G<59 141 141 141 348 430 430 430>
-VStem: 59 82<353 486> 348 82<0 194 194 194 260 486 0 486>
-AnchorPoint: "Anchor-0" 244 509 basechar 0
+HStem: 0 21G<345 345 345 448> 176 83<234 273.5> 469 20G<56 159 159 159 345 448 448 448>
+VStem: 56 103<353 489> 345 103<0 185 185 185 267 489 0 489>
+AnchorPoint: "Anchor-0" 252 512 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-348 0 m 1
- 348 194 l 1
- 314 187 296 184 253 184 c 0
- 130 184 59 232 59 353 c 2
- 59 486 l 1
- 141 486 l 1
- 141 353 l 2
- 141 281 180 251 269 251 c 0
- 298 251 320 254 348 260 c 1
- 348 486 l 1
- 430 486 l 1
- 430 0 l 1
- 348 0 l 1
+345 0 m 1
+ 345 185 l 1
+ 313 179 295 176 252 176 c 0
+ 131 176 56 226 56 353 c 2
+ 56 489 l 1
+ 159 489 l 1
+ 159 353 l 2
+ 159 288 194 259 274 259 c 0
+ 300 259 320 262 345 267 c 1
+ 345 489 l 1
+ 448 489 l 1
+ 448 0 l 1
+ 345 0 l 1
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 21 subtable" uni0427.sc
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0427.sc
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni045B dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0452 dx=0 dy=0 dh=-6 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" asterisk dx=0 dy=0 dh=-24 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni045B dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0452 dx=0 dy=0 dh=-5 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" asterisk dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04A0 dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni040B dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0402 dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni042A dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0422 dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0474 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni0474 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

@@ -1,22 +1,22 @@
 StartChar: uni0456
 Encoding: 1110 1110 1036
-Width: 246
+Width: 256
 Flags: MW
-HStem: 0 21G<82 82 82 164> 466 20G<82 164 164 164> 586 106<108 140>
-VStem: 67 114<623.5 655> 82 82<0 486 0 486>
+HStem: 0 21G<76 76 76 180> 469 20G<76 180 180 180> 580 122<110 147.5>
+VStem: 62 133<623.5 659.5> 76 104<0 489 0 489>
 LayerCount: 2
 Fore
 SplineSet
-82 0 m 1xe8
- 82 486 l 1
- 164 486 l 1
- 164 0 l 1
- 82 0 l 1xe8
-124 586 m 0xf0
- 92 586 67 608 67 639 c 0
- 67 671 92 692 124 692 c 0
- 156 692 181 671 181 639 c 0
- 181 608 156 586 124 586 c 0xf0
+76 0 m 1xe8
+ 76 489 l 1
+ 180 489 l 1
+ 180 0 l 1
+ 76 0 l 1xe8
+129 580 m 0xf0
+ 91 580 62 606 62 641 c 0
+ 62 678 91 702 129 702 c 0
+ 166 702 195 678 195 641 c 0
+ 195 606 166 580 129 580 c 0xf0
 EndSplineSet
 Substitution2: "'smcp' Lowercase to Small Capitals lookup 21 subtable" uni0406.sc
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" uni0406.sc

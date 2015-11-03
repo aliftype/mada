@@ -1,17 +1,17 @@
 StartChar: uni1FEF
 Encoding: 8175 8175 882
-Width: 542
+Width: 547
 Flags: MW
-HStem: 558 212<247 265>
-VStem: 180 124
+HStem: 557 221<242 276>
+VStem: 172 141
 LayerCount: 2
 Fore
 SplineSet
-247 558 m 1
- 180 755 l 1
- 265 770 l 1
- 304 569 l 1
- 247 558 l 1
+242 557 m 1
+ 172 760 l 1
+ 276 778 l 1
+ 313 570 l 1
+ 242 557 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

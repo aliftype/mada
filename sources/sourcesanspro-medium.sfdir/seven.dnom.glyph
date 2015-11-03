@@ -1,20 +1,20 @@
 StartChar: seven.dnom
 Encoding: 1114631 -1 1609
-Width: 367
+Width: 370
 Flags: MW
-HStem: 335 55<50 251 50 323>
-VStem: 131 67<0 0>
+HStem: 0 21G<126 126 126 209> 323 67<50 242 50 330>
+VStem: 126 83<0 0>
 LayerCount: 2
 Fore
 SplineSet
-131 0 m 1
- 139 135 171 226 251 335 c 1
- 50 335 l 1
+126 0 m 1
+ 134 130 166 217 242 323 c 1
+ 50 323 l 1
  50 390 l 1
- 323 390 l 1
- 323 354 l 1
- 228 233 206 136 198 0 c 1
- 131 0 l 1
+ 330 390 l 1
+ 330 347 l 1
+ 237 228 216 135 209 0 c 1
+ 126 0 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

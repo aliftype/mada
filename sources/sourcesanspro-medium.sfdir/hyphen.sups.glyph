@@ -1,17 +1,17 @@
 StartChar: hyphen.sups
 Encoding: 1114686 -1 1697
-Width: 236
+Width: 241
 Flags: MW
-HStem: 568 46<41 197 41 197>
-VStem: 41 156<568 614 568 614>
+HStem: 558 54<42 201 42 201>
+VStem: 42 159<558 612 558 612>
 LayerCount: 2
 Fore
 SplineSet
-41 568 m 1
- 41 614 l 1
- 197 614 l 1
- 197 568 l 1
- 41 568 l 1
+42 558 m 1
+ 42 612 l 1
+ 201 612 l 1
+ 201 558 l 1
+ 42 558 l 1
 EndSplineSet
 Colour: ff0000
 EndChar

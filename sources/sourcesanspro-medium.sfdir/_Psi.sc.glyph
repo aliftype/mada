@@ -1,39 +1,39 @@
 StartChar: Psi.sc
 Encoding: 1114507 -1 1461
-Width: 625
+Width: 644
 Flags: MW
-HStem: 0 21G<274 274 274 351> 187 64<274 274> 498 20G<63 143 143 143 274 351 351 351 482 562 562 562>
-VStem: 63 80<389 394 394 518> 274 77<0 187 0 187 251 518> 482 80<394 518>
+HStem: 0 21G<274 274 274 370> 181 80<274 274> 501 20G<60 160 160 160 274 370 370 370 484 584 584 584>
+VStem: 60 100<392 398 398 521> 274 96<0 181 0 181 261 521> 484 100<398 521>
 LayerCount: 2
 Fore
 SplineSet
 274 0 m 1
- 274 187 l 1
- 141 193 63 253 63 389 c 2
- 63 518 l 1
- 143 518 l 1
- 143 394 l 2
- 143 298 188 256 274 251 c 1
- 274 518 l 1
- 351 518 l 1
- 351 251 l 1
- 437 256 482 298 482 394 c 2
- 482 518 l 1
- 562 518 l 1
- 562 389 l 2
- 562 253 484 193 351 187 c 1
- 351 0 l 1
+ 274 181 l 1
+ 140 188 60 251 60 392 c 2
+ 60 521 l 1
+ 160 521 l 1
+ 160 398 l 2
+ 160 304 200 267 274 261 c 1
+ 274 521 l 1
+ 370 521 l 1
+ 370 261 l 1
+ 444 267 484 304 484 398 c 2
+ 484 521 l 1
+ 584 521 l 1
+ 584 392 l 2
+ 584 251 504 188 370 181 c 1
+ 370 0 l 1
  274 0 l 1
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni0394.sc dx=0 dy=0 dh=-17 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblbase dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotesinglbase dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" ellipsis dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" comma dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" period dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=-17 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=-17 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Chi.sc dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni0394.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Chi.sc dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotedblbase dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" quotesinglbase dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" ellipsis dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" comma dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" period dx=0 dy=0 dh=-21 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Alphaiotasub.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Lambda.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Alpha.sc dx=0 dy=0 dh=-20 dv=0 dx=0 dy=0 dh=0 dv=0

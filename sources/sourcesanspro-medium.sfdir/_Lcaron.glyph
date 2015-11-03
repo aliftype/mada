@@ -1,25 +1,25 @@
 StartChar: Lcaron
 Encoding: 317 317 138
-Width: 486
+Width: 496
 Flags: MW
-HStem: 0 71<173 460 173 460> 636 20G<90 173 173 173>
-VStem: 90 83<71 656 71 656 71 656> 332 49
+HStem: 0 88<190 467 190 467> 635 20G<85 190 190 190>
+VStem: 85 105<88 655 88 655 88 655> 338 68.5
 LayerCount: 2
 Fore
 SplineSet
-90 0 m 1
- 90 656 l 1
- 173 656 l 1
- 173 71 l 1
- 460 71 l 1
- 460 0 l 1
- 90 0 l 1
-334 514 m 1
- 330 726 l 1
- 389 726 l 1
- 388 669 l 1
- 374 514 l 1
- 334 514 l 1
+85 0 m 1
+ 85 655 l 1
+ 190 655 l 1
+ 190 88 l 1
+ 467 88 l 1
+ 467 0 l 1
+ 85 0 l 1
+340 513 m 1
+ 336 728 l 1
+ 407 728 l 1
+ 406 667 l 1
+ 388 513 l 1
+ 340 513 l 1
 EndSplineSet
 Substitution2: "'c2sc' Capitals to Small Capitals lookup 17 subtable" Lcaron.sc
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" Lcaron.sc

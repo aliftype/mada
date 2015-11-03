@@ -1,26 +1,26 @@
 StartChar: uni041B.sc
 Encoding: 1114525 -1 1479
-Width: 558
+Width: 568
 Flags: MW
-HStem: -12 78<41 53.5 35 85.5> -5 21G<0 0> 0 21G<385 468 385 385> 450 68<243 385 243 243>
-VStem: 385 83<0 450 450 450>
+HStem: -12 98<42 53 35 93> -4 21G<-3 -3> 0 21G<378 483 378 378> 436 85<256 378 256 256>
+VStem: 378 105<0 436 436 436>
 LayerCount: 2
 Fore
 SplineSet
-50 -12 m 0x98
- 32 -12 14 -10 0 -5 c 1x58
- 17 70 l 1
- 25 68 31 66 39 66 c 0x98
- 68 66 90 83 116 201 c 0
- 139 306 159 409 180 518 c 1
- 468 518 l 1
- 468 0 l 1
- 385 0 l 1x38
- 385 450 l 1
- 243 450 l 1
- 226 363 211 277 193 193 c 0
- 159 31 121 -12 50 -12 c 0x98
+53 -12 m 0x98
+ 31 -12 12 -10 -3 -4 c 1x58
+ 16 90 l 1
+ 24 87 31 86 39 86 c 0x98
+ 67 86 88 100 114 215 c 0
+ 137 316 157 417 177 521 c 1
+ 483 521 l 1
+ 483 0 l 1
+ 378 0 l 1x38
+ 378 436 l 1
+ 256 436 l 1
+ 240 357 226 279 210 205 c 0
+ 174 36 133 -12 53 -12 c 0x98
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04AE dx=0 dy=0 dh=-7 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 7" uni04AE dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

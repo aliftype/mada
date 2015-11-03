@@ -1,30 +1,30 @@
 StartChar: Xi.sc
 Encoding: 1114498 -1 1452
-Width: 471
+Width: 485
 Flags: MW
-HStem: 0 66<49 423 49 423> 239 63<112 361 112 361> 452 66<57 415 57 415>
-VStem: 49 374<0 66 0 66> 112 249<239 302 239 302>
+HStem: 0 82<50 436 50 436> 231 78<111 375 111 375> 439 82<59 427 59 427>
+VStem: 50 386<0 82 0 82> 111 264<231 309 231 309>
 LayerCount: 2
 Fore
 SplineSet
-49 0 m 1xf0
- 49 66 l 1
- 423 66 l 1
- 423 0 l 1
- 49 0 l 1xf0
-112 239 m 1xe8
- 112 302 l 1
- 361 302 l 1
- 361 239 l 1
- 112 239 l 1xe8
-57 452 m 1
- 57 518 l 1
- 415 518 l 1
- 415 452 l 1
- 57 452 l 1
+50 0 m 1xf0
+ 50 82 l 1
+ 436 82 l 1
+ 436 0 l 1
+ 50 0 l 1xf0
+111 231 m 1xe8
+ 111 309 l 1
+ 375 309 l 1
+ 375 231 l 1
+ 111 231 l 1xe8
+59 439 m 1
+ 59 521 l 1
+ 427 521 l 1
+ 427 439 l 1
+ 59 439 l 1
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guillemotright dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guilsinglright dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guillemotright dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" guilsinglright dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Omicron.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Theta.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0
 PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis.sc dx=0 dy=0 dh=-10 dv=0 dx=0 dy=0 dh=0 dv=0

@@ -1,29 +1,29 @@
 StartChar: exclam
 Encoding: 33 33 1146
-Width: 289
+Width: 306
 Flags: MW
-HStem: -12 21G<128.5 161> -12 126<128.5 161>
-VStem: 85 119<32 69> 110.5 68
+HStem: -12 146<133.5 172.5>
+VStem: 84 138<39.5 81.5> 111 84
 LayerCount: 2
 Fore
 SplineSet
-116 198 m 1x90
- 105 576 l 1
- 103 670 l 1
- 186 670 l 1
- 184 576 l 1
- 173 198 l 1
- 116 198 l 1x90
-145 -12 m 0xa0
- 112 -12 85 14 85 50 c 0
- 85 88 112 114 145 114 c 0x60
- 177 114 204 88 204 50 c 0
- 204 14 177 -12 145 -12 c 0xa0
+118 209 m 1xa0
+ 104 563 l 1
+ 101 670 l 1
+ 206 670 l 1
+ 202 563 l 1
+ 188 209 l 1
+ 118 209 l 1xa0
+153 -12 m 0xc0
+ 114 -12 84 19 84 60 c 0
+ 84 103 114 134 153 134 c 0
+ 192 134 222 103 222 60 c 0
+ 222 19 192 -12 153 -12 c 0xc0
 EndSplineSet
 Substitution2: "'c2sc' Capitals to Small Capitals lookup 19 subtable" exclam.sc
 Substitution2: "'aalt' Access All Alternates lookup 0 subtable" exclam.sc
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BE dx=0 dy=0 dh=-32 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BC dx=0 dy=0 dh=-32 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quotedblright dx=0 dy=0 dh=-32 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quoteright dx=0 dy=0 dh=-32 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BE dx=0 dy=0 dh=-39 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" uni02BC dx=0 dy=0 dh=-39 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quotedblright dx=0 dy=0 dh=-39 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 8" quoteright dx=0 dy=0 dh=-39 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar

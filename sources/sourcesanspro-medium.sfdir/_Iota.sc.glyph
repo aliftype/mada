@@ -1,24 +1,24 @@
 StartChar: Iota.sc
 Encoding: 1114493 -1 1447
-Width: 263
+Width: 276
 GlyphClass: 2
 Flags: MW
-HStem: 0 21G<90 90 90 173> 498 20G<90 173 173 173>
-VStem: 90 83<0 518 0 518>
-AnchorPoint: "Anchor-4" 131 -22 basechar 0
-AnchorPoint: "Anchor-0" 131 563 basechar 0
+HStem: 0 21G<85 85 85 190> 501 20G<85 190 190 190>
+VStem: 85 105<0 521 0 521>
+AnchorPoint: "Anchor-4" 138 -22 basechar 0
+AnchorPoint: "Anchor-0" 138 563 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-90 0 m 1
- 90 518 l 1
- 173 518 l 1
- 173 0 l 1
- 90 0 l 1
+85 0 m 1
+ 85 521 l 1
+ 190 521 l 1
+ 190 0 l 1
+ 85 0 l 1
 EndSplineSet
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE9 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE8 dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
-PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon dx=0 dy=0 dh=-14 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE9 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" uni1FE8 dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilondieresis dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "'kern' Horizontal Kerning lookup 10 per glyph data 6" Upsilon dx=0 dy=0 dh=-15 dv=0 dx=0 dy=0 dh=0 dv=0
 Colour: ff0000
 EndChar

@@ -1,5 +1,5 @@
 SplineFontDB: 3.0
-FontName: SourceSansPro-Regular
+FontName: SourceSansPro-Medium
 FullName: Source Sans Pro
 FamilyName: Source Sans Pro
 Weight: Book
@@ -14,7 +14,7 @@ sfntRevision: 0x0002051e
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-XUID: [1021 293 131065847 15217011]
+XUID: [1021 842 1477233881 519208]
 BaseHoriz: 2 'ideo' 'romn'
 BaseScript: 'DFLT' 1  -170 0
 BaseScript: 'cyrl' 1  -170 0
@@ -23,7 +23,7 @@ BaseScript: 'latn' 1  -170 0
 FSType: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
-CreationTime: 1446505325
+CreationTime: 1446597847
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -234,7 +234,7 @@ ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 8 contextual 
  1
   SeqLookup: 0 "Multiple Substitution lookup 7" 
 EndFPST
-LangName: 1033 "Copyright 2010, 2012, 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name +IBgA-Source+IBkA." "" "" "2.020;ADBO;SourceSansPro-Regular;ADOBE" "" "Version 2.020;PS 2.0;hotconv 1.0.88;makeotf.lib2.5.647800 DEVELOPMENT" "" "Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries." "Adobe Systems Incorporated" "Paul D. Hunt" "" "http://www.adobe.com/type" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an +IBgA-AS IS+IBkA BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." "http://scripts.sil.org/OFL" 
+LangName: 1033 "Copyright 2010, 2012, 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name +IBgA-Source+IBkA." "" "Regular" "2.020;ADBO;SourceSansPro-Medium" "" "Version 2.020;PS 2.0;hotconv 1.0.88;makeotf.lib2.5.647800" "" "Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries." "Adobe Systems Incorporated" "Paul D. Hunt" "" "http://www.adobe.com/type" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an +IBgA-AS IS+IBkA BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." "http://scripts.sil.org/OFL" "" "" "Medium" 
 DesignSize: 100
 OtfFeatName: 'ss05' 1033 "Slashed zero" 
 OtfFeatName: 'ss04' 1033 "Serifed I" 
@@ -245,16 +245,16 @@ Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL For New Fonts
 BeginPrivate: 10
-BlueValues 55 [-12 0 486 498 518 530 574 586 638 650 656 668 712 724]
-OtherBlues 11 [-217 -205]
+BlueValues 55 [-12 0 489 501 521 533 575 587 637 649 655 667 708 720]
+OtherBlues 11 [-210 -198]
 FamilyBlues 55 [-12 0 486 498 518 530 574 586 638 650 656 668 712 724]
 FamilyOtherBlues 11 [-217 -205]
 BlueScale 6 0.0625
 BlueFuzz 1 0
-StdHW 4 [67]
-StdVW 4 [84]
-StemSnapH 7 [67 78]
-StemSnapV 7 [84 95]
+StdHW 4 [83]
+StdVW 5 [105]
+StemSnapH 7 [83 94]
+StemSnapV 9 [105 115]
 EndPrivate
 AnchorClass2: "Anchor-0"  "'mark' Mark Positioning lookup 0 subtable" "Anchor-1"  "'mark' Mark Positioning lookup 1 subtable" "Anchor-2"  "'mark' Mark Positioning lookup 2 subtable" "Anchor-3"  "'mark' Mark Positioning lookup 3 subtable" "Anchor-4"  "'mark' Mark Positioning lookup 4 subtable" "Anchor-5"  "'mark' Mark Positioning lookup 5 subtable" "Anchor-6"  "'mark' Mark Positioning lookup 6 subtable" "Anchor-7"  "'mark' Mark Positioning lookup 7 subtable" "Anchor-8"  "'mark' Mark Positioning lookup 8 subtable" "Anchor-9"  "'mkmk' Mark to Mark lookup 9 subtable" 
 EndSplineFont
