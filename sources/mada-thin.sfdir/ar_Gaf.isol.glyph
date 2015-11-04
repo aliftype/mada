@@ -1,13 +1,13 @@
 StartChar: arGaf.isol
 Encoding: 65612 -1 152
-Width: 662
+Width: 542
 VWidth: 0
 Flags: HW
-AnchorPoint: "arMarkAbove" 253 620 basechar 0
-AnchorPoint: "arDotAbove" 253 620 basechar 0
+AnchorPoint: "arShartaAbove" 321 597 basechar 0
+AnchorPoint: "arDotAbove" 133 619 basechar 0
+AnchorPoint: "arMarkAbove" 273 619 basechar 0
 AnchorPoint: "arMarkBelow" 313 -149 basechar 0
 AnchorPoint: "arDotBelow" 313 -149 basechar 0
-AnchorPoint: "arShartaAbove" 441 598 basechar 0
 LayerCount: 2
 Fore
 SplineSet
