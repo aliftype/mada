@@ -10,9 +10,10 @@ import math
 def handle_cloned_glyphs(font):
     for glyph in font.glyphs():
         if glyph.color == 0xff00ff:
-            assert len(glyph.references) > 0
+            assert len(glyph.references) > 0, glyph
             base = glyph.references[0][0]
             base = font[base]
+            assert base.anchorPoints, glyph
             glyph.anchorPoints = base.anchorPoints
 
 def merge(args):
