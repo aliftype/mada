@@ -52,6 +52,11 @@ def merge(args):
         ar.left_side_bearing = en.right_side_bearing
         ar.right_side_bearing = en.left_side_bearing
 
+    question_ar = arabic.createChar(ord(u'؟'), "uni061F")
+    question_ar.addReference("question", psMat.scale(-1, 1))
+    question_ar.left_side_bearing = arabic["question"].right_side_bearing
+    question_ar.right_side_bearing = arabic["question"].left_side_bearing
+
     # Set metadata
     arabic.version = args.version
     years = datetime.now().year == 2015 and 2015 or "2015-%s" % datetime.now().year
