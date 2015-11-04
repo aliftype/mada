@@ -4,6 +4,8 @@
 import argparse
 from datetime import datetime
 from sortsmill import ffcompat as fontforge
+import psMat
+import math
 
 def handle_cloned_glyphs(font):
     for glyph in font.glyphs():
@@ -39,6 +41,16 @@ def merge(args):
     if latin_locl:
         latin_locl += "} locl;"
         arabic.mergeFeatureString(latin_locl)
+
+    for ch in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
+        ar = arabic.createChar(ch[0], fontforge.nameFromUnicode(ch[0]))
+        en = arabic[ch[1]]
+        colon = arabic["colon"]
+        ar.addReference(en.glyphname, psMat.rotate(math.radians(180)))
+        delta = colon.boundingBox()[1] - ar.boundingBox()[1]
+        ar.transform(psMat.translate(0, delta))
+        ar.left_side_bearing = en.right_side_bearing
+        ar.right_side_bearing = en.left_side_bearing
 
     # Set metadata
     arabic.version = args.version
