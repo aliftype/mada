@@ -20,6 +20,7 @@ FONTS=thin medium black
 
 SFD=$(FONTS:%=$(SRCDIR)/$(NAME)-%.sfdir)
 OTF=$(FONTS:%=$(NAME)-%.otf)
+TTF=$(FONTS:%=$(NAME)-%.ttf)
 PDF=$(DOCDIR)/$(NAME)-table.pdf
 
 #TST=$(TESTS:%=$(TESTDIR)/%.txt)
@@ -34,6 +35,7 @@ crunch?=false
 all: otf doc
 
 otf: $(OTF)
+ttf: $(TTF)
 doc: $(PDF)
 #lint: $(LNT)
 check: #lint $(RUN)
@@ -45,10 +47,19 @@ ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@ --unicodes='*' --layout-features='*' --name-IDs='*'
 endif
+
+$(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
+	@echo "   FF	$@"
+	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
+ifeq ($(ttx), true)
+	@echo "   TTX	$@"
+	@pyftsubset $@ --output-file=$@ --unicodes='*' --layout-features='*' --name-IDs='*'
+endif
 ifeq ($(crunch), true)
 	@echo "   FC	$@"
 	@font-crunch -q -j8 -o $@ $@
 endif
+
 
 #$(TESTDIR)/%.run: $(TESTDIR)/%.txt $(TESTDIR)/%.shp $(NAME)-regular.otf
 #	@echo "   TST	$*"
@@ -75,9 +86,10 @@ build-encoded-glyphs: $(SFD) $(SRCDIR)/$(NAME).fea
 	  )
 
 dist:
-	@make -B ttx=true crunch=false
-	@mkdir -p $(NAME)-$(VERSION)
+	@make -B ttx=true crunch=false all ttf
+	@mkdir -p $(NAME)-$(VERSION)/ttf
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
+	@cp $(TTF) $(NAME)-$(VERSION)/ttf
 	@cp OFL.txt $(NAME)-$(VERSION)
 	@markdown README.md | w3m -dump -T text/html | sed -e "/^Sample$$/d" > $(NAME)-$(VERSION)/README.txt
 	@zip -r $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
