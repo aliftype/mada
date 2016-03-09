@@ -1,6 +1,5 @@
 NAME=mada
 VERSION=0.3
-EXT=otf
 LATIN=sourcesanspro
 
 SRCDIR=sources
@@ -20,7 +19,7 @@ FONTS=thin medium black
 #TESTS=wb yeh-ragaa
 
 SFD=$(FONTS:%=$(SRCDIR)/$(NAME)-%.sfdir)
-OTF=$(FONTS:%=$(NAME)-%.$(EXT))
+OTF=$(FONTS:%=$(NAME)-%.otf)
 PDF=$(DOCDIR)/$(NAME)-table.pdf
 
 #TST=$(TESTS:%=$(TESTDIR)/%.txt)
@@ -39,7 +38,7 @@ doc: $(PDF)
 #lint: $(LNT)
 check: #lint $(RUN)
 
-$(NAME)-%.$(EXT): $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
+$(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   FF	$@"
 	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
 ifeq ($(ttx), true)
@@ -51,17 +50,17 @@ ifeq ($(crunch), true)
 	@font-crunch -q -j8 -o $@ $@
 endif
 
-#$(TESTDIR)/%.run: $(TESTDIR)/%.txt $(TESTDIR)/%.shp $(NAME)-regular.$(EXT)
+#$(TESTDIR)/%.run: $(TESTDIR)/%.txt $(TESTDIR)/%.shp $(NAME)-regular.otf
 #	@echo "   TST	$*"
-#	@$(PY3) $(RUNTEST) $(NAME)-regular.$(EXT) $(@D)/$*.txt $(@D)/$*.shp $(@D)/$*.run
+#	@$(PY3) $(RUNTEST) $(NAME)-regular.otf $(@D)/$*.txt $(@D)/$*.shp $(@D)/$*.run
 
 #$(TESTDIR)/%.lnt: $(SRCDIR)/%.sfdir $(SFDLINT)
 #	@echo "   LNT	$<"
 #	@mkdir -p $(TESTDIR)
 #	@$(PY) $(SFDLINT) $< $@
 
-#$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-regular.$(EXT)
-$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-medium.$(EXT)
+#$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-regular.otf
+$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-medium.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
