@@ -41,7 +41,6 @@ HheadDescent: -300
 HheadDOffset: 0
 OS2Vendor: 'BLQ '
 Lookup: 257 8 0 "'ss01' Non raised final yeh"  {"'ss01' Non raised final yeh-1"  } ['ss01' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' Mark to dot positioning"  {"'mkmk' Mark to dot positioning-1"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 
@@ -60,5 +59,4 @@ Grid
  2000 624 l 0
   Named: "Cap" 
 EndSplineSet
-AnchorClass2: "arMarkAboveDot"  "'mkmk' Mark to dot positioning-1" "arMarkBelowDot"  "'mkmk' Mark to dot positioning-1" 
 EndSplineFont
