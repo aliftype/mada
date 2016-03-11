@@ -60,15 +60,16 @@ def merge(args):
 
     # Set metadata
     arabic.version = args.version
-    years = datetime.now().year == 2015 and 2015 or "2015-%s" % datetime.now().year
 
-    arabic.copyright = ". ".join(["Portions copyright © %s, Khaled Hosny (<khaledhosny@eglug.org>)",
-                              "Portions " + latin.copyright[0].lower() + latin.copyright[1:].replace("(c)", "©")])
-    arabic.copyright = arabic.copyright % years
+    copyright = "Portions copyright © 2015-%s, Khaled Hosny (<khaledhosny@eglug.org>)" % datetime.now().year
+    copyright+= "Portions " + latin.copyright[0].lower() + latin.copyright[1:]
+
+    arabic.copyright = copyright.replace("©", "(c)")
 
     handle_cloned_glyphs(arabic)
 
     en = "English (US)"
+    arabic.appendSFNTName(en, "Copyright", copyright)
     arabic.appendSFNTName(en, "Designer", "Khaled Hosny")
     arabic.appendSFNTName(en, "License URL", "http://scripts.sil.org/OFL")
     arabic.appendSFNTName(en, "License", 'This Font Software is licensed under the SIL Open Font License, Version 1.1. \
