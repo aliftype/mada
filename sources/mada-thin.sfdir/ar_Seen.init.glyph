@@ -7,7 +7,7 @@ AnchorPoint: "arMarkBelow" 405 -150 basechar 0
 AnchorPoint: "arDotBelow" 405 -150 basechar 0
 AnchorPoint: "arMarkAbove" 405 512 basechar 0
 AnchorPoint: "arDotAbove" 405 512 basechar 0
-LayerCount: 2
+LayerCount: 3
 Fore
 SplineSet
 563 340 m 1
