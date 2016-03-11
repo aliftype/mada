@@ -1,5 +1,5 @@
 NAME=mada
-VERSION=0.3
+VERSION=1.0
 LATIN=sourcesanspro
 
 SRCDIR=sources
