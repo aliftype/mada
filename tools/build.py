@@ -20,30 +20,40 @@ def find_clones(font, name):
 def is_mark(glyph):
     return glyph.glyphclass == "mark"
 
+def generate_anchor(font, glyph, marks):
+    fea = ""
+    for ref in glyph.layerrefs["Marks"]:
+        name = ref[0]
+        x = ref[1][-2]
+        y = ref[1][-1]
+        assert name in marks, name
+        bases = find_clones(font, glyph.name)
+        bases.append(glyph.name)
+        bases = "[" + " ".join(bases) + "]"
+        if is_mark(glyph):
+            fea += "position mark %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
+        else:
+            fea += "position base %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
+    return fea
+
 def generate_anchors(font):
     marks = [g.name for g in font.glyphs() if is_mark(g)]
 
     fea = ""
-    fea += "feature mark {\n"
     for mark in marks:
         fea += "markClass [%s] <anchor 0 0> @%s;" % (mark, mark.upper())
 
+    fea += "feature mark {"
     for glyph in font.glyphs():
-        refs = []
-        for ref in glyph.layerrefs["Marks"]:
-            name = ref[0]
-            x = ref[1][-2]
-            y = ref[1][-1]
-            assert name in marks, name
-            bases = find_clones(font, glyph.name)
-            bases.append(glyph.name)
-            bases = "[" + " ".join(bases) + "]"
-            if is_mark(glyph):
-                fea += "position mark %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
-            else:
-                fea += "position base %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
+        if not is_mark(glyph):
+            fea += generate_anchor(font, glyph, marks)
     fea += "} mark;"
 
+    fea += "feature mkmk {"
+    for glyph in font.glyphs():
+        if is_mark(glyph):
+            fea += generate_anchor(font, glyph, marks)
+    fea += "} mkmk;"
     return fea
 
 def merge(args):
