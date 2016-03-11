@@ -60,10 +60,8 @@ def merge(args):
     arabic = fontforge.open(args.arabicfile)
     arabic.encoding = "Unicode"
 
-    with open(args.feature_file) as feature_file:
-        fea = feature_file.read()
-        fea += generate_anchors(arabic)
-        arabic.mergeFeatureString(fea)
+    arabic.mergeFeature(args.feature_file)
+    arabic.mergeFeatureString(generate_anchors(arabic))
 
     latin = fontforge.open(args.latinfile)
     latin.encoding = "Unicode"
