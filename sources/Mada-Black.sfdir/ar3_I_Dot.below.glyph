@@ -5,10 +5,25 @@ VWidth: 0
 GlyphClass: 4
 Flags: HW
 AnchorPoint: "arMarkBelowDot" 0 -330 basemark 0
-AnchorPoint: "arDotBelow" 0 0 mark 0
 LayerCount: 3
 Fore
 Refer: 71 -1 N 1 0 0 1 0 -170 2
 Layer: 2
-Refer: 71 -1 N 1 0 0 1 0 -170 2
+SplineSet
+-86 -170 m 0
+ -86 -123 -47 -84 0 -84 c 0
+ 47 -84 86 -123 86 -170 c 0
+ 86 -217 47 -256 0 -256 c 0
+ -47 -256 -86 -217 -86 -170 c 0
+-206 0 m 0
+ -206 47 -167 86 -120 86 c 0
+ -73 86 -34 47 -34 0 c 0
+ -34 -47 -73 -86 -120 -86 c 0
+ -167 -86 -206 -47 -206 0 c 0
+34 0 m 0
+ 34 47 73 86 120 86 c 0
+ 167 86 206 47 206 0 c 0
+ 206 -47 167 -86 120 -86 c 0
+ 73 -86 34 -47 34 0 c 0
+EndSplineSet
 EndChar

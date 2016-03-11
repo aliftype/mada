@@ -4,8 +4,6 @@ Width: 298
 VWidth: -36
 GlyphClass: 2
 Flags: HW
-AnchorPoint: "arMarkAbove" 99 490 basechar 0
-AnchorPoint: "arDotAbove" 99 490 basechar 0
 LayerCount: 3
 Fore
 SplineSet
@@ -28,4 +26,17 @@ SplineSet
  212 32 226 47 226 67 c 0
  226 190 l 1
 EndSplineSet
+Layer: 2
+Refer: 89 -1 N 1 0 0 1 99 490 2
+Refer: 70 -1 N 1 0 0 1 99 490 2
+Refer: 68 -1 N 1 0 0 1 99 490 2
+Refer: 171 1617 N 1 0 0 1 99 528 2
+Refer: 168 1614 N 1 0 0 1 99 510 2
+Refer: 165 1611 N 1 0 0 1 99 528 2
+Refer: 163 1648 N 1 0 0 1 99 490 2
+Refer: 166 1612 N 1 0 0 1 98 522 2
+Refer: 169 1615 N 1 0 0 1 93 522 2
+Refer: 172 1618 N 1 0 0 1 99 527 2
+Refer: 69 -1 N 1 0 0 1 99 490 2
+Refer: 71 -1 N 1 0 0 1 99 490 2
 EndChar

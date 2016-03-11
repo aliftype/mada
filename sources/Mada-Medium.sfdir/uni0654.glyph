@@ -5,10 +5,23 @@ VWidth: 0
 GlyphClass: 4
 Flags: HW
 AnchorPoint: "arMarkAboveDot" 0 220 basemark 0
-AnchorPoint: "arHamzaAbove" 0 0 mark 0
 LayerCount: 3
 Fore
 Refer: 76 -1 N 1 0 0 1 0 0 2
 Layer: 2
-Refer: 76 -1 N 1 0 0 1 0 0 2
+SplineSet
+96 181 m 1
+ 96 111 l 1
+ 33 111 l 1
+ 54 66 l 2
+ 59 54 70 36 56 18 c 0
+ 44 1 23 0 14 0 c 2
+ -96 0 l 1
+ -96 70 l 1
+ -25 70 l 1
+ -46 114 l 2
+ -46 114 -62 139 -49 160 c 0
+ -42 171 -27 181 -4 181 c 2
+ 96 181 l 1
+EndSplineSet
 EndChar

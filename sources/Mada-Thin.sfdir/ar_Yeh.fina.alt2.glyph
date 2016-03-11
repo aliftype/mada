@@ -4,11 +4,6 @@ Width: 768
 VWidth: -36
 GlyphClass: 2
 Flags: HW
-AnchorPoint: "arMarkAbove" 214 293 basechar 0
-AnchorPoint: "arHamzaAbove" 214 293 basechar 0
-AnchorPoint: "arDotAbove" 214 293 basechar 0
-AnchorPoint: "arMarkBelow" 304 -273 basechar 0
-AnchorPoint: "arDotBelow" 304 -273 basechar 0
 LayerCount: 3
 Fore
 SplineSet
@@ -38,4 +33,28 @@ SplineSet
  627 45 638 32 657 32 c 2
  768 32 l 1
 EndSplineSet
+Layer: 2
+Refer: 75 -1 N 1 0 0 1 304 -273 2
+Refer: 73 -1 N 1 0 0 1 304 -273 2
+Refer: 170 1616 N 1 0 0 1 304 -293 2
+Refer: 164 1622 N 1 0 0 1 304 -273 2
+Refer: 71 -1 N 1 0 0 1 214 293 2
+Refer: 69 -1 N 1 0 0 1 214 293 2
+Refer: 128 1620 N 1 0 0 1 214 293 2
+Refer: 88 -1 N 1 0 0 1 214 293 2
+Refer: 172 1618 N 1 0 0 1 214 330 2
+Refer: 169 1615 N 1 0 0 1 208 325 2
+Refer: 166 1612 N 1 0 0 1 213 325 2
+Refer: 163 1648 N 1 0 0 1 214 293 2
+Refer: 165 1611 N 1 0 0 1 214 331 2
+Refer: 168 1614 N 1 0 0 1 214 313 2
+Refer: 171 1617 N 1 0 0 1 214 331 2
+Refer: 76 -1 N 1 0 0 1 214 293 2
+Refer: 127 1619 N 1 0 0 1 214 293 2
+Refer: 68 -1 N 1 0 0 1 214 293 2
+Refer: 70 -1 N 1 0 0 1 214 293 2
+Refer: 89 -1 N 1 0 0 1 214 293 2
+Refer: 167 1613 N 1 0 0 1 304 -302 2
+Refer: 72 -1 N 1 0 0 1 304 -273 2
+Refer: 74 -1 N 1 0 0 1 304 -273 2
 EndChar

@@ -7,19 +7,53 @@ from sortsmill import ffcompat as fontforge
 import psMat
 import math
 
-def handle_cloned_glyphs(font):
+def find_clones(font, name):
+    clones = []
     for glyph in font.glyphs():
         if glyph.color == 0xff00ff:
             assert len(glyph.references) > 0, glyph
             base = glyph.references[0][0]
-            base = font[base]
-            assert base.anchorPoints, glyph
-            glyph.anchorPoints = base.anchorPoints
+            if base == name:
+                clones.append(glyph.name)
+    return clones
+
+def is_mark(glyph):
+    return glyph.glyphclass == "mark"
+
+def generate_anchors(font):
+    marks = [g.name for g in font.glyphs() if is_mark(g)]
+
+    fea = ""
+    fea += "feature mark {\n"
+    for mark in marks:
+        fea += "markClass [%s] <anchor 0 0> @%s;" % (mark, mark.upper())
+
+    for glyph in font.glyphs():
+        refs = []
+        for ref in glyph.layerrefs["Marks"]:
+            name = ref[0]
+            x = ref[1][-2]
+            y = ref[1][-1]
+            assert name in marks, name
+            bases = find_clones(font, glyph.name)
+            bases.append(glyph.name)
+            bases = "[" + " ".join(bases) + "]"
+            if is_mark(glyph):
+                fea += "position mark %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
+            else:
+                fea += "position base %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
+    fea += "} mark;"
+
+    return fea
 
 def merge(args):
     arabic = fontforge.open(args.arabicfile)
     arabic.encoding = "Unicode"
-    arabic.mergeFeature(args.feature_file)
+
+    with open(args.feature_file) as feature_file:
+        fea = feature_file.read()
+        fea += generate_anchors(arabic)
+        arabic.mergeFeatureString(fea)
 
     latin = fontforge.open(args.latinfile)
     latin.encoding = "Unicode"
@@ -65,8 +99,6 @@ def merge(args):
     copyright+= "Portions " + latin.copyright[0].lower() + latin.copyright[1:]
 
     arabic.copyright = copyright.replace("©", "(c)")
-
-    handle_cloned_glyphs(arabic)
 
     en = "English (US)"
     arabic.appendSFNTName(en, "Copyright", copyright)
