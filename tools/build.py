@@ -4,6 +4,7 @@
 import argparse
 from datetime import datetime
 from sortsmill import ffcompat as fontforge
+from fontTools.ttLib import TTFont
 import psMat
 import math
 
@@ -123,6 +124,15 @@ this Font Software.')
 
     return arabic
 
+def post_process(filename):
+    font = TTFont(filename)
+
+    # for GDI
+    if font["OS/2"].usWeightClass == 100:
+        font["OS/2"].usWeightClass = 250
+
+    font.save(filename)
+
 def main():
     parser = argparse.ArgumentParser(description="Create a version of Amiri with colored marks using COLR/CPAL tables.")
     parser.add_argument("arabicfile", metavar="FILE", help="input font to process")
@@ -137,6 +147,7 @@ def main():
 
     flags = ["round", "opentype", "no-mac-names"]
     font.generate(args.out_file, flags=flags)
+    post_process(args.out_file)
 
 if __name__ == "__main__":
     main()
