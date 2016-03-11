@@ -93,6 +93,7 @@ dist:
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
 	@cp OFL.txt $(NAME)-$(VERSION)
+	@markdown -v
 	@markdown README.md | w3m -dump -T text/html | sed -e "/^Sample$$/d" > $(NAME)-$(VERSION)/README.txt
 	@zip -r $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
