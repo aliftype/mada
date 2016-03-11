@@ -224,6 +224,5 @@ lookup LamAlef {
 
 feature rlig {
   lookupflag IgnoreMarks;
-    sub arLam.init' lookup LamAlef arAlef.fina' lookup LamAlef;
-    sub arLam.medi' lookup LamAlef arAlef.fina' lookup LamAlef;
+    sub [arLam.init arLam.medi]' lookup LamAlef arAlef.fina' lookup LamAlef;
 } rlig;
