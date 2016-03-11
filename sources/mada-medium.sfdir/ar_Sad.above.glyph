@@ -1,4 +1,4 @@
-StartChar: arSad.mark
+StartChar: arSad.above
 Encoding: 65608 -1 88
 Width: 0
 VWidth: 34
@@ -8,11 +8,11 @@ AnchorPoint: "arHamzaAbove" 0 0 mark 0
 LayerCount: 3
 Fore
 SplineSet
--74 -0 m 1
- -172 -0 l 1
- -172 86 l 1
- -74 86 l 1
- -74 -0 l 1
+-81 -0 m 1
+ -149 -0 l 1
+ -149 52 l 1
+ -81 52 l 1
+ -81 -0 l 1
 EndSplineSet
-Refer: 87 -1 N 0.5 0 0 0.5 30 -0 2
+Refer: 87 -1 N 0.5 0 0 0.5 23 -0 2
 EndChar
