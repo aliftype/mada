@@ -16,4 +16,13 @@ SplineSet
  -81 -0 l 1
 EndSplineSet
 Refer: 87 -1 N 0.5 0 0 0.5 23 -0 2
+Layer: 2
+SplineSet
+-81 -0 m 1
+ -149 -0 l 1
+ -149 52 l 1
+ -81 52 l 1
+ -81 -0 l 1
+EndSplineSet
+Refer: 87 -1 N 0.5 0 0 0.5 23 -0 2
 EndChar

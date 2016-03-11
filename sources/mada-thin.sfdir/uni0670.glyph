@@ -15,4 +15,12 @@ SplineSet
  16 18 5 0 -16 0 c 1
  -16 183 l 1
 EndSplineSet
+Layer: 2
+SplineSet
+-16 183 m 1
+ 16 183 l 1
+ 16 32 l 2
+ 16 18 5 0 -16 0 c 1
+ -16 183 l 1
+EndSplineSet
 EndChar

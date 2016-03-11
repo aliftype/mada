@@ -31,4 +31,12 @@ SplineSet
  186 27 l 1
  164 26 -48 -23 -133 -75 c 1
 EndSplineSet
+Layer: 2
+SplineSet
+-133 -75 m 1
+ -186 11 l 1
+ -73 81 131 126 183 127 c 1
+ 186 27 l 1
+ 164 26 -48 -23 -133 -75 c 1
+EndSplineSet
 EndChar

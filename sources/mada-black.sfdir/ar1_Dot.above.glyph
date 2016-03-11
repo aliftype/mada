@@ -15,4 +15,12 @@ SplineSet
  86 -47 47 -86 0 -86 c 0
  -47 -86 -86 -47 -86 0 c 0
 EndSplineSet
+Layer: 2
+SplineSet
+-86 0 m 0
+ -86 47 -47 86 0 86 c 0
+ 47 86 86 47 86 0 c 0
+ 86 -47 47 -86 0 -86 c 0
+ -47 -86 -86 -47 -86 0 c 0
+EndSplineSet
 EndChar

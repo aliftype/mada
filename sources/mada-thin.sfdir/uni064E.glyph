@@ -17,4 +17,14 @@ SplineSet
  -94 -11 l 0
  -102 -14 -112 -9 -115 -1 c 0
 EndSplineSet
+Layer: 2
+SplineSet
+-115 -1 m 0
+ -118 7 -113 16 -105 19 c 0
+ 94 92 l 0
+ 102 95 112 91 115 83 c 0
+ 118 75 113 65 105 62 c 0
+ -94 -11 l 0
+ -102 -14 -112 -9 -115 -1 c 0
+EndSplineSet
 EndChar
