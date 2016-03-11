@@ -2,10 +2,11 @@ NAME=Mada
 VERSION=1.0
 LATIN=SourceSansPro
 
-SRCDIR=sources
-DOCDIR=documentation
-TOOLDIR=tools
-TESTDIR=tests
+BASEDIR=$(shell pwd)
+SRCDIR=$(BASEDIR)/sources
+DOCDIR=$(BASEDIR)/documentation
+TOOLDIR=$(BASEDIR)/tools
+TESTDIR=$(BASEDIR)/tests
 DIST=$(NAME)-$(VERSION)
 
 PY=python2
@@ -42,7 +43,9 @@ check: #lint $(RUN)
 
 $(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   FF	$@"
-	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
+	@FILES=($+); \
+	 cd $(SRCDIR); \
+	 $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*'
@@ -51,7 +54,9 @@ endif
 
 $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   FF	$@"
-	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
+	@FILES=($+); \
+	 cd $(SRCDIR); \
+	 $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*'
