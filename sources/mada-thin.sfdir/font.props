@@ -25,19 +25,19 @@ TTFWeight: 100
 TTFWidth: 5
 LineGap: 90
 VLineGap: 0
-OS2TypoAscent: 0
-OS2TypoAOffset: 1
-OS2TypoDescent: 0
-OS2TypoDOffset: 1
-OS2TypoLinegap: 90
+OS2TypoAscent: 900
+OS2TypoAOffset: 0
+OS2TypoDescent: -300
+OS2TypoDOffset: 0
+OS2TypoLinegap: 100
 OS2WinAscent: 0
 OS2WinAOffset: 1
 OS2WinDescent: 0
 OS2WinDOffset: 1
-HheadAscent: 0
-HheadAOffset: 1
-HheadDescent: 0
-HheadDOffset: 1
+HheadAscent: 900
+HheadAOffset: 0
+HheadDescent: -300
+HheadDOffset: 0
 OS2Vendor: 'BLQ '
 Lookup: 257 8 0 "'ss01' Non raised final yeh"  {"'ss01' Non raised final yeh-1"  } ['ss01' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Dot positioning"  {"'mark' Dot positioning-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > ) ]
