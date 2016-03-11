@@ -1,6 +1,6 @@
-NAME=mada
+NAME=Mada
 VERSION=1.0
-LATIN=sourcesanspro
+LATIN=SourceSansPro
 
 SRCDIR=sources
 DOCDIR=documentation
@@ -15,13 +15,13 @@ COMPOSE=$(TOOLDIR)/build-encoded-glyphs.py
 #RUNTEST=$(TOOLDIR)/runtest.py
 #SFDLINT=$(TOOLDIR)/sfdlint.py
 
-FONTS=thin medium black
+FONTS=Thin Medium Black
 #TESTS=wb yeh-ragaa
 
 SFD=$(FONTS:%=$(SRCDIR)/$(NAME)-%.sfdir)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
-PDF=$(DOCDIR)/$(NAME)-table.pdf
+PDF=$(DOCDIR)/$(NAME)-Table.pdf
 
 #TST=$(TESTS:%=$(TESTDIR)/%.txt)
 #SHP=$(TESTS:%=$(TESTDIR)/%.shp)
@@ -72,8 +72,8 @@ endif
 #	@mkdir -p $(TESTDIR)
 #	@$(PY) $(SFDLINT) $< $@
 
-#$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-regular.otf
-$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-medium.otf
+#$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-Regular.otf
+$(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Medium.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
