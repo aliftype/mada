@@ -105,8 +105,7 @@ def merge(args):
     # Set metadata
     arabic.version = args.version
 
-    copyright = "Portions copyright © 2015-%s, Khaled Hosny (<khaledhosny@eglug.org>)" % datetime.now().year
-    copyright+= "Portions " + latin.copyright[0].lower() + latin.copyright[1:]
+    copyright = 'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
 
     arabic.copyright = copyright.replace("©", "(c)")
 
