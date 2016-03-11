@@ -1,11 +1,11 @@
 StartChar: uni0650
 Encoding: 1616 1616 168
 Width: 0
-VWidth: 0
+VWidth: 24
 Flags: HW
-AnchorPoint: "arMarkBelow" 0 0 mark 0
-AnchorPoint: "arMarkBelowDot" 0 0 mark 0
+AnchorPoint: "arMarkBelow" 0 25 mark 0
+AnchorPoint: "arMarkBelowDot" 0 25 mark 0
 LayerCount: 2
 Fore
-Refer: 166 1614 N 1 0 0 1 0 -99 2
+Refer: 166 1614 N 1 0 0 1 0 -148 2
 EndChar

@@ -1,22 +1,22 @@
 StartChar: uni0652
 Encoding: 1618 1618 170
 Width: 0
-VWidth: 662
+VWidth: 944
 Flags: HW
-AnchorPoint: "arMarkAbove" 0 0 mark 0
-AnchorPoint: "arMarkAboveDot" 0 0 mark 0
+AnchorPoint: "arMarkAbove" 0 -48 mark 0
+AnchorPoint: "arMarkAboveDot" 0 -48 mark 0
 LayerCount: 2
 Fore
 SplineSet
--46 97 m 0
- -46 71 -26 50 0 50 c 0
- 26 50 46 71 46 97 c 0
- 46 123 26 143 0 143 c 0
- -26 143 -46 123 -46 97 c 0
--96 97 m 0
- -96 150 -53 193 0 193 c 0
- 53 193 96 150 96 97 c 0
- 96 44 53 0 0 0 c 0
- -53 0 -96 44 -96 97 c 0
+-69 97 m 0
+ -69 58 -39 27 0 27 c 0
+ 39 27 69 58 69 97 c 0
+ 69 136 39 166 0 166 c 0
+ -39 166 -69 136 -69 97 c 0
+-144 97 m 0
+ -144 177 -80 241 0 241 c 0
+ 80 241 144 177 144 97 c 0
+ 144 17 80 -48 0 -48 c 0
+ -80 -48 -144 17 -144 97 c 0
 EndSplineSet
 EndChar
