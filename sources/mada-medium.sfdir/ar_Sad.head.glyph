@@ -2,6 +2,7 @@ StartChar: arSad.head
 Encoding: 65607 -1 87
 Width: 0
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arMarkBelow" 0 -200 basechar 0
 AnchorPoint: "arDotBelow" 0 -200 basechar 0

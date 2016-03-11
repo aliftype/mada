@@ -2,6 +2,7 @@ StartChar: arKaf.isol
 Encoding: 65546 -1 10
 Width: 496
 VWidth: -36
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arHamzaAbove" 230 270 basechar 0
 AnchorPoint: "arMarkBelow" 239 -110 basechar 0

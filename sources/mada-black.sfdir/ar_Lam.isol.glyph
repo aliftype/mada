@@ -2,6 +2,7 @@ StartChar: arLam.isol
 Encoding: 65545 -1 9
 Width: 780
 VWidth: 34
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arMarkBelow" 387 -258 basechar 0
 AnchorPoint: "arDotBelow" 387 -258 basechar 0

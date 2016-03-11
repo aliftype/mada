@@ -2,6 +2,7 @@ StartChar: arAlef.fina.1
 Encoding: 65557 -1 31
 Width: 0
 VWidth: -36
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arHamzaBelow" 100 -100 basechar 0
 AnchorPoint: "arMarkBelow" 100 -100 basechar 0

@@ -2,6 +2,7 @@ StartChar: arAlef.fina
 Encoding: 65578 -1 55
 Width: 360
 VWidth: 34
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arMarkBelow" 176 -49 basechar 0
 AnchorPoint: "arDotBelow" 176 -49 basechar 0

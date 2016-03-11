@@ -2,6 +2,7 @@ StartChar: arBeh.init
 Encoding: 65563 -1 37
 Width: 500
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arMarkBelow" 199 -149 basechar 0
 AnchorPoint: "arDotBelow" 199 -149 basechar 0

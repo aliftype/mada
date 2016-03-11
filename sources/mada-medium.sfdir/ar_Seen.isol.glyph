@@ -2,6 +2,7 @@ StartChar: arSeen.isol
 Encoding: 65541 -1 5
 Width: 1052
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arMarkBelow" 329 -311 basechar 0
 AnchorPoint: "arDotBelow" 329 -311 basechar 0

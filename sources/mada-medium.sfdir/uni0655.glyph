@@ -2,6 +2,7 @@ StartChar: uni0655
 Encoding: 1621 1621 129
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "arMarkBelowDot" 0 -220 basemark 0
 AnchorPoint: "arHamzaBelow" 0 0 mark 0

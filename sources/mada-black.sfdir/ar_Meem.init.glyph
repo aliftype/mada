@@ -2,6 +2,7 @@ StartChar: arMeem.init
 Encoding: 65610 -1 90
 Width: 675
 VWidth: 34
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arMarkAbove" 307 608 basechar 0
 AnchorPoint: "arDotAbove" 307 608 basechar 0

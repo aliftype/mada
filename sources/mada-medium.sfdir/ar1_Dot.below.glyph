@@ -2,6 +2,7 @@ StartChar: ar1Dot.below
 Encoding: 65592 -1 72
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "arMarkBelowDot" 0 -110 basemark 0
 AnchorPoint: "arDotBelow" 0 0 mark 0

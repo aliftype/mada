@@ -2,6 +2,7 @@ StartChar: arSad.above
 Encoding: 65608 -1 88
 Width: 0
 VWidth: 34
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "arMarkAboveDot" 0 240 basemark 0
 AnchorPoint: "arHamzaAbove" 0 0 mark 0

@@ -2,6 +2,7 @@ StartChar: arHah.init
 Encoding: 65569 -1 43
 Width: 566
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 AnchorPoint: "arMarkAbove" 144 386 basechar 0
 AnchorPoint: "arDotAbove" 144 386 basechar 0

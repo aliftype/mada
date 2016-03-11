@@ -2,6 +2,7 @@ StartChar: uni0650
 Encoding: 1616 1616 168
 Width: 0
 VWidth: 20
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "arMarkBelow" 0 21 mark 0
 AnchorPoint: "arMarkBelowDot" 0 21 mark 0
