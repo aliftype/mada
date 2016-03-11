@@ -1,7 +1,7 @@
 SplineFontDB: 3.0
 FontName: Mada-Black
 FullName: Mada Black
-FamilyName: Mada
+FamilyName: Mada Black
 Weight: Black
 Copyright: Created by Khaled Hosny with Sorts Mill Tools 2.1.0_alpha1 <http://bitbucket.org/sortsmill/sortsmill-tools>
 UComments: "2015-10-10: Created." 
@@ -42,7 +42,7 @@ HheadDOffset: 0
 OS2Vendor: 'BLQ '
 MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033 
+LangName: 1033 "" "" "Regular" "" "" "" "" "" "" "" "" "" "" "" "" "" "Mada" "Black" 
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
