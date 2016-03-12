@@ -114,11 +114,7 @@ def merge(args):
     arabic.appendSFNTName(en, "Copyright", copyright)
     arabic.appendSFNTName(en, "Designer", "Khaled Hosny")
     arabic.appendSFNTName(en, "License URL", "http://scripts.sil.org/OFL")
-    arabic.appendSFNTName(en, "License", 'This Font Software is licensed under the SIL Open Font License, Version 1.1. \
-This Font Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR \
-CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License \
-for the specific language, permissions and limitations governing your use of \
-this Font Software.')
+    arabic.appendSFNTName(en, "License", 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL')
     arabic.appendSFNTName(en, "Descriptor", "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage.")
     arabic.appendSFNTName(en, "Sample Text", "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار.")
 
