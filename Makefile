@@ -48,7 +48,7 @@ $(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(
 	 $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
-	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*'
+	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
 	@mv $@.tmp $@
 endif
 
@@ -59,7 +59,7 @@ $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(
 	 $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
-	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*'
+	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
 	@mv $@.tmp $@
 endif
 ifeq ($(crunch), true)
