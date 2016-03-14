@@ -5,8 +5,12 @@ import argparse
 from datetime import datetime
 from sortsmill import ffcompat as fontforge
 from fontTools.ttLib import TTFont
+from fontTools.feaLib import builder as feabuilder
+from tempfile import NamedTemporaryFile
 import psMat
 import math
+import os
+import sys
 
 def find_clones(font, name):
     clones = []
@@ -28,13 +32,16 @@ def generate_anchor(font, glyph, marks):
         x = ref[1][-2]
         y = ref[1][-1]
         assert name in marks, name
-        bases = find_clones(font, glyph.name)
-        bases.append(glyph.name)
+        bases = [glyph.name]
+        for clone in find_clones(font, glyph.name):
+            bases.append(clone)
+            bases.extend(find_clones(font, clone))
         bases = "[" + " ".join(bases) + "]"
         if is_mark(glyph):
             fea += "position mark %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
         else:
             fea += "position base %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
+
     return fea
 
 def generate_anchors(font):
@@ -55,16 +62,20 @@ def generate_anchors(font):
         if is_mark(glyph):
             fea += generate_anchor(font, glyph, marks)
     fea += "} mkmk;"
+
+    return fea
+
+def generate_arabic_features(font, feafilename):
+    fea = ""
+    with open(feafilename) as feafile:
+        fea += feafile.read()
+        fea += generate_anchors(font)
+
     return fea
 
 def merge(args):
     arabic = fontforge.open(args.arabicfile)
     arabic.encoding = "Unicode"
-
-    with open(args.feature_file) as feature_file:
-        fea = feature_file.read()
-        fea += generate_anchors(arabic)
-        arabic.mergeFeatureString(fea)
 
     latin = fontforge.open(args.latinfile)
     latin.encoding = "Unicode"
@@ -73,7 +84,8 @@ def merge(args):
     latin_locl = ""
     for glyph in latin.glyphs():
         if glyph.color == 0xff0000:
-            latin.removeGlyph(glyph)
+            #latin.removeGlyph(glyph)
+            pass
         else:
             if glyph.glyphname in arabic:
                 name = glyph.glyphname
@@ -83,10 +95,13 @@ def merge(args):
                     latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
                 latin_locl += "sub %s by %s;" % (name, glyph.glyphname)
 
-    arabic.mergeFonts(latin)
+    fea = generate_arabic_features(arabic, args.feature_file)
+    fea += latin.generateFeatureString()
     if latin_locl:
         latin_locl += "} locl;"
-        arabic.mergeFeatureString(latin_locl)
+        fea += latin_locl
+
+    arabic.mergeFonts(latin)
 
     for ch in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
         ar = arabic.createChar(ch[0], fontforge.nameFromUnicode(ch[0]))
@@ -118,16 +133,27 @@ def merge(args):
     arabic.appendSFNTName(en, "Descriptor", "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage.")
     arabic.appendSFNTName(en, "Sample Text", "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار.")
 
-    return arabic
+    return arabic, fea
 
-def post_process(filename):
-    font = TTFont(filename)
+def post_process(args, fea):
+    font = TTFont(args.out_file)
 
     # for GDI
     if font["OS/2"].usWeightClass == 100:
         font["OS/2"].usWeightClass = 250
 
-    font.save(filename)
+    for tag in ("GDEF", "GSUB", "GPOS"):
+        assert tag not in font
+
+    try:
+        feabuilder.addOpenTypeFeaturesFromString(font, fea, args.feature_file)
+    except:
+        with NamedTemporaryFile(delete=False) as feafile:
+            feafile.write(fea)
+            print("Failed to apply features, save to %s" % feafile.name)
+        os.remove(args.out_file)
+        raise
+    font.save(args.out_file)
 
 def main():
     parser = argparse.ArgumentParser(description="Create a version of Amiri with colored marks using COLR/CPAL tables.")
@@ -139,11 +165,11 @@ def main():
 
     args = parser.parse_args()
 
-    font = merge(args)
+    font, fea = merge(args)
 
-    flags = ["round", "opentype", "no-mac-names"]
+    flags = ["round", "no-mac-names"]
     font.generate(args.out_file, flags=flags)
-    post_process(args.out_file)
+    post_process(args, fea)
 
 if __name__ == "__main__":
     main()

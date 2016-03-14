@@ -43,9 +43,7 @@ check: #lint $(RUN)
 
 $(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   FF	$@"
-	@FILES=($+); \
-	 cd $(SRCDIR); \
-	 $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
+	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
@@ -54,9 +52,7 @@ endif
 
 $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   FF	$@"
-	@FILES=($+); \
-	 cd $(SRCDIR); \
-	 $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
+	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
