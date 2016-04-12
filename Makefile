@@ -42,8 +42,13 @@ doc: $(PDF)
 check: #lint $(RUN)
 
 $(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
-	@echo "   FF	$@"
-	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
+	@$(eval ufo=$(@:%.otf=%.ufo))
+	@$(eval fea=$(@:%.otf=%.fea))
+	@echo "   GEN	$(ufo)"
+	@rm -rf $(SRCDIR)/$(ufo)
+	@$(PY) -m sfd2ufo $< $(SRCDIR)/$(ufo)
+	@echo "   GEN	$@"
+	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(fea) $(SRCDIR)/$(ufo) $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
@@ -51,8 +56,13 @@ ifeq ($(ttx), true)
 endif
 
 $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
-	@echo "   FF	$@"
-	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$(BASEDIR)/$@ --feature-file=$${FILES[2]} $${FILES[0]} $${FILES[1]}
+	@$(eval ufo=$(@:%.otf=%.ufo))
+	@$(eval fea=$(@:%.otf=%.fea))
+	@echo "   GEN	$(ufo)"
+	@rm -rf $(SRCDIR)/$(ufo)
+	@$(PY) -m sfd2ufo $< $(SRCDIR)/$(ufo)
+	@echo "   GEN	$@"
+	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(fea) $(SRCDIR)/$(ufo) $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
