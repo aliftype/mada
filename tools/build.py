@@ -16,23 +16,27 @@ import math
 
 def find_clones(font, name):
     clones = []
-    for glyph in font.glyphs():
-        if glyph.color == 0xff00ff:
-            assert len(glyph.references) > 0, glyph
-            base = glyph.references[0][0]
+    for glyph in font:
+        if glyph.markColor and tuple(glyph.markColor) == (1, 0, 1, 1):
+            assert len(glyph.components) > 0, glyph
+            base = glyph.components[0].baseGlyph
             if base == name:
                 clones.append(glyph.name)
     return clones
 
 def is_mark(glyph):
-    return glyph.glyphclass == "mark"
+    glyphClass = glyph.lib.get("org.fontforge.glyphclass")
+    return glyphClass == "mark"
 
 def generate_anchor(font, glyph, marks):
     fea = ""
-    for ref in glyph.layerrefs["Marks"]:
-        name = ref[0]
-        x = ref[1][-2]
-        y = ref[1][-1]
+    layer = font.layers["Marks"]
+    if glyph.name not in layer:
+        return fea
+    for component in layer[glyph.name].components:
+        name = component.baseGlyph
+        x = component.transformation[-2]
+        y = component.transformation[-1]
         assert name in marks, name
         bases = [glyph.name]
         for clone in find_clones(font, glyph.name):
@@ -47,20 +51,20 @@ def generate_anchor(font, glyph, marks):
     return fea
 
 def generate_anchors(font):
-    marks = [g.name for g in font.glyphs() if is_mark(g)]
+    marks = [g.name for g in font if is_mark(g)]
 
     fea = ""
     for mark in marks:
         fea += "markClass [%s] <anchor 0 0> @%s;" % (mark, mark.upper())
 
     fea += "feature mark {"
-    for glyph in font.glyphs():
+    for glyph in font:
         if not is_mark(glyph):
             fea += generate_anchor(font, glyph, marks)
     fea += "} mark;"
 
     fea += "feature mkmk {"
-    for glyph in font.glyphs():
+    for glyph in font:
         if is_mark(glyph):
             fea += generate_anchor(font, glyph, marks)
     fea += "} mkmk;"
@@ -77,8 +81,6 @@ def generate_arabic_features(font, feafilename):
 
 def merge(args):
     arabic = Font(args.arabicfile)
-
-    fea = ""
 
 #   latin = fontforge.open(args.latinfile)
 #   latin.em = arabic.em
@@ -97,7 +99,7 @@ def merge(args):
 #                   latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
 #               latin_locl += "sub %s by %s;" % (name, glyph.glyphname)
 
-#   fea = generate_arabic_features(arabic, args.feature_file)
+    fea = generate_arabic_features(arabic, args.feature_file)
 #   fea += latin.generateFeatureString()
 #   if latin_locl:
 #       latin_locl += "} locl;"
