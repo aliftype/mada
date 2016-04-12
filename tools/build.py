@@ -71,11 +71,33 @@ def generate_anchors(font):
 
     return fea
 
+def generate_glyphclasses(font):
+    marks = []
+    bases = []
+    for glyph in font:
+        glyphClass = glyph.lib.get("org.fontforge.glyphclass")
+        if glyphClass == "mark":
+            marks.append(glyph.name)
+        elif glyphClass == "baseglyph":
+            bases.append(glyph.name)
+
+    fea = ""
+    fea += "table GDEF {"
+    fea += "GlyphClassDef "
+    fea += "[%s]," % " ".join(bases)
+    fea += ","
+    fea += "[%s]," % " ".join(marks)
+    fea += ";"
+    fea += "} GDEF;"
+
+    return fea
+
 def generate_arabic_features(font, feafilename):
     fea = ""
     with open(feafilename) as feafile:
         fea += feafile.read()
         fea += generate_anchors(font)
+        fea += generate_glyphclasses(font)
 
     return fea
 
