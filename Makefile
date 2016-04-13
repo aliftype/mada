@@ -16,7 +16,7 @@ COMPOSE=$(TOOLDIR)/build-encoded-glyphs.py
 #RUNTEST=$(TOOLDIR)/runtest.py
 #SFDLINT=$(TOOLDIR)/sfdlint.py
 
-FONTS=Thin Medium Black
+FONTS=Light Medium Black
 #TESTS=wb yeh-ragaa
 
 SFD=$(FONTS:%=$(SRCDIR)/$(NAME)-%.sfdir)
