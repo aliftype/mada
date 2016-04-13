@@ -166,17 +166,16 @@ def merge(args):
     arabic.info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
     arabic.info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
 
-    # FIXME
-    arabic.info.xHeight = 0
-    arabic.info.capHeight = 0
-    
+    # for GDI
+    if arabic.info.openTypeOS2WeightClass == 100:
+        arabic.info.openTypeOS2WeightClass = 250
+
+    arabic.info.xHeight = latin.info.xHeight
+    arabic.info.capHeight = latin.info.capHeight
+
     return arabic, fea
 
 def post_process(font, args, fea):
-    # for GDI
-    if font["OS/2"].usWeightClass == 100:
-        font["OS/2"].usWeightClass = 250
-
     try:
         feabuilder.addOpenTypeFeaturesFromString(font, fea, args.feature_file)
     except:
