@@ -2,17 +2,17 @@
 # encoding: utf-8
 
 import argparse
+import math
+import os
 
 from datetime import datetime
-from defcon import Font
+from defcon import Font, Component
 from fontTools.feaLib import builder as feabuilder
+from fontTools.misc.transform import Transform
 from fontTools.ttLib import TTFont
+from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
 from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
-
-#from sortsmill import ffcompat as fontforge
-#import psMat
-import math
 
 def find_clones(font, name):
     clones = []
@@ -104,45 +104,54 @@ def generate_arabic_features(font, feafilename):
 def merge(args):
     arabic = Font(args.arabicfile)
 
-#   latin = fontforge.open(args.latinfile)
-#   latin.em = arabic.em
-#
-#   latin_locl = ""
-#   for glyph in latin.glyphs():
-#       if glyph.color == 0xff0000:
-#           #latin.removeGlyph(glyph)
-#           pass
-#       else:
-#           if glyph.glyphname in arabic:
-#               name = glyph.glyphname
-#               glyph.unicode = -1
-#               glyph.glyphname = name + ".latin"
-#               if not latin_locl:
-#                   latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
-#               latin_locl += "sub %s by %s;" % (name, glyph.glyphname)
+    latin = Font(args.latinfile)
+    goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
+
+    latin_locl = ""
+    for glyph in latin:
+        if glyph.name in goadb.encodings:
+            glyph.unicode = goadb.encodings[glyph.name]
+        if glyph.name in arabic:
+            name = glyph.name
+            glyph.unicode = None
+            glyph.name = name + ".latin"
+            if not latin_locl:
+                latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
+            latin_locl += "sub %s by %s;" % (name, glyph.name)
+        arGlyph = arabic.newGlyph(glyph.name)
+        glyph.draw(arGlyph.getPen())
+        arGlyph.width = glyph.width
+        arGlyph.unicode = glyph.unicode
 
     fea = generate_arabic_features(arabic, args.feature_file)
 #   fea += latin.generateFeatureString()
-#   if latin_locl:
-#       latin_locl += "} locl;"
-#       fea += latin_locl
-#
-#   arabic.mergeFonts(latin)
-#
-#   for ch in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
-#       ar = arabic.createChar(ch[0], fontforge.nameFromUnicode(ch[0]))
-#       en = arabic[ch[1]]
-#       colon = arabic["colon"]
-#       ar.addReference(en.glyphname, psMat.rotate(math.radians(180)))
-#       delta = colon.boundingBox()[1] - ar.boundingBox()[1]
-#       ar.transform(psMat.translate(0, delta))
-#       ar.left_side_bearing = en.right_side_bearing
-#       ar.right_side_bearing = en.left_side_bearing
-#
-#   question_ar = arabic.createChar(ord(u'؟'), "uni061F")
-#   question_ar.addReference("question", psMat.scale(-1, 1))
-#   question_ar.left_side_bearing = arabic["question"].right_side_bearing
-#   question_ar.right_side_bearing = arabic["question"].left_side_bearing
+    if latin_locl:
+        latin_locl += "} locl;"
+        fea += latin_locl
+
+    for ch in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
+        arGlyph = arabic.newGlyph("uni%04X" %ch[0])
+        arGlyph.unicode = ch[0]
+        enGlyph = arabic[ch[1]]
+        colon = arabic["colon"]
+        component = Component()
+        component.transformation = tuple(Transform().rotate(math.radians(180)))
+        component.baseGlyph = enGlyph.name
+        arGlyph.appendComponent(component)
+        arGlyph.move((0, colon.bounds[1] - arGlyph.bounds[1]))
+        arGlyph.leftMargin = enGlyph.rightMargin
+        arGlyph.rightMargin = enGlyph.leftMargin
+
+    for ch in [(ord(u'؟'), "question")]:
+        arGlyph = arabic.newGlyph("uni%04X" %ch[0])
+        arGlyph.unicode = ch[0]
+        enGlyph = arabic[ch[1]]
+        component = Component()
+        component.transformation = tuple(Transform().scale(-1, 1))
+        component.baseGlyph = enGlyph.name
+        arGlyph.appendComponent(component)
+        arGlyph.leftMargin = enGlyph.rightMargin
+        arGlyph.rightMargin = enGlyph.leftMargin
 
     # Set metadata
     arabic.versionMajor, arabic.versionMinor = map(int, args.version.split("."))

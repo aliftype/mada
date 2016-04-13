@@ -41,28 +41,25 @@ doc: $(PDF)
 #lint: $(LNT)
 check: #lint $(RUN)
 
-$(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
-	@$(eval ufo=$(@:%.otf=%.ufo))
-	@$(eval fea=$(@:%.otf=%.fea))
-	@echo "   GEN	$(ufo)"
-	@rm -rf $(SRCDIR)/$(ufo)
-	@$(PY) -m sfd2ufo $< $(SRCDIR)/$(ufo)
+$(SRCDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.sfdir
 	@echo "   GEN	$@"
-	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(fea) $(SRCDIR)/$(ufo) $${FILES[1]}
+	@rm -rf $@
+	@$(PY) -m sfd2ufo $< $@
+
+$(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
+	@$(eval fea=$(@:%.otf=%.fea))
+	@echo "   GEN	$@"
+	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(fea) $< $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
 	@mv $@.tmp $@
 endif
 
-$(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.sfdir $(SRCDIR)/$(LATIN)-%.sfdir $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
-	@$(eval ufo=$(@:%.otf=%.ufo))
+$(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@$(eval fea=$(@:%.otf=%.fea))
-	@echo "   GEN	$(ufo)"
-	@rm -rf $(SRCDIR)/$(ufo)
-	@$(PY) -m sfd2ufo $< $(SRCDIR)/$(ufo)
 	@echo "   GEN	$@"
-	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(fea) $(SRCDIR)/$(ufo) $${FILES[1]}
+	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(fea) $< $${FILES[1]}
 ifeq ($(ttx), true)
 	@echo "   TTX	$@"
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
