@@ -2,11 +2,10 @@ NAME=Mada
 VERSION=1.0
 LATIN=SourceSansPro
 
-BASEDIR=$(shell pwd)
-SRCDIR=$(BASEDIR)/sources
-DOCDIR=$(BASEDIR)/documentation
-TOOLDIR=$(BASEDIR)/tools
-TESTDIR=$(BASEDIR)/tests
+SRCDIR=sources
+DOCDIR=documentation
+TOOLDIR=tools
+TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
 
 PY=python2
