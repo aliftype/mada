@@ -123,6 +123,10 @@ def merge(args):
         arGlyph.width = glyph.width
         arGlyph.unicode = glyph.unicode
 
+    arabic.info.openTypeOS2WeightClass = latin.info.openTypeOS2WeightClass
+    arabic.info.xHeight = latin.info.xHeight
+    arabic.info.capHeight = latin.info.capHeight
+
     fea = generate_arabic_features(arabic, args.feature_file)
 #   fea += latin.generateFeatureString()
     if latin_locl:
@@ -166,16 +170,9 @@ def merge(args):
     arabic.info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
     arabic.info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
 
-    # for GDI
-    if arabic.info.openTypeOS2WeightClass == 100:
-        arabic.info.openTypeOS2WeightClass = 250
-
-    arabic.info.xHeight = latin.info.xHeight
-    arabic.info.capHeight = latin.info.capHeight
-
     return arabic, fea
 
-def post_process(font, args, fea):
+def applyFeatures(font, args, fea):
     try:
         feabuilder.addOpenTypeFeaturesFromString(font, fea, args.feature_file)
     except:
@@ -198,9 +195,7 @@ def main():
     otfCompiler = OTFCompiler(font)
     otf = otfCompiler.compile()
 
-#   flags = ["round", "no-mac-names"]
-#   font.generate(args.out_file, flags=flags)
-    post_process(otf, args, fea)
+    applyFeatures(otf, args, fea)
     otf.save(args.out_file)
 
 if __name__ == "__main__":
