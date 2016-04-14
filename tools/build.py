@@ -127,8 +127,8 @@ def merge(args):
     arabic.info.xHeight = latin.info.xHeight
     arabic.info.capHeight = latin.info.capHeight
 
-    fea = generate_arabic_features(arabic, args.feature_file)
-#   fea += latin.generateFeatureString()
+    fea = "include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
+    fea += generate_arabic_features(arabic, args.feature_file)
     if latin_locl:
         latin_locl += "} locl;"
         fea += latin_locl
@@ -177,7 +177,7 @@ def applyFeatures(font, args, fea):
         feabuilder.addOpenTypeFeaturesFromString(font, fea, args.feature_file)
     except:
         with NamedTemporaryFile(delete=False) as feafile:
-            feafile.write(fea)
+            feafile.write(fea.encode("utf-8"))
             print("Failed to apply features, saved to %s" % feafile.name)
         raise
 
