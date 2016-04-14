@@ -29,7 +29,6 @@ PDF=$(DOCDIR)/$(NAME)-Table.pdf
 #LNT=$(FONTS:%=$(TESTDIR)/$(NAME)-%.lnt)
 
 ttx?=false
-crunch?=false
 
 #all: lint otf doc
 all: otf doc
@@ -64,11 +63,6 @@ ifeq ($(ttx), true)
 	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
 	@mv $@.tmp $@
 endif
-ifeq ($(crunch), true)
-	@echo "   FC	$@"
-	@font-crunch -q -j8 -o $@ $@
-endif
-
 
 #$(TESTDIR)/%.run: $(TESTDIR)/%.txt $(TESTDIR)/%.shp $(NAME)-regular.otf
 #	@echo "   TST	$*"
@@ -95,7 +89,7 @@ build-encoded-glyphs: $(SFD) $(SRCDIR)/$(NAME).fea
 	  )
 
 dist:
-	@make -B ttx=true crunch=false all ttf
+	@make -B ttx=true all ttf
 	@mkdir -p $(NAME)-$(VERSION)/ttf
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
