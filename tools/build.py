@@ -31,22 +31,25 @@ def is_mark(glyph):
 def generate_anchor(font, glyph, marks):
     fea = ""
     layer = font.layers["Marks"]
-    if glyph.name not in layer:
+    if glyph.name not in layer or not layer[glyph.name].components:
         return fea
+
+    bases = [glyph.name]
+    for clone in find_clones(font, glyph.name):
+        bases.append(clone)
+        bases.extend(find_clones(font, clone))
+    bases = " ".join(bases)
+    kind = "base"
+    if is_mark(glyph):
+        kind = "mark"
+    fea += "position %s [%s]" % (kind, bases)
     for component in layer[glyph.name].components:
         name = component.baseGlyph
         x = component.transformation[-2]
         y = component.transformation[-1]
         assert name in marks, name
-        bases = [glyph.name]
-        for clone in find_clones(font, glyph.name):
-            bases.append(clone)
-            bases.extend(find_clones(font, clone))
-        bases = "[" + " ".join(bases) + "]"
-        if is_mark(glyph):
-            fea += "position mark %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
-        else:
-            fea += "position base %s <anchor %d %d> mark @%s;" % (bases, x, y, name.upper())
+        fea += " <anchor %d %d> mark @%s" % (x, y, name.upper())
+    fea += ";"
 
     return fea
 
