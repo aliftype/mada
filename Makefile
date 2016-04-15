@@ -42,7 +42,7 @@ check: #lint $(RUN)
 $(SRCDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.sfdir
 	@echo "   GEN	$@"
 	@rm -rf $@
-	@$(PY) -m sfd2ufo $< $@
+	@sfd2ufo $< $@
 
 $(NAME)-%.otf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@$(eval fea=$(@:%.otf=%.fea))
