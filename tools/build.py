@@ -13,6 +13,7 @@ from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
 from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
+from ufo2ft.otfPostProcessor import OTFPostProcessor
 
 def find_clones(font, name):
     clones = []
@@ -114,6 +115,8 @@ def merge(args):
     for glyph in latin:
         if glyph.name in goadb.encodings:
             glyph.unicode = goadb.encodings[glyph.name]
+        if glyph.name in goadb.names:
+            glyph.lib["public.postscriptName"] = goadb.names[glyph.name]
         if glyph.name in arabic:
             name = glyph.name
             glyph.unicode = None
@@ -125,6 +128,7 @@ def merge(args):
         glyph.draw(arGlyph.getPen())
         arGlyph.width = glyph.width
         arGlyph.unicode = glyph.unicode
+        arGlyph.lib["public.postscriptName"] = glyph.lib.get("public.postscriptName")
 
     arabic.info.openTypeOS2WeightClass = latin.info.openTypeOS2WeightClass
     arabic.info.xHeight = latin.info.xHeight
@@ -184,6 +188,11 @@ def applyFeatures(font, args, fea):
             print("Failed to apply features, saved to %s" % feafile.name)
         raise
 
+def postProcess(otf, ufo):
+    postProcessor = OTFPostProcessor(otf, ufo)
+    otf = postProcessor.process()
+    return otf
+
 def main():
     parser = argparse.ArgumentParser(description="Create a version of Amiri with colored marks using COLR/CPAL tables.")
     parser.add_argument("arabicfile", metavar="FILE", help="input font to process")
@@ -199,6 +208,8 @@ def main():
     otf = otfCompiler.compile()
 
     applyFeatures(otf, args, fea)
+    otf = postProcess(otf, font)
+
     otf.save(args.out_file)
 
 if __name__ == "__main__":
