@@ -18,6 +18,8 @@ from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
 from ufo2ft.outlineOTF import OutlineTTFCompiler as TTFCompiler
 from ufo2ft.otfPostProcessor import OTFPostProcessor
 
+MADA_UNICODES = "org.mada.subsetUnicodes"
+
 def find_clones(font, name):
     clones = []
     for glyph in font:
@@ -108,8 +110,22 @@ def generate_arabic_features(font, feafilename):
 
     return fea
 
+def parseSubset(filename):
+    unicodes = []
+    with open(filename) as f:
+        lines = f.read()
+        lines = lines.split()
+        unicodes = [int(c.lstrip('U+'), 16) for c in lines if c]
+    return unicodes
+
 def merge(args):
     arabic = Font(args.arabicfile)
+
+    unicodes = []
+    for glyph in arabic:
+        unicodes.extend(glyph.unicodes)
+
+    unicodes.extend(parseSubset(args.latin_subset))
 
     latin = Font(args.latinfile)
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
@@ -132,6 +148,8 @@ def merge(args):
         arGlyph.width = glyph.width
         arGlyph.unicode = glyph.unicode
         arGlyph.lib["public.postscriptName"] = glyph.lib.get("public.postscriptName")
+
+    arabic.lib[MADA_UNICODES] = unicodes
 
     arabic.info.openTypeOS2WeightClass = latin.info.openTypeOS2WeightClass
     arabic.info.xHeight = latin.info.xHeight
@@ -201,10 +219,7 @@ def subsetGlyphs(otf, ufo):
     options = subset.Options()
     options.set(layout_features='*', name_IDs='*', notdef_outline=True)
     subsetter = subset.Subsetter(options=options)
-    unicodes = []
-    for glyph in ufo:
-        unicodes.extend(glyph.unicodes)
-    subsetter.populate(unicodes=unicodes)
+    subsetter.populate(unicodes=ufo.lib.get(MADA_UNICODES))
     subsetter.subset(otf)
     return otf
 
@@ -229,6 +244,7 @@ def main():
     parser.add_argument("latinfile", metavar="FILE", help="input font to process")
     parser.add_argument("--out-file", metavar="FILE", help="output font to write", required=True)
     parser.add_argument("--feature-file", metavar="FILE", help="output font to write", required=True)
+    parser.add_argument("--latin-subset", metavar="FILE", help="file containing Latin code points to keep", required=True)
     parser.add_argument("--version", metavar="version", help="version number", required=True)
 
     args = parser.parse_args()

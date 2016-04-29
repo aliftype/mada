@@ -4,6 +4,7 @@ LATIN=SourceSansPro
 
 SRCDIR=sources
 DOCDIR=documentation
+LATIN_SUBSET=$(SRCDIR)/latin-subset.txt
 TOOLDIR=tools
 TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
@@ -43,9 +44,8 @@ $(SRCDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.sfdir
 	@sfd2ufo $< $@
 
 $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
-	@$(eval fea=$(@:%.otf=%.fea))
 	@echo "   GEN	$@"
-	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} $< $${FILES[1]}
+	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
 
 #$(TESTDIR)/%.run: $(TESTDIR)/%.txt $(TESTDIR)/%.shp $(NAME)-regular.otf
 #	@echo "   TST	$*"
