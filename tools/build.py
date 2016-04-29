@@ -19,6 +19,7 @@ from ufo2ft.outlineOTF import OutlineTTFCompiler as TTFCompiler
 from ufo2ft.otfPostProcessor import OTFPostProcessor
 
 MADA_UNICODES = "org.mada.subsetUnicodes"
+FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 
 def find_clones(font, name):
     clones = []
@@ -31,7 +32,7 @@ def find_clones(font, name):
     return clones
 
 def is_mark(glyph):
-    glyphClass = glyph.lib.get("org.fontforge.glyphclass")
+    glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
     return glyphClass == "mark"
 
 def generate_anchor(font, glyph, marks):
@@ -84,7 +85,7 @@ def generate_glyphclasses(font):
     marks = []
     bases = []
     for glyph in font:
-        glyphClass = glyph.lib.get("org.fontforge.glyphclass")
+        glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
         if glyphClass == "mark":
             marks.append(glyph.name)
         elif glyphClass == "baseglyph":
