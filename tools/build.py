@@ -179,14 +179,25 @@ def merge(args):
 
     return arabic, fea
 
-def applyFeatures(otf, args, fea):
+def build(args):
+    ufo, fea = merge(args)
+    otfCompiler = OTFCompiler(ufo)
+    otf = otfCompiler.compile()
+
+    otf = applyFeatures(otf, fea, args.feature_file)
+    otf = postProcess(otf, ufo)
+
+    return otf
+
+def applyFeatures(otf, fea, feafilename):
     try:
-        feabuilder.addOpenTypeFeaturesFromString(otf, fea, args.feature_file)
+        feabuilder.addOpenTypeFeaturesFromString(otf, fea, feafilename)
     except:
         with NamedTemporaryFile(delete=False) as feafile:
             feafile.write(fea.encode("utf-8"))
             print("Failed to apply features, saved to %s" % feafile.name)
         raise
+    return otf
 
 def postProcess(otf, ufo):
     postProcessor = OTFPostProcessor(otf, ufo)
@@ -203,13 +214,7 @@ def main():
 
     args = parser.parse_args()
 
-    ufo, fea = merge(args)
-    otfCompiler = OTFCompiler(ufo)
-    otf = otfCompiler.compile()
-
-    applyFeatures(otf, args, fea)
-    otf = postProcess(otf, ufo)
-
+    otf = build(args)
     otf.save(args.out_file)
 
 if __name__ == "__main__":
