@@ -21,7 +21,7 @@ from ufo2ft.otfPostProcessor import OTFPostProcessor
 MADA_UNICODES = "org.mada.subsetUnicodes"
 FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 
-def find_clones(font, name):
+def findClones(font, name):
     clones = []
     for glyph in font:
         if glyph.markColor and tuple(glyph.markColor) == (1, 0, 1, 1):
@@ -31,23 +31,23 @@ def find_clones(font, name):
                 clones.append(glyph.name)
     return clones
 
-def is_mark(glyph):
+def isMark(glyph):
     glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
     return glyphClass == "mark"
 
-def generate_anchor(font, glyph, marks):
+def generateAnchor(font, glyph, marks):
     fea = ""
     layer = font.layers["Marks"]
     if glyph.name not in layer or not layer[glyph.name].components:
         return fea
 
     bases = [glyph.name]
-    for clone in find_clones(font, glyph.name):
+    for clone in findClones(font, glyph.name):
         bases.append(clone)
-        bases.extend(find_clones(font, clone))
+        bases.extend(findClones(font, clone))
     bases = " ".join(bases)
     kind = "base"
-    if is_mark(glyph):
+    if isMark(glyph):
         kind = "mark"
     fea += "position %s [%s]" % (kind, bases)
     for component in layer[glyph.name].components:
@@ -60,8 +60,8 @@ def generate_anchor(font, glyph, marks):
 
     return fea
 
-def generate_anchors(font):
-    marks = [g.name for g in font if is_mark(g)]
+def generateAnchors(font):
+    marks = [g.name for g in font if isMark(g)]
 
     fea = ""
     for mark in marks:
@@ -69,19 +69,19 @@ def generate_anchors(font):
 
     fea += "feature mark {"
     for glyph in font:
-        if not is_mark(glyph):
-            fea += generate_anchor(font, glyph, marks)
+        if not isMark(glyph):
+            fea += generateAnchor(font, glyph, marks)
     fea += "} mark;"
 
     fea += "feature mkmk {"
     for glyph in font:
-        if is_mark(glyph):
-            fea += generate_anchor(font, glyph, marks)
+        if isMark(glyph):
+            fea += generateAnchor(font, glyph, marks)
     fea += "} mkmk;"
 
     return fea
 
-def generate_glyphclasses(font):
+def generateGlyphclasses(font):
     marks = []
     bases = []
     for glyph in font:
@@ -102,12 +102,12 @@ def generate_glyphclasses(font):
 
     return fea
 
-def generate_arabic_features(font, feafilename):
+def generateArabicFeatures(font, feafilename):
     fea = ""
     with open(feafilename) as feafile:
         fea += feafile.read()
-        fea += generate_anchors(font)
-        fea += generate_glyphclasses(font)
+        fea += generateAnchors(font)
+        fea += generateGlyphclasses(font)
 
     return fea
 
@@ -157,7 +157,7 @@ def merge(args):
     arabic.info.capHeight = latin.info.capHeight
 
     fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
-    fea += generate_arabic_features(arabic, args.feature_file)
+    fea += generateArabicFeatures(arabic, args.feature_file)
     if latin_locl:
         latin_locl += "} locl;"
         fea += latin_locl
