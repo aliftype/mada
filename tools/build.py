@@ -136,7 +136,7 @@ def merge(args):
     arabic.info.xHeight = latin.info.xHeight
     arabic.info.capHeight = latin.info.capHeight
 
-    fea = "include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
+    fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
     fea += generate_arabic_features(arabic, args.feature_file)
     if latin_locl:
         latin_locl += "} locl;"
