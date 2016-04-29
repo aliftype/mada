@@ -20,6 +20,7 @@ from ufo2ft.otfPostProcessor import OTFPostProcessor
 
 MADA_UNICODES = "org.mada.subsetUnicodes"
 FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
+POSTSCRIPT_NAME = "public.postscriptName"
 
 def findClones(font, name):
     clones = []
@@ -136,13 +137,13 @@ def merge(args):
         if glyph.name in goadb.encodings:
             glyph.unicode = goadb.encodings[glyph.name]
         if glyph.name in goadb.names:
-            glyph.lib["public.postscriptName"] = goadb.names[glyph.name]
+            glyph.lib[POSTSCRIPT_NAME] = goadb.names[glyph.name]
         if glyph.name in arabic:
             name = glyph.name
             glyph.unicode = None
             glyph.name = name + ".latn"
-            if glyph.lib.get("public.postscriptName"):
-                glyph.lib["public.postscriptName"] = glyph.lib.get("public.postscriptName") + ".latn"
+            if glyph.lib.get(POSTSCRIPT_NAME):
+                glyph.lib[POSTSCRIPT_NAME] = glyph.lib.get(POSTSCRIPT_NAME) + ".latn"
             if not latin_locl:
                 latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
             latin_locl += "sub %s by %s;" % (name, glyph.name)
@@ -150,7 +151,7 @@ def merge(args):
         glyph.draw(arGlyph.getPen())
         arGlyph.width = glyph.width
         arGlyph.unicode = glyph.unicode
-        arGlyph.lib["public.postscriptName"] = glyph.lib.get("public.postscriptName")
+        arGlyph.lib[POSTSCRIPT_NAME] = glyph.lib.get(POSTSCRIPT_NAME)
 
     arabic.lib[MADA_UNICODES] = unicodes
 
