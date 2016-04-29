@@ -5,6 +5,7 @@ import argparse
 import math
 import os
 
+from cu2qu.ufo import font_to_quadratic
 from datetime import datetime
 from defcon import Font, Component
 from fontTools.feaLib import builder as feabuilder
@@ -13,6 +14,7 @@ from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
 from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
+from ufo2ft.outlineOTF import OutlineTTFCompiler as TTFCompiler
 from ufo2ft.otfPostProcessor import OTFPostProcessor
 
 def find_clones(font, name):
@@ -181,7 +183,11 @@ def merge(args):
 
 def build(args):
     ufo, fea = merge(args)
-    otfCompiler = OTFCompiler(ufo)
+    if args.out_file.endswith(".ttf"):
+        font_to_quadratic(ufo)
+        otfCompiler = TTFCompiler(ufo)
+    else:
+        otfCompiler = OTFCompiler(ufo)
     otf = otfCompiler.compile()
 
     otf = applyFeatures(otf, fea, args.feature_file)
