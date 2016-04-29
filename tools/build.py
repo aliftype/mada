@@ -8,6 +8,7 @@ import os
 from cu2qu.ufo import font_to_quadratic
 from datetime import datetime
 from defcon import Font, Component
+from fontTools import subset
 from fontTools.feaLib import builder as feabuilder
 from fontTools.misc.transform import Transform
 from fontTools.ttLib import TTFont
@@ -196,6 +197,17 @@ def postProcess(otf, ufo):
     otf = postProcessor.process()
     return otf
 
+def subsetGlyphs(otf, ufo):
+    options = subset.Options()
+    options.set(layout_features='*', name_IDs='*', notdef_outline=True)
+    subsetter = subset.Subsetter(options=options)
+    unicodes = []
+    for glyph in ufo:
+        unicodes.extend(glyph.unicodes)
+    subsetter.populate(unicodes=unicodes)
+    subsetter.subset(otf)
+    return otf
+
 def build(args):
     ufo, fea = merge(args)
     if args.out_file.endswith(".ttf"):
@@ -207,6 +219,7 @@ def build(args):
 
     otf = applyFeatures(otf, fea, args.feature_file)
     otf = postProcess(otf, ufo)
+    otf = subsetGlyphs(otf, ufo)
 
     return otf
 

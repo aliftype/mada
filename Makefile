@@ -28,8 +28,6 @@ PDF=$(DOCDIR)/$(NAME)-Table.pdf
 #RUN=$(TESTS:%=$(TESTDIR)/%.run)
 #LNT=$(FONTS:%=$(TESTDIR)/$(NAME)-%.lnt)
 
-ttx?=false
-
 #all: lint otf doc
 all: otf doc
 
@@ -48,11 +46,6 @@ $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/
 	@$(eval fea=$(@:%.otf=%.fea))
 	@echo "   GEN	$@"
 	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} $< $${FILES[1]}
-ifeq ($(ttx), true)
-	@echo "   TTX	$@"
-	@pyftsubset $@ --output-file=$@.tmp --unicodes='*' --layout-features='*' --name-IDs='*' --notdef-outline
-	@mv $@.tmp $@
-endif
 
 #$(TESTDIR)/%.run: $(TESTDIR)/%.txt $(TESTDIR)/%.shp $(NAME)-regular.otf
 #	@echo "   TST	$*"
@@ -78,8 +71,7 @@ build-encoded-glyphs: $(SFD) $(SRCDIR)/$(NAME).fea
 	     $(PY) $(COMPOSE) $(sfd) $(SRCDIR)/$(NAME).fea; \
 	  )
 
-dist:
-	@make -B ttx=true all ttf
+dist: ttf
 	@mkdir -p $(NAME)-$(VERSION)/ttf
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
