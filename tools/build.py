@@ -224,7 +224,7 @@ def build(args):
     return otf
 
 def main():
-    parser = argparse.ArgumentParser(description="Create a version of Amiri with colored marks using COLR/CPAL tables.")
+    parser = argparse.ArgumentParser(description="Build Mada fonts.")
     parser.add_argument("arabicfile", metavar="FILE", help="input font to process")
     parser.add_argument("latinfile", metavar="FILE", help="input font to process")
     parser.add_argument("--out-file", metavar="FILE", help="output font to write", required=True)
