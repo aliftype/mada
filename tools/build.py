@@ -179,9 +179,9 @@ def merge(args):
 
     return arabic, fea
 
-def applyFeatures(font, args, fea):
+def applyFeatures(otf, args, fea):
     try:
-        feabuilder.addOpenTypeFeaturesFromString(font, fea, args.feature_file)
+        feabuilder.addOpenTypeFeaturesFromString(otf, fea, args.feature_file)
     except:
         with NamedTemporaryFile(delete=False) as feafile:
             feafile.write(fea.encode("utf-8"))
@@ -203,12 +203,12 @@ def main():
 
     args = parser.parse_args()
 
-    font, fea = merge(args)
-    otfCompiler = OTFCompiler(font)
+    ufo, fea = merge(args)
+    otfCompiler = OTFCompiler(ufo)
     otf = otfCompiler.compile()
 
     applyFeatures(otf, args, fea)
-    otf = postProcess(otf, font)
+    otf = postProcess(otf, ufo)
 
     otf.save(args.out_file)
 
