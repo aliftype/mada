@@ -181,20 +181,6 @@ def merge(args):
 
     return arabic, fea
 
-def build(args):
-    ufo, fea = merge(args)
-    if args.out_file.endswith(".ttf"):
-        font_to_quadratic(ufo)
-        otfCompiler = TTFCompiler(ufo)
-    else:
-        otfCompiler = OTFCompiler(ufo)
-    otf = otfCompiler.compile()
-
-    otf = applyFeatures(otf, fea, args.feature_file)
-    otf = postProcess(otf, ufo)
-
-    return otf
-
 def applyFeatures(otf, fea, feafilename):
     try:
         feabuilder.addOpenTypeFeaturesFromString(otf, fea, feafilename)
@@ -208,6 +194,20 @@ def applyFeatures(otf, fea, feafilename):
 def postProcess(otf, ufo):
     postProcessor = OTFPostProcessor(otf, ufo)
     otf = postProcessor.process()
+    return otf
+
+def build(args):
+    ufo, fea = merge(args)
+    if args.out_file.endswith(".ttf"):
+        font_to_quadratic(ufo)
+        otfCompiler = TTFCompiler(ufo)
+    else:
+        otfCompiler = OTFCompiler(ufo)
+    otf = otfCompiler.compile()
+
+    otf = applyFeatures(otf, fea, args.feature_file)
+    otf = postProcess(otf, ufo)
+
     return otf
 
 def main():
