@@ -140,7 +140,9 @@ def merge(args):
         if glyph.name in arabic:
             name = glyph.name
             glyph.unicode = None
-            glyph.name = name + ".latin"
+            glyph.name = name + ".latn"
+            if glyph.lib.get("public.postscriptName"):
+                glyph.lib["public.postscriptName"] = glyph.lib.get("public.postscriptName") + ".latn"
             if not latin_locl:
                 latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
             latin_locl += "sub %s by %s;" % (name, glyph.name)
