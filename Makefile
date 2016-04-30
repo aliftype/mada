@@ -20,6 +20,7 @@ FONTS=Light Medium Black
 #TESTS=wb yeh-ragaa
 
 SFD=$(FONTS:%=$(SRCDIR)/$(NAME)-%.sfdir)
+UFO=$(FONTS:%=$(SRCDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
@@ -34,6 +35,7 @@ all: otf doc
 
 otf: $(OTF)
 ttf: $(TTF)
+ufo: $(UFO)
 doc: $(PDF)
 #lint: $(LNT)
 check: #lint $(RUN)
