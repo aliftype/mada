@@ -161,8 +161,6 @@ def merge(args):
         arGlyph.unicode = glyph.unicode
         arGlyph.lib[POSTSCRIPT_NAME] = glyph.lib.get(POSTSCRIPT_NAME)
 
-    arabic.lib[MADA_UNICODES] = unicodes
-
     arabic.info.openTypeOS2WeightClass = latin.info.openTypeOS2WeightClass
     arabic.info.xHeight = latin.info.xHeight
     arabic.info.capHeight = latin.info.capHeight
@@ -187,6 +185,7 @@ def merge(args):
         arGlyph.move((0, colon.bounds[1] - arGlyph.bounds[1]))
         arGlyph.leftMargin = enGlyph.rightMargin
         arGlyph.rightMargin = enGlyph.leftMargin
+        unicodes.append(arGlyph.unicode)
 
     for ch in [(ord(u'؟'), "question")]:
         arGlyph = arabic.newGlyph("uni%04X" %ch[0])
@@ -198,6 +197,9 @@ def merge(args):
         arGlyph.appendComponent(component)
         arGlyph.leftMargin = enGlyph.rightMargin
         arGlyph.rightMargin = enGlyph.leftMargin
+        unicodes.append(arGlyph.unicode)
+
+    arabic.lib[MADA_UNICODES] = unicodes
 
     # Set metadata
     arabic.versionMajor, arabic.versionMinor = map(int, args.version.split("."))
