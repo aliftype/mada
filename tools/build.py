@@ -216,7 +216,7 @@ def applyFeatures(otf, fea, feafilename):
 
 def postProcess(otf, ufo):
     postProcessor = OTFPostProcessor(otf, ufo)
-    otf = postProcessor.process()
+    otf = postProcessor.process(optimizeCff=False)
     return otf
 
 def subsetGlyphs(otf, ufo):
