@@ -18,6 +18,8 @@ from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
 from ufo2ft.outlineOTF import OutlineTTFCompiler as TTFCompiler
 from ufo2ft.otfPostProcessor import OTFPostProcessor
 
+from buildencoded import build as buildEncoded
+
 MADA_UNICODES = "org.mada.subsetUnicodes"
 FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 POSTSCRIPT_NAME = "public.postscriptName"
@@ -27,8 +29,14 @@ def findClones(font, name):
     for glyph in font:
         if glyph.markColor and tuple(glyph.markColor) == (1, 0, 1, 1):
             assert len(glyph.components) > 0, glyph
-            base = glyph.components[0].baseGlyph
-            if base == name:
+            base = font.layers["Marks"][glyph.components[0].baseGlyph]
+            marks = font.layers["Marks"].newGlyph(glyph.name)
+            for baseComponent in base.components:
+                component = Component()
+                component.transformation = baseComponent.transformation
+                component.baseGlyph = baseComponent.baseGlyph
+                marks.appendComponent(component)
+            if base.name == name:
                 clones.append(glyph.name)
     return clones
 
@@ -164,6 +172,8 @@ def merge(args):
     if latin_locl:
         latin_locl += "} locl;"
         fea += latin_locl
+
+    buildEncoded(arabic)
 
     for ch in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
         arGlyph = arabic.newGlyph("uni%04X" %ch[0])

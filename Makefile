@@ -12,7 +12,6 @@ DIST=$(NAME)-$(VERSION)
 PY=python2
 PY3=python3
 BUILD=$(TOOLDIR)/build.py
-COMPOSE=$(TOOLDIR)/build-encoded-glyphs.py
 #RUNTEST=$(TOOLDIR)/runtest.py
 #SFDLINT=$(TOOLDIR)/sfdlint.py
 
@@ -66,12 +65,6 @@ $(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Medium.otf
 	@pdfoutline $@.tmp $@.txt $@.comp
 	@pdftk $@.comp output $@ uncompress
 	@rm -f $@.tmp $@.comp $@.txt
-
-build-encoded-glyphs: $(SFD) $(SRCDIR)/$(NAME).fea
-	@$(foreach sfd, $(SFD), \
-	     echo "   CMP	"`basename $(sfd)`; \
-	     $(PY) $(COMPOSE) $(sfd) $(SRCDIR)/$(NAME).fea; \
-	  )
 
 dist: ttf
 	@mkdir -p $(NAME)-$(VERSION)/ttf
