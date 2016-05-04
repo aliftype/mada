@@ -12,11 +12,8 @@ DIST=$(NAME)-$(VERSION)
 PY=python2
 PY3=python3
 BUILD=$(TOOLDIR)/build.py
-#RUNTEST=$(TOOLDIR)/runtest.py
-#SFDLINT=$(TOOLDIR)/sfdlint.py
 
 FONTS=Light Medium Black
-#TESTS=wb yeh-ragaa
 
 SFD=$(FONTS:%=$(SRCDIR)/$(NAME)-%.sfdir)
 UFO=$(FONTS:%=$(SRCDIR)/$(NAME)-%.ufo)
@@ -24,20 +21,12 @@ OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
 
-#TST=$(TESTS:%=$(TESTDIR)/%.txt)
-#SHP=$(TESTS:%=$(TESTDIR)/%.shp)
-#RUN=$(TESTS:%=$(TESTDIR)/%.run)
-#LNT=$(FONTS:%=$(TESTDIR)/$(NAME)-%.lnt)
-
-#all: lint otf doc
 all: otf doc
 
 otf: $(OTF)
 ttf: $(TTF)
 ufo: $(UFO)
 doc: $(PDF)
-#lint: $(LNT)
-check: #lint $(RUN)
 
 $(SRCDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.sfdir
 	@echo "   GEN	$@"
@@ -47,15 +36,6 @@ $(SRCDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.sfdir
 $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   GEN	$@"
 	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
-
-#$(TESTDIR)/%.run: $(TESTDIR)/%.txt $(TESTDIR)/%.shp $(NAME)-regular.otf
-#	@echo "   TST	$*"
-#	@$(PY3) $(RUNTEST) $(NAME)-regular.otf $(@D)/$*.txt $(@D)/$*.shp $(@D)/$*.run
-
-#$(TESTDIR)/%.lnt: $(SRCDIR)/%.sfdir $(SFDLINT)
-#	@echo "   LNT	$<"
-#	@mkdir -p $(TESTDIR)
-#	@$(PY) $(SFDLINT) $< $@
 
 #$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-Regular.otf
 $(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Medium.otf
