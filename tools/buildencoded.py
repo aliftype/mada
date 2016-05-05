@@ -45,6 +45,7 @@ def build(font):
             glyph.clear()
             names = subs[glyph.name]
             base = font.layers["Marks"][names[0]]
+            glyph.width = base.width
             glyph.leftMargin = base.leftMargin
             glyph.rightMargin = base.rightMargin
             component = Component()
