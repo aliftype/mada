@@ -1,17 +1,17 @@
 StartChar: arWaw.fina
 Encoding: 65559 -1 33
-Width: 519
+Width: 559
 VWidth: 34
 GlyphClass: 2
 Flags: HW
 LayerCount: 3
 Fore
 SplineSet
-539 172 m 1
- 539 0 l 1
- 374 0 l 1
- 374 172 l 1
- 539 172 l 1
+579 172 m 1
+ 579 0 l 1
+ 414 0 l 1
+ 414 172 l 1
+ 579 172 l 1
 EndSplineSet
 Refer: 13 -1 N 1 0 0 1 0 0 2
 Colour: ff00ff
