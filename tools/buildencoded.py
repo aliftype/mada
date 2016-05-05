@@ -21,7 +21,7 @@ class FeatureWriter(AbstractFeatureWriter):
 
     def gsubType1(self, target, replacement):
         if self.name == "isol":
-            self.subs[target] = list(replacement)
+            self.subs[target] = [replacement]
 
     def gsubType2(self, target, replacement):
         if self.name == "isol":
