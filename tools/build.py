@@ -156,11 +156,7 @@ def merge(args):
             if not latin_locl:
                 latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
             latin_locl += "sub %s by %s;" % (name, glyph.name)
-        arGlyph = arabic.newGlyph(glyph.name)
-        glyph.draw(arGlyph.getPen())
-        arGlyph.width = glyph.width
-        arGlyph.unicode = glyph.unicode
-        arGlyph.lib[POSTSCRIPT_NAME] = glyph.lib.get(POSTSCRIPT_NAME)
+        arabic.insertGlyph(glyph)
 
     arabic.info.openTypeOS2WeightClass = latin.info.openTypeOS2WeightClass
     arabic.info.xHeight = latin.info.xHeight
