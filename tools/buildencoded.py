@@ -40,20 +40,20 @@ def build(font):
         pass
     subs = writer.subs
 
-    for glyph in font:
-        if glyph.name in subs:
-            glyph.clear()
-            names = subs[glyph.name]
-            base = font.layers["Marks"][names[0]]
-            glyph.width = base.width
-            glyph.leftMargin = base.leftMargin
-            glyph.rightMargin = base.rightMargin
-            component = Component()
-            component.baseGlyph = names[0]
-            glyph.appendComponent(component)
-            for baseComponent in base.components:
-                if baseComponent.baseGlyph in names[1:]:
-                    component = Component()
-                    component.transformation = baseComponent.transformation
-                    component.baseGlyph = baseComponent.baseGlyph
-                    glyph.appendComponent(component)
+    for name in subs:
+        names = subs[name]
+        base = font.layers["Marks"][names[0]]
+        glyph = font.newGlyph(name)
+        glyph.unicode = int(name.lstrip('uni'), 16)
+        glyph.width = base.width
+        glyph.leftMargin = base.leftMargin
+        glyph.rightMargin = base.rightMargin
+        component = Component()
+        component.baseGlyph = names[0]
+        glyph.appendComponent(component)
+        for baseComponent in base.components:
+            if baseComponent.baseGlyph in names[1:]:
+                component = Component()
+                component.transformation = baseComponent.transformation
+                component.baseGlyph = baseComponent.baseGlyph
+                glyph.appendComponent(component)

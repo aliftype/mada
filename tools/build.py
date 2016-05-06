@@ -131,14 +131,15 @@ def parseSubset(filename):
 def merge(args):
     arabic = Font(args.arabicfile)
 
-    unicodes = []
-    for glyph in arabic:
-        unicodes.extend(glyph.unicodes)
-
-    unicodes.extend(parseSubset(args.latin_subset))
 
     latin = Font(args.latinfile)
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
+
+    buildEncoded(arabic)
+
+    unicodes = parseSubset(args.latin_subset)
+    for glyph in arabic:
+        unicodes.extend(glyph.unicodes)
 
     latin_locl = ""
     for glyph in latin:
@@ -170,8 +171,6 @@ def merge(args):
     if latin_locl:
         latin_locl += "} locl;"
         fea += latin_locl
-
-    buildEncoded(arabic)
 
     for ch in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
         arGlyph = arabic.newGlyph("uni%04X" %ch[0])
