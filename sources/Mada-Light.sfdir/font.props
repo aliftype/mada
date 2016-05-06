@@ -49,11 +49,11 @@ NameList: AGL For New Fonts
 BeginPrivate: 0
 EndPrivate
 Grid
-914 0 m 29
- -310 0 l 5
- -310 32 l 5
- 914 32 l 29
- 914 0 l 29
+914 0 m 25
+ -310 0 l 1
+ -310 32 l 1
+ 914 32 l 25
+ 914 0 l 25
 -1000 624 m 0
  2000 624 l 0
   Named: "Cap" 
