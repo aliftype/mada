@@ -40,8 +40,7 @@ def build(font):
         pass
     subs = writer.subs
 
-    for name in subs:
-        names = subs[name]
+    for name, names in subs.items():
         base = font.layers["Marks"][names[0]]
         glyph = font.newGlyph(name)
         glyph.unicode = int(name.lstrip('uni'), 16)
