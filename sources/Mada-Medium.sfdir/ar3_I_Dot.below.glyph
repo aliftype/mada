@@ -1,12 +1,12 @@
 StartChar: ar3IDot.below
-Encoding: 65595 -1 75
+Encoding: 65595 -1 74
 Width: 0
 VWidth: 0
 GlyphClass: 4
 Flags: HW
 LayerCount: 3
 Fore
-Refer: 71 -1 N 1 0 0 1 0 -115 2
+Refer: 70 -1 N 1 0 0 1 0 -115 2
 Layer: 2
 SplineSet
 36 0 m 0
@@ -25,7 +25,7 @@ SplineSet
  52 -144 29 -167 0 -167 c 0
  -29 -167 -52 -144 -52 -115 c 0
 EndSplineSet
-Refer: 115 1622 N 1 0 0 1 0 -225 2
-Refer: 108 1613 N 1 0 0 1 0 -255 2
-Refer: 111 1616 N 1 0 0 1 0 -246 2
+Refer: 114 1622 N 1 0 0 1 0 -225 2
+Refer: 107 1613 N 1 0 0 1 0 -255 2
+Refer: 110 1616 N 1 0 0 1 0 -246 2
 EndChar
