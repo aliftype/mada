@@ -200,7 +200,7 @@ def merge(args):
     arabic.lib[MADA_UNICODES] = unicodes
 
     # Set metadata
-    arabic.versionMajor, arabic.versionMinor = map(int, args.version.split("."))
+    arabic.info.versionMajor, arabic.info.versionMinor = map(int, args.version.split("."))
 
     copyright = 'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
 
