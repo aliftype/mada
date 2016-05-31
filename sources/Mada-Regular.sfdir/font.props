@@ -1,8 +1,8 @@
 SplineFontDB: 3.0
-FontName: Mada-Medium
-FullName: Mada Medium
+FontName: Mada-Regular
+FullName: Mada Regular
 FamilyName: Mada
-Weight: Medium
+Weight: Regular
 Copyright: Created by Khaled Hosny with Sorts Mill Tools 2.1.0_alpha1 <http://bitbucket.org/sortsmill/sortsmill-tools>
 UComments: "2015-10-10: Created." 
 Version: 001.000
@@ -22,7 +22,7 @@ OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1444496159
 PfmFamily: 17
-TTFWeight: 500
+TTFWeight: 400
 TTFWidth: 5
 LineGap: 100
 VLineGap: 0
