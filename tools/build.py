@@ -158,12 +158,10 @@ def merge(args):
             latin_locl += "sub %s by %s;" % (name, glyph.name)
         arabic.insertGlyph(glyph)
 
-    for attr in ("openTypeOS2WeightClass", "xHeight", "capHeight", "styleName"):
+    for attr in ("xHeight", "capHeight"):
         value = getattr(latin.info, attr)
         if value is not None:
             setattr(arabic.info, attr, getattr(latin.info, attr))
-    if arabic.info.styleName == "Black":
-        arabic.info.styleMapStyleName = "bold"
 
     fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
     fea += generateArabicFeatures(arabic, args.feature_file)
