@@ -9,13 +9,11 @@ TOOLDIR=tools
 TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
 
-PY=python2
-PY3=python3
+PY=python3
 BUILD=$(TOOLDIR)/build.py
 
 FONTS=Light Regular Black
 
-SFD=$(FONTS:%=$(SRCDIR)/$(NAME)-%.sfdir)
 UFO=$(FONTS:%=$(SRCDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
@@ -30,9 +28,8 @@ doc: $(PDF)
 
 $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   GEN	$@"
-	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
+	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
 
-#$(DOCDIR)/$(NAME)-table.pdf: $(NAME)-Regular.otf
 $(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Regular.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
