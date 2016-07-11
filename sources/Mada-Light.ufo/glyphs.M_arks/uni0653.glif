@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni0653" format="2">
   <outline>
-    <contour>
-      <point x="-123.0" y="-44.0" type="line"/>
-      <point x="-155.0" y="-44.0" type="line"/>
-      <point x="-155.0" y="9.0" type="line" smooth="yes"/>
-      <point x="-155.0" y="41.1103515625"/>
-      <point x="-133.3525390625" y="62.0"/>
-      <point x="-100.0" y="62.0" type="curve" smooth="yes"/>
-      <point x="139.0" y="62.0" type="line"/>
-      <point x="139.0" y="30.0" type="line"/>
-      <point x="-100.0" y="30.0" type="line" smooth="yes"/>
-      <point x="-118.6474609375" y="30.0"/>
-      <point x="-123.0" y="24.8896484375"/>
-      <point x="-123.0" y="9.0" type="curve" smooth="yes"/>
-    </contour>
   </outline>
   <lib>
     <dict>

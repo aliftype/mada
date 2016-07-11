@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ar1Dot.below" format="2">
   <outline>
-    <contour>
-      <point x="-52.0" y="0.0" type="curve" smooth="yes"/>
-      <point x="-52.0" y="29.0"/>
-      <point x="-29.0" y="52.0"/>
-      <point x="0.0" y="52.0" type="curve" smooth="yes"/>
-      <point x="29.0" y="52.0"/>
-      <point x="52.0" y="29.0"/>
-      <point x="52.0" y="0.0" type="curve" smooth="yes"/>
-      <point x="52.0" y="-29.0"/>
-      <point x="29.0" y="-52.0"/>
-      <point x="0.0" y="-52.0" type="curve" smooth="yes"/>
-      <point x="-29.0" y="-52.0"/>
-      <point x="-52.0" y="-29.0"/>
-    </contour>
     <component base="uni0656" yOffset="-110.0"/>
     <component base="uni064D" yOffset="-140.0"/>
     <component base="uni0650" yOffset="-131.0"/>
