@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ar2Dot.above" format="2">
   <outline>
-    <component base="ar1Dot.above" xOffset="-120.0"/>
-    <component base="ar1Dot.above" xOffset="120.0"/>
+    <component base="ar1Dot.above" xOffset="-100.0"/>
+    <component base="ar1Dot.above" xOffset="100.0"/>
   </outline>
   <lib>
     <dict>
