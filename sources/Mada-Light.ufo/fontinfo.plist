@@ -4,6 +4,8 @@
 <dict>
 	<key>ascender</key>
 	<integer>800</integer>
+	<key>capHeight</key>
+	<integer>660</integer>
 	<key>copyright</key>
 	<string>Created by Khaled Hosny with Sorts Mill Tools 2.1.0_alpha1 &lt;http://bitbucket.org/sortsmill/sortsmill-tools&gt;</string>
 	<key>descender</key>
@@ -127,5 +129,7 @@
 	<integer>1000</integer>
 	<key>versionMajor</key>
 	<integer>1</integer>
+	<key>xHeight</key>
+	<integer>480</integer>
 </dict>
 </plist>
