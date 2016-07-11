@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="braceleft.ar" format="2">
+  <advance width="362"/>
+  <outline>
+    <contour>
+      <point x="143.3056640625" y="204.4912109375" type="curve"/>
+      <point x="190.9990234375" y="183.2509765625"/>
+      <point x="217.0" y="142.53125"/>
+      <point x="217.0" y="87.0" type="curve" smooth="yes"/>
+      <point x="217.0" y="-151.0" type="line" smooth="yes"/>
+      <point x="217.0" y="-227.7705078125"/>
+      <point x="270.5732421875" y="-258.0"/>
+      <point x="342.0" y="-258.0" type="curve"/>
+      <point x="342.0" y="-290.0" type="line"/>
+      <point x="261.4267578125" y="-290.0"/>
+      <point x="185.0" y="-250.2294921875"/>
+      <point x="185.0" y="-151.0" type="curve" smooth="yes"/>
+      <point x="185.0" y="87.0" type="line" smooth="yes"/>
+      <point x="185.0" y="142.0693359375"/>
+      <point x="155.072265625" y="174.2314453125"/>
+      <point x="98.962890625" y="184.6552734375" type="curve" smooth="yes"/>
+      <point x="87.138671875" y="186.8525390625"/>
+      <point x="74.111328125" y="188.0"/>
+      <point x="60.0" y="188.0" type="curve"/>
+      <point x="60.0" y="220.0" type="line"/>
+      <point x="74.2470703125" y="220.0"/>
+      <point x="87.34765625" y="221.2890625"/>
+      <point x="99.2158203125" y="223.69921875" type="curve" smooth="yes"/>
+      <point x="155.3486328125" y="235.09765625"/>
+      <point x="185.0" y="270.1845703125"/>
+      <point x="185.0" y="322.0" type="curve" smooth="yes"/>
+      <point x="185.0" y="574.0" type="line" smooth="yes"/>
+      <point x="185.0" y="657.66796875"/>
+      <point x="262.1630859375" y="699.1064453125"/>
+      <point x="342.4208984375" y="696.994140625" type="curve"/>
+      <point x="341.5791015625" y="665.005859375" type="line"/>
+      <point x="269.8369140625" y="666.8935546875"/>
+      <point x="217.0" y="632.33203125"/>
+      <point x="217.0" y="574.0" type="curve" smooth="yes"/>
+      <point x="217.0" y="322.0" type="line" smooth="yes"/>
+      <point x="217.0" y="268.9482421875"/>
+      <point x="189.7880859375" y="226.3037109375"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

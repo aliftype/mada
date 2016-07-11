@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arGaf.above" format="2">
+  <outline>
+    <contour>
+      <point x="555.6767578125" y="739.96875" type="curve"/>
+      <point x="560.32421875" y="567.998046875" type="line"/>
+      <point x="541.5634765625" y="566.4375"/>
+      <point x="367.7470703125" y="527.9814453125"/>
+      <point x="279.00390625" y="483.341796875" type="curve"/>
+      <point x="284.671875" y="509.3291015625" type="line"/>
+      <point x="558.4521484375" y="229.1630859375" type="line" smooth="yes"/>
+      <point x="643.3232421875" y="142.3125"/>
+      <point x="583.2255859375" y="1.0"/>
+      <point x="462.0" y="1.0" type="curve" smooth="yes"/>
+      <point x="0.0" y="1.0" type="line"/>
+      <point x="0.0" y="173.0" type="line"/>
+      <point x="393.0" y="173.0" type="line"/>
+      <point x="384.73046875" y="161.0" type="line"/>
+      <point x="155.5478515625" y="394.8369140625" type="line" smooth="yes"/>
+      <point x="94.6962890625" y="456.923828125"/>
+      <point x="89.376953125" y="570.3916015625"/>
+      <point x="169.9873046875" y="618.892578125" type="curve" smooth="yes"/>
+      <point x="293.1884765625" y="694.255859375"/>
+      <point x="492.2509765625" y="738.25390625"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>mark</string>
+    </dict>
+  </lib>
+</glyph>

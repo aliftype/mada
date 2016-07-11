@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="parenleft.ar" format="2">
+  <advance width="269"/>
+  <outline>
+    <contour>
+      <point x="220.451171875" y="741.2783203125" type="curve"/>
+      <point x="247.833984375" y="724.7216796875" type="line"/>
+      <point x="42.5791015625" y="385.2607421875"/>
+      <point x="35.583984375" y="45.630859375"/>
+      <point x="249.9150390625" y="-316.8564453125" type="curve"/>
+      <point x="222.3701171875" y="-333.1435546875" type="line"/>
+      <point x="2.701171875" y="38.369140625"/>
+      <point x="9.7060546875" y="392.7392578125"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

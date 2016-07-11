@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arNoon.fina" format="2">
+  <advance width="620"/>
+  <outline>
+    <contour>
+      <point x="640.0" y="105.0" type="line"/>
+      <point x="640.0" y="0.0" type="line"/>
+      <point x="499.0" y="0.0" type="line"/>
+      <point x="499.0" y="105.0" type="line"/>
+    </contour>
+    <component base="arNoon.isol"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

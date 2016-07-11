@@ -28,11 +28,6 @@ ttf: $(TTF)
 ufo: $(UFO)
 doc: $(PDF)
 
-$(SRCDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.sfdir
-	@echo "   GEN	$@"
-	@rm -rf $@
-	@sfd2ufo $< $@
-
 $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   GEN	$@"
 	@FILES=($+); $(PY3) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}

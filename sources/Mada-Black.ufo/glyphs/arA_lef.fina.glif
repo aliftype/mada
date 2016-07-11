@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arAlef.fina" format="2">
+  <advance width="360"/>
+  <outline>
+    <component base="extender" xScale="-1.0" xOffset="365.0"/>
+    <component base="arLam.init" xScale="-1.0" xOffset="370.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arSad.init" format="2">
+  <advance width="719"/>
+  <outline>
+    <contour>
+      <point x="246.0" y="0.0" type="line"/>
+      <point x="0.0" y="0.0" type="line"/>
+      <point x="0.0" y="172.0" type="line"/>
+      <point x="246.0" y="172.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="102.0" y="311.0" type="line"/>
+      <point x="274.0" y="311.0" type="line"/>
+      <point x="274.0" y="92.0" type="line"/>
+      <point x="102.0" y="92.0" type="line"/>
+    </contour>
+    <component base="arSad.head" xOffset="434.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bracketleft.ar" format="2">
+  <advance width="238"/>
+  <outline>
+    <contour>
+      <point x="217.0" y="696.0" type="line"/>
+      <point x="217.0" y="664.0" type="line"/>
+      <point x="92.0" y="664.0" type="line"/>
+      <point x="92.0" y="-256.0" type="line"/>
+      <point x="218.0" y="-256.0" type="line"/>
+      <point x="218.0" y="-288.0" type="line"/>
+      <point x="60.0" y="-288.0" type="line"/>
+      <point x="60.0" y="696.0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

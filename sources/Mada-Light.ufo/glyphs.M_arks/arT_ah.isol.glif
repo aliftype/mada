@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arTah.isol" format="2">
+  <advance width="613"/>
+  <outline>
+    <component base="arTah.above" xOffset="396.0" yOffset="485.0"/>
+    <component base="ar3Dot.above" xOffset="396.0" yOffset="485.0"/>
+    <component base="ar1Dot.above" xOffset="396.0" yOffset="485.0"/>
+    <component base="uni0651" xOffset="396.0" yOffset="523.0"/>
+    <component base="uni064E" xOffset="396.0" yOffset="505.0"/>
+    <component base="uni064B" xOffset="396.0" yOffset="523.0"/>
+    <component base="ar3IDot.below" xOffset="359.0" yOffset="-110.0"/>
+    <component base="ar2Dot.below" xOffset="359.0" yOffset="-110.0"/>
+    <component base="uni0650" xOffset="359.0" yOffset="-130.0"/>
+    <component base="uni0656" xOffset="359.0" yOffset="-110.0"/>
+    <component base="uni064D" xOffset="359.0" yOffset="-139.0"/>
+    <component base="ar1Dot.below" xOffset="359.0" yOffset="-110.0"/>
+    <component base="ar3Dot.below" xOffset="359.0" yOffset="-110.0"/>
+    <component base="uni0670" xOffset="396.0" yOffset="485.0"/>
+    <component base="uni064C" xOffset="395.0" yOffset="517.0"/>
+    <component base="uni064F" xOffset="390.0" yOffset="517.0"/>
+    <component base="uni0652" xOffset="396.0" yOffset="522.0"/>
+    <component base="ar2Dot.above" xOffset="396.0" yOffset="485.0"/>
+    <component base="ar3IDot.above" xOffset="396.0" yOffset="485.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

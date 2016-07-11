@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni06D4" format="2">
+  <advance width="387"/>
+  <unicode hex="06D4"/>
+  <outline>
+    <contour>
+      <point x="151.0" y="105.0" type="line"/>
+      <point x="323.0" y="105.0" type="line"/>
+      <point x="236.0" y="0.0" type="line"/>
+      <point x="64.0" y="0.0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

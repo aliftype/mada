@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0654" format="2">
+  <outline>
+    <contour>
+      <point x="96.0" y="181.0" type="line"/>
+      <point x="96.0" y="111.0" type="line"/>
+      <point x="33.0" y="111.0" type="line"/>
+      <point x="54.0" y="66.0" type="line" smooth="yes"/>
+      <point x="59.0" y="54.0"/>
+      <point x="70.0" y="36.0"/>
+      <point x="56.0" y="18.0" type="curve" smooth="yes"/>
+      <point x="44.0" y="1.0"/>
+      <point x="23.0" y="0.0"/>
+      <point x="14.0" y="0.0" type="curve" smooth="yes"/>
+      <point x="-96.0" y="0.0" type="line"/>
+      <point x="-96.0" y="70.0" type="line"/>
+      <point x="-25.0" y="70.0" type="line"/>
+      <point x="-46.0" y="114.0" type="line"/>
+      <point x="-46.0" y="114.0"/>
+      <point x="-62.0" y="139.0"/>
+      <point x="-49.0" y="160.0" type="curve" smooth="yes"/>
+      <point x="-42.0" y="171.0"/>
+      <point x="-27.0" y="181.0"/>
+      <point x="-4.0" y="181.0" type="curve" smooth="yes"/>
+    </contour>
+    <component base="uni0670" yOffset="220.0"/>
+    <component base="uni0651" yOffset="258.0"/>
+    <component base="uni064E" yOffset="241.0"/>
+    <component base="uni064B" yOffset="258.0"/>
+    <component base="uni064C" yOffset="253.0"/>
+    <component base="uni064F" yOffset="254.0"/>
+    <component base="uni0652" yOffset="256.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>mark</string>
+    </dict>
+  </lib>
+</glyph>

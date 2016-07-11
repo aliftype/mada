@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0667" format="2">
+  <advance width="588"/>
+  <unicode hex="0667"/>
+  <outline>
+    <contour>
+      <point x="437.2099609375" y="651.2880859375" type="line"/>
+      <point x="538.791015625" y="624.7119140625" type="line"/>
+      <point x="388.025390625" y="47.7880859375" type="line" smooth="yes"/>
+      <point x="379.86328125" y="16.5888671875"/>
+      <point x="351.64453125" y="-8.5400390625"/>
+      <point x="310.0546875" y="-8.9755859375" type="curve" smooth="yes"/>
+      <point x="277.76953125" y="-9.314453125"/>
+      <point x="245.6279296875" y="11.5458984375"/>
+      <point x="234.583984375" y="46.044921875" type="curve" smooth="yes"/>
+      <point x="50.0" y="621.9931640625" type="line"/>
+      <point x="150.0009765625" y="654.0068359375" type="line"/>
+      <point x="319.5" y="124.0" type="line"/>
+      <point x="299.458984375" y="124.1005859375" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arKaf.init" format="2">
+  <advance width="478"/>
+  <outline>
+    <contour>
+      <point x="0.0" y="0.0" type="line"/>
+      <point x="0.0" y="32.0" type="line"/>
+      <point x="342.0" y="32.0" type="line" smooth="yes"/>
+      <point x="372.0" y="32.0"/>
+      <point x="385.0" y="68.0"/>
+      <point x="366.0" y="87.0" type="curve" smooth="yes"/>
+      <point x="86.0" y="373.0" type="line" smooth="yes"/>
+      <point x="57.0" y="402.0"/>
+      <point x="42.0" y="463.0"/>
+      <point x="86.0" y="488.0" type="curve" smooth="yes"/>
+      <point x="189.0" y="552.0"/>
+      <point x="396.0" y="598.0"/>
+      <point x="438.0" y="599.0" type="curve"/>
+      <point x="438.0" y="567.0" type="line"/>
+      <point x="406.0" y="566.0"/>
+      <point x="197.0" y="518.0"/>
+      <point x="102.0" y="460.0" type="curve" smooth="yes"/>
+      <point x="81.0" y="448.0"/>
+      <point x="90.0" y="413.0"/>
+      <point x="108.0" y="395.0" type="curve" smooth="yes"/>
+      <point x="388.0" y="109.0" type="line" smooth="yes"/>
+      <point x="424.0" y="72.0"/>
+      <point x="402.0" y="0.0"/>
+      <point x="342.0" y="0.0" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

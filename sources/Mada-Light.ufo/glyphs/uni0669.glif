@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0669" format="2">
+  <advance width="371"/>
+  <unicode hex="0669"/>
+  <outline>
+    <contour>
+      <point x="325.912109375" y="329.861328125" type="line"/>
+      <point x="254.2353515625" y="325.3798828125"/>
+      <point x="116.509765625" y="304.6943359375"/>
+      <point x="54.7568359375" y="393.892578125" type="curve" smooth="yes"/>
+      <point x="54.6337890625" y="394.0712890625"/>
+      <point x="54.4072265625" y="394.4140625"/>
+      <point x="54.2548828125" y="394.6640625" type="curve" smooth="yes"/>
+      <point x="2.712890625" y="479.1064453125"/>
+      <point x="40.16796875" y="572.9599609375"/>
+      <point x="102.5341796875" y="607.6611328125" type="curve"/>
+      <point x="158.0205078125" y="645.2548828125"/>
+      <point x="268.55078125" y="642.4677734375"/>
+      <point x="318.4736328125" y="568.0693359375" type="curve" smooth="yes"/>
+      <point x="333.22265625" y="546.0888671875"/>
+      <point x="341.912109375" y="518.2236328125"/>
+      <point x="341.912109375" y="485.0" type="curve" smooth="yes"/>
+      <point x="341.912109375" y="0.0" type="line"/>
+      <point x="309.912109375" y="0.0" type="line"/>
+      <point x="309.912109375" y="485.0" type="line" smooth="yes"/>
+      <point x="309.912109375" y="513.333984375"/>
+      <point x="302.572265625" y="534.8427734375"/>
+      <point x="291.115234375" y="551.3916015625" type="curve" smooth="yes"/>
+      <point x="249.5869140625" y="611.3779296875"/>
+      <point x="163.5283203125" y="604.095703125"/>
+      <point x="118.482421875" y="579.904296875" type="curve" smooth="yes"/>
+      <point x="72.146484375" y="555.01953125"/>
+      <point x="40.181640625" y="480.1513671875"/>
+      <point x="81.326171875" y="411.7333984375" type="curve"/>
+      <point x="129.052734375" y="344.052734375"/>
+      <point x="249.3232421875" y="357.0859375"/>
+      <point x="325.912109375" y="361.8740234375" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

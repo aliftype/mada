@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="braceright.ar" format="2">
+  <advance width="362"/>
+  <outline>
+    <component base="braceleft.ar" xScale="-1.0" yScale="-1.0" xOffset="362.0" yOffset="407.071"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

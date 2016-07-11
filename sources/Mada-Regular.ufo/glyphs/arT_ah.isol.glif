@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arTah.isol" format="2">
+  <advance width="670"/>
+  <outline>
+    <contour>
+      <point x="50.0" y="0.0" type="line"/>
+      <point x="50.0" y="105.0" type="line"/>
+      <point x="120.0" y="105.0" type="line"/>
+      <point x="120.0" y="0.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="129.0" y="624.0" type="line"/>
+      <point x="235.0" y="624.0" type="line"/>
+      <point x="235.0" y="88.0" type="line"/>
+      <point x="129.0" y="88.0" type="line"/>
+    </contour>
+    <component base="arSad.head" xOffset="366.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

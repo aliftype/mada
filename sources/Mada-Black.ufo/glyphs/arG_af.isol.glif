@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arGaf.isol" format="2">
+  <advance width="861"/>
+  <outline>
+    <contour>
+      <point x="222.0" y="172.0" type="line"/>
+      <point x="366.0" y="0.0" type="line"/>
+      <point x="204.0" y="0.0" type="line"/>
+      <point x="60.0" y="172.0" type="line"/>
+    </contour>
+    <component base="arKaf.medi" xOffset="204.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

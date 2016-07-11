@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0621" format="2">
+  <advance width="498"/>
+  <unicode hex="0621"/>
+  <outline>
+    <contour>
+      <point x="393.87890625" y="272.00390625" type="line"/>
+      <point x="393.87890625" y="167.00390625" type="line"/>
+      <point x="298.41796875" y="167.00390625" type="line"/>
+      <point x="329.845703125" y="100.3671875" type="line" smooth="yes"/>
+      <point x="337.208984375" y="82.5048828125"/>
+      <point x="353.451171875" y="54.8818359375"/>
+      <point x="333.201171875" y="27.1318359375" type="curve" smooth="yes"/>
+      <point x="314.923828125" y="2.0859375"/>
+      <point x="283.9453125" y="0.4677734375"/>
+      <point x="270.3251953125" y="0.4677734375" type="curve" smooth="yes"/>
+      <point x="105.0" y="0.4677734375" type="line"/>
+      <point x="105.0" y="105.4677734375" type="line"/>
+      <point x="211.349609375" y="105.4677734375" type="line"/>
+      <point x="180.341796875" y="171.216796875" type="line"/>
+      <point x="180.341796875" y="171.216796875"/>
+      <point x="156.841796875" y="210.880859375"/>
+      <point x="176.439453125" y="241.6318359375" type="curve" smooth="yes"/>
+      <point x="186.802734375" y="257.8916015625"/>
+      <point x="209.103515625" y="272.00390625"/>
+      <point x="244.05859375" y="272.00390625" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

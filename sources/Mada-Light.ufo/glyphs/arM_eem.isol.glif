@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arMeem.isol" format="2">
+  <advance width="557"/>
+  <outline>
+    <contour>
+      <point x="82.0" y="32.0" type="line"/>
+      <point x="106.0" y="-0.0" type="line"/>
+      <point x="64.0" y="-0.0" type="line"/>
+      <point x="40.0" y="32.0" type="line"/>
+    </contour>
+    <component base="arMeem.init" xOffset="82.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

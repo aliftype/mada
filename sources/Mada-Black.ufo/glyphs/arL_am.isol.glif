@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arLam.isol" format="2">
+  <advance width="660"/>
+  <outline>
+    <contour>
+      <point x="428.0" y="624.0" type="line"/>
+      <point x="600.0" y="624.0" type="line"/>
+      <point x="600.0" y="-8.0" type="line" smooth="yes"/>
+      <point x="600.0" y="-84.0"/>
+      <point x="538.0" y="-148.0"/>
+      <point x="460.0" y="-148.0" type="curve" smooth="yes"/>
+      <point x="201.0" y="-148.0" type="line" smooth="yes"/>
+      <point x="125.0" y="-148.0"/>
+      <point x="60.0" y="-86.0"/>
+      <point x="60.0" y="-9.0" type="curve" smooth="yes"/>
+      <point x="60.0" y="180.0" type="line"/>
+      <point x="232.0" y="180.0" type="line"/>
+      <point x="232.0" y="4.0" type="line"/>
+      <point x="212.0" y="24.0" type="line"/>
+      <point x="448.0" y="24.0" type="line"/>
+      <point x="428.0" y="4.0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

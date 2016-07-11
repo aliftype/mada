@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0670" format="2">
+  <unicode hex="0670"/>
+  <outline>
+    <contour>
+      <point x="-16.0" y="183.0" type="line"/>
+      <point x="16.0" y="183.0" type="line"/>
+      <point x="16.0" y="32.0" type="line" smooth="yes"/>
+      <point x="16.0" y="18.0"/>
+      <point x="5.0" y="0.0"/>
+      <point x="-16.0" y="0.0" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>mark</string>
+    </dict>
+  </lib>
+</glyph>

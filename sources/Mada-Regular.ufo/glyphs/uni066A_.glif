@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni066A" format="2">
+  <advance width="522"/>
+  <unicode hex="066A"/>
+  <outline>
+    <contour>
+      <point x="39.0" y="-12.0" type="line"/>
+      <point x="397.0" y="667.0" type="line"/>
+      <point x="483.0" y="667.0" type="line"/>
+      <point x="124.0" y="-12.0" type="line"/>
+    </contour>
+    <component base="uni0660" xOffset="240.0" yOffset="-266.0"/>
+    <component base="uni0660" xOffset="-68.0" yOffset="263.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

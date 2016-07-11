@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ascender</key>
+	<integer>800</integer>
+	<key>copyright</key>
+	<string>Created by Khaled Hosny with Sorts Mill Tools 2.1.0_alpha1 &lt;http://bitbucket.org/sortsmill/sortsmill-tools&gt;</string>
+	<key>descender</key>
+	<integer>-200</integer>
+	<key>familyName</key>
+	<string>Mada</string>
+	<key>guidelines</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Cap</string>
+			<key>y</key>
+			<real>624.0</real>
+		</dict>
+	</array>
+	<key>italicAngle</key>
+	<real>0.0</real>
+	<key>note</key>
+	<string>2015-10-10: Created.</string>
+	<key>openTypeHeadCreated</key>
+	<string>2015/10/10 16:55:59</string>
+	<key>openTypeHheaAscender</key>
+	<integer>900</integer>
+	<key>openTypeHheaDescender</key>
+	<integer>-300</integer>
+	<key>openTypeHheaLineGap</key>
+	<integer>100</integer>
+	<key>openTypeNameUniqueID</key>
+	<string>Sorts Mill Tools 2.1.0_alpha1 : Mada Regular : 11-7-2016</string>
+	<key>openTypeNameVersion</key>
+	<string>Version 001.000 </string>
+	<key>openTypeOS2FamilyClass</key>
+	<array>
+		<integer>0</integer>
+		<integer>0</integer>
+	</array>
+	<key>openTypeOS2Panose</key>
+	<array>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+	</array>
+	<key>openTypeOS2StrikeoutPosition</key>
+	<integer>0</integer>
+	<key>openTypeOS2StrikeoutSize</key>
+	<integer>0</integer>
+	<key>openTypeOS2SubscriptXOffset</key>
+	<integer>0</integer>
+	<key>openTypeOS2SubscriptXSize</key>
+	<integer>0</integer>
+	<key>openTypeOS2SubscriptYOffset</key>
+	<integer>0</integer>
+	<key>openTypeOS2SubscriptYSize</key>
+	<integer>0</integer>
+	<key>openTypeOS2SuperscriptXOffset</key>
+	<integer>0</integer>
+	<key>openTypeOS2SuperscriptXSize</key>
+	<integer>0</integer>
+	<key>openTypeOS2SuperscriptYOffset</key>
+	<integer>0</integer>
+	<key>openTypeOS2SuperscriptYSize</key>
+	<integer>0</integer>
+	<key>openTypeOS2Type</key>
+	<array/>
+	<key>openTypeOS2TypoAscender</key>
+	<integer>900</integer>
+	<key>openTypeOS2TypoDescender</key>
+	<integer>-300</integer>
+	<key>openTypeOS2TypoLineGap</key>
+	<integer>100</integer>
+	<key>openTypeOS2VendorID</key>
+	<string>BLQ </string>
+	<key>openTypeOS2WeightClass</key>
+	<integer>400</integer>
+	<key>openTypeOS2WidthClass</key>
+	<integer>5</integer>
+	<key>openTypeOS2WinAscent</key>
+	<integer>796</integer>
+	<key>openTypeOS2WinDescent</key>
+	<integer>316</integer>
+	<key>postscriptBlueValues</key>
+	<array/>
+	<key>postscriptFamilyBlues</key>
+	<array/>
+	<key>postscriptFamilyOtherBlues</key>
+	<array/>
+	<key>postscriptFontName</key>
+	<string>Mada-Regular</string>
+	<key>postscriptFullName</key>
+	<string>Mada Regular</string>
+	<key>postscriptOtherBlues</key>
+	<array/>
+	<key>postscriptSlantAngle</key>
+	<real>0.0</real>
+	<key>postscriptStemSnapH</key>
+	<array/>
+	<key>postscriptStemSnapV</key>
+	<array/>
+	<key>postscriptUnderlinePosition</key>
+	<real>-100.0</real>
+	<key>postscriptUnderlineThickness</key>
+	<real>50.0</real>
+	<key>postscriptUniqueID</key>
+	<integer>0</integer>
+	<key>postscriptWeightName</key>
+	<string>Regular</string>
+	<key>styleName</key>
+	<string>Regular</string>
+	<key>unitsPerEm</key>
+	<integer>1000</integer>
+	<key>versionMajor</key>
+	<integer>1</integer>
+</dict>
+</plist>

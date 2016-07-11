@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arReh.fina" format="2">
+  <advance width="300"/>
+  <outline>
+    <contour>
+      <point x="300.0" y="32.0" type="line"/>
+      <point x="300.0" y="0.0" type="line"/>
+      <point x="179.0" y="0.0" type="line"/>
+      <point x="179.0" y="32.0" type="line"/>
+    </contour>
+    <component base="arReh.isol" yOffset="-1.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

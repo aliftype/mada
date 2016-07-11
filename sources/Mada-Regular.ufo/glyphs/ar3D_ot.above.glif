@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ar3Dot.above" format="2">
+  <outline>
+    <component base="ar1Dot.above" yOffset="125.0"/>
+    <component base="ar2Dot.above"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>mark</string>
+    </dict>
+  </lib>
+</glyph>

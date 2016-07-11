@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arAlef.fina.1" format="2">
+  <outline>
+    <contour>
+      <point x="106.0" y="639.0" type="line"/>
+      <point x="136.0" y="647.0" type="line"/>
+      <point x="267.0" y="198.0" type="line"/>
+      <point x="237.0" y="190.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="235.0" y="198.0" type="curve"/>
+      <point x="267.0" y="198.0" type="line"/>
+      <point x="256.0" y="135.0"/>
+      <point x="220.0" y="76.0"/>
+      <point x="129.0" y="25.0" type="curve"/>
+      <point x="107.0" y="25.0" type="line"/>
+      <point x="132.0" y="39.0"/>
+      <point x="237.0" y="96.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>

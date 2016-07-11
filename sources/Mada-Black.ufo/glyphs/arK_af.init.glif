@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arKaf.init" format="2">
+  <advance width="657"/>
+  <outline>
+    <contour>
+      <point x="556.0" y="739.0" type="curve"/>
+      <point x="560.0" y="567.0" type="line"/>
+      <point x="541.0" y="565.0"/>
+      <point x="368.0" y="527.0"/>
+      <point x="279.0" y="482.0" type="curve"/>
+      <point x="285.0" y="508.0" type="line"/>
+      <point x="558.0" y="228.0" type="line" smooth="yes"/>
+      <point x="643.0" y="141.0"/>
+      <point x="583.0" y="0.0"/>
+      <point x="462.0" y="0.0" type="curve" smooth="yes"/>
+      <point x="0.0" y="0.0" type="line"/>
+      <point x="0.0" y="172.0" type="line"/>
+      <point x="393.0" y="172.0" type="line"/>
+      <point x="385.0" y="160.0" type="line"/>
+      <point x="156.0" y="394.0" type="line" smooth="yes"/>
+      <point x="95.0" y="456.0"/>
+      <point x="89.0" y="569.0"/>
+      <point x="170.0" y="618.0" type="curve" smooth="yes"/>
+      <point x="293.0" y="693.0"/>
+      <point x="493.0" y="737.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>org.fontforge.glyphclass</key>
+      <string>baseglyph</string>
+    </dict>
+  </lib>
+</glyph>
