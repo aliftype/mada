@@ -2,6 +2,12 @@
 <glyph name="arAlef.fina.1" format="2">
   <outline>
     <contour>
+      <point x="73.0" y="632.0" type="line"/>
+      <point x="173.0" y="662.0" type="line"/>
+      <point x="294.0" y="246.0" type="line"/>
+      <point x="194.0" y="216.0" type="line"/>
+    </contour>
+    <contour>
       <point x="180.0" y="263.0" type="curve"/>
       <point x="283.0" y="263.0" type="line"/>
       <point x="272.0" y="200.0"/>
@@ -10,12 +16,6 @@
       <point x="60.0" y="90.0" type="line"/>
       <point x="128.0" y="123.0"/>
       <point x="182.0" y="161.0"/>
-    </contour>
-    <contour>
-      <point x="73.0" y="632.0" type="line"/>
-      <point x="173.0" y="662.0" type="line"/>
-      <point x="294.0" y="246.0" type="line"/>
-      <point x="194.0" y="216.0" type="line"/>
     </contour>
   </outline>
   <lib>
