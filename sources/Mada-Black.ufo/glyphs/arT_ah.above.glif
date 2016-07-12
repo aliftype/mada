@@ -2,10 +2,10 @@
 <glyph name="arTah.above" format="2">
   <outline>
     <contour>
-      <point x="-73.0" y="0.0" type="line"/>
       <point x="-168.0" y="0.0" type="line"/>
       <point x="-168.0" y="86.0" type="line"/>
       <point x="-73.0" y="86.0" type="line"/>
+      <point x="-73.0" y="0.0" type="line"/>
     </contour>
     <contour>
       <point x="-77.0" y="86.0" type="line"/>
