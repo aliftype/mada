@@ -19,7 +19,9 @@
       <point x="225.0" y="303.0" type="line"/>
       <point x="225.0" y="475.0" type="line"/>
       <point x="324.0" y="475.0" type="line"/>
-      <point x="304.0" y="455.0" type="line"/>
+      <point x="317.0" y="468.0"/>
+      <point x="311.0" y="462.0"/>
+      <point x="304.0" y="455.0" type="curve"/>
     </contour>
     <contour>
       <point x="518.0" y="624.0" type="line"/>
@@ -31,7 +33,9 @@
       <point x="459.0" y="303.0" type="line"/>
       <point x="459.0" y="475.0" type="line"/>
       <point x="538.0" y="475.0" type="line"/>
-      <point x="518.0" y="455.0" type="line"/>
+      <point x="531.0" y="468.0"/>
+      <point x="525.0" y="462.0"/>
+      <point x="518.0" y="455.0" type="curve"/>
     </contour>
   </outline>
   <lib>

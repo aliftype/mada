@@ -12,7 +12,9 @@
       <point x="139.0" y="140.0" type="line"/>
       <point x="139.0" y="40.0" type="line"/>
       <point x="-109.0" y="40.0" type="line"/>
-      <point x="-89.0" y="60.0" type="line"/>
+      <point x="-102.0" y="47.0"/>
+      <point x="-96.0" y="53.0"/>
+      <point x="-89.0" y="60.0" type="curve"/>
     </contour>
   </outline>
   <lib>

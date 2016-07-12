@@ -16,9 +16,13 @@
       <point x="60.0" y="180.0" type="line"/>
       <point x="232.0" y="180.0" type="line"/>
       <point x="232.0" y="4.0" type="line"/>
-      <point x="212.0" y="24.0" type="line"/>
+      <point x="225.0" y="11.0"/>
+      <point x="219.0" y="17.0"/>
+      <point x="212.0" y="24.0" type="curve"/>
       <point x="448.0" y="24.0" type="line"/>
-      <point x="428.0" y="4.0" type="line"/>
+      <point x="441.0" y="17.0"/>
+      <point x="435.0" y="11.0"/>
+      <point x="428.0" y="4.0" type="curve"/>
     </contour>
   </outline>
   <lib>
