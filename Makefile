@@ -1,5 +1,5 @@
 NAME=Mada
-VERSION=1.1
+VERSION=1.2
 LATIN=SourceSansPro
 
 SRCDIR=sources
