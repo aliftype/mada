@@ -12,7 +12,7 @@ DIST=$(NAME)-$(VERSION)
 PY=python3
 BUILD=$(TOOLDIR)/build.py
 
-FONTS=Light Regular Black
+FONTS=Light Medium Black
 
 UFO=$(FONTS:%=$(SRCDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
@@ -30,7 +30,7 @@ $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/
 	@echo "   GEN	$@"
 	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
 
-$(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Regular.otf
+$(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Medium.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
