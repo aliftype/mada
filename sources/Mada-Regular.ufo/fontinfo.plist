@@ -7,7 +7,7 @@
 	<key>capHeight</key>
 	<integer>660</integer>
 	<key>copyright</key>
-	<string>Created by Khaled Hosny with Sorts Mill Tools 2.1.0_alpha1 &lt;http://bitbucket.org/sortsmill/sortsmill-tools&gt;</string>
+	<string></string>
 	<key>descender</key>
 	<integer>-200</integer>
 	<key>familyName</key>
@@ -24,7 +24,7 @@
 	<key>italicAngle</key>
 	<real>0.0</real>
 	<key>note</key>
-	<string>2015-10-10: Created.</string>
+	<string></string>
 	<key>openTypeHeadCreated</key>
 	<string>2015/10/10 16:55:59</string>
 	<key>openTypeHheaAscender</key>
@@ -33,48 +33,23 @@
 	<integer>-300</integer>
 	<key>openTypeHheaLineGap</key>
 	<integer>100</integer>
-	<key>openTypeNameUniqueID</key>
-	<string>Sorts Mill Tools 2.1.0_alpha1 : Mada Regular : 11-7-2016</string>
-	<key>openTypeNameVersion</key>
-	<string>Version 001.000 </string>
+	<key>openTypeNameDesigner</key>
+	<string></string>
+	<key>openTypeNameDesignerURL</key>
+	<string></string>
+	<key>openTypeNameLicense</key>
+	<string></string>
+	<key>openTypeNameLicenseURL</key>
+	<string></string>
+	<key>openTypeNameManufacturer</key>
+	<string></string>
+	<key>openTypeNameManufacturerURL</key>
+	<string></string>
 	<key>openTypeOS2FamilyClass</key>
 	<array>
 		<integer>0</integer>
 		<integer>0</integer>
 	</array>
-	<key>openTypeOS2Panose</key>
-	<array>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-		<integer>0</integer>
-	</array>
-	<key>openTypeOS2StrikeoutPosition</key>
-	<integer>0</integer>
-	<key>openTypeOS2StrikeoutSize</key>
-	<integer>0</integer>
-	<key>openTypeOS2SubscriptXOffset</key>
-	<integer>0</integer>
-	<key>openTypeOS2SubscriptXSize</key>
-	<integer>0</integer>
-	<key>openTypeOS2SubscriptYOffset</key>
-	<integer>0</integer>
-	<key>openTypeOS2SubscriptYSize</key>
-	<integer>0</integer>
-	<key>openTypeOS2SuperscriptXOffset</key>
-	<integer>0</integer>
-	<key>openTypeOS2SuperscriptXSize</key>
-	<integer>0</integer>
-	<key>openTypeOS2SuperscriptYOffset</key>
-	<integer>0</integer>
-	<key>openTypeOS2SuperscriptYSize</key>
-	<integer>0</integer>
 	<key>openTypeOS2Type</key>
 	<array/>
 	<key>openTypeOS2TypoAscender</key>
@@ -115,16 +90,18 @@
 	<real>-100.0</real>
 	<key>postscriptUnderlineThickness</key>
 	<real>50.0</real>
-	<key>postscriptUniqueID</key>
-	<integer>0</integer>
 	<key>postscriptWeightName</key>
 	<string>Regular</string>
 	<key>styleName</key>
 	<string>Regular</string>
+	<key>trademark</key>
+	<string></string>
 	<key>unitsPerEm</key>
 	<integer>1000</integer>
 	<key>versionMajor</key>
 	<integer>1</integer>
+	<key>versionMinor</key>
+	<integer>0</integer>
 	<key>xHeight</key>
 	<integer>486</integer>
 </dict>
