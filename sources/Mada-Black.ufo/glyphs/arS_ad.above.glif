@@ -2,6 +2,12 @@
 <glyph name="arSad.above" format="2">
   <outline>
     <contour>
+      <point x="-74.0" y="-0.0" type="line"/>
+      <point x="-172.0" y="-0.0" type="line"/>
+      <point x="-172.0" y="86.0" type="line"/>
+      <point x="-74.0" y="86.0" type="line"/>
+    </contour>
+    <contour>
       <point x="-98.0" y="86.0" type="line"/>
       <point x="-56.0" y="144.0"/>
       <point x="7.0" y="252.0"/>
@@ -24,12 +30,6 @@
       <point x="52.0" y="143.0"/>
       <point x="6.0" y="87.0"/>
       <point x="-31.0" y="31.0" type="curve"/>
-    </contour>
-    <contour>
-      <point x="-74.0" y="-0.0" type="line"/>
-      <point x="-172.0" y="-0.0" type="line"/>
-      <point x="-172.0" y="86.0" type="line"/>
-      <point x="-74.0" y="86.0" type="line"/>
     </contour>
   </outline>
   <lib>
