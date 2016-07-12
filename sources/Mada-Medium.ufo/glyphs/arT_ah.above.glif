@@ -22,7 +22,9 @@
       <point x="-112.0" y="0.0" type="line"/>
       <point x="-112.0" y="52.0" type="line"/>
       <point x="100.0" y="52.0" type="line"/>
-      <point x="89.0" y="42.0" type="line"/>
+      <point x="96.15" y="48.5"/>
+      <point x="92.85" y="45.5"/>
+      <point x="89.0" y="42.0" type="curve"/>
       <point x="89.0" y="85.0" type="line" smooth="yes"/>
       <point x="89.0" y="121.0"/>
       <point x="79.0" y="129.0"/>

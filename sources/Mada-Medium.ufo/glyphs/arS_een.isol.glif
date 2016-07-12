@@ -16,10 +16,13 @@
       <point x="50.0" y="185.0" type="line"/>
       <point x="155.0" y="185.0" type="line"/>
       <point x="155.0" y="-116.0" type="line"/>
-      <point x="135.0" y="-97.0" type="line"/>
+      <point x="148.0" y="-109.35"/>
+      <point x="142.0" y="-103.65"/>
+      <point x="135.0" y="-97.0" type="curve"/>
       <point x="439.0" y="-97.0" type="line"/>
-      <point x="419.0" y="-116.0" type="line"/>
-      <point x="419.0" y="-116.0" type="line"/>
+      <point x="432.0" y="-103.65"/>
+      <point x="426.0" y="-109.35"/>
+      <point x="419.0" y="-116.0" type="curve"/>
     </contour>
     <contour>
       <point x="603.0" y="376.0" type="line"/>

@@ -8,12 +8,6 @@
       <point x="-73.0" y="86.0" type="line"/>
     </contour>
     <contour>
-      <point x="-120.0" y="312.0" type="line"/>
-      <point x="-34.0" y="312.0" type="line"/>
-      <point x="-34.0" y="61.0" type="line"/>
-      <point x="-120.0" y="61.0" type="line"/>
-    </contour>
-    <contour>
       <point x="-77.0" y="86.0" type="line"/>
       <point x="-35.0" y="144.0"/>
       <point x="28.0" y="252.0"/>
@@ -28,7 +22,9 @@
       <point x="-92.0" y="0.0" type="line"/>
       <point x="-92.0" y="86.0" type="line"/>
       <point x="117.0" y="86.0" type="line"/>
-      <point x="107.0" y="76.0" type="line"/>
+      <point x="113.5" y="82.5"/>
+      <point x="110.5" y="79.5"/>
+      <point x="107.0" y="76.0" type="curve"/>
       <point x="108.0" y="102.0" type="line"/>
       <point x="107.0" y="134.0"/>
       <point x="100.0" y="134.0"/>
@@ -36,6 +32,12 @@
       <point x="74.0" y="143.0"/>
       <point x="27.0" y="87.0"/>
       <point x="-10.0" y="31.0" type="curve"/>
+    </contour>
+    <contour>
+      <point x="-120.0" y="312.0" type="line"/>
+      <point x="-34.0" y="312.0" type="line"/>
+      <point x="-34.0" y="61.0" type="line"/>
+      <point x="-120.0" y="61.0" type="line"/>
     </contour>
   </outline>
   <lib>

@@ -16,9 +16,13 @@
       <point x="60.0" y="219.0" type="line"/>
       <point x="232.0" y="219.0" type="line"/>
       <point x="232.0" y="-79.0" type="line"/>
-      <point x="212.0" y="-59.0" type="line"/>
+      <point x="225.0" y="-72.0"/>
+      <point x="219.0" y="-66.0"/>
+      <point x="212.0" y="-59.0" type="curve"/>
       <point x="449.0" y="-59.0" type="line"/>
-      <point x="429.0" y="-79.0" type="line"/>
+      <point x="442.0" y="-66.0"/>
+      <point x="436.0" y="-72.0"/>
+      <point x="429.0" y="-79.0" type="curve"/>
     </contour>
     <component base="arSad.head" xOffset="821.0"/>
   </outline>
