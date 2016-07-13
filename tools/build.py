@@ -164,7 +164,7 @@ def merge(args):
         if value is not None:
             setattr(arabic.info, attr, getattr(latin.info, attr))
 
-    fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
+    fea = "include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
     fea += generateArabicFeatures(arabic, args.feature_file)
     if latin_locl:
         latin_locl += "} locl;"
