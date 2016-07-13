@@ -3,6 +3,7 @@
   <advance width="906"/>
   <outline>
     <contour>
+      <point x="441.0" y="241.0" type="line"/>
       <point x="409.0" y="241.0" type="line"/>
       <point x="409.0" y="-133.0" type="line" smooth="yes"/>
       <point x="409.0" y="-153.0"/>
@@ -22,7 +23,6 @@
       <point x="412.0" y="-201.0"/>
       <point x="441.0" y="-171.0"/>
       <point x="441.0" y="-133.0" type="curve" smooth="yes"/>
-      <point x="441.0" y="241.0" type="line"/>
     </contour>
     <component base="arSad.head" xOffset="646.0"/>
   </outline>

@@ -50,7 +50,9 @@
       <point x="782.0" y="256.0"/>
       <point x="784.0" y="222.0"/>
       <point x="784.0" y="152.0" type="curve"/>
-      <point x="764.0" y="172.0" type="line"/>
+      <point x="777.0" y="159.0"/>
+      <point x="771.0" y="165.0"/>
+      <point x="764.0" y="172.0" type="curve"/>
     </contour>
   </outline>
   <lib>

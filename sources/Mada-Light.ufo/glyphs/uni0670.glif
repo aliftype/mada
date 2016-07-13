@@ -3,12 +3,12 @@
   <unicode hex="0670"/>
   <outline>
     <contour>
+      <point x="-16.0" y="0.0" type="curve"/>
       <point x="-16.0" y="183.0" type="line"/>
       <point x="16.0" y="183.0" type="line"/>
       <point x="16.0" y="32.0" type="line" smooth="yes"/>
       <point x="16.0" y="18.0"/>
       <point x="5.0" y="0.0"/>
-      <point x="-16.0" y="0.0" type="curve"/>
     </contour>
   </outline>
   <lib>
