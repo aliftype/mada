@@ -12,25 +12,34 @@ DIST=$(NAME)-$(VERSION)
 PY=python3
 BUILD=$(TOOLDIR)/build.py
 
-FONTS=Light Medium Black
+MASTERS=Light Medium Black
+INSTANCES=ExtraLight Regular Semibold Bold
+FONTS=$(MASTERS) $(INSTANCES)
 
-UFO=$(FONTS:%=$(SRCDIR)/$(NAME)-%.ufo)
+MAS=$(MASTERS:%=$(SRCDIR)/$(NAME)-%.ufo)
+INS=$(INSTANCES:%=$(SRCDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
 
 all: otf doc
 
-otf: $(OTF)
+otf: $(INS) $(OTF)
 ttf: $(TTF)
-ufo: $(UFO)
 doc: $(PDF)
+
+$(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-Semibold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
+	@echo "   GEN	instances"
+	@python2 -c "from mutatorMath.ufo import build; build('$<')"
+
+$(SRCDIR)/$(NAME)-%.fea:
+	touch $@
 
 $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   GEN	$@"
 	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
 
-$(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Medium.otf
+$(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Regular.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
