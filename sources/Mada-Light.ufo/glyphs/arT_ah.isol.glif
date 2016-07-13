@@ -4,15 +4,15 @@
   <outline>
     <contour>
       <point x="40.0" y="0.0" type="line"/>
-      <point x="150.0" y="0.0" type="line"/>
-      <point x="150.0" y="32.0" type="line"/>
       <point x="40.0" y="32.0" type="line"/>
+      <point x="150.0" y="32.0" type="line"/>
+      <point x="150.0" y="0.0" type="line"/>
     </contour>
     <contour>
       <point x="144.0" y="624.0" type="line"/>
-      <point x="144.0" y="22.0" type="line"/>
-      <point x="176.0" y="22.0" type="line"/>
       <point x="176.0" y="624.0" type="line"/>
+      <point x="176.0" y="22.0" type="line"/>
+      <point x="144.0" y="22.0" type="line"/>
     </contour>
     <component base="arSad.head" xOffset="353.0"/>
   </outline>
