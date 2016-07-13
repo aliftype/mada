@@ -25,13 +25,13 @@ MADA_UNICODES = "org.mada.subsetUnicodes"
 FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 POSTSCRIPT_NAME = "public.postscriptName"
 
-def findClones(font, name):
+def findClones(ufo, name):
     clones = []
-    for glyph in font:
+    for glyph in ufo:
         if glyph.markColor and tuple(glyph.markColor) == (1, 0, 1, 1):
             assert len(glyph.components) > 0, glyph
-            base = font.layers["Marks"][glyph.components[0].baseGlyph]
-            marks = font.layers["Marks"].newGlyph(glyph.name)
+            base = ufo.layers["Marks"][glyph.components[0].baseGlyph]
+            marks = ufo.layers["Marks"].newGlyph(glyph.name)
             for baseComponent in base.components:
                 component = Component()
                 component.transformation = baseComponent.transformation
@@ -45,16 +45,16 @@ def isMark(glyph):
     glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
     return glyphClass == "mark"
 
-def generateAnchor(font, glyph, marks):
+def generateAnchor(ufo, glyph, marks):
     fea = ""
-    layer = font.layers["Marks"]
+    layer = ufo.layers["Marks"]
     if glyph.name not in layer or not layer[glyph.name].components:
         return fea
 
     bases = [glyph.name]
-    for clone in findClones(font, glyph.name):
+    for clone in findClones(ufo, glyph.name):
         bases.append(clone)
-        bases.extend(findClones(font, clone))
+        bases.extend(findClones(ufo, clone))
     bases = " ".join(bases)
     kind = "base"
     if isMark(glyph):
@@ -70,31 +70,31 @@ def generateAnchor(font, glyph, marks):
 
     return fea
 
-def generateAnchors(font):
-    marks = [g.name for g in font if isMark(g)]
+def generateAnchors(ufo):
+    marks = [g.name for g in ufo if isMark(g)]
 
     fea = ""
     for mark in marks:
         fea += "markClass [%s] <anchor 0 0> @%s;" % (mark, mark.upper())
 
     fea += "feature mark {"
-    for glyph in font:
+    for glyph in ufo:
         if not isMark(glyph):
-            fea += generateAnchor(font, glyph, marks)
+            fea += generateAnchor(ufo, glyph, marks)
     fea += "} mark;"
 
     fea += "feature mkmk {"
-    for glyph in font:
+    for glyph in ufo:
         if isMark(glyph):
-            fea += generateAnchor(font, glyph, marks)
+            fea += generateAnchor(ufo, glyph, marks)
     fea += "} mkmk;"
 
     return fea
 
-def generateGlyphclasses(font):
+def generateGlyphclasses(ufo):
     marks = []
     bases = []
-    for glyph in font:
+    for glyph in ufo:
         glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
         if glyphClass == "mark":
             marks.append(glyph.name)
@@ -112,12 +112,12 @@ def generateGlyphclasses(font):
 
     return fea
 
-def generateArabicFeatures(font, feafilename):
+def generateArabicFeatures(ufo, feafilename):
     fea = ""
     with open(feafilename) as feafile:
         fea += feafile.read()
-        fea += generateAnchors(font)
-        fea += generateGlyphclasses(font)
+        fea += generateAnchors(ufo)
+        fea += generateGlyphclasses(ufo)
 
     return fea
 
