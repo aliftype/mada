@@ -137,7 +137,7 @@ def merge(args):
     for glyph in arabic:
         unicodes.extend(glyph.unicodes)
 
-    fea = "include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
+    fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
     fea += generateArabicFeatures(arabic, args.feature_file)
 
     latin_locl = ""
