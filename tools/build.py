@@ -97,14 +97,14 @@ def generateGlyphclasses(ufo):
         elif glyphClass == "baseglyph":
             bases.append(glyph.name)
 
-    fea = ""
-    fea += "table GDEF {"
-    fea += "GlyphClassDef "
-    fea += "[%s]," % " ".join(bases)
-    fea += ","
-    fea += "[%s]," % " ".join(marks)
-    fea += ";"
-    fea += "} GDEF;"
+    fea = """
+table GDEF {
+  GlyphClassDef
+  [%s],
+  ,
+  [%s],
+;
+} GDEF;""" % (" ".join(bases), " ".join(marks))
 
     return fea
 
