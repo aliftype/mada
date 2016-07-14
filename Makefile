@@ -33,7 +33,7 @@ $(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-Semibold.ufo $(SR
 	@python2 -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
 
 $(SRCDIR)/$(NAME)-%.fea:
-	touch $@
+	@echo "include(Mada.fea)" > $@
 
 $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   GEN	$@"
