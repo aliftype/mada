@@ -15,6 +15,7 @@ from fontTools.misc.transform import Transform
 from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
+from ufo2ft.markFeatureWriter import MarkFeatureWriter
 from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
 from ufo2ft.outlineOTF import OutlineTTFCompiler as TTFCompiler
 from ufo2ft.otfPostProcessor import OTFPostProcessor
@@ -39,51 +40,50 @@ def isMark(glyph):
     glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
     return glyphClass == "mark"
 
-def generateAnchor(ufo, glyph, marks):
-    fea = ""
+def addAnchors(ufo):
     layer = ufo.layers["Marks"]
-    if glyph.name not in layer or not layer[glyph.name].components:
-        return fea
-
-    bases = [glyph.name]
-    for clone in findClones(ufo, glyph.name):
-        bases.append(clone)
-        bases.extend(findClones(ufo, clone))
-    bases = " ".join(bases)
-    kind = "base"
-    if isMark(glyph):
-        kind = "mark"
-    fea += "position %s [%s]" % (kind, bases)
-    for component in layer[glyph.name].components:
-        name = component.baseGlyph
-        x = component.transformation[-2]
-        y = component.transformation[-1]
-        assert name in marks, name
-        fea += " <anchor %d %d> mark @%s" % (x, y, name.upper())
-    fea += ";"
-
-    return fea
-
-def generateAnchors(ufo):
-    marks = [g.name for g in ufo if isMark(g)]
-
-    fea = ""
-    for mark in marks:
-        fea += "markClass [%s] <anchor 0 0> @%s;" % (mark, mark.upper())
-
-    fea += "feature mark {"
-    for glyph in ufo:
-        if not isMark(glyph):
-            fea += generateAnchor(ufo, glyph, marks)
-    fea += "} mark;"
-
-    fea += "feature mkmk {"
     for glyph in ufo:
         if isMark(glyph):
-            fea += generateAnchor(ufo, glyph, marks)
-    fea += "} mkmk;"
+            glyph.appendAnchor(dict(name="_" + glyph.name, x=0, y=0))
+        if glyph.name not in layer:
+            continue
+        components = layer[glyph.name].components
+        if not components:
+            continue
 
-    return fea
+        bases = [glyph.name]
+        clones = findClones(ufo, glyph.name)
+        for clone in clones:
+            bases.append(clone)
+            bases.extend(findClones(ufo, clone))
+
+        anchors = []
+        for component in components:
+            name = component.baseGlyph
+            x = component.transformation[-2]
+            y = component.transformation[-1]
+            assert isMark(ufo[name]), name
+            anchors.append((x, y, name))
+
+        for base in bases:
+            glyph = ufo[base]
+            for x, y, name in anchors:
+                glyph.appendAnchor(dict(name=name, x=x, y=y))
+
+def generateAnchors(ufo):
+    anchorPairs = []
+    anchorNames = set()
+    for glyph in ufo:
+        for anchor in glyph.anchors:
+            anchorNames.add(anchor.name)
+
+    for baseName in sorted(anchorNames):
+        accentName = "_" + baseName
+        if accentName in anchorNames:
+            anchorPairs.append((baseName, accentName))
+
+    writer = MarkFeatureWriter(ufo, anchorPairs, anchorPairs)
+    return writer.write()
 
 def generateGlyphclasses(ufo):
     marks = []
@@ -126,6 +126,7 @@ def parseSubset(filename):
 def merge(args):
     arabic = Font(args.arabicfile)
 
+    addAnchors(arabic)
 
     latin = Font(args.latinfile)
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
@@ -135,6 +136,9 @@ def merge(args):
     unicodes = parseSubset(args.latin_subset)
     for glyph in arabic:
         unicodes.extend(glyph.unicodes)
+
+    fea = "include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
+    fea += generateArabicFeatures(arabic, args.feature_file)
 
     latin_locl = ""
     for glyph in latin:
@@ -158,8 +162,6 @@ def merge(args):
         if value is not None:
             setattr(arabic.info, attr, getattr(latin.info, attr))
 
-    fea = "include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
-    fea += generateArabicFeatures(arabic, args.feature_file)
     if latin_locl:
         latin_locl += "} locl;"
         fea += latin_locl
