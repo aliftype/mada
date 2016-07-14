@@ -15,6 +15,7 @@ from fontTools.misc.transform import Transform
 from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
+from ufo2ft.kernFeatureWriter import KernFeatureWriter
 from ufo2ft.markFeatureWriter import MarkFeatureWriter
 from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
 from ufo2ft.outlineOTF import OutlineTTFCompiler as TTFCompiler
@@ -69,18 +70,21 @@ def addAnchors(ufo):
                 glyph.appendAnchor(dict(name=name, x=x, y=y))
 
 def generateAnchors(ufo):
-    anchorPairs = []
     anchorNames = set()
     for glyph in ufo:
-        for anchor in glyph.anchors:
-            anchorNames.add(anchor.name)
+        anchorNames.update([a.name for a in glyph.anchors if a.name is not None])
 
+    anchorPairs = []
     for baseName in sorted(anchorNames):
         accentName = "_" + baseName
         if accentName in anchorNames:
             anchorPairs.append((baseName, accentName))
 
     writer = MarkFeatureWriter(ufo, anchorPairs, anchorPairs)
+    return writer.write()
+
+def generateKerning(ufo):
+    writer = KernFeatureWriter(ufo)
     return writer.write()
 
 def generateGlyphclasses(ufo):
@@ -108,7 +112,6 @@ def generateArabicFeatures(ufo, feafilename):
     fea = ""
     with open(feafilename) as feafile:
         fea += feafile.read()
-        fea += generateAnchors(ufo)
         fea += generateGlyphclasses(ufo)
 
     return fea
@@ -135,6 +138,7 @@ def merge(args):
         unicodes.extend(glyph.unicodes)
 
     fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
+    fea += "languagesystem latn dflt;"
     fea += generateArabicFeatures(arabic, args.feature_file)
 
     latin_locl = ""
@@ -158,6 +162,9 @@ def merge(args):
         value = getattr(latin.info, attr)
         if value is not None:
             setattr(arabic.info, attr, getattr(latin.info, attr))
+
+    fea += generateKerning(latin)
+    fea += generateAnchors(arabic)
 
     if latin_locl:
         latin_locl += "} locl;"
