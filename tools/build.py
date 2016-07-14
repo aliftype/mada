@@ -203,6 +203,14 @@ def merge(args):
     arabic.info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
     arabic.info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
     arabic.info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
+    arabic.info.openTypeOS2VendorID = "BLQ "
+
+    familyName, styleName = arabic.info.postscriptFontName.split("-")
+    try:
+        arabic.info.styleMapStyleName = styleName.lower()
+        arabic.info.styleMapFamilyName = familyName
+    except:
+        pass
 
     return arabic, fea
 
