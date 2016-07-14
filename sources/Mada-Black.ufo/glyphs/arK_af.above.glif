@@ -23,6 +23,13 @@
       <point x="-28.0" y="212.0"/>
       <point x="-4.0" y="212.0" type="curve" smooth="yes"/>
     </contour>
+    <component base="uni0670" yOffset="310.0" identifier="mark_uni0670"/>
+    <component base="uni0651" yOffset="354.0" identifier="mark_uni0651"/>
+    <component base="uni064E" yOffset="335.0" identifier="mark_uni064E"/>
+    <component base="uni064B" yOffset="355.0" identifier="mark_uni064B"/>
+    <component base="uni064C" yOffset="351.0" identifier="mark_uni064C"/>
+    <component base="uni064F" yOffset="353.0" identifier="mark_uni064F"/>
+    <component base="uni0652" yOffset="358.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

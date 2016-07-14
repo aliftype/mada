@@ -9,6 +9,26 @@
       <point x="50.0" y="105.0" type="line"/>
     </contour>
     <component base="arKaf.medi" xOffset="137.0"/>
+    <component base="arGaf.above" xOffset="508.0" yOffset="678.0" identifier="mark_arGaf.above"/>
+    <component base="ar3Dot.below" xOffset="260.0" yOffset="-149.0" identifier="mark_ar3Dot.below"/>
+    <component base="ar1Dot.below" xOffset="260.0" yOffset="-149.0" identifier="mark_ar1Dot.below"/>
+    <component base="uni0650" xOffset="260.0" yOffset="-170.0" identifier="mark_uni0650"/>
+    <component base="arTah.above" xOffset="226.0" yOffset="650.0" identifier="mark_arTah.above"/>
+    <component base="ar3Dot.above" xOffset="226.0" yOffset="650.0" identifier="mark_ar3Dot.above"/>
+    <component base="ar1Dot.above" xOffset="226.0" yOffset="650.0" identifier="mark_ar1Dot.above"/>
+    <component base="uni0652" xOffset="226.0" yOffset="686.0" identifier="mark_uni0652"/>
+    <component base="uni064F" xOffset="226.0" yOffset="684.0" identifier="mark_uni064F"/>
+    <component base="uni064C" xOffset="226.0" yOffset="683.0" identifier="mark_uni064C"/>
+    <component base="uni064B" xOffset="226.0" yOffset="688.0" identifier="mark_uni064B"/>
+    <component base="uni064E" xOffset="226.0" yOffset="671.0" identifier="mark_uni064E"/>
+    <component base="uni0651" xOffset="226.0" yOffset="688.0" identifier="mark_uni0651"/>
+    <component base="uni0670" xOffset="226.0" yOffset="650.0" identifier="mark_uni0670"/>
+    <component base="ar2Dot.above" xOffset="226.0" yOffset="650.0" identifier="mark_ar2Dot.above"/>
+    <component base="ar3IDot.above" xOffset="226.0" yOffset="650.0" identifier="mark_ar3IDot.above"/>
+    <component base="uni064D" xOffset="260.0" yOffset="-179.0" identifier="mark_uni064D"/>
+    <component base="uni0656" xOffset="260.0" yOffset="-149.0" identifier="mark_uni0656"/>
+    <component base="ar2Dot.below" xOffset="260.0" yOffset="-149.0" identifier="mark_ar2Dot.below"/>
+    <component base="ar3IDot.below" xOffset="260.0" yOffset="-149.0" identifier="mark_ar3IDot.below"/>
   </outline>
   <lib>
     <dict>

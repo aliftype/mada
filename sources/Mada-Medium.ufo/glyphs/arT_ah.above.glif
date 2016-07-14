@@ -39,6 +39,13 @@
       <point x="-50.0" y="44.0" type="line"/>
       <point x="-103.0" y="44.0" type="line"/>
     </contour>
+    <component base="uni0670" yOffset="370.0" identifier="mark_uni0670"/>
+    <component base="uni0651" yOffset="408.0" identifier="mark_uni0651"/>
+    <component base="uni064E" yOffset="391.0" identifier="mark_uni064E"/>
+    <component base="uni064B" yOffset="408.0" identifier="mark_uni064B"/>
+    <component base="uni064C" yOffset="403.0" identifier="mark_uni064C"/>
+    <component base="uni064F" yOffset="404.0" identifier="mark_uni064F"/>
+    <component base="uni0652" yOffset="406.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

@@ -54,6 +54,29 @@
       <point x="638.0" y="32.0"/>
       <point x="657.0" y="32.0" type="curve" smooth="yes"/>
     </contour>
+    <component base="ar3IDot.below" xOffset="304.0" yOffset="-273.0" identifier="mark_ar3IDot.below"/>
+    <component base="ar2Dot.below" xOffset="304.0" yOffset="-273.0" identifier="mark_ar2Dot.below"/>
+    <component base="uni0650" xOffset="304.0" yOffset="-293.0" identifier="mark_uni0650"/>
+    <component base="uni0656" xOffset="304.0" yOffset="-273.0" identifier="mark_uni0656"/>
+    <component base="ar3IDot.above" xOffset="214.0" yOffset="293.0" identifier="mark_ar3IDot.above"/>
+    <component base="ar2Dot.above" xOffset="214.0" yOffset="293.0" identifier="mark_ar2Dot.above"/>
+    <component base="uni0654" xOffset="214.0" yOffset="293.0" identifier="mark_uni0654"/>
+    <component base="arSad.above" xOffset="214.0" yOffset="293.0" identifier="mark_arSad.above"/>
+    <component base="uni0652" xOffset="214.0" yOffset="330.0" identifier="mark_uni0652"/>
+    <component base="uni064F" xOffset="208.0" yOffset="325.0" identifier="mark_uni064F"/>
+    <component base="uni064C" xOffset="213.0" yOffset="325.0" identifier="mark_uni064C"/>
+    <component base="uni0670" xOffset="214.0" yOffset="293.0" identifier="mark_uni0670"/>
+    <component base="uni064B" xOffset="214.0" yOffset="331.0" identifier="mark_uni064B"/>
+    <component base="uni064E" xOffset="214.0" yOffset="313.0" identifier="mark_uni064E"/>
+    <component base="uni0651" xOffset="214.0" yOffset="331.0" identifier="mark_uni0651"/>
+    <component base="arKaf.above" xOffset="214.0" yOffset="293.0" identifier="mark_arKaf.above"/>
+    <component base="uni0653" xOffset="214.0" yOffset="293.0" identifier="mark_uni0653"/>
+    <component base="ar1Dot.above" xOffset="214.0" yOffset="293.0" identifier="mark_ar1Dot.above"/>
+    <component base="ar3Dot.above" xOffset="214.0" yOffset="293.0" identifier="mark_ar3Dot.above"/>
+    <component base="arTah.above" xOffset="214.0" yOffset="293.0" identifier="mark_arTah.above"/>
+    <component base="uni064D" xOffset="304.0" yOffset="-302.0" identifier="mark_uni064D"/>
+    <component base="ar1Dot.below" xOffset="304.0" yOffset="-273.0" identifier="mark_ar1Dot.below"/>
+    <component base="ar3Dot.below" xOffset="304.0" yOffset="-273.0" identifier="mark_ar3Dot.below"/>
   </outline>
   <lib>
     <dict>

@@ -30,7 +30,7 @@ doc: $(PDF)
 
 $(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-Semibold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
 	@echo "   GEN	instances"
-	@python2 -c "from mutatorMath.ufo import build; build('$<')"
+	@python2 -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
 
 $(SRCDIR)/$(NAME)-%.fea:
 	touch $@

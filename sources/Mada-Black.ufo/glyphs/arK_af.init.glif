@@ -28,6 +28,26 @@
       <point x="583.0" y="0.0"/>
       <point x="462.0" y="0.0" type="curve" smooth="yes"/>
     </contour>
+    <component base="arGaf.above" xOffset="371.0" yOffset="767.0" identifier="mark_arGaf.above"/>
+    <component base="ar3Dot.below" xOffset="249.0" yOffset="-150.0" identifier="mark_ar3Dot.below"/>
+    <component base="ar1Dot.below" xOffset="249.0" yOffset="-150.0" identifier="mark_ar1Dot.below"/>
+    <component base="uni0650" xOffset="249.0" yOffset="-175.0" identifier="mark_uni0650"/>
+    <component base="arTah.above" xOffset="89.0" yOffset="749.0" identifier="mark_arTah.above"/>
+    <component base="ar3Dot.above" xOffset="89.0" yOffset="749.0" identifier="mark_ar3Dot.above"/>
+    <component base="ar1Dot.above" xOffset="89.0" yOffset="749.0" identifier="mark_ar1Dot.above"/>
+    <component base="uni0652" xOffset="279.0" yOffset="817.0" identifier="mark_uni0652"/>
+    <component base="uni064F" xOffset="279.0" yOffset="812.0" identifier="mark_uni064F"/>
+    <component base="uni064C" xOffset="279.0" yOffset="810.0" identifier="mark_uni064C"/>
+    <component base="uni064B" xOffset="279.0" yOffset="814.0" identifier="mark_uni064B"/>
+    <component base="uni064E" xOffset="279.0" yOffset="794.0" identifier="mark_uni064E"/>
+    <component base="uni0651" xOffset="279.0" yOffset="813.0" identifier="mark_uni0651"/>
+    <component base="uni0670" xOffset="279.0" yOffset="769.0" identifier="mark_uni0670"/>
+    <component base="ar2Dot.above" xOffset="89.0" yOffset="749.0" identifier="mark_ar2Dot.above"/>
+    <component base="ar3IDot.above" xOffset="89.0" yOffset="749.0" identifier="mark_ar3IDot.above"/>
+    <component base="uni064D" xOffset="249.0" yOffset="-185.0" identifier="mark_uni064D"/>
+    <component base="uni0656" xOffset="249.0" yOffset="-150.0" identifier="mark_uni0656"/>
+    <component base="ar2Dot.below" xOffset="249.0" yOffset="-150.0" identifier="mark_ar2Dot.below"/>
+    <component base="ar3IDot.below" xOffset="249.0" yOffset="-150.0" identifier="mark_ar3IDot.below"/>
   </outline>
   <lib>
     <dict>

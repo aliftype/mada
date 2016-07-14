@@ -3,6 +3,13 @@
   <outline>
     <component base="ar2Dot.above"/>
     <component base="ar1Dot.above" yOffset="125.0"/>
+    <component base="uni0670" yOffset="235.0" identifier="mark_uni0670"/>
+    <component base="uni0651" yOffset="273.0" identifier="mark_uni0651"/>
+    <component base="uni064E" yOffset="256.0" identifier="mark_uni064E"/>
+    <component base="uni064B" yOffset="273.0" identifier="mark_uni064B"/>
+    <component base="uni064C" yOffset="268.0" identifier="mark_uni064C"/>
+    <component base="uni064F" yOffset="269.0" identifier="mark_uni064F"/>
+    <component base="uni0652" yOffset="271.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

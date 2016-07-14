@@ -42,6 +42,25 @@
       <point x="156.0" y="0.0"/>
       <point x="99.0" y="0.0" type="curve" smooth="yes"/>
     </contour>
+    <component base="arTah.above" xOffset="252.0" yOffset="449.0" identifier="mark_arTah.above"/>
+    <component base="ar3Dot.above" xOffset="252.0" yOffset="449.0" identifier="mark_ar3Dot.above"/>
+    <component base="ar1Dot.above" xOffset="252.0" yOffset="449.0" identifier="mark_ar1Dot.above"/>
+    <component base="uni0652" xOffset="252.0" yOffset="485.0" identifier="mark_uni0652"/>
+    <component base="uni064F" xOffset="252.0" yOffset="483.0" identifier="mark_uni064F"/>
+    <component base="uni064C" xOffset="252.0" yOffset="482.0" identifier="mark_uni064C"/>
+    <component base="ar3IDot.below" xOffset="174.0" yOffset="-109.0" identifier="mark_ar3IDot.below"/>
+    <component base="ar2Dot.below" xOffset="174.0" yOffset="-109.0" identifier="mark_ar2Dot.below"/>
+    <component base="uni0656" xOffset="174.0" yOffset="-109.0" identifier="mark_uni0656"/>
+    <component base="uni064D" xOffset="174.0" yOffset="-139.0" identifier="mark_uni064D"/>
+    <component base="uni0650" xOffset="174.0" yOffset="-130.0" identifier="mark_uni0650"/>
+    <component base="ar1Dot.below" xOffset="174.0" yOffset="-109.0" identifier="mark_ar1Dot.below"/>
+    <component base="ar3Dot.below" xOffset="174.0" yOffset="-109.0" identifier="mark_ar3Dot.below"/>
+    <component base="uni064B" xOffset="252.0" yOffset="487.0" identifier="mark_uni064B"/>
+    <component base="uni064E" xOffset="252.0" yOffset="470.0" identifier="mark_uni064E"/>
+    <component base="uni0651" xOffset="252.0" yOffset="487.0" identifier="mark_uni0651"/>
+    <component base="uni0670" xOffset="252.0" yOffset="449.0" identifier="mark_uni0670"/>
+    <component base="ar2Dot.above" xOffset="252.0" yOffset="449.0" identifier="mark_ar2Dot.above"/>
+    <component base="ar3IDot.above" xOffset="252.0" yOffset="449.0" identifier="mark_ar3IDot.above"/>
   </outline>
   <lib>
     <dict>

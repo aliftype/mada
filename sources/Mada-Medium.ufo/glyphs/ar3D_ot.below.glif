@@ -2,6 +2,9 @@
 <glyph name="ar3Dot.below" format="2">
   <outline>
     <component base="ar3Dot.above" yOffset="-125.0"/>
+    <component base="uni0656" yOffset="-225.0" identifier="mark_uni0656"/>
+    <component base="uni064D" yOffset="-255.0" identifier="mark_uni064D"/>
+    <component base="uni0650" yOffset="-246.0" identifier="mark_uni0650"/>
   </outline>
   <lib>
     <dict>

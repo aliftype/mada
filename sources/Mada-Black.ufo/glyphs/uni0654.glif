@@ -3,6 +3,13 @@
   <unicode hex="0654"/>
   <outline>
     <component base="arKaf.above"/>
+    <component base="uni0670" yOffset="260.0" identifier="mark_uni0670"/>
+    <component base="uni0651" yOffset="304.0" identifier="mark_uni0651"/>
+    <component base="uni064E" yOffset="285.0" identifier="mark_uni064E"/>
+    <component base="uni064B" yOffset="305.0" identifier="mark_uni064B"/>
+    <component base="uni064C" yOffset="301.0" identifier="mark_uni064C"/>
+    <component base="uni064F" yOffset="303.0" identifier="mark_uni064F"/>
+    <component base="uni0652" yOffset="308.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

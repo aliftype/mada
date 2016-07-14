@@ -41,14 +41,11 @@ def isMark(glyph):
     return glyphClass == "mark"
 
 def addAnchors(ufo):
-    layer = ufo.layers["Marks"]
     for glyph in ufo:
         if isMark(glyph):
             glyph.appendAnchor(dict(name="_" + glyph.name, x=0, y=0))
-        if glyph.name not in layer:
-            continue
-        components = layer[glyph.name].components
-        if not components:
+        marks = [c for c in glyph.components if (c.identifier and c.identifier.startswith("mark_"))]
+        if not marks:
             continue
 
         bases = [glyph.name]
@@ -58,12 +55,13 @@ def addAnchors(ufo):
             bases.extend(findClones(ufo, clone))
 
         anchors = []
-        for component in components:
-            name = component.baseGlyph
-            x = component.transformation[-2]
-            y = component.transformation[-1]
+        for mark in marks:
+            name = mark.baseGlyph
+            x = mark.transformation[-2]
+            y = mark.transformation[-1]
             assert isMark(ufo[name]), name
             anchors.append((x, y, name))
+            glyph.removeComponent(mark)
 
         for base in bases:
             glyph = ufo[base]
@@ -126,12 +124,11 @@ def parseSubset(filename):
 def merge(args):
     arabic = Font(args.arabicfile)
 
+    buildEncoded(arabic)
     addAnchors(arabic)
 
     latin = Font(args.latinfile)
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
-
-    buildEncoded(arabic)
 
     unicodes = parseSubset(args.latin_subset)
     for glyph in arabic:

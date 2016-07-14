@@ -66,6 +66,12 @@
       <point x="32.0" y="56.0" type="curve"/>
       <point x="74.0" y="71.0" type="line"/>
     </contour>
+    <component base="uni0670" yOffset="210.0" identifier="mark_uni0670"/>
+    <component base="uni064E" yOffset="231.0" identifier="mark_uni064E"/>
+    <component base="uni064B" yOffset="198.0" identifier="mark_uni064B"/>
+    <component base="uni064C" yOffset="228.0" identifier="mark_uni064C"/>
+    <component base="uni064F" xOffset="-10.0" yOffset="208.0" identifier="mark_uni064F"/>
+    <component base="uni0652" xOffset="-10.0" yOffset="226.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

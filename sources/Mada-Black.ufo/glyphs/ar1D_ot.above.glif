@@ -15,6 +15,13 @@
       <point x="-47.0" y="-86.0"/>
       <point x="-86.0" y="-47.0"/>
     </contour>
+    <component base="uni0670" yOffset="170.0" identifier="mark_uni0670"/>
+    <component base="uni0651" yOffset="214.0" identifier="mark_uni0651"/>
+    <component base="uni064E" yOffset="195.0" identifier="mark_uni064E"/>
+    <component base="uni064B" yOffset="215.0" identifier="mark_uni064B"/>
+    <component base="uni064C" yOffset="211.0" identifier="mark_uni064C"/>
+    <component base="uni064F" yOffset="213.0" identifier="mark_uni064F"/>
+    <component base="uni0652" yOffset="218.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

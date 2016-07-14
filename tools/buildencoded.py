@@ -41,18 +41,16 @@ def build(font):
     subs = writer.subs
 
     for name, names in subs.items():
-        base = font.layers["Marks"][names[0]]
+        base = font[names[0]]
         glyph = font.newGlyph(name)
         glyph.unicode = int(name.lstrip('uni'), 16)
         glyph.width = base.width
         glyph.leftMargin = base.leftMargin
         glyph.rightMargin = base.rightMargin
-        component = Component()
-        component.baseGlyph = names[0]
+        component = glyph.instantiateComponent()
+        component.baseGlyph = base.name
         glyph.appendComponent(component)
-        for baseComponent in base.components:
-            if baseComponent.baseGlyph in names[1:]:
-                component = Component()
-                component.transformation = baseComponent.transformation
-                component.baseGlyph = baseComponent.baseGlyph
-                glyph.appendComponent(component)
+        for component in base.components:
+            if component.baseGlyph in names:
+                component.draw(glyph.getPen())
+                glyph.components[-1].identifier = None

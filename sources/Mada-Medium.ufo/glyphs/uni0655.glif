@@ -3,6 +3,9 @@
   <unicode hex="0655"/>
   <outline>
     <component base="arKaf.above" yOffset="-181.0"/>
+    <component base="uni0656" yOffset="-220.0" identifier="mark_uni0656"/>
+    <component base="uni064D" yOffset="-250.0" identifier="mark_uni064D"/>
+    <component base="uni0650" yOffset="-241.0" identifier="mark_uni0650"/>
   </outline>
   <lib>
     <dict>
