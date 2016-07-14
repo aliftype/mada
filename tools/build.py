@@ -30,14 +30,8 @@ def findClones(ufo, name):
     for glyph in ufo:
         if glyph.markColor and tuple(glyph.markColor) == (1, 0, 1, 1):
             assert len(glyph.components) > 0, glyph
-            base = ufo.layers["Marks"][glyph.components[0].baseGlyph]
-            marks = ufo.layers["Marks"].newGlyph(glyph.name)
-            for baseComponent in base.components:
-                component = Component()
-                component.transformation = baseComponent.transformation
-                component.baseGlyph = baseComponent.baseGlyph
-                marks.appendComponent(component)
-            if base.name == name:
+            base = glyph.components[0]
+            if base.baseGlyph == name:
                 clones.append(glyph.name)
     return clones
 
