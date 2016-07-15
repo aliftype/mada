@@ -125,21 +125,21 @@ def parseSubset(filename):
     return unicodes
 
 def merge(args):
-    arabic = Font(args.arabicfile)
+    ufo = Font(args.arabicfile)
 
-    buildEncoded(arabic)
-    addAnchors(arabic)
+    buildEncoded(ufo)
+    addAnchors(ufo)
 
     latin = Font(args.latinfile)
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
 
     unicodes = parseSubset(args.latin_subset)
-    for glyph in arabic:
+    for glyph in ufo:
         unicodes.extend(glyph.unicodes)
 
     fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
     fea += "languagesystem latn dflt;"
-    fea += generateArabicFeatures(arabic, args.feature_file)
+    fea += generateArabicFeatures(ufo, args.feature_file)
 
     latin_locl = ""
     for glyph in latin:
@@ -147,7 +147,7 @@ def merge(args):
             glyph.unicode = goadb.encodings[glyph.name]
         if glyph.name in goadb.names:
             glyph.lib[POSTSCRIPT_NAME] = goadb.names[glyph.name]
-        if glyph.name in arabic:
+        if glyph.name in ufo:
             name = glyph.name
             glyph.unicode = None
             glyph.name = name + ".latn"
@@ -156,70 +156,70 @@ def merge(args):
             if not latin_locl:
                 latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
             latin_locl += "sub %s by %s;" % (name, glyph.name)
-        arabic.insertGlyph(glyph)
+        ufo.insertGlyph(glyph)
 
     for attr in ("xHeight", "capHeight"):
         value = getattr(latin.info, attr)
         if value is not None:
-            setattr(arabic.info, attr, getattr(latin.info, attr))
+            setattr(ufo.info, attr, getattr(latin.info, attr))
 
     fea += generateKerning(latin)
-    fea += generateAnchors(arabic)
+    fea += generateAnchors(ufo)
 
     if latin_locl:
         latin_locl += "} locl;"
         fea += latin_locl
 
-    for ch in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
-        arGlyph = arabic.newGlyph("uni%04X" %ch[0])
-        arGlyph.unicode = ch[0]
-        enGlyph = arabic[ch[1]]
-        colon = arabic["colon"]
+    for code, name in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
+        glyph = ufo.newGlyph("uni%04X" % code)
+        glyph.unicode = code
+        enGlyph = ufo[name]
+        colon = ufo["colon"]
         component = Component()
         component.transformation = tuple(Transform().rotate(math.radians(180)))
         component.baseGlyph = enGlyph.name
-        arGlyph.appendComponent(component)
-        arGlyph.move((0, colon.bounds[1] - arGlyph.bounds[1]))
-        arGlyph.leftMargin = enGlyph.rightMargin
-        arGlyph.rightMargin = enGlyph.leftMargin
-        unicodes.append(arGlyph.unicode)
+        glyph.appendComponent(component)
+        glyph.move((0, colon.bounds[1] - glyph.bounds[1]))
+        glyph.leftMargin = enGlyph.rightMargin
+        glyph.rightMargin = enGlyph.leftMargin
+        unicodes.append(glyph.unicode)
 
-    for ch in [(ord(u'؟'), "question")]:
-        arGlyph = arabic.newGlyph("uni%04X" %ch[0])
-        arGlyph.unicode = ch[0]
-        enGlyph = arabic[ch[1]]
+    for code, name in [(ord(u'؟'), "question")]:
+        glyph = ufo.newGlyph("uni%04X" % code)
+        glyph.unicode = code
+        enGlyph = ufo[name]
         component = Component()
         component.transformation = tuple(Transform().scale(-1, 1))
         component.baseGlyph = enGlyph.name
-        arGlyph.appendComponent(component)
-        arGlyph.leftMargin = enGlyph.rightMargin
-        arGlyph.rightMargin = enGlyph.leftMargin
-        unicodes.append(arGlyph.unicode)
+        glyph.appendComponent(component)
+        glyph.leftMargin = enGlyph.rightMargin
+        glyph.rightMargin = enGlyph.leftMargin
+        unicodes.append(glyph.unicode)
 
-    arabic.lib[MADA_UNICODES] = unicodes
+    ufo.lib[MADA_UNICODES] = unicodes
 
     # Set metadata
-    arabic.info.versionMajor, arabic.info.versionMinor = map(int, args.version.split("."))
+    ufo.info.versionMajor, ufo.info.versionMinor = map(int, args.version.split("."))
 
     copyright = 'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
 
-    arabic.info.copyright = copyright
+    ufo.info.copyright = copyright
 
-    arabic.info.openTypeNameDesigner = "Khaled Hosny"
-    arabic.info.openTypeNameLicenseURL = "http://scripts.sil.org/OFL"
-    arabic.info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
-    arabic.info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
-    arabic.info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
-    arabic.info.openTypeOS2VendorID = "BLQ "
+    ufo.info.openTypeNameDesigner = "Khaled Hosny"
+    ufo.info.openTypeNameLicenseURL = "http://scripts.sil.org/OFL"
+    ufo.info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+    ufo.info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
+    ufo.info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
+    ufo.info.openTypeOS2VendorID = "BLQ "
 
-    familyName, styleName = arabic.info.postscriptFontName.split("-")
+    familyName, styleName = ufo.info.postscriptFontName.split("-")
     try:
-        arabic.info.styleMapStyleName = styleName.lower()
-        arabic.info.styleMapFamilyName = familyName
+        ufo.info.styleMapStyleName = styleName.lower()
+        ufo.info.styleMapFamilyName = familyName
     except:
         pass
 
-    return arabic, fea
+    return ufo, fea
 
 def applyFeatures(otf, fea, feafilename):
     try:
