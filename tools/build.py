@@ -87,6 +87,19 @@ def generateKerning(ufo):
     writer = KernFeatureWriter(ufo)
     return writer.write()
 
+def generateStyleSets(ufo):
+    tatweel = ufo["uni0640"]
+    yeh = ufo["arYeh.isol"][0]
+    delta = tatweel.bounds[-1] - yeh.bounds[-1]
+
+    fea = """
+feature ss01 {
+    pos arYeh.fina <0 %s 0 0>;
+} ss01;
+""" % int(delta)
+
+    return fea
+
 def generateGlyphclasses(ufo):
     marks = []
     bases = []
@@ -165,6 +178,7 @@ def merge(args):
 
     fea += generateKerning(latin)
     fea += generateAnchors(ufo)
+    fea += generateStyleSets(ufo)
 
     if latin_locl:
         latin_locl += "} locl;"

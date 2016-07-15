@@ -1,5 +1,0 @@
-include(Mada.fea)
-
-feature ss01 {
-    pos arYeh.fina <0 -60 0 0>;
-} ss01;
