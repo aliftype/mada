@@ -10,36 +10,18 @@ from cu2qu.ufo import font_to_quadratic
 from datetime import datetime
 from defcon import Font, Component
 from fontTools import subset
-from fontTools.feaLib import builder as feabuilder
 from fontTools.misc.transform import Transform
 from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
+from ufo2ft import compileOTF, compileTTF
 from ufo2ft.kernFeatureWriter import KernFeatureWriter
-from ufo2ft.markFeatureWriter import MarkFeatureWriter
-from ufo2ft.outlineOTF import OutlineOTFCompiler as OTFCompiler
-from ufo2ft.outlineOTF import OutlineTTFCompiler as TTFCompiler
-from ufo2ft.otfPostProcessor import OTFPostProcessor
 
 from buildencoded import build as buildEncoded
 
 MADA_UNICODES = "org.mada.subsetUnicodes"
 FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 POSTSCRIPT_NAME = "public.postscriptName"
-
-def generateAnchors(ufo):
-    anchorNames = set()
-    for glyph in ufo:
-        anchorNames.update([a.name for a in glyph.anchors if a.name is not None])
-
-    anchorPairs = []
-    for baseName in sorted(anchorNames):
-        accentName = "_" + baseName
-        if accentName in anchorNames:
-            anchorPairs.append((baseName, accentName))
-
-    writer = MarkFeatureWriter(ufo, anchorPairs, anchorPairs)
-    return writer.write()
 
 def generateKerning(ufo):
     writer = KernFeatureWriter(ufo)
@@ -79,14 +61,6 @@ table GDEF {
 
     return fea
 
-def generateArabicFeatures(ufo, feafilename):
-    fea = ""
-    with open(feafilename) as feafile:
-        fea += feafile.read()
-        fea += generateGlyphclasses(ufo)
-
-    return fea
-
 def parseSubset(filename):
     unicodes = []
     with open(filename) as f:
@@ -107,9 +81,12 @@ def merge(args):
     for glyph in ufo:
         unicodes.extend(glyph.unicodes)
 
-    fea = "" #"include(../%s)\n" % (os.path.dirname(args.latinfile) + "/features")
-    fea += "languagesystem latn dflt;"
-    fea += generateArabicFeatures(ufo, args.feature_file)
+    features = ufo.features
+    with open(args.feature_file) as feafile:
+        fea = feafile.read()
+        features.text += fea.replace("#{languagesystems}", "languagesystem latn dflt;")
+    features.text += generateGlyphclasses(ufo)
+    features.text += generateStyleSets(ufo)
 
     latin_locl = ""
     for glyph in latin:
@@ -123,9 +100,7 @@ def merge(args):
             glyph.name = name + ".latn"
             if glyph.lib.get(POSTSCRIPT_NAME):
                 glyph.lib[POSTSCRIPT_NAME] = glyph.lib.get(POSTSCRIPT_NAME) + ".latn"
-            if not latin_locl:
-                latin_locl = "feature locl {lookupflag IgnoreMarks; script latn;"
-            latin_locl += "sub %s by %s;" % (name, glyph.name)
+            latin_locl.append("sub %s by %s;" % (name, glyph.name))
         ufo.insertGlyph(glyph)
 
     for attr in ("xHeight", "capHeight"):
@@ -133,13 +108,15 @@ def merge(args):
         if value is not None:
             setattr(ufo.info, attr, getattr(latin.info, attr))
 
-    fea += generateKerning(latin)
-    fea += generateAnchors(ufo)
-    fea += generateStyleSets(ufo)
+    features.text += generateKerning(latin)
 
     if latin_locl:
-        latin_locl += "} locl;"
-        fea += latin_locl
+        features.text += """
+feature locl {
+  lookupflag IgnoreMarks;
+  script latn;
+    %s
+""" % "\n    ".join(latin_locl)
 
     for code, name in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
         glyph = ufo.newGlyph("uni%04X" % code)
@@ -190,22 +167,7 @@ def merge(args):
     except:
         pass
 
-    return ufo, fea
-
-def applyFeatures(otf, fea, feafilename):
-    try:
-        feabuilder.addOpenTypeFeaturesFromString(otf, fea, feafilename)
-    except:
-        with NamedTemporaryFile(delete=False) as feafile:
-            feafile.write(fea.encode("utf-8"))
-            print("Failed to apply features, saved to %s" % feafile.name)
-        raise
-    return otf
-
-def postProcess(otf, ufo):
-    postProcessor = OTFPostProcessor(otf, ufo)
-    otf = postProcessor.process(optimizeCff=True)
-    return otf
+    return ufo
 
 def subsetGlyphs(otf, ufo):
     options = subset.Options()
@@ -224,18 +186,15 @@ def removeOverlap(ufo):
     return ufo
 
 def build(args):
-    ufo, fea = merge(args)
+    ufo = merge(args)
     ufo = removeOverlap(ufo)
 
     if args.out_file.endswith(".ttf"):
         font_to_quadratic(ufo)
-        otfCompiler = TTFCompiler(ufo)
+        otf = compileTTF(ufo)
     else:
-        otfCompiler = OTFCompiler(ufo)
-    otf = otfCompiler.compile()
+        otf = compileOTF(ufo)
 
-    otf = applyFeatures(otf, fea, args.feature_file)
-    otf = postProcess(otf, ufo)
     otf = subsetGlyphs(otf, ufo)
 
     return otf
