@@ -32,12 +32,9 @@ $(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-Semibold.ufo $(SR
 	@echo "   GEN	instances"
 	@python2 -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
 
-$(SRCDIR)/$(NAME)-%.fea:
-	@echo "include(Mada.fea)" > $@
-
-$(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME)-%.fea $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
+$(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   GEN	$@"
-	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$${FILES[2]} --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
+	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(NAME).fea --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
 
 $(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Regular.otf
 	@echo "   GEN	$@"
