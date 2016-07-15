@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arMeem.medi" format="2">
   <advance width="555"/>
+  <anchor x="309.0" y="-150.0" name="dotBelow"/>
+  <anchor x="309.0" y="-185.0" name="markBelow"/>
+  <anchor x="307.0" y="608.0" name="dotAbove"/>
+  <anchor x="307.0" y="652.0" name="markAbove"/>
   <outline>
     <component base="arMeem.init"/>
   </outline>

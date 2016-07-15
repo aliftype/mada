@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni0654" format="2">
   <unicode hex="0654"/>
+  <anchor x="0" y="0" name="_uni0654"/>
+  <anchor x="0" y="237.0" name="markAbove"/>
   <outline>
     <component base="arKaf.above"/>
-    <component base="uni0652" yOffset="237.0" identifier="mark_uni0652"/>
-    <component base="uni064F" xOffset="-6.0" yOffset="232.0" identifier="mark_uni064F"/>
-    <component base="uni064C" xOffset="-1.0" yOffset="232.0" identifier="mark_uni064C"/>
-    <component base="uni0670" yOffset="200.0" identifier="mark_uni0670"/>
-    <component base="uni064B" yOffset="238.0" identifier="mark_uni064B"/>
-    <component base="uni064E" yOffset="220.0" identifier="mark_uni064E"/>
-    <component base="uni0651" yOffset="238.0" identifier="mark_uni0651"/>
   </outline>
   <lib>
     <dict>

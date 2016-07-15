@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arNoon.fina" format="2">
   <advance width="620"/>
+  <anchor x="354.0" y="-297.0" name="dotBelow"/>
+  <anchor x="354.0" y="-327.0" name="markBelow"/>
+  <anchor x="293.0" y="302.0" name="dotAbove"/>
+  <anchor x="293.0" y="340.0" name="markAbove"/>
   <outline>
     <contour>
       <point x="640.0" y="105.0" type="line"/>

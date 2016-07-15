@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arHeh.init2" format="2">
   <advance width="498"/>
+  <anchor x="184.0" y="562.0" name="dotAbove"/>
+  <anchor x="184.0" y="610.0" name="markAbove"/>
   <outline>
     <contour>
       <point x="206.0" y="310.0" type="line"/>
@@ -35,18 +37,6 @@
       <point x="237.0" y="-174.0"/>
       <point x="278.0" y="-177.0"/>
     </contour>
-    <component base="arTah.above" xOffset="184.0" yOffset="562.0" identifier="mark_arTah.above"/>
-    <component base="ar3Dot.above" xOffset="184.0" yOffset="562.0" identifier="mark_ar3Dot.above"/>
-    <component base="ar1Dot.above" xOffset="184.0" yOffset="562.0" identifier="mark_ar1Dot.above"/>
-    <component base="uni0652" xOffset="184.0" yOffset="610.0" identifier="mark_uni0652"/>
-    <component base="uni064F" xOffset="184.0" yOffset="605.0" identifier="mark_uni064F"/>
-    <component base="uni064C" xOffset="184.0" yOffset="603.0" identifier="mark_uni064C"/>
-    <component base="uni064B" xOffset="184.0" yOffset="607.0" identifier="mark_uni064B"/>
-    <component base="uni064E" xOffset="184.0" yOffset="587.0" identifier="mark_uni064E"/>
-    <component base="uni0651" xOffset="184.0" yOffset="606.0" identifier="mark_uni0651"/>
-    <component base="uni0670" xOffset="184.0" yOffset="562.0" identifier="mark_uni0670"/>
-    <component base="ar2Dot.above" xOffset="184.0" yOffset="562.0" identifier="mark_ar2Dot.above"/>
-    <component base="ar3IDot.above" xOffset="184.0" yOffset="562.0" identifier="mark_ar3IDot.above"/>
   </outline>
   <lib>
     <dict>

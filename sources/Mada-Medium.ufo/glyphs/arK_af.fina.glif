@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arKaf.fina" format="2">
   <advance width="565"/>
+  <anchor x="515.0" y="673.0" name="dotAbove"/>
+  <anchor x="515.0" y="709.0" name="markAbove"/>
+  <anchor x="314.0" y="-109.0" name="dotBelow"/>
+  <anchor x="314.0" y="-139.0" name="markBelow"/>
+  <anchor x="265.0" y="271.0" name="uni0653"/>
+  <anchor x="265.0" y="271.0" name="arKaf.above"/>
+  <anchor x="265.0" y="271.0" name="arSad.above"/>
+  <anchor x="265.0" y="271.0" name="uni0654"/>
   <outline>
     <component base="arKaf.isol"/>
   </outline>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arGaf.fina" format="2">
   <advance width="470"/>
+  <anchor x="313.0" y="-149.0" name="dotBelow"/>
+  <anchor x="313.0" y="-169.0" name="markBelow"/>
+  <anchor x="273.0" y="657.0" name="markAbove"/>
+  <anchor x="133.0" y="619.0" name="dotAbove"/>
+  <anchor x="321.0" y="597.0" name="arGaf.above"/>
   <outline>
     <component base="arGaf.isol"/>
   </outline>

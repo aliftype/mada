@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ar1Dot.above" format="2">
+  <anchor x="0" y="0" name="_dotAbove"/>
+  <anchor x="0" y="148.0" name="markAbove"/>
   <outline>
     <contour>
       <point x="-52.0" y="0.0" type="curve" smooth="yes"/>
@@ -15,13 +17,6 @@
       <point x="-29.0" y="-52.0"/>
       <point x="-52.0" y="-29.0"/>
     </contour>
-    <component base="uni0670" yOffset="110.0" identifier="mark_uni0670"/>
-    <component base="uni0651" yOffset="148.0" identifier="mark_uni0651"/>
-    <component base="uni064E" yOffset="131.0" identifier="mark_uni064E"/>
-    <component base="uni064B" yOffset="148.0" identifier="mark_uni064B"/>
-    <component base="uni064C" yOffset="143.0" identifier="mark_uni064C"/>
-    <component base="uni064F" yOffset="144.0" identifier="mark_uni064F"/>
-    <component base="uni0652" yOffset="146.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

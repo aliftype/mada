@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni064E" format="2">
   <unicode hex="064E"/>
+  <anchor x="0" y="0" name="_markAbove"/>
   <outline>
     <contour>
       <point x="-115.0" y="-1.0" type="curve" smooth="yes"/>

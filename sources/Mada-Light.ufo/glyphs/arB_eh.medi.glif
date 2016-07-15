@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arBeh.medi" format="2">
   <advance width="358"/>
+  <anchor x="199.0" y="490.0" name="dotAbove"/>
+  <anchor x="199.0" y="528.0" name="markAbove"/>
+  <anchor x="199.0" y="490.0" name="uni0654"/>
+  <anchor x="199.0" y="490.0" name="arSad.above"/>
+  <anchor x="199.0" y="-150.0" name="dotBelow"/>
+  <anchor x="199.0" y="-170.0" name="markBelow"/>
+  <anchor x="199.0" y="490.0" name="arKaf.above"/>
+  <anchor x="199.0" y="490.0" name="uni0653"/>
   <outline>
     <component base="arBeh.init"/>
   </outline>

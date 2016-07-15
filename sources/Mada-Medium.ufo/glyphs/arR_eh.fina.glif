@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arReh.fina" format="2">
   <advance width="396"/>
+  <anchor x="236.0" y="351.0" name="dotAbove"/>
+  <anchor x="236.0" y="387.0" name="markAbove"/>
+  <anchor x="138.0" y="-330.0" name="dotBelow"/>
+  <anchor x="138.0" y="-360.0" name="markBelow"/>
   <outline>
     <contour>
       <point x="416.0" y="105.0" type="line"/>

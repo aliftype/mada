@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arBeh.fina" format="2">
   <advance width="717"/>
+  <anchor x="402.0" y="-109.0" name="dotBelow"/>
+  <anchor x="402.0" y="-139.0" name="markBelow"/>
+  <anchor x="382.0" y="394.0" name="dotAbove"/>
+  <anchor x="382.0" y="432.0" name="markAbove"/>
   <outline>
     <component base="arBeh.isol"/>
   </outline>

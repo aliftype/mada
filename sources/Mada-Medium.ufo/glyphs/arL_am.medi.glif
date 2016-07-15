@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arLam.medi" format="2">
   <advance width="242"/>
+  <anchor x="190.0" y="724.0" name="dotAbove"/>
+  <anchor x="190.0" y="760.0" name="markAbove"/>
+  <anchor x="160.0" y="-99.0" name="dotBelow"/>
+  <anchor x="160.0" y="-129.0" name="markBelow"/>
   <outline>
     <component base="arLam.init"/>
   </outline>

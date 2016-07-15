@@ -27,48 +27,6 @@ MADA_UNICODES = "org.mada.subsetUnicodes"
 FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 POSTSCRIPT_NAME = "public.postscriptName"
 
-def findClones(ufo, name):
-    clones = []
-    for glyph in ufo:
-        if glyph.markColor and tuple(glyph.markColor) == (1, 0, 1, 1):
-            assert len(glyph.components) > 0, glyph
-            base = glyph.components[0]
-            if base.baseGlyph == name:
-                clones.append(glyph.name)
-    return clones
-
-def isMark(glyph):
-    glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
-    return glyphClass == "mark"
-
-def addAnchors(ufo):
-    for glyph in ufo:
-        if isMark(glyph):
-            glyph.appendAnchor(dict(name="_" + glyph.name, x=0, y=0))
-        marks = [c for c in glyph.components if (c.identifier and c.identifier.startswith("mark_"))]
-        if not marks:
-            continue
-
-        bases = [glyph.name]
-        clones = findClones(ufo, glyph.name)
-        for clone in clones:
-            bases.append(clone)
-            bases.extend(findClones(ufo, clone))
-
-        anchors = []
-        for mark in marks:
-            name = mark.baseGlyph
-            x = mark.transformation[-2]
-            y = mark.transformation[-1]
-            assert isMark(ufo[name]), name
-            anchors.append((x, y, name))
-            glyph.removeComponent(mark)
-
-        for base in bases:
-            glyph = ufo[base]
-            for x, y, name in anchors:
-                glyph.appendAnchor(dict(name=name, x=x, y=y))
-
 def generateAnchors(ufo):
     anchorNames = set()
     for glyph in ufo:
@@ -141,7 +99,6 @@ def merge(args):
     ufo = Font(args.arabicfile)
 
     buildEncoded(ufo)
-    addAnchors(ufo)
 
     latin = Font(args.latinfile)
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")

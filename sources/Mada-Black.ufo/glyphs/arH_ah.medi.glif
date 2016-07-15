@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arHah.medi" format="2">
   <advance width="626"/>
+  <anchor x="293.0" y="-161.0" name="dotBelow"/>
+  <anchor x="293.0" y="-196.0" name="markBelow"/>
+  <anchor x="268.0" y="626.0" name="dotAbove"/>
+  <anchor x="268.0" y="670.0" name="markAbove"/>
   <outline>
     <component base="arHah.init"/>
   </outline>

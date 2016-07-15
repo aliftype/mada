@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arHeh.fina" format="2">
   <advance width="320"/>
+  <anchor x="220.0" y="504.0" name="dotAbove"/>
+  <anchor x="220.0" y="542.0" name="markAbove"/>
+  <anchor x="220.0" y="449.0" name="uni0654"/>
+  <anchor x="220.0" y="449.0" name="arSad.above"/>
+  <anchor x="204.0" y="-110.0" name="dotBelow"/>
+  <anchor x="204.0" y="-130.0" name="markBelow"/>
+  <anchor x="220.0" y="449.0" name="arKaf.above"/>
+  <anchor x="220.0" y="449.0" name="uni0653"/>
   <outline>
     <component base="arHeh.isol"/>
   </outline>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arAlef.isol" format="2">
   <advance width="192"/>
+  <anchor x="96.0" y="664.0" name="uni0654"/>
+  <anchor x="96.0" y="664.0" name="arSad.above"/>
+  <anchor x="96.0" y="664.0" name="dotAbove"/>
+  <anchor x="96.0" y="702.0" name="markAbove"/>
+  <anchor x="96.0" y="-29.0" name="uni0655"/>
+  <anchor x="96.0" y="-29.0" name="dotBelow"/>
+  <anchor x="96.0" y="-58.0" name="markBelow"/>
+  <anchor x="96.0" y="664.0" name="arKaf.above"/>
+  <anchor x="96.0" y="664.0" name="uni0653"/>
   <outline>
     <contour>
       <point x="80.0" y="624.0" type="line"/>
@@ -10,30 +19,6 @@
       <point x="101.0" y="1.0"/>
       <point x="80.0" y="1.0" type="curve"/>
     </contour>
-    <component base="uni0654" xOffset="96.0" yOffset="664.0" identifier="mark_uni0654"/>
-    <component base="arSad.above" xOffset="96.0" yOffset="664.0" identifier="mark_arSad.above"/>
-    <component base="arTah.above" xOffset="96.0" yOffset="664.0" identifier="mark_arTah.above"/>
-    <component base="ar3Dot.above" xOffset="96.0" yOffset="664.0" identifier="mark_ar3Dot.above"/>
-    <component base="ar1Dot.above" xOffset="96.0" yOffset="664.0" identifier="mark_ar1Dot.above"/>
-    <component base="uni0651" xOffset="96.0" yOffset="702.0" identifier="mark_uni0651"/>
-    <component base="uni064E" xOffset="96.0" yOffset="684.0" identifier="mark_uni064E"/>
-    <component base="uni064B" xOffset="96.0" yOffset="702.0" identifier="mark_uni064B"/>
-    <component base="uni0655" xOffset="96.0" yOffset="-29.0" identifier="mark_uni0655"/>
-    <component base="ar3Dot.below" xOffset="96.0" yOffset="-29.0" identifier="mark_ar3Dot.below"/>
-    <component base="ar1Dot.below" xOffset="96.0" yOffset="-29.0" identifier="mark_ar1Dot.below"/>
-    <component base="uni064D" xOffset="96.0" yOffset="-58.0" identifier="mark_uni064D"/>
-    <component base="uni0656" xOffset="96.0" yOffset="-29.0" identifier="mark_uni0656"/>
-    <component base="uni0650" xOffset="96.0" yOffset="-49.0" identifier="mark_uni0650"/>
-    <component base="ar2Dot.below" xOffset="96.0" yOffset="-29.0" identifier="mark_ar2Dot.below"/>
-    <component base="ar3IDot.below" xOffset="96.0" yOffset="-29.0" identifier="mark_ar3IDot.below"/>
-    <component base="uni0670" xOffset="96.0" yOffset="664.0" identifier="mark_uni0670"/>
-    <component base="uni064C" xOffset="95.0" yOffset="696.0" identifier="mark_uni064C"/>
-    <component base="uni064F" xOffset="90.0" yOffset="696.0" identifier="mark_uni064F"/>
-    <component base="uni0652" xOffset="96.0" yOffset="701.0" identifier="mark_uni0652"/>
-    <component base="ar2Dot.above" xOffset="96.0" yOffset="664.0" identifier="mark_ar2Dot.above"/>
-    <component base="ar3IDot.above" xOffset="96.0" yOffset="664.0" identifier="mark_ar3IDot.above"/>
-    <component base="arKaf.above" xOffset="96.0" yOffset="664.0" identifier="mark_arKaf.above"/>
-    <component base="uni0653" xOffset="96.0" yOffset="664.0" identifier="mark_uni0653"/>
   </outline>
   <lib>
     <dict>

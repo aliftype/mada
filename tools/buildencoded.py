@@ -27,6 +27,12 @@ class FeatureWriter(AbstractFeatureWriter):
         if self.name == "isol":
             self.subs[target] = replacement
 
+def addComponent(glyph, name, xoff=0, yoff=0):
+    component = glyph.instantiateComponent()
+    component.baseGlyph = name
+    component.move((xoff, yoff))
+    glyph.appendComponent(component)
+
 def build(font):
     path = os.path.splitext(font.path)
     path = path[0].split("-")
@@ -41,16 +47,22 @@ def build(font):
     subs = writer.subs
 
     for name, names in subs.items():
-        base = font[names[0]]
+        baseGlyph = font[names[0]]
         glyph = font.newGlyph(name)
         glyph.unicode = int(name.lstrip('uni'), 16)
-        glyph.width = base.width
-        glyph.leftMargin = base.leftMargin
-        glyph.rightMargin = base.rightMargin
-        component = glyph.instantiateComponent()
-        component.baseGlyph = base.name
-        glyph.appendComponent(component)
-        for component in base.components:
-            if component.baseGlyph in names:
-                component.draw(glyph.getPen())
-                glyph.components[-1].identifier = None
+        glyph.width = baseGlyph.width
+        glyph.leftMargin = baseGlyph.leftMargin
+        glyph.rightMargin = baseGlyph.rightMargin
+        addComponent(glyph, baseGlyph.name)
+        for partName in names[1:]:
+            partGlyph = font[partName]
+            partAnchors = [a.name.replace("_", "", 1) for a in partGlyph.anchors if a.name.startswith("_")]
+            baseAnchors = [a.name for a in baseGlyph.anchors if not a.name.startswith("_")]
+            anchorName = set(baseAnchors).intersection(partAnchors)
+            assert len(anchorName) == 1
+            anchorName = list(anchorName)[0]
+            partAnchor = [a for a in partGlyph.anchors if a.name == "_" + anchorName][0]
+            baseAnchor = [a for a in baseGlyph.anchors if a.name == anchorName][0]
+            xoff = baseAnchor.x - partAnchor.x
+            yoff = baseAnchor.y - partAnchor.y
+            addComponent(glyph, partName, xoff, yoff)

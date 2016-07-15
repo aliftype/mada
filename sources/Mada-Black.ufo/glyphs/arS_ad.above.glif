@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arSad.above" format="2">
+  <anchor x="0" y="0" name="_arSad.above"/>
+  <anchor x="0" y="284.0" name="markAbove"/>
   <outline>
     <contour>
       <point x="-74.0" y="-0.0" type="line"/>
@@ -33,13 +35,6 @@
       <point x="6.0" y="87.0"/>
       <point x="-31.0" y="31.0" type="curve"/>
     </contour>
-    <component base="uni0670" yOffset="240.0" identifier="mark_uni0670"/>
-    <component base="uni0651" yOffset="284.0" identifier="mark_uni0651"/>
-    <component base="uni064E" yOffset="265.0" identifier="mark_uni064E"/>
-    <component base="uni064B" yOffset="285.0" identifier="mark_uni064B"/>
-    <component base="uni064C" yOffset="281.0" identifier="mark_uni064C"/>
-    <component base="uni064F" yOffset="283.0" identifier="mark_uni064F"/>
-    <component base="uni0652" yOffset="288.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

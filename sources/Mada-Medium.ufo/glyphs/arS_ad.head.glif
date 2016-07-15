@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arSad.head" format="2">
+  <anchor x="0" y="507.0" name="dotAbove"/>
+  <anchor x="0" y="543.0" name="markAbove"/>
+  <anchor x="0" y="-200.0" name="dotBelow"/>
+  <anchor x="0" y="-230.0" name="markBelow"/>
   <outline>
     <contour>
       <point x="-245.0" y="94.0" type="line"/>
@@ -27,25 +31,6 @@
       <point x="-22.0" y="237.0"/>
       <point x="-149.0" y="44.0" type="curve"/>
     </contour>
-    <component base="arTah.above" yOffset="507.0" identifier="mark_arTah.above"/>
-    <component base="ar3Dot.above" yOffset="507.0" identifier="mark_ar3Dot.above"/>
-    <component base="ar1Dot.above" yOffset="507.0" identifier="mark_ar1Dot.above"/>
-    <component base="uni0652" yOffset="543.0" identifier="mark_uni0652"/>
-    <component base="uni064F" yOffset="541.0" identifier="mark_uni064F"/>
-    <component base="uni064C" yOffset="540.0" identifier="mark_uni064C"/>
-    <component base="ar3IDot.below" yOffset="-200.0" identifier="mark_ar3IDot.below"/>
-    <component base="ar2Dot.below" yOffset="-200.0" identifier="mark_ar2Dot.below"/>
-    <component base="uni0656" yOffset="-200.0" identifier="mark_uni0656"/>
-    <component base="uni064D" yOffset="-230.0" identifier="mark_uni064D"/>
-    <component base="uni0650" yOffset="-221.0" identifier="mark_uni0650"/>
-    <component base="ar1Dot.below" yOffset="-200.0" identifier="mark_ar1Dot.below"/>
-    <component base="ar3Dot.below" yOffset="-200.0" identifier="mark_ar3Dot.below"/>
-    <component base="uni064B" yOffset="545.0" identifier="mark_uni064B"/>
-    <component base="uni064E" yOffset="528.0" identifier="mark_uni064E"/>
-    <component base="uni0651" yOffset="545.0" identifier="mark_uni0651"/>
-    <component base="uni0670" yOffset="507.0" identifier="mark_uni0670"/>
-    <component base="ar2Dot.above" yOffset="507.0" identifier="mark_ar2Dot.above"/>
-    <component base="ar3IDot.above" yOffset="507.0" identifier="mark_ar3IDot.above"/>
   </outline>
   <lib>
     <dict>

@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ar3IDot.above" format="2">
+  <anchor x="0" y="0" name="_dotAbove"/>
+  <anchor x="0" y="384.0" name="markAbove"/>
   <outline>
     <component base="ar1Dot.above"/>
     <component base="ar2Dot.above" yOffset="170.0"/>
-    <component base="uni0670" yOffset="340.0" identifier="mark_uni0670"/>
-    <component base="uni0651" yOffset="384.0" identifier="mark_uni0651"/>
-    <component base="uni064E" yOffset="365.0" identifier="mark_uni064E"/>
-    <component base="uni064B" yOffset="385.0" identifier="mark_uni064B"/>
-    <component base="uni064C" yOffset="381.0" identifier="mark_uni064C"/>
-    <component base="uni064F" yOffset="383.0" identifier="mark_uni064F"/>
-    <component base="uni0652" yOffset="388.0" identifier="mark_uni0652"/>
   </outline>
   <lib>
     <dict>

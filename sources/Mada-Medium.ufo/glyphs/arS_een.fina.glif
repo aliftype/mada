@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arSeen.fina" format="2">
   <advance width="892"/>
+  <anchor x="643.0" y="512.0" name="dotAbove"/>
+  <anchor x="643.0" y="548.0" name="markAbove"/>
+  <anchor x="274.0" y="-311.0" name="dotBelow"/>
+  <anchor x="274.0" y="-341.0" name="markBelow"/>
   <outline>
     <component base="arSeen.isol"/>
   </outline>

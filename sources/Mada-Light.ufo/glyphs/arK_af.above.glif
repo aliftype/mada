@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arKaf.above" format="2">
+  <anchor x="0" y="0" name="_arKaf.above"/>
+  <anchor x="0" y="287.0" name="markAbove"/>
   <outline>
     <contour>
       <point x="96.0" y="143.0" type="line"/>
@@ -23,13 +25,6 @@
       <point x="-13.0" y="143.0"/>
       <point x="-3.0" y="143.0" type="curve" smooth="yes"/>
     </contour>
-    <component base="uni0652" yOffset="287.0" identifier="mark_uni0652"/>
-    <component base="uni064F" xOffset="-6.0" yOffset="282.0" identifier="mark_uni064F"/>
-    <component base="uni064C" xOffset="-1.0" yOffset="282.0" identifier="mark_uni064C"/>
-    <component base="uni0670" yOffset="250.0" identifier="mark_uni0670"/>
-    <component base="uni064B" yOffset="288.0" identifier="mark_uni064B"/>
-    <component base="uni064E" yOffset="270.0" identifier="mark_uni064E"/>
-    <component base="uni0651" yOffset="288.0" identifier="mark_uni0651"/>
   </outline>
   <lib>
     <dict>

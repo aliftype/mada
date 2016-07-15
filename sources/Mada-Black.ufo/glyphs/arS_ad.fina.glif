@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arSad.fina" format="2">
   <advance width="1106"/>
+  <anchor x="634.0" y="562.0" name="dotAbove"/>
+  <anchor x="634.0" y="610.0" name="markAbove"/>
+  <anchor x="339.0" y="-361.0" name="dotBelow"/>
+  <anchor x="339.0" y="-396.0" name="markBelow"/>
   <outline>
     <component base="arSad.isol"/>
   </outline>
