@@ -15,17 +15,12 @@ from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
 from ufo2ft import compileOTF, compileTTF
-from ufo2ft.kernFeatureWriter import KernFeatureWriter
 
 from buildencoded import build as buildEncoded
 
 MADA_UNICODES = "org.mada.subsetUnicodes"
 FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 POSTSCRIPT_NAME = "public.postscriptName"
-
-def generateKerning(ufo):
-    writer = KernFeatureWriter(ufo)
-    return writer.write()
 
 def generateStyleSets(ufo):
     tatweel = ufo["uni0640"]
@@ -103,12 +98,15 @@ def merge(args):
             latin_locl.append("sub %s by %s;" % (name, glyph.name))
         ufo.insertGlyph(glyph)
 
+    for group in latin.groups:
+        ufo.groups[group] = latin.groups[group]
+    for kern in latin.kerning:
+        ufo.kerning[kern] = latin.kerning[kern]
+
     for attr in ("xHeight", "capHeight"):
         value = getattr(latin.info, attr)
         if value is not None:
             setattr(ufo.info, attr, getattr(latin.info, attr))
-
-    features.text += generateKerning(latin)
 
     if latin_locl:
         features.text += """
