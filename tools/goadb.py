@@ -11,10 +11,10 @@ class GOADBParser(object):
         self._parse()
 
     def _parseUni(self, name):
-        if name.startswith("uni"):
+        if name.startswith("uni") and len(name) == 7:
             encoding = name[3:]
-        elif name.startswith("u"):
-            encoding = name[3:]
+        elif name.startswith("u") and len(name) <= 7:
+            encoding = name[1:]
         else:
             return None
 
