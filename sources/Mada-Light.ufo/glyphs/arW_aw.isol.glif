@@ -45,10 +45,4 @@
       <point x="331.0" y="32.0" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
-    </dict>
-  </lib>
 </glyph>

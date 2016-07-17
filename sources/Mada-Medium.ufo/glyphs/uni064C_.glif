@@ -45,10 +45,4 @@
       <point x="40.0" y="90.0" type="curve" smooth="yes"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>mark</string>
-    </dict>
-  </lib>
 </glyph>

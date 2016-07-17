@@ -13,10 +13,4 @@
   <outline>
     <component base="arLam.init" xScale="-1.0" xOffset="196.0"/>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
-    </dict>
-  </lib>
 </glyph>

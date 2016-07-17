@@ -6,10 +6,4 @@
     <component base="uni064E"/>
     <component base="uni064E" yOffset="105.0"/>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>mark</string>
-    </dict>
-  </lib>
 </glyph>

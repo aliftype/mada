@@ -42,10 +42,4 @@
       <point x="-120.0" y="61.0" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>mark</string>
-    </dict>
-  </lib>
 </glyph>

@@ -57,10 +57,4 @@
       <point x="876.0" y="152.0" type="curve"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
-    </dict>
-  </lib>
 </glyph>

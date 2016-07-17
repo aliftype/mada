@@ -19,7 +19,6 @@ from ufo2ft import compileOTF, compileTTF
 from buildencoded import build as buildEncoded
 
 MADA_UNICODES = "org.mada.subsetUnicodes"
-FONTFORGE_GLYPHCLASS = "org.fontforge.glyphclass"
 POSTSCRIPT_NAME = "public.postscriptName"
 
 def generateStyleSets(ufo):
@@ -32,27 +31,6 @@ feature ss01 {
     pos arYeh.fina <0 %s 0 0>;
 } ss01;
 """ % int(delta)
-
-    return fea
-
-def generateGlyphclasses(ufo):
-    marks = []
-    bases = []
-    for glyph in ufo:
-        glyphClass = glyph.lib.get(FONTFORGE_GLYPHCLASS)
-        if glyphClass == "mark":
-            marks.append(glyph.name)
-        elif glyphClass == "baseglyph":
-            bases.append(glyph.name)
-
-    fea = """
-table GDEF {
-  GlyphClassDef
-  [%s],
-  ,
-  [%s],
-;
-} GDEF;""" % (" ".join(bases), " ".join(marks))
 
     return fea
 
@@ -80,7 +58,6 @@ def merge(args):
     with open(args.feature_file) as feafile:
         fea = feafile.read()
         features.text += fea.replace("#{languagesystems}", "languagesystem latn dflt;")
-    features.text += generateGlyphclasses(ufo)
     features.text += generateStyleSets(ufo)
 
     latin_locl = ""

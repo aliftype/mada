@@ -21,10 +21,4 @@
       <point x="124.0" y="70.0" type="curve" smooth="yes"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
-    </dict>
-  </lib>
 </glyph>

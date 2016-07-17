@@ -4,10 +4,4 @@
   <outline>
     <component base="parenleft.ar" xScale="-1.0" yScale="-1.0" xOffset="268.915" yOffset="408.135"/>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
-    </dict>
-  </lib>
 </glyph>

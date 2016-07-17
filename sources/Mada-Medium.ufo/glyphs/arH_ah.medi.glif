@@ -10,8 +10,6 @@
   </outline>
   <lib>
     <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
       <key>public.markColor</key>
       <string>1,0,1,1</string>
     </dict>

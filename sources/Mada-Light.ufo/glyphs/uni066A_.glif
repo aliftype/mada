@@ -12,10 +12,4 @@
     <component base="uni0660" xOffset="-48.0" yOffset="308.0"/>
     <component base="uni0660" xOffset="295.0" yOffset="-306.0"/>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
-    </dict>
-  </lib>
 </glyph>

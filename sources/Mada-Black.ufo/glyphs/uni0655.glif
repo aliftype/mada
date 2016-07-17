@@ -6,10 +6,4 @@
   <outline>
     <component base="arKaf.above" yOffset="-211.0"/>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>mark</string>
-    </dict>
-  </lib>
 </glyph>

@@ -15,10 +15,4 @@
     </contour>
     <component base="arKaf.medi" xOffset="204.0"/>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>baseglyph</string>
-    </dict>
-  </lib>
 </glyph>

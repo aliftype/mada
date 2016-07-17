@@ -36,10 +36,4 @@
       <point x="-31.0" y="31.0" type="curve"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>mark</string>
-    </dict>
-  </lib>
 </glyph>

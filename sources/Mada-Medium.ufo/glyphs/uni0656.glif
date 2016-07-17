@@ -5,10 +5,4 @@
   <outline>
     <component base="uni0670" yOffset="-178.0"/>
   </outline>
-  <lib>
-    <dict>
-      <key>org.fontforge.glyphclass</key>
-      <string>mark</string>
-    </dict>
-  </lib>
 </glyph>
