@@ -60,19 +60,12 @@ def merge(args):
         features.text += fea.replace("#{languagesystems}", "languagesystem latn dflt;")
     features.text += generateStyleSets(ufo)
 
-    latin_locl = ""
     for glyph in latin:
         if glyph.name in goadb.encodings:
             glyph.unicode = goadb.encodings[glyph.name]
         if glyph.name in goadb.names:
             glyph.lib[POSTSCRIPT_NAME] = goadb.names[glyph.name]
-        if glyph.name in ufo:
-            name = glyph.name
-            glyph.unicode = None
-            glyph.name = name + ".latn"
-            if glyph.lib.get(POSTSCRIPT_NAME):
-                glyph.lib[POSTSCRIPT_NAME] = glyph.lib.get(POSTSCRIPT_NAME) + ".latn"
-            latin_locl.append("sub %s by %s;" % (name, glyph.name))
+        assert glyph.name not in ufo, glyph.name
         ufo.insertGlyph(glyph)
 
     for group in latin.groups:
@@ -84,14 +77,6 @@ def merge(args):
         value = getattr(latin.info, attr)
         if value is not None:
             setattr(ufo.info, attr, getattr(latin.info, attr))
-
-    if latin_locl:
-        features.text += """
-feature locl {
-  lookupflag IgnoreMarks;
-  script latn;
-    %s
-""" % "\n    ".join(latin_locl)
 
     for code, name in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
         glyph = ufo.newGlyph("uni%04X" % code)
