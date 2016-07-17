@@ -23,7 +23,7 @@ POSTSCRIPT_NAME = "public.postscriptName"
 
 def generateStyleSets(ufo):
     tatweel = ufo["uni0640"]
-    yeh = ufo["arYeh.isol"][0]
+    yeh = ufo["arYeh.fina"]
     delta = tatweel.bounds[-1] - yeh.bounds[-1]
 
     fea = """
