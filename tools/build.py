@@ -104,28 +104,28 @@ def merge(args):
 
     ufo.lib[MADA_UNICODES] = unicodes
 
-    # Set metadata
-    ufo.info.versionMajor, ufo.info.versionMinor = map(int, args.version.split("."))
+    return ufo
+
+def setMetdata(info, version):
+    info.versionMajor, info.versionMinor = map(int, version.split("."))
 
     copyright = 'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
 
-    ufo.info.copyright = copyright
+    info.copyright = copyright
 
-    ufo.info.openTypeNameDesigner = "Khaled Hosny"
-    ufo.info.openTypeNameLicenseURL = "http://scripts.sil.org/OFL"
-    ufo.info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
-    ufo.info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
-    ufo.info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
-    ufo.info.openTypeOS2VendorID = "BLQ "
+    info.openTypeNameDesigner = "Khaled Hosny"
+    info.openTypeNameLicenseURL = "http://scripts.sil.org/OFL"
+    info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+    info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
+    info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
+    info.openTypeOS2VendorID = "BLQ "
 
-    familyName, styleName = ufo.info.postscriptFontName.split("-")
+    familyName, styleName = info.postscriptFontName.split("-")
     try:
-        ufo.info.styleMapStyleName = styleName.lower()
-        ufo.info.styleMapFamilyName = familyName
+        info.styleMapStyleName = styleName.lower()
+        info.styleMapFamilyName = familyName
     except:
         pass
-
-    return ufo
 
 def subsetGlyphs(otf, ufo):
     options = subset.Options()
@@ -145,6 +145,7 @@ def removeOverlap(ufo):
 def build(args):
     ufo = merge(args)
 
+    setMetdata(ufo.info, args.version)
     buildEncoded(ufo)
     removeOverlap(ufo)
 
