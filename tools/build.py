@@ -52,6 +52,15 @@ def merge(args):
     for glyph in ufo:
         unicodes.extend(glyph.unicodes)
 
+    for glyph in ufo:
+        if glyph.unicode is not None:
+            if glyph.unicode < 0xffff:
+                postName = "uni%04X" % glyph.unicode
+            else:
+                postName = "u%06X" % glyph.unicode
+            if postName != glyph.name:
+                glyph.lib[POSTSCRIPT_NAME] = postName
+
     features = ufo.features
     with open(args.feature_file) as feafile:
         fea = feafile.read()
@@ -129,7 +138,8 @@ def setMetdata(info, version):
 
 def subsetGlyphs(otf, ufo):
     options = subset.Options()
-    options.set(layout_features='*', name_IDs='*', notdef_outline=True)
+    options.set(layout_features='*', name_IDs='*', notdef_outline=True,
+                glyph_names=True)
     subsetter = subset.Subsetter(options=options)
     subsetter.populate(unicodes=ufo.lib.get(MADA_UNICODES))
     subsetter.subset(otf)
