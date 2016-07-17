@@ -34,17 +34,14 @@ def addComponent(glyph, name, xoff=0, yoff=0):
     glyph.appendComponent(component)
 
 def build(font):
-    path = os.path.splitext(font.path)
-    path = path[0].split("-")
-    path = path[0] + ".fea"
-    with open(path) as f:
-        fea = f.read()
+    fea = font.features.text
     writer = FeatureWriter()
     try:
         parseFeatures(writer, fea)
     except FeaToolsParserSyntaxError:
         pass
     subs = writer.subs
+    unicodes = []
 
     for name, names in subs.items():
         baseGlyph = font[names[0]]
@@ -53,6 +50,7 @@ def build(font):
         glyph.width = baseGlyph.width
         glyph.leftMargin = baseGlyph.leftMargin
         glyph.rightMargin = baseGlyph.rightMargin
+        unicodes.append(glyph.unicode)
         addComponent(glyph, baseGlyph.name)
         for partName in names[1:]:
             partGlyph = font[partName]
@@ -66,3 +64,5 @@ def build(font):
             xoff = baseAnchor.x - partAnchor.x
             yoff = baseAnchor.y - partAnchor.y
             addComponent(glyph, partName, xoff, yoff)
+
+    font.lib["org.mada.subsetUnicodes"].extend(unicodes)

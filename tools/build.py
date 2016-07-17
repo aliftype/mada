@@ -45,8 +45,6 @@ def parseSubset(filename):
 def merge(args):
     ufo = Font(args.arabicfile)
 
-    buildEncoded(ufo)
-
     latin = Font(args.latinfile)
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
 
@@ -147,6 +145,8 @@ def removeOverlap(ufo):
 
 def build(args):
     ufo = merge(args)
+
+    buildEncoded(ufo)
     ufo = removeOverlap(ufo)
 
     if args.out_file.endswith(".ttf"):
