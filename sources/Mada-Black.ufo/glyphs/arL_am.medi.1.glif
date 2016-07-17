@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arLam.medi.1" format="2">
   <advance width="262"/>
-  <anchor x="449.0" y="710.0" name="dotAbove"/>
-  <anchor x="449.0" y="758.0" name="markAbove"/>
-  <anchor x="449.0" y="-99.0" name="dotBelow"/>
-  <anchor x="449.0" y="-134.0" name="markBelow"/>
+  <anchor x="179.0" y="710.0" name="dotAbove"/>
+  <anchor x="179.0" y="758.0" name="markAbove"/>
+  <anchor x="179.0" y="-99.0" name="dotBelow"/>
+  <anchor x="179.0" y="-134.0" name="markBelow"/>
   <outline>
     <component base="arLam.init.1"/>
   </outline>
