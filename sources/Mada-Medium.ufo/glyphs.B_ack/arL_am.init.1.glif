@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arLam.init.1" format="2">
-  <advance width="438"/>
+  <advance width="218.0"/>
   <outline>
     <contour>
-      <point x="283.0" y="660.0" type="line"/>
-      <point x="388.0" y="660.0" type="line"/>
-      <point x="388.0" y="104.0" type="line" smooth="yes"/>
-      <point x="388.0" y="44.0"/>
-      <point x="339.0" y="0.0"/>
-      <point x="282.0" y="0.0" type="curve" smooth="yes"/>
-      <point x="50.0" y="0.0" type="line"/>
-      <point x="50.0" y="105.0" type="line"/>
-      <point x="302.0" y="105.0" type="line" smooth="yes"/>
-      <point x="303.0" y="105.0"/>
-      <point x="283.0" y="84.0"/>
-      <point x="283.0" y="84.0" type="curve"/>
+      <point x="63.0" y="660.0" type="line"/>
+      <point x="168.0" y="660.0" type="line"/>
+      <point x="168.0" y="104.0" type="line" smooth="yes"/>
+      <point x="168.0" y="44.0"/>
+      <point x="119.0" y="0.0"/>
+      <point x="62.0" y="0.0" type="curve" smooth="yes"/>
+      <point x="-170.0" y="0.0" type="line"/>
+      <point x="-170.0" y="105.0" type="line"/>
+      <point x="82.0" y="105.0" type="line" smooth="yes"/>
+      <point x="83.0" y="105.0"/>
+      <point x="63.0" y="84.0"/>
+      <point x="63.0" y="84.0" type="curve"/>
     </contour>
     <contour>
-      <point x="80.6015625" y="665.2958984375" type="line"/>
-      <point x="181.3984375" y="694.7041015625" type="line"/>
-      <point x="312.3984375" y="245.7041015625" type="line"/>
-      <point x="211.6015625" y="216.2958984375" type="line"/>
+      <point x="-139.3984375" y="665.2958984375" type="line"/>
+      <point x="-38.6015625" y="694.7041015625" type="line"/>
+      <point x="92.3984375" y="245.7041015625" type="line"/>
+      <point x="-8.3984375" y="216.2958984375" type="line"/>
     </contour>
     <contour>
-      <point x="198.0" y="263.0" type="curve"/>
-      <point x="301.0" y="263.0" type="line"/>
-      <point x="290.0" y="200.0"/>
-      <point x="252.0" y="141.0"/>
-      <point x="161.0" y="90.0" type="curve"/>
-      <point x="78.0" y="90.0" type="line"/>
-      <point x="146.0" y="123.0"/>
-      <point x="200.0" y="161.0"/>
+      <point x="-22.0" y="263.0" type="curve"/>
+      <point x="81.0" y="263.0" type="line"/>
+      <point x="70.0" y="200.0"/>
+      <point x="32.0" y="141.0"/>
+      <point x="-59.0" y="90.0" type="curve"/>
+      <point x="-142.0" y="90.0" type="line"/>
+      <point x="-74.0" y="123.0"/>
+      <point x="-20.0" y="161.0"/>
     </contour>
   </outline>
 </glyph>
