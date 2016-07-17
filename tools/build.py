@@ -141,13 +141,12 @@ def removeOverlap(ufo):
         contours = list(glyph)
         glyph.clearContours()
         manager.union(contours, glyph.getPointPen())
-    return ufo
 
 def build(args):
     ufo = merge(args)
 
     buildEncoded(ufo)
-    ufo = removeOverlap(ufo)
+    removeOverlap(ufo)
 
     if args.out_file.endswith(".ttf"):
         font_to_quadratic(ufo)
