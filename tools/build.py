@@ -70,6 +70,10 @@ def merge(args):
     for glyph in latin:
         if glyph.name in goadb.encodings:
             glyph.unicode = goadb.encodings[glyph.name]
+            if glyph.unicode == 0x00A0: # NBSP
+                continue
+            if glyph.unicode == 0x0020: # space
+                glyph.unicodes = glyph.unicodes + [0x00A0]
         if glyph.name in goadb.names:
             glyph.lib[POSTSCRIPT_NAME] = goadb.names[glyph.name]
         assert glyph.name not in ufo, glyph.name
