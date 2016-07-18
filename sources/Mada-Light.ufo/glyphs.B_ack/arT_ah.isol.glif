@@ -2,37 +2,5 @@
 <glyph name="arTah.isol" format="2">
   <advance width="613"/>
   <outline>
-    <contour>
-      <point x="40.0" y="32.0" type="line"/>
-      <point x="40.0" y="0.0" type="line"/>
-      <point x="504.0" y="0.0" type="line" smooth="yes"/>
-      <point x="543.2177734375" y="0.0"/>
-      <point x="574.318359375" y="30.052734375"/>
-      <point x="572.9921875" y="68.5146484375" type="curve" smooth="yes"/>
-      <point x="570.994140625" y="135.43359375" type="line" smooth="yes"/>
-      <point x="568.9248046875" y="220.283203125"/>
-      <point x="541.912109375" y="273.5107421875"/>
-      <point x="483.880859375" y="297.8837890625" type="curve" smooth="yes"/>
-      <point x="351.3017578125" y="347.029296875"/>
-      <point x="245.6533203125" y="181.693359375"/>
-      <point x="145.029296875" y="42.3681640625" type="curve"/>
-      <point x="171.0" y="24.0" type="line"/>
-      <point x="274.7919921875" y="165.7216796875"/>
-      <point x="370.1396484375" y="305.228515625"/>
-      <point x="472.1220703125" y="268.115234375" type="curve"/>
-      <point x="514.8935546875" y="249.84375"/>
-      <point x="537.08203125" y="213.4560546875"/>
-      <point x="539.0068359375" y="134.5224609375" type="curve" smooth="yes"/>
-      <point x="541.009765625" y="67.4482421875" type="line" smooth="yes"/>
-      <point x="541.6806640625" y="47.978515625"/>
-      <point x="526.783203125" y="32.0"/>
-      <point x="504.0" y="32.0" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="144.0" y="625.0" type="line"/>
-      <point x="144.0" y="22.0" type="line"/>
-      <point x="176.0" y="22.0" type="line"/>
-      <point x="176.0" y="625.0" type="line"/>
-    </contour>
   </outline>
 </glyph>
