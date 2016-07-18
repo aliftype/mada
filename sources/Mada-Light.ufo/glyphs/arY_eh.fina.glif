@@ -10,7 +10,7 @@
   <anchor x="207.0" y="192.0" name="arKaf.above"/>
   <anchor x="207.0" y="192.0" name="uni0653"/>
   <outline>
-    <component base="arYeh.isol"/>
+    <component base="arYeh.isol" yOffset="-150"/>
   </outline>
   <lib>
     <dict>
