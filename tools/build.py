@@ -51,6 +51,7 @@ def merge(args):
     unicodes = parseSubset(args.latin_subset)
     for glyph in ufo:
         unicodes.extend(glyph.unicodes)
+    unicodes.append(0x25CC) # dotted circle
 
     for glyph in ufo:
         if glyph.unicode is not None:
@@ -76,6 +77,12 @@ def merge(args):
                 glyph.unicodes = glyph.unicodes + [0x00A0]
         if glyph.name in goadb.names:
             glyph.lib[POSTSCRIPT_NAME] = goadb.names[glyph.name]
+        if glyph.unicode == 0x25CC:
+            for anchor in glyph.anchors:
+                if anchor.name == "aboveLC":
+                    glyph.appendAnchor(dict(name="markAbove", x=anchor.x, y=anchor.y + 100))
+                if anchor.name == "belowLC":
+                    glyph.appendAnchor(dict(name="markBelow", x=anchor.x, y=anchor.y - 100))
         assert glyph.name not in ufo, glyph.name
         ufo.insertGlyph(glyph)
 
