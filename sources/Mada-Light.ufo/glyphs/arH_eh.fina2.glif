@@ -4,11 +4,9 @@
   <anchor x="139.0" y="-150.0" name="dotBelow"/>
   <anchor x="139.0" y="-170.0" name="markBelow"/>
   <anchor x="109.0" y="150.0" name="dotAbove"/>
-  <anchor x="109.0" y="150.0" name="uni0654"/>
-  <anchor x="109.0" y="150.0" name="arSad.above"/>
+  <anchor x="109.0" y="150.0" name="hamzaAbove"/>
   <anchor x="109.0" y="187.0" name="markAbove"/>
-  <anchor x="109.0" y="150.0" name="arKaf.above"/>
-  <anchor x="109.0" y="150.0" name="uni0653"/>
+  <anchor x="109.0" y="150.0" name="kafAbove"/>
   <outline>
     <contour>
       <point x="72.0" y="-88.0" type="line"/>

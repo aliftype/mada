@@ -2,13 +2,11 @@
 <glyph name="arYeh.fina2" format="2">
   <advance width="661"/>
   <anchor x="380.0" y="319.0" name="dotAbove"/>
-  <anchor x="380.0" y="319.0" name="uni0653"/>
-  <anchor x="380.0" y="319.0" name="arKaf.above"/>
+  <anchor x="380.0" y="319.0" name="hamzaAbove"/>
+  <anchor x="380.0" y="319.0" name="kafAbove"/>
   <anchor x="380.0" y="357.0" name="markAbove"/>
   <anchor x="330.0" y="-376.0" name="dotBelow"/>
   <anchor x="330.0" y="-396.0" name="markBelow"/>
-  <anchor x="380.0" y="319.0" name="arSad.above"/>
-  <anchor x="380.0" y="319.0" name="uni0654"/>
   <outline>
     <contour>
       <point x="662.0" y="-244.0" type="line"/>

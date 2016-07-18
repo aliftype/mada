@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arKaf.init" format="2">
   <advance width="478"/>
-  <anchor x="257.0" y="597.0" name="arGaf.above"/>
+  <anchor x="257.0" y="597.0" name="gafAbove"/>
   <anchor x="129.0" y="-150.0" name="dotBelow"/>
   <anchor x="129.0" y="-179.0" name="markBelow"/>
   <anchor x="69.0" y="619.0" name="dotAbove"/>

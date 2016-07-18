@@ -3,12 +3,10 @@
   <advance width="358"/>
   <anchor x="199.0" y="490.0" name="dotAbove"/>
   <anchor x="199.0" y="528.0" name="markAbove"/>
-  <anchor x="199.0" y="490.0" name="uni0654"/>
-  <anchor x="199.0" y="490.0" name="arSad.above"/>
+  <anchor x="199.0" y="490.0" name="hamzaAbove"/>
   <anchor x="199.0" y="-150.0" name="dotBelow"/>
   <anchor x="199.0" y="-170.0" name="markBelow"/>
-  <anchor x="199.0" y="490.0" name="arKaf.above"/>
-  <anchor x="199.0" y="490.0" name="uni0653"/>
+  <anchor x="199.0" y="490.0" name="kafAbove"/>
   <outline>
     <component base="arBeh.init"/>
   </outline>

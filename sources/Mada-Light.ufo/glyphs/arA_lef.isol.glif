@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arAlef.isol" format="2">
   <advance width="192"/>
-  <anchor x="96.0" y="664.0" name="uni0654"/>
-  <anchor x="96.0" y="664.0" name="arSad.above"/>
+  <anchor x="96.0" y="664.0" name="hamzaAbove"/>
   <anchor x="96.0" y="664.0" name="dotAbove"/>
   <anchor x="96.0" y="702.0" name="markAbove"/>
-  <anchor x="96.0" y="-29.0" name="uni0655"/>
+  <anchor x="96.0" y="-29.0" name="hamzaBelow"/>
   <anchor x="96.0" y="-29.0" name="dotBelow"/>
   <anchor x="96.0" y="-58.0" name="markBelow"/>
-  <anchor x="96.0" y="664.0" name="arKaf.above"/>
-  <anchor x="96.0" y="664.0" name="uni0653"/>
+  <anchor x="96.0" y="664.0" name="kafAbove"/>
   <outline>
     <contour>
       <point x="80.0" y="624.0" type="line"/>

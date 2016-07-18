@@ -3,12 +3,10 @@
   <advance width="664"/>
   <anchor x="349.0" y="-341.0" name="dotBelow"/>
   <anchor x="349.0" y="-376.0" name="markBelow"/>
-  <anchor x="277.0" y="305.0" name="uni0653"/>
-  <anchor x="277.0" y="305.0" name="arKaf.above"/>
+  <anchor x="277.0" y="305.0" name="hamzaAbove"/>
+  <anchor x="277.0" y="305.0" name="kafAbove"/>
   <anchor x="277.0" y="305.0" name="dotAbove"/>
   <anchor x="277.0" y="349.0" name="markAbove"/>
-  <anchor x="277.0" y="305.0" name="arSad.above"/>
-  <anchor x="277.0" y="305.0" name="uni0654"/>
   <outline>
     <contour>
       <point x="422.0" y="91.0" type="line"/>

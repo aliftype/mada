@@ -81,8 +81,10 @@ def merge(args):
             for anchor in glyph.anchors:
                 if anchor.name == "aboveLC":
                     glyph.appendAnchor(dict(name="markAbove", x=anchor.x, y=anchor.y + 100))
+                    glyph.appendAnchor(dict(name="hamzaAbove", x=anchor.x, y=anchor.y + 100))
                 if anchor.name == "belowLC":
                     glyph.appendAnchor(dict(name="markBelow", x=anchor.x, y=anchor.y - 100))
+                    glyph.appendAnchor(dict(name="hamzaBelow", x=anchor.x, y=anchor.y - 100))
         assert glyph.name not in ufo, glyph.name
         ufo.insertGlyph(glyph)
 

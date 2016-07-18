@@ -4,11 +4,9 @@
   <anchor x="399.0" y="-366.0" name="dotBelow"/>
   <anchor x="399.0" y="-401.0" name="markBelow"/>
   <anchor x="277.0" y="330.0" name="dotAbove"/>
-  <anchor x="277.0" y="330.0" name="uni0654"/>
-  <anchor x="277.0" y="330.0" name="arSad.above"/>
+  <anchor x="277.0" y="330.0" name="hamzaAbove"/>
   <anchor x="277.0" y="374.0" name="markAbove"/>
-  <anchor x="277.0" y="330.0" name="arKaf.above"/>
-  <anchor x="277.0" y="330.0" name="uni0653"/>
+  <anchor x="277.0" y="330.0" name="kafAbove"/>
   <outline>
     <component base="arYeh.isol" yOffset="-70"/>
   </outline>

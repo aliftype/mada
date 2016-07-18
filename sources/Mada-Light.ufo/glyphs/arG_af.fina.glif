@@ -5,7 +5,7 @@
   <anchor x="313.0" y="-169.0" name="markBelow"/>
   <anchor x="273.0" y="657.0" name="markAbove"/>
   <anchor x="133.0" y="619.0" name="dotAbove"/>
-  <anchor x="321.0" y="597.0" name="arGaf.above"/>
+  <anchor x="321.0" y="597.0" name="gafAbove"/>
   <outline>
     <component base="arGaf.isol"/>
   </outline>
