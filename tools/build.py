@@ -149,6 +149,11 @@ def setMetdata(info, version):
     except:
         pass
 
+    if info.openTypeOS2Selection is None:
+        info.openTypeOS2Selection = []
+    # Set use typo metrics bit
+    info.openTypeOS2Selection += [7]
+
 def subsetGlyphs(otf, ufo):
     options = subset.Options()
     options.set(layout_features='*', name_IDs='*', notdef_outline=True,
