@@ -4,6 +4,7 @@
 import argparse
 import math
 import os
+import unicodedata
 
 from booleanOperations import BooleanOperationManager
 from cu2qu.ufo import font_to_quadratic
@@ -77,6 +78,11 @@ def merge(args):
                 glyph.unicodes = glyph.unicodes + [0x00A0]
         if glyph.name in goadb.names:
             glyph.lib[POSTSCRIPT_NAME] = goadb.names[glyph.name]
+        # Remove anchors from spacing marks, otherwise ufo2ft will give them
+        # mark glyph class which will cause HarfBuzz to zero their width
+        if glyph.unicode and unicodedata.category(chr(glyph.unicode)) in ("Sk", "Lm"):
+            for anchor in glyph.anchors:
+                glyph.removeAnchor(anchor)
         if glyph.unicode == 0x25CC:
             for anchor in glyph.anchors:
                 if anchor.name == "aboveLC":
