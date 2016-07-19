@@ -28,6 +28,8 @@ otf: $(INS) $(OTF)
 ttf: $(TTF)
 doc: $(PDF)
 
+SHELL=/usr/bin/env bash
+
 $(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-Semibold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
 	@echo "   GEN	instances"
 	@python2 -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
