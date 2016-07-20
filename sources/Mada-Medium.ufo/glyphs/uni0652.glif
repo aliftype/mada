@@ -2,6 +2,7 @@
 <glyph name="uni0652" format="2">
   <unicode hex="0652"/>
   <anchor x="0" y="0" name="_markAbove"/>
+  <anchor x="0" y="0" name="_markAboveDot"/>
   <outline>
     <contour>
       <point x="-108.0" y="73.0" type="curve" smooth="yes"/>

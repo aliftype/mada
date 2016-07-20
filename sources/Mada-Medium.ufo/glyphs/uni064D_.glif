@@ -2,6 +2,7 @@
 <glyph name="uni064D" format="2">
   <unicode hex="064D"/>
   <anchor x="0" y="0" name="_markBelow"/>
+  <anchor x="0" y="0" name="_markBelowDot"/>
   <outline>
     <component base="uni064B" yOffset="-231.0"/>
   </outline>

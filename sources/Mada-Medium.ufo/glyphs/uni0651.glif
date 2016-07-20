@@ -3,6 +3,7 @@
   <unicode hex="0651"/>
   <anchor x="0" y="0" name="_markAbove"/>
   <anchor x="0" y="231.0" name="markAbove"/>
+  <anchor x="0" y="0" name="_markAboveDot"/>
   <outline>
     <contour>
       <point x="-124.0" y="110.0" type="line" smooth="yes"/>
