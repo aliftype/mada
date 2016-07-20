@@ -174,6 +174,7 @@ def merge(args):
 
 def setMetdata(info, version):
     """Sets various font metadata fields."""
+
     info.versionMajor, info.versionMinor = map(int, version.split("."))
 
     copyright = 'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
@@ -198,6 +199,9 @@ def setMetdata(info, version):
         info.openTypeOS2Selection = []
     # Set use typo metrics bit
     info.openTypeOS2Selection += [7]
+
+    # Make sure fsType is set to 0, i.e. Installable Embedding
+    info.openTypeOS2Type = []
 
 def subsetGlyphs(otf, ufo):
     """Subsets the final font to the set of characters that we only need since
