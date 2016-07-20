@@ -204,7 +204,7 @@ def subsetGlyphs(otf, ufo):
     the Latin font can have too many characters than what wee need."""
     options = subset.Options()
     options.set(layout_features='*', name_IDs='*', notdef_outline=True,
-                glyph_names=True)
+                glyph_names=True, recalc_average_width=True)
     subsetter = subset.Subsetter(options=options)
     subsetter.populate(unicodes=ufo.lib.get(MADA_UNICODES))
     subsetter.subset(otf)
