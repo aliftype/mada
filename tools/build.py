@@ -7,7 +7,6 @@ import os
 import unicodedata
 
 from booleanOperations import BooleanOperationManager
-from cu2qu.ufo import font_to_quadratic
 from datetime import datetime
 from defcon import Font, Component
 from fontTools import subset
@@ -235,8 +234,6 @@ def build(args):
     removeOverlap(ufo)
 
     if args.out_file.endswith(".ttf"):
-        # Converts to quadratic splines, ufo2ft does not do that.
-        font_to_quadratic(ufo)
         otf = compileTTF(ufo)
     else:
         otf = compileOTF(ufo)
