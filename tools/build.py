@@ -15,11 +15,32 @@ from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
 from ufo2ft import compileOTF, compileTTF
+from ufo2ft.markFeatureWriter import MarkFeatureWriter
 
 from buildencoded import build as buildEncoded
 
 MADA_UNICODES = "org.mada.subsetUnicodes"
 POSTSCRIPT_NAME = "public.postscriptName"
+
+class MadaMarkFeatureWriter(MarkFeatureWriter):
+    def _addMarkLookup(self, lines, lookupName, isMkmk, anchorPair):
+        """Add a mark lookup for one tuple in the writer's anchor list."""
+
+        anchorName, accentAnchorName = anchorPair
+        baseGlyphs = self._createBaseGlyphList(anchorName, isMkmk)
+        if not baseGlyphs:
+            return
+        className = self._generateClassName(accentAnchorName)
+        ruleType = "mark" if isMkmk else "base"
+
+        lines.append("  lookup %s {" % lookupName)
+
+        for baseName, x, y in baseGlyphs:
+            lines.append(
+                "    pos %s %s <anchor %d %d> mark %s;" %
+                (ruleType, baseName, x, y, className))
+
+        lines.append("  } %s;" % lookupName)
 
 def generateStyleSets(ufo):
     """Generates ss01 feature which is used to move the final Yeh down so that
@@ -234,9 +255,9 @@ def build(args):
     removeOverlap(ufo)
 
     if args.out_file.endswith(".ttf"):
-        otf = compileTTF(ufo)
+        otf = compileTTF(ufo, markWriter=MadaMarkFeatureWriter)
     else:
-        otf = compileOTF(ufo)
+        otf = compileOTF(ufo, markWriter=MadaMarkFeatureWriter)
 
     otf = subsetGlyphs(otf, ufo)
 
