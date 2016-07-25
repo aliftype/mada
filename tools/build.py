@@ -20,7 +20,11 @@ from ufo2ft.markFeatureWriter import MarkFeatureWriter
 from buildencoded import build as buildEncoded
 
 MADA_UNICODES = "org.mada.subsetUnicodes"
+MADA_MARKSET_PREFIX = "org.mada.markSet."
 POSTSCRIPT_NAME = "public.postscriptName"
+
+# Anchors that needs mark filtering flag
+MARKSET_ANCHORS = ("markAboveDot", "markBelowDot")
 
 class MadaMarkFeatureWriter(MarkFeatureWriter):
     def _addMarkLookup(self, lines, lookupName, isMkmk, anchorPair):
@@ -34,6 +38,12 @@ class MadaMarkFeatureWriter(MarkFeatureWriter):
         ruleType = "mark" if isMkmk else "base"
 
         lines.append("  lookup %s {" % lookupName)
+
+        groupName = MADA_MARKSET_PREFIX + anchorName
+        if groupName in self.font.groups:
+            glyphList = self.font.groups[groupName]
+            lines.append("    @%s = [%s];" % (groupName, " ".join(glyphList)))
+            lines.append("    lookupflag UseMarkFilteringSet @%s;" % groupName)
 
         for baseName, x, y in baseGlyphs:
             lines.append(
@@ -192,6 +202,27 @@ def merge(args):
 
     return ufo
 
+def buildMarkSets(ufo):
+    """Add mark filtering groups to the font, we use these to limits anchors to
+    specific groups of glyph. We don’t want to do this for all anchors, so we
+    maintain a list of the relevant anchors in MARKSET_ANCHORS."""
+
+    markSets = {a: set() for a in MARKSET_ANCHORS}
+
+    for glyph in ufo:
+        for anchor in glyph.anchors:
+            name = anchor.name
+            if name is None:
+                continue
+            if name.startswith("_"):
+                name = name[1:]
+            if name in MARKSET_ANCHORS:
+                markSets[name].add(glyph.name)
+
+    for markSet in markSets:
+        if markSets[markSet]:
+            ufo.groups[MADA_MARKSET_PREFIX + markSet] = list(markSets[markSet])
+
 def setMetdata(info, version):
     """Sets various font metadata fields."""
 
@@ -247,6 +278,7 @@ def build(args):
     ufo = merge(args)
 
     setMetdata(ufo.info, args.version)
+    buildMarkSets(ufo)
     # Build fallback glyphs, these are the base glyph that cmap maps to. We
     # decompose them immediately in the layout code, so they shouldn’t be used
     # for anything and we could just keep them blank, but then FontConfig will
