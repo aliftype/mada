@@ -223,7 +223,7 @@ def buildMarkSets(ufo):
         if markSets[markSet]:
             ufo.groups[MADA_MARKSET_PREFIX + markSet] = list(markSets[markSet])
 
-def setMetdata(info, version):
+def setInfo(info, version):
     """Sets various font metadata fields."""
 
     info.versionMajor, info.versionMinor = map(int, version.split("."))
@@ -277,7 +277,7 @@ def removeOverlap(ufo):
 def build(args):
     ufo = merge(args)
 
-    setMetdata(ufo.info, args.version)
+    setInfo(ufo.info, args.version)
     buildMarkSets(ufo)
     # Build fallback glyphs, these are the base glyph that cmap maps to. We
     # decompose them immediately in the layout code, so they shouldn’t be used
