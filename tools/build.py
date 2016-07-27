@@ -168,6 +168,23 @@ def merge(args):
         if value is not None:
             setattr(ufo.info, attr, getattr(latin.info, attr))
 
+    # We will pass this later to fontTools.subsets
+    ufo.lib[MADA_UNICODES] = unicodes
+
+    return ufo
+
+def buildExtraGlyphs(ufo):
+    """Builds some necessary glyphs at runtime that are derived from other
+    glyphs, instead of having to update them manually."""
+
+    # Build fallback glyphs, these are the base glyph that cmap maps to. We
+    # decompose them immediately in the layout code, so they shouldn’t be used
+    # for anything and we could just keep them blank, but then FontConfig will
+    # think the font does not support these characters.
+    buildEncoded(ufo)
+
+    unicodes = ufo.lib[MADA_UNICODES]
+
     # Build Arabic comma and semicolon glyphs, by rotating the Latin 180°, so
     # that they are similar in design.
     for code, name in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
@@ -197,10 +214,7 @@ def merge(args):
         glyph.rightMargin = enGlyph.leftMargin
         unicodes.append(glyph.unicode)
 
-    # We will pass this later to fontTools.subsets
     ufo.lib[MADA_UNICODES] = unicodes
-
-    return ufo
 
 def buildMarkSets(ufo):
     """Add mark filtering groups to the font, we use these to limits anchors to
@@ -279,11 +293,7 @@ def build(args):
 
     setInfo(ufo.info, args.version)
     buildMarkSets(ufo)
-    # Build fallback glyphs, these are the base glyph that cmap maps to. We
-    # decompose them immediately in the layout code, so they shouldn’t be used
-    # for anything and we could just keep them blank, but then FontConfig will
-    # think the font does not support these characters.
-    buildEncoded(ufo)
+    buildExtraGlyphs(ufo)
     removeOverlap(ufo)
 
     if args.out_file.endswith(".ttf"):
