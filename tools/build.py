@@ -19,7 +19,6 @@ from ufo2ft.markFeatureWriter import MarkFeatureWriter
 
 from buildencoded import build as buildEncoded
 
-MADA_UNICODES = "org.mada.subsetUnicodes"
 MADA_MARKSET_PREFIX = "org.mada.markSet."
 POSTSCRIPT_NAME = "public.postscriptName"
 
@@ -81,6 +80,23 @@ def parseSubset(filename):
         unicodes = [int(c.lstrip('U+'), 16) for c in lines if c]
     return unicodes
 
+def collectGlyphs(ufo, subset):
+    """Collect the list of glyphs we want to keep in the font, based on
+    subset."""
+
+    unicodes = parseSubset(subset)
+    unicodes.append(0x25CC) # dotted circle
+
+    glyphs = set()
+
+    for glyph in ufo:
+        if glyph.unicode in unicodes:
+            glyphs.add(glyph.name)
+            for component in glyph.components:
+                glyphs.add(component.baseGlyph)
+
+    return glyphs
+
 def merge(args):
     """Merges Arabic and Latin fonts together, and messages the combined font a
     bit. Returns the combined font."""
@@ -91,13 +107,6 @@ def merge(args):
     # Parse the GlyphOrderAndAliasDB file for Unicode values and production
     # glyph names of the Latin glyphs.
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
-
-    # Populate the list of Unicode characters we want to keep in the font, this
-    # will eventually be passed to fontTools.subset.
-    unicodes = parseSubset(args.latin_subset)
-    for glyph in ufo:
-        unicodes.extend(glyph.unicodes)
-    unicodes.append(0x25CC) # dotted circle
 
     # Generate production glyph names for Arabic glyphs, in case it differs
     # from working names. This will be used by ufo2ft to set the final glyph
@@ -121,20 +130,25 @@ def merge(args):
         features.text += fea.replace("#{languagesystems}", "languagesystem latn dflt;")
     features.text += generateStyleSets(ufo)
 
-    # Copy Latin glyphs.
     for glyph in latin:
         if glyph.name in goadb.encodings:
-            glyph.unicode = goadb.encodings[glyph.name]
+            uni = goadb.encodings[glyph.name]
             # Source Sans Pro has different advance widths for space and NBSP
             # glyphs, so we drop the later, and map both Unicode characters to
             # the space glyph.
-            if glyph.unicode == 0x00A0: # NBSP
+            if uni == 0x00A0: # NBSP
                 continue
-            if glyph.unicode == 0x0020: # space
+            glyph.unicode = uni
+            if uni == 0x0020: # space
                 glyph.unicodes = glyph.unicodes + [0x00A0]
+
+    glyphSet = collectGlyphs(latin, args.latin_subset)
+    # Copy Latin glyphs.
+    for name in glyphSet:
+        glyph = latin[name]
         # Set Latin production names
-        if glyph.name in goadb.names:
-            glyph.lib[POSTSCRIPT_NAME] = goadb.names[glyph.name]
+        if name in goadb.names:
+            glyph.lib[POSTSCRIPT_NAME] = goadb.names[name]
         # Remove anchors from spacing marks, otherwise ufo2ft will give them
         # mark glyph class which will cause HarfBuzz to zero their width.
         if glyph.unicode and unicodedata.category(chr(glyph.unicode)) in ("Sk", "Lm"):
@@ -168,9 +182,6 @@ def merge(args):
         if value is not None:
             setattr(ufo.info, attr, getattr(latin.info, attr))
 
-    # We will pass this later to fontTools.subsets
-    ufo.lib[MADA_UNICODES] = unicodes
-
     return ufo
 
 def buildExtraGlyphs(ufo):
@@ -182,8 +193,6 @@ def buildExtraGlyphs(ufo):
     # for anything and we could just keep them blank, but then FontConfig will
     # think the font does not support these characters.
     buildEncoded(ufo)
-
-    unicodes = ufo.lib[MADA_UNICODES]
 
     # Build Arabic comma and semicolon glyphs, by rotating the Latin 180°, so
     # that they are similar in design.
@@ -199,7 +208,6 @@ def buildExtraGlyphs(ufo):
         glyph.move((0, colon.bounds[1] - glyph.bounds[1]))
         glyph.leftMargin = enGlyph.rightMargin
         glyph.rightMargin = enGlyph.leftMargin
-        unicodes.append(glyph.unicode)
 
     # Ditto for question mark, but here we flip.
     for code, name in [(ord(u'؟'), "question")]:
@@ -212,9 +220,6 @@ def buildExtraGlyphs(ufo):
         glyph.appendComponent(component)
         glyph.leftMargin = enGlyph.rightMargin
         glyph.rightMargin = enGlyph.leftMargin
-        unicodes.append(glyph.unicode)
-
-    ufo.lib[MADA_UNICODES] = unicodes
 
 def buildMarkSets(ufo):
     """Add mark filtering groups to the font, we use these to limits anchors to
@@ -274,8 +279,13 @@ def subsetGlyphs(otf, ufo):
     options = subset.Options()
     options.set(layout_features='*', name_IDs='*', notdef_outline=True,
                 glyph_names=True, recalc_average_width=True)
+
+    unicodes = []
+    for glyph in ufo:
+        unicodes.extend(glyph.unicodes)
+
     subsetter = subset.Subsetter(options=options)
-    subsetter.populate(unicodes=ufo.lib.get(MADA_UNICODES))
+    subsetter.populate(unicodes=unicodes)
     subsetter.subset(otf)
     return otf
 

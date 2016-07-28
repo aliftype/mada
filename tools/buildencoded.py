@@ -41,7 +41,6 @@ def build(font):
     except FeaToolsParserSyntaxError:
         pass
     subs = writer.subs
-    unicodes = []
 
     for name, names in subs.items():
         baseGlyph = font[names[0]]
@@ -50,7 +49,6 @@ def build(font):
         glyph.width = baseGlyph.width
         glyph.leftMargin = baseGlyph.leftMargin
         glyph.rightMargin = baseGlyph.rightMargin
-        unicodes.append(glyph.unicode)
         addComponent(glyph, baseGlyph.name)
         for partName in names[1:]:
             partGlyph = font[partName]
@@ -64,5 +62,3 @@ def build(font):
             xoff = baseAnchor.x - partAnchor.x
             yoff = baseAnchor.y - partAnchor.y
             addComponent(glyph, partName, xoff, yoff)
-
-    font.lib["org.mada.subsetUnicodes"].extend(unicodes)
