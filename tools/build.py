@@ -25,6 +25,18 @@ POSTSCRIPT_NAME = "public.postscriptName"
 # Anchors that needs mark filtering flag
 MARKSET_ANCHORS = ("markAboveDot", "markBelowDot")
 
+WEIGHTS = {
+    "Thin": 250,
+    "ExtraLight": 275,
+    "Light": 300,
+    "Regular": 400,
+    "Medium": 500,
+    "SemiBold": 600,
+    "Bold": 700,
+    "ExtraBold": 800,
+    "Black": 900,
+}
+
 class MadaMarkFeatureWriter(MarkFeatureWriter):
     def _addMarkLookup(self, lines, lookupName, isMkmk, anchorPair):
         """Add a mark lookup for one tuple in the writer's anchor list."""
@@ -272,6 +284,12 @@ def setInfo(info, version):
 
     # Make sure fsType is set to 0, i.e. Installable Embedding
     info.openTypeOS2Type = []
+
+    # Make sure we have the right weight class, interpolated instances usually
+    # have a wrong value.
+    info.openTypeOS2WeightClass = WEIGHTS[info.styleName]
+    # Let ufo2ft set the right name
+    info.postscriptWeightName = None
 
 def subsetGlyphs(otf, ufo):
     """Subsets the final font to the set of characters that we only need since
