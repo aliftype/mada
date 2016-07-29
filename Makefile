@@ -13,7 +13,7 @@ PY=python3
 BUILD=$(TOOLDIR)/build.py
 
 MASTERS=Light Medium Black
-INSTANCES=ExtraLight Regular Semibold Bold
+INSTANCES=ExtraLight Regular SemiBold Bold
 FONTS=$(MASTERS) $(INSTANCES)
 
 MAS=$(MASTERS:%=$(SRCDIR)/$(NAME)-%.ufo)
@@ -30,9 +30,15 @@ doc: $(PDF)
 
 SHELL=/usr/bin/env bash
 
-$(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-Semibold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
+$(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-SemiBold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
 	@echo "   GEN	instances"
 	@python2 -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
+
+# hack since Adobe names it Semibold but Dave wants SemiBold
+$(SRCDIR)/$(LATIN)/Roman/SemiBold/font.ufo: $(SRCDIR)/$(LATIN)/Roman/Semibold/font.ufo
+	@mkdir -p $@
+	@rm -rf $@
+	@cp -r $< $@
 
 $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
 	@echo "   GEN	$@"
