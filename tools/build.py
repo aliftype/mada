@@ -306,6 +306,10 @@ def setInfo(info, version):
     # Let ufo2ft set the right name
     info.postscriptWeightName = None
 
+    # Make sure italic angle is zero, for some reason it gets set to -180 in
+    # ExtraLight!
+    info.italicAngle = 0.0
+
 def subsetGlyphs(otf, ufo):
     """Subsets the final font to the set of characters that we only need since
     the Latin font can have too many characters than what wee need."""
