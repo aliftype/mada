@@ -7,6 +7,7 @@ import os
 import unicodedata
 
 from booleanOperations import BooleanOperationManager
+from collections import Counter
 from datetime import datetime
 from defcon import Font, Component
 from fontTools import subset
@@ -93,21 +94,21 @@ def parseSubset(filename):
     return unicodes
 
 def collectGlyphs(ufo, subset):
-    """Collect the list of glyphs we want to keep in the font, based on
+    """Collects the list of glyphs we want to keep in the font, based on
     subset."""
 
     unicodes = parseSubset(subset)
     unicodes.append(0x25CC) # dotted circle
 
     glyphs = set()
+    components = []
 
     for glyph in ufo:
         if glyph.unicode in unicodes:
             glyphs.add(glyph.name)
-            for component in glyph.components:
-                glyphs.add(component.baseGlyph)
+            components.extend([c.baseGlyph for c in glyph.components])
 
-    return glyphs
+    return glyphs, components
 
 def merge(args):
     """Merges Arabic and Latin fonts together, and messages the combined font a
@@ -154,10 +155,24 @@ def merge(args):
             if uni == 0x0020: # space
                 glyph.unicodes = glyph.unicodes + [0x00A0]
 
-    glyphSet = collectGlyphs(latin, args.latin_subset)
+    glyphs, components = collectGlyphs(latin, args.latin_subset)
+
+    counter = Counter(components)
+    uniqueComponents = set()
+    for name in counter:
+        if name not in glyphs:
+            latin[name].unicode = None
+        if counter[name] == 1:
+            uniqueComponents.add(name)
+        else:
+            glyphs.add(name)
+
     # Copy Latin glyphs.
-    for name in glyphSet:
+    for name in glyphs:
         glyph = latin[name]
+        for component in glyph.components:
+            if component.baseGlyph in uniqueComponents:
+                glyph.decomposeComponent(component)
         # Set Latin production names
         if name in goadb.names:
             glyph.lib[POSTSCRIPT_NAME] = goadb.names[name]
