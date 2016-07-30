@@ -10,6 +10,10 @@
 	<string>ar2D_ot.above.glif</string>
 	<key>ar2Dot.below</key>
 	<string>ar2D_ot.below.glif</string>
+	<key>ar2VDot.above</key>
+	<string>ar2V_D_ot.above.glif</string>
+	<key>ar2VDot.below</key>
+	<string>ar2V_D_ot.below.glif</string>
 	<key>ar3Dot.above</key>
 	<string>ar3D_ot.above.glif</string>
 	<key>ar3Dot.below</key>
@@ -18,6 +22,10 @@
 	<string>ar3I_D_ot.above.glif</string>
 	<key>ar3IDot.below</key>
 	<string>ar3I_D_ot.below.glif</string>
+	<key>ar4Dot.above</key>
+	<string>ar4D_ot.above.glif</string>
+	<key>ar4Dot.below</key>
+	<string>ar4D_ot.below.glif</string>
 	<key>arAin.fina</key>
 	<string>arA_in.fina.glif</string>
 	<key>arAin.init</key>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ar2VDot.below" format="2">
+  <anchor x="0" y="0" name="_dotBelow"/>
+  <anchor x="0" y="-395.0" name="markBelowDot"/>
+  <outline>
+    <component base="ar2VDot.above" yOffset="-200"/>
+  </outline>
+</glyph>
