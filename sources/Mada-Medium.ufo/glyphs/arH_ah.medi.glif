@@ -5,6 +5,7 @@
   <anchor x="253.0" y="-180.0" name="markBelow"/>
   <anchor x="188.0" y="487.0" name="dotAbove"/>
   <anchor x="188.0" y="525.0" name="markAbove"/>
+  <anchor x="188.0" y="487.0" name="hamzaAbove"/>
   <outline>
     <component base="arHah.init"/>
   </outline>

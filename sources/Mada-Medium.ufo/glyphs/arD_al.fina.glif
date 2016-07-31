@@ -3,8 +3,8 @@
   <advance width="419"/>
   <anchor x="193.0" y="480.0" name="dotAbove"/>
   <anchor x="193.0" y="516.0" name="markAbove"/>
-  <anchor x="189.0" y="-72.0" name="dotBelow"/>
-  <anchor x="189.0" y="-102.0" name="markBelow"/>
+  <anchor x="209.0" y="-102.0" name="dotBelow"/>
+  <anchor x="209.0" y="-132.0" name="markBelow"/>
   <outline>
     <component base="arDal.isol"/>
   </outline>
