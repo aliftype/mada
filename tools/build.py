@@ -16,15 +16,10 @@ from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
 from ufo2ft import compileOTF, compileTTF
-from ufo2ft.markFeatureWriter import MarkFeatureWriter
 
 from buildencoded import build as buildEncoded
 
-MADA_MARKSET_PREFIX = "org.mada.markSet."
 POSTSCRIPT_NAME = "public.postscriptName"
-
-# Anchors that needs mark filtering flag
-MARKSET_ANCHORS = ("markAboveDot", "markBelowDot")
 
 WEIGHTS = {
     "Thin": 250,
@@ -37,32 +32,6 @@ WEIGHTS = {
     "ExtraBold": 800,
     "Black": 900,
 }
-
-class MadaMarkFeatureWriter(MarkFeatureWriter):
-    def _addMarkLookup(self, lines, lookupName, isMkmk, anchorPair):
-        """Add a mark lookup for one tuple in the writer's anchor list."""
-
-        anchorName, accentAnchorName = anchorPair
-        baseGlyphs = self._createBaseGlyphList(anchorName, isMkmk)
-        if not baseGlyphs:
-            return
-        className = self._generateClassName(accentAnchorName)
-        ruleType = "mark" if isMkmk else "base"
-
-        lines.append("  lookup %s {" % lookupName)
-
-        groupName = MADA_MARKSET_PREFIX + anchorName
-        if groupName in self.font.groups:
-            glyphList = self.font.groups[groupName]
-            lines.append("    @%s = [%s];" % (groupName, " ".join(glyphList)))
-            lines.append("    lookupflag UseMarkFilteringSet @%s;" % groupName)
-
-        for baseName, x, y in baseGlyphs:
-            lines.append(
-                "    pos %s %s <anchor %d %d> mark %s;" %
-                (ruleType, baseName, x, y, className))
-
-        lines.append("  } %s;" % lookupName)
 
 def generateStyleSets(ufo):
     """Generates ss01 feature which is used to move the final Yeh down so that
@@ -248,27 +217,6 @@ def buildExtraGlyphs(ufo):
         glyph.leftMargin = enGlyph.rightMargin
         glyph.rightMargin = enGlyph.leftMargin
 
-def buildMarkSets(ufo):
-    """Add mark filtering groups to the font, we use these to limits anchors to
-    specific groups of glyph. We don’t want to do this for all anchors, so we
-    maintain a list of the relevant anchors in MARKSET_ANCHORS."""
-
-    markSets = {a: set() for a in MARKSET_ANCHORS}
-
-    for glyph in ufo:
-        for anchor in glyph.anchors:
-            name = anchor.name
-            if name is None:
-                continue
-            if name.startswith("_"):
-                name = name[1:]
-            if name in MARKSET_ANCHORS:
-                markSets[name].add(glyph.name)
-
-    for markSet in markSets:
-        if markSets[markSet]:
-            ufo.groups[MADA_MARKSET_PREFIX + markSet] = list(markSets[markSet])
-
 def setInfo(info, version):
     """Sets various font metadata fields."""
 
@@ -339,14 +287,13 @@ def build(args):
     ufo = merge(args)
 
     setInfo(ufo.info, args.version)
-    buildMarkSets(ufo)
     buildExtraGlyphs(ufo)
     removeOverlap(ufo)
 
     if args.out_file.endswith(".ttf"):
-        otf = compileTTF(ufo, markWriter=MadaMarkFeatureWriter)
+        otf = compileTTF(ufo)
     else:
-        otf = compileOTF(ufo, markWriter=MadaMarkFeatureWriter)
+        otf = compileOTF(ufo)
 
     otf = subsetGlyphs(otf, ufo)
 
