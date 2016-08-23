@@ -9,7 +9,7 @@ TOOLDIR=tools
 TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
 
-PY=python3
+PY ?= python
 BUILD=$(TOOLDIR)/build.py
 
 MASTERS=Light Medium Black

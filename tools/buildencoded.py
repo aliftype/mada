@@ -7,7 +7,7 @@ from feaTools.writers.baseWriter import AbstractFeatureWriter
 
 class FeatureWriter(AbstractFeatureWriter):
     def __init__(self):
-        super(FeatureWriter).__init__()
+        super(FeatureWriter, self).__init__()
         self.subs = {}
         self.name = ""
 

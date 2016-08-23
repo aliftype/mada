@@ -12,6 +12,7 @@ from datetime import datetime
 from defcon import Font, Component
 from fontTools import subset
 from fontTools.misc.transform import Transform
+from fontTools.misc.py23 import *
 from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from tempfile import NamedTemporaryFile
@@ -147,7 +148,7 @@ def merge(args):
             glyph.lib[POSTSCRIPT_NAME] = goadb.names[name]
         # Remove anchors from spacing marks, otherwise ufo2ft will give them
         # mark glyph class which will cause HarfBuzz to zero their width.
-        if glyph.unicode and unicodedata.category(chr(glyph.unicode)) in ("Sk", "Lm"):
+        if glyph.unicode and unicodedata.category(unichr(glyph.unicode)) in ("Sk", "Lm"):
             for anchor in glyph.anchors:
                 glyph.removeAnchor(anchor)
         # Add Arabic anchors to the dotted circle, we use an offset of 100
@@ -222,15 +223,15 @@ def setInfo(info, version):
 
     info.versionMajor, info.versionMinor = map(int, version.split("."))
 
-    copyright = 'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
+    copyright = u'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
 
     info.copyright = copyright
 
-    info.openTypeNameDesigner = "Khaled Hosny"
-    info.openTypeNameLicenseURL = "http://scripts.sil.org/OFL"
-    info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
-    info.openTypeNameDescription = "Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
-    info.openTypeNameSampleText = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
+    info.openTypeNameDesigner = u"Khaled Hosny"
+    info.openTypeNameLicenseURL = u"http://scripts.sil.org/OFL"
+    info.openTypeNameLicense = u"This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+    info.openTypeNameDescription = u"Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
+    info.openTypeNameSampleText = u"صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
     info.openTypeOS2VendorID = "BLQ "
 
     familyName, styleName = info.postscriptFontName.split("-")
