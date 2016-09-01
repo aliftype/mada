@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arTah.isol" format="2">
-  <advance width="613"/>
-  <anchor x="396.0" y="485.0" name="dotAbove"/>
-  <anchor x="396.0" y="523.0" name="markAbove"/>
-  <anchor x="359.0" y="-110.0" name="dotBelow"/>
-  <anchor x="359.0" y="-130.0" name="markBelow"/>
+  <advance width="648"/>
+  <anchor x="431.0" y="485.0" name="dotAbove"/>
+  <anchor x="431.0" y="523.0" name="markAbove"/>
+  <anchor x="394.0" y="-110.0" name="dotBelow"/>
+  <anchor x="394.0" y="-130.0" name="markBelow"/>
   <outline>
     <contour>
       <point x="40.0" y="0.0" type="line"/>
       <point x="40.0" y="32.0" type="line"/>
-      <point x="150.0" y="32.0" type="line"/>
-      <point x="150.0" y="0.0" type="line"/>
+      <point x="180.0" y="32.0" type="line"/>
+      <point x="180.0" y="0.0" type="line"/>
     </contour>
     <contour>
       <point x="144.0" y="624.0" type="line"/>
@@ -18,6 +18,6 @@
       <point x="176.0" y="22.0" type="line"/>
       <point x="144.0" y="22.0" type="line"/>
     </contour>
-    <component base="arSad.head" xOffset="353.0"/>
+    <component base="arSad.head" xOffset="388.0"/>
   </outline>
 </glyph>

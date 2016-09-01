@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arSad.init" format="2">
-  <advance width="719"/>
-  <anchor x="355.0" y="-149.0" name="dotBelow"/>
-  <anchor x="355.0" y="-184.0" name="markBelow"/>
-  <anchor x="248.0" y="562.0" name="dotAbove"/>
-  <anchor x="248.0" y="606.0" name="markAbove"/>
+  <advance width="824"/>
+  <anchor x="400.0" y="-149.0" name="dotBelow"/>
+  <anchor x="400.0" y="-184.0" name="markBelow"/>
+  <anchor x="293.0" y="562.0" name="dotAbove"/>
+  <anchor x="293.0" y="606.0" name="markAbove"/>
   <outline>
     <contour>
       <point x="0.0" y="0.0" type="line"/>
@@ -18,6 +18,6 @@
       <point x="224.0" y="92.0" type="line"/>
       <point x="52.0" y="92.0" type="line"/>
     </contour>
-    <component base="arSad.head" xOffset="434.0"/>
+    <component base="arSad.head" xOffset="479.0"/>
   </outline>
 </glyph>
