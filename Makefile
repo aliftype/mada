@@ -21,12 +21,13 @@ INS=$(INSTANCES:%=$(SRCDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
+PNG=$(DOCDIR)/$(NAME)-Sample.png
 
 all: otf doc
 
 otf: $(INS) $(OTF)
 ttf: $(TTF)
-doc: $(PDF)
+doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
 
@@ -51,6 +52,15 @@ $(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Regular.otf
 	@pdfoutline $@.tmp $@.txt $@.comp
 	@pdftk $@.comp output $@ uncompress
 	@rm -f $@.tmp $@.comp $@.txt
+
+$(DOCDIR)/$(NAME)-Sample.png: $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
+	@echo "   GEN	$@"
+	@xetex --interaction=batchmode $< &> /dev/null
+	@pdfcrop $(NAME)-Sample.pdf &> /dev/null
+	@rm $(NAME)-Sample.{pdf,log}
+	@pdftocairo -png -r 600 $(NAME)-Sample-crop.pdf
+	@rm $(NAME)-Sample-crop.pdf
+	@mv $(NAME)-Sample-crop-1.png $@
 
 dist: ttf
 	@mkdir -p $(NAME)-$(VERSION)/ttf

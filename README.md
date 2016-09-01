@@ -1,7 +1,7 @@
 Mada
 ====
 
-![Sample](documentation/sample.png)
+![Sample](documentation/Mada-Sample.png)
 
 Mada is a modernist, unmodulted Arabic typeface inspired by Cairo road signage.
 Mada is characterised by low descenders, open contours and low contrast forms
