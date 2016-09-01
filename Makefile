@@ -41,7 +41,7 @@ $(SRCDIR)/$(LATIN)/Roman/SemiBold/font.ufo: $(SRCDIR)/$(LATIN)/Roman/Semibold/fo
 	@rm -rf $@
 	@cp -r $< $@
 
-$(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea Makefile $(BUILD)
+$(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(BUILD)
 	@echo "   GEN	$@"
 	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(NAME).fea --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
 
