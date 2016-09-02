@@ -15,7 +15,6 @@ from fontTools.misc.transform import Transform
 from fontTools.misc.py23 import *
 from fontTools.ttLib import TTFont
 from goadb import GOADBParser
-from tempfile import NamedTemporaryFile
 from ufo2ft import compileOTF, compileTTF
 
 from buildencoded import build as buildEncoded
