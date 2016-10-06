@@ -19,7 +19,7 @@ from ufo2ft import compileOTF, compileTTF
 
 from buildencoded import build as buildEncoded
 
-POSTSCRIPT_NAME = "public.postscriptName"
+POSTSCRIPT_NAMES = "public.postscriptNames"
 
 WEIGHTS = {
     "Thin": 250,
@@ -90,6 +90,8 @@ def merge(args):
     # glyph names of the Latin glyphs.
     goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
 
+    ufo.lib[POSTSCRIPT_NAMES] = {}
+
     # Generate production glyph names for Arabic glyphs, in case it differs
     # from working names. This will be used by ufo2ft to set the final glyph
     # names in the font file.
@@ -100,7 +102,7 @@ def merge(args):
             else:
                 postName = "u%06X" % glyph.unicode
             if postName != glyph.name:
-                glyph.lib[POSTSCRIPT_NAME] = postName
+                ufo.lib[POSTSCRIPT_NAMES][glyph.name] = postName
 
     # Populate the font’s feature text, we keep our main feature file out of
     # the UFO to share it between the fonts.
@@ -136,15 +138,15 @@ def merge(args):
         else:
             glyphs.add(name)
 
+    # Set Latin production names
+    ufo.lib[POSTSCRIPT_NAMES].update(goadb.names)
+
     # Copy Latin glyphs.
     for name in glyphs:
         glyph = latin[name]
         for component in glyph.components:
             if component.baseGlyph in uniqueComponents:
                 glyph.decomposeComponent(component)
-        # Set Latin production names
-        if name in goadb.names:
-            glyph.lib[POSTSCRIPT_NAME] = goadb.names[name]
         # Remove anchors from spacing marks, otherwise ufo2ft will give them
         # mark glyph class which will cause HarfBuzz to zero their width.
         if glyph.unicode and unicodedata.category(unichr(glyph.unicode)) in ("Sk", "Lm"):
