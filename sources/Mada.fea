@@ -82,6 +82,10 @@ feature isol {
     sub uni06B4 by arGaf.isol arGaf.above ar3Dot.above;
     sub uni06BB by arNoon.isol arTah.above;
     sub uni06C0 by arHeh.isol uni0654;
+    sub uni06C7 by arWaw.isol uni064F;
+    sub uni06C8 by arWaw.isol uni0670;
+    sub uni06CA by arWaw.isol ar2Dot.above;
+    sub uni06CB by arWaw.isol ar3Dot.above;
     sub uni06D0 by arYeh.isol ar2VDot.below;
     sub uni06D1 by arYeh.isol ar3IDot.below;
     sub uni06D3 by arYeh.isol2 uni0654;
@@ -342,6 +346,10 @@ feature fina {
     sub uni06B4 by arGaf.fina arGaf.above ar3Dot.above;
     sub uni06BB by arNoon.fina arTah.above;
     sub uni06C0 by arHeh.fina2 uni0654;
+    sub uni06C7 by arWaw.fina uni064F;
+    sub uni06C8 by arWaw.fina uni0670;
+    sub uni06CA by arWaw.fina ar2Dot.above;
+    sub uni06CB by arWaw.fina ar3Dot.above;
     sub uni06D0 by arYeh.fina ar2VDot.below;
     sub uni06D1 by arYeh.fina ar3IDot.below;
     sub uni06D3 by arYeh.fina2 uni0654;
