@@ -20,11 +20,11 @@ class FeatureWriter(AbstractFeatureWriter):
         return self
 
     def gsubType1(self, target, replacement):
-        if self.name == "isol":
+        if self.name in ("isol", "ccmp"):
             self.subs[target] = [replacement]
 
     def gsubType2(self, target, replacement):
-        if self.name == "isol":
+        if self.name in ("isol", "ccmp"):
             self.subs[target] = replacement
 
 def addComponent(glyph, name, xoff=0, yoff=0):

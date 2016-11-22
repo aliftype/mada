@@ -4,6 +4,17 @@ languagesystem arab FAR;
 languagesystem arab URD;
 #{languagesystems}
 
+feature ccmp {
+  lookupflag IgnoreMarks;
+    sub uni06F0 by uni0660;
+    sub uni06F1 by uni0661;
+    sub uni06F2 by uni0662;
+    sub uni06F3 by uni0663;
+    sub uni06F7 by uni0667;
+    sub uni06F8 by uni0668;
+    sub uni06F9 by uni0669;
+} ccmp;
+
 feature isol {
   lookupflag IgnoreMarks;
     sub uni0622 by arAlef.isol uni0653;
