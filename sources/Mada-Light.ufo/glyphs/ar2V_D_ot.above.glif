@@ -3,7 +3,7 @@
   <anchor x="0" y="0" name="_dotAbove"/>
   <anchor x="0" y="314.0" name="markAboveDot"/>
   <outline>
-    <component base="ar1Dot.above" yOffset="150.0"/>
     <component base="ar1Dot.above"/>
+    <component base="ar1Dot.above" yOffset="110.0"/>
   </outline>
 </glyph>
