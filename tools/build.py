@@ -68,6 +68,8 @@ def collectGlyphs(ufo, subset):
 
     unicodes = parseSubset(subset)
     unicodes.append(0x25CC) # dotted circle
+    unicodes.append(0x0302)
+    unicodes.append(0x030C)
 
     glyphs = set()
     components = []
@@ -154,8 +156,8 @@ def merge(args):
                 glyph.removeAnchor(anchor)
         # Add Arabic anchors to the dotted circle, we use an offset of 100
         # units because the Latin anchors are too close to the glyph.
+        offset = 100
         if glyph.unicode == 0x25CC:
-            offset = 100
             for anchor in glyph.anchors:
                 if anchor.name == "aboveLC":
                     glyph.appendAnchor(dict(name="markAbove", x=anchor.x, y=anchor.y + offset))
@@ -163,6 +165,12 @@ def merge(args):
                 if anchor.name == "belowLC":
                     glyph.appendAnchor(dict(name="markBelow", x=anchor.x, y=anchor.y - offset))
                     glyph.appendAnchor(dict(name="hamzaBelow", x=anchor.x, y=anchor.y - offset))
+        elif glyph.unicode in (0x0302, 0x030C):
+            for anchor in glyph.anchors:
+                if anchor.name == "_aboveLC":
+                    glyph.appendAnchor(dict(name="_dotAbove", x=anchor.x, y=anchor.y + offset))
+                if anchor.name == "_belowLC":
+                    glyph.appendAnchor(dict(name="_dotBelow", x=anchor.x, y=anchor.y - offset))
         # Break loudly if we have duplicated glyph in Latin and Arabic.
         # TODO should check duplicated Unicode values as well
         assert glyph.name not in ufo, glyph.name
