@@ -12,3 +12,22 @@ Mada can work also as a display typeface giving modernist and simplistic feeling
 
 Mada comes in seven weights (ExtraLight, Light, Regular, Medium, SemiBold, Bold
 and Black).
+
+Building
+--------
+
+You need GNU Make and a few Python packages. To install the Python
+requirements, run:
+```shell
+pip install -r requirements.txt
+```
+
+Then to build the OTF fonts:
+```shell
+make otf
+```
+
+Or the TTF ones:
+```
+make ttf
+```
