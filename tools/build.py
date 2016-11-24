@@ -11,8 +11,8 @@ from collections import Counter
 from datetime import datetime
 from defcon import Font, Component
 from fontTools import subset
-from fontTools.misc.transform import Transform
 from fontTools.misc.py23 import *
+from fontTools.misc.transform import Transform
 from fontTools.ttLib import TTFont
 from goadb import GOADBParser
 from ufo2ft import compileOTF, compileTTF
