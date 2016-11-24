@@ -7,9 +7,9 @@ compreffor==0.4.1
 
 # direct dependencies
 booleanOperations==0.6.2
-git+https://github.com/googlei18n/cu2qu.git@ab3c0f82e60de746bafd2e3a9fab3a176840c7f9
+cu2qu==1.1.0
 defcon==0.2.0
 git+https://github.com/typesupply/feaTools.git@8fc73f8ad5523cb6d9e0c8ac966eeb5dab5f7f49
 fonttools==3.2.1
 git+https://github.com/LettError/MutatorMath.git@9d194c020e6f5b2203dd3bbc92782ec09832304f
-git+https://github.com/googlei18n/ufo2ft.git@dffc432144481beccaecc30769b743b725fcd065
+ufo2ft==0.2.0
