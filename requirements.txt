@@ -2,6 +2,9 @@
 fontMath==0.3.0
 ufoLib==2.0.0
 
+# for ufo2ft
+compreffor==0.4.1
+
 # direct dependencies
 booleanOperations==0.6.2
 cu2qu==1.1.0
