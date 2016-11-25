@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arHeh.init" format="2">
   <advance width="782"/>
-  <anchor x="336.0" y="627.0" name="dotAbove"/>
+  <anchor x="336.0" y="675.0" name="dotAbove"/>
   <anchor x="336.0" y="675.0" name="markAbove"/>
+  <anchor x="336.0" y="675.0" name="hamzaAbove"/>
+  <anchor x="336.0" y="675.0" name="kafAbove"/>
   <anchor x="336.0" y="-150.0" name="dotBelow"/>
   <anchor x="336.0" y="-185.0" name="markBelow"/>
   <outline>

@@ -94,6 +94,8 @@ feature isol {
     sub uni06B4 by arGaf.isol arGaf.above ar3Dot.above;
     sub uni06BB by arNoon.isol arTah.above;
     sub uni06C0 by arHeh.isol uni0654;
+    sub uni06C2 by arHeh.isol uni0654;
+    sub uni06C3 by arHeh.isol ar2Dot.above;
     sub uni06C6 by arWaw.isol caroncmb;
     sub uni06C7 by arWaw.isol uni064F;
     sub uni06C8 by arWaw.isol uni0670;
@@ -127,6 +129,7 @@ feature isol {
     sub uni06C1 by arHeh.isol;
     sub uni06BE by arHeh.init;
     sub uni06D2 by arYeh.isol2;
+    sub uni06D5 by arHeh.isol;
     sub uni06CC by arYeh.isol;
     sub uni066E by arBeh.isol;
     sub uni06A1 by arFeh.isol;
@@ -187,6 +190,7 @@ feature init {
     sub uni06B2 by arKaf.init arGaf.above ar2Dot.below;
     sub uni06B3 by arKaf.init arGaf.above ar2VDot.below;
     sub uni06B4 by arKaf.init arGaf.above ar3Dot.above;
+    sub uni06C2 by arHeh.init uni0654;
     sub uni06CC by arBeh.init ar2Dot.below;
     sub uni06CE by arBeh.init ar2Dot.below caroncmb;
     sub uni06D0 by arBeh.init ar2VDot.below;
@@ -267,6 +271,7 @@ feature medi {
     sub uni06B2 by arKaf.medi arGaf.above ar2Dot.below;
     sub uni06B3 by arKaf.medi arGaf.above ar2VDot.below;
     sub uni06B4 by arKaf.medi arGaf.above ar3Dot.above;
+    sub uni06C2 by arHeh.medi2 uni0654;
     sub uni06CC by arBeh.medi ar2Dot.below;
     sub uni06CE by arBeh.medi ar2Dot.below caroncmb;
     sub uni06D0 by arBeh.medi ar2VDot.below;
@@ -372,6 +377,8 @@ feature fina {
     sub uni06B4 by arGaf.fina arGaf.above ar3Dot.above;
     sub uni06BB by arNoon.fina arTah.above;
     sub uni06C0 by arHeh.fina2 uni0654;
+    sub uni06C2 by arHeh.fina2 uni0654;
+    sub uni06C3 by arHeh.fina2 ar2Dot.above;
     sub uni06C6 by arWaw.fina caroncmb;
     sub uni06C7 by arWaw.fina uni064F;
     sub uni06C8 by arWaw.fina uni0670;
@@ -405,6 +412,7 @@ feature fina {
     sub uni06C1 by arHeh.fina2;
     sub uni06BE by arHeh.init;
     sub uni06D2 by arYeh.fina2;
+    sub uni06D5 by arHeh.fina;
     sub uni06CC by arYeh.fina;
     sub uni066E by arBeh.fina;
     sub uni06A1 by arFeh.fina;

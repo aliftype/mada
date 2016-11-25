@@ -5,6 +5,8 @@
   <anchor x="321.0" y="-422.0" name="markBelow"/>
   <anchor x="263.0" y="232.0" name="dotAbove"/>
   <anchor x="263.0" y="269.0" name="markAbove"/>
+  <anchor x="336.0" y="232.0" name="hamzaAbove"/>
+  <anchor x="336.0" y="232.0" name="kafAbove"/>
   <outline>
     <contour>
       <point x="319.0" y="-296.0" type="curve"/>
