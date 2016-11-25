@@ -167,8 +167,6 @@ def merge(args):
                     glyph.appendAnchor(dict(name="hamzaBelow", x=anchor.x, y=anchor.y - offset))
         elif glyph.unicode in (0x0302, 0x030C):
             for anchor in glyph.anchors:
-                if anchor.name == "_aboveLC":
-                    glyph.appendAnchor(dict(name="_dotAbove", x=anchor.x, y=anchor.y + offset))
                 if anchor.name == "_belowLC":
                     glyph.appendAnchor(dict(name="_dotBelow", x=anchor.x, y=anchor.y - offset))
         # Break loudly if we have duplicated glyph in Latin and Arabic.
