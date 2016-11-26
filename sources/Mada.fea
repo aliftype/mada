@@ -92,6 +92,10 @@ feature isol {
     sub uni06B2 by arGaf.isol arGaf.above ar2Dot.below;
     sub uni06B3 by arGaf.isol arGaf.above ar2VDot.below;
     sub uni06B4 by arGaf.isol arGaf.above ar3Dot.above;
+    sub uni06B5 by arLam.isol uni065A;
+    sub uni06B6 by arLam.isol ar1Dot.above;
+    sub uni06B7 by arLam.isol ar3Dot.above;
+    sub uni06B8 by arLam.isol ar3IDot.below;
     sub uni06BB by arNoon.isol arTah.above;
     sub uni06C0 by arHeh.isol uni0654;
     sub uni06C2 by arHeh.isol uni0654;
@@ -190,6 +194,10 @@ feature init {
     sub uni06B2 by arKaf.init arGaf.above ar2Dot.below;
     sub uni06B3 by arKaf.init arGaf.above ar2VDot.below;
     sub uni06B4 by arKaf.init arGaf.above ar3Dot.above;
+    sub uni06B5 by arLam.init uni065A;
+    sub uni06B6 by arLam.init ar1Dot.above;
+    sub uni06B7 by arLam.init ar3Dot.above;
+    sub uni06B8 by arLam.init ar3IDot.below;
     sub uni06C2 by arHeh.init uni0654;
     sub uni06CC by arBeh.init ar2Dot.below;
     sub uni06CE by arBeh.init ar2Dot.below uni065A;
@@ -271,6 +279,10 @@ feature medi {
     sub uni06B2 by arKaf.medi arGaf.above ar2Dot.below;
     sub uni06B3 by arKaf.medi arGaf.above ar2VDot.below;
     sub uni06B4 by arKaf.medi arGaf.above ar3Dot.above;
+    sub uni06B5 by arLam.medi uni065A;
+    sub uni06B6 by arLam.medi ar1Dot.above;
+    sub uni06B7 by arLam.medi ar3Dot.above;
+    sub uni06B8 by arLam.medi ar3IDot.below;
     sub uni06C2 by arHeh.medi2 uni0654;
     sub uni06CC by arBeh.medi ar2Dot.below;
     sub uni06CE by arBeh.medi ar2Dot.below uni065A;
@@ -375,6 +387,10 @@ feature fina {
     sub uni06B2 by arGaf.fina arGaf.above ar2Dot.below;
     sub uni06B3 by arGaf.fina arGaf.above ar2VDot.below;
     sub uni06B4 by arGaf.fina arGaf.above ar3Dot.above;
+    sub uni06B5 by arLam.fina uni065A;
+    sub uni06B6 by arLam.fina ar1Dot.above;
+    sub uni06B7 by arLam.fina ar3Dot.above;
+    sub uni06B8 by arLam.fina ar3IDot.below;
     sub uni06BB by arNoon.fina arTah.above;
     sub uni06C0 by arHeh.fina2 uni0654;
     sub uni06C2 by arHeh.fina2 uni0654;
