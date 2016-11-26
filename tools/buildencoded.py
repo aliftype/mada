@@ -55,7 +55,7 @@ def build(font):
             partAnchors = [a.name.replace("_", "", 1) for a in partGlyph.anchors if a.name.startswith("_")]
             baseAnchors = [a.name for a in baseGlyph.anchors if not a.name.startswith("_")]
             anchorName = set(baseAnchors).intersection(partAnchors)
-            assert len(anchorName) == 1
+            assert len(anchorName) > 0
             anchorName = list(anchorName)[0]
             partAnchor = [a for a in partGlyph.anchors if a.name == "_" + anchorName][0]
             baseAnchor = [a for a in baseGlyph.anchors if a.name == anchorName][0]
