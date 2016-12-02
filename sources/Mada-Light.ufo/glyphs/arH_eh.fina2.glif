@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arHeh.fina2" format="2">
   <advance width="218"/>
-  <anchor x="139.0" y="-150.0" name="dotBelow"/>
-  <anchor x="139.0" y="-170.0" name="markBelow"/>
-  <anchor x="109.0" y="150.0" name="dotAbove"/>
-  <anchor x="109.0" y="150.0" name="hamzaAbove"/>
-  <anchor x="109.0" y="187.0" name="markAbove"/>
-  <anchor x="109.0" y="150.0" name="kafAbove"/>
+  <anchor x="139.0" y="-120.0" name="dotBelow"/>
+  <anchor x="139.0" y="-140.0" name="markBelow"/>
+  <anchor x="109.0" y="180.0" name="dotAbove"/>
+  <anchor x="109.0" y="180.0" name="hamzaAbove"/>
+  <anchor x="109.0" y="217.0" name="markAbove"/>
+  <anchor x="109.0" y="180.0" name="kafAbove"/>
   <outline>
     <contour>
-      <point x="72.0" y="-88.0" type="line"/>
-      <point x="40.0" y="-88.0" type="line"/>
-      <point x="40.0" y="-35.0" type="line" smooth="yes"/>
-      <point x="40.0" y="3.0"/>
-      <point x="70.0" y="32.0"/>
-      <point x="109.0" y="32.0" type="curve" smooth="yes"/>
-      <point x="218.0" y="32.0" type="line"/>
-      <point x="218.0" y="0.0" type="line"/>
-      <point x="109.0" y="0.0" type="line" smooth="yes"/>
-      <point x="86.0" y="0.0"/>
-      <point x="72.0" y="-15.0"/>
-      <point x="72.0" y="-35.0" type="curve" smooth="yes"/>
+      <point x="72.0" y="-58.0" type="line"/>
+      <point x="40.0" y="-58.0" type="line"/>
+      <point x="40.0" y="-5.0" type="line" smooth="yes"/>
+      <point x="40.0" y="33.0"/>
+      <point x="70.0" y="62.0"/>
+      <point x="109.0" y="62.0" type="curve" smooth="yes"/>
+      <point x="218.0" y="62.0" type="line"/>
+      <point x="218.0" y="30.0" type="line"/>
+      <point x="109.0" y="30.0" type="line" smooth="yes"/>
+      <point x="86.0" y="30.0"/>
+      <point x="72.0" y="15.0"/>
+      <point x="72.0" y="-5.0" type="curve" smooth="yes"/>
     </contour>
   </outline>
 </glyph>
