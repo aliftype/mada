@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni065B" format="2">
   <unicode hex="065B"/>
-  <anchor x="0" y="0" name="_dotAbove"/>
-  <anchor x="0" y="0" name="_markAbove"/>
+  <anchor x="0" y="25" name="_dotAbove"/>
+  <anchor x="0" y="25" name="_markAbove"/>
   <anchor x="0" y="237.0" name="markAbove"/>
   <outline>
     <contour>
