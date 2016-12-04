@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arGaf.above" format="2">
   <anchor x="0" y="0" name="_gafAbove"/>
+  <anchor x="-190" y="0" name="dotAboveGaf"/>
   <outline>
     <contour>
       <point x="-160.0" y="-35.0" type="curve"/>

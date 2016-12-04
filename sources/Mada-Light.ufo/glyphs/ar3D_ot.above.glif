@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ar3Dot.above" format="2">
   <anchor x="0" y="0" name="_dotAbove"/>
+  <anchor x="120" y="0" name="_dotAboveGaf"/>
   <anchor x="0" y="237.0" name="markAboveDot"/>
   <outline>
     <component base="ar2Dot.above"/>
