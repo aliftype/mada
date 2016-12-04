@@ -34,6 +34,8 @@ feature isol {
     sub uni0636 by arSad.isol ar1Dot.above;
     sub uni0638 by arTah.isol ar1Dot.above;
     sub uni063A by arAin.isol ar1Dot.above;
+    sub uni063B by arGaf.isol ar2Dot.above;
+    sub uni063C by arGaf.isol ar3IDot.below;
     sub uni063D by arYeh.isol uni065B;
     sub uni063E by arYeh.isol ar2Dot.above;
     sub uni063F by arYeh.isol ar3Dot.above;
@@ -118,6 +120,9 @@ feature isol {
     sub uni06EF by arReh.isol uni065B;
     sub uni0756 by arBeh.isol uni065A;
     sub uni075A by arDal.isol arISmallV.below;
+    sub uni0762 by arGaf.isol ar1Dot.above;
+    sub uni0763 by arGaf.isol ar3Dot.above;
+    sub uni0764 by arGaf.isol ar3Dot.below;
     sub uni0767 by arNoon.isol ar1Dot.above ar2Dot.below;
     sub uni0768 by arNoon.isol ar1Dot.above arTah.above;
     sub uni0769 by arNoon.isol ar1Dot.above uni065A;
@@ -160,6 +165,8 @@ feature init {
     sub uni0636 by arSad.init ar1Dot.above;
     sub uni0638 by arTah.init ar1Dot.above;
     sub uni063A by arAin.init ar1Dot.above;
+    sub uni063B by arKaf.init ar2Dot.above;
+    sub uni063C by arKaf.init ar3IDot.below;
     sub uni063D by arBeh.init uni065B ar2Dot.below;
     sub uni063E by arBeh.init ar2Dot.above ar2Dot.below;
     sub uni063F by arBeh.init ar3Dot.above ar2Dot.below;
@@ -215,6 +222,9 @@ feature init {
     sub uni06D0 by arBeh.init ar2VDot.below;
     sub uni06D1 by arBeh.init ar3IDot.below;
     sub uni0756 by arBeh.init uni065A;
+    sub uni0762 by arKaf.init ar1Dot.above;
+    sub uni0763 by arKaf.init ar3Dot.above;
+    sub uni0764 by arKaf.init ar3Dot.below;
     sub uni0767 by arBeh.init ar1Dot.above ar2Dot.below;
     sub uni0768 by arBeh.init ar1Dot.above arTah.above;
     sub uni0769 by arBeh.init ar1Dot.above uni065A;
@@ -251,6 +261,8 @@ feature medi {
     sub uni0636 by arSad.medi ar1Dot.above;
     sub uni0638 by arTah.medi ar1Dot.above;
     sub uni063A by arAin.medi ar1Dot.above;
+    sub uni063B by arKaf.medi ar2Dot.above;
+    sub uni063C by arKaf.medi ar3IDot.below;
     sub uni063D by arBeh.medi uni065B ar2Dot.below;
     sub uni063E by arBeh.medi ar2Dot.above ar2Dot.below;
     sub uni063F by arBeh.medi ar3Dot.above ar2Dot.below;
@@ -306,6 +318,9 @@ feature medi {
     sub uni06D0 by arBeh.medi ar2VDot.below;
     sub uni06D1 by arBeh.medi ar3IDot.below;
     sub uni0756 by arBeh.medi uni065A;
+    sub uni0762 by arKaf.medi ar1Dot.above;
+    sub uni0763 by arKaf.medi ar3Dot.above;
+    sub uni0764 by arKaf.medi ar3Dot.below;
     sub uni0767 by arBeh.medi ar1Dot.above ar2Dot.below;
     sub uni0768 by arBeh.medi ar1Dot.above arTah.above;
     sub uni0769 by arBeh.medi ar1Dot.above uni065A;
@@ -349,6 +364,8 @@ feature fina {
     sub uni0636 by arSad.fina ar1Dot.above;
     sub uni0638 by arTah.fina ar1Dot.above;
     sub uni063A by arAin.fina ar1Dot.above;
+    sub uni063B by arGaf.fina ar2Dot.above;
+    sub uni063C by arGaf.fina ar3IDot.below;
     sub uni063D by arYeh.fina uni065B;
     sub uni063E by arYeh.fina ar2Dot.above;
     sub uni063F by arYeh.fina ar3Dot.above;
@@ -433,6 +450,9 @@ feature fina {
     sub uni06EF by arReh.fina uni065B;
     sub uni0756 by arBeh.fina uni065A;
     sub uni075A by arDal.fina arISmallV.below;
+    sub uni0762 by arGaf.fina ar1Dot.above;
+    sub uni0763 by arGaf.fina ar3Dot.above;
+    sub uni0764 by arGaf.fina ar3Dot.below;
     sub uni0767 by arNoon.fina ar1Dot.above ar2Dot.below;
     sub uni0768 by arNoon.fina ar1Dot.above arTah.above;
     sub uni0769 by arNoon.fina ar1Dot.above uni065A;
