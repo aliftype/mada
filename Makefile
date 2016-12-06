@@ -14,7 +14,7 @@ BUILD=$(TOOLDIR)/build.py
 
 MASTERS=Light Medium Black
 INSTANCES=Regular SemiBold Bold
-FONTS=$(MASTERS) $(INSTANCES)
+FONTS=Light Black $(INSTANCES)
 
 MAS=$(MASTERS:%=$(SRCDIR)/$(NAME)-%.ufo)
 INS=$(INSTANCES:%=$(SRCDIR)/$(NAME)-%.ufo)
