@@ -10,8 +10,7 @@ resolution settings.
 
 Mada can work also as a display typeface giving modernist and simplistic feeling.
 
-Mada comes in seven weights (ExtraLight, Light, Regular, Medium, SemiBold, Bold
-and Black).
+Mada comes in 6 weights (Light, Regular, Medium, SemiBold, Bold and Black).
 
 Building
 --------

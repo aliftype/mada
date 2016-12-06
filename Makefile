@@ -13,7 +13,7 @@ PY ?= python
 BUILD=$(TOOLDIR)/build.py
 
 MASTERS=Light Medium Black
-INSTANCES=ExtraLight Regular SemiBold Bold
+INSTANCES=Regular SemiBold Bold
 FONTS=$(MASTERS) $(INSTANCES)
 
 MAS=$(MASTERS:%=$(SRCDIR)/$(NAME)-%.ufo)
@@ -31,7 +31,7 @@ doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
 
-$(SRCDIR)/%-ExtraLight.ufo $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-SemiBold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
+$(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-SemiBold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
 	@echo "   GEN	instances"
 	@python2 -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
 

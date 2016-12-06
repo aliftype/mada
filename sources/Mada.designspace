@@ -18,13 +18,6 @@
 		</source>
 	</sources>
 	<instances>
-		<instance familyname="Mada" filename="Mada-ExtraLight.ufo" postscriptfontname="Mada-ExtraLight" stylename="ExtraLight">
-			<location>
-				<dimension name="weight" xvalue="0"/>
-			</location>
-			<kerning/>
-			<info/>
-		</instance>
 		<instance familyname="Mada" filename="Mada-Regular.ufo" postscriptfontname="Mada-Regular" stylename="Regular">
 			<location>
 				<dimension name="weight" xvalue="368"/>
