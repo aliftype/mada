@@ -45,6 +45,10 @@ feature isol {
     sub uni0646 by arNoon.isol ar1Dot.above;
     sub uni064A by arYeh.isol ar2Dot.below;
     sub uni0671 by arAlef.isol arSad.above;
+    sub uni0675 by arAlef.isol arHighHamza.above;
+    sub uni0676 by arWaw.isol arHighHamza.above;
+    sub uni0677 by arWaw.isol arHighHamza.above arDamma.above;
+    sub uni0678 by arYeh.isol arHighHamza.above;
     sub uni0679 by arBeh.isol arTah.above;
     sub uni067A by arBeh.isol ar2VDot.above;
     sub uni067B by arBeh.isol ar2VDot.below;
@@ -107,7 +111,7 @@ feature isol {
     sub uni06C2 by arHeh.isol uni0654;
     sub uni06C3 by arHeh.isol ar2Dot.above;
     sub uni06C6 by arWaw.isol uni065A;
-    sub uni06C7 by arWaw.isol uni064F;
+    sub uni06C7 by arWaw.isol arDamma.above;
     sub uni06C8 by arWaw.isol uni0670;
     sub uni06C9 by arWaw.isol uni065B;
     sub uni06CA by arWaw.isol ar2Dot.above;
@@ -178,6 +182,7 @@ feature init {
     sub uni0642 by arFeh.init ar2Dot.above;
     sub uni0646 by arBeh.init ar1Dot.above;
     sub uni064A by arBeh.init ar2Dot.below;
+    sub uni0678 by arBeh.init arHighHamza.above;
     sub uni0679 by arBeh.init arTah.above;
     sub uni067A by arBeh.init ar2VDot.above;
     sub uni067B by arBeh.init ar2VDot.below;
@@ -277,6 +282,7 @@ feature medi {
     sub uni0642 by arFeh.medi ar2Dot.above;
     sub uni0646 by arBeh.medi ar1Dot.above;
     sub uni064A by arBeh.medi ar2Dot.below;
+    sub uni0678 by arBeh.medi arHighHamza.above;
     sub uni0679 by arBeh.medi arTah.above;
     sub uni067A by arBeh.medi ar2VDot.above;
     sub uni067B by arBeh.medi ar2VDot.below;
@@ -385,6 +391,10 @@ feature fina {
     sub uni0646 by arNoon.fina ar1Dot.above;
     sub uni064A by arYeh.fina ar2Dot.below;
     sub uni0671 by arAlef.fina arSad.above;
+    sub uni0675 by arAlef.fina arHighHamza.above;
+    sub uni0676 by arWaw.fina arHighHamza.above;
+    sub uni0677 by arWaw.fina arHighHamza.above arDamma.above;
+    sub uni0678 by arYeh.fina arHighHamza.above;
     sub uni0679 by arBeh.fina arTah.above;
     sub uni067A by arBeh.fina ar2VDot.above;
     sub uni067B by arBeh.fina ar2VDot.below;
@@ -447,7 +457,7 @@ feature fina {
     sub uni06C2 by arHeh.fina2 uni0654;
     sub uni06C3 by arHeh.fina2 ar2Dot.above;
     sub uni06C6 by arWaw.fina uni065A;
-    sub uni06C7 by arWaw.fina uni064F;
+    sub uni06C7 by arWaw.fina arDamma.above;
     sub uni06C8 by arWaw.fina uni0670;
     sub uni06C9 by arWaw.fina uni065B;
     sub uni06CA by arWaw.fina ar2Dot.above;

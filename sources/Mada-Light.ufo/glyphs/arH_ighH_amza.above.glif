@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arHighHamza.above" format="2">
+  <anchor x="0" y="0" name="_hamzaAbove"/>
+  <anchor x="0" y="237.0" name="markAbove"/>
+  <anchor x="80" y="0" name="dammaHamza"/>
+  <outline>
+    <component base="arKaf.above" xOffset="175.85022026431716" yOffset="0.23348017621151484"/>
+  </outline>
+</glyph>

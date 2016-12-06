@@ -52,6 +52,8 @@
 	<string>arD_al.fina.glif</string>
 	<key>arDal.isol</key>
 	<string>arD_al.isol.glif</string>
+	<key>arDamma.above</key>
+	<string>arD_amma.above.glif</string>
 	<key>arFeh.fina</key>
 	<string>arF_eh.fina.glif</string>
 	<key>arFeh.init</key>
@@ -92,6 +94,8 @@
 	<string>arH_eh.medi.glif</string>
 	<key>arHeh.medi2</key>
 	<string>arH_eh.medi2.glif</string>
+	<key>arHighHamza.above</key>
+	<string>arH_ighH_amza.above.glif</string>
 	<key>arISmallV.below</key>
 	<string>arI_S_mallV_.below.glif</string>
 	<key>arKaf.above</key>
