@@ -2,30 +2,24 @@ import sys
 import os
 
 from defcon import Font, Component
-from feaTools.parser import parseFeatures, FeaToolsParserSyntaxError
-from feaTools.writers.baseWriter import AbstractFeatureWriter
+from fontTools.misc.py23 import *
+from fontTools.feaLib.parser import Parser
 
-class FeatureWriter(AbstractFeatureWriter):
-    def __init__(self):
-        super(FeatureWriter, self).__init__()
-        self.subs = {}
-        self.name = ""
+def parse(features):
+    subs = {}
+    featurefile = UnicodeIO(tounicode(features))
+    fea = Parser(featurefile).parse()
+    for statement in fea.statements:
+        if getattr(statement, "name", None) in ("isol", "ccmp"):
+            for substatement in statement.statements:
+                if hasattr(substatement, "mapping"):
+                    # Single
+                    subs.update(substatement.mapping)
+                elif hasattr(substatement, "glyph"):
+                    # Multiple
+                    subs[substatement.glyph] = substatement.replacement
 
-    def feature(self, name):
-        self.name = name
-        return self
-
-    def lookup(self, name):
-        self.name = ""
-        return self
-
-    def gsubType1(self, target, replacement):
-        if self.name in ("isol", "ccmp"):
-            self.subs[target] = [replacement]
-
-    def gsubType2(self, target, replacement):
-        if self.name in ("isol", "ccmp"):
-            self.subs[target] = replacement
+    return subs
 
 def addComponent(glyph, name, xoff=0, yoff=0):
     component = glyph.instantiateComponent()
@@ -34,15 +28,11 @@ def addComponent(glyph, name, xoff=0, yoff=0):
     glyph.appendComponent(component)
 
 def build(font):
-    fea = font.features.text
-    writer = FeatureWriter()
-    try:
-        parseFeatures(writer, fea)
-    except FeaToolsParserSyntaxError:
-        pass
-    subs = writer.subs
+    subs = parse(font.features.text)
 
     for name, names in subs.items():
+        if isinstance(names, str):
+            names = [names]
         baseGlyph = font[names[0]]
         glyph = font.newGlyph(name)
         glyph.unicode = int(name.lstrip('uni'), 16)
