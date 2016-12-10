@@ -31,7 +31,7 @@ def build(font):
     subs = parse(font.features.text)
 
     for name, names in subs.items():
-        if isinstance(names, str):
+        if isinstance(names, (str, unicode)):
             names = [names]
         baseGlyph = font[names[0]]
         glyph = font.newGlyph(name)
