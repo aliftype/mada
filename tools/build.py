@@ -233,7 +233,7 @@ def setInfo(info, version):
     info.openTypeNameLicense = u"This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
     info.openTypeNameDescription = u"Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
     info.openTypeNameSampleText = u"صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
-    info.openTypeOS2VendorID = "BLQ "
+    info.openTypeOS2VendorID = "ALIF"
 
     familyName, styleName = info.postscriptFontName.split("-")
     try:
