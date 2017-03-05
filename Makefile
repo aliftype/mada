@@ -49,7 +49,7 @@ $(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/
 	@echo "   GEN	$@"
 	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(NAME).fea --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
 
-$(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Regular.otf
+$(PDF): $(NAME)-Regular.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
@@ -57,7 +57,7 @@ $(DOCDIR)/$(NAME)-Table.pdf: $(NAME)-Regular.otf
 	@pdftk $@.comp output $@ uncompress
 	@rm -f $@.tmp $@.comp $@.txt
 
-$(DOCDIR)/$(NAME)-Sample.png: $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
+$(PNG): $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
 	@echo "   GEN	$@"
 	@xetex --interaction=batchmode $< &> /dev/null
 	@pdfcrop $(NAME)-Sample.pdf &> /dev/null
