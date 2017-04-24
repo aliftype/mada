@@ -484,7 +484,7 @@ feature fina {
     sub uni0768 by arNoon.fina ar1Dot.above arTah.above;
     sub uni0769 by arNoon.fina ar1Dot.above uni065A;
     sub uni077E by arSeen.fina uni065B;
-    sub uni06FF by arHeh.init uni065B;
+    sub uni06FF by arHeh.fina3 uni065B;
 
     sub uni0627 by arAlef.fina;
     sub uni062D by arHah.fina;
@@ -502,7 +502,7 @@ feature fina {
     sub uni06A9 by arGaf.fina;
     sub uni06BA by arNoon.fina;
     sub uni06C1 by arHeh.fina2;
-    sub uni06BE by arHeh.init;
+    sub uni06BE by arHeh.fina3;
     sub uni06D2 by arYeh.fina2;
     sub uni06D5 by arHeh.fina;
     sub uni06CC by arYeh.fina;
