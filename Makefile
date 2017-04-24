@@ -33,7 +33,7 @@ SHELL=/usr/bin/env bash
 
 $(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-SemiBold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
 	@echo "   GEN	instances"
-	@python2 -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
+	@$(PY) -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
 
 # hack since Adobe names it Semibold but Dave wants SemiBold
 $(SRCDIR)/$(LATIN)/Roman/SemiBold/font.ufo: $(SRCDIR)/$(LATIN)/Roman/Semibold/font.ufo
