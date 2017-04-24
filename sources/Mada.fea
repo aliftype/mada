@@ -135,6 +135,7 @@ feature isol {
     sub uni0768 by arNoon.isol ar1Dot.above arTah.above;
     sub uni0769 by arNoon.isol ar1Dot.above uni065A;
     sub uni077E by arSeen.isol uni065B;
+    sub uni06FF by arHeh.init uni065B;
 
     sub uni0627 by arAlef.isol;
     sub uni062D by arHah.isol;
@@ -241,6 +242,7 @@ feature init {
     sub uni0768 by arBeh.init ar1Dot.above arTah.above;
     sub uni0769 by arBeh.init ar1Dot.above uni065A;
     sub uni077E by arSeen.init uni065B;
+    sub uni06FF by arHeh.init uni065B;
 
     sub uni062D by arHah.init;
     sub uni0633 by arSeen.init;
@@ -341,6 +343,7 @@ feature medi {
     sub uni0768 by arBeh.medi ar1Dot.above arTah.above;
     sub uni0769 by arBeh.medi ar1Dot.above uni065A;
     sub uni077E by arSeen.medi uni065B;
+    sub uni06FF by arHeh.medi uni065B;
 
     sub uni062D by arHah.medi;
     sub uni0633 by arSeen.medi;
@@ -481,6 +484,7 @@ feature fina {
     sub uni0768 by arNoon.fina ar1Dot.above arTah.above;
     sub uni0769 by arNoon.fina ar1Dot.above uni065A;
     sub uni077E by arSeen.fina uni065B;
+    sub uni06FF by arHeh.init uni065B;
 
     sub uni0627 by arAlef.fina;
     sub uni062D by arHah.fina;
