@@ -531,7 +531,7 @@ feature rlig {
     sub [arLam.init arLam.medi]' lookup LamAlef arAlef.fina' lookup LamAlef;
 } rlig;
 
-feature mark {
+feature rclt {
   # When a kasra follows hah with dot below (i.e. jeem) we don’t want the
   # dot-kasra ‘mkmk’ to be used as it will cause the kasra to clash with the
   # hah. So here we replace the kasra with an alternate glyph that does not
@@ -542,4 +542,4 @@ feature mark {
   @Kasra.alt = [uni064D.alt uni0650.alt];
   lookupflag UseMarkFilteringSet @Filter;
     sub [arHah.isol arHah.fina] @Dots @Kasra' by @Kasra.alt;
-} mark;
+} rclt;
