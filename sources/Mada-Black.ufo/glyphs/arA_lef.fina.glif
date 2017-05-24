@@ -9,7 +9,7 @@
   <anchor x="186.0" y="-74.0" name="markBelow"/>
   <anchor x="186.0" y="684.0" name="kafAbove"/>
   <outline>
-    <component base="extender" xScale="-1.0" xOffset="365.0"/>
     <component base="arLam.init" xScale="-1.0" xOffset="370.0"/>
+    <component base="extender" xScale="-1.0" xOffset="365.0"/>
   </outline>
 </glyph>
