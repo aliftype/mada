@@ -46,6 +46,7 @@ mkdir -p $(BLDDIR)
 pushd $(BLDDIR) 1>/dev/null;                                                   \
 fontmake --mm-designspace $(NAME).designspace                                  \
          --interpolate                                                         \
+         --autohint                                                            \
          --output $(1)                                                         \
          --verbose WARNING                                                     \
          ;                                                                     \
