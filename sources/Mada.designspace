@@ -10,6 +10,9 @@
 			<location>
 				<dimension name="weight" xvalue="520"/>
 			</location>
+			<features copy="1" />
+			<info copy="1" />
+			<lib copy="1" />
 		</source>
 		<source filename="Mada-Black.ufo" name="black">
 			<location>
@@ -18,23 +21,37 @@
 		</source>
 	</sources>
 	<instances>
-		<instance familyname="Mada" filename="Mada-Regular.ufo" postscriptfontname="Mada-Regular" stylename="Regular">
+		<instance familyname="Mada" filename="ufo/Mada-Light.ufo" postscriptfontname="Mada-Light" stylename="Light">
+			<location>
+				<dimension name="weight" xvalue="100"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance familyname="Mada" filename="ufo/Mada-Regular.ufo" postscriptfontname="Mada-Regular" stylename="Regular">
 			<location>
 				<dimension name="weight" xvalue="368"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Mada" filename="Mada-SemiBold.ufo" postscriptfontname="Mada-SemiBold" stylename="SemiBold">
+		<instance familyname="Mada" filename="ufo/Mada-SemiBold.ufo" postscriptfontname="Mada-SemiBold" stylename="SemiBold">
 			<location>
 				<dimension name="weight" xvalue="600"/>
 			</location>
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Mada" filename="Mada-Bold.ufo" postscriptfontname="Mada-Bold" stylename="Bold">
+		<instance familyname="Mada" filename="ufo/Mada-Bold.ufo" postscriptfontname="Mada-Bold" stylename="Bold">
 			<location>
 				<dimension name="weight" xvalue="824"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
+		<instance familyname="Mada" filename="ufo/Mada-Black.ufo" postscriptfontname="Mada-Black" stylename="Black">
+			<location>
+				<dimension name="weight" xvalue="1000"/>
 			</location>
 			<kerning/>
 			<info/>

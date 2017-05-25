@@ -6,16 +6,12 @@ import math
 import os
 import unicodedata
 
-from booleanOperations import BooleanOperationManager
 from collections import Counter
 from datetime import datetime
 from defcon import Font, Component
-from fontTools import subset
 from fontTools.misc.py23 import *
 from fontTools.misc.transform import Transform
-from fontTools.ttLib import TTFont
 from goadb import GOADBParser
-from ufo2ft import compileOTF, compileTTF
 
 from buildencoded import build as buildEncoded
 
@@ -116,15 +112,11 @@ def merge(args):
 
     for glyph in latin:
         if glyph.name in goadb.encodings:
-            uni = goadb.encodings[glyph.name]
-            # Source Sans Pro has different advance widths for space and NBSP
-            # glyphs, so we drop the later, and map both Unicode characters to
-            # the space glyph.
-            if uni == 0x00A0: # NBSP
-                continue
-            glyph.unicode = uni
-            if uni == 0x0020: # space
-                glyph.unicodes = glyph.unicodes + [0x00A0]
+            glyph.unicode = goadb.encodings[glyph.name]
+
+    # Source Sans Pro has different advance widths for space and NBSP
+    # glyphs, fix it.
+    latin["nbspace"].width = latin["space"].width
 
     glyphs, components = collectGlyphs(latin, args.latin_subset)
 
@@ -179,6 +171,12 @@ def merge(args):
         value = getattr(latin.info, attr)
         if value is not None:
             setattr(ufo.info, attr, getattr(latin.info, attr))
+
+    # MutatorMath does not like multiple unicodes and will drop it entirely,
+    # turning the glyph unencoded:
+    # https://github.com/LettError/MutatorMath/issues/85
+    for glyph in ufo:
+        assert not " " in glyph.unicodes
 
     return ufo
 
@@ -260,54 +258,12 @@ def setInfo(info, version):
     # ExtraLight!
     info.italicAngle = 0.0
 
-def subsetGlyphs(otf, ufo):
-    """Subsets the final font to the set of characters that we only need since
-    the Latin font can have too many characters than what wee need."""
-    options = subset.Options()
-    options.set(layout_features='*', name_IDs='*', notdef_outline=True,
-                glyph_names=True, recalc_average_width=True)
-
-    unicodes = []
-    for glyph in ufo:
-        unicodes.extend(glyph.unicodes)
-
-    subsetter = subset.Subsetter(options=options)
-    subsetter.populate(unicodes=unicodes)
-    subsetter.subset(otf)
-    return otf
-
-def decomposeGlyphs(ufo, isTTF):
-    for glyph in ufo:
-        if not glyph.components or (isTTF and not bool(glyph)):
-            continue
-        glyph.decomposeAllComponents()
-
-    return ufo
-
-def removeOverlap(ufo):
-    """Removes overlap by combining overlapping contours. Not really necessary,
-    but some font rendering systems need this."""
-    manager = BooleanOperationManager()
-    for glyph in ufo:
-        contours = list(glyph)
-        glyph.clearContours()
-        manager.union(contours, glyph.getPointPen())
-
-    return ufo
-
 def build(args):
-    isTTF = args.out_file.endswith(".ttf")
-
     ufo = merge(args)
     setInfo(ufo.info, args.version)
     buildExtraGlyphs(ufo)
-    ufo = decomposeGlyphs(ufo, isTTF)
-    ufo = removeOverlap(ufo)
 
-    otf = compileTTF(ufo) if isTTF else compileOTF(ufo)
-    otf = subsetGlyphs(otf, ufo)
-
-    return otf
+    return ufo
 
 def main():
     parser = argparse.ArgumentParser(description="Build Mada fonts.")
@@ -320,8 +276,8 @@ def main():
 
     args = parser.parse_args()
 
-    otf = build(args)
-    otf.save(args.out_file)
+    ufo = build(args)
+    ufo.save(args.out_file)
 
 if __name__ == "__main__":
     main()

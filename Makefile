@@ -4,20 +4,19 @@ LATIN=SourceSansPro
 
 SRCDIR=sources
 DOCDIR=documentation
+BLDDIR=build
 LATIN_SUBSET=$(SRCDIR)/latin-subset.txt
 TOOLDIR=tools
 TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
 
 PY ?= python
-BUILD=$(TOOLDIR)/build.py
+PREPARE=$(TOOLDIR)/prepare.py
 
 MASTERS=Light Medium Black
-INSTANCES=Regular SemiBold Bold
-FONTS=Light Black $(INSTANCES)
+FONTS=Light Regular SemiBold Bold Black
 
-MAS=$(MASTERS:%=$(SRCDIR)/$(NAME)-%.ufo)
-INS=$(INSTANCES:%=$(SRCDIR)/$(NAME)-%.ufo)
+UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
@@ -25,29 +24,70 @@ PNG=$(DOCDIR)/$(NAME)-Sample.png
 
 all: otf doc
 
-otf: $(INS) $(OTF)
+otf: $(OTF)
 ttf: $(TTF)
 doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
 
-$(SRCDIR)/%-Regular.ufo $(SRCDIR)/%-SemiBold.ufo $(SRCDIR)/%-Bold.ufo: $(SRCDIR)/$(NAME).designspace $(MAS)
-	@echo "   GEN	instances"
-	@$(PY) -c "from mutatorMath.ufo import build; build('$<', outputUFOFormatVersion=3)"
+define prepare_masters
+echo "   GEN   $(4)"
+mkdir -p $(BLDDIR)
+$(PY) $(PREPARE) --version=$(VERSION)                                          \
+                 --feature-file=$(3)                                           \
+                 --out-file=$(4)                                               \
+                 --latin-subset=$(LATIN_SUBSET)                                \
+                 $(1) $(2)
+endef
 
-# hack since Adobe names it Semibold but Dave wants SemiBold
-$(SRCDIR)/$(LATIN)/Roman/SemiBold/font.ufo: $(SRCDIR)/$(LATIN)/Roman/Semibold/font.ufo
-	@mkdir -p $@
-	@rm -rf $@
-	@cp -r $< $@
+define generate_fonts
+echo "   MAKE  $(1)"
+mkdir -p $(BLDDIR)
+pushd $(BLDDIR) 1>/dev/null;                                                   \
+fontmake --mm-designspace $(NAME).designspace                                  \
+         --interpolate                                                         \
+         --output $(1)                                                         \
+         --verbose WARNING                                                     \
+         ;                                                                     \
+popd 1>/dev/null
+endef
+
+define subset_fonts
+echo "   SUB   $(2)"
+pyftsubset $(1)                                                                \
+           --unicodes='*'                                                      \
+           --layout_features='*'                                               \
+           --name-IDs='*'                                                      \
+           --notdef-outline                                                    \
+           --glyph-names                                                       \
+           --recalc-average-width                                              \
+           --output-file=$(2)                                                  \
+           ;
+endef
+
+$(NAME)-%.otf: $(BLDDIR)/instance_otf/$(NAME)-%.otf
+	@$(call subset_fonts,$<,$@)
+
+$(NAME)-%.ttf: $(BLDDIR)/instance_ttf/$(NAME)-%.ttf
+	@$(call subset_fonts,$<,$@)
+
+$(BLDDIR)/instance_otf/$(NAME)-%.otf: $(UFO) $(BLDDIR)/$(NAME).designspace
+	@$(call generate_fonts,otf)
+
+$(BLDDIR)/instance_ttf/$(NAME)-%.ttf: $(UFO) $(BLDDIR)/$(NAME).designspace
+	@$(call generate_fonts,ttf)
+
+$(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
+	@$(call prepare_masters,$<,$(word 2,$+),$(word 3,$+),$@)
 
 $(SRCDIR)/$(LATIN)/Roman/%/font.ufo:
 	@echo "   GET	$@"
 	@if [ ! -f $@ ]; then git submodule init; git submodule update; fi
 
-$(NAME)-%.otf $(NAME)-%.ttf: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(BUILD)
-	@echo "   GEN	$@"
-	@FILES=($+); $(PY) $(BUILD) --version=$(VERSION) --out-file=$@ --feature-file=$(SRCDIR)/$(NAME).fea --latin-subset=$(LATIN_SUBSET) $< $${FILES[1]}
+$(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
+	@echo "   GEN   $@"
+	@mkdir -p $(BLDDIR)
+	@cp $< $@
 
 $(PDF): $(NAME)-Regular.otf
 	@echo "   GEN	$@"
@@ -75,4 +115,4 @@ dist: ttf
 	@zip -r $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
-	@rm -rf $(OTF) $(PDF) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
+	@rm -rf $(BLDDIR) $(OTF) $(PDF) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
