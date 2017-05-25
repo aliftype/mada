@@ -87,7 +87,7 @@
 	<key>postscriptStemSnapV</key>
 	<array/>
 	<key>postscriptUnderlinePosition</key>
-	<real>-100.0</real>
+	<integer>-200</integer>
 	<key>postscriptUnderlineThickness</key>
 	<real>50.0</real>
 	<key>postscriptWeightName</key>
