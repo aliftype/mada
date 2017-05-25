@@ -5,6 +5,7 @@
   <anchor x="357.0" y="-130.0" name="markBelow"/>
   <anchor x="337.0" y="393.0" name="dotAbove"/>
   <anchor x="337.0" y="430.0" name="markAbove"/>
+  <anchor x="357.0" y="0" name="ringBelow"/>
   <outline>
     <component base="arBeh.isol"/>
   </outline>
