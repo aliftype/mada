@@ -4,8 +4,14 @@ python:
 # - "3.4"
 
 sudo: false
+dist: trusty
 os:
   - linux
+
+addons:
+  apt:
+    packages:
+    - ttfautohint
 
 install:
   - pip install -r requirements.txt
