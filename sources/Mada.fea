@@ -45,6 +45,8 @@ feature isol {
     sub uni0646 by arNoon.isol ar1Dot.above;
     sub uni064A by arYeh.isol ar2Dot.below;
     sub uni0671 by arAlef.isol arSad.above;
+    sub uni0672 by arAlef.isol arWavyHamza.above;
+    sub uni0673 by arAlef.isol uni065F;
     sub uni0675 by arAlef.isol arHighHamza.above;
     sub uni0676 by arWaw.isol arHighHamza.above;
     sub uni0677 by arWaw.isol arHighHamza.above arDamma.above;
@@ -409,6 +411,8 @@ feature fina {
     sub uni0646 by arNoon.fina ar1Dot.above;
     sub uni064A by arYeh.fina ar2Dot.below;
     sub uni0671 by arAlef.fina arSad.above;
+    sub uni0672 by arAlef.fina arWavyHamza.above;
+    sub uni0673 by arAlef.fina uni065F;
     sub uni0675 by arAlef.fina arHighHamza.above;
     sub uni0676 by arWaw.fina arHighHamza.above;
     sub uni0677 by arWaw.fina arHighHamza.above arDamma.above;
