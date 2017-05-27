@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arSwashKaf.medi" format="2">
+  <advance width="736.6347591765035"/>
+  <anchor x="369.0" y="-179.0" name="markBelow"/>
+  <anchor x="117.46860643185298" y="482.15926493108725" name="markAbove"/>
+  <outline>
+    <component base="arSwashKaf.init"/>
+  </outline>
+</glyph>

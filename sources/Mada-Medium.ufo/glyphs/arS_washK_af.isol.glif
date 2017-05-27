@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arSwashKaf.isol" format="2">
+  <advance width="1021.2973627175763"/>
+  <anchor x="546.0" y="-170.0" name="markBelow"/>
+  <anchor x="290.86983154670753" y="533.3950995405819" name="markAbove"/>
+  <outline>
+    <contour>
+      <point x="152.0" y="105.0" type="line"/>
+      <point x="239.0" y="0.0" type="line"/>
+      <point x="137.0" y="0.0" type="line"/>
+      <point x="50.0" y="105.0" type="line"/>
+    </contour>
+    <component base="arSwashKaf.init" xOffset="137.0"/>
+  </outline>
+</glyph>
