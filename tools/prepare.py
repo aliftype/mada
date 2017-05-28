@@ -178,6 +178,13 @@ def merge(args):
     for glyph in ufo:
         assert not " " in glyph.unicodes
 
+    # Make sure we don’t have glyphs with the same unicode value
+    unicodes = []
+    for glyph in ufo:
+        unicodes.extend(glyph.unicodes)
+    duplicates = set([u for u in unicodes if unicodes.count(u) > 1])
+    assert len(duplicates) == 0, "Duplicate unicodes: %s " % (["%04X" % d for d in duplicates])
+
     return ufo
 
 def buildExtraGlyphs(ufo):
