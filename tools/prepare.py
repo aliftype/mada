@@ -88,6 +88,9 @@ def merge(args):
 
     ufo.lib[POSTSCRIPT_NAMES] = {}
 
+    # Save original glyph order, used below.
+    glyphOrder = ufo.glyphOrder + latin.glyphOrder
+
     # Generate production glyph names for Arabic glyphs, in case it differs
     # from working names. This will be used by ufo2ft to set the final glyph
     # names in the font file.
@@ -184,6 +187,10 @@ def merge(args):
         unicodes.extend(glyph.unicodes)
     duplicates = set([u for u in unicodes if unicodes.count(u) > 1])
     assert len(duplicates) == 0, "Duplicate unicodes: %s " % (["%04X" % d for d in duplicates])
+
+    # Make sure we have a fixed glyph order by using the original Arabic and
+    # Latin glyph order, not whatever we end up with after adding glyphs.
+    ufo.glyphOrder = sorted(ufo.glyphOrder, key=glyphOrder.index)
 
     return ufo
 
