@@ -19,3 +19,4 @@ install:
 script:
   - make otf
   - make ttf
+  - make vf
