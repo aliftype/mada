@@ -47,7 +47,7 @@ echo "   MAKE  $(1)"
 mkdir -p $(BLDDIR)
 pushd $(BLDDIR) 1>/dev/null;                                                   \
 fontmake --mm-designspace $(NAME).designspace                                  \
-         $(ifneq,$(1),variable,--interpolate)                                  \
+         $(if $(filter-out $(1),variable),--interpolate)                       \
          --autohint                                                            \
          --output $(1)                                                         \
          --verbose WARNING                                                     \
