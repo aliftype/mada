@@ -19,6 +19,7 @@ FONTS=Light Regular SemiBold Bold Black
 UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
+VF =$(NAME)-VF.ttf
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
 PNG=$(DOCDIR)/$(NAME)-Sample.png
 
@@ -26,6 +27,7 @@ all: otf doc
 
 otf: $(OTF)
 ttf: $(TTF)
+vf:  $(VF)
 doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
@@ -45,7 +47,7 @@ echo "   MAKE  $(1)"
 mkdir -p $(BLDDIR)
 pushd $(BLDDIR) 1>/dev/null;                                                   \
 fontmake --mm-designspace $(NAME).designspace                                  \
-         --interpolate                                                         \
+         $(ifneq,$(1),variable,--interpolate)                                  \
          --autohint                                                            \
          --output $(1)                                                         \
          --verbose WARNING                                                     \
@@ -66,6 +68,9 @@ pyftsubset $(1)                                                                \
            ;
 endef
 
+$(VF): $(BLDDIR)/variable_ttf/$(VF)
+	@$(call subset_fonts,$<,$@)
+
 $(NAME)-%.otf: $(BLDDIR)/instance_otf/$(NAME)-%.otf
 	@$(call subset_fonts,$<,$@)
 
@@ -77,6 +82,9 @@ $(BLDDIR)/instance_otf/$(NAME)-%.otf: $(UFO) $(BLDDIR)/$(NAME).designspace
 
 $(BLDDIR)/instance_ttf/$(NAME)-%.ttf: $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,ttf)
+
+$(BLDDIR)/variable_ttf/$(VF): $(UFO) $(BLDDIR)/$(NAME).designspace
+	@$(call generate_fonts,variable)
 
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(SRCDIR)/$(NAME).designspace $(PREPARE)
 	@$(call prepare_masters,$<,$(word 2,$+),$(word 3,$+),$@)
