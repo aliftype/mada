@@ -11,7 +11,7 @@ resolution settings.
 Mada can work also as a display typeface giving modernist and simplistic feeling.
 
 Mada comes in 5 weights (Light, Regular, SemiBold, Bold and Black), as well as
-an interpolatable variable font that can provide any intermediate weights on
+an interpolatable variable font that can provide any intermediate weight on
 the flay.
 
 Building
