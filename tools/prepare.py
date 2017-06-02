@@ -17,18 +17,6 @@ from buildencoded import build as buildEncoded
 
 POSTSCRIPT_NAMES = "public.postscriptNames"
 
-WEIGHTS = {
-    "Thin": 250,
-    "ExtraLight": 275,
-    "Light": 300,
-    "Regular": 400,
-    "Medium": 500,
-    "SemiBold": 600,
-    "Bold": 700,
-    "ExtraBold": 800,
-    "Black": 900,
-}
-
 def generateStyleSets(ufo):
     """Generates ss01 feature which is used to move the final Yeh down so that
     it does not raise above the connecting part of other glyphs, as it does by
@@ -254,16 +242,6 @@ def setInfo(info, version):
 
     # Make sure fsType is set to 0, i.e. Installable Embedding
     info.openTypeOS2Type = []
-
-    # Make sure we have the right weight class, interpolated instances usually
-    # have a wrong value.
-    info.openTypeOS2WeightClass = WEIGHTS[info.styleName]
-    # Let ufo2ft set the right name
-    info.postscriptWeightName = None
-
-    # Make sure italic angle is zero, for some reason it gets set to -180 in
-    # ExtraLight!
-    info.italicAngle = 0.0
 
 def build(args):
     ufo = merge(args)
