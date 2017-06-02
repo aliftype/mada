@@ -115,10 +115,11 @@ $(PNG): $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
 	@rm $(NAME)-Sample-crop.pdf
 	@mv $(NAME)-Sample-crop-1.png $@
 
-dist: ttf
-	@mkdir -p $(NAME)-$(VERSION)/ttf
+dist: ttf vf
+	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
+	@cp $(VF)  $(NAME)-$(VERSION)/vf
 	@cp OFL.txt $(NAME)-$(VERSION)
 	@markdown README.md | w3m -dump -T text/html | sed -e "/^Sample$$/d" > $(NAME)-$(VERSION)/README.txt
 	@zip -r $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
