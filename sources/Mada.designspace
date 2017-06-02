@@ -28,7 +28,7 @@
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Mada" filename="ufo/Mada-Regular.ufo" postscriptfontname="Mada-Regular" stylename="Regular">
+		<instance familyname="Mada" filename="ufo/Mada-Regular.ufo" postscriptfontname="Mada-Regular" stylename="Regular" stylemapfamilyname="Mada" stylemapstylename="regular">
 			<location>
 				<dimension name="weight" xvalue="368"/>
 			</location>
@@ -42,7 +42,7 @@
 			<kerning/>
 			<info/>
 		</instance>
-		<instance familyname="Mada" filename="ufo/Mada-Bold.ufo" postscriptfontname="Mada-Bold" stylename="Bold">
+		<instance familyname="Mada" filename="ufo/Mada-Bold.ufo" postscriptfontname="Mada-Bold" stylename="Bold" stylemapfamilyname="Mada" stylemapstylename="bold">
 			<location>
 				<dimension name="weight" xvalue="824"/>
 			</location>

@@ -247,13 +247,6 @@ def setInfo(info, version):
     info.openTypeNameSampleText = u"صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
     info.openTypeOS2VendorID = "ALIF"
 
-    familyName, styleName = info.postscriptFontName.split("-")
-    try:
-        info.styleMapStyleName = styleName.lower()
-        info.styleMapFamilyName = familyName
-    except:
-        pass
-
     if info.openTypeOS2Selection is None:
         info.openTypeOS2Selection = []
     # Set use typo metrics bit
