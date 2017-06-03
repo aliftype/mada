@@ -7,7 +7,7 @@
   <anchor x="338.0" y="-411.0" name="markBelow"/>
   <anchor x="348.0" y="606.0" name="hamzaAbove"/>
   <outline>
-    <component base="arHah.isol"/>
+    <component base="arHah.isol" yOffset="-132"/>
   </outline>
   <lib>
     <dict>

@@ -6,7 +6,7 @@
   <anchor x="258.0" y="463.0" name="dotAbove"/>
   <anchor x="258.0" y="501.0" name="markAbove"/>
   <outline>
-    <component base="arAin.isol"/>
+    <component base="arAin.isol" yOffset="-73"/>
     <component base="extender" xOffset="437.0"/>
   </outline>
   <lib>
