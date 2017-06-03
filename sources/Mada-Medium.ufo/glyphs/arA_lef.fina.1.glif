@@ -10,20 +10,19 @@
   <anchor x="107.0" y="738.0" name="kafAbove"/>
   <outline>
     <contour>
-      <point x="73.0" y="632.0" type="line"/>
-      <point x="173.0" y="662.0" type="line"/>
-      <point x="294.0" y="246.0" type="line"/>
-      <point x="194.0" y="216.0" type="line"/>
-    </contour>
-    <contour>
-      <point x="180.0" y="263.0" type="curve"/>
-      <point x="283.0" y="263.0" type="line"/>
-      <point x="272.0" y="200.0"/>
-      <point x="234.0" y="141.0"/>
-      <point x="143.0" y="90.0" type="curve"/>
-      <point x="60.0" y="90.0" type="line"/>
-      <point x="128.0" y="123.0"/>
-      <point x="182.0" y="161.0"/>
+      <point x="73" y="632" type="line"/>
+      <point x="180.49998474121094" y="262.4132766723633" type="line"/>
+      <point x="182.4933886614851" y="160.99865598936913"/>
+      <point x="128.4933886614851" y="122.99865598936913"/>
+      <point x="60.49338866148511" y="89.99865598936913" type="curve"/>
+      <point x="143.4933853149414" y="89.9986572265625" type="line"/>
+      <point x="224.08200449562815" y="135.16370477865902"/>
+      <point x="267.42306604196176" y="186.603953062787"/>
+      <point x="281.79778719214875" y="234.45999103415159" type="curve" smooth="yes"/>
+      <point x="286.04827836101913" y="248.61064235108262"/>
+      <point x="290.0" y="262.0"/>
+      <point x="283.6503101859482" y="281.5824157114864" type="curve"/>
+      <point x="173" y="662" type="line"/>
     </contour>
   </outline>
 </glyph>
