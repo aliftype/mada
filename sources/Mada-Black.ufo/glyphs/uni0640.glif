@@ -2,6 +2,11 @@
 <glyph name="uni0640" format="2">
   <advance width="280"/>
   <unicode hex="0640"/>
+  <anchor x="122.0" y="-109.0" name="dotBelow"/>
+  <anchor x="122.0" y="-139.0" name="markBelow"/>
+  <anchor x="122.0" y="364.0" name="dotAbove"/>
+  <anchor x="122.0" y="402.0" name="markAbove"/>
+  <anchor x="122.0" y="0" name="ringBelow"/>
   <outline>
     <contour>
       <point x="285.0" y="0.0" type="line"/>
