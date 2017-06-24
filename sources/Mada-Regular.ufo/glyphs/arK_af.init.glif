@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arKaf.init" format="2">
+  <advance width="564"/>
+  <anchor x="330" y="649" name="gafAbove"/>
+  <anchor x="206" y="-149" name="dotBelow"/>
+  <anchor x="206" y="-173" name="markBelow"/>
+  <anchor x="82" y="639" name="dotAbove"/>
+  <anchor x="273" y="688" name="markAbove"/>
+  <anchor x="373" y="535" name="ringBelow"/>
+  <outline>
+    <contour>
+      <point x="0" y="0" type="line"/>
+      <point x="0" y="79" type="line"/>
+      <point x="426" y="79" type="line" smooth="yes"/>
+      <point x="435" y="76"/>
+      <point x="438" y="86"/>
+      <point x="429" y="90" type="curve" smooth="yes"/>
+      <point x="145" y="380" type="line" smooth="yes"/>
+      <point x="105" y="421"/>
+      <point x="96" y="499"/>
+      <point x="150" y="531" type="curve" smooth="yes"/>
+      <point x="260" y="599"/>
+      <point x="465" y="645"/>
+      <point x="514" y="646" type="curve"/>
+      <point x="515" y="568" type="line"/>
+      <point x="490" y="567"/>
+      <point x="275" y="519"/>
+      <point x="183" y="460" type="curve" smooth="yes"/>
+      <point x="176" y="461"/>
+      <point x="179" y="453"/>
+      <point x="186" y="451" type="curve" smooth="yes"/>
+      <point x="482" y="149" type="line" smooth="yes"/>
+      <point x="535" y="95"/>
+      <point x="497" y="0"/>
+      <point x="419" y="0" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

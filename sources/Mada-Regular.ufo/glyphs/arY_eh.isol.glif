@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arYeh.isol" format="2">
+  <advance width="600"/>
+  <anchor x="308" y="-190" name="dotBelow"/>
+  <anchor x="308" y="-217" name="markBelow"/>
+  <anchor x="236" y="336" name="dotAbove"/>
+  <anchor x="236" y="336" name="hamzaAbove"/>
+  <anchor x="236" y="373" name="markAbove"/>
+  <anchor x="236" y="336" name="kafAbove"/>
+  <outline>
+    <contour>
+      <point x="553" y="252" type="line"/>
+      <point x="553" y="174" type="line"/>
+      <point x="419" y="174" type="line" smooth="yes"/>
+      <point x="410" y="177"/>
+      <point x="405" y="172"/>
+      <point x="416" y="162" type="curve" smooth="yes"/>
+      <point x="530" y="25" type="line" smooth="yes"/>
+      <point x="577" y="-31"/>
+      <point x="523" y="-100"/>
+      <point x="456" y="-100" type="curve" smooth="yes"/>
+      <point x="226" y="-100" type="line" smooth="yes"/>
+      <point x="152" y="-100"/>
+      <point x="46" y="-57"/>
+      <point x="46" y="64" type="curve" smooth="yes"/>
+      <point x="46" y="247" type="line"/>
+      <point x="125" y="247" type="line"/>
+      <point x="125" y="64" type="line" smooth="yes"/>
+      <point x="125" y="2"/>
+      <point x="175" y="-22"/>
+      <point x="233" y="-22" type="curve" smooth="yes"/>
+      <point x="459" y="-22" type="line" smooth="yes"/>
+      <point x="468" y="-25"/>
+      <point x="471" y="-20"/>
+      <point x="464" y="-18" type="curve" smooth="yes"/>
+      <point x="358" y="110" type="line" smooth="yes"/>
+      <point x="305" y="174"/>
+      <point x="347" y="251"/>
+      <point x="426" y="252" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

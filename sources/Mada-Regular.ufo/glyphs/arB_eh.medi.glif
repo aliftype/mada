@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arBeh.medi" format="2">
+  <advance width="382"/>
+  <anchor x="199" y="491" name="dotAbove"/>
+  <anchor x="199" y="527" name="markAbove"/>
+  <anchor x="199" y="491" name="hamzaAbove"/>
+  <anchor x="199" y="-149" name="dotBelow"/>
+  <anchor x="199" y="-176" name="markBelow"/>
+  <anchor x="199" y="491" name="kafAbove"/>
+  <anchor x="199" y="0" name="ringBelow"/>
+  <outline>
+    <component base="arBeh.init"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

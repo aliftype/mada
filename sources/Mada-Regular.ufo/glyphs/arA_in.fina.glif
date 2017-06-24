@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arAin.fina" format="2">
+  <advance width="415"/>
+  <anchor x="265" y="-95" name="dotBelow"/>
+  <anchor x="265" y="-314" name="markBelow"/>
+  <anchor x="242" y="445" name="dotAbove"/>
+  <anchor x="242" y="483" name="markAbove"/>
+  <outline>
+    <component base="arAin.isol" yOffset="-72"/>
+    <component base="extender" xOffset="419"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

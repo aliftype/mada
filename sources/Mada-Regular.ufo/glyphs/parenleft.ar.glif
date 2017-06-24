@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="parenleft.ar" format="2">
+  <advance width="395"/>
+  <outline>
+    <contour>
+      <point x="284" y="776" type="curve"/>
+      <point x="351" y="736" type="line"/>
+      <point x="150" y="403"/>
+      <point x="143" y="74"/>
+      <point x="354" y="-282" type="curve"/>
+      <point x="286" y="-322" type="line"/>
+      <point x="62" y="56"/>
+      <point x="69" y="421"/>
+    </contour>
+  </outline>
+</glyph>

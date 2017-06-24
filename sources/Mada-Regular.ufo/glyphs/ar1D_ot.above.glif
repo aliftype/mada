@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ar1Dot.above" format="2">
+  <anchor x="0" y="0" name="_dotAbove"/>
+  <anchor x="0" y="140" name="markAboveDot"/>
+  <outline>
+    <contour>
+      <point x="-42" y="0" type="curve" smooth="yes"/>
+      <point x="-42" y="24"/>
+      <point x="-24" y="42"/>
+      <point x="0" y="42" type="curve" smooth="yes"/>
+      <point x="24" y="42"/>
+      <point x="42" y="24"/>
+      <point x="42" y="0" type="curve" smooth="yes"/>
+      <point x="42" y="-24"/>
+      <point x="24" y="-42"/>
+      <point x="0" y="-42" type="curve" smooth="yes"/>
+      <point x="-24" y="-42"/>
+      <point x="-42" y="-24"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arTah.init" format="2">
+  <advance width="673"/>
+  <anchor x="437" y="485" name="dotAbove"/>
+  <anchor x="437" y="522" name="markAbove"/>
+  <anchor x="400" y="-110" name="dotBelow"/>
+  <anchor x="400" y="-136" name="markBelow"/>
+  <outline>
+    <component base="arTah.isol" xOffset="-46"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

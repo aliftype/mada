@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arHeh.fina" format="2">
+  <advance width="391"/>
+  <anchor x="261" y="505" name="dotAbove"/>
+  <anchor x="261" y="541" name="markAbove"/>
+  <anchor x="261" y="450" name="hamzaAbove"/>
+  <anchor x="239" y="-109" name="dotBelow"/>
+  <anchor x="239" y="-136" name="markBelow"/>
+  <anchor x="261" y="450" name="kafAbove"/>
+  <outline>
+    <component base="arHeh.isol"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

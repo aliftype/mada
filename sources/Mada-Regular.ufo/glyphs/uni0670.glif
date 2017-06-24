@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0670" format="2">
+  <unicode hex="0670"/>
+  <anchor x="0" y="0" name="_markAbove"/>
+  <anchor x="0" y="0" name="_markAboveDot"/>
+  <outline>
+    <contour>
+      <point x="-22" y="0" type="curve"/>
+      <point x="-22" y="180" type="line"/>
+      <point x="22" y="180" type="line"/>
+      <point x="22" y="39" type="line" smooth="yes"/>
+      <point x="22" y="28"/>
+      <point x="8" y="0"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arHeh.fina3" format="2">
+  <advance width="702"/>
+  <anchor x="382" y="628" name="dotAbove"/>
+  <anchor x="382" y="664" name="markAbove"/>
+  <anchor x="382" y="-149" name="dotBelow"/>
+  <anchor x="382" y="-176" name="markBelow"/>
+  <outline>
+    <component base="arHeh.medi" xOffset="46"/>
+  </outline>
+</glyph>

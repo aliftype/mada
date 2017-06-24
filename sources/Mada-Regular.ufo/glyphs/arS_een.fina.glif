@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arSeen.fina" format="2">
+  <advance width="854"/>
+  <anchor x="627" y="512" name="dotAbove"/>
+  <anchor x="627" y="549" name="markAbove"/>
+  <anchor x="670" y="-111" name="dotBelow"/>
+  <anchor x="258" y="-337" name="markBelow"/>
+  <outline>
+    <component base="arSeen.isol"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

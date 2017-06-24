@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arHeh.medi" format="2">
+  <advance width="656"/>
+  <anchor x="336" y="628" name="dotAbove"/>
+  <anchor x="336" y="664" name="markAbove"/>
+  <anchor x="336" y="-149" name="dotBelow"/>
+  <anchor x="336" y="-176" name="markBelow"/>
+  <outline>
+    <component base="arHeh.init"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

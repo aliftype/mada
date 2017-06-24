@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arKaf.fina" format="2">
+  <advance width="526"/>
+  <anchor x="488" y="673" name="dotAbove"/>
+  <anchor x="488" y="710" name="markAbove"/>
+  <anchor x="287" y="-109" name="dotBelow"/>
+  <anchor x="287" y="-136" name="markBelow"/>
+  <anchor x="252" y="271" name="hamzaAbove"/>
+  <anchor x="252" y="271" name="kafAbove"/>
+  <outline>
+    <component base="arKaf.isol"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -13,7 +13,7 @@ DIST=$(NAME)-$(VERSION)
 PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
 
-MASTERS=Light Medium Black
+MASTERS=Light Regular Black
 FONTS=Light Regular SemiBold Bold Black
 
 UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)

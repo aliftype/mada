@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ar2Dot.above" format="2">
+  <anchor x="0" y="0" name="_dotAbove"/>
+  <anchor x="146" y="0" name="_dotAboveGaf"/>
+  <anchor x="0" y="140" name="markAboveDot"/>
+  <outline>
+    <component base="ar1Dot.above" xOffset="-84"/>
+    <component base="ar1Dot.above" xOffset="84"/>
+  </outline>
+</glyph>

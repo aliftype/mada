@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni065B" format="2">
+  <unicode hex="065B"/>
+  <anchor x="0" y="41" name="_dotAbove"/>
+  <anchor x="0" y="41" name="_markAbove"/>
+  <anchor x="0" y="41" name="_markAboveDot"/>
+  <anchor x="0" y="250" name="markAbove"/>
+  <outline>
+    <contour>
+      <point x="-155" y="32" type="line"/>
+      <point x="-120" y="0" type="line"/>
+      <point x="-2" y="113" type="line"/>
+      <point x="2" y="113" type="line"/>
+      <point x="120" y="0" type="line"/>
+      <point x="155" y="32" type="line"/>
+      <point x="41" y="171" type="line"/>
+      <point x="-41" y="171" type="line"/>
+    </contour>
+  </outline>
+</glyph>

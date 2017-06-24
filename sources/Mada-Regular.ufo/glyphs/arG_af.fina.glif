@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arGaf.fina" format="2">
+  <advance width="617"/>
+  <anchor x="279" y="-149" name="dotBelow"/>
+  <anchor x="279" y="-170" name="markBelow"/>
+  <anchor x="243" y="676" name="markAbove"/>
+  <anchor x="192" y="639" name="dotAbove"/>
+  <anchor x="440" y="649" name="gafAbove"/>
+  <anchor x="483" y="535" name="ringBelow"/>
+  <outline>
+    <component base="arGaf.isol"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arLam.init" format="2">
+  <advance width="257"/>
+  <anchor x="172" y="724" name="dotAbove"/>
+  <anchor x="172" y="760" name="markAbove"/>
+  <anchor x="142" y="-99" name="dotBelow"/>
+  <anchor x="142" y="-126" name="markBelow"/>
+  <outline>
+    <contour>
+      <point x="132" y="624" type="line"/>
+      <point x="211" y="624" type="line"/>
+      <point x="211" y="92" type="line" smooth="yes"/>
+      <point x="211" y="41"/>
+      <point x="171" y="0"/>
+      <point x="118" y="0" type="curve" smooth="yes"/>
+      <point x="0" y="0" type="line"/>
+      <point x="0" y="79" type="line"/>
+      <point x="131" y="79" type="line" smooth="yes"/>
+      <point x="135" y="74"/>
+      <point x="137" y="76"/>
+      <point x="132" y="79" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

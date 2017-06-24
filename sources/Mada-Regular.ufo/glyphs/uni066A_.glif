@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni066A" format="2">
+  <advance width="513"/>
+  <unicode hex="066A"/>
+  <outline>
+    <contour>
+      <point x="40" y="-12" type="line"/>
+      <point x="403" y="669" type="line"/>
+      <point x="473" y="669" type="line"/>
+      <point x="110" y="-12" type="line"/>
+    </contour>
+    <component base="uni0660" xOffset="-61" yOffset="279"/>
+    <component base="uni0660" xOffset="260" yOffset="-280"/>
+  </outline>
+</glyph>
