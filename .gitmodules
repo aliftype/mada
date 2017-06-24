@@ -1,4 +1,3 @@
 [submodule "sources/SourceSansPro"]
 	path = sources/SourceSansPro
-	url = https://github.com/khaledhosny/source-sans-pro.git
-	ignore = dirty
+	url = https://github.com/adobe-fonts/source-sans-pro.git
