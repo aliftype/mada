@@ -23,12 +23,9 @@ requirements, run:
 pip install -r requirements.txt
 ```
 
-Then to build the OTF fonts:
+Then to build the fonts:
 ```shell
-make otf
-```
-
-Or the TTF ones:
-```
-make ttf
+make otf # CFF-flavoured fonts
+make ttf # TTF-flavoured fonts
+make vf  # Variable font, TTF-flavoured
 ```
