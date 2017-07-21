@@ -103,7 +103,7 @@ $(PDF): $(NAME)-Regular.otf
 	@mkdir -p $(DOCDIR)
 	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
 	@pdfoutline $@.tmp $@.txt $@.comp
-	@pdftk $@.comp output $@ uncompress
+	@mutool clean -d -i -f -a $@.comp $@
 	@rm -f $@.tmp $@.comp $@.txt
 
 $(PNG): $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
