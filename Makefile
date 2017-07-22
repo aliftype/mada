@@ -87,6 +87,7 @@ $(BLDDIR)/variable_ttf/$(VF): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)
 
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(SRCDIR)/$(NAME).designspace $(PREPARE)
+	@rm -rf $@
 	@$(call prepare_masters,$<,$(word 2,$+),$(word 3,$+),$@)
 
 $(SRCDIR)/$(LATIN)/Roman/%/font.ufo:
