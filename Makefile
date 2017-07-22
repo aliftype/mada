@@ -23,7 +23,7 @@ VF =$(NAME)-VF.ttf
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
 PNG=$(DOCDIR)/$(NAME)-Sample.png
 
-all: otf doc
+all: otf vf doc
 
 otf: $(OTF)
 ttf: $(TTF)
