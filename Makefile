@@ -55,27 +55,14 @@ fontmake --mm-designspace $(NAME).designspace                                  \
 popd 1>/dev/null
 endef
 
-define subset_fonts
-echo "   SUB   $(2)"
-pyftsubset $(1)                                                                \
-           --unicodes='*'                                                      \
-           --layout_features='*'                                               \
-           --name-IDs='*'                                                      \
-           --notdef-outline                                                    \
-           --glyph-names                                                       \
-           --recalc-average-width                                              \
-           --output-file=$(2)                                                  \
-           ;
-endef
-
 $(VF): $(BLDDIR)/variable_ttf/$(VF)
-	@$(call subset_fonts,$<,$@)
+	@cp $< $@
 
 $(NAME)-%.otf: $(BLDDIR)/instance_otf/$(NAME)-%.otf
-	@$(call subset_fonts,$<,$@)
+	@cp $< $@
 
 $(NAME)-%.ttf: $(BLDDIR)/instance_ttf/$(NAME)-%.ttf
-	@$(call subset_fonts,$<,$@)
+	@cp $< $@
 
 $(BLDDIR)/instance_otf/$(NAME)-%.otf: $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,otf)
