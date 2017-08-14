@@ -8,8 +8,10 @@
   <anchor x="122" y="-197" name="ringBelow"/>
   <outline>
     <contour>
-      <point x="176" y="174" type="line"/>
-      <point x="255" y="174" type="line"/>
+      <point x="176.0" y="136.66875700637584" type="line" smooth="yes"/>
+      <point x="176.0" y="177.0"/>
+      <point x="209.47058823529412" y="174.0"/>
+      <point x="255" y="174" type="curve"/>
       <point x="255" y="-14" type="line" smooth="yes"/>
       <point x="255" y="-112"/>
       <point x="197" y="-200"/>
