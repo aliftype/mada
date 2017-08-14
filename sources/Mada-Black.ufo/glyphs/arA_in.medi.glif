@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arAin.medi" format="2">
   <advance width="488"/>
-  <anchor x="274.0" y="-150.0" name="dotBelow"/>
-  <anchor x="274.0" y="-185.0" name="markBelow"/>
-  <anchor x="237.0" y="617.0" name="dotAbove"/>
-  <anchor x="237.0" y="661.0" name="markAbove"/>
   <outline>
     <component base="arAin.init"/>
     <component base="extender" xOffset="493.0"/>

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arFeh.medi" format="2">
   <advance width="423"/>
-  <anchor x="274.0" y="590.0" name="dotAbove"/>
-  <anchor x="274.0" y="628.0" name="markAbove"/>
-  <anchor x="231.0" y="-150.0" name="dotBelow"/>
-  <anchor x="231.0" y="-170.0" name="markBelow"/>
   <outline>
     <component base="arFeh.init"/>
   </outline>

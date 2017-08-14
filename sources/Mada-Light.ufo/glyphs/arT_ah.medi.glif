@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arTah.medi" format="2">
   <advance width="560.0235298669576"/>
-  <anchor x="431.0" y="485.0" name="dotAbove"/>
-  <anchor x="431.0" y="523.0" name="markAbove"/>
-  <anchor x="394.0" y="-110.0" name="dotBelow"/>
-  <anchor x="394.0" y="-130.0" name="markBelow"/>
   <outline>
     <component base="arTah.isol" xOffset="-40.0"/>
   </outline>

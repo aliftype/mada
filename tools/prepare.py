@@ -11,6 +11,7 @@ from datetime import datetime
 from defcon import Font, Component
 from fontTools.misc.py23 import *
 from fontTools.misc.transform import Transform
+from glyphsLib.anchors import propagate_font_anchors
 from goadb import GOADBParser
 
 from buildencoded import build as buildEncoded
@@ -68,6 +69,8 @@ def merge(args):
     bit. Returns the combined font."""
 
     ufo = Font(args.arabicfile)
+
+    propagate_font_anchors(ufo)
 
     latin = Font(args.latinfile)
     # Parse the GlyphOrderAndAliasDB file for Unicode values and production

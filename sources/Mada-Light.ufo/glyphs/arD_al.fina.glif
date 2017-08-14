@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arDal.fina" format="2">
   <advance width="372"/>
-  <anchor x="198.0" y="380.0" name="dotAbove"/>
-  <anchor x="198.0" y="418.0" name="markAbove"/>
-  <anchor x="194.0" y="-92.0" name="dotBelow"/>
-  <anchor x="194.0" y="-112.0" name="markBelow"/>
-  <anchor x="194.0" y="0" name="ringBelow"/>
   <outline>
     <component base="arDal.isol"/>
   </outline>

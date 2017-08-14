@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arKaf.medi" format="2">
   <advance width="502"/>
-  <anchor x="330" y="649" name="gafAbove"/>
-  <anchor x="206" y="-149" name="dotBelow"/>
-  <anchor x="206" y="-173" name="markBelow"/>
-  <anchor x="82" y="639" name="dotAbove"/>
-  <anchor x="273" y="688" name="markAbove"/>
-  <anchor x="373" y="535" name="ringBelow"/>
   <outline>
     <component base="arKaf.init"/>
   </outline>

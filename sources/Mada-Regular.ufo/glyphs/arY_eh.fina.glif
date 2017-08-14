@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arYeh.fina" format="2">
   <advance width="553"/>
-  <anchor x="308" y="-306" name="dotBelow"/>
-  <anchor x="308" y="-332" name="markBelow"/>
-  <anchor x="236" y="220" name="dotAbove"/>
-  <anchor x="236" y="220" name="hamzaAbove"/>
-  <anchor x="236" y="258" name="markAbove"/>
-  <anchor x="236" y="220" name="kafAbove"/>
   <outline>
     <component base="arYeh.isol" yOffset="-116"/>
   </outline>

@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arWaw.fina" format="2">
   <advance width="482"/>
-  <anchor x="252" y="466" name="dotAbove"/>
-  <anchor x="252" y="503" name="markAbove"/>
-  <anchor x="252" y="466" name="hamzaAbove"/>
-  <anchor x="188" y="-309" name="dotBelow"/>
-  <anchor x="188" y="-335" name="markBelow"/>
-  <anchor x="252" y="466" name="kafAbove"/>
-  <anchor x="188" y="-200" name="ringBelow"/>
   <outline>
     <contour>
       <point x="495" y="79" type="line"/>
