@@ -1,23 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arTah.isol" format="2">
-  <advance width="648"/>
-  <anchor x="431.0" y="485.0" name="dotAbove"/>
-  <anchor x="431.0" y="523.0" name="markAbove"/>
-  <anchor x="394.0" y="-110.0" name="dotBelow"/>
-  <anchor x="394.0" y="-130.0" name="markBelow"/>
+  <advance width="615.6674950675861"/>
+  <anchor x="399.0" y="485.0" name="dotAbove"/>
+  <anchor x="399.0" y="523.0" name="markAbove"/>
+  <anchor x="362.0" y="-110.0" name="dotBelow"/>
+  <anchor x="362.0" y="-130.0" name="markBelow"/>
   <outline>
     <contour>
-      <point x="40.0" y="0.0" type="line"/>
-      <point x="40.0" y="32.0" type="line"/>
-      <point x="180.0" y="32.0" type="line"/>
-      <point x="180.0" y="0.0" type="line"/>
+      <point x="148.0" y="624.0" type="line"/>
+      <point x="180.0" y="624.0" type="line"/>
+      <point x="180.0" y="128.47648532676948" type="line" smooth="yes"/>
+      <point x="180.0" y="91.20971546240014"/>
+      <point x="180.0" y="59.26676986436931"/>
+      <point x="173.0" y="22.0" type="curve"/>
+      <point x="144.0" y="22.0" type="line"/>
+      <point x="148.0" y="53.55933738121183"/>
+      <point x="148.0" y="80.6101979936791"/>
+      <point x="148.0" y="112.16953537489096" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="144.0" y="624.0" type="line"/>
-      <point x="176.0" y="624.0" type="line"/>
-      <point x="176.0" y="22.0" type="line"/>
-      <point x="144.0" y="22.0" type="line"/>
+      <point x="39.636575634993804" y="-0.09367712547088303" type="line"/>
+      <point x="39.636575634993804" y="31.906322874529117" type="line"/>
+      <point x="506.6365756349938" y="31.906322874529117" type="line" smooth="yes"/>
+      <point x="529.6365756349938" y="31.906322874529117"/>
+      <point x="544.1959307396487" y="47.88824931628329"/>
+      <point x="543.6365756349938" y="66.90632287452911" type="curve" smooth="yes"/>
+      <point x="541.6365756349938" y="134.9063228745291" type="line" smooth="yes"/>
+      <point x="539.3133063978743" y="213.8974769365602"/>
+      <point x="518.2315761803253" y="251.39947800784876"/>
+      <point x="475.6365756349938" y="267.9063228745291" type="curve" smooth="yes"/>
+      <point x="372.94198357067523" y="307.70356851721147"/>
+      <point x="264.0" y="157.0"/>
+      <point x="162.0" y="15.0" type="curve"/>
+      <point x="141.0" y="28.0" type="line"/>
+      <point x="240.0" y="167.0"/>
+      <point x="352.9430866186818" y="349.6893788171816"/>
+      <point x="486.6365756349938" y="297.9063228745291" type="curve" smooth="yes"/>
+      <point x="544.300455076944" y="275.57156359056626"/>
+      <point x="571.0612872838038" y="219.89083846359753"/>
+      <point x="573.6365756349938" y="134.9063228745291" type="curve" smooth="yes"/>
+      <point x="575.6365756349938" y="68.90632287452911" type="line" smooth="yes"/>
+      <point x="576.7879609195118" y="30.91060848557848"/>
+      <point x="545.6365756349938" y="-0.09367712547088303"/>
+      <point x="506.6365756349938" y="-0.09367712547088303" type="curve" smooth="yes"/>
     </contour>
-    <component base="arSad.head" xOffset="388.0"/>
   </outline>
 </glyph>
