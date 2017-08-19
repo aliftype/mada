@@ -35,6 +35,13 @@
 			<kerning/>
 			<info/>
 		</instance>
+		<instance familyname="Mada" filename="instance_ufo/Mada-Medium.ufo" postscriptfontname="Mada-Medium" stylename="Medium">
+			<location>
+				<dimension name="weight" xvalue="520"/>
+			</location>
+			<kerning/>
+			<info/>
+		</instance>
 		<instance familyname="Mada" filename="instance_ufo/Mada-SemiBold.ufo" postscriptfontname="Mada-SemiBold" stylename="SemiBold">
 			<location>
 				<dimension name="weight" xvalue="600"/>

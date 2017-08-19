@@ -14,7 +14,7 @@ PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
 
 MASTERS=Light Regular Black
-FONTS=Light Regular SemiBold Bold Black
+FONTS=Light Regular Medium SemiBold Bold Black
 
 UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
