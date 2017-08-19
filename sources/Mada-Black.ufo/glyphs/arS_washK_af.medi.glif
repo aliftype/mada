@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arSwashKaf.medi" format="2">
   <advance width="914.3023089460085"/>
-  <anchor x="469.0" y="-175.0" name="markBelow"/>
-  <anchor x="143.17457886676874" y="623.4318529862173" name="markAbove"/>
   <outline>
     <component base="arSwashKaf.init"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
 </glyph>

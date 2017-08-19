@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arSwashKaf.isol" format="2">
   <advance width="1178.4337237255138"/>
-  <anchor x="673.0" y="-175.0" name="markBelow"/>
-  <anchor x="347.17457886676874" y="623.4318529862173" name="markAbove"/>
   <outline>
     <contour>
       <point x="222.0" y="172.0" type="line"/>
@@ -12,4 +10,10 @@
     </contour>
     <component base="arSwashKaf.init" xOffset="204.0"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
 </glyph>
