@@ -103,7 +103,7 @@ $(PNG): $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
 	@rm $(NAME)-Sample-crop.pdf
 	@mv $(NAME)-Sample-crop-1.png $@
 
-dist: ttf vf
+dist: ttf vf $(PDF)
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
