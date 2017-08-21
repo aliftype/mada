@@ -32,14 +32,14 @@
       <point x="125" y="176" type="line"/>
       <point x="125" y="-66" type="line" smooth="yes"/>
       <point x="125" y="-101"/>
-      <point x="145" y="-120"/>
+      <point x="145.0" y="-120.0"/>
       <point x="184" y="-120" type="curve" smooth="yes"/>
-      <point x="620" y="-120" type="line" smooth="yes"/>
-      <point x="625" y="-125"/>
-      <point x="627" y="-122"/>
-      <point x="622" y="-119" type="curve" smooth="yes"/>
+      <point x="632" y="-120" type="line"/>
+      <point x="628.5" y="-123.5"/>
+      <point x="625.5" y="-126.5"/>
+      <point x="622" y="-130" type="curve"/>
       <point x="622" y="178" type="line" smooth="yes"/>
-      <point x="622" y="211"/>
+      <point x="622.0" y="211.0"/>
       <point x="604" y="236"/>
       <point x="579" y="248" type="curve" smooth="yes"/>
       <point x="552" y="272"/>

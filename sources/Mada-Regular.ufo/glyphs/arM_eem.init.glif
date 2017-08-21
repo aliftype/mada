@@ -9,12 +9,12 @@
     <contour>
       <point x="0" y="0" type="line"/>
       <point x="0" y="79" type="line"/>
-      <point x="110" y="79" type="line" smooth="yes"/>
-      <point x="117" y="74"/>
-      <point x="117" y="76"/>
-      <point x="113" y="79" type="curve" smooth="yes"/>
+      <point x="123" y="79" type="line"/>
+      <point x="119.5" y="75.5"/>
+      <point x="116.5" y="72.5"/>
+      <point x="113" y="69" type="curve"/>
       <point x="113" y="225" type="line" smooth="yes"/>
-      <point x="113" y="265"/>
+      <point x="113.0" y="265.0"/>
       <point x="128" y="301"/>
       <point x="154" y="325" type="curve" smooth="yes"/>
       <point x="212" y="382"/>
