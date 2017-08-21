@@ -20,13 +20,11 @@ Building
 
 You need GNU Make and a few Python packages. To install the Python
 requirements, run:
-```shell
-pip install -r requirements.txt
-```
+
+    pip install -r requirements.txt
 
 Then to build the fonts:
-```shell
-make otf # CFF-flavoured fonts
-make ttf # TTF-flavoured fonts
-make vf  # Variable font, TTF-flavoured
-```
+
+    make otf # CFF-flavoured fonts
+    make ttf # TTF-flavoured fonts
+    make vf  # Variable font, TTF-flavoured
