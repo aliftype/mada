@@ -113,4 +113,4 @@ dist: ttf vf $(PDF)
 	@zip -r $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
-	@rm -rf $(BLDDIR) $(OTF) $(PDF) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
+	@rm -rf $(BLDDIR) $(OTF) $(PDF) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
