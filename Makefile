@@ -104,13 +104,15 @@ $(PNG): $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
 	@mv $(NAME)-Sample-crop-1.png $@
 
 dist: ttf vf $(PDF)
+	@@echo "   GEN   $(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
 	@cp $(VF)  $(NAME)-$(VERSION)/vf
 	@cp OFL.txt $(NAME)-$(VERSION)
 	@sed -e "/^!\[Sample\].*./d" README.md > $(NAME)-$(VERSION)/README.txt
-	@zip -r $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
+	@@echo "   ZIP   $(NAME)-$(VERSION)"
+	@zip -rq $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
 	@rm -rf $(BLDDIR) $(OTF) $(PDF) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
