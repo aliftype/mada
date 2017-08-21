@@ -574,10 +574,13 @@ feature rclt {
     sub [arHah.isol arHah.fina] @Dots @Kasra' by @Kasra.alt;
 } rclt;
 
-feature rclt {
+feature ss01 {
+  featureNames {                                                                
+    name "Alternate short Alef with Hamza above";
+  };
   @Alef = [arAlef.isol arAlef.fina arAlef.fina.1];
   @Alef.short = [arAlef.isol.short arAlef.fina.short arAlef.fina.1.short];
   @Hamza.above = [uni0654 ]; #uni0653 arSad.above arWavyHamza.above arHighHamza.above;
   lookupflag 0;
     sub @Alef' @Hamza.above by @Alef.short;
-} rclt;
+} ss01;
