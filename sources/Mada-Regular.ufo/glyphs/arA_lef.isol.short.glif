@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="arAlef.isol.short" format="2">
+  <advance width="200.0"/>
+  <anchor x="99" y="457" name="hamzaAbove"/>
+  <anchor x="99" y="-53" name="markBelow"/>
+  <outline>
+    <contour>
+      <point x="61.0" y="457.0" type="line"/>
+      <point x="139.0" y="457.0" type="line"/>
+      <point x="139.0" y="82.0" type="line" smooth="yes"/>
+      <point x="139.0" y="37.0"/>
+      <point x="111.0" y="0.0"/>
+      <point x="61.0" y="0.0" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

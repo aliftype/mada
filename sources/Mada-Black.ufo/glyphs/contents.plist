@@ -38,8 +38,14 @@
 	<string>arA_lef.fina.glif</string>
 	<key>arAlef.fina.1</key>
 	<string>arA_lef.fina.1.glif</string>
+	<key>arAlef.fina.1.short</key>
+	<string>arA_lef.fina.1.short.glif</string>
+	<key>arAlef.fina.short</key>
+	<string>arA_lef.fina.short.glif</string>
 	<key>arAlef.isol</key>
 	<string>arA_lef.isol.glif</string>
+	<key>arAlef.isol.short</key>
+	<string>arA_lef.isol.short.glif</string>
 	<key>arBeh.fina</key>
 	<string>arB_eh.fina.glif</string>
 	<key>arBeh.init</key>

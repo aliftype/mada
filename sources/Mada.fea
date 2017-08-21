@@ -573,3 +573,11 @@ feature rclt {
   lookupflag UseMarkFilteringSet @Filter;
     sub [arHah.isol arHah.fina] @Dots @Kasra' by @Kasra.alt;
 } rclt;
+
+feature rclt {
+  @Alef = [arAlef.isol arAlef.fina arAlef.fina.1];
+  @Alef.short = [arAlef.isol.short arAlef.fina.short arAlef.fina.1.short];
+  @Hamza.above = [uni0654 ]; #uni0653 arSad.above arWavyHamza.above arHighHamza.above;
+  lookupflag 0;
+    sub @Alef' @Hamza.above by @Alef.short;
+} rclt;
