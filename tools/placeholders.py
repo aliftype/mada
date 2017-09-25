@@ -5,7 +5,7 @@ from fontTools.misc.py23 import *
 from fontTools.feaLib.parser import Parser
 
 def parse(features):
-    subs = set()
+    names = set()
     featurefile = UnicodeIO(tounicode(features))
     fea = Parser(featurefile, []).parse()
     for statement in fea.statements:
@@ -13,17 +13,17 @@ def parse(features):
             for substatement in statement.statements:
                 if hasattr(substatement, "glyphs"):
                     # Single
-                    subs.update(substatement.glyphs[0].glyphSet())
+                    names.update(substatement.glyphs[0].glyphSet())
                 elif hasattr(substatement, "glyph"):
                     # Multiple
-                    subs.add(substatement.glyph)
+                    names.add(substatement.glyph)
 
-    return subs
+    return names
 
 def build(font):
-    subs = parse(font.features.text)
+    names = parse(font.features.text)
 
-    for name in subs:
+    for name in names:
         glyph = font.newGlyph(name)
         glyph.unicode = int(name.lstrip('uni'), 16)
         glyph.width = glyph.leftMargin = glyph.rightMargin = 0
