@@ -14,7 +14,7 @@ from fontTools.misc.transform import Transform
 from glyphsLib.anchors import propagate_font_anchors
 from goadb import GOADBParser
 
-from buildencoded import build as buildEncoded
+from placeholders import build as addPlaceHolders
 
 POSTSCRIPT_NAMES = "public.postscriptNames"
 
@@ -193,7 +193,7 @@ def buildExtraGlyphs(ufo):
     # decompose them immediately in the layout code, so they shouldn’t be used
     # for anything and we could just keep them blank, but then FontConfig will
     # think the font does not support these characters.
-    buildEncoded(ufo)
+    addPlaceHolders(ufo)
 
     # Build Arabic comma and semicolon glyphs, by rotating the Latin 180°, so
     # that they are similar in design.
