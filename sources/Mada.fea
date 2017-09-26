@@ -571,17 +571,20 @@ feature rclt {
  # have the ‘mkmk’ anchor.
  @Dots = [ar1Dot.below ar2Dot.below];
  @Filter = [@Dots @Kasra];
+
  lookupflag UseMarkFilteringSet @Filter;
    sub [arHah.isol arHah.fina] @Dots @Kasra' by @Kasra.alt;
 } rclt;
 
 feature ss01 {
-  featureNames {                                                                
+  featureNames {
     name "Alternate short Alef with Hamza above";
   };
+
   @Alef = [arAlef.isol arAlef.fina arAlef.fina.1];
   @Alef.short = [arAlef.isol.short arAlef.fina.short arAlef.fina.1.short];
   @Hamza.above = [uni0654 ]; #uni0653 arSad.above arWavyHamza.above arHighHamza.above;
+
   lookupflag 0;
     sub @Alef' @Hamza.above by @Alef.short;
 } ss01;
