@@ -19,7 +19,7 @@ FONTS=Light Regular Medium SemiBold Bold Black
 UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
-VF =$(NAME)-VF.ttf
+TFV=$(NAME)-VF.ttf
 PDF=$(DOCDIR)/$(NAME)-Table.pdf
 PNG=$(DOCDIR)/$(NAME)-Sample.png
 
@@ -27,7 +27,7 @@ all: otf vf doc
 
 otf: $(OTF)
 ttf: $(TTF)
-vf:  $(VF)
+vf:  $(TFV)
 doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
@@ -55,7 +55,7 @@ fontmake --mm-designspace $(NAME).designspace                                  \
 popd 1>/dev/null
 endef
 
-$(VF): $(BLDDIR)/variable_ttf/$(VF)
+$(TFV): $(BLDDIR)/variable_ttf/$(TFV)
 	@cp $< $@
 
 $(NAME)-%.otf: $(BLDDIR)/instance_otf/$(NAME)-%.otf
@@ -70,7 +70,7 @@ $(BLDDIR)/instance_otf/$(NAME)-%.otf: $(UFO) $(BLDDIR)/$(NAME).designspace
 $(BLDDIR)/instance_ttf/$(NAME)-%.ttf: $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,ttf)
 
-$(BLDDIR)/variable_ttf/$(VF): $(UFO) $(BLDDIR)/$(NAME).designspace
+$(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)
 
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(SRCDIR)/$(NAME).designspace $(PREPARE)
@@ -108,7 +108,7 @@ dist: ttf vf $(PDF)
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
-	@cp $(VF)  $(NAME)-$(VERSION)/vf
+	@cp $(TFV)  $(NAME)-$(VERSION)/vf
 	@cp OFL.txt $(NAME)-$(VERSION)
 	@sed -e "/^!\[Sample\].*./d" README.md > $(NAME)-$(VERSION)/README.txt
 	@@echo "   ZIP   $(NAME)-$(VERSION)"
