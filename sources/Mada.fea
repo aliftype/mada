@@ -561,17 +561,18 @@ feature rlig {
     sub [arLam.init arLam.medi]' lookup LamAlef arAlef.fina' lookup LamAlef;
 } rlig;
 
+@Kasra = [uni064D uni0650];
+@Kasra.alt = [uni064D.alt uni0650.alt];
+
 feature rclt {
-  # When a kasra follows hah with dot below (i.e. jeem) we don’t want the
-  # dot-kasra ‘mkmk’ to be used as it will cause the kasra to clash with the
-  # hah. So here we replace the kasra with an alternate glyph that does not
-  # have the ‘mkmk’ anchor.
-  @Dots = [ar1Dot.below ar2Dot.below];
-  @Kasra = [uni064D uni0650];
-  @Filter = [@Dots @Kasra];
-  @Kasra.alt = [uni064D.alt uni0650.alt];
-  lookupflag UseMarkFilteringSet @Filter;
-    sub [arHah.isol arHah.fina] @Dots @Kasra' by @Kasra.alt;
+ # When a kasra follows hah with dot below (i.e. jeem) we don’t want the
+ # dot-kasra ‘mkmk’ to be used as it will cause the kasra to clash with the
+ # hah. So here we replace the kasra with an alternate glyph that does not
+ # have the ‘mkmk’ anchor.
+ @Dots = [ar1Dot.below ar2Dot.below];
+ @Filter = [@Dots @Kasra];
+ lookupflag UseMarkFilteringSet @Filter;
+   sub [arHah.isol arHah.fina] @Dots @Kasra' by @Kasra.alt;
 } rclt;
 
 feature ss01 {
@@ -584,3 +585,17 @@ feature ss01 {
   lookupflag 0;
     sub @Alef' @Hamza.above by @Alef.short;
 } ss01;
+
+feature ss03 {
+  featureNames {
+    name "Position Kasra/Kasratan directly below Shadda";
+  };
+
+  lookup ss03_l {
+    sub @Kasra by @Kasra.alt;
+    sub uni0651 by uni0651.alt;
+  } ss03_l;
+
+  lookupflag 0;
+    sub uni0651' @Kasra' lookup ss03_l;
+} ss03;
