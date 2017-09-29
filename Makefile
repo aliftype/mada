@@ -89,10 +89,9 @@ $(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
 $(PDF): $(NAME)-Regular.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
-	@fntsample --font-file $< --output-file $@.tmp --print-outline > $@.txt
-	@pdfoutline $@.tmp $@.txt $@.comp
-	@mutool clean -d -i -f -a $@.comp $@ &> /dev/null || cp $@.comp $@
-	@rm -f $@.tmp $@.comp $@.txt
+	@fntsample --font-file $< --output-file $@.tmp --write-outline
+	@mutool clean -d -i -f -a $@.tmp $@ &> /dev/null || cp $@.tmp $@
+	@rm -f $@.tmp
 
 $(PNG): $(DOCDIR)/$(NAME)-Sample.tex $(OTF)
 	@echo "   GEN	$@"
