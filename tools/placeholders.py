@@ -23,7 +23,7 @@ def parse(features):
 def build(font):
     names = parse(font.features.text)
 
-    for name in names:
+    for name in sorted(names):
         glyph = font.newGlyph(name)
         glyph.unicode = int(name.lstrip('uni'), 16)
         glyph.width = glyph.leftMargin = glyph.rightMargin = 0
