@@ -155,10 +155,8 @@ def merge(args):
         ufo.insertGlyph(glyph)
 
     # Copy kerning and groups.
-    for group in latin.groups:
-        ufo.groups[group] = latin.groups[group]
-    for kern in latin.kerning:
-        ufo.kerning[kern] = latin.kerning[kern]
+    ufo.groups.update(latin.groups)
+    ufo.kerning.update(latin.kerning)
 
     # We don’t set these in the Arabic font, so we just copy the Latin’s.
     for attr in ("xHeight", "capHeight"):
