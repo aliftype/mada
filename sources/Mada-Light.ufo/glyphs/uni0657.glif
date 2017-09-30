@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0657" format="2">
+  <unicode hex="0657"/>
+  <anchor x="0" y="0" name="_markAbove"/>
+  <anchor x="0" y="0" name="_markAboveDot"/>
+  <outline>
+    <component base="uni064F" xScale="-0.8660254037844387" xyScale="-0.49999999999999994" yxScale="0.49999999999999994" yScale="-0.8660254037844387" xOffset="-20.0" yOffset="116.0"/>
+  </outline>
+</glyph>
