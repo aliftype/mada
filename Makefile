@@ -48,6 +48,7 @@ endef
 define generate_fonts
 echo "   MAKE  $(1)"
 mkdir -p $(BLDDIR)
+export SOURCE_DATE_EPOCH=$(EPOCH);                                             \
 pushd $(BLDDIR) 1>/dev/null;                                                   \
 fontmake --mm-designspace $(NAME).designspace                                  \
          $(if $(filter-out $(1),variable),--interpolate)                       \
@@ -56,6 +57,14 @@ fontmake --mm-designspace $(NAME).designspace                                  \
          --verbose WARNING                                                     \
          ;                                                                     \
 popd 1>/dev/null
+endef
+
+EPOCH = 0
+define update_epoch
+if [ `stat -c "%Y" $(1)` -gt $(EPOCH) ]; then                                  \
+    true;                                                                      \
+    $(eval EPOCH := $(shell stat -c "%Y" $(1)))                                \
+fi
 endef
 
 $(TFV): $(BLDDIR)/variable_ttf/$(TFV)
@@ -79,6 +88,7 @@ $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(SRCDIR)/$(NAME).designspace $(PREPARE)
 	@rm -rf $@
 	@$(call prepare_masters,$<,$(word 2,$+),$(word 3,$+),$@)
+	@$(call update_epoch,$<)
 
 $(SRCDIR)/$(LATIN)/Roman/%/font.ufo:
 	@echo "   GET	$@"
@@ -88,6 +98,7 @@ $(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
 	@echo "   GEN   $@"
 	@mkdir -p $(BLDDIR)
 	@cp $< $@
+	@$(call update_epoch,$<)
 
 $(PDF): $(NAME)-Regular.otf
 	@echo "   GEN	$@"
