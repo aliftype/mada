@@ -3,8 +3,10 @@
   <advance width="240"/>
   <unicode hex="0640"/>
   <anchor x="122.0" y="-109.0" name="dotBelow"/>
+  <anchor x="122.0" y="-109.0" name="hamzaBelow"/>
   <anchor x="132.0" y="-139.0" name="markBelow"/>
   <anchor x="122.0" y="314.0" name="dotAbove"/>
+  <anchor x="122.0" y="314.0" name="hamzaAbove"/>
   <anchor x="122.0" y="352.0" name="markAbove"/>
   <anchor x="122.0" y="0" name="ringBelow"/>
   <outline>
