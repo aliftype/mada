@@ -87,10 +87,10 @@
 		<string>braceright.ar</string>
 		<string>bracketleft.ar</string>
 		<string>bracketright.ar</string>
-		<string>extender</string>
 		<string>parenleft.ar</string>
 		<string>parenright.ar</string>
 		<string>uni0621</string>
+		<string>uni0674</string>
 		<string>uni0640</string>
 		<string>uni064B</string>
 		<string>uni064C</string>
@@ -116,8 +116,11 @@
 		<string>uni0662</string>
 		<string>uni0663</string>
 		<string>uni0664</string>
+		<string>uni06F4</string>
 		<string>uni0665</string>
+		<string>uni06F5</string>
 		<string>uni0666</string>
+		<string>uni06F6</string>
 		<string>uni0667</string>
 		<string>uni0668</string>
 		<string>uni0669</string>
@@ -125,6 +128,7 @@
 		<string>uni066B</string>
 		<string>uni0670</string>
 		<string>uni06D4</string>
+		<string>extender</string>
 		<string>ar1Dot.above</string>
 		<string>ar1Dot.below</string>
 		<string>ar1Dot.middle</string>
@@ -142,9 +146,6 @@
 		<string>arKaf.above</string>
 		<string>arSad.above</string>
 		<string>arTah.above</string>
-		<string>uni06F4</string>
-		<string>uni06F5</string>
-		<string>uni06F6</string>
 		<string>uni065A</string>
 		<string>uni065B</string>
 		<string>arSmallV.below</string>
@@ -152,7 +153,6 @@
 		<string>arDamma.above</string>
 		<string>arRing.below</string>
 		<string>arTail.above</string>
-		<string>uni0674</string>
 	</array>
 </dict>
 </plist>
