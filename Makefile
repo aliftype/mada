@@ -12,6 +12,7 @@ DIST=$(NAME)-$(VERSION)
 
 PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
+BUILD=$(TOOLDIR)/build.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
@@ -48,25 +49,11 @@ endef
 define generate_fonts
 echo "   MAKE  $(1)"
 mkdir -p $(BLDDIR)
-export SOURCE_DATE_EPOCH=$(call calc_source_date_epoch);                       \
-pushd $(BLDDIR) 1>/dev/null;                                                   \
-fontmake --mm-designspace $(NAME).designspace                                  \
-         $(if $(filter-out $(1),variable),--interpolate)                       \
-         --autohint                                                            \
-         --output $(1)                                                         \
-         --verbose WARNING                                                     \
-         ;                                                                     \
-popd 1>/dev/null
-endef
-
-define calc_source_date_epoch
-$(shell
-python -c "import os;                                                          \
-from mutatorMath.ufo.document import DesignSpaceDocumentReader;                \
-reader = DesignSpaceDocumentReader('$(SRCDIR)/$(NAME).designspace', 3);        \
-epoch = max([os.stat(p).st_mtime for p in reader.getSourcePaths()]);           \
-print(int(epoch));                                                             \
-")
+cd $(BLDDIR);                                                                  \
+$(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
+               --source=$(abspath $(SRCDIR))                                   \
+               --build=$(abspath $(BUILDDIR))                                  \
+               --output=$(1)
 endef
 
 $(TFV): $(BLDDIR)/variable_ttf/$(TFV)
