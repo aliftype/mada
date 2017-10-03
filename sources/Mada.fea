@@ -4,6 +4,14 @@ languagesystem arab dflt;
 languagesystem arab URD;
 #{languagesystems}
 
+feature locl {
+  lookupflag IgnoreMarks;
+  script arab; language URD  exclude_dflt;
+    sub uni06F4 by uni06F4.urd;
+    sub uni06F6 by uni0666;
+    sub uni06F7 by uni06F7.urd;
+} locl;
+
 feature ccmp {
   lookupflag IgnoreMarks;
     sub uni06F0 by uni0660;
@@ -548,15 +556,6 @@ feature fina {
     sub uni06A1 by arFeh.fina;
     sub uni066F by arQaf.fina;
 } fina;
-
-#feature locl {
-#  lookupflag IgnoreMarks;
-#  script arab; language URD  exclude_dflt;
-#    sub uni06F4 by uni06F4.urd;
-#    sub uni06F6 by uni0666;
-#    sub uni06F7 by uni06F7.urd;
-#    sub uni0657 by uni0657.urd;
-#} locl;
 
 lookup LamAlef {
   sub arLam.init by arLam.init.1;

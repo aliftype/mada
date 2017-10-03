@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni06F7.urd" format="2">
+  <advance width="586.9317003734895"/>
+  <outline>
+    <contour>
+      <point x="496.9317003734895" y="172" type="line"/>
+      <point x="263.8089733585726" y="172.0" type="line"/>
+      <point x="270.1519278137935" y="161.85"/>
+      <point x="275.58874591826856" y="153.15"/>
+      <point x="281.9317003734895" y="143.0" type="curve"/>
+      <point x="419.9317003734895" y="653" type="line"/>
+      <point x="254.9317003734895" y="698" type="line"/>
+      <point x="95.93170037348949" y="119" type="line" smooth="yes"/>
+      <point x="75.61313728996066" y="45.009760846772224"/>
+      <point x="108.6823222678849" y="0.0"/>
+      <point x="176.9317003734895" y="0.0" type="curve" smooth="yes"/>
+      <point x="496.9317003734895" y="0" type="line"/>
+    </contour>
+  </outline>
+</glyph>
