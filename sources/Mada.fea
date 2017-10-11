@@ -2,12 +2,25 @@ languagesystem arab dflt;
 #languagesystem arab ARA;
 #languagesystem arab FAR;
 languagesystem arab URD;
+languagesystem arab KSH;
+languagesystem arab SND;
 #{languagesystems}
 
 feature locl {
   lookupflag IgnoreMarks;
-  script arab; language URD  exclude_dflt;
+  script arab;
+
+  language URD  exclude_dflt;
     sub uni06F4 by uni06F4.urd;
+    sub uni06F6 by uni0666;
+    sub uni06F7 by uni06F7.urd;
+
+  language KSH  exclude_dflt;
+    sub uni06F4 by uni06F4.urd;
+    sub uni06F6 by uni0666;
+    sub uni06F7 by uni06F7.urd;
+
+  language SND  exclude_dflt;
     sub uni06F6 by uni0666;
     sub uni06F7 by uni06F7.urd;
 } locl;
