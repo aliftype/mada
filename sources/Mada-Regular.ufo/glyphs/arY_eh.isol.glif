@@ -9,6 +9,7 @@
   <anchor x="236" y="336" name="kafAbove"/>
   <anchor x="62" y="187" name="tailAbove"/>
   <anchor x="308" y="-100" name="ringBelow"/>
+  <anchor x="308" y="-190" name="hamzaBelow"/>
   <outline>
     <contour>
       <point x="553" y="252" type="line"/>
