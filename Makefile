@@ -75,15 +75,16 @@ $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)
 
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
+	@echo "   GEN	$@"
 	@rm -rf $@
-	@$(call prepare_masters,$<,$(word 2,$+),$(word 3,$+),$@)
+	@$(PY) $(PREPARE) --version=$(VERSION) --feature-file=$(word 3,$+) --out-file=$@ $< $(word 2,$+)
 
 $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo:
 	@echo "   GET	$@"
 	@if [ ! -f $@ ]; then git submodule init; git submodule update; fi
 
 $(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
-	@echo "   GEN   $@"
+	@echo "   GEN	$@"
 	@mkdir -p $(BLDDIR)
 	@cp $< $@
 
