@@ -72,11 +72,11 @@ $(BLDDIR)/instance_ttf/$(NAME)-%.ttf: $(UFO) $(BLDDIR)/$(NAME).designspace
 $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)
 
-$(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/%/font.ufo $(SRCDIR)/$(NAME).fea $(SRCDIR)/$(NAME).designspace $(PREPARE)
+$(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(SRCDIR)/$(NAME).designspace $(PREPARE)
 	@rm -rf $@
 	@$(call prepare_masters,$<,$(word 2,$+),$(word 3,$+),$@)
 
-$(SRCDIR)/$(LATIN)/Roman/%/font.ufo:
+$(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo:
 	@echo "   GET	$@"
 	@if [ ! -f $@ ]; then git submodule init; git submodule update; fi
 

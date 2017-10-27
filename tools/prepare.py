@@ -12,7 +12,6 @@ from defcon import Font, Component
 from fontTools.misc.py23 import *
 from fontTools.misc.transform import Transform
 from glyphsLib.anchors import propagate_font_anchors
-from goadb import GOADBParser
 
 from placeholders import build as addPlaceHolders
 
@@ -45,9 +44,6 @@ def merge(args):
     propagate_font_anchors(ufo)
 
     latin = Font(args.latinfile)
-    # Parse the GlyphOrderAndAliasDB file for Unicode values and production
-    # glyph names of the Latin glyphs.
-    goadb = GOADBParser(os.path.dirname(args.latinfile) + "/../GlyphOrderAndAliasDB")
 
     ufo.lib[POSTSCRIPT_NAMES] = {}
 
@@ -76,16 +72,12 @@ def merge(args):
         features.text += fea.replace("#{languagesystems}", "languagesystem latn dflt;")
     features.text += generateStyleSets(ufo)
 
-    for glyph in latin:
-        if glyph.name in goadb.encodings:
-            glyph.unicode = goadb.encodings[glyph.name]
-
     # Source Sans Pro has different advance widths for space and NBSP
     # glyphs, fix it.
     latin["nbspace"].width = latin["space"].width
 
     # Set Latin production names
-    ufo.lib[POSTSCRIPT_NAMES].update(goadb.names)
+    ufo.lib[POSTSCRIPT_NAMES].update(latin.lib[POSTSCRIPT_NAMES])
 
     # Copy Latin glyphs.
     for name in latin.glyphOrder:
