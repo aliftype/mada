@@ -77,7 +77,7 @@ $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
 	@echo "   GEN	$@"
 	@rm -rf $@
-	@$(PY) $(PREPARE) --version=$(VERSION) --feature-file=$(word 3,$+) --out-file=$@ $< $(word 2,$+)
+	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
 $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo:
 	@echo "   GET	$@"

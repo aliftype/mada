@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+from fontTools.misc.py23 import *
+
 import argparse
 import math
 import os
@@ -8,8 +10,10 @@ import unicodedata
 
 from collections import Counter
 from datetime import datetime
+from operator import attrgetter
+
 from defcon import Font, Component
-from fontTools.misc.py23 import *
+from fontTools.feaLib import ast, parser
 from fontTools.misc.transform import Transform
 from glyphsLib.anchors import propagate_font_anchors
 
@@ -62,14 +66,27 @@ def merge(args):
             if postName != glyph.name:
                 ufo.lib[POSTSCRIPT_NAMES][glyph.name] = postName
 
-    # Populate the font’s feature text, we keep our main feature file out of
-    # the UFO to share it between the fonts.
+    # Merge Arabic and Latin features, making sure languagesystem statements
+    # come first.
     features = ufo.features
-    with open(args.feature_file) as feafile:
-        fea = feafile.read()
-        # Set Latin language system, ufo2ft will use it when generating kern
-        # feature.
-        features.text += fea.replace("#{languagesystems}", "languagesystem latn dflt;")
+    langsys = []
+    statements = []
+    for font in (ufo, latin):
+        featurefile = os.path.join(font.path, "features.fea")
+        fea = parser.Parser(featurefile, font.glyphOrder).parse()
+        langsys += [s for s in fea.statements if isinstance(s, ast.LanguageSystemStatement)]
+        statements += [s for s in fea.statements if not isinstance(s, ast.LanguageSystemStatement)]
+        # We will regenerate kern, mark and mkmk features, and aalt is useless.
+        statements = [s for s in statements if getattr(s, "name", None) not in ("aalt", "kern", "mark", "mkmk")]
+        # These will be regenerated as well
+        statements = [s for s in statements if not isinstance(s, ast.MarkClassDefinition)]
+    # Drop tables in fea, we don’t want them.
+    statements = [s for s in statements if not isinstance(s, ast.TableBlock)]
+    # Make sure DFLT is the first.
+    langsys = sorted(langsys, key=attrgetter("script"))
+    fea.statements = langsys + statements
+    features.text = fea.asFea()
+
     features.text += generateStyleSets(ufo)
 
     # Source Sans Pro has different advance widths for space and NBSP
@@ -199,7 +216,6 @@ def main():
     parser.add_argument("arabicfile", metavar="FILE", help="input font to process")
     parser.add_argument("latinfile", metavar="FILE", help="input font to process")
     parser.add_argument("--out-file", metavar="FILE", help="output font to write", required=True)
-    parser.add_argument("--feature-file", metavar="FILE", help="output font to write", required=True)
     parser.add_argument("--version", metavar="version", help="version number", required=True)
 
     args = parser.parse_args()
