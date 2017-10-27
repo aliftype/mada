@@ -35,6 +35,8 @@ doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
 
+.PRECIOUS: $(BLDDIR)/instance_otf/$(NAME)-%.otf $(BLDDIR)/instance_ttf/$(NAME)-%.ttf
+
 define prepare_masters
 echo "   GEN   $(4)"
 mkdir -p $(BLDDIR)
