@@ -90,7 +90,7 @@ $(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
 $(PDF): $(NAME)-Regular.otf
 	@echo "   GEN	$@"
 	@mkdir -p $(DOCDIR)
-	@fntsample --font-file $< --output-file $@.tmp --write-outline
+	@fntsample --font-file $< --output-file $@.tmp --use-pango --write-outline
 	@mutool clean -d -i -f -a $@.tmp $@ &> /dev/null || cp $@.tmp $@
 	@rm -f $@.tmp
 
