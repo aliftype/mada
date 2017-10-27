@@ -113,12 +113,6 @@ def merge(args):
         if value is not None:
             setattr(ufo.info, attr, getattr(latin.info, attr))
 
-    # MutatorMath does not like multiple unicodes and will drop it entirely,
-    # turning the glyph unencoded:
-    # https://github.com/LettError/MutatorMath/issues/85
-    for glyph in ufo:
-        assert not " " in glyph.unicodes
-
     # Make sure we don’t have glyphs with the same unicode value
     unicodes = []
     for glyph in ufo:
