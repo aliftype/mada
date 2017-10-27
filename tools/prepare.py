@@ -36,34 +36,6 @@ feature ss01 {
 
     return fea
 
-def parseSubset(filename):
-    """Parses a file with Unicode code points one per line, in the form of
-    U+XXXX. Returns a list of the parsed code points."""
-
-    unicodes = []
-    with open(filename) as f:
-        lines = f.read()
-        lines = lines.split()
-        unicodes = [int(c.lstrip('U+'), 16) for c in lines if c]
-    return unicodes
-
-def collectGlyphs(ufo, subset):
-    """Collects the list of glyphs we want to keep in the font, based on
-    subset."""
-
-    unicodes = parseSubset(subset)
-    unicodes.append(0x25CC) # dotted circle
-
-    glyphs = set()
-    components = []
-
-    for glyph in ufo:
-        if glyph.unicode in unicodes:
-            glyphs.add(glyph.name)
-            components.extend([c.baseGlyph for c in glyph.components])
-
-    return glyphs, components
-
 def merge(args):
     """Merges Arabic and Latin fonts together, and messages the combined font a
     bit. Returns the combined font."""
@@ -112,27 +84,12 @@ def merge(args):
     # glyphs, fix it.
     latin["nbspace"].width = latin["space"].width
 
-    glyphs, components = collectGlyphs(latin, args.latin_subset)
-
-    counter = Counter(components)
-    uniqueComponents = set()
-    for name in counter:
-        if name not in glyphs:
-            latin[name].unicode = None
-        if counter[name] == 1:
-            uniqueComponents.add(name)
-        else:
-            glyphs.add(name)
-
     # Set Latin production names
     ufo.lib[POSTSCRIPT_NAMES].update(goadb.names)
 
     # Copy Latin glyphs.
-    for name in glyphs:
+    for name in latin.glyphOrder:
         glyph = latin[name]
-        for component in glyph.components:
-            if component.baseGlyph in uniqueComponents:
-                glyph.decomposeComponent(component)
         # Remove anchors from spacing marks, otherwise ufo2ft will give them
         # mark glyph class which will cause HarfBuzz to zero their width.
         if glyph.unicode and unicodedata.category(unichr(glyph.unicode)) in ("Sk", "Lm"):
@@ -257,7 +214,6 @@ def main():
     parser.add_argument("latinfile", metavar="FILE", help="input font to process")
     parser.add_argument("--out-file", metavar="FILE", help="output font to write", required=True)
     parser.add_argument("--feature-file", metavar="FILE", help="output font to write", required=True)
-    parser.add_argument("--latin-subset", metavar="FILE", help="file containing Latin code points to keep", required=True)
     parser.add_argument("--version", metavar="version", help="version number", required=True)
 
     args = parser.parse_args()

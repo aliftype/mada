@@ -5,7 +5,6 @@ LATIN=SourceSansPro
 SRCDIR=sources
 DOCDIR=documentation
 BLDDIR=build
-LATIN_SUBSET=$(SRCDIR)/latin-subset.txt
 TOOLDIR=tools
 TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
@@ -42,7 +41,6 @@ mkdir -p $(BLDDIR)
 $(PY) $(PREPARE) --version=$(VERSION)                                          \
                  --feature-file=$(3)                                           \
                  --out-file=$(4)                                               \
-                 --latin-subset=$(LATIN_SUBSET)                                \
                  $(1) $(2)
 endef
 
