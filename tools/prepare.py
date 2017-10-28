@@ -143,6 +143,14 @@ def merge(args):
 
     return ufo
 
+def decomposeFlippedComponents(ufo):
+    for glyph in ufo:
+        for component in glyph.components:
+            xx, xy, yx, yy = component.transformation[:4]
+            if xx*yy - xy*yx < 0:
+                glyph.decomposeComponent(component)
+
+
 def buildExtraGlyphs(ufo):
     """Builds some necessary glyphs at runtime that are derived from other
     glyphs, instead of having to update them manually."""
@@ -208,6 +216,7 @@ def build(args):
     ufo = merge(args)
     setInfo(ufo.info, args.version)
     buildExtraGlyphs(ufo)
+    decomposeFlippedComponents(ufo)
 
     return ufo
 

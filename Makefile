@@ -11,12 +11,14 @@ DIST=$(NAME)-$(VERSION)
 
 PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
+MKSLANT=$(TOOLDIR)/mkslant.py
 BUILD=$(TOOLDIR)/build.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
-MASTERS=Light Regular Black
-FONTS=Light Regular Medium SemiBold Bold Black
+MASTERS=Light Regular Black LightItalic BlackItalic LightSlanted BlackSlanted
+FONTS=Light Regular Medium SemiBold Bold Black \
+      LightItalic Italic MediumItalic SemiBoldItalic BoldItalic BlackItalic
 
 UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
@@ -73,6 +75,22 @@ $(BLDDIR)/instance_ttf/$(NAME)-%.ttf: $(UFO) $(BLDDIR)/$(NAME).designspace
 
 $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)
+
+$(BLDDIR)/$(NAME)-LightItalic.ufo: $(BLDDIR)/$(NAME)-Light.ufo
+	@echo "   GEN	$@"
+	@$(PY) $(MKSLANT) $< $@ -15
+
+$(BLDDIR)/$(NAME)-BlackItalic.ufo: $(BLDDIR)/$(NAME)-Black.ufo
+	@echo "   GEN	$@"
+	@$(PY) $(MKSLANT) $< $@ -15
+
+$(BLDDIR)/$(NAME)-LightSlanted.ufo: $(BLDDIR)/$(NAME)-Light.ufo
+	@echo "   GEN	$@"
+	@$(PY) $(MKSLANT) $< $@ 15
+
+$(BLDDIR)/$(NAME)-BlackSlanted.ufo: $(BLDDIR)/$(NAME)-Black.ufo
+	@echo "   GEN	$@"
+	@$(PY) $(MKSLANT) $< $@ 15
 
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
 	@echo "   GEN	$@"

@@ -8,10 +8,9 @@ from fontmake.font_project import FontProject
 from mutatorMath.ufo.document import DesignSpaceDocumentReader
 
 def epoch(args):
-    designspace = os.path.join(args.source, args.designspace)
-    reader = DesignSpaceDocumentReader(designspace, ufoVersion=3)
-    paths = reader.getSourcePaths() + [designspace]
-    epoch = max([os.stat(p).st_mtime for p in paths])
+    reader = DesignSpaceDocumentReader(args.designspace, ufoVersion=3)
+    paths = reader.getSourcePaths() + [args.designspace]
+    epoch = max([os.stat(os.path.join(args.source, p)).st_mtime for p in paths])
 
     return str(int(epoch))
 
