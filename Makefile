@@ -40,7 +40,7 @@ SHELL=/usr/bin/env bash
 .PRECIOUS: $(BLDDIR)/instance_otf/$(NAME)-%.otf $(BLDDIR)/instance_ttf/$(NAME)-%.ttf
 
 define prepare_masters
-echo "   GEN   $(4)"
+echo "   GEN	$(4)"
 mkdir -p $(BLDDIR)
 $(PY) $(PREPARE) --version=$(VERSION)                                          \
                  --feature-file=$(3)                                           \
@@ -49,7 +49,7 @@ $(PY) $(PREPARE) --version=$(VERSION)                                          \
 endef
 
 define generate_fonts
-echo "   MAKE  $(1)"
+echo "   MAKE	$(1)"
 mkdir -p $(BLDDIR)
 cd $(BLDDIR);                                                                  \
 $(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
@@ -125,7 +125,7 @@ check-for-release:
 		&& echo "run make clean first" && exit 1 || echo "true"
 
 dist: check-for-release otf ttf vf doc
-	@echo "   GEN   $(NAME)-$(VERSION)"
+	@echo "   GEN	$(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
