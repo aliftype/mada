@@ -55,7 +55,7 @@ cd $(BLDDIR);                                                                  \
 $(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
                --source=$(abspath $(SRCDIR))                                   \
                --build=$(abspath $(BUILDDIR))                                  \
-               --output=$(1)
+               --output=$(1) $(if $(RELEASE_BUILD),--release)
 endef
 
 $(TFV): $(BLDDIR)/variable_ttf/$(TFV)
@@ -121,8 +121,15 @@ $(PNG): $(OTF)
 	@convert $(SMP) -define png:exclude-chunks=date,time -gravity center -append $@
 	@rm -rf $(SMP)
 
-dist: ttf vf $(PDF)
-	@@echo "   GEN   $(NAME)-$(VERSION)"
+check-for-release:
+	@echo -n "   Checking for relese build: "
+	@$(if $(RELEASE_BUILD),echo "true",echo "build with RELEASE_BUILD=true" && exit 1)
+	@echo -n "   Checking for clean build: "
+	@test $(foreach file, $(OTF) $(TTF) $(VF),-f $(file) -o) -f dummy      \
+		&& echo "run make clean first" && exit 1 || echo "true"
+
+dist: check-for-release otf ttf vf doc
+	@echo "   GEN   $(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf

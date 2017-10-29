@@ -23,11 +23,15 @@ def build(args):
     if args.output == "variable":
         interpolate = False
 
+    autohint = None
+    if args.release:
+        autohint = ""
+
     project = FontProject(verbose="WARNING")
     project.run_from_designspace(designspace,
             output=args.output, interpolate=interpolate,
-            remove_overlaps=True, reverse_direction=True, subroutinize=True,
-            autohint="")
+            remove_overlaps=args.release, reverse_direction=args.release,
+            subroutinize=args.release, autohint=autohint)
 
 def main():
     parser = argparse.ArgumentParser(description="Build Mada fonts.")
@@ -35,6 +39,7 @@ def main():
     parser.add_argument("--build", metavar="DIR", help="Build directory", required=True)
     parser.add_argument("--designspace", metavar="FILE", help="DesignSpace file", required=True)
     parser.add_argument("--output", metavar="OUTPUT", help="Output format", required=True)
+    parser.add_argument("--release", help="Build with optimizations for release", action="store_true")
 
     args = parser.parse_args()
 
