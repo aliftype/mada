@@ -97,10 +97,6 @@ $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instan
 	@rm -rf $@
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
-$(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo:
-	@echo "   GET	$@"
-	@if [ ! -f $@ ]; then git submodule init; git submodule update; fi
-
 $(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
 	@echo "   GEN	$@"
 	@mkdir -p $(BLDDIR)
