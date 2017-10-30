@@ -10,7 +10,11 @@ from mutatorMath.ufo.document import DesignSpaceDocumentReader
 def epoch(args):
     reader = DesignSpaceDocumentReader(args.designspace, ufoVersion=3)
     paths = reader.getSourcePaths() + [args.designspace]
-    epoch = max([os.stat(os.path.join(args.source, p)).st_mtime for p in paths])
+    # We want to check the original masters in the source not build directory.
+    paths = [os.path.join(args.source, os.path.basename(p)) for p in paths]
+    # Not all masters exist in the source directory.
+    paths = [p for p in paths if os.path.exists(p)]
+    epoch = max([os.stat(p).st_mtime for p in paths])
 
     return str(int(epoch))
 
