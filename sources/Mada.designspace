@@ -37,25 +37,25 @@
         <source filename="Mada-LightItalic.ufo" name="lightitalic">
             <location>
                 <dimension name="weight" xvalue="100"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
         </source>
         <source filename="Mada-BlackItalic.ufo" name="blackitalic">
             <location>
                 <dimension name="weight" xvalue="1000"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
         </source>
         <source filename="Mada-LightSlanted.ufo" name="lightslanted">
             <location>
                 <dimension name="weight" xvalue="100"/>
-                <dimension name="slant" xvalue="15"/>
+                <dimension name="slant" xvalue="-15"/>
             </location>
         </source>
         <source filename="Mada-BlackSlanted.ufo" name="blackslanted">
             <location>
                 <dimension name="weight" xvalue="1000"/>
-                <dimension name="slant" xvalue="15"/>
+                <dimension name="slant" xvalue="-15"/>
             </location>
         </source>
     </sources>
@@ -112,7 +112,7 @@
         <instance familyname="Mada" filename="instance_ufo/Mada-LightItalic.ufo" postscriptfontname="Mada-LightItalic" stylename="Light Italic">
             <location>
                 <dimension name="weight" xvalue="100"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
             <kerning/>
             <info/>
@@ -120,7 +120,7 @@
         <instance familyname="Mada" filename="instance_ufo/Mada-Italic.ufo" postscriptfontname="Mada-Italic" stylename="Italic" stylemapfamilyname="Mada" stylemapstylename="italic">
             <location>
                 <dimension name="weight" xvalue="368"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
             <kerning/>
             <info/>
@@ -128,7 +128,7 @@
         <instance familyname="Mada" filename="instance_ufo/Mada-MediumItalic.ufo" postscriptfontname="Mada-MediumItalic" stylename="Medium Italic">
             <location>
                 <dimension name="weight" xvalue="520"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
             <kerning/>
             <info/>
@@ -136,7 +136,7 @@
         <instance familyname="Mada" filename="instance_ufo/Mada-SemiBoldItalic.ufo" postscriptfontname="Mada-SemiBoldItalic" stylename="SemiBold Italic">
             <location>
                 <dimension name="weight" xvalue="600"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
             <kerning/>
             <info/>
@@ -144,7 +144,7 @@
         <instance familyname="Mada" filename="instance_ufo/Mada-BoldItalic.ufo" postscriptfontname="Mada-BoldItalic" stylename="Bold Italic" stylemapfamilyname="Mada" stylemapstylename="bold italic">>
             <location>
                 <dimension name="weight" xvalue="824"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
             <kerning/>
             <info/>
@@ -152,7 +152,7 @@
         <instance familyname="Mada" filename="instance_ufo/Mada-BlackItalic.ufo" postscriptfontname="Mada-BlackItalic" stylename="Black Italic">
             <location>
                 <dimension name="weight" xvalue="1000"/>
-                <dimension name="slant" xvalue="-15"/>
+                <dimension name="slant" xvalue="15"/>
             </location>
             <kerning/>
             <info/>
