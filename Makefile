@@ -37,7 +37,7 @@ doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
 
-.PRECIOUS: $(BLDDIR)/instance_otf/$(NAME)-%.otf $(BLDDIR)/instance_ttf/$(NAME)-%.ttf
+.PRECIOUS: $(BLDDIR)/master_otf/$(NAME)-%.otf $(BLDDIR)/master_ttf/$(NAME)-%.ttf
 
 define prepare_masters
 echo "   GEN	$(4)"
@@ -49,29 +49,38 @@ $(PY) $(PREPARE) --version=$(VERSION)                                          \
 endef
 
 define generate_fonts
-echo "   MAKE	$(1)"
+echo "   MAKE	$(if $(2),$(basename $(notdir $(2))).$(1),$(1))"
 mkdir -p $(BLDDIR)
 cd $(BLDDIR);                                                                  \
 $(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
                --source=$(abspath $(SRCDIR))                                   \
                --build=$(abspath $(BUILDDIR))                                  \
-               --output=$(1) $(if $(RELEASE_BUILD),--release)
+               $(if $(2),--ufo=$(abspath $(2)))                                \
+               $(if $(RELEASE_BUILD),--release)                                \
+               --output=$(1)
 endef
 
 $(TFV): $(BLDDIR)/variable_ttf/$(TFV)
 	@cp $< $@
 
-$(NAME)-%.otf: $(BLDDIR)/instance_otf/$(NAME)-%.otf
+$(NAME)-%.otf: $(BLDDIR)/master_otf/$(NAME)-%.otf
 	@cp $< $@
 
-$(NAME)-%.ttf: $(BLDDIR)/instance_ttf/$(NAME)-%.ttf
+$(NAME)-%.ttf: $(BLDDIR)/master_ttf/$(NAME)-%.ttf
 	@cp $< $@
 
-$(BLDDIR)/instance_otf/$(NAME)-%.otf: $(UFO) $(BLDDIR)/$(NAME).designspace
-	@$(call generate_fonts,otf)
+$(BLDDIR)/instance_ufo/$(NAME)-%.ufo: $(UFO) $(BLDDIR)/$(NAME).designspace
+	@echo "   MUT	$(notdir $@)"
+	@$(PY) -c                                                              \
+	  "from mutatorMath.ufo.document import DesignSpaceDocumentReader as R;\
+	   r = R('$(BLDDIR)/$(NAME).designspace', ufoVersion=3);               \
+	   r.readInstance(('postscriptfontname', '$(basename $(notdir $@))'))"
 
-$(BLDDIR)/instance_ttf/$(NAME)-%.ttf: $(UFO) $(BLDDIR)/$(NAME).designspace
-	@$(call generate_fonts,ttf)
+$(BLDDIR)/master_otf/$(NAME)-%.otf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
+	@$(call generate_fonts,otf,$<)
+
+$(BLDDIR)/master_ttf/$(NAME)-%.ttf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
+	@$(call generate_fonts,ttf,$<)
 
 $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)

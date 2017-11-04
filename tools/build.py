@@ -23,25 +23,25 @@ def build(args):
 
     os.environ["SOURCE_DATE_EPOCH"] = epoch(args)
 
-    interpolate = True
-    if args.output == "variable":
-        interpolate = False
-
     autohint = None
     if args.release:
         autohint = ""
 
     project = FontProject(verbose="WARNING")
-    project.run_from_designspace(designspace,
-            output=args.output, interpolate=interpolate,
-            remove_overlaps=args.release, reverse_direction=args.release,
+    if args.ufo:
+        project.run_from_ufos([args.ufo],
+            output=args.output, remove_overlaps=False, reverse_direction=False,
             subroutinize=args.release, autohint=autohint)
+    else:
+        project.run_from_designspace(designspace,
+            output=args.output, subroutinize=args.release, autohint=autohint)
 
 def main():
     parser = argparse.ArgumentParser(description="Build Mada fonts.")
     parser.add_argument("--source", metavar="DIR", help="Source directory", required=True)
     parser.add_argument("--build", metavar="DIR", help="Build directory", required=True)
     parser.add_argument("--designspace", metavar="FILE", help="DesignSpace file", required=True)
+    parser.add_argument("--ufo", metavar="FONT", help="UFO source to process")
     parser.add_argument("--output", metavar="OUTPUT", help="Output format", required=True)
     parser.add_argument("--release", help="Build with optimizations for release", action="store_true")
 
