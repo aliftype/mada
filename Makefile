@@ -40,7 +40,7 @@ SHELL=/usr/bin/env bash
 .PRECIOUS: $(BLDDIR)/master_otf/$(NAME)-%.otf $(BLDDIR)/master_ttf/$(NAME)-%.ttf
 
 define prepare_masters
-echo "   GEN	$(4)"
+echo "   MASTER    $(notdir $(4))"
 mkdir -p $(BLDDIR)
 $(PY) $(PREPARE) --version=$(VERSION)                                          \
                  --feature-file=$(3)                                           \
@@ -49,7 +49,7 @@ $(PY) $(PREPARE) --version=$(VERSION)                                          \
 endef
 
 define generate_fonts
-echo "   MAKE	$(if $(2),$(basename $(notdir $(2))).$(1),$(1))"
+echo "     MAKE    $(if $(2),$(basename $(notdir $(2))).$(1),$(1))"
 mkdir -p $(BLDDIR)
 cd $(BLDDIR);                                                                  \
 $(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
@@ -70,11 +70,11 @@ $(NAME)-%.ttf: $(BLDDIR)/master_ttf/$(NAME)-%.ttf
 	@cp $< $@
 
 $(BLDDIR)/instance_ufo/$(NAME)-%.ufo: $(UFO) $(BLDDIR)/$(NAME).designspace
-	@echo "   MUT	$(notdir $@)"
+	@echo "     INST    $(@F)"
 	@$(PY) -c                                                              \
 	  "from mutatorMath.ufo.document import DesignSpaceDocumentReader as R;\
 	   r = R('$(BLDDIR)/$(NAME).designspace', ufoVersion=3);               \
-	   r.readInstance(('postscriptfontname', '$(basename $(notdir $@))'))"
+	   r.readInstance(('postscriptfontname', '$(basename $(@F))'))"
 
 $(BLDDIR)/master_otf/$(NAME)-%.otf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
 	@$(call generate_fonts,otf,$<)
@@ -86,40 +86,40 @@ $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)
 
 $(BLDDIR)/$(NAME)-LightItalic.ufo: $(BLDDIR)/$(NAME)-Light.ufo
-	@echo "   GEN	$@"
+	@echo "    SLANT    $(@F)"
 	@$(PY) $(MKSLANT) $< $@ -15
 
 $(BLDDIR)/$(NAME)-BlackItalic.ufo: $(BLDDIR)/$(NAME)-Black.ufo
-	@echo "   GEN	$@"
+	@echo "    SLANT    $(@F)"
 	@$(PY) $(MKSLANT) $< $@ -15
 
 $(BLDDIR)/$(NAME)-LightSlanted.ufo: $(BLDDIR)/$(NAME)-Light.ufo
-	@echo "   GEN	$@"
+	@echo "    SLANT    $(@F)"
 	@$(PY) $(MKSLANT) $< $@ 15
 
 $(BLDDIR)/$(NAME)-BlackSlanted.ufo: $(BLDDIR)/$(NAME)-Black.ufo
-	@echo "   GEN	$@"
+	@echo "    SLANT    $(@F)"
 	@$(PY) $(MKSLANT) $< $@ 15
 
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
-	@echo "   GEN	$@"
+	@echo "     PREP    $(@F)"
 	@rm -rf $@
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
 $(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
-	@echo "   GEN	$@"
+	@echo "      GEN    $(@F)"
 	@mkdir -p $(BLDDIR)
 	@cp $< $@
 
 $(PDF): $(NAME)-Regular.otf
-	@echo "   GEN	$@"
+	@echo "   SAMPLE    $(@F)"
 	@mkdir -p $(DOCDIR)
 	@fntsample --font-file $< --output-file $@.tmp --use-pango --write-outline
 	@mutool clean -d -i -f -a $@.tmp $@ &> /dev/null || cp $@.tmp $@
 	@rm -f $@.tmp
 
 $(PNG): $(OTF)
-	@echo "   GEN	$@"
+	@echo "   SAMPLE    $(@F)"
 	@for f in $(FONTS); do \
 	  hb-view $(NAME)-$$f.otf $(SAMPLE) --font-size=130 > $$f.png; \
 	 done
@@ -127,21 +127,21 @@ $(PNG): $(OTF)
 	@rm -rf $(SMP)
 
 check-for-release:
-	@echo -n "   Checking for relese build: "
+	@echo -n "    Checking for relese build: "
 	@$(if $(RELEASE_BUILD),echo "true",echo "build with RELEASE_BUILD=true" && exit 1)
-	@echo -n "   Checking for clean build: "
+	@echo -n "    Checking for clean build: "
 	@test $(foreach file, $(OTF) $(TTF) $(VF),-f $(file) -o) -f dummy      \
 		&& echo "run make clean first" && exit 1 || echo "true"
 
 dist: check-for-release otf ttf vf doc
-	@echo "   GEN	$(NAME)-$(VERSION)"
+	@echo "     DIST    $(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
 	@cp $(TFV)  $(NAME)-$(VERSION)/vf
 	@cp OFL.txt $(NAME)-$(VERSION)
 	@sed -e "/^!\[Sample\].*./d" README.md > $(NAME)-$(VERSION)/README.txt
-	@@echo "   ZIP   $(NAME)-$(VERSION)"
+	@@echo "     ZIP    $(NAME)-$(VERSION)"
 	@zip -rq $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
