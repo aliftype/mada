@@ -15,7 +15,7 @@ from operator import attrgetter
 from defcon import Font, Component
 from fontTools.feaLib import ast, parser
 from fontTools.misc.transform import Transform
-from glyphsLib.anchors import propagate_font_anchors
+from glyphsLib.builder.anchors import to_ufo_propagate_font_anchors
 
 from placeholders import build as addPlaceHolders
 
@@ -45,7 +45,7 @@ def merge(args):
 
     ufo = Font(args.arabicfile)
 
-    propagate_font_anchors(ufo)
+    to_ufo_propagate_font_anchors(None, ufo)
 
     latin = Font(args.latinfile)
 
