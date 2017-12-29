@@ -9,7 +9,7 @@ TOOLDIR=tools
 TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
 
-PY ?= pypy
+PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
 MKSLANT=$(TOOLDIR)/mkslant.py
 BUILD=$(TOOLDIR)/build.py
