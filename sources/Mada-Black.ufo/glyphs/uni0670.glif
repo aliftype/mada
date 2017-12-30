@@ -5,12 +5,12 @@
   <anchor x="0" y="0" name="_markAboveDot"/>
   <outline>
     <contour>
-      <point x="-47.0" y="-10.0" type="curve"/>
-      <point x="-47.0" y="194.0" type="line"/>
-      <point x="47.0" y="194.0" type="line"/>
-      <point x="47.0" y="78.0" type="line" smooth="yes"/>
-      <point x="47.0" y="23.0"/>
-      <point x="5.0" y="-10.0"/>
+      <point x="-64.0" y="-10.0" type="curve"/>
+      <point x="-64.0" y="244.0" type="line"/>
+      <point x="65.0" y="244.0" type="line"/>
+      <point x="65.0" y="98.0" type="line" smooth="yes"/>
+      <point x="65.0" y="20.99999999999997"/>
+      <point x="-12.0" y="-10.0"/>
     </contour>
   </outline>
 </glyph>
