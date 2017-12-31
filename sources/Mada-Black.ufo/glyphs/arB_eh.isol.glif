@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arBeh.isol" format="2">
   <advance width="854"/>
-  <anchor x="447.0" y="-150.0" name="dotBelow"/>
-  <anchor x="447.0" y="-185.0" name="markBelow"/>
+  <anchor x="447.0" y="-160.0" name="dotBelow"/>
+  <anchor x="447.0" y="-195.0" name="markBelow"/>
   <anchor x="427.0" y="453.0" name="dotAbove"/>
   <anchor x="427.0" y="497.0" name="markAbove"/>
   <anchor x="447.0" y="0" name="ringBelow"/>
+  <anchor x="447.0" y="-160.0" name="hamzaBelow"/>
+  <anchor x="427.0" y="453.0" name="hamzaAbove"/>
   <outline>
     <contour>
       <point x="622.0" y="333.0" type="line"/>

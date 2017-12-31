@@ -184,6 +184,11 @@ feature isol {
     sub uni06FB by arSad.isol ar1Dot.above ar1Dot.below;
     sub uni06FC by arAin.isol ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.init uni065B;
+    sub uni0751 by arBeh.isol ar3Dot.above ar1Dot.below;
+    sub uni0752 by arBeh.isol ar3Dot.below;
+    sub uni0753 by arBeh.isol ar2Dot.above ar3Dot.below;
+    sub uni0754 by arBeh.isol ar1Dot.above ar2Dot.below;
+    sub uni0755 by arBeh.isol arISmallV.below;
     sub uni0756 by arBeh.isol uni065A;
     sub uni0757 by arHah.isol ar2Dot.above;
     sub uni0758 by arHah.isol2 ar3Dot.below;
@@ -196,6 +201,8 @@ feature isol {
     sub uni0769 by arNoon.isol ar1Dot.above uni065A;
     sub uni0772 by arHah.isol arTah.above;
     sub uni077E by arSeen.isol uni065B;
+    sub uni08A0 by arBeh.isol arSmallV.below;
+    sub uni08A1 by arBeh.isol uni0654 ar1Dot.below;
     sub uni08A2 by arHah.isol ar2Dot.above ar1Dot.below;
 } isol;
 
@@ -296,6 +303,11 @@ feature init {
     sub uni06FB by arSad.init ar1Dot.above ar1Dot.below;
     sub uni06FC by arAin.init ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.init uni065B;
+    sub uni0751 by arBeh.init ar3Dot.above ar1Dot.below;
+    sub uni0752 by arBeh.init ar3Dot.below;
+    sub uni0753 by arBeh.init ar2Dot.above ar3Dot.below;
+    sub uni0754 by arBeh.init ar1Dot.above ar2Dot.below;
+    sub uni0755 by arBeh.init arISmallV.below;
     sub uni0756 by arBeh.init uni065A;
     sub uni0757 by arHah.init ar2Dot.above;
     sub uni0758 by arHah.init ar3Dot.below;
@@ -307,6 +319,8 @@ feature init {
     sub uni0769 by arBeh.init ar1Dot.above uni065A;
     sub uni0772 by arHah.init arTah.above;
     sub uni077E by arSeen.init uni065B;
+    sub uni08A0 by arBeh.init arSmallV.below;
+    sub uni08A1 by arBeh.init uni0654 ar1Dot.below;
     sub uni08A2 by arHah.init ar2Dot.above ar1Dot.below;
 } init;
 
@@ -407,6 +421,11 @@ feature medi {
     sub uni06FB by arSad.medi ar1Dot.above ar1Dot.below;
     sub uni06FC by arAin.medi ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.medi uni065B;
+    sub uni0751 by arBeh.medi ar3Dot.above ar1Dot.below;
+    sub uni0752 by arBeh.medi ar3Dot.below;
+    sub uni0753 by arBeh.medi ar2Dot.above ar3Dot.below;
+    sub uni0754 by arBeh.medi ar1Dot.above ar2Dot.below;
+    sub uni0755 by arBeh.medi arISmallV.below;
     sub uni0756 by arBeh.medi uni065A;
     sub uni0757 by arHah.medi ar2Dot.above;
     sub uni0758 by arHah.medi ar3Dot.below;
@@ -418,6 +437,8 @@ feature medi {
     sub uni0769 by arBeh.medi ar1Dot.above uni065A;
     sub uni0772 by arHah.medi arTah.above;
     sub uni077E by arSeen.medi uni065B;
+    sub uni08A0 by arBeh.medi arSmallV.below;
+    sub uni08A1 by arBeh.medi uni0654 ar1Dot.below;
     sub uni08A2 by arHah.medi ar2Dot.above ar1Dot.below;
 } medi;
 
@@ -570,6 +591,11 @@ feature fina {
     sub uni06FB by arSad.fina ar1Dot.above ar1Dot.below;
     sub uni06FC by arAin.fina ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.fina3 uni065B;
+    sub uni0751 by arBeh.fina ar3Dot.above ar1Dot.below;
+    sub uni0752 by arBeh.fina ar3Dot.below;
+    sub uni0753 by arBeh.fina ar2Dot.above ar3Dot.below;
+    sub uni0754 by arBeh.fina ar1Dot.above ar2Dot.below;
+    sub uni0755 by arBeh.fina arISmallV.below;
     sub uni0756 by arBeh.fina uni065A;
     sub uni0757 by arHah.fina ar2Dot.above;
     sub uni0758 by arHah.fina2 ar3Dot.below;
@@ -582,6 +608,8 @@ feature fina {
     sub uni0769 by arNoon.fina ar1Dot.above uni065A;
     sub uni0772 by arHah.fina arTah.above;
     sub uni077E by arSeen.fina uni065B;
+    sub uni08A0 by arBeh.fina arSmallV.below;
+    sub uni08A1 by arBeh.fina uni0654 ar1Dot.below;
     sub uni08A2 by arHah.fina ar2Dot.above ar1Dot.below;
 } fina;
 
