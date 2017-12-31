@@ -157,6 +157,7 @@ feature isol {
     sub uni06BC by arNoon.isol ar1Dot.above arRing.below;
     sub uni06BD by arNoon.isol ar3Dot.above;
     sub uni06BE by arHeh.init;
+    sub uni06BF by arHah.isol2 ar1Dot.above ar3IDot.below;
     sub uni06C0 by arHeh.isol uni0654;
     sub uni06C1 by arHeh.isol;
     sub uni06C2 by arHeh.isol uni0654;
@@ -184,6 +185,8 @@ feature isol {
     sub uni06FC by arAin.isol ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.init uni065B;
     sub uni0756 by arBeh.isol uni065A;
+    sub uni0757 by arHah.isol ar2Dot.above;
+    sub uni0758 by arHah.isol2 ar3Dot.below;
     sub uni075A by arDal.isol arISmallV.below;
     sub uni0762 by arGaf.isol ar1Dot.above;
     sub uni0763 by arGaf.isol ar3Dot.above;
@@ -191,7 +194,9 @@ feature isol {
     sub uni0767 by arNoon.isol ar1Dot.above ar2Dot.below;
     sub uni0768 by arNoon.isol ar1Dot.above arTah.above;
     sub uni0769 by arNoon.isol ar1Dot.above uni065A;
+    sub uni0772 by arHah.isol arTah.above;
     sub uni077E by arSeen.isol uni065B;
+    sub uni08A2 by arHah.isol ar2Dot.above ar1Dot.below;
 } isol;
 
 feature init {
@@ -280,6 +285,7 @@ feature init {
     sub uni06BC by arBeh.init ar1Dot.above arRing.below;
     sub uni06BD by arBeh.init ar3IDot.below;
     sub uni06BE by arHeh.init;
+    sub uni06BF by arHah.init ar1Dot.above ar3IDot.below;
     sub uni06C1 by arHeh.init2;
     sub uni06C2 by arHeh.init uni0654;
     sub uni06CC by arBeh.init ar2Dot.below;
@@ -291,13 +297,17 @@ feature init {
     sub uni06FC by arAin.init ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.init uni065B;
     sub uni0756 by arBeh.init uni065A;
+    sub uni0757 by arHah.init ar2Dot.above;
+    sub uni0758 by arHah.init ar3Dot.below;
     sub uni0762 by arKaf.init ar1Dot.above;
     sub uni0763 by arKaf.init ar3Dot.above;
     sub uni0764 by arKaf.init ar3Dot.below;
     sub uni0767 by arBeh.init ar1Dot.above ar2Dot.below;
     sub uni0768 by arBeh.init ar1Dot.above arTah.above;
     sub uni0769 by arBeh.init ar1Dot.above uni065A;
+    sub uni0772 by arHah.init arTah.above;
     sub uni077E by arSeen.init uni065B;
+    sub uni08A2 by arHah.init ar2Dot.above ar1Dot.below;
 } init;
 
 feature medi {
@@ -386,6 +396,7 @@ feature medi {
     sub uni06BC by arBeh.medi ar1Dot.above arRing.below;
     sub uni06BD by arBeh.medi ar3IDot.below;
     sub uni06BE by arHeh.medi;
+    sub uni06BF by arHah.medi ar1Dot.above ar3IDot.below;
     sub uni06C1 by arHeh.medi2;
     sub uni06C2 by arHeh.medi2 uni0654;
     sub uni06CC by arBeh.medi ar2Dot.below;
@@ -397,13 +408,17 @@ feature medi {
     sub uni06FC by arAin.medi ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.medi uni065B;
     sub uni0756 by arBeh.medi uni065A;
+    sub uni0757 by arHah.medi ar2Dot.above;
+    sub uni0758 by arHah.medi ar3Dot.below;
     sub uni0762 by arKaf.medi ar1Dot.above;
     sub uni0763 by arKaf.medi ar3Dot.above;
     sub uni0764 by arKaf.medi ar3Dot.below;
     sub uni0767 by arBeh.medi ar1Dot.above ar2Dot.below;
     sub uni0768 by arBeh.medi ar1Dot.above arTah.above;
     sub uni0769 by arBeh.medi ar1Dot.above uni065A;
+    sub uni0772 by arHah.medi arTah.above;
     sub uni077E by arSeen.medi uni065B;
+    sub uni08A2 by arHah.medi ar2Dot.above ar1Dot.below;
 } medi;
 
 feature fina {
@@ -528,6 +543,7 @@ feature fina {
     sub uni06BC by arNoon.fina ar1Dot.above arRing.below;
     sub uni06BD by arNoon.fina ar3Dot.above;
     sub uni06BE by arHeh.fina3;
+    sub uni06BF by arHah.fina2 ar1Dot.above ar3IDot.below;
     sub uni06C0 by arHeh.fina2 uni0654;
     sub uni06C1 by arHeh.fina2;
     sub uni06C2 by arHeh.fina2 uni0654;
@@ -555,6 +571,8 @@ feature fina {
     sub uni06FC by arAin.fina ar1Dot.above ar1Dot.below;
     sub uni06FF by arHeh.fina3 uni065B;
     sub uni0756 by arBeh.fina uni065A;
+    sub uni0757 by arHah.fina ar2Dot.above;
+    sub uni0758 by arHah.fina2 ar3Dot.below;
     sub uni075A by arDal.fina arISmallV.below;
     sub uni0762 by arGaf.fina ar1Dot.above;
     sub uni0763 by arGaf.fina ar3Dot.above;
@@ -562,7 +580,9 @@ feature fina {
     sub uni0767 by arNoon.fina ar1Dot.above ar2Dot.below;
     sub uni0768 by arNoon.fina ar1Dot.above arTah.above;
     sub uni0769 by arNoon.fina ar1Dot.above uni065A;
+    sub uni0772 by arHah.fina arTah.above;
     sub uni077E by arSeen.fina uni065B;
+    sub uni08A2 by arHah.fina ar2Dot.above ar1Dot.below;
 } fina;
 
 lookup LamAlef {
