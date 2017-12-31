@@ -22,15 +22,19 @@ def parse(features):
 
 def build(font):
     names = parse(font.features.text)
+    e = font.info.unitsPerEm
+    a = font.info.ascender
+    d = font.info.descender
 
     for name in sorted(names):
         glyph = font.newGlyph(name)
         glyph.unicode = int(name.lstrip('uni'), 16)
-        glyph.width = glyph.leftMargin = glyph.rightMargin = 0
+        glyph.width = e
+        glyph.leftMargin = glyph.rightMargin = 0
         # TODO, remove this once FontConfig is updated
         pen = glyph.getPen()
-        pen.moveTo((-1, -1))
-        pen.lineTo(( 1, -1))
-        pen.lineTo(( 1,  1))
-        pen.lineTo((-1,  1))
+        pen.moveTo((0, d))
+        pen.lineTo((0, a))
+        pen.lineTo((e, a))
+        pen.lineTo((e, d))
         pen.closePath()
