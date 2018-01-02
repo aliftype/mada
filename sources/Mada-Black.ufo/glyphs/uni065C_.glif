@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni065C" format="2">
+  <unicode hex="065C"/>
+  <anchor x="0" y="0" name="_markBelow"/>
+  <anchor x="0" y="0" name="_markBelowDot"/>
+  <anchor x="0" y="-195.0" name="markBelow"/>
+  <outline>
+    <component base="ar1Dot.above"/>
+  </outline>
+</glyph>

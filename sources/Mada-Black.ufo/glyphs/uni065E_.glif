@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni065E" format="2">
+  <unicode hex="065E"/>
+  <anchor x="0" y="0" name="_markAbove"/>
+  <anchor x="0" y="0" name="_markAboveDot"/>
+  <outline>
+    <component base="uni064E" xScale="0.9396926207859084" xyScale="0.3420201433256687" yxScale="-0.3420201433256687" yScale="0.9396926207859084"/>
+    <component base="ar1Dot.above" xScale="0.6" yScale="0.6" xOffset="-110.54233128834358" yOffset="120.74233128834355"/>
+    <component base="ar1Dot.above" xScale="0.6" yScale="0.6" xOffset="81.69079754601228" yOffset="-24.51042944785276"/>
+  </outline>
+</glyph>
