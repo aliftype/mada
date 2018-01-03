@@ -1,7 +1,7 @@
 Mada
 ====
 
-![Sample](documentation/Mada-Sample.png)
+![Sample](documentation/FontSample.png)
 
 Mada is a modernist, low contrast Arabic typeface based largely on the typeface
 seen in Cairo metro old signage.

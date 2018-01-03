@@ -24,8 +24,8 @@ UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 TFV=$(NAME)-VF.ttf
-PDF=$(DOCDIR)/$(NAME)-Table.pdf
-PNG=$(DOCDIR)/$(NAME)-Sample.png
+PDF=$(DOCDIR)/FontTable.pdf
+PNG=$(DOCDIR)/FontSample.png
 SMP=$(FONTS:%=%.png)
 
 all: otf vf doc
