@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="arMeem.isol" format="2">
-  <advance width="632"/>
-  <anchor x="384" y="449" name="dotAbove"/>
-  <anchor x="384" y="486" name="markAbove"/>
-  <anchor x="306" y="-109" name="dotBelow"/>
-  <anchor x="306" y="-135" name="markBelow"/>
+  <advance width="531.0"/>
+  <anchor x="283.0" y="449" name="dotAbove"/>
+  <anchor x="283.0" y="486" name="markAbove"/>
+  <anchor x="205.0" y="-109" name="dotBelow"/>
+  <anchor x="205.0" y="-135" name="markBelow"/>
   <outline>
     <contour>
-      <point x="127" y="79" type="line"/>
-      <point x="191" y="0" type="line"/>
-      <point x="111" y="0" type="line"/>
-      <point x="46" y="79" type="line"/>
+      <point x="139.0" y="105.8251724243164" type="line"/>
+      <point x="218.0" y="105.8251724243164" type="line"/>
+      <point x="218.0" y="225" type="line" smooth="yes"/>
+      <point x="218.0" y="246.0"/>
+      <point x="225.0" y="259"/>
+      <point x="235.0" y="269" type="curve" smooth="yes"/>
+      <point x="259.0" y="292"/>
+      <point x="311.0" y="295"/>
+      <point x="344.0" y="261" type="curve" smooth="yes"/>
+      <point x="392.0" y="210"/>
+      <point x="406.0" y="172"/>
+      <point x="406.0" y="149" type="curve" smooth="yes"/>
+      <point x="406.0" y="112"/>
+      <point x="367.0" y="79.0"/>
+      <point x="291.0" y="79" type="curve" smooth="yes"/>
+      <point x="139.0" y="79" type="line" smooth="yes"/>
+      <point x="86.0" y="79.0"/>
+      <point x="46.0" y="38.0"/>
+      <point x="46.0" y="-13" type="curve" smooth="yes"/>
+      <point x="46.0" y="-200" type="line"/>
+      <point x="125.0" y="-200" type="line"/>
+      <point x="125.0" y="9.806419144425263" type="line"/>
+      <point x="121.4209252527487" y="6.374172443876422"/>
+      <point x="118.35314689796189" y="3.432246700548842"/>
+      <point x="114.7740721507106" y="0.0" type="curve"/>
+      <point x="291.0" y="0" type="line" smooth="yes"/>
+      <point x="380.0" y="0.0"/>
+      <point x="485.0" y="45"/>
+      <point x="485.0" y="149" type="curve" smooth="yes"/>
+      <point x="485.0" y="202"/>
+      <point x="457.0" y="256"/>
+      <point x="401.0" y="315" type="curve" smooth="yes"/>
+      <point x="340.0" y="378"/>
+      <point x="238.0" y="382"/>
+      <point x="180.0" y="325" type="curve" smooth="yes"/>
+      <point x="154.0" y="301"/>
+      <point x="139.0" y="265.0"/>
+      <point x="139.0" y="225" type="curve" smooth="yes"/>
     </contour>
-    <component base="arMeem.init" xOffset="127"/>
   </outline>
 </glyph>
