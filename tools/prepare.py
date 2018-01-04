@@ -12,9 +12,8 @@ from collections import Counter
 from datetime import datetime
 from operator import attrgetter
 
-from defcon import Font, Component
+from defcon import Font
 from fontTools.feaLib import ast, parser
-from fontTools.misc.transform import Transform
 from glyphsLib.builder.anchors import to_ufo_propagate_font_anchors
 
 POSTSCRIPT_NAMES = "public.postscriptNames"
@@ -148,38 +147,6 @@ def decomposeFlippedComponents(ufo):
             if xx*yy - xy*yx < 0:
                 glyph.decomposeComponent(component)
 
-
-def buildExtraGlyphs(ufo):
-    """Builds some necessary glyphs at runtime that are derived from other
-    glyphs, instead of having to update them manually."""
-
-    # Build Arabic comma and semicolon glyphs, by rotating the Latin 180°, so
-    # that they are similar in design.
-    for code, name in [(ord(u'،'), "comma"), (ord(u'؛'), "semicolon")]:
-        glyph = ufo.newGlyph("uni%04X" % code)
-        glyph.unicode = code
-        enGlyph = ufo[name]
-        colon = ufo["colon"]
-        component = Component()
-        component.transformation = tuple(Transform().rotate(math.radians(180)))
-        component.baseGlyph = enGlyph.name
-        glyph.appendComponent(component)
-        glyph.move((0, colon.bounds[1] - glyph.bounds[1]))
-        glyph.leftMargin = enGlyph.rightMargin
-        glyph.rightMargin = enGlyph.leftMargin
-
-    # Ditto for question mark, but here we flip.
-    for code, name in [(ord(u'؟'), "question")]:
-        glyph = ufo.newGlyph("uni%04X" % code)
-        glyph.unicode = code
-        enGlyph = ufo[name]
-        component = Component()
-        component.transformation = tuple(Transform().scale(-1, 1))
-        component.baseGlyph = enGlyph.name
-        glyph.appendComponent(component)
-        glyph.leftMargin = enGlyph.rightMargin
-        glyph.rightMargin = enGlyph.leftMargin
-
 def setInfo(info, version):
     """Sets various font metadata fields."""
 
@@ -207,7 +174,6 @@ def setInfo(info, version):
 def build(args):
     ufo = merge(args)
     setInfo(ufo.info, args.version)
-    buildExtraGlyphs(ufo)
     decomposeFlippedComponents(ufo)
 
     return ufo
