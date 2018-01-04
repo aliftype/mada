@@ -8,6 +8,7 @@
   <anchor x="169.0" y="-329.0" name="markBelow"/>
   <anchor x="233.0" y="434.0" name="kafAbove"/>
   <anchor x="169.0" y="-199" name="ringBelow"/>
+  <anchor x="325" y="-76" name="dash"/>
   <outline>
     <contour>
       <point x="331.0" y="0.0" type="line"/>

@@ -5,6 +5,7 @@
   <anchor x="514.0" y="722.0" name="markAbove"/>
   <anchor x="327.0" y="-258.0" name="dotBelow"/>
   <anchor x="327.0" y="-293.0" name="markBelow"/>
+  <anchor x="510.0" y="400.0" name="dash"/>
   <outline>
     <contour>
       <point x="428.0" y="624.0" type="line"/>

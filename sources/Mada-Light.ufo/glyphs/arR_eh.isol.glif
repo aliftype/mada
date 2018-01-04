@@ -8,6 +8,7 @@
   <anchor x="93.0" y="-199" name="ringBelow"/>
   <anchor x="70" y="0" name="dotMiddle"/>
   <anchor x="171.0" y="291.0" name="hamzaAbove"/>
+  <anchor x="169" y="-76" name="dash"/>
   <outline>
     <contour>
       <point x="155.0" y="134.0" type="line" smooth="yes"/>
