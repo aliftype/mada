@@ -17,8 +17,6 @@ from fontTools.feaLib import ast, parser
 from fontTools.misc.transform import Transform
 from glyphsLib.builder.anchors import to_ufo_propagate_font_anchors
 
-from placeholders import build as addPlaceHolders
-
 POSTSCRIPT_NAMES = "public.postscriptNames"
 
 def generateStyleSets(ufo):
@@ -154,12 +152,6 @@ def decomposeFlippedComponents(ufo):
 def buildExtraGlyphs(ufo):
     """Builds some necessary glyphs at runtime that are derived from other
     glyphs, instead of having to update them manually."""
-
-    # Build fallback glyphs, these are the base glyph that cmap maps to. We
-    # decompose them immediately in the layout code, so they shouldn’t be used
-    # for anything and we could just keep them blank, but then FontConfig will
-    # think the font does not support these characters.
-    addPlaceHolders(ufo)
 
     # Build Arabic comma and semicolon glyphs, by rotating the Latin 180°, so
     # that they are similar in design.
