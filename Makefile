@@ -16,9 +16,9 @@ BUILD=$(TOOLDIR)/build.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
-MASTERS=Light Regular Black LightItalic BlackItalic LightSlanted BlackSlanted
-FONTS=Light Regular Medium SemiBold Bold Black \
-      LightItalic Italic MediumItalic SemiBoldItalic BoldItalic BlackItalic
+MASTERS=ExtraLight Regular Black ExtraLightItalic BlackItalic ExtraLightSlanted BlackSlanted
+FONTS=ExtraLight Light Regular Medium SemiBold Bold Black \
+      ExtraLightItalic LightItalic Italic MediumItalic SemiBoldItalic BoldItalic BlackItalic
 
 UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
@@ -87,7 +87,7 @@ $(BLDDIR)/master_ttf/$(NAME)-%.ttf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
 $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable)
 
-$(BLDDIR)/$(NAME)-LightItalic.ufo: $(BLDDIR)/$(NAME)-Light.ufo
+$(BLDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BLDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
 	@$(PY) $(MKSLANT) $< $@ -15
 
@@ -95,7 +95,7 @@ $(BLDDIR)/$(NAME)-BlackItalic.ufo: $(BLDDIR)/$(NAME)-Black.ufo
 	@echo "    SLANT    $(@F)"
 	@$(PY) $(MKSLANT) $< $@ -15
 
-$(BLDDIR)/$(NAME)-LightSlanted.ufo: $(BLDDIR)/$(NAME)-Light.ufo
+$(BLDDIR)/$(NAME)-ExtraLightSlanted.ufo: $(BLDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
 	@$(PY) $(MKSLANT) $< $@ 15
 

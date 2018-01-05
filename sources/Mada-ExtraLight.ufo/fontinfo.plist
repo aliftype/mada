@@ -48,7 +48,7 @@
 	<key>openTypeNamePreferredFamilyName</key>
 	<string>Mada</string>
 	<key>openTypeNamePreferredSubfamilyName</key>
-	<string>Light</string>
+	<string>ExtraLight</string>
 	<key>openTypeOS2FamilyClass</key>
 	<array>
 		<integer>0</integer>
@@ -65,7 +65,7 @@
 	<key>openTypeOS2VendorID</key>
 	<string>ALIF</string>
 	<key>openTypeOS2WeightClass</key>
-	<integer>300</integer>
+	<integer>200</integer>
 	<key>openTypeOS2WidthClass</key>
 	<integer>5</integer>
 	<key>openTypeOS2WinAscent</key>
@@ -79,9 +79,9 @@
 	<key>postscriptFamilyOtherBlues</key>
 	<array/>
 	<key>postscriptFontName</key>
-	<string>Mada-Light</string>
+	<string>Mada-ExtraLight</string>
 	<key>postscriptFullName</key>
-	<string>Mada Light</string>
+	<string>Mada ExtraLight</string>
 	<key>postscriptOtherBlues</key>
 	<array/>
 	<key>postscriptSlantAngle</key>
@@ -95,9 +95,9 @@
 	<key>postscriptUnderlineThickness</key>
 	<real>50.0</real>
 	<key>postscriptWeightName</key>
-	<string>Light</string>
+	<string>ExtraLight</string>
 	<key>styleName</key>
-	<string>Light</string>
+	<string>ExtraLight</string>
 	<key>trademark</key>
 	<string></string>
 	<key>unitsPerEm</key>
