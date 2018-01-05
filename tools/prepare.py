@@ -156,21 +156,6 @@ def setInfo(info, version):
 
     info.copyright = copyright
 
-    info.openTypeNameDesigner = u"Khaled Hosny"
-    info.openTypeNameLicenseURL = u"http://scripts.sil.org/OFL"
-    info.openTypeNameLicense = u"This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
-    info.openTypeNameDescription = u"Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage."
-    info.openTypeNameSampleText = u"صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار."
-    info.openTypeOS2VendorID = "ALIF"
-
-    if info.openTypeOS2Selection is None:
-        info.openTypeOS2Selection = []
-    # Set use typo metrics bit
-    info.openTypeOS2Selection += [7]
-
-    # Make sure fsType is set to 0, i.e. Installable Embedding
-    info.openTypeOS2Type = []
-
 def build(args):
     ufo = merge(args)
     setInfo(ufo.info, args.version)

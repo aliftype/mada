@@ -26,22 +26,30 @@
 	<integer>-300</integer>
 	<key>openTypeHheaLineGap</key>
 	<integer>96</integer>
+	<key>openTypeNameDescription</key>
+	<string>Mada is a geometric, unmodulted Arabic display typeface inspired by Cairo road signage.</string>
 	<key>openTypeNameDesigner</key>
-	<string></string>
+	<string>Khaled Hosny</string>
 	<key>openTypeNameDesignerURL</key>
 	<string></string>
 	<key>openTypeNameLicense</key>
-	<string></string>
+	<string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL</string>
 	<key>openTypeNameLicenseURL</key>
-	<string></string>
+	<string>http://scripts.sil.org/OFL</string>
 	<key>openTypeNameManufacturer</key>
 	<string></string>
 	<key>openTypeNameManufacturerURL</key>
 	<string></string>
+	<key>openTypeNameSampleText</key>
+	<string>صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار.</string>
 	<key>openTypeOS2FamilyClass</key>
 	<array>
 		<integer>0</integer>
 		<integer>0</integer>
+	</array>
+	<key>openTypeOS2Selection</key>
+	<array>
+		<integer>7</integer>
 	</array>
 	<key>openTypeOS2Type</key>
 	<array/>
@@ -54,7 +62,7 @@
 	<key>openTypeOS2VendorID</key>
 	<string>ALIF</string>
 	<key>openTypeOS2WeightClass</key>
-	<integer>428</integer>
+	<integer>400</integer>
 	<key>openTypeOS2WidthClass</key>
 	<integer>5</integer>
 	<key>openTypeOS2WinAscent</key>
