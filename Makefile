@@ -58,7 +58,6 @@ $(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
                --source=$(abspath $(SRCDIR))                                   \
                --build=$(abspath $(BUILDDIR))                                  \
                $(if $(2),--ufo=$(abspath $(2)))                                \
-               $(if $(RELEASE_BUILD),--release)                                \
                --output=$(1)
 endef
 
@@ -128,14 +127,7 @@ $(PNG): $(OTF)
 	@convert $(SMP) -define png:exclude-chunks=date,time -gravity center -append $@
 	@rm -rf $(SMP)
 
-check-for-release:
-	@echo -n "    Checking for relese build: "
-	@$(if $(RELEASE_BUILD),echo "true",echo "build with RELEASE_BUILD=true" && exit 1)
-	@echo -n "    Checking for clean build: "
-	@test $(foreach file, $(OTF) $(TTF) $(VF),-f $(file) -o) -f dummy      \
-		&& echo "run make clean first" && exit 1 || echo "true"
-
-dist: check-for-release otf ttf vf doc
+dist: otf ttf vf doc
 	@echo "     DIST    $(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)

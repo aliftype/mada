@@ -23,18 +23,14 @@ def build(args):
 
     os.environ["SOURCE_DATE_EPOCH"] = epoch(args)
 
-    autohint = None
-    if args.release:
-        autohint = ""
-
     project = FontProject(verbose="WARNING")
     if args.ufo:
         project.run_from_ufos([args.ufo],
             output=args.output, remove_overlaps=False, reverse_direction=False,
-            subroutinize=args.release, autohint=autohint)
+            subroutinize=True, autohint="")
     else:
         project.run_from_designspace(designspace,
-            output=args.output, subroutinize=args.release, autohint=autohint)
+            output=args.output, subroutinize=True, autohint="")
 
 def main():
     parser = argparse.ArgumentParser(description="Build Mada fonts.")
