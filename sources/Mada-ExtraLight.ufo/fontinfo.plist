@@ -47,10 +47,6 @@
 	<string></string>
 	<key>openTypeNameManufacturerURL</key>
 	<string></string>
-	<key>openTypeNamePreferredFamilyName</key>
-	<string>Mada</string>
-	<key>openTypeNamePreferredSubfamilyName</key>
-	<string>ExtraLight</string>
 	<key>openTypeNameSampleText</key>
 	<string>صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار.</string>
 	<key>openTypeOS2FamilyClass</key>
@@ -86,10 +82,6 @@
 	<array/>
 	<key>postscriptFamilyOtherBlues</key>
 	<array/>
-	<key>postscriptFontName</key>
-	<string>Mada-ExtraLight</string>
-	<key>postscriptFullName</key>
-	<string>Mada ExtraLight</string>
 	<key>postscriptOtherBlues</key>
 	<array/>
 	<key>postscriptSlantAngle</key>
@@ -102,8 +94,6 @@
 	<integer>-200</integer>
 	<key>postscriptUnderlineThickness</key>
 	<real>50.0</real>
-	<key>postscriptWeightName</key>
-	<string>ExtraLight</string>
 	<key>styleName</key>
 	<string>ExtraLight</string>
 	<key>trademark</key>

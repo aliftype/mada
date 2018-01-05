@@ -23,9 +23,6 @@ def main():
     else:
         style = "Slanted"
     info.styleName += " " + style
-    info.openTypeNamePreferredSubfamilyName += " " + style
-    info.postscriptFullName += " " + style
-    info.postscriptFontName += style
     info.italicAngle = info.postscriptSlantAngle = args.angle
 
     for glyph in font:
