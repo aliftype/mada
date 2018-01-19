@@ -2,6 +2,12 @@
 <glyph name="arMeem.fina" format="2">
   <advance width="485.0"/>
   <outline>
+    <contour>
+      <point x="501" y="79" type="line"/>
+      <point x="501" y="0" type="line"/>
+      <point x="460" y="0" type="line"/>
+      <point x="460" y="79" type="line"/>
+    </contour>
     <component base="arMeem.isol"/>
   </outline>
   <lib>
