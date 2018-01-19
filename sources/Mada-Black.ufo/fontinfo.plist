@@ -16,6 +16,12 @@
 	<array>
 		<dict>
 			<key>name</key>
+			<string>Base stroke</string>
+			<key>y</key>
+			<real>172.0</real>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Cap</string>
 			<key>y</key>
 			<real>624.0</real>
