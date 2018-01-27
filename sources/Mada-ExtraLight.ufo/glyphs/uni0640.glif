@@ -11,10 +11,10 @@
   <anchor x="122.0" y="0" name="ringBelow"/>
   <outline>
     <contour>
-      <point x="245.0" y="0.0" type="line"/>
-      <point x="-5.0" y="0.0" type="line"/>
-      <point x="-5.0" y="32.0" type="line"/>
-      <point x="245.0" y="32.0" type="line"/>
+      <point x="250.0" y="0.0" type="line"/>
+      <point x="0.0" y="0.0" type="line"/>
+      <point x="0.0" y="32.0" type="line"/>
+      <point x="250.0" y="32.0" type="line"/>
     </contour>
   </outline>
 </glyph>
