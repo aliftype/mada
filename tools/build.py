@@ -5,23 +5,9 @@ import argparse
 import os
 
 from fontmake.font_project import FontProject
-from mutatorMath.ufo.document import DesignSpaceDocumentReader
-
-def epoch(args):
-    reader = DesignSpaceDocumentReader(args.designspace, ufoVersion=3)
-    paths = reader.getSourcePaths() + [args.designspace]
-    # We want to check the original masters in the source not build directory.
-    paths = [os.path.join(args.source, os.path.basename(p)) for p in paths]
-    # Not all masters exist in the source directory.
-    paths = [p for p in paths if os.path.exists(p)]
-    epoch = max([os.stat(p).st_mtime for p in paths])
-
-    return str(int(epoch))
 
 def build(args):
     designspace = os.path.join(args.build, args.designspace)
-
-    os.environ["SOURCE_DATE_EPOCH"] = epoch(args)
 
     project = FontProject(verbose="WARNING")
     if args.ufo:

@@ -50,10 +50,13 @@ $(PY) $(PREPARE) --version=$(VERSION)                                          \
                  $(1) $(2)
 endef
 
+SOURCE_DATE_EPOCH ?= 0
+
 define generate_fonts
 echo "     MAKE    $(if $(2),$(basename $(notdir $(2))).$(1),$(1))"
 mkdir -p $(BLDDIR)
 cd $(BLDDIR);                                                                  \
+export SOURCE_DATE_EPOCH=$(SOURCE_DATE_EPOCH);                                 \
 $(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
                --source=$(abspath $(SRCDIR))                                   \
                --build=$(abspath $(BUILDDIR))                                  \
