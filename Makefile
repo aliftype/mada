@@ -12,7 +12,6 @@ DIST=$(NAME)-$(VERSION)
 PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
 MKSLANT=$(TOOLDIR)/mkslant.py
-BUILD=$(TOOLDIR)/build.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
@@ -57,11 +56,9 @@ echo "     MAKE    $(if $(2),$(basename $(notdir $(2))).$(1),$(1))"
 mkdir -p $(BLDDIR)
 cd $(BLDDIR);                                                                  \
 export SOURCE_DATE_EPOCH=$(SOURCE_DATE_EPOCH);                                 \
-$(PY) $(abspath $(BUILD)) --designspace=$(NAME).designspace                    \
-               --source=$(abspath $(SRCDIR))                                   \
-               --build=$(abspath $(BUILDDIR))                                  \
-               $(if $(2),--ufo=$(abspath $(2)))                                \
-               --output=$(1)
+fontmake  --verbose=WARNING                                                    \
+          $(if $(2),-u $(abspath $(2)),-m $(NAME).designspace)                 \
+          --output=$(1)
 endef
 
 $(TFV): $(BLDDIR)/variable_ttf/$(TFV)
