@@ -18,6 +18,11 @@ intermediate weight on the fly.
 Building
 --------
 
+If you are building from cloned Git repository, you will need to update the git
+sub modules:
+
+    git submodule update --init
+
 You need GNU Make and a few Python packages. To install the Python
 requirements, run:
 
