@@ -152,7 +152,7 @@ def setInfo(info, version):
 
     info.versionMajor, info.versionMinor = map(int, version.split("."))
 
-    copyright = u'Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name "Source". Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.' % datetime.now().year
+    copyright = u"Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name “Source”." % datetime.now().year
 
     info.copyright = copyright
 
