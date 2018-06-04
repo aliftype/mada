@@ -27,6 +27,8 @@ PDF=$(DOCDIR)/FontTable.pdf
 PNG=$(DOCDIR)/FontSample.png
 SMP=$(FONTS:%=%.png)
 
+export SOURCE_DATE_EPOCH ?= 0
+
 all: otf vf doc
 
 otf: $(OTF)
@@ -49,13 +51,10 @@ $(PY) $(PREPARE) --version=$(VERSION)                                          \
                  $(1) $(2)
 endef
 
-SOURCE_DATE_EPOCH ?= 0
-
 define generate_fonts
 echo "     MAKE    $(if $(2),$(basename $(notdir $(2))).$(1),$(1))"
 mkdir -p $(BLDDIR)
 cd $(BLDDIR);                                                                  \
-export SOURCE_DATE_EPOCH=$(SOURCE_DATE_EPOCH);                                 \
 fontmake  --verbose=WARNING                                                    \
           $(if $(2),-u $(abspath $(2)),-m $(NAME).designspace)                 \
           --output=$(1)
