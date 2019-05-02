@@ -52,12 +52,18 @@ $(PY) $(PREPARE) --version=$(VERSION)                                          \
 endef
 
 define generate_fonts
-echo "     MAKE    $(if $(2),$(basename $(notdir $(2))).$(1),$(1))"
+echo "     MAKE    $(1)"
 mkdir -p $(BLDDIR)
-cd $(BLDDIR);                                                                  \
-fontmake  --verbose=WARNING                                                    \
-          $(if $(2),-u $(abspath $(2)),-m $(NAME).designspace)                 \
-          --output=$(1)
+pushd $(BLDDIR) 1>/dev/null;                                                   \
+PYTHONPATH=$(3):${PYTHONMATH}                                                  \
+fontmake $(2)                                                                  \
+         --output=$(1)                                                         \
+         --verbose=WARNING                                                     \
+         --feature-writer KernFeatureWriter                                    \
+         --feature-writer markFeatureWriter::MarkFeatureWriter                 \
+         --production-names                                                    \
+         ;                                                                     \
+popd 1>/dev/null
 endef
 
 $(TFV): $(BLDDIR)/variable_ttf/$(TFV)
@@ -77,13 +83,13 @@ $(BLDDIR)/instance_ufo/$(NAME)-%.ufo: $(UFO) $(BLDDIR)/$(NAME).designspace
 	   r.readInstance(('postscriptfontname', '$(basename $(@F))'))"
 
 $(BLDDIR)/master_otf/$(NAME)-%.otf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
-	@$(call generate_fonts,otf,$<)
+	@$(call generate_fonts,otf,-u $(abspath $<),$(abspath $(TOOLDIR)))
 
 $(BLDDIR)/master_ttf/$(NAME)-%.ttf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
-	@$(call generate_fonts,ttf,$<)
+	@$(call generate_fonts,ttf,-u $(abspath $<),$(abspath $(TOOLDIR)))
 
 $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
-	@$(call generate_fonts,variable)
+	@$(call generate_fonts,variable,-m $(NAME).designspace,$(abspath $(TOOLDIR)))
 
 $(BLDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BLDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"

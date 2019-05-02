@@ -679,8 +679,7 @@ feature ss02 {
   @Alef.short = [arAlef.isol.short arAlef.fina.short arAlef.fina.1.short];
   @Hamza.above = [uni0654 ]; #uni0653 arSad.above arWavyHamza.above arHighHamza.above;
 
-  lookupflag 0;
-    sub @Alef' @Hamza.above by @Alef.short;
+  sub @Alef' @Hamza.above by @Alef.short;
 } ss02;
 
 feature ss03 {
@@ -693,6 +692,5 @@ feature ss03 {
     sub uni0651 by uni0651.alt;
   } ss03_l;
 
-  lookupflag 0;
-    sub uni0651' @Kasra' lookup ss03_l;
+  sub uni0651' @Kasra' lookup ss03_l;
 } ss03;
