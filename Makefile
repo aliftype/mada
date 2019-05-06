@@ -77,6 +77,7 @@ $(NAME)-%.ttf: $(BLDDIR)/master_ttf/$(NAME)-%.ttf
 
 $(BLDDIR)/instance_ufo/$(NAME)-%.ufo: $(UFO) $(BLDDIR)/$(NAME).designspace
 	@echo "     INST    $(@F)"
+	@mkdir -p $(BLDDIR)
 	@$(PY) -c                                                              \
 	  "from mutatorMath.ufo.document import DesignSpaceDocumentReader as R;\
 	   r = R('$(BLDDIR)/$(NAME).designspace', ufoVersion=3);               \
@@ -93,23 +94,28 @@ $(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
 
 $(BLDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BLDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
+	@mkdir -p $(BLDDIR)
 	@$(PY) $(MKSLANT) $< $@ -15
 
 $(BLDDIR)/$(NAME)-BlackItalic.ufo: $(BLDDIR)/$(NAME)-Black.ufo
 	@echo "    SLANT    $(@F)"
+	@mkdir -p $(BLDDIR)
 	@$(PY) $(MKSLANT) $< $@ -15
 
 $(BLDDIR)/$(NAME)-ExtraLightSlanted.ufo: $(BLDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
+	@mkdir -p $(BLDDIR)
 	@$(PY) $(MKSLANT) $< $@ 15
 
 $(BLDDIR)/$(NAME)-BlackSlanted.ufo: $(BLDDIR)/$(NAME)-Black.ufo
 	@echo "    SLANT    $(@F)"
+	@mkdir -p $(BLDDIR)
 	@$(PY) $(MKSLANT) $< $@ 15
 
 $(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
 	@echo "     PREP    $(@F)"
 	@rm -rf $@
+	@mkdir -p $(BLDDIR)
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
 $(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
