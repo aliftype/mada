@@ -4,7 +4,7 @@ LATIN=SourceSansPro
 
 SRCDIR=sources
 DOCDIR=documentation
-BLDDIR=build
+BUILDDIR=build
 TOOLDIR=tools
 TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
@@ -19,7 +19,7 @@ MASTERS=ExtraLight Regular Black ExtraLightItalic BlackItalic ExtraLightSlanted 
 FONTS=ExtraLight Light Regular Medium SemiBold Bold Black \
       ExtraLightItalic LightItalic Italic MediumItalic SemiBoldItalic BoldItalic BlackItalic
 
-UFO=$(MASTERS:%=$(BLDDIR)/$(NAME)-%.ufo)
+UFO=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 TFV=$(NAME)-VF.ttf
@@ -38,13 +38,13 @@ doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
 
-.PRECIOUS: $(BLDDIR)/master_otf/$(NAME)-%.otf                                  \
-	$(BLDDIR)/master_ttf/$(NAME)-%.ttf                                     \
-	$(BLDDIR)/instance_ufo/$(NAME)-%.ufo
+.PRECIOUS: $(BUILDDIR)/master_otf/$(NAME)-%.otf                                \
+           $(BUILDDIR)/master_ttf/$(NAME)-%.ttf                                \
+           $(BUILDDIR)/instance_ufo/$(NAME)-%.ufo
 
 define prepare_masters
 echo "   MASTER    $(notdir $(4))"
-mkdir -p $(BLDDIR)
+mkdir -p $(BUILDDIR)
 $(PY) $(PREPARE) --version=$(VERSION)                                          \
                  --feature-file=$(3)                                           \
                  --out-file=$(4)                                               \
@@ -53,8 +53,8 @@ endef
 
 define generate_fonts
 echo "     MAKE    $(1)"
-mkdir -p $(BLDDIR)
-pushd $(BLDDIR) 1>/dev/null;                                                   \
+mkdir -p $(BUILDDIR)
+pushd $(BUILDDIR) 1>/dev/null;                                                 \
 PYTHONPATH=$(3):${PYTHONMATH}                                                  \
 fontmake $(2)                                                                  \
          --output=$(1)                                                         \
@@ -66,61 +66,61 @@ fontmake $(2)                                                                  \
 popd 1>/dev/null
 endef
 
-$(TFV): $(BLDDIR)/variable_ttf/$(TFV)
+$(TFV): $(BUILDDIR)/variable_ttf/$(TFV)
 	@cp $< $@
 
-$(NAME)-%.otf: $(BLDDIR)/master_otf/$(NAME)-%.otf
+$(NAME)-%.otf: $(BUILDDIR)/master_otf/$(NAME)-%.otf
 	@cp $< $@
 
-$(NAME)-%.ttf: $(BLDDIR)/master_ttf/$(NAME)-%.ttf
+$(NAME)-%.ttf: $(BUILDDIR)/master_ttf/$(NAME)-%.ttf
 	@cp $< $@
 
-$(BLDDIR)/instance_ufo/$(NAME)-%.ufo: $(UFO) $(BLDDIR)/$(NAME).designspace
+$(BUILDDIR)/instance_ufo/$(NAME)-%.ufo: $(UFO) $(BUILDDIR)/$(NAME).designspace
 	@echo "     INST    $(@F)"
-	@mkdir -p $(BLDDIR)
+	@mkdir -p $(BUILDDIR)
 	@$(PY) -c                                                              \
 	  "from mutatorMath.ufo.document import DesignSpaceDocumentReader as R;\
-	   r = R('$(BLDDIR)/$(NAME).designspace', ufoVersion=3);               \
+	   r = R('$(BUILDDIR)/$(NAME).designspace', ufoVersion=3);             \
 	   r.readInstance(('postscriptfontname', '$(basename $(@F))'))"
 
-$(BLDDIR)/master_otf/$(NAME)-%.otf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
+$(BUILDDIR)/master_otf/$(NAME)-%.otf: $(BUILDDIR)/instance_ufo/$(NAME)-%.ufo
 	@$(call generate_fonts,otf,-u $(abspath $<),$(abspath $(TOOLDIR)))
 
-$(BLDDIR)/master_ttf/$(NAME)-%.ttf: $(BLDDIR)/instance_ufo/$(NAME)-%.ufo
+$(BUILDDIR)/master_ttf/$(NAME)-%.ttf: $(BUILDDIR)/instance_ufo/$(NAME)-%.ufo
 	@$(call generate_fonts,ttf,-u $(abspath $<),$(abspath $(TOOLDIR)))
 
-$(BLDDIR)/variable_ttf/$(TFV): $(UFO) $(BLDDIR)/$(NAME).designspace
+$(BUILDDIR)/variable_ttf/$(TFV): $(UFO) $(BUILDDIR)/$(NAME).designspace
 	@$(call generate_fonts,variable,-m $(NAME).designspace,$(abspath $(TOOLDIR)))
 
-$(BLDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BLDDIR)/$(NAME)-ExtraLight.ufo
+$(BUILDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BLDDIR)
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ -15
 
-$(BLDDIR)/$(NAME)-BlackItalic.ufo: $(BLDDIR)/$(NAME)-Black.ufo
+$(BUILDDIR)/$(NAME)-BlackItalic.ufo: $(BUILDDIR)/$(NAME)-Black.ufo
 	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BLDDIR)
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ -15
 
-$(BLDDIR)/$(NAME)-ExtraLightSlanted.ufo: $(BLDDIR)/$(NAME)-ExtraLight.ufo
+$(BUILDDIR)/$(NAME)-ExtraLightSlanted.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BLDDIR)
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ 15
 
-$(BLDDIR)/$(NAME)-BlackSlanted.ufo: $(BLDDIR)/$(NAME)-Black.ufo
+$(BUILDDIR)/$(NAME)-BlackSlanted.ufo: $(BUILDDIR)/$(NAME)-Black.ufo
 	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BLDDIR)
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ 15
 
-$(BLDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
+$(BUILDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(SRCDIR)/$(NAME).fea $(PREPARE)
 	@echo "     PREP    $(@F)"
 	@rm -rf $@
-	@mkdir -p $(BLDDIR)
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
-$(BLDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
+$(BUILDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
 	@echo "      GEN    $(@F)"
-	@mkdir -p $(BLDDIR)
+	@mkdir -p $(BUILDDIR)
 	@cp $< $@
 
 $(PDF): $(NAME)-Regular.otf
@@ -155,4 +155,4 @@ dist: otf ttf vf doc
 	@zip -rq $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
-	@rm -rf $(BLDDIR) $(OTF) $(TTF) $(TFV) $(PDF) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
+	@rm -rf $(BUILDDIR) $(OTF) $(TTF) $(TFV) $(PDF) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
