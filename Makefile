@@ -38,9 +38,7 @@ doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
 
-.PRECIOUS: $(BUILDDIR)/master_otf/$(NAME)-%.otf                                \
-           $(BUILDDIR)/master_ttf/$(NAME)-%.ttf                                \
-           $(BUILDDIR)/instance_ufo/$(NAME)-%.ufo
+.SECONDARY:
 
 define prepare_masters
 echo "   MASTER    $(notdir $(4))"
