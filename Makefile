@@ -62,6 +62,8 @@ fontmake $(2)                                                                  \
          --feature-writer KernFeatureWriter                                    \
          --feature-writer markFeatureWriter::MarkFeatureWriter                 \
          --production-names                                                    \
+         --optimize-cff=0                                                      \
+         --keep-overlaps                                                       \
          ;                                                                     \
 popd 1>/dev/null
 endef
