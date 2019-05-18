@@ -16,7 +16,7 @@ MKINST=$(TOOLDIR)/mkinstance.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
-MASTERS=ExtraLight Regular Black ExtraLightItalic BlackItalic ExtraLightSlanted BlackSlanted
+MASTERS=ExtraLight Regular Black ExtraLightItalic Italic BlackItalic ExtraLightSlanted Slanted BlackSlanted
 FONTS=ExtraLight Light Regular Medium SemiBold Bold Black \
       ExtraLightItalic LightItalic Italic MediumItalic SemiBoldItalic BoldItalic BlackItalic
 
@@ -124,12 +124,22 @@ $(BUILDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ -15
 
+$(BUILDDIR)/$(NAME)-Italic.ufo: $(BUILDDIR)/$(NAME)-Regular.ufo
+	@echo "    SLANT    $(@F)"
+	@mkdir -p $(BUILDDIR)
+	@$(PY) $(MKSLANT) $< $@ -15
+
 $(BUILDDIR)/$(NAME)-BlackItalic.ufo: $(BUILDDIR)/$(NAME)-Black.ufo
 	@echo "    SLANT    $(@F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ -15
 
 $(BUILDDIR)/$(NAME)-ExtraLightSlanted.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
+	@echo "    SLANT    $(@F)"
+	@mkdir -p $(BUILDDIR)
+	@$(PY) $(MKSLANT) $< $@ 15
+
+$(BUILDDIR)/$(NAME)-Slanted.ufo: $(BUILDDIR)/$(NAME)-Regular.ufo
 	@echo "    SLANT    $(@F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ 15
