@@ -53,19 +53,6 @@
   </sources>
   <instances>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-ExtraLight.ufo"
-              postscriptfontname="Mada-ExtraLight"
-              stylename="ExtraLight"
-              >
-      <location>
-        <dimension name="weight" xvalue="200"/>
-        <dimension name="slant"  xvalue="0"/>
-      </location>
-      <kerning/>
-      <info/>
-    </instance>
-    <instance familyname="Mada"
-              filename="instance_ufo/Mada-Light.ufo"
               postscriptfontname="Mada-Light"
               stylename="Light"
               >
@@ -77,21 +64,6 @@
       <info/>
     </instance>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-Regular.ufo"
-              postscriptfontname="Mada-Regular"
-              stylename="Regular"
-              stylemapfamilyname="Mada"
-              stylemapstylename="regular"
-              >
-      <location>
-        <dimension name="weight" xvalue="400"/>
-        <dimension name="slant"  xvalue="0"/>
-      </location>
-      <kerning/>
-      <info/>
-    </instance>
-    <instance familyname="Mada"
-              filename="instance_ufo/Mada-Medium.ufo"
               postscriptfontname="Mada-Medium"
               stylename="Medium"
               >
@@ -103,7 +75,6 @@
       <info/>
     </instance>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-SemiBold.ufo"
               postscriptfontname="Mada-SemiBold" 
               stylename="SemiBold"
               >
@@ -115,7 +86,6 @@
       <info/>
     </instance>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-Bold.ufo"
               postscriptfontname="Mada-Bold"
               stylename="Bold"
               stylemapfamilyname="Mada"
@@ -128,32 +98,8 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Mada"
-              filename="instance_ufo/Mada-Black.ufo"
-              postscriptfontname="Mada-Black"
-              stylename="Black"
-              >
-      <location>
-        <dimension name="weight" xvalue="900"/>
-        <dimension name="slant"  xvalue="0"/>
-      </location>
-      <kerning/>
-      <info/>
-    </instance>
 
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-ExtraLightItalic.ufo"
-              postscriptfontname="Mada-ExtraLightItalic"
-              stylename="ExtraLight Italic">
-      <location>
-        <dimension name="weight" xvalue="200"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-      <kerning/>
-      <info/>
-    </instance>
-    <instance familyname="Mada"
-              filename="instance_ufo/Mada-LightItalic.ufo"
               postscriptfontname="Mada-LightItalic"
               stylename="Light Italic"
               >
@@ -165,7 +111,6 @@
       <info/>
     </instance>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-Italic.ufo"
               postscriptfontname="Mada-Italic"
               stylename="Italic"
               stylemapfamilyname="Mada"
@@ -179,7 +124,6 @@
       <info/>
     </instance>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-MediumItalic.ufo"
               postscriptfontname="Mada-MediumItalic"
               stylename="Medium Italic"
               >
@@ -191,7 +135,6 @@
       <info/>
     </instance>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-SemiBoldItalic.ufo"
               postscriptfontname="Mada-SemiBoldItalic"
               stylename="SemiBold Italic"
               >
@@ -203,7 +146,6 @@
       <info/>
     </instance>
     <instance familyname="Mada"
-              filename="instance_ufo/Mada-BoldItalic.ufo"
               postscriptfontname="Mada-BoldItalic"
               stylename="Bold Italic"
               stylemapfamilyname="Mada"
@@ -211,18 +153,6 @@
               >
       <location>
         <dimension name="weight" xvalue="700"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-      <kerning/>
-      <info/>
-    </instance>
-    <instance familyname="Mada"
-              filename="instance_ufo/Mada-BlackItalic.ufo"
-              postscriptfontname="Mada-BlackItalic"
-              stylename="Black Italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="900"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
       <kerning/>

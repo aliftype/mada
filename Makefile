@@ -12,6 +12,7 @@ DIST=$(NAME)-$(VERSION)
 PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
 MKSLANT=$(TOOLDIR)/mkslant.py
+MKINST=$(TOOLDIR)/mkinstance.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
@@ -22,18 +23,22 @@ FONTS=ExtraLight Light Regular Medium SemiBold Bold Black \
 UFO=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
-TFV=$(NAME)-VF.ttf
+OTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.otf)
+TTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.ttf)
+OTV=$(NAME)-VF.otf
+TTV=$(NAME)-VF.ttf
 PDF=$(DOCDIR)/FontTable.pdf
 PNG=$(DOCDIR)/FontSample.png
 SMP=$(FONTS:%=%.png)
 
 export SOURCE_DATE_EPOCH ?= 0
 
-all: otf vf doc
+all: otf doc
 
 otf: $(OTF)
 ttf: $(TTF)
-vf:  $(TFV)
+otv: $(OTV)
+ttv: $(TTV)
 doc: $(PDF) $(PNG)
 
 SHELL=/usr/bin/env bash
@@ -49,12 +54,11 @@ $(PY) $(PREPARE) --version=$(VERSION)                                          \
                  $(1) $(2)
 endef
 
-define generate_fonts
-echo "     MAKE    $(1)"
-mkdir -p $(BUILDDIR)
-pushd $(BUILDDIR) 1>/dev/null;                                                 \
-PYTHONPATH=$(3):${PYTHONMATH}                                                  \
-fontmake $(2)                                                                  \
+define generate_master
+@echo "   MASTER    $(notdir $(3))"
+mkdir -p $(BUILDDIR)/masters
+PYTHONPATH=$(abspath $(TOOLDIR)):${PYTHONMATH}                                 \
+fontmake -u $(abspath $(2))                                                    \
          --output=$(1)                                                         \
          --verbose=WARNING                                                     \
          --feature-writer KernFeatureWriter                                    \
@@ -62,35 +66,58 @@ fontmake $(2)                                                                  \
          --production-names                                                    \
          --optimize-cff=0                                                      \
          --keep-overlaps                                                       \
-         ;                                                                     \
-popd 1>/dev/null
+	 --output-path=$(3)                                                    \
+         ;
 endef
 
-$(TFV): $(BUILDDIR)/variable_ttf/$(TFV)
+define generate_variable
+@echo " VARIABLE    $(notdir $(2))"
+fonttools varLib                                                               \
+        -q                                                                     \
+        -o $(2)                                                                \
+        --master-finder="$(BUILDDIR)/masters/{stem}.$(1)"                      \
+        $(BUILDDIR)/$(NAME).designspace                                        \
+        ;
+endef
+
+define generate_instance
+@echo " INSTANCE    $(notdir $(3))"
+@mkdir -p $(BUILDDIR)/instances
+if [ -f $(BUILDDIR)/masters/$(notdir $(3)) ]; then                             \
+       cp $(BUILDDIR)/masters/$(notdir $(3)) $(3);                             \
+else                                                                           \
+       $(PY) $(MKINST)                                                         \
+             $(BUILDDIR)/$(NAME).designspace                                   \
+             $(1)                                                              \
+             $(NAME)-$(2)                                                      \
+             $(3)                                                              \
+             ;                                                                 \
+fi
+endef
+
+$(NAME)-%.otf: $(BUILDDIR)/instances/$(NAME)-%.otf
 	@cp $< $@
 
-$(NAME)-%.otf: $(BUILDDIR)/master_otf/$(NAME)-%.otf
+$(NAME)-%.ttf: $(BUILDDIR)/instances/$(NAME)-%.ttf
 	@cp $< $@
 
-$(NAME)-%.ttf: $(BUILDDIR)/master_ttf/$(NAME)-%.ttf
-	@cp $< $@
+$(BUILDDIR)/instances/$(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
+	@$(call generate_instance,$<,$(*F),$@)
 
-$(BUILDDIR)/instance_ufo/$(NAME)-%.ufo: $(UFO) $(BUILDDIR)/$(NAME).designspace
-	@echo "     INST    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) -c                                                              \
-	  "from mutatorMath.ufo.document import DesignSpaceDocumentReader as R;\
-	   r = R('$(BUILDDIR)/$(NAME).designspace', ufoVersion=3);             \
-	   r.readInstance(('postscriptfontname', '$(basename $(@F))'))"
+$(BUILDDIR)/instances/$(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
+	@$(call generate_instance,$<,$(*F),$@)
 
-$(BUILDDIR)/master_otf/$(NAME)-%.otf: $(BUILDDIR)/instance_ufo/$(NAME)-%.ufo
-	@$(call generate_fonts,otf,-u $(abspath $<),$(abspath $(TOOLDIR)))
+$(BUILDDIR)/masters/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
+	@$(call generate_master,otf,$<,$@)
 
-$(BUILDDIR)/master_ttf/$(NAME)-%.ttf: $(BUILDDIR)/instance_ufo/$(NAME)-%.ufo
-	@$(call generate_fonts,ttf,-u $(abspath $<),$(abspath $(TOOLDIR)))
+$(BUILDDIR)/masters/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
+	@$(call generate_master,ttf,$<,$@)
 
-$(BUILDDIR)/variable_ttf/$(TFV): $(UFO) $(BUILDDIR)/$(NAME).designspace
-	@$(call generate_fonts,variable,-m $(NAME).designspace,$(abspath $(TOOLDIR)))
+$(OTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
+	@$(call generate_variable,otf,$@)
+
+$(TTV): $(TTM) $(BUILDDIR)/$(NAME).designspace
+	@$(call generate_variable,ttf,$@)
 
 $(BUILDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
@@ -143,16 +170,17 @@ $(PNG): $(OTF)
 	@convert $(SMP) -define png:exclude-chunks=date,time -gravity center -append $@
 	@rm -rf $(SMP)
 
-dist: otf ttf vf doc
+dist: otf ttf otv ttv doc
 	@echo "     DIST    $(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
-	@cp $(TFV)  $(NAME)-$(VERSION)/vf
+	@cp $(OTV)  $(NAME)-$(VERSION)/vf
+	@cp $(TTV)  $(NAME)-$(VERSION)/vf
 	@cp OFL.txt $(NAME)-$(VERSION)
 	@sed -e "/^!\[Sample\].*./d" README.md > $(NAME)-$(VERSION)/README.txt
 	@@echo "     ZIP    $(NAME)-$(VERSION)"
 	@zip -rq $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
-	@rm -rf $(BUILDDIR) $(OTF) $(TTF) $(TFV) $(PDF) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
+	@rm -rf $(BUILDDIR) $(OTF) $(TTF) $(OTV) $(TTV) $(PDF) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
