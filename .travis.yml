@@ -6,4 +6,5 @@ install:
 script:
   - make otf
   - make ttf
-  - make vf
+  - make otv
+  - make ttv
