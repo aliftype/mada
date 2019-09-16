@@ -27,7 +27,6 @@ OTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.otf)
 TTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.ttf)
 OTV=$(NAME)-VF.otf
 TTV=$(NAME)-VF.ttf
-PDF=$(DOCDIR)/FontTable.pdf
 PNG=$(DOCDIR)/FontSample.png
 SMP=$(FONTS:%=%.png)
 
@@ -39,7 +38,7 @@ otf: $(OTF)
 ttf: $(TTF)
 otv: $(OTV)
 ttv: $(TTV)
-doc: $(PDF) $(PNG)
+doc: $(PNG)
 
 SHELL=/usr/bin/env bash
 
@@ -160,18 +159,6 @@ $(BUILDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
 	@mkdir -p $(BUILDDIR)
 	@cp $< $@
 
-$(PDF): $(NAME)-Regular.otf
-	@echo "   SAMPLE    $(@F)"
-	@mkdir -p $(DOCDIR)
-	@fntsample --font-file $< --output-file $@.tmp                         \
-		   --write-outline --use-pango                                 \
-		   --style="header-font: Noto Sans Bold 12"                    \
-		   --style="font-name-font: Noto Serif Bold 12"                \
-		   --style="table-numbers-font: Noto Sans 10"                  \
-		   --style="cell-numbers-font:Noto Sans Mono 8"
-	@mutool clean -d -i -f -a $@.tmp $@
-	@rm -f $@.tmp
-
 $(PNG): $(OTF)
 	@echo "   SAMPLE    $(@F)"
 	@for f in $(FONTS); do \
@@ -183,7 +170,7 @@ $(PNG): $(OTF)
 dist: otf ttf otv ttv doc
 	@echo "     DIST    $(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
-	@cp $(OTF) $(PDF) $(NAME)-$(VERSION)
+	@cp $(OTF) $(NAME)-$(VERSION)
 	@cp $(TTF) $(NAME)-$(VERSION)/ttf
 	@cp $(OTV)  $(NAME)-$(VERSION)/vf
 	@cp $(TTV)  $(NAME)-$(VERSION)/vf
@@ -193,4 +180,4 @@ dist: otf ttf otv ttv doc
 	@zip -rq $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
-	@rm -rf $(BUILDDIR) $(OTF) $(TTF) $(OTV) $(TTV) $(PDF) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
+	@rm -rf $(BUILDDIR) $(OTF) $(TTF) $(OTV) $(TTV) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
