@@ -27,7 +27,7 @@ OTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.otf)
 TTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.ttf)
 OTV=$(NAME)-VF.otf
 TTV=$(NAME)-VF.ttf
-PNG=$(DOCDIR)/FontSample.png
+PNG=FontSample.png
 SMP=$(FONTS:%=%.png)
 
 export SOURCE_DATE_EPOCH ?= 0
