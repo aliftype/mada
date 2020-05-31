@@ -1,5 +1,5 @@
-cu2qu==1.6.6
-defcon==0.6.0
-fontmake==2.0.3
-fonttools[ufo,lxml]==4.0.1
-ufo2ft==2.9.1
+cu2qu==1.6.7
+defcon==0.7.2
+fontmake==2.1.4
+fonttools[ufo,lxml]==4.11.0
+ufo2ft==2.14.1
