@@ -18,8 +18,8 @@ MKVF=$(TOOLDIR)/mkvf.py
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
 MASTERS=ExtraLight Regular Black ExtraLightItalic Italic BlackItalic ExtraLightSlanted Slanted BlackSlanted
-FONTS=ExtraLight Light Regular Medium SemiBold Bold Black \
-      ExtraLightItalic LightItalic Italic MediumItalic SemiBoldItalic BoldItalic BlackItalic
+FONTS=ExtraLight Light Regular Medium SemiBold Bold ExtraBold Black \
+      ExtraLightItalic LightItalic Italic MediumItalic SemiBoldItalic BoldItalic ExtraBoldItalic BlackItalic
 
 UFO=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
