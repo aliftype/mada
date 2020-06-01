@@ -24,8 +24,8 @@ FONTS=ExtraLight Light Regular Medium SemiBold Bold Black \
 UFO=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
-OTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.otf)
-TTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.ttf)
+OTM=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.otf)
+TTM=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.ttf)
 OTV=$(NAME).otf
 TTV=$(NAME).ttf
 PNG=FontSample.png
@@ -56,7 +56,6 @@ endef
 
 define generate_master
 @echo "   MASTER    $(notdir $(3))"
-mkdir -p $(BUILDDIR)/masters
 PYTHONPATH=$(abspath $(TOOLDIR)):${PYTHONMATH}                                 \
 fontmake -u $(abspath $(2))                                                    \
          --output=$(1)                                                         \
@@ -74,7 +73,7 @@ define generate_variable
 @echo " VARIABLE    $(notdir $(2))"
 $(PY) $(MKVF)                                                                  \
         --output=$(2)                                                          \
-        --master-finder="$(BUILDDIR)/masters/{stem}.$(1)"                      \
+        --master-finder="$(BUILDDIR)/{stem}.$(1)"                              \
         $(BUILDDIR)/$(NAME).designspace                                        \
         ;
 endef
@@ -95,10 +94,10 @@ $(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
 $(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
 	@$(call generate_instance,$<,$(*F),$@)
 
-$(BUILDDIR)/masters/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
+$(BUILDDIR)/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
 	@$(call generate_master,otf,$<,$@)
 
-$(BUILDDIR)/masters/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
+$(BUILDDIR)/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
 	@$(call generate_master,ttf,$<,$@)
 
 $(OTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
