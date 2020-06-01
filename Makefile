@@ -69,15 +69,6 @@ fontmake -u $(abspath $(2))                                                    \
          ;
 endef
 
-define generate_variable
-@echo " VARIABLE    $(notdir $(2))"
-$(PY) $(MKVF)                                                                  \
-        --output=$(2)                                                          \
-        --master-finder="$(BUILDDIR)/{stem}.$(1)"                              \
-        $(BUILDDIR)/$(NAME).designspace                                        \
-        ;
-endef
-
 define generate_instance
 @echo " INSTANCE    $(notdir $(3))"
 $(PY) $(MKINST)                                                                \
@@ -100,11 +91,9 @@ $(BUILDDIR)/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
 $(BUILDDIR)/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
 	@$(call generate_master,ttf,$<,$@)
 
-$(OTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
-	@$(call generate_variable,otf,$@)
-
-$(TTV): $(TTM) $(BUILDDIR)/$(NAME).designspace
-	@$(call generate_variable,ttf,$@)
+$(OTV) $(TTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
+	@echo " VARIABLE    $(@F)"
+	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
 
 $(BUILDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
 	@echo "    SLANT    $(@F)"
