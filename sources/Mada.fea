@@ -299,6 +299,7 @@ feature init {
     sub uni06B8 by arLam.init ar3IDot.below;
     sub uni06B9 by arBeh.init ar1Dot.above ar1Dot.below;
     sub uni06BA by arBeh.init;
+    sub uni06BB by arBeh.init arTah.above;
     sub uni06BC by arBeh.init ar1Dot.above arRing.below;
     sub uni06BD by arBeh.init ar3IDot.below;
     sub uni06BE by arHeh.init;
@@ -421,6 +422,7 @@ feature medi {
     sub uni06B8 by arLam.medi ar3IDot.below;
     sub uni06B9 by arBeh.medi ar1Dot.above ar1Dot.below;
     sub uni06BA by arBeh.medi;
+    sub uni06BB by arBeh.medi arTah.above;
     sub uni06BC by arBeh.medi ar1Dot.above arRing.below;
     sub uni06BD by arBeh.medi ar3IDot.below;
     sub uni06BE by arHeh.medi;
