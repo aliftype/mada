@@ -88,7 +88,6 @@ def removeOverlap(font):
     if charStrings is not None:
         from cffsubr import subroutinize
         subroutinize(font, cff_version=1)
-        font["post"].formatType = 3.0
 
 
 def main(args=None):
