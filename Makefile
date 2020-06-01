@@ -26,8 +26,8 @@ OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
 OTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.otf)
 TTM=$(MASTERS:%=$(BUILDDIR)/masters/$(NAME)-%.ttf)
-OTV=$(NAME)-VF.otf
-TTV=$(NAME)-VF.ttf
+OTV=$(NAME).otf
+TTV=$(NAME).ttf
 PNG=FontSample.png
 SMP=$(FONTS:%=%.png)
 
