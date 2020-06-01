@@ -64,9 +64,18 @@
     </source>
   </sources>
   <instances>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="ExtraLight"
+              postscriptfontname="Mada-ExtraLight"
+              stylemapfamilyname="Mada ExtraLight"
+              stylemapstylename="regular"
+              >
+      <location>
+        <dimension name="weight" xvalue="200"/>
+        <dimension name="slant"  xvalue="0"/>
+      </location>
+    </instance>
+    <instance familyname="Mada" stylename="Light"
               postscriptfontname="Mada-Light"
-              stylename="Light"
               stylemapfamilyname="Mada Light"
               stylemapstylename="regular"
               >
@@ -74,12 +83,19 @@
         <dimension name="weight" xvalue="300"/>
         <dimension name="slant"  xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="Regular"
+              postscriptfontname="Mada-Regular"
+              stylemapfamilyname="Mada"
+              stylemapstylename="regular"
+              >
+      <location>
+        <dimension name="weight" xvalue="400"/>
+        <dimension name="slant"  xvalue="0"/>
+      </location>
+    </instance>
+    <instance familyname="Mada" stylename="Medium"
               postscriptfontname="Mada-Medium"
-              stylename="Medium"
               stylemapfamilyname="Mada Medium"
               stylemapstylename="regular"
               >
@@ -87,12 +103,9 @@
         <dimension name="weight" xvalue="500"/>
         <dimension name="slant"  xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="SemiBold"
               postscriptfontname="Mada-SemiBold" 
-              stylename="SemiBold"
               stylemapfamilyname="Mada SemiBold"
               stylemapstylename="regular"
               >
@@ -100,12 +113,9 @@
         <dimension name="weight" xvalue="600"/>
         <dimension name="slant"  xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="Bold"
               postscriptfontname="Mada-Bold"
-              stylename="Bold"
               stylemapfamilyname="Mada"
               stylemapstylename="bold"
               >
@@ -113,13 +123,30 @@
         <dimension name="weight" xvalue="700"/>
         <dimension name="slant"  xvalue="0"/>
       </location>
-      <kerning/>
-      <info/>
+    </instance>
+    <instance familyname="Mada" stylename="Black"
+              postscriptfontname="Mada-Black"
+              stylemapfamilyname="Mada Black"
+              stylemapstylename="regular"
+              >
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="slant"  xvalue="0"/>
+      </location>
     </instance>
 
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="ExtraLight Italic"
+              postscriptfontname="Mada-ExtraLightItalic"
+              stylemapfamilyname="Mada ExtraLight"
+              stylemapstylename="italic"
+              >
+      <location>
+        <dimension name="weight" xvalue="200"/>
+        <dimension name="slant"  xvalue="15"/>
+      </location>
+    </instance>
+    <instance familyname="Mada" stylename="Light Italic"
               postscriptfontname="Mada-LightItalic"
-              stylename="Light Italic"
               stylemapfamilyname="Mada Light"
               stylemapstylename="italic"
               >
@@ -127,12 +154,9 @@
         <dimension name="weight" xvalue="300"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="Italic"
               postscriptfontname="Mada-Italic"
-              stylename="Italic"
               stylemapfamilyname="Mada"
               stylemapstylename="italic"
               >
@@ -140,12 +164,9 @@
         <dimension name="weight" xvalue="400"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="Medium Italic"
               postscriptfontname="Mada-MediumItalic"
-              stylename="Medium Italic"
               stylemapfamilyname="Mada Medium"
               stylemapstylename="italic"
               >
@@ -153,12 +174,9 @@
         <dimension name="weight" xvalue="500"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="SemiBold Italic"
               postscriptfontname="Mada-SemiBoldItalic"
-              stylename="SemiBold Italic"
               stylemapfamilyname="Mada SemiBold"
               stylemapstylename="italic"
               >
@@ -166,12 +184,9 @@
         <dimension name="weight" xvalue="600"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
-      <kerning/>
-      <info/>
     </instance>
-    <instance familyname="Mada"
+    <instance familyname="Mada" stylename="Bold Italic"
               postscriptfontname="Mada-BoldItalic"
-              stylename="Bold Italic"
               stylemapfamilyname="Mada"
               stylemapstylename="bold italic"
               >
@@ -179,8 +194,16 @@
         <dimension name="weight" xvalue="700"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
-      <kerning/>
-      <info/>
+    </instance>
+    <instance familyname="Mada" stylename="Black Italic"
+              postscriptfontname="Mada-BlackItalic"
+              stylemapfamilyname="Mada Black"
+              stylemapstylename="italic"
+              >
+      <location>
+        <dimension name="weight" xvalue="900"/>
+        <dimension name="slant"  xvalue="15"/>
+      </location>
     </instance>
   </instances>
 </designspace>

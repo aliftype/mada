@@ -13,7 +13,6 @@ PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
 MKSLANT=$(TOOLDIR)/mkslant.py
 MKINST=$(TOOLDIR)/mkinstance.py
-RMOVER=$(TOOLDIR)/rmoverlap.py
 MKVF=$(TOOLDIR)/mkvf.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
@@ -82,30 +81,18 @@ endef
 
 define generate_instance
 @echo " INSTANCE    $(notdir $(3))"
-@mkdir -p $(BUILDDIR)/instances
-if [ -f $(BUILDDIR)/masters/$(notdir $(3)) ]; then                             \
-       $(PY) $(RMOVER) $(BUILDDIR)/masters/$(notdir $(3)) $(3);                \
-else                                                                           \
-       $(PY) $(MKINST)                                                         \
-             $(BUILDDIR)/$(NAME).designspace                                   \
-             $(1)                                                              \
-             $(NAME)-$(2)                                                      \
-             $(3)                                                              \
-             ;                                                                 \
-       $(PY) $(RMOVER) $(3) $(3);                                               \
-fi
+$(PY) $(MKINST)                                                                \
+      $(BUILDDIR)/$(NAME).designspace                                          \
+      $(1)                                                                     \
+      $(NAME)-$(2)                                                             \
+      $(3)                                                                     \
+      ;
 endef
 
-$(NAME)-%.otf: $(BUILDDIR)/instances/$(NAME)-%.otf
-	@cp $< $@
-
-$(NAME)-%.ttf: $(BUILDDIR)/instances/$(NAME)-%.ttf
-	@cp $< $@
-
-$(BUILDDIR)/instances/$(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
+$(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
 	@$(call generate_instance,$<,$(*F),$@)
 
-$(BUILDDIR)/instances/$(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
+$(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
 	@$(call generate_instance,$<,$(*F),$@)
 
 $(BUILDDIR)/masters/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
