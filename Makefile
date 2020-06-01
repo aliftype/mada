@@ -14,6 +14,7 @@ PREPARE=$(TOOLDIR)/prepare.py
 MKSLANT=$(TOOLDIR)/mkslant.py
 MKINST=$(TOOLDIR)/mkinstance.py
 RMOVER=$(TOOLDIR)/rmoverlap.py
+MKVF=$(TOOLDIR)/mkvf.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
@@ -72,9 +73,8 @@ endef
 
 define generate_variable
 @echo " VARIABLE    $(notdir $(2))"
-fonttools varLib                                                               \
-        -q                                                                     \
-        -o $(2)                                                                \
+$(PY) $(MKVF)                                                                  \
+        --output=$(2)                                                          \
         --master-finder="$(BUILDDIR)/masters/{stem}.$(1)"                      \
         $(BUILDDIR)/$(NAME).designspace                                        \
         ;
