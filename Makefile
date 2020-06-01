@@ -13,6 +13,7 @@ PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
 MKSLANT=$(TOOLDIR)/mkslant.py
 MKINST=$(TOOLDIR)/mkinstance.py
+RMOVER=$(TOOLDIR)/rmoverlap.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
@@ -83,7 +84,7 @@ define generate_instance
 @echo " INSTANCE    $(notdir $(3))"
 @mkdir -p $(BUILDDIR)/instances
 if [ -f $(BUILDDIR)/masters/$(notdir $(3)) ]; then                             \
-       cp $(BUILDDIR)/masters/$(notdir $(3)) $(3);                             \
+       $(PY) $(RMOVER) $(BUILDDIR)/masters/$(notdir $(3)) $(3);                \
 else                                                                           \
        $(PY) $(MKINST)                                                         \
              $(BUILDDIR)/$(NAME).designspace                                   \
@@ -91,6 +92,7 @@ else                                                                           \
              $(NAME)-$(2)                                                      \
              $(3)                                                              \
              ;                                                                 \
+       $(PY) $(RMOVER) $(3) $(3);                                               \
 fi
 endef
 

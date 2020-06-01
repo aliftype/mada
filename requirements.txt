@@ -2,4 +2,5 @@ cu2qu==1.6.7
 defcon==0.7.2
 fontmake==2.1.4
 fonttools[ufo,lxml]==4.11.0
+skia-pathops==0.4.1
 ufo2ft==2.14.1
