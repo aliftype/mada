@@ -26,17 +26,16 @@ def setNames(font, instance):
 
     typoFamilyName = instance.familyName
     typoStyleName = instance.styleName
-    familyName = instance.styleMapFamilyName or "%s %s" % (typoFamilyName, typoStyleName)
-    styleName = instance.styleMapStyleName and instance.styleMapStyleName.title() or "Regular"
+    familyName = instance.styleMapFamilyName
+    styleName = instance.styleMapStyleName.title()
 
     for rec in name.names:
-        val = None
         if rec.nameID == 1:
             rec.string = familyName
         elif rec.nameID == 2:
             rec.string = styleName
         elif rec.nameID == 4:
-            rec.string = "%s %s" % (instance.familyName, instance.styleName)
+            rec.string = f"{typoFamilyName} {typoStyleName}"
         elif rec.nameID == 6:
             rec.string = instance.postScriptFontName
         elif rec.nameID == 16 and typoFamilyName != familyName:

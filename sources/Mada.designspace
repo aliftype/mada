@@ -67,6 +67,8 @@
     <instance familyname="Mada"
               postscriptfontname="Mada-Light"
               stylename="Light"
+              stylemapfamilyname="Mada Light"
+              stylemapstylename="regular"
               >
       <location>
         <dimension name="weight" xvalue="300"/>
@@ -78,6 +80,8 @@
     <instance familyname="Mada"
               postscriptfontname="Mada-Medium"
               stylename="Medium"
+              stylemapfamilyname="Mada Medium"
+              stylemapstylename="regular"
               >
       <location>
         <dimension name="weight" xvalue="500"/>
@@ -89,6 +93,8 @@
     <instance familyname="Mada"
               postscriptfontname="Mada-SemiBold" 
               stylename="SemiBold"
+              stylemapfamilyname="Mada SemiBold"
+              stylemapstylename="regular"
               >
       <location>
         <dimension name="weight" xvalue="600"/>
@@ -114,6 +120,8 @@
     <instance familyname="Mada"
               postscriptfontname="Mada-LightItalic"
               stylename="Light Italic"
+              stylemapfamilyname="Mada Light"
+              stylemapstylename="italic"
               >
       <location>
         <dimension name="weight" xvalue="300"/>
@@ -138,6 +146,8 @@
     <instance familyname="Mada"
               postscriptfontname="Mada-MediumItalic"
               stylename="Medium Italic"
+              stylemapfamilyname="Mada Medium"
+              stylemapstylename="italic"
               >
       <location>
         <dimension name="weight" xvalue="500"/>
@@ -149,6 +159,8 @@
     <instance familyname="Mada"
               postscriptfontname="Mada-SemiBoldItalic"
               stylename="SemiBold Italic"
+              stylemapfamilyname="Mada SemiBold"
+              stylemapstylename="italic"
               >
       <location>
         <dimension name="weight" xvalue="600"/>
