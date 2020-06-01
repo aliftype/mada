@@ -45,15 +45,6 @@ SHELL=/usr/bin/env bash
 
 .SECONDARY:
 
-define prepare_masters
-echo "   MASTER    $(notdir $(4))"
-mkdir -p $(BUILDDIR)
-$(PY) $(PREPARE) --version=$(VERSION)                                          \
-                 --feature-file=$(3)                                           \
-                 --out-file=$(4)                                               \
-                 $(1) $(2)
-endef
-
 define generate_master
 @echo "   MASTER    $(notdir $(3))"
 PYTHONPATH=$(abspath $(TOOLDIR)):${PYTHONMATH}                                 \
@@ -69,21 +60,9 @@ fontmake -u $(abspath $(2))                                                    \
          ;
 endef
 
-define generate_instance
-@echo " INSTANCE    $(notdir $(3))"
-$(PY) $(MKINST)                                                                \
-      $(BUILDDIR)/$(NAME).designspace                                          \
-      $(1)                                                                     \
-      $(NAME)-$(2)                                                             \
-      $(3)                                                                     \
-      ;
-endef
-
-$(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
-	@$(call generate_instance,$<,$(*F),$@)
-
-$(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
-	@$(call generate_instance,$<,$(*F),$@)
+$(NAME)-%.otf $(NAME)-%.ttf: $(OTV) $(BUILDDIR)/$(NAME).designspace
+	@echo " INSTANCE    $(@F)"
+	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
 
 $(BUILDDIR)/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
 	@$(call generate_master,otf,$<,$@)

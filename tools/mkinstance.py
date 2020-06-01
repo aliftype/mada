@@ -1,12 +1,10 @@
 import argparse
 import sys
 
-from cffsubr import subroutinize
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.ttLib import TTFont
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from fontTools.varLib.mutator import instantiateVariableFont
-from pathops import Path, PathPen
 
 
 AXIS_TAGS = {}
@@ -51,6 +49,8 @@ def setNames(font, instance):
     name.setName(typoStyleName, 17, platformID, platEncID, langID)
 
 def removeOverlap(font):
+    from pathops import Path
+
     names = font.getGlyphOrder()
     glyphs = font.getGlyphSet()
 
@@ -78,24 +78,27 @@ def removeOverlap(font):
                 charStrings[name].program.insert(0, charString.width)
 
     if charStrings is not None:
+        from cffsubr import subroutinize
         subroutinize(font, cff_version=1)
         font["post"].formatType = 3.0
 
 
 def main(args=None):
+    from pathlib import Path
+
     parser = argparse.ArgumentParser(description="Instantiate Mada fonts.")
     parser.add_argument("designspace", help="DesignSpace file")
     parser.add_argument("font", help="variable font file")
-    parser.add_argument("instance", help="instance PS name")
     parser.add_argument("output", help="output font to write")
 
     options = parser.parse_args(args)
 
+    name = Path(options.output).stem
     font = TTFont(options.font)
     doc = DesignSpaceDocument()
     doc.read(options.designspace)
     for instance in doc.instances:
-        if instance.postScriptFontName == options.instance:
+        if instance.postScriptFontName == name:
             location = toLocation(instance.location, doc)
             instantiateVariableFont(font, location, inplace=True)
             setNames(font, instance)
