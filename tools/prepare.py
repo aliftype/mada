@@ -12,7 +12,7 @@ from collections import Counter
 from datetime import datetime
 from operator import attrgetter
 
-from defcon import Font
+from ufoLib2 import Font
 from fontTools.feaLib import ast, parser
 from glyphsLib.builder.anchors import to_ufo_propagate_font_anchors
 
@@ -24,9 +24,9 @@ def generateStyleSets(ufo):
     default. We calculate the height difference between Yeh and Tatweel and set
     the feature accordingly."""
 
-    tatweel = ufo["uni0640"]
-    yeh = ufo["arYeh.fina"]
-    delta = tatweel.bounds[-1] - yeh.bounds[-1]
+    tatweel = ufo["uni0640"].getBounds(ufo.layers.defaultLayer)
+    yeh = ufo["arYeh.fina"].getBounds(ufo.layers.defaultLayer)
+    delta = tatweel.yMax - yeh.yMax
 
     fea = """
 feature ss01 {
@@ -99,8 +99,7 @@ def merge(args):
         # Remove anchors from spacing marks, otherwise ufo2ft will give them
         # mark glyph class which will cause HarfBuzz to zero their width.
         if glyph.unicode and unicodedata.category(unichr(glyph.unicode)) in ("Sk", "Lm"):
-            for anchor in glyph.anchors:
-                glyph.removeAnchor(anchor)
+            glyph.anchors = []
         # Add Arabic anchors to the dotted circle, we use an offset of 100
         # units because the Latin anchors are too close to the glyph.
         offset = 100
@@ -115,7 +114,8 @@ def merge(args):
         # Break loudly if we have duplicated glyph in Latin and Arabic.
         # TODO should check duplicated Unicode values as well
         assert glyph.name not in ufo, glyph.name
-        ufo.insertGlyph(glyph)
+        ufo.addGlyph(glyph)
+        ufo.glyphOrder += [glyph.name]
 
     # Copy kerning and groups.
     ufo.groups.update(latin.groups)
@@ -141,11 +141,14 @@ def merge(args):
     return ufo
 
 def decomposeFlippedComponents(ufo):
+    from fontTools.pens.transformPen import TransformPointPen
     for glyph in ufo:
-        for component in glyph.components:
+        for component in list(glyph.components):
             xx, xy, yx, yy = component.transformation[:4]
             if xx*yy - xy*yx < 0:
-                glyph.decomposeComponent(component)
+                pen = TransformPointPen(glyph.getPointPen(), component.transformation)
+                ufo[component.baseGlyph].drawPoints(pen)
+                glyph.removeComponent(component)
 
 def setInfo(info, version):
     """Sets various font metadata fields."""

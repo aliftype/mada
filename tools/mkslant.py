@@ -1,7 +1,7 @@
 import argparse
 import math
 
-from defcon import Font
+from ufoLib2 import Font
 from fontTools.misc.transform import Identity
 
 def main():
@@ -32,7 +32,7 @@ def main():
         for anchor in glyph.anchors:
             anchor.x, anchor.y = matrix.transformPoint((anchor.x, anchor.y))
 
-    font.save(args.outfile)
+    font.save(args.outfile, overwrite=True)
 
 if __name__ == "__main__":
     main()
