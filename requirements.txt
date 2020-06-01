@@ -4,3 +4,4 @@ fonttools[ufo,lxml]==4.11.0
 skia-pathops==0.4.1
 ufo2ft==2.14.1
 ufoLib2==0.7.1
+cffsubr==0.2.1

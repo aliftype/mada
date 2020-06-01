@@ -1,6 +1,7 @@
 import argparse
 import sys
 
+from cffsubr import subroutinize
 from fontTools.ttLib import TTFont
 from fontTools.pens.t2CharStringPen import T2CharStringPen
 from pathops import Path, PathPen
@@ -38,6 +39,10 @@ def main(args=None):
             charStrings[name] = pen.getCharString(charString.private)
             if not CFF2:
                 charStrings[name].program.insert(0, charString.width)
+
+    if charStrings is not None:
+        subroutinize(font, cff_version=1)
+
     font.save(options.output)
 
 
