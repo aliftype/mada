@@ -35,4 +35,3 @@ Then to build the fonts:
 
     make otf # CFF-flavoured fonts
     make ttf # TTF-flavoured fonts
-    make vf  # Variable font, TTF-flavoured
