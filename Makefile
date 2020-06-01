@@ -60,7 +60,11 @@ fontmake -u $(abspath $(2))                                                    \
          ;
 endef
 
-$(NAME)-%.otf $(NAME)-%.ttf: $(OTV) $(BUILDDIR)/$(NAME).designspace
+$(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
+	@echo " INSTANCE    $(@F)"
+	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
+
+$(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
 	@echo " INSTANCE    $(@F)"
 	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
 
@@ -70,7 +74,11 @@ $(BUILDDIR)/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
 $(BUILDDIR)/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
 	@$(call generate_master,ttf,$<,$@)
 
-$(OTV) $(TTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
+$(OTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
+	@echo " VARIABLE    $(@F)"
+	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
+
+$(TTV): $(TTM) $(BUILDDIR)/$(NAME).designspace
 	@echo " VARIABLE    $(@F)"
 	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
 
