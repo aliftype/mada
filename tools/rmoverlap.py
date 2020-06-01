@@ -42,6 +42,7 @@ def main(args=None):
 
     if charStrings is not None:
         subroutinize(font, cff_version=1)
+        font["post"].formatType = 3.0
 
     font.save(options.output)
 
