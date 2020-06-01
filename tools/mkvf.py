@@ -19,6 +19,9 @@ def main(args=None):
     finder = lambda x: Path(x).with_suffix(ext)
     font, _, _ = build(options.designspace, finder)
 
+    # Keep only Windows names
+    font["name"].names = [n for n in font["name"].names if n.platformID == 3]
+
     font.save(options.output)
 
 
