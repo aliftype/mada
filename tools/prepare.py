@@ -68,6 +68,7 @@ def merge(args):
     features = ufo.features
     langsys = []
     statements = []
+    ss = 0
     for font in (ufo, latin):
         featurefile = os.path.join(font.path, "features.fea")
         fea = parser.Parser(featurefile, font.glyphOrder).parse()
@@ -84,6 +85,13 @@ def merge(args):
                 if isinstance(s, ast.TableBlock):
                     # Drop tables in fea, we don’t want them.
                     continue
+                if getattr(s, "name", "").startswith("ss"):
+                    if font.path == args.arabicfile:
+                        # Find max ssXX feature in Arabic font.
+                        ss = max(ss, int(s.name[2:]))
+                    else:
+                        # Increment Latin ssXX features.
+                        s.name = f"ss{int(s.name[2:]) + ss:02}"
                 statements.append(s)
 
     # Make sure DFLT is the first.
