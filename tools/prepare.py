@@ -71,14 +71,21 @@ def merge(args):
     for font in (ufo, latin):
         featurefile = os.path.join(font.path, "features.fea")
         fea = parser.Parser(featurefile, font.glyphOrder).parse()
-        langsys += [s for s in fea.statements if isinstance(s, ast.LanguageSystemStatement)]
-        statements += [s for s in fea.statements if not isinstance(s, ast.LanguageSystemStatement)]
-        # We will regenerate kern, mark and mkmk features, and aalt is useless.
-        statements = [s for s in statements if getattr(s, "name", None) not in ("aalt", "kern", "mark", "mkmk")]
-        # These will be regenerated as well
-        statements = [s for s in statements if not isinstance(s, ast.MarkClassDefinition)]
-    # Drop tables in fea, we don’t want them.
-    statements = [s for s in statements if not isinstance(s, ast.TableBlock)]
+        for s in fea.statements:
+            if isinstance(s, ast.LanguageSystemStatement):
+                langsys.append(s)
+            else:
+                if getattr(s, "name", None) in ("aalt", "kern", "mark", "mkmk"):
+                    # We will regenerate kern, mark and mkmk, aalt is useless.
+                    continue
+                if isinstance(s, ast.MarkClassDefinition):
+                    # These will be regenerated as well.
+                    continue
+                if isinstance(s, ast.TableBlock):
+                    # Drop tables in fea, we don’t want them.
+                    continue
+                statements.append(s)
+
     # Make sure DFLT is the first.
     langsys = sorted(langsys, key=attrgetter("script"))
     fea.statements = langsys + statements
