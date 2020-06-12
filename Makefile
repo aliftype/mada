@@ -131,7 +131,7 @@ $(PNG): $(OTF)
 	@convert $(SMP) -define png:exclude-chunks=date,time -gravity center -append $@
 	@rm -rf $(SMP)
 
-dist: otf ttf otv ttv doc
+dist: otf ttf doc
 	@echo "     DIST    $(NAME)-$(VERSION)"
 	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
 	@cp $(OTF) $(NAME)-$(VERSION)
