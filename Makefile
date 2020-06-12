@@ -17,15 +17,15 @@ MKVF=$(TOOLDIR)/mkvf.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
-MASTERS=ExtraLight Regular Black ExtraLightItalic Italic BlackItalic ExtraLightSlanted Slanted BlackSlanted
+SOURCES=ExtraLight Regular Black ExtraLightItalic Italic BlackItalic ExtraLightSlanted Slanted BlackSlanted
 FONTS=ExtraLight Light Regular Medium SemiBold Bold ExtraBold Black \
       ExtraLightItalic LightItalic Italic MediumItalic SemiBoldItalic BoldItalic ExtraBoldItalic BlackItalic
 
-UFO=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.ufo)
+UFO=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
-OTM=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.otf)
-TTM=$(MASTERS:%=$(BUILDDIR)/$(NAME)-%.ttf)
+OTM=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.otf)
+TTM=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ttf)
 OTV=$(NAME).otf
 TTV=$(NAME).ttf
 PNG=FontSample.png
@@ -45,8 +45,8 @@ SHELL=/usr/bin/env bash
 
 .SECONDARY:
 
-define generate_master
-@echo "   MASTER    $(notdir $(3))"
+define generate_source
+@echo "   SOURCE    $(notdir $(3))"
 PYTHONPATH=$(abspath $(TOOLDIR)):${PYTHONMATH}                                 \
 fontmake -u $(abspath $(2))                                                    \
          --output=$(1)                                                         \
@@ -69,10 +69,10 @@ $(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
 	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
 
 $(BUILDDIR)/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
-	@$(call generate_master,otf,$<,$@)
+	@$(call generate_source,otf,$<,$@)
 
 $(BUILDDIR)/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
-	@$(call generate_master,ttf,$<,$@)
+	@$(call generate_source,ttf,$<,$@)
 
 $(OTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
 	@echo " VARIABLE    $(@F)"

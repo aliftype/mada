@@ -5,13 +5,13 @@
     <axis default="0"   maximum="15"  minimum="-15" name="slant"  tag="slnt" />
   </axes>
   <sources>
-    <source filename="Mada-ExtraLight.ufo" name="master_0_0">
+    <source filename="Mada-ExtraLight.ufo" name="extralightup">
       <location>
         <dimension name="weight" xvalue="200"/>
         <dimension name="slant"  xvalue="0"/>
       </location>
     </source>
-    <source filename="Mada-Regular.ufo" name="master_0_1">
+    <source filename="Mada-Regular.ufo" name="regular">
       <location>
         <dimension name="weight" xvalue="400"/>
         <dimension name="slant"  xvalue="0"/>
@@ -20,43 +20,43 @@
       <info copy="1" />
       <lib copy="1" />
     </source>
-    <source filename="Mada-Black.ufo" name="master_0_2">
+    <source filename="Mada-Black.ufo" name="blackup">
       <location>
         <dimension name="weight" xvalue="900"/>
         <dimension name="slant"  xvalue="0"/>
       </location>
     </source>
-    <source filename="Mada-ExtraLightItalic.ufo" name="master_1_0">
+    <source filename="Mada-ExtraLightItalic.ufo" name="extralightit">
       <location>
         <dimension name="weight" xvalue="200"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
     </source>
-    <source filename="Mada-Italic.ufo" name="master_1_1">
+    <source filename="Mada-Italic.ufo" name="italic">
       <location>
         <dimension name="weight" xvalue="400"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
     </source>
-    <source filename="Mada-BlackItalic.ufo" name="master_1_2">
+    <source filename="Mada-BlackItalic.ufo" name="blackit">
       <location>
         <dimension name="weight" xvalue="900"/>
         <dimension name="slant"  xvalue="15"/>
       </location>
     </source>
-    <source filename="Mada-ExtraLightSlanted.ufo" name="master_2_0">
+    <source filename="Mada-ExtraLightSlanted.ufo" name="extralightsl">
       <location>
         <dimension name="weight" xvalue="200"/>
         <dimension name="slant"  xvalue="-15"/>
       </location>
     </source>
-    <source filename="Mada-Slanted.ufo" name="master_2_1">
+    <source filename="Mada-Slanted.ufo" name="slanted">
       <location>
         <dimension name="weight" xvalue="400"/>
         <dimension name="slant"  xvalue="-15"/>
       </location>
     </source>
-    <source filename="Mada-BlackSlanted.ufo" name="master_2_2">
+    <source filename="Mada-BlackSlanted.ufo" name="blacksl">
       <location>
         <dimension name="weight" xvalue="900"/>
         <dimension name="slant"  xvalue="-15"/>
