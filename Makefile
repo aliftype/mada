@@ -14,6 +14,7 @@ PREPARE=$(TOOLDIR)/prepare.py
 MKSLANT=$(TOOLDIR)/mkslant.py
 MKINST=$(TOOLDIR)/mkinstance.py
 MKVF=$(TOOLDIR)/mkvf.py
+MKSAMPLE=$(TOOLDIR)/mksample.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
@@ -28,8 +29,8 @@ OTM=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.otf)
 TTM=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ttf)
 OTV=$(NAME).otf
 TTV=$(NAME).ttf
-PNG=FontSample.png
-SMP=$(FONTS:%=%.png)
+SVG=FontSample.svg
+SMP=$(FONTS:%=$(BUILDDIR)/$(NAME)-%.svg)
 
 export SOURCE_DATE_EPOCH ?= 0
 
@@ -39,7 +40,7 @@ otf: $(OTF)
 ttf: $(TTF)
 otv: $(OTV)
 ttv: $(TTV)
-doc: $(PNG)
+doc: $(SVG)
 
 SHELL=/usr/bin/env bash
 
@@ -123,13 +124,13 @@ $(BUILDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
 	@mkdir -p $(BUILDDIR)
 	@cp $< $@
 
-$(PNG): $(OTF)
+$(BUILDDIR)/$(NAME)-%.svg: $(NAME)-%.otf
+	@echo "      GEN    $(@F)"
+	@hb-view $< $(SAMPLE) --font-size=130 --output-file=$@
+
+$(SVG): $(SMP)
 	@echo "   SAMPLE    $(@F)"
-	@for f in $(FONTS); do \
-	  hb-view $(NAME)-$$f.otf $(SAMPLE) --font-size=130 > $$f.png; \
-	 done
-	@convert $(SMP) -define png:exclude-chunks=date,time -gravity center -append $@
-	@rm -rf $(SMP)
+	@$(PY) $(MKSAMPLE) -o $@ $+
 
 dist: otf ttf doc
 	@echo "     DIST    $(NAME)-$(VERSION)"
@@ -144,4 +145,4 @@ dist: otf ttf doc
 	@zip -rq $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
 
 clean:
-	@rm -rf $(BUILDDIR) $(OTF) $(TTF) $(OTV) $(TTV) $(PNG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
+	@rm -rf $(BUILDDIR) $(OTF) $(TTF) $(OTV) $(TTV) $(SVG) $(NAME)-$(VERSION) $(NAME)-$(VERSION).zip
