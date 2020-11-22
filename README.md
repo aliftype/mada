@@ -5,8 +5,7 @@ Mada
 
 Mada is a modernist, low contrast Arabic typeface based largely on the typeface
 seen in Cairo metro old signage which was designed by [Professor Fathi
-Gouda](https://www.facebook.com/FathiGouda/) of Faculty of Applied Arts, Helwan
-University.
+Gouda][1] of Faculty of Applied Arts, Helwan University.
 
 Mada is characterised by low descenders, open contours and low contrast forms
 making it suitable for small point sizes, user interfaces, signage or low
@@ -35,3 +34,19 @@ Then to build the fonts:
 
     make otf # CFF-flavoured fonts
     make ttf # TTF-flavoured fonts
+
+Installation
+------------
+
+Mada comes in two flavours, a [variable font][3] that has all the font styles
+in the same file, and allow dynamic changes of the font styles, and a set of
+static instances for specific font styles.
+
+The variable font file is `Mada.otf` and the static instances has the style as
+part of the file name (e.g. `Mada-Regular.otf`). It is not recommended to
+install both variable font and the static instances at the same time, as it
+would confuse some applications. You should install either of them based on the
+degree of variable font support in the software you use.
+
+[1]: https://www.facebook.com/FathiGouda
+[2]: https://web.dev/variable-fonts
