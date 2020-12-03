@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>arAlef.fina.1</key>
-	<string>arA_lef.fina.1.glif</string>
-	<key>arHeh.init2</key>
-	<string>arH_eh.init2.glif</string>
-	<key>arLam.init.1</key>
-	<string>arL_am.init.1.glif</string>
-	<key>arSwashKaf.init</key>
-	<string>arS_washK_af.init.glif</string>
-</dict>
+  <dict>
+    <key>arAlef.fina.1</key>
+    <string>arA_lef.fina.1.glif</string>
+    <key>arHeh.init2</key>
+    <string>arH_eh.init2.glif</string>
+    <key>arLam.init.1</key>
+    <string>arL_am.init.1.glif</string>
+    <key>arSwashKaf.init</key>
+    <string>arS_washK_af.init.glif</string>
+  </dict>
 </plist>
