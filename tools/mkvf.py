@@ -19,8 +19,14 @@ def main(args=None):
     finder = lambda x: Path(x).with_suffix(ext)
     font, _, _ = build(options.designspace, finder)
 
+    name = font["name"]
     # Keep only Windows names
-    font["name"].names = [n for n in font["name"].names if n.platformID == 3]
+    name.names = [n for n in font["name"].names if n.platformID == 3]
+
+    # Drop Regular from names
+    for nameID in (3, 4, 6):
+        record = name.getName(nameID, 3, 1)
+        record.string = str(record).replace("-Regular", "").replace(" Regular", "")
 
     font.save(options.output)
 
