@@ -23230,6 +23230,155 @@ width = 598;
 unicode = 066A;
 },
 {
+glyphname = arHighHamza.above;
+layers = (
+{
+anchors = (
+{
+name = _hamzaAbove;
+position = "{0, 0}";
+},
+{
+name = dammaHamza;
+position = "{80, 0}";
+},
+{
+name = markAbove;
+position = "{0, 250}";
+}
+);
+components = (
+{
+name = "miniKeheh-ar";
+transform = "{1, 0, 0, 1, 176, 1}";
+}
+);
+layerId = master01;
+width = 0;
+},
+{
+anchors = (
+{
+name = _hamzaAbove;
+position = "{0, 0}";
+},
+{
+name = dammaHamza;
+position = "{80, 0}";
+},
+{
+name = markAbove;
+position = "{0, 237}";
+}
+);
+components = (
+{
+name = "miniKeheh-ar";
+transform = "{1, 0, 0, 1, 175.85, 0.233}";
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+width = 0;
+},
+{
+anchors = (
+{
+name = _hamzaAbove;
+position = "{0, 0}";
+},
+{
+name = dammaHamza;
+position = "{99, 0}";
+},
+{
+name = markAbove;
+position = "{0, 304}";
+}
+);
+components = (
+{
+name = "miniKeheh-ar";
+transform = "{1, 0, 0, 1, 196, 0}";
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
+},
+{
+glyphname = "tail-ar";
+layers = (
+{
+anchors = (
+{
+name = _tailAbove;
+position = "{0, 0}";
+}
+);
+layerId = master01;
+paths = (
+{
+closed = 1;
+nodes = (
+"34 0 LINE",
+"-64 -83 LINE",
+"-104 -45 LINE",
+"-16 60 LINE"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _tailAbove;
+position = "{0, 0}";
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+paths = (
+{
+closed = 1;
+nodes = (
+"19 9 LINE",
+"-48 -56 LINE",
+"-66 -39 LINE",
+"-2 34 LINE"
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _tailAbove;
+position = "{0, 0}";
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+paths = (
+{
+closed = 1;
+nodes = (
+"67 30 LINE",
+"-104 -95 LINE",
+"-176 -5 LINE",
+"-44 162 LINE"
+);
+}
+);
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
+},
+{
 glyphname = "tahabove-ar";
 layers = (
 {
@@ -23435,6 +23584,8 @@ width = 0;
 }
 );
 unicode = 0615;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "dotabove-ar";
@@ -23539,6 +23690,8 @@ nodes = (
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "dotbelow-ar";
@@ -23601,6 +23754,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "dotcenter-ar";
@@ -23651,6 +23806,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "twodotsverticalabove-ar";
@@ -23725,6 +23882,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "twodotsverticalbelow-ar";
@@ -23790,6 +23949,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "twodotshorizontalabove-ar";
@@ -23879,6 +24040,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "twodotshorizontalbelow-ar";
@@ -23941,6 +24104,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "threedotsdownabove-ar";
@@ -24015,6 +24180,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "threedotsdownbelow-ar";
@@ -24080,6 +24247,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "threedotsupabove-ar";
@@ -24166,6 +24335,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "threedotsupbelow-ar";
@@ -24231,6 +24402,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "fourdotsabove-ar";
@@ -24305,6 +24478,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "fourdotsbelow-ar";
@@ -24370,6 +24545,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "stroke-ar";
@@ -24423,6 +24600,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "ringbelow-ar";
@@ -24473,6 +24652,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "wasla-ar";
@@ -24640,6 +24821,8 @@ nodes = (
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "wavyhamzaabove-ar";
@@ -24849,6 +25032,8 @@ nodes = (
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "miniKeheh-ar";
@@ -24989,6 +25174,8 @@ nodes = (
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "gafsarkashabove-ar";
@@ -25114,6 +25301,8 @@ nodes = (
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "wavyhamzabelow-ar";
@@ -25180,6 +25369,8 @@ width = 0;
 }
 );
 unicode = 065F;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "alefabove-ar";
@@ -25267,6 +25458,8 @@ width = 0;
 }
 );
 unicode = 0670;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "alefbelow-ar";
@@ -25333,6 +25526,8 @@ width = 0;
 }
 );
 unicode = 0656;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "hamzaabove-ar";
@@ -25396,6 +25591,8 @@ width = 0;
 }
 );
 unicode = 0654;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "hamzabelow-ar";
@@ -25462,6 +25659,8 @@ width = 0;
 }
 );
 unicode = 0655;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "fathatan-ar";
@@ -25538,6 +25737,8 @@ width = 0;
 }
 );
 unicode = 064B;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "dammatan-ar";
@@ -25759,6 +25960,8 @@ width = 0;
 }
 );
 unicode = 064C;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "kasratan-ar";
@@ -25825,6 +26028,8 @@ width = 0;
 }
 );
 unicode = 064D;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "kasratan-ar.alt";
@@ -25878,6 +26083,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "fatha-ar";
@@ -25989,6 +26196,8 @@ width = 0;
 }
 );
 unicode = 064E;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "damma-ar";
@@ -26182,6 +26391,8 @@ width = 0;
 }
 );
 unicode = 064F;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "damma-ar.alt";
@@ -26313,6 +26524,8 @@ nodes = (
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "kasra-ar";
@@ -26379,6 +26592,8 @@ width = 0;
 }
 );
 unicode = 0650;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "kasra-ar.alt";
@@ -26432,6 +26647,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "shadda-ar";
@@ -26757,6 +26974,8 @@ width = 0;
 }
 );
 unicode = 0651;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "shadda-ar.alt";
@@ -26843,6 +27062,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "sukun-ar";
@@ -26999,6 +27220,8 @@ width = 0;
 }
 );
 unicode = 0652;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "madda-ar";
@@ -27092,6 +27315,8 @@ width = 0;
 }
 );
 unicode = 0653;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "noonghunnaabove-ar";
@@ -27209,6 +27434,8 @@ width = 0;
 }
 );
 unicode = 0658;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "dammainverted-ar";
@@ -27275,6 +27502,8 @@ width = 0;
 }
 );
 unicode = 0657;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "fathaHorizont-ar";
@@ -27386,6 +27615,8 @@ width = 0;
 }
 );
 unicode = 0659;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "vabove-ar";
@@ -27503,6 +27734,8 @@ width = 0;
 }
 );
 unicode = 065A;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "vbelow-ar";
@@ -27568,6 +27801,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "vinvertedabove-ar";
@@ -27685,6 +27920,8 @@ width = 0;
 }
 );
 unicode = 065B;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "vinvertedbelow-ar";
@@ -27750,6 +27987,8 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "dotvowelbelow-ar";
@@ -27825,6 +28064,8 @@ width = 0;
 }
 );
 unicode = 065C;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "dammareversed-ar";
@@ -27891,6 +28132,8 @@ width = 0;
 }
 );
 unicode = 065D;
+category = Mark;
+subCategory = Nonspacing;
 },
 {
 glyphname = "fathatwodots-ar";
@@ -27981,75 +28224,6 @@ width = 0;
 }
 );
 unicode = 065E;
-},
-{
-glyphname = "tail-ar";
-layers = (
-{
-anchors = (
-{
-name = _tailAbove;
-position = "{0, 0}";
-}
-);
-layerId = master01;
-paths = (
-{
-closed = 1;
-nodes = (
-"34 0 LINE",
-"-64 -83 LINE",
-"-104 -45 LINE",
-"-16 60 LINE"
-);
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _tailAbove;
-position = "{0, 0}";
-}
-);
-layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-paths = (
-{
-closed = 1;
-nodes = (
-"19 9 LINE",
-"-48 -56 LINE",
-"-66 -39 LINE",
-"-2 34 LINE"
-);
-}
-);
-width = 0;
-},
-{
-anchors = (
-{
-name = _tailAbove;
-position = "{0, 0}";
-}
-);
-layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-paths = (
-{
-closed = 1;
-nodes = (
-"67 30 LINE",
-"-104 -95 LINE",
-"-176 -5 LINE",
-"-44 162 LINE"
-);
-}
-);
-width = 0;
-}
-);
-script = arabic;
 category = Mark;
 subCategory = Nonspacing;
 },
@@ -28213,83 +28387,6 @@ nodes = (
 );
 }
 );
-width = 0;
-}
-);
-},
-{
-glyphname = arHighHamza.above;
-layers = (
-{
-anchors = (
-{
-name = _hamzaAbove;
-position = "{0, 0}";
-},
-{
-name = dammaHamza;
-position = "{80, 0}";
-},
-{
-name = markAbove;
-position = "{0, 250}";
-}
-);
-components = (
-{
-name = "miniKeheh-ar";
-transform = "{1, 0, 0, 1, 176, 1}";
-}
-);
-layerId = master01;
-width = 0;
-},
-{
-anchors = (
-{
-name = _hamzaAbove;
-position = "{0, 0}";
-},
-{
-name = dammaHamza;
-position = "{80, 0}";
-},
-{
-name = markAbove;
-position = "{0, 237}";
-}
-);
-components = (
-{
-name = "miniKeheh-ar";
-transform = "{1, 0, 0, 1, 175.85, 0.233}";
-}
-);
-layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 0;
-},
-{
-anchors = (
-{
-name = _hamzaAbove;
-position = "{0, 0}";
-},
-{
-name = dammaHamza;
-position = "{99, 0}";
-},
-{
-name = markAbove;
-position = "{0, 304}";
-}
-);
-components = (
-{
-name = "miniKeheh-ar";
-transform = "{1, 0, 0, 1, 196, 0}";
-}
-);
-layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 0;
 }
 );
