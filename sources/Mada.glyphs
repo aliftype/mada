@@ -28444,18 +28444,79 @@ width = 0;
 );
 instances = (
 {
+interpolationWeight = 200;
+instanceInterpolations = {
+"0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 1;
+};
+name = ExtraLight;
+weightClass = ExtraLight;
+},
+{
+interpolationWeight = 300;
+instanceInterpolations = {
+"0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 0.5;
+master01 = 0.5;
+};
+name = Light;
+weightClass = Light;
+},
+{
 customParameters = (
 {
 name = styleMapFamilyName;
 value = Mada;
 }
 );
+interpolationWeight = 400;
 instanceInterpolations = {
-"0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 1.14286;
-"42B3044F-4D5A-45CA-9EB7-C1889731596B" = -0.14286;
+master01 = 1;
 };
 name = Regular;
 weightClass = Normal;
+},
+{
+interpolationWeight = 500;
+instanceInterpolations = {
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.2;
+master01 = 0.8;
+};
+name = Medium;
+weightClass = Medium;
+},
+{
+interpolationWeight = 600;
+instanceInterpolations = {
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.4;
+master01 = 0.6;
+};
+name = SemiBold;
+weightClass = SemiBold;
+},
+{
+interpolationWeight = 700;
+instanceInterpolations = {
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.6;
+master01 = 0.4;
+};
+name = Bold;
+weightClass = Bold;
+},
+{
+interpolationWeight = 800;
+instanceInterpolations = {
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.8;
+master01 = 0.2;
+};
+name = ExtraBold;
+weightClass = ExtraBold;
+},
+{
+interpolationWeight = 900;
+instanceInterpolations = {
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 1;
+};
+name = Black;
+weightClass = Black;
 }
 );
 keepAlternatesTogether = 1;
