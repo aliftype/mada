@@ -46,6 +46,8 @@ def merge(ufo, args):
     # Save original glyph order, used below.
     glyphOrder = ufo.glyphOrder + latin.glyphOrder
 
+    ufo.features.text += generateStyleSets(ufo)
+
     # Merge Arabic and Latin features, making sure languagesystem statements
     # come first.
     langsys = []
@@ -60,28 +62,51 @@ def merge(ufo, args):
             includeDir = None
 
         fea = parser.Parser(featurefile, font.glyphOrder, includeDir=includeDir).parse()
+        scripts = {}
         for s in fea.statements:
             if isinstance(s, ast.LanguageSystemStatement):
                 langsys.append(s)
-            else:
-                name = getattr(s, "name", "")
-                if name == "aalt":
-                    # aalt is useless.
+                scripts.setdefault(s.script, []).append(s.language)
+        for s in fea.statements:
+            if isinstance(s, ast.LanguageSystemStatement):
+                continue
+            if isinstance(s, ast.FeatureBlock) and s.name != "locl":
+                if s.name in ("aalt", "size"):
+                    # aalt and size are useless.
                     continue
-                if isinstance(s, ast.FeatureBlock) and name.startswith("ss"):
+                new = []
+                for st in s.statements:
+                    if isinstance(st, ast.LookupBlock):
+                        statements.append(st)
+                        new.append(ast.LookupReferenceStatement(st))
+                    elif isinstance(st, ast.GlyphClassDefinition):
+                        statements.append(st)
+                    else:
+                        new.append(st)
+                s.statements = new
+                new = []
+                for script in scripts:
+                    new.append(ast.ScriptStatement(script))
+                    new.extend(s.statements)
+                    for lang in scripts[script]:
+                        if lang == "dflt":
+                            continue
+                        new.append(ast.LanguageStatement(lang))
+                s.statements = new
+
+                if s.name.startswith("ss"):
                     if font == ufo:
                         # Find max ssXX feature in Arabic font.
                         ss = max(ss, int(s.name[2:]))
                     else:
                         # Increment Latin ssXX features.
                         s.name = f"ss{int(s.name[2:]) + ss:02}"
-                statements.append(s)
+            statements.append(s)
 
     # Make sure DFLT is the first.
     langsys = sorted(langsys, key=attrgetter("script"))
     fea.statements = langsys + statements
     ufo.features.text = fea.asFea()
-    ufo.features.text += generateStyleSets(ufo)
 
     # Set Latin production names
     ufo.lib[POSTSCRIPT_NAMES].update(latin.lib[POSTSCRIPT_NAMES])
