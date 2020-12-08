@@ -2,7 +2,7 @@
 <glyph name="hah-ar.fina" format="2">
   <advance width="436"/>
   <outline>
-    <component base="hah-ar.isol" yOffset="-91"/>
+    <component base="hah-ar" yOffset="-91"/>
   </outline>
   <lib>
     <dict>

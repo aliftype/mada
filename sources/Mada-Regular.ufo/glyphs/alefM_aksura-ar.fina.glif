@@ -2,7 +2,7 @@
 <glyph name="alefMaksura-ar.fina" format="2">
   <advance width="553"/>
   <outline>
-    <component base="alefMaksura-ar.isol" yOffset="-116"/>
+    <component base="alefMaksura-ar" yOffset="-116"/>
   </outline>
   <lib>
     <dict>

@@ -2,7 +2,7 @@
 <glyph name="ain-ar.fina" format="2">
   <advance width="386"/>
   <outline>
-    <component base="ain-ar.isol" yOffset="-71"/>
+    <component base="ain-ar" yOffset="-71"/>
     <component base="extender" xOffset="386"/>
   </outline>
   <lib>

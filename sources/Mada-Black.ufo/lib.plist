@@ -49,11 +49,10 @@
       <string>hamza-ar</string>
       <string>highhamza-ar</string>
       <string>alef-ar</string>
-      <string>alef-ar.isol</string>
-      <string>alef-ar.isol.short</string>
       <string>alef-ar.fina</string>
       <string>alef-ar.fina.1</string>
       <string>alef-ar.fina.1.short</string>
+      <string>alef-ar.short</string>
       <string>alef-ar.fina.short</string>
       <string>alefHamzaabove-ar</string>
       <string>alefHamzabelow-ar</string>
@@ -63,7 +62,6 @@
       <string>alefWasla-ar</string>
       <string>highhamzaAlef-ar</string>
       <string>behDotless-ar</string>
-      <string>behDotless-ar.isol</string>
       <string>behDotless-ar.fina</string>
       <string>behDotless-ar.medi</string>
       <string>behDotless-ar.init</string>
@@ -93,9 +91,8 @@
       <string>nyeh-ar</string>
       <string>dyeh-ar</string>
       <string>hah-ar</string>
-      <string>hah-ar.isol2</string>
       <string>hah-ar.fina2</string>
-      <string>hah-ar.isol</string>
+      <string>hah-ar.2</string>
       <string>hah-ar.fina</string>
       <string>hah-ar.medi</string>
       <string>hah-ar.init</string>
@@ -107,7 +104,6 @@
       <string>khah-ar</string>
       <string>jeemTwodotsabove-ar</string>
       <string>dal-ar</string>
-      <string>dal-ar.isol</string>
       <string>dal-ar.fina</string>
       <string>thal-ar</string>
       <string>ddal-ar</string>
@@ -123,7 +119,6 @@
       <string>dalTwodotsverticalbelowTah-ar</string>
       <string>dalVinvertedbelow-ar</string>
       <string>reh-ar</string>
-      <string>reh-ar.isol</string>
       <string>reh-ar.fina</string>
       <string>zain-ar</string>
       <string>zainVinvertedabove-ar</string>
@@ -141,7 +136,6 @@
       <string>rehTwodotsverticalabove-ar</string>
       <string>rehHamzaabove-ar</string>
       <string>seen-ar</string>
-      <string>seen-ar.isol</string>
       <string>seen-ar.fina</string>
       <string>seen-ar.medi</string>
       <string>seen-ar.init</string>
@@ -151,7 +145,6 @@
       <string>sheenDotbelow-ar</string>
       <string>sheenThreedotsbelow-ar</string>
       <string>sad-ar</string>
-      <string>sad-ar.isol</string>
       <string>sad-ar.fina</string>
       <string>sad-ar.medi</string>
       <string>sad-ar.init</string>
@@ -160,14 +153,12 @@
       <string>dad-ar</string>
       <string>dadDotbelow-ar</string>
       <string>tah-ar</string>
-      <string>tah-ar.isol</string>
       <string>tah-ar.fina</string>
       <string>tah-ar.medi</string>
       <string>tah-ar.init</string>
       <string>tahThreedots-ar</string>
       <string>zah-ar</string>
       <string>ain-ar</string>
-      <string>ain-ar.isol</string>
       <string>ain-ar.fina</string>
       <string>ain-ar.medi</string>
       <string>ain-ar.init</string>
@@ -177,7 +168,6 @@
       <string>feh-ar</string>
       <string>veh-ar</string>
       <string>fehDotless-ar</string>
-      <string>fehDotless-ar.isol</string>
       <string>fehDotless-ar.fina</string>
       <string>fehDotless-ar.medi</string>
       <string>fehDotless-ar.init</string>
@@ -186,18 +176,16 @@
       <string>fehThreedotsbelow-ar</string>
       <string>peheh-ar</string>
       <string>qafDotless-ar</string>
-      <string>qafDotless-ar.isol</string>
       <string>qafDotless-ar.fina</string>
       <string>qaf-ar</string>
       <string>qafDotabove-ar</string>
       <string>qafThreedotsabove-ar</string>
-      <string>kafDotless-ar.isol</string>
+      <string>kafDotless-ar</string>
       <string>kafDotless-ar.fina</string>
       <string>kaf-ar</string>
       <string>kaf-ar.medi</string>
       <string>kaf-ar.init</string>
       <string>keheh-ar</string>
-      <string>keheh-ar.isol</string>
       <string>keheh-ar.fina</string>
       <string>kehehTwodotshorizontalabove-ar</string>
       <string>kehehThreedotsbelow-ar</string>
@@ -208,7 +196,6 @@
       <string>gafRing-ar</string>
       <string>gafThreedots-ar</string>
       <string>kafswash-ar</string>
-      <string>kafswash-ar.isol</string>
       <string>kafswash-ar.fina</string>
       <string>kafswash-ar.medi</string>
       <string>kafswash-ar.init</string>
@@ -220,7 +207,6 @@
       <string>ngoeh-ar</string>
       <string>gueh-ar</string>
       <string>lam-ar</string>
-      <string>lam-ar.isol</string>
       <string>lam-ar.fina</string>
       <string>lam-ar.medi</string>
       <string>lam-ar.medi.1</string>
@@ -231,20 +217,17 @@
       <string>lamThreedotsabove-ar</string>
       <string>lamThreedotsbelow-ar</string>
       <string>meem-ar</string>
-      <string>meem-ar.isol</string>
       <string>meem-ar.fina</string>
       <string>meem-ar.medi</string>
       <string>meem-ar.init</string>
       <string>noon-ar</string>
       <string>noonDotbelow-ar</string>
       <string>noonghunna-ar</string>
-      <string>noonghunna-ar.isol</string>
       <string>noonghunna-ar.fina</string>
       <string>rnoon-ar</string>
       <string>noonRing-ar</string>
       <string>noonThreedotsabove-ar</string>
       <string>heh-ar</string>
-      <string>heh-ar.isol</string>
       <string>heh-ar.fina</string>
       <string>heh-ar.medi</string>
       <string>heh-ar.init</string>
@@ -260,7 +243,6 @@
       <string>tehMarbuta-ar</string>
       <string>tehMarbutagoal-ar</string>
       <string>waw-ar</string>
-      <string>waw-ar.isol</string>
       <string>waw-ar.fina</string>
       <string>wawring-ar</string>
       <string>wawTwodots-ar</string>
@@ -273,7 +255,6 @@
       <string>kirghizyu-ar</string>
       <string>ve-ar</string>
       <string>alefMaksura-ar</string>
-      <string>alefMaksura-ar.isol</string>
       <string>alefMaksura-ar.fina</string>
       <string>yeh-ar</string>
       <string>yehHamzaabove-ar</string>
@@ -287,7 +268,6 @@
       <string>e-ar</string>
       <string>yehThreedotsbelow-ar</string>
       <string>yehbarree-ar</string>
-      <string>yehbarree-ar.isol</string>
       <string>yehbarree-ar.fina</string>
       <string>yehbarreeHamzaabove-ar</string>
       <string>highhamzaWaw-ar</string>
@@ -404,8 +384,6 @@
       <string>uni0639.fina</string>
       <key>ain-ar.init</key>
       <string>uni0639.init</string>
-      <key>ain-ar.isol</key>
-      <string>uni0639.isol</string>
       <key>ain-ar.medi</key>
       <string>uni0639.medi</string>
       <key>ainThreedots-ar</key>
@@ -420,10 +398,8 @@
       <string>uni0627.fina.1.short</string>
       <key>alef-ar.fina.short</key>
       <string>uni0627.fina.short</string>
-      <key>alef-ar.isol</key>
-      <string>uni0627.isol</string>
-      <key>alef-ar.isol.short</key>
-      <string>uni0627.isol.short</string>
+      <key>alef-ar.short</key>
+      <string>uni0627.short</string>
       <key>alefHamzaabove-ar</key>
       <string>uni0623</string>
       <key>alefHamzabelow-ar</key>
@@ -434,8 +410,6 @@
       <string>uni0649</string>
       <key>alefMaksura-ar.fina</key>
       <string>uni0649.fina</string>
-      <key>alefMaksura-ar.isol</key>
-      <string>uni0649.isol</string>
       <key>alefWasla-ar</key>
       <string>uni0671</string>
       <key>alefWavyhamzaabove-ar</key>
@@ -456,8 +430,6 @@
       <string>uni066E.fina</string>
       <key>behDotless-ar.init</key>
       <string>uni066E.init</string>
-      <key>behDotless-ar.isol</key>
-      <string>uni066E.isol</string>
       <key>behDotless-ar.medi</key>
       <string>uni066E.medi</string>
       <key>behThreedotsupabove-ar</key>
@@ -488,8 +460,6 @@
       <string>uni062F</string>
       <key>dal-ar.fina</key>
       <string>uni062F.fina</string>
-      <key>dal-ar.isol</key>
-      <string>uni062F.isol</string>
       <key>dalDotbelow-ar</key>
       <string>uni068A</string>
       <key>dalDotbelowTah-ar</key>
@@ -558,8 +528,6 @@
       <string>uni06A1.fina</string>
       <key>fehDotless-ar.init</key>
       <string>uni06A1.init</string>
-      <key>fehDotless-ar.isol</key>
-      <string>uni06A1.isol</string>
       <key>fehDotless-ar.medi</key>
       <string>uni06A1.medi</string>
       <key>fehDotmovedbelow-ar</key>
@@ -600,16 +568,14 @@
       <string>uni06B3</string>
       <key>hah-ar</key>
       <string>uni062D</string>
+      <key>hah-ar.2</key>
+      <string>uni062D.2</string>
       <key>hah-ar.fina</key>
       <string>uni062D.fina</string>
       <key>hah-ar.fina2</key>
       <string>uni062D.fina2</string>
       <key>hah-ar.init</key>
       <string>uni062D.init</string>
-      <key>hah-ar.isol</key>
-      <string>uni062D.isol</string>
-      <key>hah-ar.isol2</key>
-      <string>uni062D.isol2</string>
       <key>hah-ar.medi</key>
       <string>uni062D.medi</string>
       <key>hahHamzaabove-ar</key>
@@ -636,8 +602,6 @@
       <string>uni0647.fina</string>
       <key>heh-ar.init</key>
       <string>uni0647.init</string>
-      <key>heh-ar.isol</key>
-      <string>uni0647.isol</string>
       <key>heh-ar.medi</key>
       <string>uni0647.medi</string>
       <key>hehDoachashmee-ar</key>
@@ -680,10 +644,10 @@
       <string>uni0643.medi</string>
       <key>kafDotabove-ar</key>
       <string>uni06AC</string>
+      <key>kafDotless-ar</key>
+      <string>kafDotlessar</string>
       <key>kafDotless-ar.fina</key>
       <string>kafDotlessar.fina</string>
-      <key>kafDotless-ar.isol</key>
-      <string>kafDotlessar.isol</string>
       <key>kafRing-ar</key>
       <string>uni06AB</string>
       <key>kafThreedotsbelow-ar</key>
@@ -694,8 +658,6 @@
       <string>uni06AA.fina</string>
       <key>kafswash-ar.init</key>
       <string>uni06AA.init</string>
-      <key>kafswash-ar.isol</key>
-      <string>uni06AA.isol</string>
       <key>kafswash-ar.medi</key>
       <string>uni06AA.medi</string>
       <key>kashida-ar</key>
@@ -712,8 +674,6 @@
       <string>uni06A9</string>
       <key>keheh-ar.fina</key>
       <string>uni06A9.fina</string>
-      <key>keheh-ar.isol</key>
-      <string>uni06A9.isol</string>
       <key>kehehDotabove-ar</key>
       <string>uni0762</string>
       <key>kehehThreedotsabove-ar</key>
@@ -738,8 +698,6 @@
       <string>uni0644.init</string>
       <key>lam-ar.init.1</key>
       <string>uni0644.init.1</string>
-      <key>lam-ar.isol</key>
-      <string>uni0644.isol</string>
       <key>lam-ar.medi</key>
       <string>uni0644.medi</string>
       <key>lam-ar.medi.1</key>
@@ -762,8 +720,6 @@
       <string>uni0645.fina</string>
       <key>meem-ar.init</key>
       <string>uni0645.init</string>
-      <key>meem-ar.isol</key>
-      <string>uni0645.isol</string>
       <key>meem-ar.medi</key>
       <string>uni0645.medi</string>
       <key>miniKeheh-ar</key>
@@ -794,8 +750,6 @@
       <string>uni06BA</string>
       <key>noonghunna-ar.fina</key>
       <string>uni06BA.fina</string>
-      <key>noonghunna-ar.isol</key>
-      <string>uni06BA.isol</string>
       <key>noonghunnaabove-ar</key>
       <string>uni0658</string>
       <key>nyeh-ar</key>
@@ -820,8 +774,6 @@
       <string>uni066F</string>
       <key>qafDotless-ar.fina</key>
       <string>uni066F.fina</string>
-      <key>qafDotless-ar.isol</key>
-      <string>uni066F.isol</string>
       <key>qafThreedotsabove-ar</key>
       <string>uni06A8</string>
       <key>question-ar</key>
@@ -830,8 +782,6 @@
       <string>uni0631</string>
       <key>reh-ar.fina</key>
       <string>uni0631.fina</string>
-      <key>reh-ar.isol</key>
-      <string>uni0631.isol</string>
       <key>rehDotbelow-ar</key>
       <string>uni0694</string>
       <key>rehDotbelowdotabove-ar</key>
@@ -866,8 +816,6 @@
       <string>uni0635.fina</string>
       <key>sad-ar.init</key>
       <string>uni0635.init</string>
-      <key>sad-ar.isol</key>
-      <string>uni0635.isol</string>
       <key>sad-ar.medi</key>
       <string>uni0635.medi</string>
       <key>sadThreedots-ar</key>
@@ -880,8 +828,6 @@
       <string>uni0633.fina</string>
       <key>seen-ar.init</key>
       <string>uni0633.init</string>
-      <key>seen-ar.isol</key>
-      <string>uni0633.isol</string>
       <key>seen-ar.medi</key>
       <string>uni0633.medi</string>
       <key>seenDotbelowDotabove-ar</key>
@@ -928,8 +874,6 @@
       <string>uni0637.fina</string>
       <key>tah-ar.init</key>
       <string>uni0637.init</string>
-      <key>tah-ar.isol</key>
-      <string>uni0637.isol</string>
       <key>tah-ar.medi</key>
       <string>uni0637.medi</string>
       <key>tahThreedots-ar</key>
@@ -1018,8 +962,6 @@
       <string>uni0648</string>
       <key>waw-ar.fina</key>
       <string>uni0648.fina</string>
-      <key>waw-ar.isol</key>
-      <string>uni0648.isol</string>
       <key>wawDotabove-ar</key>
       <string>uni06CF</string>
       <key>wawHamzaabove-ar</key>
@@ -1052,8 +994,6 @@
       <string>uni06D2</string>
       <key>yehbarree-ar.fina</key>
       <string>uni06D2.fina</string>
-      <key>yehbarree-ar.isol</key>
-      <string>uni06D2.isol</string>
       <key>yehbarreeHamzaabove-ar</key>
       <string>uni06D3</string>
       <key>yu-ar</key>

@@ -8,7 +8,7 @@
       <point x="179" y="0" type="line"/>
       <point x="179" y="32" type="line"/>
     </contour>
-    <component base="reh-ar.isol" yOffset="-1"/>
+    <component base="reh-ar" yOffset="-1"/>
   </outline>
   <lib>
     <dict>

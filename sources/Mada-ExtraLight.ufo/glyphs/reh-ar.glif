@@ -1,19 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="reh-ar" format="2">
-  <advance width="1000"/>
+  <advance width="227"/>
   <unicode hex="0631"/>
+  <anchor x="169" y="-76" name="dash"/>
+  <anchor x="171" y="291" name="dotAbove"/>
+  <anchor x="93" y="-280" name="dotBelow"/>
+  <anchor x="70" y="0" name="dotMiddle"/>
+  <anchor x="171" y="291" name="hamzaAbove"/>
+  <anchor x="113" y="329" name="markAbove"/>
+  <anchor x="93" y="-300" name="markBelow"/>
+  <anchor x="93" y="-199" name="ringBelow"/>
   <outline>
     <contour>
+      <point x="155" y="134" type="line" smooth="yes"/>
+      <point x="155" y="152.761"/>
+      <point x="172.8" y="151"/>
+      <point x="187" y="151" type="curve"/>
+      <point x="187" y="-37" type="line" smooth="yes"/>
+      <point x="187" y="-119"/>
+      <point x="167" y="-200"/>
+      <point x="72" y="-200" type="curve" smooth="yes"/>
       <point x="0" y="-200" type="line"/>
-      <point x="0" y="800" type="line"/>
-      <point x="1000" y="800" type="line"/>
-      <point x="1000" y="-200" type="line"/>
+      <point x="0" y="-168" type="line"/>
+      <point x="72" y="-168" type="line" smooth="yes"/>
+      <point x="139" y="-168"/>
+      <point x="155" y="-119"/>
+      <point x="155" y="-37" type="curve" smooth="yes"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.85,0.26,0.06,1</string>
-    </dict>
-  </lib>
 </glyph>

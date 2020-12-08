@@ -2,7 +2,7 @@
 <glyph name="lam-ar.fina" format="2">
   <advance width="440"/>
   <outline>
-    <component base="lam-ar.isol"/>
+    <component base="lam-ar"/>
   </outline>
   <lib>
     <dict>
