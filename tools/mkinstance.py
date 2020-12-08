@@ -47,6 +47,7 @@ def setNames(font, instance):
     name.setName(typoFamilyName, 16, platformID, platEncID, langID)
     name.setName(typoStyleName, 17, platformID, platEncID, langID)
 
+
 def removeOverlap(font):
     from pathops import Path
 
@@ -56,8 +57,8 @@ def removeOverlap(font):
     ttGlyphs = None
     charStrings = None
     CFF2 = False
-    if 'glyf' in font:
-        ttGlyphs = font['glyf'].glyphs
+    if "glyf" in font:
+        ttGlyphs = font["glyf"].glyphs
     elif "CFF2" in font:
         CFF2 = True
         charStrings = font["CFF2"].cff.topDictIndex[0].CharStrings
@@ -73,11 +74,13 @@ def removeOverlap(font):
         path.simplify(fix_winding=True, keep_starting_points=True)
         if ttGlyphs is not None:
             from fontTools.pens.ttGlyphPen import TTGlyphPen
+
             pen = TTGlyphPen(None)
             path.draw(pen)
             ttGlyphs[name] = pen.glyph()
         else:
             from fontTools.pens.t2CharStringPen import T2CharStringPen
+
             charString = charStrings[name]
             pen = T2CharStringPen(None, None, CFF2=CFF2)
             path.draw(pen)
@@ -87,6 +90,7 @@ def removeOverlap(font):
 
     if charStrings is not None:
         from cffsubr import subroutinize
+
         subroutinize(font, cff_version=1)
 
 

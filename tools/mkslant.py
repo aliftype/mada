@@ -4,6 +4,7 @@ import math
 from ufoLib2 import Font
 from fontTools.misc.transform import Identity
 
+
 def main():
     parser = argparse.ArgumentParser(description="Build Mada slanted fonts.")
     parser.add_argument("file", metavar="FILE", help="input font to process")
@@ -33,6 +34,7 @@ def main():
             anchor.x, anchor.y = matrix.transformPoint((anchor.x, anchor.y))
 
     font.save(args.outfile, overwrite=True)
+
 
 if __name__ == "__main__":
     main()

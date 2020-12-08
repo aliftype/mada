@@ -17,6 +17,7 @@ from fontTools.feaLib import ast, parser
 
 POSTSCRIPT_NAMES = "public.postscriptNames"
 
+
 def generateStyleSets(ufo):
     """Generates ss01 feature which is used to move the final Yeh down so that
     it does not raise above the connecting part of other glyphs, as it does by
@@ -31,9 +32,12 @@ def generateStyleSets(ufo):
 feature ss01 {
     pos alefMaksura-ar.fina <0 %s 0 0>;
 } ss01;
-""" % int(delta)
+""" % int(
+        delta
+    )
 
     return fea
+
 
 def merge(args):
     """Merges Arabic and Latin fonts together, and messages the combined font a
@@ -59,7 +63,7 @@ def merge(args):
             if isinstance(s, ast.LanguageSystemStatement):
                 langsys.append(s)
             else:
-                name =  getattr(s, "name", "")
+                name = getattr(s, "name", "")
                 if name in ("aalt", "kern", "mark", "mkmk"):
                     # We will regenerate kern, mark and mkmk, aalt is useless.
                     continue
@@ -97,7 +101,10 @@ def merge(args):
         glyph = latin[name]
         # Remove anchors from spacing marks, otherwise ufo2ft will give them
         # mark glyph class which will cause HarfBuzz to zero their width.
-        if glyph.unicode and unicodedata.category(unichr(glyph.unicode)) in ("Sk", "Lm"):
+        if glyph.unicode and unicodedata.category(unichr(glyph.unicode)) in (
+            "Sk",
+            "Lm",
+        ):
             glyph.anchors = []
         # Add Arabic anchors to the dotted circle, we use an offset of 100
         # units because the Latin anchors are too close to the glyph.
@@ -105,11 +112,19 @@ def merge(args):
         if glyph.unicode == 0x25CC:
             for anchor in glyph.anchors:
                 if anchor.name == "aboveLC":
-                    glyph.appendAnchor(dict(name="markAbove", x=anchor.x, y=anchor.y + offset))
-                    glyph.appendAnchor(dict(name="hamzaAbove", x=anchor.x, y=anchor.y + offset))
+                    glyph.appendAnchor(
+                        dict(name="markAbove", x=anchor.x, y=anchor.y + offset)
+                    )
+                    glyph.appendAnchor(
+                        dict(name="hamzaAbove", x=anchor.x, y=anchor.y + offset)
+                    )
                 if anchor.name == "belowLC":
-                    glyph.appendAnchor(dict(name="markBelow", x=anchor.x, y=anchor.y - offset))
-                    glyph.appendAnchor(dict(name="hamzaBelow", x=anchor.x, y=anchor.y - offset))
+                    glyph.appendAnchor(
+                        dict(name="markBelow", x=anchor.x, y=anchor.y - offset)
+                    )
+                    glyph.appendAnchor(
+                        dict(name="hamzaBelow", x=anchor.x, y=anchor.y - offset)
+                    )
         # Break loudly if we have duplicated glyph in Latin and Arabic.
         # TODO should check duplicated Unicode values as well
         assert glyph.name not in ufo, glyph.name
@@ -131,7 +146,9 @@ def merge(args):
     for glyph in ufo:
         unicodes.extend(glyph.unicodes)
     duplicates = set([u for u in unicodes if unicodes.count(u) > 1])
-    assert len(duplicates) == 0, "Duplicate unicodes: %s " % (["%04X" % d for d in duplicates])
+    assert len(duplicates) == 0, "Duplicate unicodes: %s " % (
+        ["%04X" % d for d in duplicates]
+    )
 
     # Make sure we have a fixed glyph order by using the original Arabic and
     # Latin glyph order, not whatever we end up with after adding glyphs.
@@ -139,24 +156,31 @@ def merge(args):
 
     return ufo
 
+
 def decomposeFlippedComponents(ufo):
     from fontTools.pens.transformPen import TransformPointPen
+
     for glyph in ufo:
         for component in list(glyph.components):
             xx, xy, yx, yy = component.transformation[:4]
-            if xx*yy - xy*yx < 0:
+            if xx * yy - xy * yx < 0:
                 pen = TransformPointPen(glyph.getPointPen(), component.transformation)
                 ufo[component.baseGlyph].drawPoints(pen)
                 glyph.removeComponent(component)
+
 
 def setInfo(info, version):
     """Sets various font metadata fields."""
 
     info.versionMajor, info.versionMinor = map(int, version.split("."))
 
-    copyright = u"Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name “Source”." % datetime.now().year
+    copyright = (
+        "Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name “Source”."
+        % datetime.now().year
+    )
 
     info.copyright = copyright
+
 
 def build(args):
     ufo = merge(args)
@@ -165,17 +189,23 @@ def build(args):
 
     return ufo
 
+
 def main():
     parser = argparse.ArgumentParser(description="Build Mada fonts.")
     parser.add_argument("arabicfile", metavar="FILE", help="input font to process")
     parser.add_argument("latinfile", metavar="FILE", help="input font to process")
-    parser.add_argument("--out-file", metavar="FILE", help="output font to write", required=True)
-    parser.add_argument("--version", metavar="version", help="version number", required=True)
+    parser.add_argument(
+        "--out-file", metavar="FILE", help="output font to write", required=True
+    )
+    parser.add_argument(
+        "--version", metavar="version", help="version number", required=True
+    )
 
     args = parser.parse_args()
 
     ufo = build(args)
     ufo.save(args.out_file)
+
 
 if __name__ == "__main__":
     main()
