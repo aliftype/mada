@@ -116,17 +116,17 @@ def merge(ufo, args):
             for anchor in glyph.anchors:
                 if anchor.name == "aboveLC":
                     glyph.appendAnchor(
-                        dict(name="markAbove", x=anchor.x, y=anchor.y + offset)
+                        dict(name="top.mark", x=anchor.x, y=anchor.y + offset)
                     )
                     glyph.appendAnchor(
-                        dict(name="hamzaAbove", x=anchor.x, y=anchor.y + offset)
+                        dict(name="top.hamza", x=anchor.x, y=anchor.y + offset)
                     )
                 if anchor.name == "belowLC":
                     glyph.appendAnchor(
-                        dict(name="markBelow", x=anchor.x, y=anchor.y - offset)
+                        dict(name="bottom.mark", x=anchor.x, y=anchor.y - offset)
                     )
                     glyph.appendAnchor(
-                        dict(name="hamzaBelow", x=anchor.x, y=anchor.y - offset)
+                        dict(name="bottom.hamza", x=anchor.x, y=anchor.y - offset)
                     )
         # Break loudly if we have duplicated glyph in Latin and Arabic.
         # TODO should check duplicated Unicode values as well
