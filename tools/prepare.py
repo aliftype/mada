@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# encoding: utf-8
-
-from fontTools.misc.py23 import *
-
 from datetime import datetime
 from operator import attrgetter
 from io import StringIO
