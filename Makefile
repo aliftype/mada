@@ -11,16 +11,14 @@ DIST=$(NAME)-$(VERSION)
 
 PY ?= python
 PREPARE=$(TOOLDIR)/prepare.py
-MKSLANT=$(TOOLDIR)/mkslant.py
 MKINST=$(TOOLDIR)/mkinstance.py
 MKVF=$(TOOLDIR)/mkvf.py
 MKSAMPLE=$(TOOLDIR)/mksample.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
-SOURCES=ExtraLight Regular Black ExtraLightItalic Italic BlackItalic ExtraLightSlanted Slanted BlackSlanted
-FONTS=ExtraLight Light Regular Medium SemiBold Bold ExtraBold Black \
-      ExtraLightItalic LightItalic Italic MediumItalic SemiBoldItalic BoldItalic ExtraBoldItalic BlackItalic
+SOURCES=ExtraLight Regular Black
+FONTS=ExtraLight Light Regular Medium SemiBold Bold ExtraBold Black
 
 UFO=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
@@ -58,6 +56,9 @@ fontmake -u $(abspath $(2))                                                    \
          ;
 endef
 
+$(BUILDDIR):
+	@mkdir -p $(BUILDDIR)
+
 $(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
 	@echo " INSTANCE    $(@F)"
 	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
@@ -72,53 +73,20 @@ $(BUILDDIR)/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
 $(BUILDDIR)/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
 	@$(call generate_source,ttf,$<,$@)
 
-$(OTV): $(OTM) $(BUILDDIR)/$(NAME).designspace
+$(OTV): $(OTM) $(UFO) $(BUILDDIR)/$(NAME).designspace
 	@echo " VARIABLE    $(@F)"
 	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
 
-$(TTV): $(TTM) $(BUILDDIR)/$(NAME).designspace
+$(TTV): $(TTM) $(UFO) $(BUILDDIR)/$(NAME).designspace
 	@echo " VARIABLE    $(@F)"
 	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
 
-$(BUILDDIR)/$(NAME)-ExtraLightItalic.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
-	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(MKSLANT) $< $@ -15
-
-$(BUILDDIR)/$(NAME)-Italic.ufo: $(BUILDDIR)/$(NAME)-Regular.ufo
-	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(MKSLANT) $< $@ -15
-
-$(BUILDDIR)/$(NAME)-BlackItalic.ufo: $(BUILDDIR)/$(NAME)-Black.ufo
-	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(MKSLANT) $< $@ -15
-
-$(BUILDDIR)/$(NAME)-ExtraLightSlanted.ufo: $(BUILDDIR)/$(NAME)-ExtraLight.ufo
-	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(MKSLANT) $< $@ 15
-
-$(BUILDDIR)/$(NAME)-Slanted.ufo: $(BUILDDIR)/$(NAME)-Regular.ufo
-	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(MKSLANT) $< $@ 15
-
-$(BUILDDIR)/$(NAME)-BlackSlanted.ufo: $(BUILDDIR)/$(NAME)-Black.ufo
-	@echo "    SLANT    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@$(PY) $(MKSLANT) $< $@ 15
-
-$(BUILDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME).glyphs $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(PREPARE)
+$(BUILDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME).glyphs $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(PREPARE) $(BUILDDIR)
 	@echo "     PREP    $(@F)"
-	@rm -rf $@
-	@mkdir -p $(BUILDDIR)
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
-$(BUILDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace
+$(BUILDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace $(BUILDDIR)
 	@echo "      GEN    $(@F)"
-	@mkdir -p $(BUILDDIR)
 	@cp $< $@
 
 $(BUILDDIR)/$(NAME)-%.svg: $(NAME)-%.otf

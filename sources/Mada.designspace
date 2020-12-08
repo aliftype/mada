@@ -26,42 +26,6 @@
         <dimension name="slant"  xvalue="0"/>
       </location>
     </source>
-    <source filename="Mada-ExtraLightItalic.ufo" name="extralightit">
-      <location>
-        <dimension name="weight" xvalue="200"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </source>
-    <source filename="Mada-Italic.ufo" name="italic">
-      <location>
-        <dimension name="weight" xvalue="400"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </source>
-    <source filename="Mada-BlackItalic.ufo" name="blackit">
-      <location>
-        <dimension name="weight" xvalue="900"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </source>
-    <source filename="Mada-ExtraLightSlanted.ufo" name="extralightsl">
-      <location>
-        <dimension name="weight" xvalue="200"/>
-        <dimension name="slant"  xvalue="-15"/>
-      </location>
-    </source>
-    <source filename="Mada-Slanted.ufo" name="slanted">
-      <location>
-        <dimension name="weight" xvalue="400"/>
-        <dimension name="slant"  xvalue="-15"/>
-      </location>
-    </source>
-    <source filename="Mada-BlackSlanted.ufo" name="blacksl">
-      <location>
-        <dimension name="weight" xvalue="900"/>
-        <dimension name="slant"  xvalue="-15"/>
-      </location>
-    </source>
   </sources>
   <instances>
     <instance familyname="Mada" stylename="ExtraLight"
@@ -142,87 +106,6 @@
       <location>
         <dimension name="weight" xvalue="900"/>
         <dimension name="slant"  xvalue="0"/>
-      </location>
-    </instance>
-
-    <instance familyname="Mada" stylename="ExtraLight Italic"
-              postscriptfontname="Mada-ExtraLightItalic"
-              stylemapfamilyname="Mada ExtraLight"
-              stylemapstylename="italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="200"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="Light Italic"
-              postscriptfontname="Mada-LightItalic"
-              stylemapfamilyname="Mada Light"
-              stylemapstylename="italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="300"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="Italic"
-              postscriptfontname="Mada-Italic"
-              stylemapfamilyname="Mada"
-              stylemapstylename="italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="400"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="Medium Italic"
-              postscriptfontname="Mada-MediumItalic"
-              stylemapfamilyname="Mada Medium"
-              stylemapstylename="italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="500"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="SemiBold Italic"
-              postscriptfontname="Mada-SemiBoldItalic"
-              stylemapfamilyname="Mada SemiBold"
-              stylemapstylename="italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="600"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="Bold Italic"
-              postscriptfontname="Mada-BoldItalic"
-              stylemapfamilyname="Mada"
-              stylemapstylename="bold italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="700"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="ExtraBold Italic"
-              postscriptfontname="Mada-ExtraBoldItalic"
-              stylemapfamilyname="Mada ExtraBold"
-              stylemapstylename="italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="800"/>
-        <dimension name="slant"  xvalue="15"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="Black Italic"
-              postscriptfontname="Mada-BlackItalic"
-              stylemapfamilyname="Mada Black"
-              stylemapstylename="italic"
-              >
-      <location>
-        <dimension name="weight" xvalue="900"/>
-        <dimension name="slant"  xvalue="15"/>
       </location>
     </instance>
   </instances>
