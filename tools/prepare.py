@@ -49,7 +49,7 @@ def merge(ufo, args):
     statements = []
     ss = 0
     for font in (ufo, latin):
-        if font == latin:
+        if font is latin:
             featurefile = StringIO("include (../../../familyGSUB.fea);")
             includeDir = args.latinfile.parent
         else:
@@ -90,7 +90,7 @@ def merge(ufo, args):
                 s.statements = new
 
                 if s.name.startswith("ss"):
-                    if font == ufo:
+                    if font is ufo:
                         # Find max ssXX feature in Arabic font.
                         ss = max(ss, int(s.name[2:]))
                     else:
