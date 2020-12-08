@@ -94,7 +94,7 @@ feature ccmp {
     sub tteh-ar by behDotless-ar tahabove-ar;
     sub tteheh-ar by behDotless-ar twodotsverticalabove-ar;
     sub beeh-ar by behDotless-ar twodotsverticalbelow-ar;
-    sub tehRing-ar by behDotless-ar twodotshorizontalabove-ar ringbelow-ar;
+    sub tehRing-ar by behDotless-ar twodotshorizontalabove-ar ring-ar;
     sub tehThreedotsdown-ar by behDotless-ar threedotsdownabove-ar;
     sub peh-ar by behDotless-ar threedotsdownbelow-ar;
     sub teheh-ar by behDotless-ar fourdotsabove-ar;
@@ -107,7 +107,7 @@ feature ccmp {
     sub tcheh-ar by hah-ar.2 threedotsdownbelow-ar;
     sub tcheheh-ar by hah-ar.2 fourdotsbelow-ar;
     sub ddal-ar by dal-ar tahabove-ar;
-    sub dalRing-ar by dal-ar ringbelow-ar;
+    sub dalRing-ar by dal-ar ring-ar;
     sub dalDotbelow-ar by dal-ar dotbelow-ar;
     sub dalDotbelowTah-ar by dal-ar tahabove-ar dotbelow-ar;
     sub dahal-ar by dal-ar twodotshorizontalabove-ar;
@@ -117,7 +117,7 @@ feature ccmp {
     sub dalFourdots-ar by dal-ar fourdotsbelow-ar;
     sub rreh-ar by reh-ar tahabove-ar;
     sub rehv-ar by reh-ar vabove-ar;
-    sub rehRing-ar by reh-ar ringbelow-ar;
+    sub rehRing-ar by reh-ar ring-ar;
     sub rehDotbelow-ar by reh-ar dotbelow-ar;
     sub rehVbelow-ar by reh-ar vbelow-ar;
     sub rehDotbelowdotabove-ar by reh-ar dotcenter-ar dotbelow-ar;
@@ -138,12 +138,12 @@ feature ccmp {
     sub peheh-ar by fehDotless-ar fourdotsabove-ar;
     sub qafDotabove-ar by qafDotless-ar dotabove-ar;
     sub qafThreedotsabove-ar by qafDotless-ar threedotsupabove-ar;
-    sub kafRing-ar by keheh-ar ringbelow-ar;
+    sub kafRing-ar by keheh-ar ring-ar;
     sub kafDotabove-ar by kaf-ar dotabove-ar;
     sub ng-ar by kaf-ar threedotsupabove-ar;
     sub kafThreedotsbelow-ar by kaf-ar threedotsdownbelow-ar;
     sub gaf-ar by keheh-ar gafsarkashabove-ar;
-    sub gafRing-ar by keheh-ar gafsarkashabove-ar ringbelow-ar;
+    sub gafRing-ar by keheh-ar gafsarkashabove-ar ring-ar;
     sub ngoeh-ar by keheh-ar gafsarkashabove-ar twodotshorizontalabove-ar;
     sub gafTwodotsbelow-ar by keheh-ar gafsarkashabove-ar twodotshorizontalbelow-ar;
     sub gueh-ar by keheh-ar gafsarkashabove-ar twodotsverticalbelow-ar;
@@ -154,13 +154,13 @@ feature ccmp {
     sub lamThreedotsbelow-ar by lam-ar threedotsdownbelow-ar;
     sub noonDotbelow-ar by noonghunna-ar dotabove-ar dotbelow-ar;
     sub rnoon-ar by noonghunna-ar tahabove-ar;
-    sub noonRing-ar by noonghunna-ar dotabove-ar ringbelow-ar;
+    sub noonRing-ar by noonghunna-ar dotabove-ar ring-ar;
     sub tchehDotabove-ar by hah-ar.2 dotabove-ar threedotsdownbelow-ar;
     sub hehHamzaabove-ar by heh-ar hamzaabove-ar;
     sub tehMarbuta-ar by heh-ar twodotshorizontalabove-ar;
     sub hehgoalHamzaabove-ar by hehgoal-ar hamzaabove-ar;
     sub tehMarbutagoal-ar by hehgoal-ar twodotshorizontalabove-ar;
-    sub wawring-ar by waw-ar ringbelow-ar;
+    sub wawring-ar by waw-ar ring-ar;
     sub kirghizoe-ar by waw-ar stroke-ar;
     sub oe-ar by waw-ar vabove-ar;
     sub u-ar by waw-ar damma-ar.alt;

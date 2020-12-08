@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<glyph name="ringbelow-ar" format="2">
-  <anchor x="0" y="133" name="_dotBelow"/>
+<glyph name="ring-ar" format="2">
+  <anchor x="0" y="140" name="_ringBelow"/>
   <outline>
     <component base="sukun-ar"/>
   </outline>
