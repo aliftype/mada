@@ -3,11 +3,6 @@
 
 from fontTools.misc.py23 import *
 
-import math
-import os
-import unicodedata
-
-from collections import Counter
 from datetime import datetime
 from operator import attrgetter
 from io import StringIO
@@ -57,28 +52,27 @@ def merge(ufo, args):
     statements = []
     ss = 0
     for font in (ufo, latin):
-        if font.path:
-            featurefile = os.path.join(font.path, "features.fea")
+        if font == latin:
+            featurefile = StringIO("include (../../../familyGSUB.fea);")
+            includeDir = args.latinfile.parent
         else:
             featurefile = StringIO(font.features.text)
+            includeDir = None
 
-        fea = parser.Parser(featurefile, font.glyphOrder).parse()
+        fea = parser.Parser(featurefile, font.glyphOrder, includeDir=includeDir).parse()
         for s in fea.statements:
             if isinstance(s, ast.LanguageSystemStatement):
                 langsys.append(s)
             else:
                 name = getattr(s, "name", "")
-                if name in ("aalt", "kern", "mark", "mkmk"):
-                    # We will regenerate kern, mark and mkmk, aalt is useless.
-                    continue
-                if isinstance(s, ast.MarkClassDefinition):
-                    # These will be regenerated as well.
+                if name == "aalt":
+                    # aalt is useless.
                     continue
                 if isinstance(s, ast.TableBlock):
                     # Drop tables in fea, we don’t want them.
                     continue
                 if isinstance(s, ast.FeatureBlock) and name.startswith("ss"):
-                    if not font.path:
+                    if font == ufo:
                         # Find max ssXX feature in Arabic font.
                         ss = max(ss, int(s.name[2:]))
                     else:
@@ -92,23 +86,12 @@ def merge(ufo, args):
     ufo.features.text = fea.asFea()
     ufo.features.text += generateStyleSets(ufo)
 
-    # Source Sans Pro has different advance widths for space and NBSP
-    # glyphs, fix it.
-    latin["nbspace"].width = latin["space"].width
-
     # Set Latin production names
     ufo.lib[POSTSCRIPT_NAMES].update(latin.lib[POSTSCRIPT_NAMES])
 
     # Copy Latin glyphs.
     for name in latin.glyphOrder:
         glyph = latin[name]
-        # Remove anchors from spacing marks, otherwise ufo2ft will give them
-        # mark glyph class which will cause HarfBuzz to zero their width.
-        if glyph.unicode and unicodedata.category(unichr(glyph.unicode)) in (
-            "Sk",
-            "Lm",
-        ):
-            glyph.anchors = []
         # Add Arabic anchors to the dotted circle, we use an offset of 100
         # units because the Latin anchors are too close to the glyph.
         offset = 100
@@ -228,7 +211,7 @@ def main():
     args = parser.parse_args()
 
     ufo = build(args)
-    ufo.save(args.out_file)
+    ufo.save(args.out_file, overwrite=True)
 
 
 if __name__ == "__main__":
