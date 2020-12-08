@@ -68,9 +68,6 @@ def merge(ufo, args):
                 if name == "aalt":
                     # aalt is useless.
                     continue
-                if isinstance(s, ast.TableBlock):
-                    # Drop tables in fea, we don’t want them.
-                    continue
                 if isinstance(s, ast.FeatureBlock) and name.startswith("ss"):
                     if font == ufo:
                         # Find max ssXX feature in Arabic font.
@@ -171,7 +168,7 @@ def setInfo(info, version):
 def loadUFO(args):
     font = GSFont(args.arabicfile)
     master = args.out_file.stem.split("-")[1]
-    builder = UFOBuilder(font, write_skipexportglyphs=True)
+    builder = UFOBuilder(font, write_skipexportglyphs=True, generate_GDEF=False)
     for ufo in builder.masters:
         if ufo.info.styleName == master:
             return ufo
