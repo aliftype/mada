@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hehDoachashmee-ar.fina" format="2">
+  <advance width="782"/>
+  <anchor x="395.918" y="627" name="dotAbove"/>
+  <anchor x="395.918" y="-150" name="dotBelow"/>
+  <anchor x="395.918" y="675" name="markAbove"/>
+  <anchor x="395.918" y="-185" name="markBelow"/>
+  <outline>
+    <component base="heh-ar.medi" xOffset="59.918"/>
+  </outline>
+</glyph>

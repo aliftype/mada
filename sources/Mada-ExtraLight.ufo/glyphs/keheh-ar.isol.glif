@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="keheh-ar.isol" format="2">
+  <advance width="542"/>
+  <anchor x="133" y="619" name="dotAbove"/>
+  <anchor x="313" y="-149" name="dotBelow"/>
+  <anchor x="321" y="597" name="gafAbove"/>
+  <anchor x="273" y="657" name="markAbove"/>
+  <anchor x="313" y="-169" name="markBelow"/>
+  <anchor x="351" y="533" name="ringBelow"/>
+  <outline>
+    <contour>
+      <point x="82" y="32" type="line"/>
+      <point x="106" y="0" type="line"/>
+      <point x="64" y="0" type="line"/>
+      <point x="40" y="32" type="line"/>
+    </contour>
+    <component base="kaf-ar.medi" xOffset="64"/>
+  </outline>
+</glyph>

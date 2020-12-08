@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tah-ar.init" format="2">
+  <advance width="687.21015"/>
+  <outline>
+    <component base="tah-ar.isol" xOffset="-70"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

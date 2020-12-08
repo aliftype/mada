@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="damma-ar" format="2">
+  <unicode hex="064F"/>
+  <outline>
+    <contour>
+      <point x="-8.807" y="53.464" type="move"/>
+      <point x="-20.863" y="86.588" type="line" smooth="yes"/>
+      <point x="-25.844" y="101.004"/>
+      <point x="-18.031" y="116.086"/>
+      <point x="-5.559" y="119.827" type="curve" smooth="yes"/>
+      <point x="38.096" y="131.459"/>
+      <point x="71.519" y="77.645"/>
+      <point x="35.339" y="64.476" type="curve" smooth="yes"/>
+      <point x="-76.015" y="23.947" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

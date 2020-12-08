@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="four-persian" format="2">
+  <advance width="482"/>
+  <unicode hex="06F4"/>
+  <outline>
+    <contour>
+      <point x="312" y="386" type="line"/>
+      <point x="234" y="386" type="line"/>
+      <point x="234" y="531" type="line" smooth="yes"/>
+      <point x="232" y="597"/>
+      <point x="286" y="647"/>
+      <point x="352" y="647" type="curve" smooth="yes"/>
+      <point x="425" y="647" type="line"/>
+      <point x="425" y="568" type="line"/>
+      <point x="339" y="568" type="line" smooth="yes"/>
+      <point x="316" y="568"/>
+      <point x="312" y="565"/>
+      <point x="312" y="543" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="43" y="647" type="line"/>
+      <point x="121" y="647" type="line"/>
+      <point x="121" y="0" type="line"/>
+      <point x="43" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="439" y="386" type="line"/>
+      <point x="114" y="386" type="line"/>
+      <point x="114" y="465" type="line"/>
+      <point x="439" y="465" type="line"/>
+    </contour>
+  </outline>
+</glyph>

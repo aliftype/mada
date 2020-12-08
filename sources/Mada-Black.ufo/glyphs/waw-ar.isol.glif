@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="waw-ar.isol" format="2">
+  <advance width="556"/>
+  <anchor x="390" y="-40" name="dash"/>
+  <anchor x="323" y="554" name="dotAbove"/>
+  <anchor x="259" y="-359" name="dotBelow"/>
+  <anchor x="323" y="554" name="hamzaAbove"/>
+  <anchor x="323" y="554" name="kafAbove"/>
+  <anchor x="278" y="602" name="markAbove"/>
+  <anchor x="259" y="-394" name="markBelow"/>
+  <anchor x="259" y="-229" name="ringBelow"/>
+  <outline>
+    <contour>
+      <point x="378" y="0" type="line"/>
+      <point x="250" y="0" type="line" smooth="yes"/>
+      <point x="141" y="0"/>
+      <point x="54" y="88"/>
+      <point x="60" y="195" type="curve" smooth="yes"/>
+      <point x="74" y="353"/>
+      <point x="204" y="444"/>
+      <point x="319" y="444" type="curve" smooth="yes"/>
+      <point x="417" y="444"/>
+      <point x="496" y="368"/>
+      <point x="496" y="267" type="curve" smooth="yes"/>
+      <point x="496" y="3" type="line" smooth="yes"/>
+      <point x="496" y="-110"/>
+      <point x="411" y="-229"/>
+      <point x="272" y="-229" type="curve" smooth="yes"/>
+      <point x="79" y="-229" type="line"/>
+      <point x="79" y="-57" type="line"/>
+      <point x="272" y="-57" type="line" smooth="yes"/>
+      <point x="298" y="-57"/>
+      <point x="324" y="-34"/>
+      <point x="324" y="0" type="curve" smooth="yes"/>
+      <point x="324" y="267" type="line" smooth="yes"/>
+      <point x="324" y="274"/>
+      <point x="321" y="273"/>
+      <point x="315" y="272" type="curve"/>
+      <point x="289" y="269"/>
+      <point x="245" y="244"/>
+      <point x="234" y="195" type="curve" smooth="yes"/>
+      <point x="231" y="184"/>
+      <point x="233" y="172"/>
+      <point x="250" y="172" type="curve" smooth="yes"/>
+      <point x="378" y="172" type="line"/>
+    </contour>
+  </outline>
+</glyph>

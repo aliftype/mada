@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_sad-ar.head" format="2">
+  <anchor x="0" y="507" name="dotAbove"/>
+  <anchor x="0" y="-200" name="dotBelow"/>
+  <anchor x="0" y="545" name="markAbove"/>
+  <anchor x="0" y="-220" name="markBelow"/>
+  <outline>
+    <contour>
+      <point x="-215.778" y="28.859" type="line"/>
+      <point x="-116.778" y="167.859"/>
+      <point x="-2.693" y="349.783"/>
+      <point x="131" y="298" type="curve" smooth="yes"/>
+      <point x="188.664" y="275.665"/>
+      <point x="216" y="220"/>
+      <point x="218" y="135" type="curve" smooth="yes"/>
+      <point x="220" y="69" type="line" smooth="yes"/>
+      <point x="221" y="31"/>
+      <point x="190" y="0"/>
+      <point x="151" y="0" type="curve" smooth="yes"/>
+      <point x="-221" y="0" type="line"/>
+      <point x="-221" y="32" type="line"/>
+      <point x="151" y="32" type="line" smooth="yes"/>
+      <point x="174" y="32"/>
+      <point x="189" y="48"/>
+      <point x="188" y="67" type="curve" smooth="yes"/>
+      <point x="186" y="135" type="line" smooth="yes"/>
+      <point x="184" y="214"/>
+      <point x="162.595" y="251.493"/>
+      <point x="120" y="268" type="curve" smooth="yes"/>
+      <point x="17.305" y="307.797"/>
+      <point x="-88.778" y="152.859"/>
+      <point x="-190.778" y="10.859" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

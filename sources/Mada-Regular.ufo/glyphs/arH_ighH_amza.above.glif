@@ -1,9 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="arHighHamza.above" format="2">
   <anchor x="0" y="0" name="_hamzaAbove"/>
-  <anchor x="0" y="250" name="markAbove"/>
   <anchor x="80" y="0" name="dammaHamza"/>
+  <anchor x="0" y="250" name="markAbove"/>
   <outline>
-    <component base="arKaf.above" xOffset="176" yOffset="1"/>
+    <component base="miniKeheh-ar" xOffset="176" yOffset="1"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
 </glyph>

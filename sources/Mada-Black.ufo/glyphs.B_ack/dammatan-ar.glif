@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dammatan-ar" format="2">
+  <unicode hex="064C"/>
+  <outline>
+    <contour>
+      <point x="21" y="62.5" type="move"/>
+      <point x="8.943" y="95.624" type="line" smooth="yes"/>
+      <point x="3.963" y="110.04"/>
+      <point x="11.775" y="125.122"/>
+      <point x="24.248" y="128.863" type="curve" smooth="yes"/>
+      <point x="67.902" y="140.495"/>
+      <point x="101.324" y="86.681"/>
+      <point x="65.146" y="73.513" type="curve" smooth="yes"/>
+      <point x="-27.414" y="39.824" type="line" smooth="yes"/>
+      <point x="-44.799" y="33.497"/>
+      <point x="-66.416" y="40.261"/>
+      <point x="-73.513" y="59.76" type="curve" smooth="yes"/>
+      <point x="-83.175" y="86.306" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

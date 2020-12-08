@@ -2,6 +2,6 @@
 <glyph name="braceright.ar" format="2">
   <advance width="362"/>
   <outline>
-    <component base="braceleft.ar" xScale="-1.0" yScale="-1.0" xOffset="362.0" yOffset="407.071"/>
+    <component base="braceleft.ar" xScale="-1" yScale="-1" xOffset="362" yOffset="407.071"/>
   </outline>
 </glyph>

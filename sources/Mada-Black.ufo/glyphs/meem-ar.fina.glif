@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="meem-ar.fina" format="2">
+  <advance width="638"/>
+  <outline>
+    <contour>
+      <point x="658" y="172" type="line"/>
+      <point x="658" y="0" type="line"/>
+      <point x="632" y="0" type="line"/>
+      <point x="632" y="172" type="line"/>
+    </contour>
+    <component base="meem-ar.isol"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>

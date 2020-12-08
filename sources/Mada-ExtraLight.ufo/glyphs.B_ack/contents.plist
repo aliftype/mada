@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
-    <key>arAlef.fina.1</key>
-    <string>arA_lef.fina.1.glif</string>
-    <key>arHeh.init2</key>
-    <string>arH_eh.init2.glif</string>
-    <key>arLam.init.1</key>
-    <string>arL_am.init.1.glif</string>
-    <key>arSwashKaf.init</key>
-    <string>arS_washK_af.init.glif</string>
+    <key>alef-ar.fina.1</key>
+    <string>alef-ar.fina.1.glif</string>
+    <key>hehgoal-ar.init</key>
+    <string>hehgoal-ar.init.glif</string>
+    <key>kafswash-ar.init</key>
+    <string>kafswash-ar.init.glif</string>
+    <key>lam-ar.init.1</key>
+    <string>lam-ar.init.1.glif</string>
   </dict>
 </plist>

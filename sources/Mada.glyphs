@@ -1194,6 +1194,7 @@ unicode = 0627;
 },
 {
 glyphname = "alef-ar.isol";
+production = uni0627.isol;
 layers = (
 {
 anchors = (
@@ -1340,6 +1341,7 @@ width = 292;
 },
 {
 glyphname = "alef-ar.isol.short";
+production = uni0627.isol.short;
 layers = (
 {
 anchors = (
@@ -1426,6 +1428,7 @@ width = 292;
 },
 {
 glyphname = "alef-ar.fina";
+production = uni0627.fina;
 layers = (
 {
 anchors = (
@@ -1563,6 +1566,7 @@ width = 360;
 },
 {
 glyphname = "alef-ar.fina.1";
+production = uni0627.fina.1;
 layers = (
 {
 anchors = (
@@ -1778,6 +1782,7 @@ width = 0;
 },
 {
 glyphname = "alef-ar.fina.1.short";
+production = uni0627.fina.1.short;
 layers = (
 {
 anchors = (
@@ -1885,6 +1890,7 @@ width = 270.2394;
 },
 {
 glyphname = "alef-ar.fina.short";
+production = uni0627.fina.short;
 layers = (
 {
 anchors = (
@@ -4417,6 +4423,7 @@ width = 596;
 },
 {
 glyphname = "hah-ar.isol";
+production = uni062D.isol;
 layers = (
 {
 anchors = (
@@ -4630,6 +4637,7 @@ width = 656;
 {
 color = (255,0,255,255);
 glyphname = "hah-ar.fina";
+production = uni062D.fina;
 layers = (
 {
 components = (
@@ -4666,6 +4674,7 @@ width = 596;
 {
 color = (255,0,255,255);
 glyphname = "hah-ar.medi";
+production = uni062D.medi;
 layers = (
 {
 components = (
@@ -4698,6 +4707,7 @@ width = 626;
 },
 {
 glyphname = "hah-ar.init";
+production = uni062D.init;
 layers = (
 {
 anchors = (
@@ -5305,6 +5315,7 @@ unicode = 062F;
 },
 {
 glyphname = "dal-ar.isol";
+production = uni062F.isol;
 layers = (
 {
 anchors = (
@@ -5458,6 +5469,7 @@ width = 522;
 {
 color = (255,0,255,255);
 glyphname = "dal-ar.fina";
+production = uni062F.fina;
 layers = (
 {
 components = (
@@ -6218,6 +6230,7 @@ unicode = 0631;
 },
 {
 glyphname = "reh-ar.isol";
+production = uni0631.isol;
 layers = (
 {
 anchors = (
@@ -6401,6 +6414,7 @@ width = 387;
 {
 color = (255,0,255,255);
 glyphname = "reh-ar.fina";
+production = uni0631.fina;
 layers = (
 {
 components = (
@@ -7299,6 +7313,7 @@ unicode = 0633;
 },
 {
 glyphname = "seen-ar.isol";
+production = uni0633.isol;
 layers = (
 {
 anchors = (
@@ -7554,6 +7569,7 @@ width = 1108;
 {
 color = (255,0,255,255);
 glyphname = "seen-ar.fina";
+production = uni0633.fina;
 layers = (
 {
 components = (
@@ -7587,6 +7603,7 @@ width = 1048;
 {
 color = (255,0,255,255);
 glyphname = "seen-ar.medi";
+production = uni0633.medi;
 layers = (
 {
 components = (
@@ -7619,6 +7636,7 @@ width = 763;
 },
 {
 glyphname = "seen-ar.init";
+production = uni0633.init;
 layers = (
 {
 anchors = (
@@ -8161,6 +8179,7 @@ unicode = 0635;
 },
 {
 glyphname = "sad-ar.isol";
+production = uni0635.isol;
 layers = (
 {
 anchors = (
@@ -8332,6 +8351,7 @@ width = 1202;
 {
 color = (255,0,255,255);
 glyphname = "sad-ar.fina";
+production = uni0635.fina;
 layers = (
 {
 components = (
@@ -8365,6 +8385,7 @@ width = 1141;
 {
 color = (255,0,255,255);
 glyphname = "sad-ar.medi";
+production = uni0635.medi;
 layers = (
 {
 components = (
@@ -8397,6 +8418,7 @@ width = 764;
 },
 {
 glyphname = "sad-ar.init";
+production = uni0635.init;
 layers = (
 {
 anchors = (
@@ -8806,6 +8828,7 @@ unicode = 0637;
 },
 {
 glyphname = "tah-ar.isol";
+production = uni0637.isol;
 layers = (
 {
 anchors = (
@@ -9016,6 +9039,7 @@ width = 757.21015;
 {
 color = (255,0,255,255);
 glyphname = "tah-ar.fina";
+production = uni0637.fina;
 layers = (
 {
 components = (
@@ -9049,6 +9073,7 @@ width = 697.21015;
 {
 color = (255,0,255,255);
 glyphname = "tah-ar.medi";
+production = uni0637.medi;
 layers = (
 {
 components = (
@@ -9085,6 +9110,7 @@ width = 627.21015;
 {
 color = (255,0,255,255);
 glyphname = "tah-ar.init";
+production = uni0637.init;
 layers = (
 {
 components = (
@@ -9276,6 +9302,7 @@ unicode = 0639;
 },
 {
 glyphname = "ain-ar.isol";
+production = uni0639.isol;
 layers = (
 {
 anchors = (
@@ -9504,6 +9531,7 @@ width = 536;
 {
 color = (255,0,255,255);
 glyphname = "ain-ar.fina";
+production = uni0639.fina;
 layers = (
 {
 components = (
@@ -9552,6 +9580,7 @@ width = 476;
 {
 color = (255,0,255,255);
 glyphname = "ain-ar.medi";
+production = uni0639.medi;
 layers = (
 {
 components = (
@@ -9596,6 +9625,7 @@ width = 488;
 },
 {
 glyphname = "ain-ar.init";
+production = uni0639.init;
 layers = (
 {
 anchors = (
@@ -11714,6 +11744,7 @@ unicode = 0643;
 {
 color = (255,0,255,255);
 glyphname = "kaf-ar.medi";
+production = uni0643.medi;
 layers = (
 {
 components = (
@@ -11746,6 +11777,7 @@ width = 598;
 },
 {
 glyphname = "kaf-ar.init";
+production = uni0643.init;
 layers = (
 {
 anchors = (
@@ -12010,6 +12042,7 @@ unicode = 06A9;
 },
 {
 glyphname = "keheh-ar.isol";
+production = uni06A9.isol;
 layers = (
 {
 anchors = (
@@ -12153,11 +12186,11 @@ nodes = (
 width = 861;
 }
 );
-unicode = FB8E;
 },
 {
 color = (255,0,255,255);
 glyphname = "keheh-ar.fina";
+production = uni06A9.fina;
 layers = (
 {
 components = (
@@ -12187,7 +12220,6 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 803;
 }
 );
-unicode = FB8F;
 },
 {
 color = 0;
@@ -13472,6 +13504,7 @@ unicode = 0644;
 },
 {
 glyphname = "lam-ar.isol";
+production = uni0644.isol;
 layers = (
 {
 anchors = (
@@ -13637,6 +13670,7 @@ width = 660;
 {
 color = (255,0,255,255);
 glyphname = "lam-ar.fina";
+production = uni0644.fina;
 layers = (
 {
 components = (
@@ -13670,6 +13704,7 @@ width = 600;
 {
 color = (255,0,255,255);
 glyphname = "lam-ar.medi";
+production = uni0644.medi;
 layers = (
 {
 components = (
@@ -13703,6 +13738,7 @@ width = 310;
 {
 color = (255,0,255,255);
 glyphname = "lam-ar.medi.1";
+production = uni0644.medi.1;
 layers = (
 {
 components = (
@@ -13735,6 +13771,7 @@ width = 262;
 },
 {
 glyphname = "lam-ar.init";
+production = uni0644.init;
 layers = (
 {
 anchors = (
@@ -13875,6 +13912,7 @@ width = 370;
 },
 {
 glyphname = "lam-ar.init.1";
+production = uni0644.init.1;
 layers = (
 {
 anchors = (
@@ -14367,6 +14405,7 @@ unicode = 0645;
 },
 {
 glyphname = "meem-ar.isol";
+production = uni0645.isol;
 layers = (
 {
 anchors = (
@@ -14574,6 +14613,7 @@ width = 698;
 {
 color = (255,0,255,255);
 glyphname = "meem-ar.fina";
+production = uni0645.fina;
 layers = (
 {
 components = (
@@ -14640,6 +14680,7 @@ width = 638;
 {
 color = (255,0,255,255);
 glyphname = "meem-ar.medi";
+production = uni0645.medi;
 layers = (
 {
 components = (
@@ -14705,6 +14746,7 @@ width = 555;
 },
 {
 glyphname = "meem-ar.init";
+production = uni0645.init;
 layers = (
 {
 anchors = (
@@ -15067,6 +15109,7 @@ unicode = 06BA;
 },
 {
 glyphname = "noonghunna-ar.isol";
+production = uni06BA.isol;
 layers = (
 {
 anchors = (
@@ -15228,11 +15271,11 @@ nodes = (
 width = 656;
 }
 );
-unicode = FB9E;
 },
 {
 color = (255,0,255,255);
 glyphname = "noonghunna-ar.fina";
+production = uni06BA.fina;
 layers = (
 {
 components = (
@@ -15295,7 +15338,6 @@ nodes = (
 width = 684;
 }
 );
-unicode = FB9F;
 },
 {
 color = 0;
@@ -15507,6 +15549,7 @@ unicode = 0647;
 },
 {
 glyphname = "heh-ar.isol";
+production = uni0647.isol;
 layers = (
 {
 anchors = (
@@ -15714,6 +15757,7 @@ width = 569;
 {
 color = (255,0,255,255);
 glyphname = "heh-ar.fina";
+production = uni0647.fina;
 layers = (
 {
 components = (
@@ -15747,6 +15791,7 @@ width = 509;
 {
 color = (255,0,255,255);
 glyphname = "heh-ar.medi";
+production = uni0647.medi;
 layers = (
 {
 components = (
@@ -15779,6 +15824,7 @@ width = 722;
 },
 {
 glyphname = "heh-ar.init";
+production = uni0647.init;
 layers = (
 {
 anchors = (
@@ -16146,6 +16192,7 @@ unicode = 06C1;
 },
 {
 glyphname = "hehgoal-ar.fina";
+production = uni06C1.fina;
 layers = (
 {
 anchors = (
@@ -16295,10 +16342,10 @@ nodes = (
 width = 478;
 }
 );
-unicode = FBA7;
 },
 {
 glyphname = "hehgoal-ar.medi";
+production = uni06C1.medi;
 layers = (
 {
 anchors = (
@@ -16511,10 +16558,10 @@ nodes = (
 width = 653;
 }
 );
-unicode = FBA9;
 },
 {
 glyphname = "hehgoal-ar.init";
+production = uni06C1.init;
 layers = (
 {
 anchors = (
@@ -16735,7 +16782,6 @@ nodes = (
 width = 498;
 }
 );
-unicode = FBA8;
 },
 {
 color = 0;
@@ -16843,6 +16889,7 @@ unicode = 06BE;
 },
 {
 glyphname = "hehDoachashmee-ar.fina";
+production = uni06BE.fina;
 layers = (
 {
 anchors = (
@@ -16929,7 +16976,6 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 782;
 }
 );
-unicode = FBAB;
 },
 {
 color = 0;
@@ -17141,6 +17187,7 @@ unicode = 0648;
 },
 {
 glyphname = "waw-ar.isol";
+production = uni0648.isol;
 layers = (
 {
 anchors = (
@@ -17378,6 +17425,7 @@ width = 556;
 {
 color = (255,0,255,255);
 glyphname = "waw-ar.fina";
+production = uni0648.fina;
 layers = (
 {
 components = (
@@ -18015,6 +18063,7 @@ unicode = 0649;
 },
 {
 glyphname = "alefMaksura-ar.isol";
+production = uni0649.isol;
 layers = (
 {
 anchors = (
@@ -18252,6 +18301,7 @@ width = 714;
 {
 color = (255,0,255,255);
 glyphname = "alefMaksura-ar.fina";
+production = uni0649.fina;
 layers = (
 {
 components = (
@@ -18911,6 +18961,7 @@ unicode = 06D2;
 },
 {
 glyphname = "yehbarree-ar.isol";
+production = uni06D2.isol;
 layers = (
 {
 anchors = (
@@ -19108,10 +19159,10 @@ nodes = (
 width = 1000;
 }
 );
-unicode = FBAE;
 },
 {
 glyphname = "yehbarree-ar.fina";
+production = uni06D2.fina;
 layers = (
 {
 anchors = (
@@ -19351,7 +19402,6 @@ nodes = (
 width = 771;
 }
 );
-unicode = FBAF;
 },
 {
 color = 0;
@@ -19876,6 +19926,7 @@ unicode = 076A;
 {
 color = 0;
 glyphname = "seenTwodotsverticalabove-ar";
+production = uni076D;
 layers = (
 {
 layerId = master01;

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<glyph name="ar4Dot.above" format="2">
-  <anchor x="0" y="0" name="_dotAbove"/>
-  <anchor x="0" y="414.0" name="markAboveDot"/>
-  <outline>
-    <component base="ar2Dot.above"/>
-    <component base="ar2Dot.above" yOffset="200"/>
-  </outline>
-</glyph>

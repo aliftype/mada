@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="alef-ar.fina" format="2">
+  <advance width="196"/>
+  <anchor x="56" y="664" name="dotAbove"/>
+  <anchor x="56" y="-29" name="dotBelow"/>
+  <anchor x="56" y="664" name="hamzaAbove"/>
+  <anchor x="56" y="-29" name="hamzaBelow"/>
+  <anchor x="56" y="664" name="kafAbove"/>
+  <anchor x="56" y="702" name="markAbove"/>
+  <anchor x="56" y="-58" name="markBelow"/>
+  <outline>
+    <component base="lam-ar.init" xScale="-1" xOffset="196"/>
+    <component base="extender" xScale="-1" xOffset="196"/>
+  </outline>
+</glyph>

@@ -2,21 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
-    <key>arAlef.fina.1</key>
-    <string>arA_lef.fina.1.glif</string>
-    <key>arGaf.above</key>
-    <string>arG_af.above.glif</string>
-    <key>arHeh.init2</key>
-    <string>arH_eh.init2.glif</string>
-    <key>arLam.init.1</key>
-    <string>arL_am.init.1.glif</string>
-    <key>arSwashKaf.init</key>
-    <string>arS_washK_af.init.glif</string>
-    <key>uni064C</key>
-    <string>uni064C_.glif</string>
-    <key>uni064F</key>
-    <string>uni064F_.glif</string>
-    <key>uni0651</key>
-    <string>uni0651.glif</string>
+    <key>alef-ar.fina.1</key>
+    <string>alef-ar.fina.1.glif</string>
+    <key>damma-ar</key>
+    <string>damma-ar.glif</string>
+    <key>dammatan-ar</key>
+    <string>dammatan-ar.glif</string>
+    <key>gafsarkashabove-ar</key>
+    <string>gafsarkashabove-ar.glif</string>
+    <key>hehgoal-ar.init</key>
+    <string>hehgoal-ar.init.glif</string>
+    <key>kafswash-ar.init</key>
+    <string>kafswash-ar.init.glif</string>
+    <key>lam-ar.init.1</key>
+    <string>lam-ar.init.1.glif</string>
+    <key>shadda-ar</key>
+    <string>shadda-ar.glif</string>
   </dict>
 </plist>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="seen-ar.init" format="2">
+  <advance width="823"/>
+  <anchor x="450" y="561" name="dotAbove"/>
+  <anchor x="405" y="-149" name="dotBelow"/>
+  <anchor x="450" y="609" name="markAbove"/>
+  <anchor x="405" y="-184" name="markBelow"/>
+  <outline>
+    <contour>
+      <point x="146" y="410" type="line"/>
+      <point x="318" y="410" type="line"/>
+      <point x="318" y="138" type="line" smooth="yes"/>
+      <point x="318" y="62"/>
+      <point x="255" y="0"/>
+      <point x="179" y="0" type="curve" smooth="yes"/>
+      <point x="0" y="0" type="line"/>
+      <point x="0" y="172" type="line"/>
+      <point x="166" y="172" type="line"/>
+      <point x="159" y="165"/>
+      <point x="153" y="159"/>
+      <point x="146" y="152" type="curve"/>
+    </contour>
+    <contour>
+      <point x="367" y="410" type="line"/>
+      <point x="539" y="410" type="line"/>
+      <point x="539" y="138" type="line" smooth="yes"/>
+      <point x="539" y="62"/>
+      <point x="476" y="0"/>
+      <point x="400" y="0" type="curve" smooth="yes"/>
+      <point x="279" y="0" type="line"/>
+      <point x="279" y="172" type="line"/>
+      <point x="387" y="172" type="line"/>
+      <point x="380" y="165"/>
+      <point x="374" y="159"/>
+      <point x="367" y="152" type="curve"/>
+    </contour>
+    <contour>
+      <point x="591" y="410" type="line"/>
+      <point x="763" y="410" type="line"/>
+      <point x="763" y="138" type="line" smooth="yes"/>
+      <point x="763" y="61"/>
+      <point x="699" y="0"/>
+      <point x="623" y="0" type="curve" smooth="yes"/>
+      <point x="521" y="0" type="line"/>
+      <point x="521" y="172" type="line"/>
+      <point x="611" y="172" type="line"/>
+      <point x="604" y="165"/>
+      <point x="598" y="159"/>
+      <point x="591" y="152" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hehgoal-ar.medi" format="2">
+  <advance width="653"/>
+  <anchor x="293" y="232" name="dotAbove"/>
+  <anchor x="351" y="-402" name="dotBelow"/>
+  <anchor x="336" y="232" name="hamzaAbove"/>
+  <anchor x="336" y="232" name="kafAbove"/>
+  <anchor x="293" y="276" name="markAbove"/>
+  <anchor x="351" y="-437" name="markBelow"/>
+  <outline>
+    <contour>
+      <point x="402" y="-213" type="curve"/>
+      <point x="234" y="-245" type="line"/>
+      <point x="218" y="-164"/>
+      <point x="205" y="-194"/>
+      <point x="149" y="-104" type="curve" smooth="yes"/>
+      <point x="124" y="-63"/>
+      <point x="123" y="0"/>
+      <point x="98" y="0" type="curve" smooth="yes"/>
+      <point x="0" y="0" type="line"/>
+      <point x="0" y="172" type="line"/>
+      <point x="142" y="172" type="line" smooth="yes"/>
+      <point x="283" y="172"/>
+      <point x="276" y="16"/>
+      <point x="295" y="-14" type="curve" smooth="yes"/>
+      <point x="329" y="-66"/>
+      <point x="378" y="-86"/>
+    </contour>
+    <contour>
+      <point x="547" y="-206" type="line"/>
+      <point x="375" y="-206" type="line"/>
+      <point x="375" y="34" type="line" smooth="yes"/>
+      <point x="375" y="110"/>
+      <point x="437" y="172"/>
+      <point x="513" y="172" type="curve" smooth="yes"/>
+      <point x="673" y="172" type="line"/>
+      <point x="673" y="0" type="line"/>
+      <point x="527" y="0" type="line"/>
+      <point x="534" y="7"/>
+      <point x="540" y="13"/>
+      <point x="547" y="20" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

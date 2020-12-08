@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="wavyhamzabelow-ar" format="2">
+  <unicode hex="065F"/>
+  <anchor x="0" y="0" name="_hamzaBelow"/>
+  <anchor x="0" y="-239" name="markBelow"/>
+  <outline>
+    <component base="wavyhamzaabove-ar" yOffset="-167"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

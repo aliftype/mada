@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fathatwodots-ar" format="2">
+  <unicode hex="065E"/>
+  <anchor x="0" y="0" name="_markAbove"/>
+  <anchor x="0" y="0" name="_markAboveDot"/>
+  <outline>
+    <component base="fatha-ar" xScale="0.93969" xyScale="0.34202" yxScale="-0.34202" yScale="0.93969"/>
+    <component base="dotabove-ar" xOffset="-73.405" yOffset="96.202"/>
+    <component base="dotabove-ar" xOffset="55.81" yOffset="-16.221"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

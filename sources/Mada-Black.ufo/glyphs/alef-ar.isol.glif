@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="alef-ar.isol" format="2">
+  <advance width="292"/>
+  <anchor x="136" y="684" name="dotAbove"/>
+  <anchor x="136" y="-49" name="dotBelow"/>
+  <anchor x="136" y="684" name="hamzaAbove"/>
+  <anchor x="136" y="-49" name="hamzaBelow"/>
+  <anchor x="136" y="684" name="kafAbove"/>
+  <anchor x="136" y="732" name="markAbove"/>
+  <anchor x="136" y="-74" name="markBelow"/>
+  <outline>
+    <contour>
+      <point x="60" y="624" type="line"/>
+      <point x="232" y="624" type="line"/>
+      <point x="232" y="193" type="line" smooth="yes"/>
+      <point x="232" y="96"/>
+      <point x="185" y="1"/>
+      <point x="60" y="1" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

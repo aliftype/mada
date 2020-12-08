@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hamza-ar" format="2">
+  <advance width="272"/>
+  <unicode hex="0621"/>
+  <anchor x="156" y="243" name="dotAbove"/>
+  <anchor x="116" y="-80" name="dotBelow"/>
+  <anchor x="156" y="281" name="markAbove"/>
+  <anchor x="116" y="-100" name="markBelow"/>
+  <outline>
+    <contour>
+      <point x="232" y="143" type="line"/>
+      <point x="232" y="111" type="line"/>
+      <point x="138.757" y="111" type="line"/>
+      <point x="172.543" y="39.675" type="line" smooth="yes"/>
+      <point x="175.312" y="33.442"/>
+      <point x="182.667" y="21.333"/>
+      <point x="174.333" y="9.317" type="curve" smooth="yes"/>
+      <point x="168.958" y="1.566"/>
+      <point x="157.202" y="0"/>
+      <point x="151" y="0" type="curve" smooth="yes"/>
+      <point x="40" y="0" type="line"/>
+      <point x="40" y="32" type="line"/>
+      <point x="140.77" y="32" type="line"/>
+      <point x="107.457" y="102.325" type="line" smooth="yes"/>
+      <point x="107.133" y="103.056"/>
+      <point x="96.371" y="122.45"/>
+      <point x="107.563" y="134.5" type="curve" smooth="yes"/>
+      <point x="112.677" y="140.006"/>
+      <point x="122.542" y="143"/>
+      <point x="133" y="143" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

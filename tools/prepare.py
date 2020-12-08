@@ -24,13 +24,13 @@ def generateStyleSets(ufo):
     default. We calculate the height difference between Yeh and Tatweel and set
     the feature accordingly."""
 
-    tatweel = ufo["uni0640"].getBounds(ufo.layers.defaultLayer)
-    yeh = ufo["arYeh.fina"].getBounds(ufo.layers.defaultLayer)
+    tatweel = ufo["kashida-ar"].getBounds(ufo.layers.defaultLayer)
+    yeh = ufo["alefMaksura-ar.fina"].getBounds(ufo.layers.defaultLayer)
     delta = tatweel.yMax - yeh.yMax
 
     fea = """
 feature ss01 {
-    pos arYeh.fina <0 %s 0 0>;
+    pos alefMaksura-ar.fina <0 %s 0 0>;
 } ss01;
 """ % int(delta)
 
@@ -46,22 +46,8 @@ def merge(args):
 
     latin = Font(args.latinfile)
 
-    ufo.lib[POSTSCRIPT_NAMES] = {}
-
     # Save original glyph order, used below.
     glyphOrder = ufo.glyphOrder + latin.glyphOrder
-
-    # Generate production glyph names for Arabic glyphs, in case it differs
-    # from working names. This will be used by ufo2ft to set the final glyph
-    # names in the font file.
-    for glyph in ufo:
-        if glyph.unicode is not None:
-            if glyph.unicode < 0xffff:
-                postName = "uni%04X" % glyph.unicode
-            else:
-                postName = "u%06X" % glyph.unicode
-            if postName != glyph.name:
-                ufo.lib[POSTSCRIPT_NAMES][glyph.name] = postName
 
     # Merge Arabic and Latin features, making sure languagesystem statements
     # come first.
@@ -76,7 +62,8 @@ def merge(args):
             if isinstance(s, ast.LanguageSystemStatement):
                 langsys.append(s)
             else:
-                if getattr(s, "name", None) in ("aalt", "kern", "mark", "mkmk"):
+                name =  getattr(s, "name", "")
+                if name in ("aalt", "kern", "mark", "mkmk"):
                     # We will regenerate kern, mark and mkmk, aalt is useless.
                     continue
                 if isinstance(s, ast.MarkClassDefinition):
@@ -85,7 +72,7 @@ def merge(args):
                 if isinstance(s, ast.TableBlock):
                     # Drop tables in fea, we don’t want them.
                     continue
-                if getattr(s, "name", "").startswith("ss"):
+                if isinstance(s, ast.FeatureBlock) and name.startswith("ss"):
                     if font.path == args.arabicfile:
                         # Find max ssXX feature in Arabic font.
                         ss = max(ss, int(s.name[2:]))

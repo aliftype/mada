@@ -2,6 +2,6 @@
 <glyph name="parenright.ar" format="2">
   <advance width="269"/>
   <outline>
-    <component base="parenleft.ar" xScale="-1.0" yScale="-1.0" xOffset="268.915" yOffset="408.135"/>
+    <component base="parenleft.ar" xScale="-1" yScale="-1" xOffset="268.915" yOffset="408.135"/>
   </outline>
 </glyph>

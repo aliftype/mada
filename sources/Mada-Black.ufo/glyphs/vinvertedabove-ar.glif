@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="vinvertedabove-ar" format="2">
+  <unicode hex="065B"/>
+  <anchor x="0" y="85" name="_dotAbove"/>
+  <anchor x="0" y="85" name="_markAbove"/>
+  <anchor x="0" y="85" name="_markAboveDot"/>
+  <anchor x="0" y="304" name="markAbove"/>
+  <outline>
+    <contour>
+      <point x="-194" y="60" type="line"/>
+      <point x="-130" y="0" type="line"/>
+      <point x="-2" y="84" type="line"/>
+      <point x="2" y="84" type="line"/>
+      <point x="130" y="0" type="line"/>
+      <point x="194" y="60" type="line"/>
+      <point x="88" y="188" type="line"/>
+      <point x="-88" y="188" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.category</key>
+      <string>Mark</string>
+      <key>com.schriftgestaltung.Glyphs.subCategory</key>
+      <string>Nonspacing</string>
+    </dict>
+  </lib>
+</glyph>

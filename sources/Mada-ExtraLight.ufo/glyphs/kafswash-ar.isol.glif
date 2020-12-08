@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="kafswash-ar.isol" format="2">
+  <advance width="850.63476"/>
+  <outline>
+    <contour>
+      <point x="82" y="32" type="line"/>
+      <point x="106" y="0" type="line"/>
+      <point x="64" y="0" type="line"/>
+      <point x="40" y="32" type="line"/>
+    </contour>
+    <component base="kafswash-ar.init" xOffset="64"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0,1,1</string>
+    </dict>
+  </lib>
+</glyph>
