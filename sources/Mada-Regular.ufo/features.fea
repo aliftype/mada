@@ -132,7 +132,7 @@ feature ccmp {
     sub tahThreedots-ar by tah-ar threedotsupabove-ar;
     sub ainThreedots-ar by ain-ar threedotsupabove-ar;
     sub fehDotmovedbelow-ar by fehDotless-ar dotbelow-ar;
-    sub fehDotbelow-ar by fehDotless-ar dotabove-ar dotbelow-ar;
+    sub fehDotbelow-ar by fehDotless-ar dotabove-ar dotcenter-ar;
     sub veh-ar by fehDotless-ar threedotsupabove-ar;
     sub fehThreedotsbelow-ar by fehDotless-ar threedotsdownbelow-ar;
     sub peheh-ar by fehDotless-ar fourdotsabove-ar;

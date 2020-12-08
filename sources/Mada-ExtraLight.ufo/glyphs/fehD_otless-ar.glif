@@ -2,8 +2,9 @@
 <glyph name="fehDotless-ar" format="2">
   <advance width="758"/>
   <unicode hex="06A1"/>
+  <anchor x="379" y="-100" name="center"/>
   <anchor x="569" y="549" name="dotAbove"/>
-  <anchor x="379" y="-100" name="dotBelow"/>
+  <anchor x="526" y="-100" name="dotBelow"/>
   <anchor x="569" y="587" name="markAbove"/>
   <anchor x="379" y="-120" name="markBelow"/>
   <outline>

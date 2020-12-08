@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="fehDotless-ar.init" format="2">
   <advance width="553"/>
+  <anchor x="273" y="-160" name="center"/>
   <anchor x="264" y="759" name="dotAbove"/>
   <anchor x="273" y="-160" name="dotBelow"/>
   <anchor x="264" y="803" name="markAbove"/>

@@ -196,7 +196,7 @@ code = "    sub zero-persian by zero-ar;
     sub tahThreedots-ar by tah-ar threedotsupabove-ar;
     sub ainThreedots-ar by ain-ar threedotsupabove-ar;
     sub fehDotmovedbelow-ar by fehDotless-ar dotbelow-ar;
-    sub fehDotbelow-ar by fehDotless-ar dotabove-ar dotbelow-ar;
+    sub fehDotbelow-ar by fehDotless-ar dotabove-ar dotcenter-ar;
     sub veh-ar by fehDotless-ar threedotsupabove-ar;
     sub fehThreedotsbelow-ar by fehDotless-ar threedotsdownbelow-ar;
     sub peheh-ar by fehDotless-ar fourdotsabove-ar;
@@ -9222,12 +9222,16 @@ layers = (
 {
 anchors = (
 {
+name = center;
+position = "{401, -99}";
+},
+{
 name = dotAbove;
 position = "{591, 609}";
 },
 {
 name = dotBelow;
-position = "{401, -99}";
+position = "{582, -99}";
 },
 {
 name = markAbove;
@@ -9295,12 +9299,16 @@ width = 817;
 {
 anchors = (
 {
+name = center;
+position = "{379, -100}";
+},
+{
 name = dotAbove;
 position = "{569, 549}";
 },
 {
 name = dotBelow;
-position = "{379, -100}";
+position = "{526, -100}";
 },
 {
 name = markAbove;
@@ -9368,12 +9376,16 @@ width = 758;
 {
 anchors = (
 {
+name = center;
+position = "{499, -140}";
+},
+{
 name = dotAbove;
 position = "{649, 758}";
 },
 {
 name = dotBelow;
-position = "{499, -140}";
+position = "{658, -140}";
 },
 {
 name = markAbove;
@@ -9512,6 +9524,10 @@ layers = (
 {
 anchors = (
 {
+name = center;
+position = "{258, -143}";
+},
+{
 name = dotAbove;
 position = "{267, 609}";
 },
@@ -9577,6 +9593,10 @@ width = 493;
 {
 anchors = (
 {
+name = center;
+position = "{231, -150}";
+},
+{
 name = dotAbove;
 position = "{274, 590}";
 },
@@ -9641,6 +9661,10 @@ width = 463;
 },
 {
 anchors = (
+{
+name = center;
+position = "{273, -160}";
+},
 {
 name = dotAbove;
 position = "{264, 759}";
