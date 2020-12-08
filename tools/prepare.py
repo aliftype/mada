@@ -3,7 +3,6 @@
 
 from fontTools.misc.py23 import *
 
-import argparse
 import math
 import os
 import unicodedata
@@ -11,9 +10,13 @@ import unicodedata
 from collections import Counter
 from datetime import datetime
 from operator import attrgetter
+from io import StringIO
 
 from ufoLib2 import Font
 from fontTools.feaLib import ast, parser
+
+from glyphsLib import GSFont
+from glyphsLib.builder import UFOBuilder
 
 POSTSCRIPT_NAMES = "public.postscriptNames"
 
@@ -39,11 +42,9 @@ feature ss01 {
     return fea
 
 
-def merge(args):
+def merge(ufo, args):
     """Merges Arabic and Latin fonts together, and messages the combined font a
     bit. Returns the combined font."""
-
-    ufo = Font(args.arabicfile)
 
     latin = Font(args.latinfile)
 
@@ -52,12 +53,15 @@ def merge(args):
 
     # Merge Arabic and Latin features, making sure languagesystem statements
     # come first.
-    features = ufo.features
     langsys = []
     statements = []
     ss = 0
     for font in (ufo, latin):
-        featurefile = os.path.join(font.path, "features.fea")
+        if font.path:
+            featurefile = os.path.join(font.path, "features.fea")
+        else:
+            featurefile = StringIO(font.features.text)
+
         fea = parser.Parser(featurefile, font.glyphOrder).parse()
         for s in fea.statements:
             if isinstance(s, ast.LanguageSystemStatement):
@@ -74,7 +78,7 @@ def merge(args):
                     # Drop tables in fea, we don’t want them.
                     continue
                 if isinstance(s, ast.FeatureBlock) and name.startswith("ss"):
-                    if font.path == args.arabicfile:
+                    if not font.path:
                         # Find max ssXX feature in Arabic font.
                         ss = max(ss, int(s.name[2:]))
                     else:
@@ -85,9 +89,8 @@ def merge(args):
     # Make sure DFLT is the first.
     langsys = sorted(langsys, key=attrgetter("script"))
     fea.statements = langsys + statements
-    features.text = fea.asFea()
-
-    features.text += generateStyleSets(ufo)
+    ufo.features.text = fea.asFea()
+    ufo.features.text += generateStyleSets(ufo)
 
     # Source Sans Pro has different advance widths for space and NBSP
     # glyphs, fix it.
@@ -182,8 +185,18 @@ def setInfo(info, version):
     info.copyright = copyright
 
 
+def loadUFO(args):
+    font = GSFont(args.arabicfile)
+    master = args.out_file.stem.split("-")[1]
+    builder = UFOBuilder(font, write_skipexportglyphs=True)
+    for ufo in builder.masters:
+        if ufo.info.styleName == master:
+            return ufo
+
+
 def build(args):
-    ufo = merge(args)
+    ufo = loadUFO(args)
+    ufo = merge(ufo, args)
     setInfo(ufo.info, args.version)
     decomposeFlippedComponents(ufo)
 
@@ -191,11 +204,22 @@ def build(args):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Build Mada fonts.")
-    parser.add_argument("arabicfile", metavar="FILE", help="input font to process")
-    parser.add_argument("latinfile", metavar="FILE", help="input font to process")
+    from pathlib import Path
+    from argparse import ArgumentParser
+
+    parser = ArgumentParser(description="Prepare Mada fonts.")
     parser.add_argument(
-        "--out-file", metavar="FILE", help="output font to write", required=True
+        "arabicfile", metavar="FILE", type=Path, help="input font to process"
+    )
+    parser.add_argument(
+        "latinfile", metavar="FILE", type=Path, help="input font to process"
+    )
+    parser.add_argument(
+        "--out-file",
+        metavar="FILE",
+        type=Path,
+        required=True,
+        help="output font to write",
     )
     parser.add_argument(
         "--version", metavar="version", help="version number", required=True

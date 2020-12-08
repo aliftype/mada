@@ -113,7 +113,7 @@ $(BUILDDIR)/$(NAME)-BlackSlanted.ufo: $(BUILDDIR)/$(NAME)-Black.ufo
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(MKSLANT) $< $@ 15
 
-$(BUILDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME)-%.ufo $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(PREPARE)
+$(BUILDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME).glyphs $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(PREPARE)
 	@echo "     PREP    $(@F)"
 	@rm -rf $@
 	@mkdir -p $(BUILDDIR)
