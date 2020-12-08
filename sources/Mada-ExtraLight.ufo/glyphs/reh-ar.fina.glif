@@ -1,6 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="reh-ar.fina" format="2">
   <advance width="300"/>
+  <anchor x="70" y="-1" name="center"/>
+  <anchor x="169" y="-77" name="dash"/>
+  <anchor x="171" y="290" name="dotAbove"/>
+  <anchor x="93" y="-281" name="dotBelow"/>
+  <anchor x="171" y="290" name="hamzaAbove"/>
+  <anchor x="113" y="328" name="markAbove"/>
+  <anchor x="93" y="-301" name="markBelow"/>
+  <anchor x="93" y="-200" name="ringBelow"/>
   <outline>
     <contour>
       <point x="310" y="32" type="line"/>

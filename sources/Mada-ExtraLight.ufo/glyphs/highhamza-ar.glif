@@ -2,6 +2,10 @@
 <glyph name="highhamza-ar" format="2">
   <advance width="272"/>
   <unicode hex="0674"/>
+  <anchor x="156" y="501" name="dotAbove"/>
+  <anchor x="116" y="178" name="dotBelow"/>
+  <anchor x="156" y="539" name="markAbove"/>
+  <anchor x="116" y="158" name="markBelow"/>
   <outline>
     <component base="hamza-ar" yOffset="258"/>
   </outline>

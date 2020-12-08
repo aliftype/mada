@@ -5,6 +5,8 @@
   <anchor x="375.903" y="-150" name="dotBelow"/>
   <anchor x="375.903" y="665" name="markAbove"/>
   <anchor x="375.903" y="-170" name="markBelow"/>
+  <anchor x="375.903" y="500" name="hamzaAbove"/>
+  <anchor x="375.903" y="500" name="kafAbove"/>
   <outline>
     <component base="heh-ar.medi" xOffset="39.903"/>
   </outline>

@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="meem-ar.medi" format="2">
   <advance width="555"/>
+  <anchor x="307" y="608" name="dotAbove"/>
+  <anchor x="309" y="-150" name="dotBelow"/>
+  <anchor x="307" y="652" name="markAbove"/>
+  <anchor x="309" y="-185" name="markBelow"/>
   <outline>
     <contour>
       <point x="575" y="172" type="line"/>

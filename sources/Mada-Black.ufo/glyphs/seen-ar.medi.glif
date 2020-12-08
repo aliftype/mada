@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="seen-ar.medi" format="2">
   <advance width="763"/>
+  <anchor x="450" y="561" name="dotAbove"/>
+  <anchor x="405" y="-149" name="dotBelow"/>
+  <anchor x="450" y="609" name="markAbove"/>
+  <anchor x="405" y="-184" name="markBelow"/>
   <outline>
     <component base="seen-ar.init"/>
   </outline>

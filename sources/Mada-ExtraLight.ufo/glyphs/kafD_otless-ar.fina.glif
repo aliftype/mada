@@ -1,6 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="kafDotless-ar.fina" format="2">
   <advance width="456"/>
+  <anchor x="440" y="673" name="dotAbove"/>
+  <anchor x="239" y="-110" name="dotBelow"/>
+  <anchor x="230" y="270" name="hamzaAbove"/>
+  <anchor x="230" y="270" name="kafAbove"/>
+  <anchor x="440" y="711" name="markAbove"/>
+  <anchor x="239" y="-130" name="markBelow"/>
   <outline>
     <component base="kafDotless-ar"/>
   </outline>

@@ -8,6 +8,7 @@
   <anchor x="56" y="664" name="kafAbove"/>
   <anchor x="56" y="702" name="markAbove"/>
   <anchor x="56" y="-58" name="markBelow"/>
+  <anchor x="54" y="450" name="dash"/>
   <outline>
     <component base="lam-ar.init" xScale="-1" xOffset="196"/>
     <component base="extender" xScale="-1" xOffset="196"/>

@@ -1,6 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="alefMaksura-ar.fina" format="2">
   <advance width="504"/>
+  <anchor x="207" y="192" name="dotAbove"/>
+  <anchor x="279" y="-334" name="dotBelow"/>
+  <anchor x="207" y="192" name="hamzaAbove"/>
+  <anchor x="279" y="-334" name="hamzaBelow"/>
+  <anchor x="207" y="192" name="kafAbove"/>
+  <anchor x="207" y="229" name="markAbove"/>
+  <anchor x="279" y="-354" name="markBelow"/>
+  <anchor x="279" y="-244" name="ringBelow"/>
+  <anchor x="43" y="24" name="tailAbove"/>
   <outline>
     <component base="alefMaksura-ar" yOffset="-150"/>
   </outline>

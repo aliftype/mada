@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="lam-ar.fina" format="2">
   <advance width="600"/>
+  <anchor x="510" y="400" name="dash"/>
+  <anchor x="514" y="674" name="dotAbove"/>
+  <anchor x="327" y="-258" name="dotBelow"/>
+  <anchor x="514" y="722" name="markAbove"/>
+  <anchor x="327" y="-293" name="markBelow"/>
   <outline>
     <component base="lam-ar"/>
   </outline>

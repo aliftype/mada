@@ -14,7 +14,6 @@ from operator import attrgetter
 
 from ufoLib2 import Font
 from fontTools.feaLib import ast, parser
-from glyphsLib.builder.anchors import to_ufo_propagate_font_anchors
 
 POSTSCRIPT_NAMES = "public.postscriptNames"
 
@@ -41,8 +40,6 @@ def merge(args):
     bit. Returns the combined font."""
 
     ufo = Font(args.arabicfile)
-
-    to_ufo_propagate_font_anchors(None, ufo)
 
     latin = Font(args.latinfile)
 

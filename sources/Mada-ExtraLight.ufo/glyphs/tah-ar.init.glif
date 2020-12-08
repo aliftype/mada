@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="tah-ar.init" format="2">
   <advance width="575.6675"/>
+  <anchor x="359" y="485" name="dotAbove"/>
+  <anchor x="322" y="-110" name="dotBelow"/>
+  <anchor x="359" y="523" name="markAbove"/>
+  <anchor x="322" y="-130" name="markBelow"/>
   <outline>
     <component base="tah-ar" xOffset="-40"/>
   </outline>

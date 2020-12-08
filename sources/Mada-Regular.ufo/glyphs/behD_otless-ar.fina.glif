@@ -1,6 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="behDotless-ar.fina" format="2">
   <advance width="687"/>
+  <anchor x="366" y="394" name="dotAbove"/>
+  <anchor x="386" y="-149" name="dotBelow"/>
+  <anchor x="366" y="431" name="hamzaAbove"/>
+  <anchor x="386" y="-149" name="hamzaBelow"/>
+  <anchor x="366" y="431" name="markAbove"/>
+  <anchor x="386" y="-176" name="markBelow"/>
+  <anchor x="386" y="0" name="ringBelow"/>
   <outline>
     <component base="behDotless-ar"/>
   </outline>

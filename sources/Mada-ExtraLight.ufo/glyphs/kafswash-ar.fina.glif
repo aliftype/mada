@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="kafswash-ar.fina" format="2">
   <advance width="810.63476"/>
+  <anchor x="181.469" y="482.159" name="markAbove"/>
+  <anchor x="433" y="-179" name="markBelow"/>
   <outline>
     <component base="kafswash-ar"/>
   </outline>

@@ -2,6 +2,8 @@
 <glyph name="kafswash-ar" format="2">
   <advance width="850.63476"/>
   <unicode hex="06AA"/>
+  <anchor x="181.469" y="482.159" name="markAbove"/>
+  <anchor x="433" y="-179" name="markBelow"/>
   <outline>
     <contour>
       <point x="82" y="32" type="line"/>

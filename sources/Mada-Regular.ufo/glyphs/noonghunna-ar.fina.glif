@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="noonghunna-ar.fina" format="2">
   <advance width="603"/>
+  <anchor x="273" y="302" name="dotAbove"/>
+  <anchor x="273" y="-297" name="dotBelow"/>
+  <anchor x="273" y="340" name="markAbove"/>
+  <anchor x="273" y="-323" name="markBelow"/>
+  <anchor x="273" y="-188" name="ringBelow"/>
   <outline>
     <contour>
       <point x="619" y="79" type="line"/>

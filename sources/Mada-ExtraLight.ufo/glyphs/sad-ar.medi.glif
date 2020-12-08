@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="sad-ar.medi" format="2">
   <advance width="580.02353"/>
+  <anchor x="286" y="427" name="dotAbove"/>
+  <anchor x="374" y="-149" name="dotBelow"/>
+  <anchor x="286" y="464" name="markAbove"/>
+  <anchor x="374" y="-169" name="markBelow"/>
   <outline>
     <component base="sad-ar.init"/>
   </outline>
