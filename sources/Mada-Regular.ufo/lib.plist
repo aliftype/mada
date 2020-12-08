@@ -16,10 +16,6 @@
     <integer>10</integer>
     <key>com.schriftgestaltung.appVersion</key>
     <string>1350</string>
-    <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
-    <array>
-      <string>/ringbelow-ar</string>
-    </array>
     <key>com.schriftgestaltung.customParameter.GSFont.Use Line Breaks</key>
     <integer>1</integer>
     <key>com.schriftgestaltung.customParameter.GSFont.Variable Font Origin</key>
@@ -333,7 +329,6 @@
       <string>semicolon-ar</string>
       <string>question-ar</string>
       <string>percent-ar</string>
-      <string>arHighHamza.above</string>
       <string>tail-ar</string>
       <string>tahabove-ar</string>
       <string>dotabove-ar</string>

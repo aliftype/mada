@@ -87,10 +87,10 @@ feature ccmp {
     sub alefWasla-ar by alef-ar wasla-ar;
     sub alefWavyhamzaabove-ar by alef-ar wavyhamzaabove-ar;
     sub alefWavyhamzabelow-ar by alef-ar wavyhamzabelow-ar;
-    sub highhamzaAlef-ar by alef-ar arHighHamza.above;
-    sub highhamzaWaw-ar by waw-ar arHighHamza.above;
-    sub uHamzaabove-ar by waw-ar arHighHamza.above damma-ar.alt;
-    sub highhamzaYeh-ar by alefMaksura-ar arHighHamza.above;
+    sub highhamzaAlef-ar by highhamza-ar alef-ar;
+    sub highhamzaWaw-ar by highhamza-ar waw-ar;
+    sub uHamzaabove-ar by highhamza-ar u-ar;
+    sub highhamzaYeh-ar by highhamza-ar alefMaksura-ar;
     sub tteh-ar by behDotless-ar tahabove-ar;
     sub tteheh-ar by behDotless-ar twodotsverticalabove-ar;
     sub beeh-ar by behDotless-ar twodotsverticalbelow-ar;
@@ -163,7 +163,6 @@ feature ccmp {
     sub wawring-ar by waw-ar ring-ar;
     sub kirghizoe-ar by waw-ar stroke-ar;
     sub oe-ar by waw-ar vabove-ar;
-    sub u-ar by waw-ar damma-ar.alt;
     sub yu-ar by waw-ar alefabove-ar;
     sub kirghizyu-ar by waw-ar vinvertedabove-ar;
     sub wawTwodots-ar by waw-ar twodotshorizontalabove-ar;
@@ -210,6 +209,10 @@ feature ccmp {
     sub behhamzaabove-ar by behDotless-ar hamzaabove-ar dotbelow-ar;
     sub jeemTwodotsabove-ar by hah-ar twodotshorizontalabove-ar dotbelow-ar;
     sub zainVinvertedabove-ar by reh-ar dotabove-ar vinvertedabove-ar;
+} ccmp;
+
+feature ccmp {
+    sub u-ar by waw-ar damma-ar.alt;
 } ccmp;
 
 feature isol {

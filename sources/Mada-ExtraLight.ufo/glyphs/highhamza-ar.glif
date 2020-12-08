@@ -5,4 +5,12 @@
   <outline>
     <component base="hamza-ar" yOffset="258"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=hamza-ar</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>=hamza-ar</string>
+    </dict>
+  </lib>
 </glyph>

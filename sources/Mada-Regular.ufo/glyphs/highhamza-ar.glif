@@ -1,8 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="highhamza-ar" format="2">
-  <advance width="416"/>
+  <advance width="376"/>
   <unicode hex="0674"/>
   <outline>
     <component base="hamza-ar" yOffset="261"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.glyph.rightMetricsKey</key>
+      <string>=hamza-ar</string>
+      <key>com.schriftgestaltung.Glyphs.glyph.widthMetricsKey</key>
+      <string>=hamza-ar</string>
+    </dict>
+  </lib>
 </glyph>

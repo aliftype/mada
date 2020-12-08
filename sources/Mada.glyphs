@@ -151,10 +151,10 @@ code = "    sub zero-persian by zero-ar;
     sub alefWasla-ar by alef-ar wasla-ar;
     sub alefWavyhamzaabove-ar by alef-ar wavyhamzaabove-ar;
     sub alefWavyhamzabelow-ar by alef-ar wavyhamzabelow-ar;
-    sub highhamzaAlef-ar by alef-ar arHighHamza.above;
-    sub highhamzaWaw-ar by waw-ar arHighHamza.above;
-    sub uHamzaabove-ar by waw-ar arHighHamza.above damma-ar.alt;
-    sub highhamzaYeh-ar by alefMaksura-ar arHighHamza.above;
+    sub highhamzaAlef-ar by highhamza-ar alef-ar;
+    sub highhamzaWaw-ar by highhamza-ar waw-ar;
+    sub uHamzaabove-ar by highhamza-ar u-ar;
+    sub highhamzaYeh-ar by highhamza-ar alefMaksura-ar;
     sub tteh-ar by behDotless-ar tahabove-ar;
     sub tteheh-ar by behDotless-ar twodotsverticalabove-ar;
     sub beeh-ar by behDotless-ar twodotsverticalbelow-ar;
@@ -227,7 +227,6 @@ code = "    sub zero-persian by zero-ar;
     sub wawring-ar by waw-ar ring-ar;
     sub kirghizoe-ar by waw-ar stroke-ar;
     sub oe-ar by waw-ar vabove-ar;
-    sub u-ar by waw-ar damma-ar.alt;
     sub yu-ar by waw-ar alefabove-ar;
     sub kirghizyu-ar by waw-ar vinvertedabove-ar;
     sub wawTwodots-ar by waw-ar twodotshorizontalabove-ar;
@@ -274,6 +273,10 @@ code = "    sub zero-persian by zero-ar;
     sub behhamzaabove-ar by behDotless-ar hamzaabove-ar dotbelow-ar;
     sub jeemTwodotsabove-ar by hah-ar twodotshorizontalabove-ar dotbelow-ar;
     sub zainVinvertedabove-ar by reh-ar dotabove-ar vinvertedabove-ar;";
+name = ccmp;
+},
+{
+code = "    sub u-ar by waw-ar damma-ar.alt;";
 name = ccmp;
 },
 {
@@ -599,19 +602,19 @@ layers = (
 anchors = (
 {
 name = dotAbove;
-position = "{242, 326}";
+position = "{222, 326}";
 },
 {
 name = dotBelow;
-position = "{170, -86}";
+position = "{150, -86}";
 },
 {
 name = markAbove;
-position = "{242, 363}";
+position = "{222, 363}";
 },
 {
 name = markBelow;
-position = "{170, -113}";
+position = "{150, -113}";
 }
 );
 layerId = master01;
@@ -619,30 +622,30 @@ paths = (
 {
 closed = 1;
 nodes = (
-"335 147 LINE",
-"241 147 LINE",
-"273 78 LINE SMOOTH",
-"279 65 OFFCURVE",
-"292 43 OFFCURVE",
-"276 21 CURVE SMOOTH",
-"262 2 OFFCURVE",
-"238 0 OFFCURVE",
-"227 0 CURVE SMOOTH",
-"81 0 LINE",
-"81 79 LINE",
-"186 79 LINE",
-"154 146 LINE SMOOTH",
-"153.611 146.814 OFFCURVE",
-"135 179 OFFCURVE",
-"152 203 CURVE SMOOTH",
-"160 215 OFFCURVE",
-"178 225 OFFCURVE",
-"204 225 CURVE SMOOTH",
-"335 225 LINE"
+"315 147 LINE",
+"221 147 LINE",
+"253 78 LINE SMOOTH",
+"259 65 OFFCURVE",
+"272 43 OFFCURVE",
+"256 21 CURVE SMOOTH",
+"242 2 OFFCURVE",
+"218 0 OFFCURVE",
+"207 0 CURVE SMOOTH",
+"61 0 LINE",
+"61 79 LINE",
+"166 79 LINE",
+"134 146 LINE SMOOTH",
+"134 147 OFFCURVE",
+"115 179 OFFCURVE",
+"132 203 CURVE SMOOTH",
+"140 215 OFFCURVE",
+"158 225 OFFCURVE",
+"184 225 CURVE SMOOTH",
+"315 225 LINE"
 );
 }
 );
-width = 416;
+width = 376;
 },
 {
 anchors = (
@@ -697,19 +700,19 @@ width = 272;
 anchors = (
 {
 name = dotAbove;
-position = "{350, 493}";
+position = "{290, 493}";
 },
 {
 name = dotBelow;
-position = "{240, -120}";
+position = "{180, -120}";
 },
 {
 name = markAbove;
-position = "{350, 541}";
+position = "{290, 541}";
 },
 {
 name = markBelow;
-position = "{240, -155}";
+position = "{180, -155}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -717,30 +720,30 @@ paths = (
 {
 closed = 1;
 nodes = (
-"451.248 190.717 LINE",
-"382.479 190.717 LINE",
-"401.432 150.53 LINE SMOOTH",
-"407.553 135.682 OFFCURVE",
-"432.41 93.97 OFFCURVE",
-"403.17 48.555 CURVE SMOOTH",
-"377.654 8.921 OFFCURVE",
-"321.266 -0.542 OFFCURVE",
-"309.254 -0.245 CURVE SMOOTH",
-"120 -0.245 LINE",
-"120 171.755 LINE",
-"201.253 171.755 LINE",
-"182.98 210.505 LINE",
-"182.98 210.505 OFFCURVE",
-"141.488 280.076 OFFCURVE",
-"187.857 327.891 CURVE SMOOTH",
-"205.104 345.671 OFFCURVE",
-"238.045 362.717 OFFCURVE",
-"279.5 362.717 CURVE SMOOTH",
-"451.248 362.717 LINE"
+"391 191 LINE",
+"322 191 LINE",
+"341 151 LINE SMOOTH",
+"348 136 OFFCURVE",
+"372 94 OFFCURVE",
+"343 49 CURVE SMOOTH",
+"318 9 OFFCURVE",
+"261 -1 OFFCURVE",
+"249 0 CURVE SMOOTH",
+"60 0 LINE",
+"60 172 LINE",
+"141 172 LINE",
+"123 211 LINE",
+"123 211 OFFCURVE",
+"81 280 OFFCURVE",
+"128 328 CURVE SMOOTH",
+"145 346 OFFCURVE",
+"178 363 OFFCURVE",
+"220 363 CURVE SMOOTH",
+"391 363 LINE"
 );
 }
 );
-width = 571;
+width = 451;
 }
 );
 unicode = 0621;
@@ -756,7 +759,7 @@ transform = "{1, 0, 0, 1, 0, 261}";
 }
 );
 layerId = master01;
-width = 416;
+width = 376;
 },
 {
 components = (
@@ -776,9 +779,11 @@ transform = "{1, 0, 0, 1, 0, 261}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 571.24805;
+width = 451;
 }
 );
+widthMetricsKey = "=hamza-ar";
+rightMetricsKey = "=hamza-ar";
 unicode = 0674;
 },
 {
@@ -21864,85 +21869,6 @@ width = 598;
 }
 );
 unicode = 066A;
-},
-{
-glyphname = arHighHamza.above;
-layers = (
-{
-anchors = (
-{
-name = _hamzaAbove;
-position = "{0, 0}";
-},
-{
-name = dammaHamza;
-position = "{80, 0}";
-},
-{
-name = markAbove;
-position = "{0, 250}";
-}
-);
-components = (
-{
-name = "miniKeheh-ar";
-transform = "{1, 0, 0, 1, 176, 1}";
-}
-);
-layerId = master01;
-width = 0;
-},
-{
-anchors = (
-{
-name = _hamzaAbove;
-position = "{0, 0}";
-},
-{
-name = dammaHamza;
-position = "{80, 0}";
-},
-{
-name = markAbove;
-position = "{0, 237}";
-}
-);
-components = (
-{
-name = "miniKeheh-ar";
-transform = "{1, 0, 0, 1, 175.85, 0.233}";
-}
-);
-layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 0;
-},
-{
-anchors = (
-{
-name = _hamzaAbove;
-position = "{0, 0}";
-},
-{
-name = dammaHamza;
-position = "{99, 0}";
-},
-{
-name = markAbove;
-position = "{0, 304}";
-}
-);
-components = (
-{
-name = "miniKeheh-ar";
-transform = "{1, 0, 0, 1, 196, 0}";
-}
-);
-layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 0;
-}
-);
-category = Mark;
-subCategory = Nonspacing;
 },
 {
 glyphname = "tail-ar";
