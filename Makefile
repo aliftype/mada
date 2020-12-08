@@ -48,12 +48,9 @@ SHELL=/usr/bin/env bash
 
 define generate_source
 @echo "   SOURCE    $(notdir $(3))"
-PYTHONPATH=$(abspath $(TOOLDIR)):${PYTHONMATH}                                 \
 fontmake -u $(abspath $(2))                                                    \
          --output=$(1)                                                         \
          --verbose=WARNING                                                     \
-         --feature-writer KernFeatureWriter                                    \
-         --feature-writer markFeatureWriter::MarkFeatureWriter                 \
          --production-names                                                    \
          --optimize-cff=0                                                      \
          --keep-overlaps                                                       \
