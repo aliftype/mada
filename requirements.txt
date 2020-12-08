@@ -12,18 +12,17 @@ compreffor==0.5.0         # via ufo2ft
 cu2qu==1.6.7              # via fontmake, ufo2ft
 fontmake==2.2.1           # via -r requirements.in
 fontmath==0.6.0           # via fontmake
-fonttools[lxml,ufo,unicode]==4.17.1  # via -r requirements.in, booleanoperations, cffsubr, compreffor, cu2qu, fontmake, fontmath, glyphslib, ufo2ft, ufolib2
+fonttools[lxml,ufo,unicode]==4.18.0  # via -r requirements.in, booleanoperations, cffsubr, compreffor, cu2qu, fontmake, fontmath, glyphslib, ufo2ft, ufolib2
 fs==2.4.11                # via fonttools
-glyphslib==5.2.0          # via fontmake
-lxml==4.6.1               # via fonttools, svgutils
+glyphslib==5.3.0          # via fontmake
+lxml==4.6.2               # via fonttools, svgutils
 pyclipper==1.2.0          # via booleanoperations
 pytz==2020.4              # via fs
 six==1.15.0               # via fs
 skia-pathops==0.5.1.post1  # via -r requirements.in
 svgutils==0.3.1           # via -r requirements.in
-ufo2ft[cffsubr]==2.16.0   # via -r requirements.in, fontmake
-ufolib2==0.8.0            # via -r requirements.in, fontmake, glyphslib
-unicodedata2==13.0.0.post2  # via fonttools
+ufo2ft[cffsubr]==2.18.1   # via -r requirements.in, fontmake
+ufolib2==0.10.0           # via -r requirements.in, fontmake, glyphslib
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
