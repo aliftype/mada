@@ -1067,5 +1067,10 @@
       <key>zero-persian</key>
       <string>uni06F0</string>
     </dict>
+    <key>public.skipExportGlyphs</key>
+    <array>
+      <string>_sad-ar.head</string>
+      <string>extender</string>
+    </array>
   </dict>
 </plist>

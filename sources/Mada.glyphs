@@ -28235,6 +28235,7 @@ category = Mark;
 subCategory = Nonspacing;
 },
 {
+export = 0;
 glyphname = "_sad-ar.head";
 layers = (
 {
@@ -28399,6 +28400,7 @@ width = 0;
 );
 },
 {
+export = 0;
 glyphname = extender;
 layers = (
 {
