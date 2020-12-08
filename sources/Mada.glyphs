@@ -440,6 +440,14 @@ position = "{0, 624}";
 );
 id = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 name = ExtraLight;
+userData = {
+GSOffsetHorizontal = 16;
+GSOffsetKeepCompatible = 1;
+GSOffsetMakeStroke = 1;
+GSOffsetPosition = 1;
+GSOffsetProportional = 1;
+GSOffsetVertical = 10;
+};
 weight = Light;
 weightValue = 200;
 xHeight = 480;
@@ -501,6 +509,14 @@ position = "{0, 624}";
 }
 );
 id = master01;
+userData = {
+GSOffsetHorizontal = 22.5;
+GSOffsetKeepCompatible = 1;
+GSOffsetMakeStroke = 1;
+GSOffsetPosition = 1;
+GSOffsetProportional = 1;
+GSOffsetVertical = 10;
+};
 weightValue = 400;
 xHeight = 484;
 },
@@ -563,6 +579,14 @@ position = "{0, 624}";
 );
 iconName = Bold;
 id = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+userData = {
+GSOffsetHorizontal = 37.5;
+GSOffsetKeepCompatible = 1;
+GSOffsetMakeStroke = 1;
+GSOffsetPosition = 1;
+GSOffsetProportional = 1;
+GSOffsetVertical = 10;
+};
 weightValue = 900;
 xHeight = 500;
 }
@@ -23222,12 +23246,16 @@ layers = (
 anchors = (
 {
 name = _dotBelow;
-position = "{0, 133}";
+position = "{0, 30}";
+},
+{
+name = markBelowDot;
+position = "{0, -174}";
 }
 );
 components = (
 {
-name = "sukun-ar";
+name = "ring-ar";
 }
 );
 layerId = master01;
@@ -23237,12 +23265,16 @@ width = 0;
 anchors = (
 {
 name = _dotBelow;
-position = "{0, 140}";
+position = "{0, 0}";
+},
+{
+name = markBelowDot;
+position = "{0, -142}";
 }
 );
 components = (
 {
-name = "sukun-ar";
+name = "ring-ar";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -23252,12 +23284,16 @@ width = 0;
 anchors = (
 {
 name = _dotBelow;
-position = "{0, 166}";
+position = "{0, -20}";
+},
+{
+name = markBelowDot;
+position = "{0, -270}";
 }
 );
 components = (
 {
-name = "sukun-ar";
+name = "ring-ar";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -23991,45 +24027,150 @@ layers = (
 anchors = (
 {
 name = _ringBelow;
-position = "{0, 133}";
-}
-);
-components = (
+position = "{0, 87}";
+},
 {
-name = "sukun-ar";
+name = markBelowDot;
+position = "{0, -174}";
 }
 );
 layerId = master01;
+paths = (
+{
+closed = 1;
+nodes = (
+"-42 24 OFFCURVE",
+"-24 42 OFFCURVE",
+"0 42 CURVE SMOOTH",
+"24 42 OFFCURVE",
+"42 24 OFFCURVE",
+"42 0 CURVE SMOOTH",
+"42 -24 OFFCURVE",
+"24 -42 OFFCURVE",
+"0 -42 CURVE SMOOTH",
+"-24 -42 OFFCURVE",
+"-42 -24 OFFCURVE",
+"-42 0 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-87 -49 OFFCURVE",
+"-48 -87 OFFCURVE",
+"0 -87 CURVE SMOOTH",
+"49 -87 OFFCURVE",
+"87 -48 OFFCURVE",
+"87 0 CURVE SMOOTH",
+"87 49 OFFCURVE",
+"48 87 OFFCURVE",
+"0 87 CURVE SMOOTH",
+"-49 87 OFFCURVE",
+"-87 48 OFFCURVE",
+"-87 0 CURVE SMOOTH"
+);
+}
+);
 width = 0;
 },
 {
 anchors = (
 {
 name = _ringBelow;
-position = "{0, 140}";
-}
-);
-components = (
+position = "{0, 57}";
+},
 {
-name = "sukun-ar";
+name = markBelowDot;
+position = "{0, -142}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+paths = (
+{
+closed = 1;
+nodes = (
+"-25 14 OFFCURVE",
+"-14 25 OFFCURVE",
+"0 25 CURVE SMOOTH",
+"14 25 OFFCURVE",
+"25 14 OFFCURVE",
+"25 0 CURVE SMOOTH",
+"25 -14 OFFCURVE",
+"14 -25 OFFCURVE",
+"0 -25 CURVE SMOOTH",
+"-14 -25 OFFCURVE",
+"-25 -14 OFFCURVE",
+"-25 0 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-57 -32 OFFCURVE",
+"-32 -57 OFFCURVE",
+"0 -57 CURVE SMOOTH",
+"32 -57 OFFCURVE",
+"57 -32 OFFCURVE",
+"57 0 CURVE SMOOTH",
+"57 32 OFFCURVE",
+"32 57 OFFCURVE",
+"0 57 CURVE SMOOTH",
+"-32 57 OFFCURVE",
+"-57 32 OFFCURVE",
+"-57 0 CURVE SMOOTH"
+);
+}
+);
 width = 0;
 },
 {
 anchors = (
 {
 name = _ringBelow;
-position = "{0, 166}";
-}
-);
-components = (
+position = "{0, 87}";
+},
 {
-name = "sukun-ar";
+name = markBelowDot;
+position = "{0, -174}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+paths = (
+{
+closed = 1;
+nodes = (
+"-42 24 OFFCURVE",
+"-24 42 OFFCURVE",
+"0 42 CURVE SMOOTH",
+"24 42 OFFCURVE",
+"42 24 OFFCURVE",
+"42 0 CURVE SMOOTH",
+"42 -24 OFFCURVE",
+"24 -42 OFFCURVE",
+"0 -42 CURVE SMOOTH",
+"-24 -42 OFFCURVE",
+"-42 -24 OFFCURVE",
+"-42 0 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"-87 -49 OFFCURVE",
+"-48 -87 OFFCURVE",
+"0 -87 CURVE SMOOTH",
+"49 -87 OFFCURVE",
+"87 -48 OFFCURVE",
+"87 0 CURVE SMOOTH",
+"87 49 OFFCURVE",
+"48 87 OFFCURVE",
+"0 87 CURVE SMOOTH",
+"-49 87 OFFCURVE",
+"-87 48 OFFCURVE",
+"-87 0 CURVE SMOOTH"
+);
+}
+);
 width = 0;
 }
 );

@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ringbelow-ar" format="2">
-  <anchor x="0" y="166" name="_dotBelow"/>
+  <anchor x="0" y="-20" name="_dotBelow"/>
+  <anchor x="0" y="-270" name="markBelowDot"/>
   <outline>
-    <component base="sukun-ar"/>
+    <component base="ring-ar"/>
   </outline>
   <lib>
     <dict>

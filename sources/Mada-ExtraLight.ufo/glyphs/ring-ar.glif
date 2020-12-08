@@ -1,8 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ring-ar" format="2">
-  <anchor x="0" y="140" name="_ringBelow"/>
+  <anchor x="0" y="57" name="_ringBelow"/>
+  <anchor x="0" y="-142" name="markBelowDot"/>
   <outline>
-    <component base="sukun-ar"/>
+    <contour>
+      <point x="-25" y="0" type="curve" smooth="yes"/>
+      <point x="-25" y="14"/>
+      <point x="-14" y="25"/>
+      <point x="0" y="25" type="curve" smooth="yes"/>
+      <point x="14" y="25"/>
+      <point x="25" y="14"/>
+      <point x="25" y="0" type="curve" smooth="yes"/>
+      <point x="25" y="-14"/>
+      <point x="14" y="-25"/>
+      <point x="0" y="-25" type="curve" smooth="yes"/>
+      <point x="-14" y="-25"/>
+      <point x="-25" y="-14"/>
+    </contour>
+    <contour>
+      <point x="-57" y="0" type="curve" smooth="yes"/>
+      <point x="-57" y="-32"/>
+      <point x="-32" y="-57"/>
+      <point x="0" y="-57" type="curve" smooth="yes"/>
+      <point x="32" y="-57"/>
+      <point x="57" y="-32"/>
+      <point x="57" y="0" type="curve" smooth="yes"/>
+      <point x="57" y="32"/>
+      <point x="32" y="57"/>
+      <point x="0" y="57" type="curve" smooth="yes"/>
+      <point x="-32" y="57"/>
+      <point x="-57" y="32"/>
+    </contour>
   </outline>
   <lib>
     <dict>
