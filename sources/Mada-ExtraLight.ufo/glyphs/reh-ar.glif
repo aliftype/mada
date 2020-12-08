@@ -2,10 +2,10 @@
 <glyph name="reh-ar" format="2">
   <advance width="227"/>
   <unicode hex="0631"/>
+  <anchor x="70" y="0" name="center"/>
   <anchor x="169" y="-76" name="dash"/>
   <anchor x="171" y="291" name="dotAbove"/>
   <anchor x="93" y="-280" name="dotBelow"/>
-  <anchor x="70" y="0" name="dotMiddle"/>
   <anchor x="171" y="291" name="hamzaAbove"/>
   <anchor x="113" y="329" name="markAbove"/>
   <anchor x="93" y="-300" name="markBelow"/>

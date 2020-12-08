@@ -5592,6 +5592,10 @@ layers = (
 {
 anchors = (
 {
+name = center;
+position = "{70, 0}";
+},
+{
 name = dash;
 position = "{210, -50}";
 },
@@ -5602,10 +5606,6 @@ position = "{212, 329}";
 {
 name = dotBelow;
 position = "{122, -312}";
-},
-{
-name = dotMiddle;
-position = "{70, 0}";
 },
 {
 name = hamzaAbove;
@@ -5651,6 +5651,10 @@ width = 302;
 {
 anchors = (
 {
+name = center;
+position = "{70, 0}";
+},
+{
 name = dash;
 position = "{169, -76}";
 },
@@ -5661,10 +5665,6 @@ position = "{171, 291}";
 {
 name = dotBelow;
 position = "{93, -280}";
-},
-{
-name = dotMiddle;
-position = "{70, 0}";
 },
 {
 name = hamzaAbove;
@@ -5710,6 +5710,10 @@ width = 227;
 {
 anchors = (
 {
+name = center;
+position = "{60, 60}";
+},
+{
 name = dash;
 position = "{240, 40}";
 },
@@ -5720,10 +5724,6 @@ position = "{241, 441}";
 {
 name = dotBelow;
 position = "{123, -380}";
-},
-{
-name = dotMiddle;
-position = "{60, 60}";
 },
 {
 name = hamzaAbove;
@@ -22351,7 +22351,7 @@ layers = (
 {
 anchors = (
 {
-name = _dotMiddle;
+name = _center;
 position = "{0, 0}";
 }
 );
@@ -22366,7 +22366,7 @@ width = 0;
 {
 anchors = (
 {
-name = _dotMiddle;
+name = _center;
 position = "{0, 0}";
 }
 );
@@ -22381,7 +22381,7 @@ width = 0;
 {
 anchors = (
 {
-name = _dotMiddle;
+name = _center;
 position = "{0, 0}";
 }
 );
