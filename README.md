@@ -38,7 +38,7 @@ Then to build the fonts:
 Installation
 ------------
 
-Mada comes in two flavours, a [variable font][3] that has all the font styles
+Mada comes in two flavours, a [variable font][2] that has all the font styles
 in the same file, and allow dynamic changes of the font styles, and a set of
 static instances for specific font styles.
 
