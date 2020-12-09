@@ -28,6 +28,9 @@ def main(args=None):
         record = name.getName(nameID, 3, 1)
         record.string = str(record).replace("-Regular", "").replace(" Regular", "")
 
+    cmap = font["cmap"]
+    cmap.tables = [t for t in cmap.tables if (t.platformID, t.platEncID) == (3, 10)]
+
     if "CFF2" in font:
         from cffsubr import subroutinize
         subroutinize(font, cff_version=2)
