@@ -63,7 +63,6 @@ value = master01;
 );
 date = "2015-10-10 14:55:59 +0000";
 designer = "Khaled Hosny";
-disablesAutomaticAlignment = 1;
 familyName = Mada;
 featurePrefixes = (
 {
@@ -748,6 +747,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "hamza-ar";
 transform = "{1, 0, 0, 1, 0, 261}";
 }
@@ -758,6 +758,7 @@ width = 376;
 {
 components = (
 {
+alignment = -1;
 name = "hamza-ar";
 transform = "{1, 0, 0, 1, 0, 258}";
 }
@@ -768,6 +769,7 @@ width = 272;
 {
 components = (
 {
+alignment = -1;
 name = "hamza-ar";
 transform = "{1, 0, 0, 1, 0, 261}";
 }
@@ -964,10 +966,12 @@ position = "{117, 701}";
 );
 components = (
 {
+alignment = -1;
 name = "lam-ar.init";
 transform = "{-1, 0, 0, 1, 257, 0}";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{-1, 0, 0, 1, 260, 0}";
 }
@@ -1008,10 +1012,12 @@ position = "{56, 702}";
 );
 components = (
 {
+alignment = -1;
 name = "lam-ar.init";
 transform = "{-1, 0, 0, 1, 196, 0}";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{-1, 0, 0, 1, 196, 0}";
 }
@@ -1052,10 +1058,12 @@ position = "{186, 732}";
 );
 components = (
 {
+alignment = -1;
 name = "lam-ar.init";
 transform = "{-1, 0, 0, 1, 370, 0}";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{-1, 0, 0, 1, 365, 0}";
 }
@@ -2141,6 +2149,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "behDotless-ar";
 }
 );
@@ -2150,6 +2159,7 @@ width = 687;
 {
 components = (
 {
+alignment = -1;
 name = "behDotless-ar";
 }
 );
@@ -2159,6 +2169,7 @@ width = 634;
 {
 components = (
 {
+alignment = -1;
 name = "behDotless-ar";
 }
 );
@@ -2174,6 +2185,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "behDotless-ar.init";
 }
 );
@@ -2183,6 +2195,7 @@ width = 382;
 {
 components = (
 {
+alignment = -1;
 name = "behDotless-ar.init";
 }
 );
@@ -2192,6 +2205,7 @@ width = 358;
 {
 components = (
 {
+alignment = -1;
 name = "behDotless-ar.init";
 }
 );
@@ -3896,6 +3910,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar.2";
 transform = "{1, 0, 0, 1, 0, -91}";
 }
@@ -3906,6 +3921,7 @@ width = 488;
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar.2";
 transform = "{1, 0, 0, 1, 0, -91}";
 }
@@ -3916,6 +3932,7 @@ width = 436;
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar.2";
 transform = "{1, 0, 0, 1, 0, -132}";
 }
@@ -4127,6 +4144,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar";
 transform = "{1, 0, 0, 1, 0, -91}";
 }
@@ -4137,6 +4155,7 @@ width = 488;
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar";
 transform = "{1, 0, 0, 1, 0, -91}";
 }
@@ -4147,6 +4166,7 @@ width = 436;
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar";
 transform = "{1, 0, 0, 1, 0, -132}";
 }
@@ -4164,6 +4184,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar.init";
 }
 );
@@ -4173,6 +4194,7 @@ width = 549;
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar.init";
 }
 );
@@ -4182,6 +4204,7 @@ width = 526;
 {
 components = (
 {
+alignment = -1;
 name = "hah-ar.init";
 }
 );
@@ -4907,6 +4930,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "dal-ar";
 }
 );
@@ -4916,6 +4940,7 @@ width = 402;
 {
 components = (
 {
+alignment = -1;
 name = "dal-ar";
 }
 );
@@ -4925,6 +4950,7 @@ width = 372;
 {
 components = (
 {
+alignment = -1;
 name = "dal-ar";
 }
 );
@@ -5800,6 +5826,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "reh-ar";
 }
 );
@@ -5820,6 +5847,7 @@ width = 361;
 {
 components = (
 {
+alignment = -1;
 name = "reh-ar";
 transform = "{1, 0, 0, 1, 0, -1}";
 }
@@ -5841,6 +5869,7 @@ width = 300;
 {
 components = (
 {
+alignment = -1;
 name = "reh-ar";
 }
 );
@@ -6903,6 +6932,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "seen-ar";
 }
 );
@@ -6912,6 +6942,7 @@ width = 854;
 {
 components = (
 {
+alignment = -1;
 name = "seen-ar";
 }
 );
@@ -6921,6 +6952,7 @@ width = 788;
 {
 components = (
 {
+alignment = -1;
 name = "seen-ar";
 }
 );
@@ -6937,6 +6969,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "seen-ar.init";
 }
 );
@@ -6946,6 +6979,7 @@ width = 629;
 {
 components = (
 {
+alignment = -1;
 name = "seen-ar.init";
 }
 );
@@ -6955,6 +6989,7 @@ width = 595;
 {
 components = (
 {
+alignment = -1;
 name = "seen-ar.init";
 }
 );
@@ -7478,6 +7513,7 @@ position = "{617, 476}";
 );
 components = (
 {
+alignment = -1;
 name = "_sad-ar.head";
 transform = "{1, 0, 0, 1, 722, 0}";
 }
@@ -7533,6 +7569,7 @@ position = "{572, 465}";
 );
 components = (
 {
+alignment = -1;
 name = "_sad-ar.head";
 transform = "{1, 0, 0, 1, 655, 0}";
 }
@@ -7588,6 +7625,7 @@ position = "{669, 610}";
 );
 components = (
 {
+alignment = -1;
 name = "_sad-ar.head";
 transform = "{1, 0, 0, 1, 856, 0}";
 }
@@ -7633,6 +7671,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "sad-ar";
 }
 );
@@ -7642,6 +7681,7 @@ width = 959;
 {
 components = (
 {
+alignment = -1;
 name = "sad-ar";
 }
 );
@@ -7651,6 +7691,7 @@ width = 865.02353;
 {
 components = (
 {
+alignment = -1;
 name = "sad-ar";
 }
 );
@@ -7667,6 +7708,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "sad-ar.init";
 }
 );
@@ -7676,6 +7718,7 @@ width = 644;
 {
 components = (
 {
+alignment = -1;
 name = "sad-ar.init";
 }
 );
@@ -7685,6 +7728,7 @@ width = 580.02353;
 {
 components = (
 {
+alignment = -1;
 name = "sad-ar.init";
 }
 );
@@ -7718,6 +7762,7 @@ position = "{302, 465}";
 );
 components = (
 {
+alignment = -1;
 name = "_sad-ar.head";
 transform = "{1, 0, 0, 1, 406, 0}";
 }
@@ -7766,6 +7811,7 @@ position = "{286, 464}";
 );
 components = (
 {
+alignment = -1;
 name = "_sad-ar.head";
 transform = "{1, 0, 0, 1, 369, 0}";
 }
@@ -7814,6 +7860,7 @@ position = "{293, 606}";
 );
 components = (
 {
+alignment = -1;
 name = "_sad-ar.head";
 transform = "{1, 0, 0, 1, 479, 0}";
 }
@@ -8269,6 +8316,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 }
 );
@@ -8278,6 +8326,7 @@ width = 588.86685;
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 }
 );
@@ -8287,6 +8336,7 @@ width = 567.6675;
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 }
 );
@@ -8303,6 +8353,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 transform = "{1, 0, 0, 1, -46, 0}";
 }
@@ -8313,6 +8364,7 @@ width = 542.86685;
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 transform = "{1, 0, 0, 1, -40, 0}";
 }
@@ -8323,6 +8375,7 @@ width = 527.6675;
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 transform = "{1, 0, 0, 1, -70, 0}";
 }
@@ -8340,6 +8393,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 transform = "{1, 0, 0, 1, -46, 0}";
 }
@@ -8350,6 +8404,7 @@ width = 591.86685;
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 transform = "{1, 0, 0, 1, -40, 0}";
 }
@@ -8360,6 +8415,7 @@ width = 575.6675;
 {
 components = (
 {
+alignment = -1;
 name = "tah-ar";
 transform = "{1, 0, 0, 1, -70, 0}";
 }
@@ -8709,10 +8765,12 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "ain-ar";
 transform = "{1, 0, 0, 1, 0, -72}";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{1, 0, 0, 1, 418, 0}";
 }
@@ -8723,10 +8781,12 @@ width = 415;
 {
 components = (
 {
+alignment = -1;
 name = "ain-ar";
 transform = "{1, 0, 0, 1, 0, -71}";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{1, 0, 0, 1, 386, 0}";
 }
@@ -8737,10 +8797,12 @@ width = 386;
 {
 components = (
 {
+alignment = -1;
 name = "ain-ar";
 transform = "{1, 0, 0, 1, 0, -43}";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{1, 0, 0, 1, 481, 0}";
 }
@@ -8758,9 +8820,11 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "ain-ar.init";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{1, 0, 0, 1, 471, 0}";
 }
@@ -8771,9 +8835,11 @@ width = 468;
 {
 components = (
 {
+alignment = -1;
 name = "ain-ar.init";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{1, 0, 0, 1, 468, 0}";
 }
@@ -8784,9 +8850,11 @@ width = 468;
 {
 components = (
 {
+alignment = -1;
 name = "ain-ar.init";
 },
 {
+alignment = -1;
 name = extender;
 transform = "{1, 0, 0, 1, 493, 0}";
 }
@@ -9482,6 +9550,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "fehDotless-ar";
 }
 );
@@ -9491,6 +9560,7 @@ width = 771;
 {
 components = (
 {
+alignment = -1;
 name = "fehDotless-ar";
 }
 );
@@ -9500,6 +9570,7 @@ width = 718;
 {
 components = (
 {
+alignment = -1;
 name = "fehDotless-ar";
 }
 );
@@ -9515,6 +9586,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "fehDotless-ar.init";
 }
 );
@@ -9524,6 +9596,7 @@ width = 447;
 {
 components = (
 {
+alignment = -1;
 name = "fehDotless-ar.init";
 }
 );
@@ -9533,6 +9606,7 @@ width = 423;
 {
 components = (
 {
+alignment = -1;
 name = "fehDotless-ar.init";
 }
 );
@@ -10758,6 +10832,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "kafDotless-ar";
 }
 );
@@ -10767,6 +10842,7 @@ width = 526;
 {
 components = (
 {
+alignment = -1;
 name = "kafDotless-ar";
 }
 );
@@ -10776,6 +10852,7 @@ width = 456;
 {
 components = (
 {
+alignment = -1;
 name = "kafDotless-ar";
 }
 );
@@ -10844,6 +10921,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "kaf-ar.init";
 }
 );
@@ -10853,6 +10931,7 @@ width = 502;
 {
 components = (
 {
+alignment = -1;
 name = "kaf-ar.init";
 }
 );
@@ -10862,6 +10941,7 @@ width = 394;
 {
 components = (
 {
+alignment = -1;
 name = "kaf-ar.init";
 }
 );
@@ -11115,6 +11195,7 @@ position = "{243, 676}";
 );
 components = (
 {
+alignment = -1;
 name = "kaf-ar.medi";
 transform = "{1, 0, 0, 1, 111, 0}";
 }
@@ -11162,6 +11243,7 @@ position = "{273, 657}";
 );
 components = (
 {
+alignment = -1;
 name = "kaf-ar.medi";
 transform = "{1, 0, 0, 1, 64, 0}";
 }
@@ -11209,6 +11291,7 @@ position = "{293, 798}";
 );
 components = (
 {
+alignment = -1;
 name = "kaf-ar.medi";
 transform = "{1, 0, 0, 1, 204, 0}";
 }
@@ -11238,6 +11321,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "keheh-ar";
 }
 );
@@ -11247,6 +11331,7 @@ width = 617;
 {
 components = (
 {
+alignment = -1;
 name = "keheh-ar";
 }
 );
@@ -11256,6 +11341,7 @@ width = 470;
 {
 components = (
 {
+alignment = -1;
 name = "keheh-ar";
 }
 );
@@ -11687,6 +11773,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar.init";
 transform = "{1, 0, 0, 1, 111, 0}";
 }
@@ -11708,6 +11795,7 @@ width = 960;
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar.init";
 transform = "{1, 0, 0, 1, 64, 0}";
 }
@@ -11729,6 +11817,7 @@ width = 850.63476;
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar.init";
 transform = "{1, 0, 0, 1, 204, 0}";
 }
@@ -11757,6 +11846,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar";
 }
 );
@@ -11766,6 +11856,7 @@ width = 913;
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar";
 }
 );
@@ -11775,6 +11866,7 @@ width = 810.63476;
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar";
 }
 );
@@ -11790,6 +11882,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar.init";
 }
 );
@@ -11799,6 +11892,7 @@ width = 799;
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar.init";
 }
 );
@@ -11808,6 +11902,7 @@ width = 736.63476;
 {
 components = (
 {
+alignment = -1;
 name = "kafswash-ar.init";
 }
 );
@@ -12615,6 +12710,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar";
 }
 );
@@ -12624,6 +12720,7 @@ width = 493;
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar";
 }
 );
@@ -12633,6 +12730,7 @@ width = 440;
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar";
 }
 );
@@ -12649,6 +12747,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar.init";
 }
 );
@@ -12658,6 +12757,7 @@ width = 211;
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar.init";
 }
 );
@@ -12667,6 +12767,7 @@ width = 156;
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar.init";
 }
 );
@@ -12683,6 +12784,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar.init.1";
 }
 );
@@ -12692,6 +12794,7 @@ width = 152;
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar.init.1";
 }
 );
@@ -12701,6 +12804,7 @@ width = 122;
 {
 components = (
 {
+alignment = -1;
 name = "lam-ar.init.1";
 }
 );
@@ -13506,6 +13610,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "meem-ar";
 }
 );
@@ -13526,6 +13631,7 @@ width = 485;
 {
 components = (
 {
+alignment = -1;
 name = "meem-ar";
 }
 );
@@ -13546,6 +13652,7 @@ width = 408;
 {
 components = (
 {
+alignment = -1;
 name = "meem-ar";
 }
 );
@@ -13573,6 +13680,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "meem-ar.init";
 }
 );
@@ -13593,6 +13701,7 @@ width = 459;
 {
 components = (
 {
+alignment = -1;
 name = "meem-ar.init";
 }
 );
@@ -13613,6 +13722,7 @@ width = 435;
 {
 components = (
 {
+alignment = -1;
 name = "meem-ar.init";
 }
 );
@@ -14116,6 +14226,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "noonghunna-ar";
 }
 );
@@ -14136,6 +14247,7 @@ width = 603;
 {
 components = (
 {
+alignment = -1;
 name = "noonghunna-ar";
 }
 );
@@ -14156,6 +14268,7 @@ width = 574;
 {
 components = (
 {
+alignment = -1;
 name = "noonghunna-ar";
 }
 );
@@ -14546,6 +14659,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "heh-ar";
 }
 );
@@ -14555,6 +14669,7 @@ width = 391;
 {
 components = (
 {
+alignment = -1;
 name = "heh-ar";
 }
 );
@@ -14564,6 +14679,7 @@ width = 320;
 {
 components = (
 {
+alignment = -1;
 name = "heh-ar";
 }
 );
@@ -14580,6 +14696,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "heh-ar.init";
 }
 );
@@ -14589,6 +14706,7 @@ width = 656;
 {
 components = (
 {
+alignment = -1;
 name = "heh-ar.init";
 }
 );
@@ -14598,6 +14716,7 @@ width = 632;
 {
 components = (
 {
+alignment = -1;
 name = "heh-ar.init";
 }
 );
@@ -15696,6 +15815,7 @@ position = "{382, 664}";
 );
 components = (
 {
+alignment = -1;
 name = "heh-ar.medi";
 transform = "{1, 0, 0, 1, 46, 0}";
 }
@@ -15724,6 +15844,7 @@ position = "{375.903, 665}";
 );
 components = (
 {
+alignment = -1;
 name = "heh-ar.medi";
 transform = "{1, 0, 0, 1, 39.903, 0}";
 }
@@ -15752,6 +15873,7 @@ position = "{395.918, 675}";
 );
 components = (
 {
+alignment = -1;
 name = "heh-ar.medi";
 transform = "{1, 0, 0, 1, 59.918, 0}";
 }
@@ -16162,6 +16284,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "waw-ar";
 }
 );
@@ -16182,6 +16305,7 @@ width = 482;
 {
 components = (
 {
+alignment = -1;
 name = "waw-ar";
 }
 );
@@ -16202,6 +16326,7 @@ width = 460;
 {
 components = (
 {
+alignment = -1;
 name = "waw-ar";
 }
 );
@@ -16986,6 +17111,7 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "alefMaksura-ar";
 transform = "{1, 0, 0, 1, 0, -116}";
 }
@@ -16996,6 +17122,7 @@ width = 553;
 {
 components = (
 {
+alignment = -1;
 name = "alefMaksura-ar";
 transform = "{1, 0, 0, 1, 0, -150}";
 }
@@ -17006,6 +17133,7 @@ width = 504;
 {
 components = (
 {
+alignment = -1;
 name = "alefMaksura-ar";
 transform = "{1, 0, 0, 1, 0, -70}";
 }
@@ -22436,6 +22564,7 @@ components = (
 name = "dotabove-ar";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 0, 134}";
 }
@@ -22459,6 +22588,7 @@ components = (
 name = "dotabove-ar";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 0, 110}";
 }
@@ -22483,6 +22613,7 @@ name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 0, 200}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 }
 );
@@ -22584,6 +22715,7 @@ name = "dotabove-ar";
 transform = "{1, 0, 0, 1, -84, 0}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 84, 0}";
 }
@@ -22612,6 +22744,7 @@ name = "dotabove-ar";
 transform = "{1, 0, 0, 1, -78, 0}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 78, 0}";
 }
@@ -22640,6 +22773,7 @@ name = "dotabove-ar";
 transform = "{1, 0, 0, 1, -100, 0}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 100, 0}";
 }
@@ -22734,6 +22868,7 @@ components = (
 name = "dotabove-ar";
 },
 {
+alignment = -1;
 name = "twodotshorizontalabove-ar";
 transform = "{1, 0, 0, 1, 0, 113}";
 }
@@ -22757,6 +22892,7 @@ components = (
 name = "dotabove-ar";
 },
 {
+alignment = -1;
 name = "twodotshorizontalabove-ar";
 transform = "{1, 0, 0, 1, 0, 110}";
 }
@@ -22780,6 +22916,7 @@ components = (
 name = "dotabove-ar";
 },
 {
+alignment = -1;
 name = "twodotshorizontalabove-ar";
 transform = "{1, 0, 0, 1, 0, 170}";
 }
@@ -22881,6 +23018,7 @@ components = (
 name = "twodotshorizontalabove-ar";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 0, 120}";
 }
@@ -22908,6 +23046,7 @@ components = (
 name = "twodotshorizontalabove-ar";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 0, 110}";
 }
@@ -22935,6 +23074,7 @@ components = (
 name = "twodotshorizontalabove-ar";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 0, 170}";
 }
@@ -23032,6 +23172,7 @@ components = (
 name = "twodotshorizontalabove-ar";
 },
 {
+alignment = -1;
 name = "twodotshorizontalabove-ar";
 transform = "{1, 0, 0, 1, 0, 151}";
 }
@@ -23055,6 +23196,7 @@ components = (
 name = "twodotshorizontalabove-ar";
 },
 {
+alignment = -1;
 name = "twodotshorizontalabove-ar";
 transform = "{1, 0, 0, 1, 0, 117}";
 }
@@ -23078,6 +23220,7 @@ components = (
 name = "twodotshorizontalabove-ar";
 },
 {
+alignment = -1;
 name = "twodotshorizontalabove-ar";
 transform = "{1, 0, 0, 1, 0, 200}";
 }
@@ -24455,6 +24598,7 @@ name = "fatha-ar";
 transform = "{1, 0, 0, 1, 0, -1}";
 },
 {
+alignment = -1;
 name = "fatha-ar";
 transform = "{1, 0, 0, 1, 0, 104}";
 }
@@ -24474,6 +24618,7 @@ components = (
 name = "fatha-ar";
 },
 {
+alignment = -1;
 name = "fatha-ar";
 transform = "{1, 0, 0, 1, 0, 105}";
 }
@@ -24493,6 +24638,7 @@ components = (
 name = "fatha-ar";
 },
 {
+alignment = -1;
 name = "fatha-ar";
 transform = "{1, 0, 0, 1, 0, 120}";
 }
@@ -26760,10 +26906,12 @@ name = "fatha-ar";
 transform = "{0.93969, 0.34202, -0.34202, 0.93969, 0, 0}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, -82.405, 91.27}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 62.706, -9.73}";
 }
@@ -26784,10 +26932,12 @@ name = "fatha-ar";
 transform = "{0.93969, 0.34202, -0.34202, 0.93969, 0, 0}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, -73.405, 96.202}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{1, 0, 0, 1, 55.81, -16.221}";
 }
@@ -26808,10 +26958,12 @@ name = "fatha-ar";
 transform = "{0.93969, 0.34202, -0.34202, 0.93969, 0, 0}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{0.6, 0, 0, 0.6, -110.542, 120.742}";
 },
 {
+alignment = -1;
 name = "dotabove-ar";
 transform = "{0.6, 0, 0, 0.6, 81.691, -24.51}";
 }
