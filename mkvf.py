@@ -28,6 +28,10 @@ def main(args=None):
         record = name.getName(nameID, 3, 1)
         record.string = str(record).replace("-Regular", "").replace(" Regular", "")
 
+    if "CFF2" in font:
+        from cffsubr import subroutinize
+        subroutinize(font, cff_version=2)
+
     font.save(options.output)
 
 
