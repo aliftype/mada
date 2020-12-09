@@ -3,17 +3,14 @@ VERSION=1.4
 LATIN=SourceSansPro
 
 SRCDIR=sources
-DOCDIR=documentation
 BUILDDIR=build
-TOOLDIR=tools
-TESTDIR=tests
 DIST=$(NAME)-$(VERSION)
 
 PY ?= python
-PREPARE=$(TOOLDIR)/prepare.py
-MKINST=$(TOOLDIR)/mkinstance.py
-MKVF=$(TOOLDIR)/mkvf.py
-MKSAMPLE=$(TOOLDIR)/mksample.py
+PREPARE=prepare.py
+MKINST=mkinstance.py
+MKVF=mkvf.py
+MKSAMPLE=mksample.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
@@ -81,11 +78,11 @@ $(TTV): $(TTM) $(UFO) $(BUILDDIR)/$(NAME).designspace
 	@echo " VARIABLE    $(@F)"
 	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
 
-$(BUILDDIR)/$(NAME)-%.ufo: $(SRCDIR)/$(NAME).glyphs $(SRCDIR)/$(LATIN)/Roman/Instances/%/font.ufo $(PREPARE) $(BUILDDIR)
+$(BUILDDIR)/$(NAME)-%.ufo: $(NAME).glyphs $(LATIN)/Roman/Instances/%/font.ufo $(PREPARE) $(BUILDDIR)
 	@echo "     PREP    $(@F)"
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
-$(BUILDDIR)/$(NAME).designspace: $(SRCDIR)/$(NAME).designspace $(BUILDDIR)
+$(BUILDDIR)/$(NAME).designspace: $(NAME).designspace $(BUILDDIR)
 	@echo "      GEN    $(@F)"
 	@cp $< $@
 
