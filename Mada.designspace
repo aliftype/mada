@@ -2,19 +2,16 @@
 <designspace format="3">
   <axes>
     <axis default="400" maximum="900" minimum="200" name="weight" tag="wght" />
-    <axis default="0"   maximum="15"  minimum="-15" name="slant"  tag="slnt" />
   </axes>
   <sources>
     <source filename="Mada-ExtraLight.ufo" name="extralightup">
       <location>
         <dimension name="weight" xvalue="200"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </source>
     <source filename="Mada-Regular.ufo" name="regular">
       <location>
         <dimension name="weight" xvalue="400"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
       <features copy="1" />
       <info copy="1" />
@@ -23,7 +20,6 @@
     <source filename="Mada-Black.ufo" name="blackup">
       <location>
         <dimension name="weight" xvalue="900"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </source>
   </sources>
@@ -35,7 +31,6 @@
               >
       <location>
         <dimension name="weight" xvalue="200"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Light"
@@ -45,7 +40,6 @@
               >
       <location>
         <dimension name="weight" xvalue="300"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Regular"
@@ -55,7 +49,6 @@
               >
       <location>
         <dimension name="weight" xvalue="400"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Medium"
@@ -65,7 +58,6 @@
               >
       <location>
         <dimension name="weight" xvalue="500"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="SemiBold"
@@ -75,7 +67,6 @@
               >
       <location>
         <dimension name="weight" xvalue="600"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Bold"
@@ -85,7 +76,6 @@
               >
       <location>
         <dimension name="weight" xvalue="700"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="ExtraBold"
@@ -95,7 +85,6 @@
               >
       <location>
         <dimension name="weight" xvalue="800"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Black"
@@ -105,7 +94,6 @@
               >
       <location>
         <dimension name="weight" xvalue="900"/>
-        <dimension name="slant"  xvalue="0"/>
       </location>
     </instance>
   </instances>
