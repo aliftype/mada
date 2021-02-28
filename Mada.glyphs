@@ -1,5 +1,5 @@
 {
-.appVersion = "1350";
+.appVersion = "1354";
 classes = (
 {
 code = "kasratan-ar kasra-ar";
@@ -196,7 +196,7 @@ code = "    sub zero-persian by zero-ar;
     sub tahThreedots-ar by tah-ar threedotsupabove-ar;
     sub ainThreedots-ar by ain-ar threedotsupabove-ar;
     sub fehDotmovedbelow-ar by fehDotless-ar dotbelow-ar;
-    sub fehDotbelow-ar by fehDotless-ar dotabove-ar dotcenter-ar.alt;
+    sub fehDotbelow-ar by fehDotless-ar dotabove-ar dotbelow-ar;
     sub veh-ar by fehDotless-ar threedotsupabove-ar;
     sub fehThreedotsbelow-ar by fehDotless-ar threedotsdownbelow-ar;
     sub peheh-ar by fehDotless-ar fourdotsabove-ar;
@@ -8911,10 +8911,6 @@ name = bottom.mark;
 position = "{401, -125}";
 },
 {
-name = center;
-position = "{401, -99}";
-},
-{
 name = top.a;
 position = "{591, 609}";
 },
@@ -8988,10 +8984,6 @@ name = bottom.mark;
 position = "{379, -120}";
 },
 {
-name = center;
-position = "{379, -100}";
-},
-{
 name = top.a;
 position = "{569, 549}";
 },
@@ -9063,10 +9055,6 @@ position = "{658, -140}";
 {
 name = bottom.mark;
 position = "{499, -175}";
-},
-{
-name = center;
-position = "{499, -140}";
 },
 {
 name = top.a;
@@ -9219,10 +9207,6 @@ name = bottom.mark;
 position = "{258, -169}";
 },
 {
-name = center;
-position = "{258, -143}";
-},
-{
 name = top.a;
 position = "{267, 609}";
 },
@@ -9288,10 +9272,6 @@ name = bottom.mark;
 position = "{231, -170}";
 },
 {
-name = center;
-position = "{231, -150}";
-},
-{
 name = top.a;
 position = "{274, 590}";
 },
@@ -9355,10 +9335,6 @@ position = "{273, -160}";
 {
 name = bottom.mark;
 position = "{273, -195}";
-},
-{
-name = center;
-position = "{273, -160}";
 },
 {
 name = top.a;
@@ -21486,70 +21462,6 @@ anchors = (
 {
 name = _center;
 position = "{0, 0}";
-}
-);
-components = (
-{
-name = "dotabove-ar";
-}
-);
-layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 0;
-}
-);
-category = Mark;
-subCategory = Nonspacing;
-},
-{
-glyphname = "dotcenter-ar.alt";
-layers = (
-{
-anchors = (
-{
-name = _center;
-position = "{0, 0}";
-},
-{
-name = bottom.mark;
-position = "{0, -129}";
-}
-);
-components = (
-{
-name = "dotabove-ar";
-}
-);
-layerId = master01;
-width = 0;
-},
-{
-anchors = (
-{
-name = _center;
-position = "{0, 0}";
-},
-{
-name = bottom.mark;
-position = "{0, -110}";
-}
-);
-components = (
-{
-name = "dotabove-ar";
-}
-);
-layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 0;
-},
-{
-anchors = (
-{
-name = _center;
-position = "{0, 0}";
-},
-{
-name = bottom.mark;
-position = "{0, -195}";
 }
 );
 components = (
