@@ -295,9 +295,8 @@ name = ccmp;
 {
 code = "    sub kaf-ar by kafDotless-ar miniKeheh-ar;
     sub noonThreedotsabove-ar by noonghunna-ar threedotsupabove-ar;
-    sub hehgoal-ar by heh-ar;
-    sub hehDoachashmee-ar by heh-ar.init;
-    sub yeh-farsi by alefMaksura-ar;";
+    sub yeh-farsi by alefMaksura-ar;
+";
 name = isol;
 },
 {
@@ -14575,7 +14574,6 @@ width = 569;
 unicode = 06C0;
 },
 {
-color = 0;
 glyphname = "hehgoal-ar";
 layers = (
 {
@@ -15159,7 +15157,6 @@ width = 569;
 unicode = 06C2;
 },
 {
-color = 0;
 glyphname = "hehDoachashmee-ar";
 layers = (
 {
