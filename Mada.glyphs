@@ -16,6 +16,11 @@ name = Dots;
 {
 code = "@Dots @Kasra";
 name = Filter;
+},
+{
+automatic = 1;
+code = "hamza-ar highhamza-ar alef-ar alef-ar.fina alef-ar.fina.1 alef-ar.fina.1.short alef-ar.short alef-ar.fina.short alefHamzaabove-ar alefHamzabelow-ar alefWavyhamzaabove-ar alefWavyhamzabelow-ar alefMadda-ar alefWasla-ar highhamzaAlef-ar behDotless-ar behDotless-ar.fina behDotless-ar.medi behDotless-ar.init beh-ar peh-ar beeh-ar beheh-ar teh-ar tehRing-ar tehThreedotsdown-ar theh-ar tteh-ar tteheh-ar teheh-ar behThreedotsupabove-ar behThreedotsupbelow-ar tehThreedotsupbelow-ar behTwodotsbelowDotabove-ar behVinvertedbelow-ar behVabove-ar behVbelow-ar behhamzaabove-ar jeem-ar tcheh-ar tcheheh-ar tchehDotabove-ar nyeh-ar dyeh-ar hah-ar hah-ar.2 hah-ar.fina hah-ar.fina.2 hah-ar.medi hah-ar.init hahHamzaabove-ar hahTwodotsverticalabove-ar hahTwodotshorizontalabove-ar hahThreedotsabove-ar hahThreedotsupbelow-ar khah-ar jeemTwodotsabove-ar dal-ar dal-ar.fina thal-ar ddal-ar dahal-ar ddahal-ar dalRing-ar dalDotbelow-ar dalDotbelowTah-ar dul-ar dalThreedotsdown-ar dalFourdots-ar dalVinvertedabove-ar dalTwodotsverticalbelowTah-ar dalVinvertedbelow-ar reh-ar reh-ar.fina zain-ar zainVinvertedabove-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar jeh-ar rehFourdots-ar rehVinvertedabove-ar rehStroke-ar rehTwodotsverticalabove-ar rehHamzaabove-ar seen-ar seen-ar.fina seen-ar.medi seen-ar.init seenDotbelowDotabove-ar seenThreedotsbelow-ar sheen-ar sheenDotbelow-ar sheenThreedotsbelow-ar sad-ar sad-ar.fina sad-ar.medi sad-ar.init sadTwodotsbelow-ar sadThreedots-ar dad-ar dadDotbelow-ar tah-ar tah-ar.fina tah-ar.medi tah-ar.init tahThreedots-ar zah-ar ain-ar ain-ar.fina ain-ar.medi ain-ar.init ainThreedots-ar ghain-ar ghainDotbelow-ar feh-ar veh-ar fehDotless-ar fehDotless-ar.fina fehDotless-ar.medi fehDotless-ar.init fehDotmovedbelow-ar fehDotbelow-ar fehThreedotsbelow-ar peheh-ar qafDotless-ar qafDotless-ar.fina qaf-ar qafDotabove-ar qafThreedotsabove-ar kafDotless-ar kafDotless-ar.fina kaf-ar kaf-ar.medi kaf-ar.init keheh-ar keheh-ar.fina kehehTwodotshorizontalabove-ar kehehThreedotsbelow-ar kehehDotabove-ar kehehThreedotsabove-ar kehehThreedotsupbelow-ar gaf-ar gafRing-ar gafThreedots-ar kafswash-ar kafswash-ar.fina kafswash-ar.medi kafswash-ar.init kafRing-ar kafDotabove-ar kafThreedotsbelow-ar gafTwodotsbelow-ar ng-ar ngoeh-ar gueh-ar lam-ar lam-ar.fina lam-ar.medi lam-ar.medi.1 lam-ar.init lam-ar.init.1 lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar meem-ar meem-ar.ss04 meem-ar.fina meem-ar.fina.ss04 meem-ar.medi meem-ar.init noon-ar noonDotbelow-ar noonghunna-ar noonghunna-ar.fina rnoon-ar noonRing-ar noonThreedotsabove-ar heh-ar heh-ar.fina heh-ar.medi heh-ar.init hehHamzaabove-ar hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init hehgoalHamzaabove-ar hehDoachashmee-ar hehDoachashmee-ar.fina hehVinvertedabove-ar tehMarbuta-ar tehMarbutagoal-ar waw-ar waw-ar.fina wawring-ar wawTwodots-ar wawDotabove-ar wawHamzaabove-ar kirghizoe-ar oe-ar u-ar yu-ar kirghizyu-ar ve-ar alefMaksura-ar alefMaksura-ar.fina yeh-ar yehHamzaabove-ar yehVabove-ar yehVinverted-farsi yeh-farsi yehTwodotsabove-farsi yehThreedotsabove-farsi yehTail-ar yehKashmiri-ar e-ar yehThreedotsbelow-ar yehbarree-ar yehbarree-ar.fina yehbarreeHamzaabove-ar highhamzaWaw-ar uHamzaabove-ar highhamzaYeh-ar ae-ar seenFourdotsabove-ar noonTwodotsbelow-ar noonTahabove-ar noonVabove-ar lamBar-ar seenTwodotsverticalabove-ar seenTahTwodotshorizontalabove-ar hahTahabove-ar seenVinvertedabove-ar kashida-ar";
+name = ArabicLetters;
 }
 );
 customParameters = (
@@ -369,7 +374,10 @@ name = fina;
 },
 {
 code = "  lookupflag IgnoreMarks;
-    sub [lam-ar.init lam-ar.medi]' lookup LamAlef alef-ar.fina' lookup LamAlef;";
+    sub [lam-ar.init lam-ar.medi]' lookup LamAlef alef-ar.fina' lookup LamAlef;
+
+    ignore sub @ArabicLetters heh-ar';
+    sub heh-ar' by hehDoachashmee-ar;";
 name = rlig;
 },
 {
