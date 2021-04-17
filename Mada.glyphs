@@ -30,6 +30,10 @@ value = (
 );
 },
 {
+name = "Variable Font Origin";
+value = master01;
+},
+{
 name = "Use Typo Metrics";
 value = 1;
 },
@@ -42,8 +46,8 @@ name = "Use Line Breaks";
 value = 1;
 },
 {
-name = "Variable Font Origin";
-value = master01;
+name = "Write DisplayStrings";
+value = 1;
 },
 {
 name = description;
