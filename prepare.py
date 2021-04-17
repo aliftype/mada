@@ -130,7 +130,8 @@ def merge(ufo, args):
                     )
         # Break loudly if we have duplicated glyph in Latin and Arabic.
         # TODO should check duplicated Unicode values as well
-        assert glyph.name not in ufo, glyph.name
+        if glyph.name in ufo:
+            continue
         ufo.addGlyph(glyph)
         ufo.glyphOrder += [glyph.name]
 
