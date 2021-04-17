@@ -380,13 +380,13 @@ code = "  @Alef = [alef-ar alef-ar.fina alef-ar.fina.1];
   lookupflag 0;
     sub @Alef' @Hamza.above by @Alef.short;";
 name = ss02;
-notes = "Name: Alternate short Alef with Hamza above";
+notes = "featureNames {\012	name 3 1 0x409 \"Alternate short Alef with Hamza above\";\012	name 3 1 0xC01 \"ألف همزة قصيرة بديلة\";\012};\012";
 },
 {
 code = "  lookupflag 0;
     sub shadda-ar' @Kasra' lookup ss03_l;";
 name = ss03;
-notes = "Name: Position Kasra/Kasratan directly below Shadda";
+notes = "featureNames {\012	name 3 1 0x409 \"Position Kasra/Kasratan directly below Shadda\";\012	name 3 1 0xC01 \"الكسرة والكسرتين تحت الشدة مباشرة\";\012};\012";
 },
 {
 automatic = 1;
