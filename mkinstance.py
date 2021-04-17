@@ -92,6 +92,7 @@ def removeOverlap(font):
         from cffsubr import subroutinize
 
         subroutinize(font, cff_version=1)
+        font["CFF "].desubroutinize()
 
 
 def main(args=None):
