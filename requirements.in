@@ -1,5 +1,5 @@
 fontmake
-fonttools[ufo,lxml]
+fonttools[lxml]
 skia-pathops
 ufo2ft
 ufoLib2

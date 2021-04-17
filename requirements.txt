@@ -14,21 +14,19 @@ booleanoperations==0.9.0
     # via
     #   fontmake
     #   ufo2ft
-cffsubr==0.2.7
-    # via
-    #   -r requirements.in
-    #   ufo2ft
-compreffor==0.5.0
+cffsubr==0.2.8
+    # via ufo2ft
+compreffor==0.5.1
     # via ufo2ft
 cu2qu==1.6.7
     # via
     #   fontmake
     #   ufo2ft
-fontmake==2.2.1
+fontmake==2.4.0
     # via -r requirements.in
 fontmath==0.6.0
     # via fontmake
-fonttools[lxml,ufo,unicode]==4.18.0
+fonttools[lxml,ufo,unicode]==4.22.0
     # via
     #   -r requirements.in
     #   booleanoperations
@@ -40,29 +38,29 @@ fonttools[lxml,ufo,unicode]==4.18.0
     #   glyphslib
     #   ufo2ft
     #   ufolib2
-fs==2.4.11
+fs==2.4.13
     # via fonttools
-glyphslib==5.3.0
+glyphslib==5.3.2
     # via fontmake
 lxml==4.6.3
     # via
     #   fonttools
     #   svgutils
-pyclipper==1.2.0
+pyclipper==1.2.1
     # via booleanoperations
-pytz==2020.4
+pytz==2021.1
     # via fs
 six==1.15.0
     # via fs
-skia-pathops==0.5.1.post1
+skia-pathops==0.6.0.post2
     # via -r requirements.in
-svgutils==0.3.1
+svgutils==0.3.4
     # via -r requirements.in
-ufo2ft[cffsubr]==2.18.1
+ufo2ft[compreffor]==2.21.0
     # via
     #   -r requirements.in
     #   fontmake
-ufolib2==0.10.0
+ufolib2==0.11.1
     # via
     #   -r requirements.in
     #   fontmake
