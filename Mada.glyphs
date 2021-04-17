@@ -2,7 +2,8 @@
 .appVersion = "3078";
 DisplayStrings = (
 "/alef-ar.fina.1.short",
-"/alef-ar.short"
+"/alef-ar.short",
+"/wasla-ar"
 );
 classes = (
 {
@@ -381,18 +382,16 @@ code = "  lookupflag IgnoreMarks;
     sub [lam-ar.init lam-ar.medi]' lookup LamAlef alef-ar.fina' lookup LamAlef;
 
     ignore sub @ArabicLetters heh-ar';
-    sub heh-ar' by hehDoachashmee-ar;";
-name = rlig;
-},
-{
-code = "  @Alef = [alef-ar alef-ar.fina alef-ar.fina.1];
+    sub heh-ar' by hehDoachashmee-ar;
+ 
+  @Alef = [alef-ar alef-ar.fina alef-ar.fina.1];
   @Alef.short = [alef-ar.short alef-ar.fina.short alef-ar.fina.1.short];
-  @Hamza.above = [hamzaabove-ar ]; #madda-ar arSad.above arWavyHamza.above arHighHamza.above;
-
+  @Hamza.above = [hamzaabove-ar madda-ar wasla-ar wavyhamzaabove-ar];
+  
   lookupflag 0;
-    sub @Alef' @Hamza.above by @Alef.short;";
-name = ss02;
-notes = "featureNames {\012	name 3 1 0x409 \"Alternate short Alef with Hamza above\";\012	name 3 1 0xC01 \"ألف همزة قصيرة بديلة\";\012};\012";
+    sub @Alef' @Hamza.above by @Alef.short;
+";
+name = rlig;
 },
 {
 code = "  lookupflag 0;
