@@ -3352,7 +3352,7 @@ transform = "{1, 0, 0, 1, 302, -9}";
 }
 );
 layerId = master01;
-width = 535;
+width = 534;
 },
 {
 components = (
@@ -3398,7 +3398,7 @@ transform = "{1, 0, 0, 1, 302, -9}";
 }
 );
 layerId = master01;
-width = 535;
+width = 534;
 },
 {
 components = (
@@ -3444,7 +3444,7 @@ transform = "{1, 0, 0, 1, 219, 511}";
 }
 );
 layerId = master01;
-width = 535;
+width = 534;
 },
 {
 components = (
@@ -3536,7 +3536,7 @@ transform = "{1, 0, 0, 1, 302, -9}";
 }
 );
 layerId = master01;
-width = 535;
+width = 534;
 },
 {
 components = (
@@ -3844,7 +3844,7 @@ nodes = (
 );
 }
 );
-width = 535;
+width = 534;
 },
 {
 anchors = (
@@ -4481,7 +4481,7 @@ transform = "{1, 0, 0, 1, 302, -9}";
 }
 );
 layerId = master01;
-width = 535;
+width = 534;
 },
 {
 components = (
@@ -4654,7 +4654,7 @@ nodes = (
 );
 }
 );
-width = 468;
+width = 448;
 },
 {
 anchors = (
@@ -4809,7 +4809,7 @@ transform = "{1, 0, 0, 1, 195, 444}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -4847,7 +4847,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -4857,12 +4856,11 @@ transform = "{1, 0, 0, 1, 195, 431}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -4877,7 +4875,6 @@ width = 412;
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -4907,7 +4904,7 @@ transform = "{1, 0, 0, 1, 195, 444}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -4953,7 +4950,7 @@ transform = "{1, 0, 0, 1, 204, -149}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -4999,7 +4996,7 @@ transform = "{1, 0, 0, 1, 204, -42}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -5045,7 +5042,7 @@ transform = "{1, 0, 0, 1, 204, -149}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -5083,7 +5080,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5098,12 +5094,11 @@ transform = "{1, 0, 0, 1, 195, 431}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5123,7 +5118,6 @@ width = 412;
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5158,7 +5152,7 @@ transform = "{1, 0, 0, 1, 195, 444}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -5204,7 +5198,7 @@ transform = "{1, 0, 0, 1, 195, 444}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -5250,7 +5244,7 @@ transform = "{1, 0, 0, 1, 195, 444}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -5288,7 +5282,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5298,12 +5291,11 @@ transform = "{1, 0, 0, 1, 195, 440}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5318,7 +5310,6 @@ width = 412;
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5340,7 +5331,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5355,12 +5345,11 @@ transform = "{1, 0, 0, 1, 195, 431}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5380,7 +5369,6 @@ width = 412;
 {
 components = (
 {
-alignment = -1;
 name = "dal-ar";
 },
 {
@@ -5415,7 +5403,7 @@ transform = "{1, 0, 0, 1, 204, -59}";
 }
 );
 layerId = master01;
-width = 468;
+width = 448;
 },
 {
 components = (
@@ -5506,7 +5494,7 @@ nodes = (
 );
 }
 );
-width = 302;
+width = 301;
 },
 {
 anchors = (
@@ -5715,7 +5703,7 @@ transform = "{1, 0, 0, 1, 212, 329}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -5753,7 +5741,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "zain-ar";
 },
 {
@@ -5763,7 +5750,7 @@ transform = "{1, 0, 0, 1, 212, 428}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -5805,7 +5792,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "reh-ar";
 },
 {
@@ -5815,7 +5801,7 @@ transform = "{1, 0, 0, 1, 151, 316}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -5857,7 +5843,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "reh-ar";
 },
 {
@@ -5867,7 +5852,7 @@ transform = "{1, 0, 0, 1, 151, 275}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -5917,7 +5902,7 @@ transform = "{1, 0, 0, 1, 122, -239}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -5963,7 +5948,7 @@ transform = "{1, 0, 0, 1, 122, -312}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6009,7 +5994,7 @@ transform = "{1, 0, 0, 1, 122, -212}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6059,7 +6044,7 @@ transform = "{1, 0, 0, 1, 122, -312}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6113,7 +6098,7 @@ transform = "{1, 0, 0, 1, 212, 329}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6159,7 +6144,7 @@ transform = "{1, 0, 0, 1, 212, 329}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6205,7 +6190,7 @@ transform = "{1, 0, 0, 1, 212, 329}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6243,7 +6228,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "reh-ar";
 },
 {
@@ -6253,7 +6237,7 @@ transform = "{1, 0, 0, 1, 151, 325}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6303,7 +6287,7 @@ transform = "{1, 0, 0, 1, 210, -50}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6349,7 +6333,7 @@ transform = "{1, 0, 0, 1, 212, 329}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6395,7 +6379,7 @@ transform = "{1, 0, 0, 1, 212, 329}";
 }
 );
 layerId = master01;
-width = 302;
+width = 301;
 },
 {
 components = (
@@ -6510,7 +6494,7 @@ nodes = (
 );
 }
 );
-width = 901;
+width = 900;
 },
 {
 anchors = (
@@ -6832,7 +6816,7 @@ nodes = (
 );
 }
 );
-width = 676;
+width = 675;
 },
 {
 anchors = (
@@ -7005,7 +6989,7 @@ transform = "{1, 0, 0, 1, 627, 512}";
 }
 );
 layerId = master01;
-width = 901;
+width = 900;
 },
 {
 components = (
@@ -7059,7 +7043,7 @@ transform = "{1, 0, 0, 1, 670, -111}";
 }
 );
 layerId = master01;
-width = 901;
+width = 900;
 },
 {
 components = (
@@ -7105,7 +7089,7 @@ transform = "{1, 0, 0, 1, 627, 512}";
 }
 );
 layerId = master01;
-width = 901;
+width = 900;
 },
 {
 components = (
@@ -7151,7 +7135,7 @@ transform = "{1, 0, 0, 1, 670, -111}";
 }
 );
 layerId = master01;
-width = 901;
+width = 900;
 },
 {
 components = (
@@ -7197,7 +7181,7 @@ transform = "{1, 0, 0, 1, 670, -111}";
 }
 );
 layerId = master01;
-width = 901;
+width = 900;
 },
 {
 components = (
@@ -7452,7 +7436,7 @@ name = "sad-ar.init";
 }
 );
 layerId = master01;
-width = 644;
+width = 641;
 },
 {
 components = (
@@ -7842,10 +7826,10 @@ closed = 1;
 nodes = (
 "498.825 -0.176 LINE SMOOTH",
 "549.825 -0.176 OFFCURVE",
-"593.401 40.838 OFFCURVE",
-"591.825 92.824 CURVE SMOOTH",
-"589.825 158.824 LINE SMOOTH",
-"587.159 246.806 OFFCURVE",
+"590 41 OFFCURVE",
+"590 93 CURVE SMOOTH",
+"590 159 LINE SMOOTH",
+"590 247 OFFCURVE",
 "556.825 313.824 OFFCURVE",
 "487.825 342.824 CURVE SMOOTH",
 "329.825 401.824 OFFCURVE",
@@ -7856,11 +7840,11 @@ nodes = (
 "388.825 294.824 OFFCURVE",
 "458.825 268.824 CURVE SMOOTH",
 "490.825 255.824 OFFCURVE",
-"509.973 231.826 OFFCURVE",
-"510.825 156.824 CURVE SMOOTH",
-"511.825 68.824 LINE",
-"515.325 72.324 OFFCURVE",
-"518.325 75.324 OFFCURVE",
+"511 232 OFFCURVE",
+"511 157 CURVE SMOOTH",
+"511 69 LINE",
+"514 72 OFFCURVE",
+"518 75 OFFCURVE",
 "521.825 78.824 CURVE",
 "45.825 78.824 LINE",
 "45.825 -0.176 LINE"
@@ -7882,7 +7866,7 @@ nodes = (
 );
 }
 );
-width = 637.86685;
+width = 636;
 },
 {
 anchors = (
@@ -8036,7 +8020,7 @@ name = "tah-ar";
 }
 );
 layerId = master01;
-width = 588.86685;
+width = 585;
 },
 {
 components = (
@@ -8046,7 +8030,7 @@ name = "tah-ar";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 567.6675;
+width = 567;
 },
 {
 components = (
@@ -8074,7 +8058,7 @@ transform = "{1, 0, 0, 1, -46, 0}";
 }
 );
 layerId = master01;
-width = 542.86685;
+width = 539;
 },
 {
 components = (
@@ -8155,7 +8139,7 @@ transform = "{1, 0, 0, 1, 382, 485}";
 }
 );
 layerId = master01;
-width = 638;
+width = 636;
 },
 {
 components = (
@@ -8201,7 +8185,7 @@ transform = "{1, 0, 0, 1, 382, 485}";
 }
 );
 layerId = master01;
-width = 638;
+width = 636;
 },
 {
 components = (
@@ -8307,7 +8291,7 @@ nodes = (
 );
 }
 );
-width = 462;
+width = 461;
 },
 {
 anchors = (
@@ -8765,7 +8749,7 @@ transform = "{1, 0, 0, 1, 242, 517}";
 }
 );
 layerId = master01;
-width = 462;
+width = 461;
 },
 {
 components = (
@@ -8811,7 +8795,7 @@ transform = "{1, 0, 0, 1, 242, 517}";
 }
 );
 layerId = master01;
-width = 462;
+width = 461;
 },
 {
 components = (
@@ -8857,7 +8841,7 @@ transform = "{1, 0, 0, 1, 265, -22}";
 }
 );
 layerId = master01;
-width = 462;
+width = 461;
 },
 {
 components = (
@@ -10622,7 +10606,7 @@ nodes = (
 );
 }
 );
-width = 564;
+width = 561;
 },
 {
 anchors = (
@@ -10813,7 +10797,7 @@ nodes = (
 );
 }
 );
-width = 675;
+width = 672;
 },
 {
 anchors = (
@@ -10966,7 +10950,7 @@ transform = "{1, 0, 0, 1, 192, 639}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11012,7 +10996,7 @@ transform = "{1, 0, 0, 1, 279, -149}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11058,7 +11042,7 @@ transform = "{1, 0, 0, 1, 192, 639}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11104,7 +11088,7 @@ transform = "{1, 0, 0, 1, 192, 639}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11150,7 +11134,7 @@ transform = "{1, 0, 0, 1, 279, -149}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11196,7 +11180,7 @@ transform = "{1, 0, 0, 1, 440, 649}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11242,7 +11226,7 @@ transform = "{1, 0, 0, 1, 483, 493}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11288,7 +11272,7 @@ transform = "{1, 0, 0, 1, 98, 649}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11343,7 +11327,7 @@ nodes = (
 );
 }
 );
-width = 960;
+width = 959;
 },
 {
 components = (
@@ -11414,7 +11398,7 @@ name = "kafswash-ar";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 810.63476;
+width = 801;
 },
 {
 components = (
@@ -11450,7 +11434,7 @@ name = "kafswash-ar.init";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 736.63476;
+width = 737;
 },
 {
 components = (
@@ -11516,7 +11500,7 @@ nodes = (
 );
 }
 );
-width = 849;
+width = 848;
 },
 {
 anchors = (
@@ -11741,7 +11725,7 @@ transform = "{1, 0, 0, 1, 483, 493}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11879,7 +11863,7 @@ transform = "{1, 0, 0, 1, 279, -149}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -11971,7 +11955,7 @@ transform = "{1, 0, 0, 1, 98, 649}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -12017,7 +12001,7 @@ transform = "{1, 0, 0, 1, 279, -149}";
 }
 );
 layerId = master01;
-width = 675;
+width = 672;
 },
 {
 components = (
@@ -12512,7 +12496,7 @@ nodes = (
 );
 }
 );
-width = 198;
+width = 197;
 },
 {
 anchors = (
@@ -14121,7 +14105,7 @@ nodes = (
 );
 }
 );
-width = 438;
+width = 437;
 },
 {
 anchors = (
@@ -14613,7 +14597,7 @@ transform = "{1, 0, 0, 1, 261, 450}";
 }
 );
 layerId = master01;
-width = 438;
+width = 437;
 },
 {
 components = (
@@ -14655,7 +14639,7 @@ name = "heh-ar";
 }
 );
 layerId = master01;
-width = 438;
+width = 437;
 },
 {
 components = (
@@ -15298,7 +15282,7 @@ transform = "{1, 0, 0, 1, 261, 450}";
 }
 );
 layerId = master01;
-width = 438;
+width = 437;
 },
 {
 components = (
@@ -15336,11 +15320,13 @@ layers = (
 {
 components = (
 {
+alignment = -1;
 name = "heh-ar.init";
+transform = "{1, 0, 0, 1, 46, 0}";
 }
 );
 layerId = master01;
-width = 702;
+width = 748;
 },
 {
 components = (
@@ -15463,7 +15449,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "hehDoachashmee-ar";
 },
 {
@@ -15473,7 +15458,7 @@ transform = "{1, 0, 0, 1, 336, 623}";
 }
 );
 layerId = master01;
-width = 702;
+width = 748;
 },
 {
 components = (
@@ -15521,7 +15506,7 @@ transform = "{1, 0, 0, 1, 261, 505}";
 }
 );
 layerId = master01;
-width = 438;
+width = 437;
 },
 {
 components = (
@@ -15563,7 +15548,7 @@ name = "tehMarbuta-ar";
 }
 );
 layerId = master01;
-width = 438;
+width = 437;
 },
 {
 components = (
@@ -15664,7 +15649,7 @@ nodes = (
 );
 }
 );
-width = 439;
+width = 438;
 },
 {
 anchors = (
@@ -15908,7 +15893,7 @@ transform = "{1, 0, 0, 1, 188, -242}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -15954,7 +15939,7 @@ transform = "{1, 0, 0, 1, 252, 466}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16000,7 +15985,7 @@ transform = "{1, 0, 0, 1, 252, 466}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16046,7 +16031,7 @@ transform = "{1, 0, 0, 1, 252, 466}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16092,7 +16077,7 @@ transform = "{1, 0, 0, 1, 340, -60}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16130,7 +16115,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
@@ -16140,7 +16124,7 @@ transform = "{1, 0, 0, 1, 220, 412}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16190,7 +16174,7 @@ transform = "{1, 0, 0, 1, 252, 466}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16228,7 +16212,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
@@ -16238,7 +16221,7 @@ transform = "{1, 0, 0, 1, 220, 503}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16280,7 +16263,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
@@ -16290,7 +16272,7 @@ transform = "{1, 0, 0, 1, 220, 462}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16340,7 +16322,7 @@ transform = "{1, 0, 0, 1, 252, 466}";
 }
 );
 layerId = master01;
-width = 439;
+width = 438;
 },
 {
 components = (
@@ -16449,7 +16431,7 @@ nodes = (
 );
 }
 );
-width = 600;
+width = 599;
 },
 {
 anchors = (
@@ -16663,7 +16645,7 @@ transform = "{1, 0, 0, 1, 308, -190}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -16709,7 +16691,7 @@ transform = "{1, 0, 0, 1, 236, 336}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -16747,7 +16729,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "alefMaksura-ar";
 },
 {
@@ -16757,7 +16738,7 @@ transform = "{1, 0, 0, 1, 236, 282}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -16799,7 +16780,6 @@ layers = (
 {
 components = (
 {
-alignment = -1;
 name = "alefMaksura-ar";
 },
 {
@@ -16809,7 +16789,7 @@ transform = "{1, 0, 0, 1, 236, 332}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -16855,7 +16835,7 @@ name = "alefMaksura-ar";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -16893,7 +16873,7 @@ transform = "{1, 0, 0, 1, 236, 336}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -16939,7 +16919,7 @@ transform = "{1, 0, 0, 1, 236, 336}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -16985,7 +16965,7 @@ transform = "{1, 0, 0, 1, 62, 187}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -17031,7 +17011,7 @@ transform = "{1, 0, 0, 1, 308, -220}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -17077,7 +17057,7 @@ transform = "{1, 0, 0, 1, 308, -190}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -17123,7 +17103,7 @@ transform = "{1, 0, 0, 1, 308, -190}";
 }
 );
 layerId = master01;
-width = 600;
+width = 599;
 },
 {
 components = (
@@ -17285,7 +17265,7 @@ nodes = (
 );
 }
 );
-width = 889;
+width = 890;
 },
 {
 anchors = (
@@ -17626,7 +17606,7 @@ transform = "{1, 0, 0, 1, 384, 338}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 889;
+width = 890;
 },
 {
 components = (
@@ -17652,14 +17632,14 @@ layers = (
 components = (
 {
 name = "highhamza-ar";
-transform = "{1, 0, 0, 1, 439, 0}";
+transform = "{1, 0, 0, 1, 438, 0}";
 },
 {
 name = "waw-ar";
 }
 );
 layerId = master01;
-width = 815;
+width = 814;
 },
 {
 components = (
@@ -17698,14 +17678,14 @@ layers = (
 components = (
 {
 name = "highhamza-ar";
-transform = "{1, 0, 0, 1, 439, 0}";
+transform = "{1, 0, 0, 1, 438, 0}";
 },
 {
 name = "u-ar";
 }
 );
 layerId = master01;
-width = 815;
+width = 814;
 },
 {
 components = (
@@ -17744,14 +17724,14 @@ layers = (
 components = (
 {
 name = "highhamza-ar";
-transform = "{1, 0, 0, 1, 600, 0}";
+transform = "{1, 0, 0, 1, 599, 0}";
 },
 {
 name = "alefMaksura-ar";
 }
 );
 layerId = master01;
-width = 976;
+width = 975;
 },
 {
 components = (
@@ -17793,7 +17773,7 @@ name = "heh-ar";
 }
 );
 layerId = master01;
-width = 438;
+width = 437;
 },
 {
 components = (
@@ -17831,7 +17811,7 @@ transform = "{1, 0, 0, 1, 627, 512}";
 }
 );
 layerId = master01;
-width = 901;
+width = 900;
 },
 {
 components = (
@@ -18089,7 +18069,7 @@ transform = "{1, 0, 0, 1, 627, 512}";
 }
 );
 layerId = master01;
-width = 901;
+width = 900;
 },
 {
 components = (
@@ -26294,10 +26274,10 @@ closed = 1;
 nodes = (
 "149 0 LINE SMOOTH",
 "200 0 OFFCURVE",
-"243 41 OFFCURVE",
-"242 93 CURVE SMOOTH",
+"240 41 OFFCURVE",
+"240 93 CURVE SMOOTH",
 "240 159 LINE SMOOTH",
-"238 247 OFFCURVE",
+"240 247 OFFCURVE",
 "207 314 OFFCURVE",
 "138 343 CURVE SMOOTH",
 "-20 402 OFFCURVE",
@@ -26308,10 +26288,10 @@ nodes = (
 "39 295 OFFCURVE",
 "109 269 CURVE SMOOTH",
 "141 256 OFFCURVE",
-"160.148 232.002 OFFCURVE",
+"161 232 OFFCURVE",
 "161 157 CURVE SMOOTH",
-"162 69 LINE",
-"165.5 72.5 OFFCURVE",
+"161 69 LINE",
+"165 73 OFFCURVE",
 "168.5 75.5 OFFCURVE",
 "172 79 CURVE",
 "-242 79 LINE",
