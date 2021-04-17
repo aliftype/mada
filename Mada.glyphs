@@ -26326,12 +26326,6 @@ name = Light;
 weightClass = Light;
 },
 {
-customParameters = (
-{
-name = styleMapFamilyName;
-value = Mada;
-}
-);
 interpolationWeight = 400;
 instanceInterpolations = {
 master01 = 1;
@@ -26362,6 +26356,8 @@ instanceInterpolations = {
 "42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.6;
 master01 = 0.4;
 };
+isBold = 1;
+linkStyle = Regular;
 name = Bold;
 weightClass = Bold;
 },
