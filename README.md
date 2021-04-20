@@ -4,8 +4,8 @@ Mada
 ![Sample](FontSample.svg)
 
 Mada is a modernist, low contrast Arabic typeface based largely on the typeface
-seen in Cairo metro old signage which was designed by [Professor Fathi
-Gouda][1] of Faculty of Applied Arts, Helwan University.
+seen in Cairo metro old signage which was designed by Professor Fathi Gouda of
+Faculty of Applied Arts, Helwan University.
 
 Mada is characterised by low descenders, open contours and low contrast forms
 making it suitable for small point sizes, user interfaces, signage or low
@@ -48,5 +48,4 @@ install both variable font and the static instances at the same time, as it
 would confuse some applications. You should install either of them based on the
 degree of variable font support in the software you use.
 
-[1]: https://www.facebook.com/FathiGouda
 [2]: https://web.dev/variable-fonts
