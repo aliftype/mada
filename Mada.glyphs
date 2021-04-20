@@ -38,6 +38,46 @@ name = "Use Typo Metrics";
 value = 1;
 },
 {
+name = typoAscender;
+value = 900;
+},
+{
+name = typoDescender;
+value = -300;
+},
+{
+name = typoLineGap;
+value = 100;
+},
+{
+name = hheaAscender;
+value = 900;
+},
+{
+name = hheaDescender;
+value = -300;
+},
+{
+name = hheaLineGap;
+value = 100;
+},
+{
+name = winAscent;
+value = 847;
+},
+{
+name = winDescent;
+value = 362;
+},
+{
+name = underlineThickness;
+value = 50;
+},
+{
+name = underlinePosition;
+value = -300;
+},
+{
 name = "Disable Last Change";
 value = 1;
 },
@@ -414,48 +454,6 @@ fontMaster = (
 ascender = 800;
 capHeight = 660;
 custom = Extra;
-customParameters = (
-{
-name = typoAscender;
-value = 900;
-},
-{
-name = typoDescender;
-value = -300;
-},
-{
-name = typoLineGap;
-value = 100;
-},
-{
-name = hheaAscender;
-value = 900;
-},
-{
-name = hheaDescender;
-value = -300;
-},
-{
-name = hheaLineGap;
-value = 100;
-},
-{
-name = winAscent;
-value = 741;
-},
-{
-name = winDescent;
-value = 333;
-},
-{
-name = underlineThickness;
-value = 50;
-},
-{
-name = underlinePosition;
-value = -300;
-}
-);
 descender = -200;
 guideLines = (
 {
@@ -484,48 +482,6 @@ xHeight = 480;
 {
 ascender = 800;
 capHeight = 660;
-customParameters = (
-{
-name = typoAscender;
-value = 900;
-},
-{
-name = typoDescender;
-value = -300;
-},
-{
-name = typoLineGap;
-value = 100;
-},
-{
-name = hheaAscender;
-value = 900;
-},
-{
-name = hheaDescender;
-value = -300;
-},
-{
-name = hheaLineGap;
-value = 100;
-},
-{
-name = winAscent;
-value = 776;
-},
-{
-name = winDescent;
-value = 322;
-},
-{
-name = underlineThickness;
-value = 50;
-},
-{
-name = underlinePosition;
-value = -300;
-}
-);
 descender = -200;
 guideLines = (
 {
@@ -553,48 +509,6 @@ xHeight = 484;
 ascender = 800;
 capHeight = 660;
 custom = Black;
-customParameters = (
-{
-name = typoAscender;
-value = 900;
-},
-{
-name = typoDescender;
-value = -300;
-},
-{
-name = typoLineGap;
-value = 100;
-},
-{
-name = hheaAscender;
-value = 900;
-},
-{
-name = hheaDescender;
-value = -300;
-},
-{
-name = hheaLineGap;
-value = 100;
-},
-{
-name = winAscent;
-value = 847;
-},
-{
-name = winDescent;
-value = 362;
-},
-{
-name = underlineThickness;
-value = 50;
-},
-{
-name = underlinePosition;
-value = -300;
-}
-);
 descender = -200;
 guideLines = (
 {
