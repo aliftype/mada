@@ -8,8 +8,6 @@ DIST=$(NAME)-$(VERSION)
 
 PY ?= python
 PREPARE=prepare.py
-MKINST=mkinstance.py
-MKVF=mkvf.py
 MKSAMPLE=mksample.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
@@ -20,16 +18,16 @@ FONTS=ExtraLight Light Regular Medium SemiBold Bold ExtraBold Black
 UFO=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ufo)
 OTF=$(FONTS:%=$(NAME)-%.otf)
 TTF=$(FONTS:%=$(NAME)-%.ttf)
-OTM=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.otf)
-TTM=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ttf)
 OTV=$(NAME).otf
 TTV=$(NAME).ttf
 SVG=FontSample.svg
 SMP=$(FONTS:%=$(BUILDDIR)/$(NAME)-%.svg)
 
+FMOPTS = --verbose=WARNING --overlaps-backend=pathops 
+
 export SOURCE_DATE_EPOCH ?= 0
 
-all: otf doc
+all: otv otf doc
 
 otf: $(OTF)
 ttf: $(TTF)
@@ -41,39 +39,21 @@ SHELL=/usr/bin/env bash
 
 .SECONDARY:
 
-define generate_source
-@echo "   SOURCE    $(notdir $(3))"
-fontmake -u $(abspath $(2))                                                    \
-         --output=$(1)                                                         \
-         --verbose=WARNING                                                     \
-         --production-names                                                    \
-         --optimize-cff=0                                                      \
-         --keep-overlaps                                                       \
-	 --output-path=$(3)                                                    \
-         ;
-endef
-
-$(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
+$(NAME)-%.otf: $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " INSTANCE    $(@F)"
-	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
+	@fontmake -m $< -i ".* $*" --output-path=$@ -o otf --optimize-cff=1 $(FMOPTS) 
 
-$(NAME)-%.ttf: $(TTV) $(BUILDDIR)/$(NAME).designspace
+$(NAME)-%.ttf: $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " INSTANCE    $(@F)"
-	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
+	@fontmake -m $< -i ".* $*" --output-path=$@ -o otf $(FMOPTS)
 
-$(BUILDDIR)/$(NAME)-%.otf: $(BUILDDIR)/$(NAME)-%.ufo
-	@$(call generate_source,otf,$<,$@)
-
-$(BUILDDIR)/$(NAME)-%.ttf: $(BUILDDIR)/$(NAME)-%.ufo
-	@$(call generate_source,ttf,$<,$@)
-
-$(OTV): $(OTM) $(UFO) $(BUILDDIR)/$(NAME).designspace
+$(OTV): $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " VARIABLE    $(@F)"
-	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
+	@fontmake -m $< --output-path=$@ -o variable-cff2 --optimize-cff=1 $(FMOPTS)
 
-$(TTV): $(TTM) $(UFO) $(BUILDDIR)/$(NAME).designspace
+$(TTV): $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " VARIABLE    $(@F)"
-	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
+	@fontmake -m $< --output-path=$@ -o variable $(FMOPTS)
 
 $(BUILDDIR)/$(NAME)-%.ufo: $(NAME).glyphs $(LATIN)/Roman/Instances/%/font.ufo $(PREPARE)
 	@echo "     PREP    $(@F)"

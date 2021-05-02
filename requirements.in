@@ -1,6 +1,4 @@
-fontmake
+fontmake[pathops]
 fonttools[lxml]
-skia-pathops
-ufo2ft
 ufoLib2
 svgutils
