@@ -53,9 +53,6 @@ fontmake -u $(abspath $(2))                                                    \
          ;
 endef
 
-$(BUILDDIR):
-	@mkdir -p $(BUILDDIR)
-
 $(NAME)-%.otf: $(OTV) $(BUILDDIR)/$(NAME).designspace
 	@echo " INSTANCE    $(@F)"
 	@$(PY) $(MKINST) $(BUILDDIR)/$(NAME).designspace $< $@
@@ -78,12 +75,14 @@ $(TTV): $(TTM) $(UFO) $(BUILDDIR)/$(NAME).designspace
 	@echo " VARIABLE    $(@F)"
 	@$(PY) $(MKVF) $(BUILDDIR)/$(NAME).designspace $@
 
-$(BUILDDIR)/$(NAME)-%.ufo: $(NAME).glyphs $(LATIN)/Roman/Instances/%/font.ufo $(PREPARE) $(BUILDDIR)
+$(BUILDDIR)/$(NAME)-%.ufo: $(NAME).glyphs $(LATIN)/Roman/Instances/%/font.ufo $(PREPARE)
 	@echo "     PREP    $(@F)"
+	@mkdir -p $(BUILDDIR)
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
 
-$(BUILDDIR)/$(NAME).designspace: $(NAME).designspace $(BUILDDIR)
+$(BUILDDIR)/$(NAME).designspace: $(NAME).designspace
 	@echo "      GEN    $(@F)"
+	@mkdir -p $(BUILDDIR)
 	@cp $< $@
 
 $(BUILDDIR)/$(NAME)-%.svg: $(NAME)-%.otf
