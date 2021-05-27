@@ -3,7 +3,7 @@ Mada
 
 ![Sample](FontSample.svg)
 
-Mada is a modernist, low contrast Arabic typeface based largely on the typeface
+Mada (مدى) is a modernist, low contrast Arabic typeface based largely on the typeface
 seen in Cairo metro old signage which was designed by Professor Fathi Gouda of
 Faculty of Applied Arts, Helwan University.
 
