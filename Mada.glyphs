@@ -444,6 +444,12 @@ fontMaster = (
 ascender = 800;
 capHeight = 660;
 custom = Extra;
+customParameters = (
+{
+name = "Master Icon Glyph Name";
+value = "heh-ar";
+}
+);
 descender = -200;
 guideLines = (
 {
@@ -475,6 +481,12 @@ xHeight = 480;
 {
 ascender = 800;
 capHeight = 660;
+customParameters = (
+{
+name = "Master Icon Glyph Name";
+value = "heh-ar";
+}
+);
 descender = -200;
 guideLines = (
 {
@@ -503,6 +515,12 @@ xHeight = 484;
 ascender = 800;
 capHeight = 660;
 custom = Black;
+customParameters = (
+{
+name = "Master Icon Glyph Name";
+value = "heh-ar";
+}
+);
 descender = -200;
 guideLines = (
 {
