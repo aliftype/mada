@@ -1,8 +1,5 @@
 {
-.appVersion = "3081";
-DisplayStrings = (
-"/endofayah-ar"
-);
+.appVersion = "3088";
 classes = (
 {
 code = "kasratan-ar kasra-ar";
@@ -17,12 +14,8 @@ code = "dotbelow-ar twodotshorizontalbelow-ar";
 name = Dots;
 },
 {
-code = "@Dots @Kasra";
-name = Filter;
-},
-{
 automatic = 1;
-code = "hamza-ar highhamza-ar alef-ar alef-ar.fina alef-ar.fina.1 alef-ar.fina.1.short alef-ar.short alef-ar.fina.short alefHamzaabove-ar alefHamzabelow-ar alefWavyhamzaabove-ar alefWavyhamzabelow-ar alefMadda-ar alefWasla-ar highhamzaAlef-ar behDotless-ar behDotless-ar.fina behDotless-ar.medi behDotless-ar.init beh-ar peh-ar beeh-ar beheh-ar teh-ar tehRing-ar tehThreedotsdown-ar theh-ar tteh-ar tteheh-ar teheh-ar behThreedotsupabove-ar behThreedotsupbelow-ar tehThreedotsupbelow-ar behTwodotsbelowDotabove-ar behVinvertedbelow-ar behVabove-ar behVbelow-ar behhamzaabove-ar jeem-ar tcheh-ar tcheheh-ar tchehDotabove-ar nyeh-ar dyeh-ar hah-ar hah-ar.2 hah-ar.fina hah-ar.fina.2 hah-ar.medi hah-ar.init hahHamzaabove-ar hahTwodotsverticalabove-ar hahTwodotshorizontalabove-ar hahThreedotsabove-ar hahThreedotsupbelow-ar khah-ar jeemTwodotsabove-ar dal-ar dal-ar.fina thal-ar ddal-ar dahal-ar ddahal-ar dalRing-ar dalDotbelow-ar dalDotbelowTah-ar dul-ar dalThreedotsdown-ar dalFourdots-ar dalVinvertedabove-ar dalTwodotsverticalbelowTah-ar dalVinvertedbelow-ar reh-ar reh-ar.fina zain-ar zainVinvertedabove-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar jeh-ar rehFourdots-ar rehVinvertedabove-ar rehStroke-ar rehTwodotsverticalabove-ar rehHamzaabove-ar seen-ar seen-ar.fina seen-ar.medi seen-ar.init seenDotbelowDotabove-ar seenThreedotsbelow-ar sheen-ar sheenDotbelow-ar sheenThreedotsbelow-ar sad-ar sad-ar.fina sad-ar.medi sad-ar.init sadTwodotsbelow-ar sadThreedots-ar dad-ar dadDotbelow-ar tah-ar tah-ar.fina tah-ar.medi tah-ar.init tahThreedots-ar zah-ar ain-ar ain-ar.fina ain-ar.medi ain-ar.init ainThreedots-ar ghain-ar ghainDotbelow-ar feh-ar veh-ar fehDotless-ar fehDotless-ar.fina fehDotless-ar.medi fehDotless-ar.init fehDotmovedbelow-ar fehDotbelow-ar fehThreedotsbelow-ar peheh-ar qafDotless-ar qafDotless-ar.fina qaf-ar qafDotabove-ar qafThreedotsabove-ar kafDotless-ar kafDotless-ar.fina kaf-ar kaf-ar.medi kaf-ar.init keheh-ar keheh-ar.fina kehehTwodotshorizontalabove-ar kehehThreedotsbelow-ar kehehDotabove-ar kehehThreedotsabove-ar kehehThreedotsupbelow-ar gaf-ar gafRing-ar gafThreedots-ar kafswash-ar kafswash-ar.fina kafswash-ar.medi kafswash-ar.init kafRing-ar kafDotabove-ar kafThreedotsbelow-ar gafTwodotsbelow-ar ng-ar ngoeh-ar gueh-ar lam-ar lam-ar.fina lam-ar.medi lam-ar.medi.1 lam-ar.init lam-ar.init.1 lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar meem-ar meem-ar.ss04 meem-ar.fina meem-ar.fina.ss04 meem-ar.medi meem-ar.init noon-ar noonDotbelow-ar noonghunna-ar noonghunna-ar.fina rnoon-ar noonRing-ar noonThreedotsabove-ar heh-ar heh-ar.fina heh-ar.medi heh-ar.init hehHamzaabove-ar hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init hehgoalHamzaabove-ar hehDoachashmee-ar hehDoachashmee-ar.fina hehVinvertedabove-ar tehMarbuta-ar tehMarbutagoal-ar waw-ar waw-ar.fina wawring-ar wawTwodots-ar wawDotabove-ar wawHamzaabove-ar kirghizoe-ar oe-ar u-ar yu-ar kirghizyu-ar ve-ar alefMaksura-ar alefMaksura-ar.fina yeh-ar yehHamzaabove-ar yehVabove-ar yehVinverted-farsi yeh-farsi yehTwodotsabove-farsi yehThreedotsabove-farsi yehTail-ar yehKashmiri-ar e-ar yehThreedotsbelow-ar yehbarree-ar yehbarree-ar.fina yehbarreeHamzaabove-ar highhamzaWaw-ar uHamzaabove-ar highhamzaYeh-ar ae-ar seenFourdotsabove-ar noonTwodotsbelow-ar noonTahabove-ar noonVabove-ar lamBar-ar seenTwodotsverticalabove-ar seenTahTwodotshorizontalabove-ar hahTahabove-ar seenVinvertedabove-ar kashida-ar";
+code = "hamza-ar highhamza-ar alef-ar alef-ar.fina alef-ar.fina.1 alefHamzaabove-ar alefHamzabelow-ar alefWavyhamzaabove-ar alefWavyhamzabelow-ar alefMadda-ar alefWasla-ar highhamzaAlef-ar behDotless-ar behDotless-ar.fina behDotless-ar.medi behDotless-ar.init beh-ar peh-ar beeh-ar beheh-ar teh-ar tehRing-ar tehThreedotsdown-ar theh-ar tteh-ar tteheh-ar teheh-ar behThreedotsupabove-ar behThreedotsupbelow-ar tehThreedotsupbelow-ar behTwodotsbelowDotabove-ar behVinvertedbelow-ar behVabove-ar behVbelow-ar behhamzaabove-ar jeem-ar tcheh-ar tcheheh-ar tchehDotabove-ar nyeh-ar dyeh-ar hah-ar hah-ar.2 hah-ar.fina hah-ar.fina.2 hah-ar.medi hah-ar.init hahHamzaabove-ar hahTwodotsverticalabove-ar hahTwodotshorizontalabove-ar hahThreedotsabove-ar hahThreedotsupbelow-ar khah-ar jeemTwodotsabove-ar dal-ar dal-ar.fina thal-ar ddal-ar dahal-ar ddahal-ar dalRing-ar dalDotbelow-ar dalDotbelowTah-ar dul-ar dalThreedotsdown-ar dalFourdots-ar dalVinvertedabove-ar dalTwodotsverticalbelowTah-ar dalVinvertedbelow-ar reh-ar reh-ar.fina zain-ar zainVinvertedabove-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar jeh-ar rehFourdots-ar rehVinvertedabove-ar rehStroke-ar rehTwodotsverticalabove-ar rehHamzaabove-ar seen-ar seen-ar.fina seen-ar.medi seen-ar.init seenDotbelowDotabove-ar seenThreedotsbelow-ar sheen-ar sheenDotbelow-ar sheenThreedotsbelow-ar sad-ar sad-ar.fina sad-ar.medi sad-ar.init sadTwodotsbelow-ar sadThreedots-ar dad-ar dadDotbelow-ar tah-ar tah-ar.fina tah-ar.medi tah-ar.init tahThreedots-ar zah-ar ain-ar ain-ar.fina ain-ar.medi ain-ar.init ainThreedots-ar ghain-ar ghainDotbelow-ar feh-ar veh-ar fehDotless-ar fehDotless-ar.fina fehDotless-ar.medi fehDotless-ar.init fehDotmovedbelow-ar fehDotbelow-ar fehThreedotsbelow-ar peheh-ar qafDotless-ar qafDotless-ar.fina qaf-ar qafDotabove-ar qafThreedotsabove-ar kafDotless-ar kafDotless-ar.fina kaf-ar kaf-ar.medi kaf-ar.init keheh-ar keheh-ar.fina kehehTwodotshorizontalabove-ar kehehThreedotsbelow-ar kehehDotabove-ar kehehThreedotsabove-ar kehehThreedotsupbelow-ar gaf-ar gafRing-ar gafThreedots-ar kafswash-ar kafswash-ar.fina kafswash-ar.medi kafswash-ar.init kafRing-ar kafDotabove-ar kafThreedotsbelow-ar gafTwodotsbelow-ar ng-ar ngoeh-ar gueh-ar lam-ar lam-ar.fina lam-ar.medi lam-ar.medi.1 lam-ar.init lam-ar.init.1 lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar meem-ar meem-ar.ss04 meem-ar.fina meem-ar.fina.ss04 meem-ar.medi meem-ar.init noon-ar noonDotbelow-ar noonghunna-ar noonghunna-ar.fina rnoon-ar noonRing-ar noonThreedotsabove-ar heh-ar heh-ar.fina heh-ar.medi heh-ar.init hehHamzaabove-ar hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init hehgoalHamzaabove-ar hehDoachashmee-ar hehDoachashmee-ar.fina hehVinvertedabove-ar tehMarbuta-ar tehMarbutagoal-ar waw-ar waw-ar.fina wawring-ar wawTwodots-ar wawDotabove-ar wawHamzaabove-ar kirghizoe-ar oe-ar u-ar yu-ar kirghizyu-ar ve-ar alefMaksura-ar alefMaksura-ar.fina yeh-ar yehHamzaabove-ar yehVabove-ar yehVinverted-farsi yeh-farsi yehTwodotsabove-farsi yehThreedotsabove-farsi yehTail-ar yehKashmiri-ar e-ar yehThreedotsbelow-ar yehbarree-ar yehbarree-ar.fina yehbarreeHamzaabove-ar highhamzaWaw-ar uHamzaabove-ar highhamzaYeh-ar ae-ar wawSmall-ar yehSmall-ar seenFourdotsabove-ar noonTwodotsbelow-ar noonTahabove-ar noonVabove-ar lamBar-ar seenTwodotsverticalabove-ar seenTahTwodotshorizontalabove-ar hahTahabove-ar seenVinvertedabove-ar kashida-ar";
 name = ArabicLetters;
 }
 );
@@ -90,7 +83,7 @@ value = 1;
 },
 {
 name = "Write DisplayStrings";
-value = 1;
+value = 0;
 },
 {
 name = description;
@@ -428,12 +421,6 @@ code = "  lookupflag IgnoreMarks;
     ignore sub @hehMarks heh-ar';
     ignore sub heh-ar' @hehMarks;
     sub heh-ar' by hehDoachashmee-ar;
-
-  @Alef = [alef-ar alef-ar.fina alef-ar.fina.1];
-  @Alef.short = [alef-ar.short alef-ar.fina.short alef-ar.fina.1.short];
-  @Hamza.above = [hamzaabove-ar wasla-ar wavyhamzaabove-ar]; # madda-ar
-  lookupflag 0;
-    sub @Alef' @Hamza.above by @Alef.short;
 ";
 name = rlig;
 },
@@ -1185,317 +1172,17 @@ width = 270;
 );
 },
 {
-glyphname = "alef-ar.fina.1.short";
-production = uni0627.fina.1.short;
-layers = (
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{92, -126}";
-},
-{
-name = top.hamza;
-position = "{150, 457}";
-}
-);
-layerId = master01;
-paths = (
-{
-closed = 1;
-nodes = (
-"138 66 LINE",
-"217 107 OFFCURVE",
-"271 163 OFFCURVE",
-"284 214 CURVE SMOOTH",
-"287 226 OFFCURVE",
-"290 240 OFFCURVE",
-"286 254 CURVE",
-"200 458 LINE",
-"115 458 LINE",
-"209 239 LINE",
-"209 140 OFFCURVE",
-"130 93 OFFCURVE",
-"77 66 CURVE"
-);
-}
-);
-width = 212.92792;
-},
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{100, -120}";
-},
-{
-name = top.hamza;
-position = "{158, 481}";
-}
-);
-layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-paths = (
-{
-closed = 1;
-nodes = (
-"129 25 LINE",
-"204 58 OFFCURVE",
-"276 122 OFFCURVE",
-"288 178 CURVE SMOOTH",
-"290 187 OFFCURVE",
-"291 201 OFFCURVE",
-"290 206 CURVE",
-"194 482 LINE",
-"160 482 LINE",
-"260 197 LINE",
-"257 104 OFFCURVE",
-"132 39 OFFCURVE",
-"107 25 CURVE"
-);
-}
-);
-width = 200.19456;
-},
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{100, -134}";
-},
-{
-name = top.hamza;
-position = "{228, 412}";
-}
-);
-layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-paths = (
-{
-closed = 1;
-nodes = (
-"194 124 LINE",
-"281 147 OFFCURVE",
-"344 190 OFFCURVE",
-"361 270 CURVE SMOOTH",
-"362 276 OFFCURVE",
-"364 295 OFFCURVE",
-"358 309 CURVE",
-"328 414 LINE",
-"148 414 LINE",
-"199 241 LINE",
-"186 176 OFFCURVE",
-"140 151 OFFCURVE",
-"84 124 CURVE"
-);
-}
-);
-width = 270.2394;
-}
-);
-},
-{
-glyphname = "alef-ar.short";
-production = uni0627.short;
-layers = (
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{99, -53}";
-},
-{
-name = top.hamza;
-position = "{99, 457}";
-}
-);
-layerId = master01;
-paths = (
-{
-closed = 1;
-nodes = (
-"111 0 OFFCURVE",
-"139 37 OFFCURVE",
-"139 82 CURVE SMOOTH",
-"139 458 LINE",
-"61 458 LINE",
-"61 0 LINE"
-);
-}
-);
-width = 200;
-},
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{96, -58}";
-},
-{
-name = top.hamza;
-position = "{96, 481}";
-}
-);
-layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-paths = (
-{
-closed = 1;
-nodes = (
-"101 1 OFFCURVE",
-"112 19 OFFCURVE",
-"112 33 CURVE SMOOTH",
-"112 482 LINE",
-"80 482 LINE",
-"80 1 LINE"
-);
-}
-);
-width = 192;
-},
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{136, -74}";
-},
-{
-name = top.hamza;
-position = "{144, 412}";
-}
-);
-layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-paths = (
-{
-closed = 1;
-nodes = (
-"185 1 OFFCURVE",
-"232 96 OFFCURVE",
-"232 193 CURVE SMOOTH",
-"232 414 LINE",
-"60 414 LINE",
-"60 1 LINE"
-);
-}
-);
-width = 292;
-}
-);
-},
-{
-glyphname = "alef-ar.fina.short";
-production = uni0627.fina.short;
-layers = (
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{117, -53}";
-},
-{
-name = top.hamza;
-position = "{97, 457}";
-}
-);
-layerId = master01;
-paths = (
-{
-closed = 1;
-nodes = (
-"273 0 LINE",
-"273 79 LINE",
-"116 79 LINE",
-"119.15 75.5 OFFCURVE",
-"121.85 72.5 OFFCURVE",
-"125 69 CURVE",
-"125 457 LINE",
-"46 457 LINE",
-"46 92 LINE SMOOTH",
-"46 41 OFFCURVE",
-"86 0 OFFCURVE",
-"139 0 CURVE SMOOTH"
-);
-}
-);
-width = 257;
-},
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{56, -58}";
-},
-{
-name = top.hamza;
-position = "{56, 481}";
-}
-);
-layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-paths = (
-{
-closed = 1;
-nodes = (
-"206 0 LINE",
-"206 32 LINE",
-"109 32 LINE SMOOTH",
-"85 32 OFFCURVE",
-"72 50 OFFCURVE",
-"72 70 CURVE SMOOTH",
-"72 481 LINE",
-"40 481 LINE",
-"40 70 LINE SMOOTH",
-"40 36 OFFCURVE",
-"65 0 OFFCURVE",
-"109 0 CURVE SMOOTH"
-);
-}
-);
-width = 196;
-},
-{
-anchors = (
-{
-name = bottom.mark;
-position = "{186, -74}";
-},
-{
-name = top.hamza;
-position = "{136, 412}";
-}
-);
-layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-paths = (
-{
-closed = 1;
-nodes = (
-"380 0 LINE",
-"380 172 LINE",
-"212 172 LINE",
-"219 165.065 OFFCURVE",
-"225 159.12 OFFCURVE",
-"232 152.185 CURVE",
-"232 412 LINE",
-"60 412 LINE",
-"60 138 LINE SMOOTH",
-"60 62 OFFCURVE",
-"123 0 OFFCURVE",
-"199 0 CURVE SMOOTH"
-);
-}
-);
-width = 360;
-}
-);
-},
-{
 color = 0;
 glyphname = "alefHamzaabove-ar";
 layers = (
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "hamzaabove-ar";
-transform = "{1, 0, 0, 1, 3, 457}";
+transform = "{1, 0, 0, 1, 3, 664}";
 }
 );
 layerId = master01;
@@ -1504,11 +1191,11 @@ width = 200;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "hamzaabove-ar";
-transform = "{1, 0, 0, 1, 0, 481}";
+transform = "{1, 0, 0, 1, 0, 664}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -1517,11 +1204,11 @@ width = 192;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "hamzaabove-ar";
-transform = "{1, 0, 0, 1, 48, 412}";
+transform = "{1, 0, 0, 1, 40, 684}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -1583,11 +1270,11 @@ layers = (
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "wavyhamzaabove-ar";
-transform = "{1, 0, 0, 1, 99, 457}";
+transform = "{1, 0, 0, 1, 99, 664}";
 }
 );
 layerId = master01;
@@ -1596,11 +1283,11 @@ width = 200;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "wavyhamzaabove-ar";
-transform = "{1, 0, 0, 1, 96, 481}";
+transform = "{1, 0, 0, 1, 96, 664}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -1609,11 +1296,11 @@ width = 192;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "wavyhamzaabove-ar";
-transform = "{1, 0, 0, 1, 144, 412}";
+transform = "{1, 0, 0, 1, 136, 684}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -1675,11 +1362,11 @@ layers = (
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "madda-ar";
-transform = "{1, 0, 0, 1, -68, 457}";
+transform = "{1, 0, 0, 1, -68, 664}";
 }
 );
 layerId = master01;
@@ -1688,11 +1375,11 @@ width = 200;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "madda-ar";
-transform = "{1, 0, 0, 1, -59, 481}";
+transform = "{1, 0, 0, 1, -59, 664}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -1701,11 +1388,11 @@ width = 192;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "madda-ar";
-transform = "{1, 0, 0, 1, -45, 412}";
+transform = "{1, 0, 0, 1, -53, 684}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -1721,11 +1408,11 @@ layers = (
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "wasla-ar";
-transform = "{1, 0, 0, 1, -43, 457}";
+transform = "{1, 0, 0, 1, -43, 664}";
 }
 );
 layerId = master01;
@@ -1734,11 +1421,11 @@ width = 200;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "wasla-ar";
-transform = "{1, 0, 0, 1, -35, 481}";
+transform = "{1, 0, 0, 1, -35, 664}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -1747,11 +1434,11 @@ width = 192;
 {
 components = (
 {
-name = "alef-ar.short";
+name = "alef-ar";
 },
 {
 name = "wasla-ar";
-transform = "{1, 0, 0, 1, -28, 412}";
+transform = "{1, 0, 0, 1, -36, 684}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
