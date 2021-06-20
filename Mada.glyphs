@@ -409,8 +409,8 @@ code = "  lookupflag IgnoreMarks;
 name = rlig;
 },
 {
-code = "  lookupflag 0;
-    sub shadda-ar by shadda-ar.alt;
+automatic = 1;
+code = "sub shadda-ar by shadda-ar.ss03;
 ";
 name = ss03;
 notes = "featureNames {\012	name 3 1 0x409 \"Position Kasra/Kasratan directly below Shadda\";\012	name 3 1 0xC01 \"الكسرة والكسرتين تحت الشدة مباشرة\";\012};\012";
@@ -27995,7 +27995,7 @@ category = Mark;
 subCategory = Nonspacing;
 },
 {
-glyphname = "shadda-ar.alt";
+glyphname = "shadda-ar.ss03";
 layers = (
 {
 anchors = (
