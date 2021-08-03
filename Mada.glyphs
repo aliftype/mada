@@ -1,5 +1,5 @@
 {
-.appVersion = "3088";
+.appVersion = "3095";
 classes = (
 {
 automatic = 1;
@@ -275,7 +275,6 @@ code = "    sub zero-persian by zero-ar;
     sub e-ar by alefMaksura-ar twodotsverticalbelow-ar;
     sub yehThreedotsbelow-ar by alefMaksura-ar threedotsdownbelow-ar;
     sub yehbarreeHamzaabove-ar by yehbarree-ar hamzaabove-ar;
-    sub ae-ar by heh-ar;
     sub dalVinvertedabove-ar by dal-ar vinvertedabove-ar;
     sub rehVinvertedabove-ar by reh-ar vinvertedabove-ar;
     sub sheenDotbelow-ar by seen-ar threedotsupabove-ar dotbelow-ar;
@@ -309,7 +308,8 @@ code = "    sub zero-persian by zero-ar;
     sub behVbelow-ar by behDotless-ar vbelow-ar;
     sub behhamzaabove-ar by behDotless-ar hamzaabove-ar dotbelow-ar;
     sub jeemTwodotsabove-ar by hah-ar dotcenter-ar twodotshorizontalabove-ar;
-    sub zainVinvertedabove-ar by reh-ar dotabove-ar vinvertedabove-ar;";
+    sub zainVinvertedabove-ar by reh-ar dotabove-ar vinvertedabove-ar;
+";
 name = ccmp;
 },
 {
@@ -386,13 +386,14 @@ code = "    sub alef-ar by alef-ar.fina;
     sub meem-ar by meem-ar.fina;
     sub noonghunna-ar by noonghunna-ar.fina;
     sub noonThreedotsabove-ar by noonghunna-ar.fina threedotsupabove-ar;
-    sub heh-ar by heh-ar.fina;
+    sub [ae-ar heh-ar] by heh-ar.fina;
     sub hehgoal-ar by hehgoal-ar.fina;
     sub hehDoachashmee-ar by hehDoachashmee-ar.fina;
     sub waw-ar by waw-ar.fina;
     sub alefMaksura-ar by alefMaksura-ar.fina;
     sub yeh-farsi by alefMaksura-ar.fina;
-    sub yehbarree-ar by yehbarree-ar.fina;";
+    sub yehbarree-ar by yehbarree-ar.fina;
+";
 name = fina;
 },
 {
@@ -17224,7 +17225,6 @@ width = 1165;
 unicode = 0678;
 },
 {
-color = 0;
 glyphname = "ae-ar";
 layers = (
 {
