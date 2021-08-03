@@ -15580,9 +15580,8 @@ components = (
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "vabove-ar";
-transform = "{1, 0, 0, 1, 220, 412}";
+transform = "{1, 0, 0, 1, 97, 375}";
 }
 );
 layerId = master01;
@@ -15591,13 +15590,11 @@ width = 438;
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "vabove-ar";
-transform = "{1, 0, 0, 1, 193, 377}";
+transform = "{1, 0, 0, 1, 95, 409}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -15606,13 +15603,11 @@ width = 387;
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "vabove-ar";
-transform = "{1, 0, 0, 1, 278, 467}";
+transform = "{1, 0, 0, 1, 129, 419}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -15677,9 +15672,8 @@ components = (
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "alefabove-ar";
-transform = "{1, 0, 0, 1, 220, 503}";
+transform = "{1, 0, 0, 1, 222, 466}";
 }
 );
 layerId = master01;
@@ -15688,13 +15682,11 @@ width = 438;
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "alefabove-ar";
-transform = "{1, 0, 0, 1, 193, 472}";
+transform = "{1, 0, 0, 1, 217, 434}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -15703,13 +15695,11 @@ width = 387;
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "alefabove-ar";
-transform = "{1, 0, 0, 1, 278, 602}";
+transform = "{1, 0, 0, 1, 259, 554}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -15728,9 +15718,8 @@ components = (
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "vinvertedabove-ar";
-transform = "{1, 0, 0, 1, 220, 462}";
+transform = "{1, 0, 0, 1, 97, 425}";
 }
 );
 layerId = master01;
@@ -15739,13 +15728,11 @@ width = 438;
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "vinvertedabove-ar";
-transform = "{1, 0, 0, 1, 193, 447}";
+transform = "{1, 0, 0, 1, 95, 409}";
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -15754,13 +15741,11 @@ width = 387;
 {
 components = (
 {
-alignment = -1;
 name = "waw-ar";
 },
 {
-alignment = -1;
 name = "vinvertedabove-ar";
-transform = "{1, 0, 0, 1, 278, 517}";
+transform = "{1, 0, 0, 1, 129, 469}";
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
