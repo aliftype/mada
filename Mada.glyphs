@@ -3,7 +3,7 @@
 classes = (
 {
 automatic = 1;
-code = "hamza-ar highhamza-ar alef-ar alef-ar.fina alef-ar.fina.1 alefHamzaabove-ar alefHamzabelow-ar alefWavyhamzaabove-ar alefWavyhamzabelow-ar alefMadda-ar alefWasla-ar highhamzaAlef-ar behDotless-ar behDotless-ar.fina behDotless-ar.medi behDotless-ar.init beh-ar peh-ar beeh-ar beheh-ar teh-ar tehRing-ar tehThreedotsdown-ar theh-ar tteh-ar tteheh-ar teheh-ar behThreedotsupabove-ar behThreedotsupbelow-ar tehThreedotsupbelow-ar behTwodotsbelowDotabove-ar behVinvertedbelow-ar behVabove-ar behVbelow-ar behhamzaabove-ar jeem-ar tcheh-ar tcheheh-ar tchehDotabove-ar nyeh-ar dyeh-ar hah-ar hah-ar.2 hah-ar.fina hah-ar.fina.2 hah-ar.medi hah-ar.init hahHamzaabove-ar hahTwodotsverticalabove-ar hahTwodotshorizontalabove-ar hahThreedotsabove-ar hahThreedotsupbelow-ar khah-ar jeemTwodotsabove-ar dal-ar dal-ar.fina thal-ar ddal-ar dahal-ar ddahal-ar dalRing-ar dalDotbelow-ar dalDotbelowTah-ar dul-ar dalThreedotsdown-ar dalFourdots-ar dalVinvertedabove-ar dalTwodotsverticalbelowTah-ar dalVinvertedbelow-ar reh-ar reh-ar.fina zain-ar zainVinvertedabove-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar jeh-ar rehFourdots-ar rehVinvertedabove-ar rehStroke-ar rehTwodotsverticalabove-ar rehHamzaabove-ar seen-ar seen-ar.fina seen-ar.medi seen-ar.init seenDotbelowDotabove-ar seenThreedotsbelow-ar sheen-ar sheenDotbelow-ar sheenThreedotsbelow-ar sad-ar sad-ar.fina sad-ar.medi sad-ar.init sadTwodotsbelow-ar sadThreedots-ar dad-ar dadDotbelow-ar tah-ar tah-ar.fina tah-ar.medi tah-ar.init tahThreedots-ar zah-ar ain-ar ain-ar.fina ain-ar.medi ain-ar.init ainThreedots-ar ghain-ar ghainDotbelow-ar feh-ar veh-ar fehDotless-ar fehDotless-ar.fina fehDotless-ar.medi fehDotless-ar.init fehDotmovedbelow-ar fehDotbelow-ar fehThreedotsbelow-ar peheh-ar qafDotless-ar qafDotless-ar.fina qaf-ar qafDotabove-ar qafThreedotsabove-ar kafDotless-ar kafDotless-ar.fina kaf-ar kaf-ar.medi kaf-ar.init keheh-ar keheh-ar.fina kehehTwodotshorizontalabove-ar kehehThreedotsbelow-ar kehehDotabove-ar kehehThreedotsabove-ar kehehThreedotsupbelow-ar gaf-ar gafRing-ar gafThreedots-ar kafswash-ar kafswash-ar.fina kafswash-ar.medi kafswash-ar.init kafRing-ar kafDotabove-ar kafThreedotsbelow-ar gafTwodotsbelow-ar ng-ar ngoeh-ar gueh-ar lam-ar lam-ar.fina lam-ar.medi lam-ar.medi.1 lam-ar.init lam-ar.init.1 lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar meem-ar meem-ar.ss04 meem-ar.fina meem-ar.fina.ss04 meem-ar.medi meem-ar.init noon-ar noonDotbelow-ar noonghunna-ar noonghunna-ar.fina rnoon-ar noonRing-ar noonThreedotsabove-ar heh-ar heh-ar.fina heh-ar.medi heh-ar.init hehHamzaabove-ar hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init hehgoalHamzaabove-ar hehDoachashmee-ar hehDoachashmee-ar.fina hehVinvertedabove-ar tehMarbuta-ar tehMarbutagoal-ar waw-ar waw-ar.fina wawring-ar wawTwodots-ar wawDotabove-ar wawHamzaabove-ar kirghizoe-ar oe-ar u-ar yu-ar kirghizyu-ar ve-ar alefMaksura-ar alefMaksura-ar.fina yeh-ar yehHamzaabove-ar yehVabove-ar yehVinverted-farsi yeh-farsi yehTwodotsabove-farsi yehThreedotsabove-farsi yehTail-ar yehKashmiri-ar e-ar yehThreedotsbelow-ar yehbarree-ar yehbarree-ar.fina yehbarreeHamzaabove-ar highhamzaWaw-ar uHamzaabove-ar highhamzaYeh-ar ae-ar wawSmall-ar yehSmall-ar seenFourdotsabove-ar noonTwodotsbelow-ar noonTahabove-ar noonVabove-ar lamBar-ar seenTwodotsverticalabove-ar seenTahTwodotshorizontalabove-ar hahTahabove-ar seenVinvertedabove-ar kashida-ar";
+code = "hamza-ar highhamza-ar alef-ar alef-ar.fina alef-ar.fina.1 alefHamzaabove-ar alefHamzabelow-ar alefWavyhamzaabove-ar alefWavyhamzabelow-ar alefMadda-ar alefWasla-ar highhamzaAlef-ar behDotless-ar behDotless-ar.fina behDotless-ar.medi behDotless-ar.init beh-ar peh-ar beeh-ar beheh-ar teh-ar tehRing-ar tehThreedotsdown-ar theh-ar tteh-ar tteheh-ar teheh-ar behThreedotsupabove-ar behThreedotsupbelow-ar tehThreedotsupbelow-ar behTwodotsbelowDotabove-ar behVinvertedbelow-ar behVabove-ar behVbelow-ar behhamzaabove-ar jeem-ar tcheh-ar tcheheh-ar tchehDotabove-ar nyeh-ar dyeh-ar hah-ar hah-ar.2 hah-ar.fina hah-ar.fina.2 hah-ar.medi hah-ar.init hahHamzaabove-ar hahTwodotsverticalabove-ar hahTwodotshorizontalabove-ar hahThreedotsabove-ar hahThreedotsupbelow-ar khah-ar jeemTwodotsabove-ar dal-ar dal-ar.fina thal-ar ddal-ar dahal-ar ddahal-ar dalRing-ar dalDotbelow-ar dalDotbelowTah-ar dul-ar dalThreedotsdown-ar dalFourdots-ar dalVinvertedabove-ar dalTwodotsverticalbelowTah-ar dalVinvertedbelow-ar reh-ar reh-ar.fina zain-ar zainVinvertedabove-ar rreh-ar rehv-ar rehRing-ar rehDotbelow-ar rehVbelow-ar rehDotbelowdotabove-ar rehTwodots-ar jeh-ar rehFourdots-ar rehVinvertedabove-ar rehStroke-ar rehTwodotsverticalabove-ar rehHamzaabove-ar seen-ar seen-ar.fina seen-ar.medi seen-ar.init seenDotbelowDotabove-ar seenThreedotsbelow-ar sheen-ar sheenDotbelow-ar sheenThreedotsbelow-ar sad-ar sad-ar.fina sad-ar.medi sad-ar.init sadTwodotsbelow-ar sadThreedots-ar dad-ar dadDotbelow-ar tah-ar tah-ar.fina tah-ar.medi tah-ar.init tahThreedots-ar zah-ar ain-ar ain-ar.fina ain-ar.medi ain-ar.init ainThreedots-ar ghain-ar ghainDotbelow-ar feh-ar veh-ar fehDotless-ar fehDotless-ar.fina fehDotless-ar.medi fehDotless-ar.init fehDotmovedbelow-ar fehDotbelow-ar fehThreedotsbelow-ar peheh-ar qafDotless-ar qafDotless-ar.fina qaf-ar qafDotabove-ar qafThreedotsabove-ar kafDotless-ar kafDotless-ar.fina kaf-ar kaf-ar.medi kaf-ar.init keheh-ar keheh-ar.fina kehehTwodotshorizontalabove-ar kehehThreedotsbelow-ar kehehDotabove-ar kehehThreedotsabove-ar kehehThreedotsupbelow-ar gaf-ar gafRing-ar gafThreedots-ar kafswash-ar kafswash-ar.fina kafswash-ar.medi kafswash-ar.init kafRing-ar kafDotabove-ar kafThreedotsbelow-ar gafTwodotsbelow-ar ng-ar ngoeh-ar gueh-ar lam-ar lam-ar.fina lam-ar.medi lam-ar.medi.1 lam-ar.init lam-ar.init.1 lamVabove-ar lamDotabove-ar lamThreedotsabove-ar lamThreedotsbelow-ar meem-ar meem-ar.ss04 meem-ar.fina meem-ar.fina.ss04 meem-ar.medi meem-ar.init noon-ar noonDotbelow-ar noonghunna-ar noonghunna-ar.fina rnoon-ar noonRing-ar noonThreedotsabove-ar heh-ar heh-ar.fina heh-ar.medi heh-ar.init hehHamzaabove-ar hehgoal-ar hehgoal-ar.fina hehgoal-ar.medi hehgoal-ar.init hehgoalHamzaabove-ar hehDoachashmee-ar hehDoachashmee-ar.fina hehVinvertedabove-ar tehMarbuta-ar tehMarbutagoal-ar waw-ar waw-ar.fina wawring-ar wawTwodots-ar wawDotabove-ar wawHamzaabove-ar kirghizoe-ar oe-ar u-ar yu-ar kirghizyu-ar ve-ar alefMaksura-ar alefMaksura-ar.fina yeh-ar yehHamzaabove-ar yehVabove-ar yehFarsiVinverted-ar yehFarsi-ar yehFarsiTwodotsabove-ar yehFarsiThreedotsabove-ar yehTail-ar yehKashmiri-ar e-ar yehThreedotsbelow-ar yehbarree-ar yehbarree-ar.fina yehbarreeHamzaabove-ar highhamzaWaw-ar uHamzaabove-ar highhamzaYeh-ar ae-ar wawSmall-ar yehSmall-ar seenFourdotsabove-ar noonTwodotsbelow-ar noonTahabove-ar noonVabove-ar lamBar-ar seenTwodotsverticalabove-ar seenTahTwodotshorizontalabove-ar hahTahabove-ar seenVinvertedabove-ar kashida-ar";
 name = ArabicLetters;
 }
 );
@@ -136,28 +136,29 @@ code = " lookupflag IgnoreMarks;
   script arab;
 
   language URD  exclude_dflt;
-    sub four-persian by four-persian.urdu;
-    sub six-persian by six-ar;
-    sub seven-persian by seven-persian.urdu;
+    sub fourFarsi-ar by fourFarsi-ar.urdu;
+    sub sixFarsi-ar by six-ar;
+    sub sevenFarsi-ar by sevenFarsi-ar.urdu;
 
   language KSH  exclude_dflt;
-    sub four-persian by four-persian.urdu;
-    sub six-persian by six-ar;
-    sub seven-persian by seven-persian.urdu;
+    sub fourFarsi-ar by fourFarsi-ar.urdu;
+    sub sixFarsi-ar by six-ar;
+    sub sevenFarsi-ar by sevenFarsi-ar.urdu;
 
   language SND  exclude_dflt;
-    sub six-persian by six-ar;
-    sub seven-persian by seven-persian.urdu;";
+    sub sixFarsi-ar by six-ar;
+    sub sevenFarsi-ar by sevenFarsi-ar.urdu;
+";
 name = locl;
 },
 {
-code = "    sub zero-persian by zero-ar;
-    sub one-persian by one-ar;
-    sub two-persian by two-ar;
-    sub three-persian by three-ar;
-    sub seven-persian by seven-ar;
-    sub eight-persian by eight-ar;
-    sub nine-persian by nine-ar;
+code = "    sub zeroFarsi-ar by zero-ar;
+    sub oneFarsi-ar by one-ar;
+    sub twoFarsi-ar by two-ar;
+    sub threeFarsi-ar by three-ar;
+    sub sevenFarsi-ar by seven-ar;
+    sub eightFarsi-ar by eight-ar;
+    sub nineFarsi-ar by nine-ar;
 
     sub yehKashmiri-ar by alefMaksura-ar ringbelow-ar;
     sub alefMadda-ar by alef-ar madda-ar;
@@ -180,9 +181,9 @@ code = "    sub zero-persian by zero-ar;
     sub ghainDotbelow-ar by ain-ar dotabove-ar dotcenter-ar;
     sub kehehTwodotshorizontalabove-ar by keheh-ar twodotshorizontalabove-ar;
     sub kehehThreedotsbelow-ar by keheh-ar threedotsdownbelow-ar;
-    sub yehVinverted-farsi by yeh-farsi vinvertedabove-ar;
-    sub yehTwodotsabove-farsi by yeh-farsi twodotshorizontalabove-ar;
-    sub yehThreedotsabove-farsi by yeh-farsi threedotsupabove-ar;
+    sub yehFarsiVinverted-ar by yehFarsi-ar vinvertedabove-ar;
+    sub yehFarsiTwodotsabove-ar by yehFarsi-ar twodotshorizontalabove-ar;
+    sub yehFarsiThreedotsabove-ar by yehFarsi-ar threedotsupabove-ar;
     sub feh-ar by fehDotless-ar dotabove-ar;
     sub qaf-ar by qafDotless-ar twodotshorizontalabove-ar;
     sub noon-ar by noonghunna-ar dotabove-ar;
@@ -270,7 +271,7 @@ code = "    sub zero-persian by zero-ar;
     sub wawTwodots-ar by waw-ar twodotshorizontalabove-ar;
     sub ve-ar by waw-ar threedotsupabove-ar;
     sub yehTail-ar by alefMaksura-ar tail-ar;
-    sub yehVabove-ar by yeh-farsi vabove-ar;
+    sub yehVabove-ar by yehFarsi-ar vabove-ar;
     sub wawDotabove-ar by waw-ar dotabove-ar;
     sub e-ar by alefMaksura-ar twodotsverticalbelow-ar;
     sub yehThreedotsbelow-ar by alefMaksura-ar threedotsdownbelow-ar;
@@ -319,7 +320,7 @@ name = ccmp;
 {
 code = "    sub kaf-ar by kafDotless-ar miniKeheh-ar;
     sub noonThreedotsabove-ar by noonghunna-ar threedotsupabove-ar;
-    sub yeh-farsi by alefMaksura-ar;
+    sub yehFarsi-ar by alefMaksura-ar;
 ";
 name = isol;
 },
@@ -328,7 +329,7 @@ code = "    sub dotcenter-ar by dotbelow-ar;
     sub twodotshorizontalcenter-ar by twodotshorizontalbelow-ar;
 
     sub [behDotless-ar noonghunna-ar alefMaksura-ar] by behDotless-ar.init;
-    sub yeh-farsi by behDotless-ar.init twodotshorizontalbelow-ar;
+    sub yehFarsi-ar by behDotless-ar.init twodotshorizontalbelow-ar;
     sub noonThreedotsabove-ar by behDotless-ar.init threedotsdownbelow-ar;
     sub [hah-ar hah-ar.2] by hah-ar.init;
     sub seen-ar by seen-ar.init;
@@ -341,7 +342,8 @@ code = "    sub dotcenter-ar by dotbelow-ar;
     sub lam-ar by lam-ar.init;
     sub meem-ar by meem-ar.init;
     sub [heh-ar hehDoachashmee-ar] by heh-ar.init;
-    sub hehgoal-ar by hehgoal-ar.init;";
+    sub hehgoal-ar by hehgoal-ar.init;
+";
 name = init;
 },
 {
@@ -349,7 +351,7 @@ code = "    sub dotcenter-ar by dotbelow-ar;
     sub twodotshorizontalcenter-ar by twodotshorizontalbelow-ar;
 
     sub [behDotless-ar noonghunna-ar alefMaksura-ar] by behDotless-ar.medi;
-    sub yeh-farsi by behDotless-ar.medi twodotshorizontalbelow-ar;
+    sub yehFarsi-ar by behDotless-ar.medi twodotshorizontalbelow-ar;
     sub noonThreedotsabove-ar by behDotless-ar.medi threedotsdownbelow-ar;
     sub [hah-ar hah-ar.2] by hah-ar.medi;
     sub seen-ar by seen-ar.medi;
@@ -362,7 +364,8 @@ code = "    sub dotcenter-ar by dotbelow-ar;
     sub lam-ar by lam-ar.medi;
     sub meem-ar by meem-ar.medi;
     sub [heh-ar hehDoachashmee-ar] by heh-ar.medi;
-    sub hehgoal-ar by hehgoal-ar.medi;";
+    sub hehgoal-ar by hehgoal-ar.medi;
+";
 name = medi;
 },
 {
@@ -391,7 +394,7 @@ code = "    sub alef-ar by alef-ar.fina;
     sub hehDoachashmee-ar by hehDoachashmee-ar.fina;
     sub waw-ar by waw-ar.fina;
     sub alefMaksura-ar by alefMaksura-ar.fina;
-    sub yeh-farsi by alefMaksura-ar.fina;
+    sub yehFarsi-ar by alefMaksura-ar.fina;
     sub yehbarree-ar by yehbarree-ar.fina;
 ";
 name = fina;
@@ -16222,7 +16225,8 @@ unicode = 06CE;
 },
 {
 color = 0;
-glyphname = "yehVinverted-farsi";
+glyphname = "yehFarsiVinverted-ar";
+production = uni063D;
 layers = (
 {
 components = (
@@ -16270,10 +16274,13 @@ width = 714;
 }
 );
 unicode = 063D;
+script = arabic;
+category = Letter;
 },
 {
 color = 0;
-glyphname = "yeh-farsi";
+glyphname = "yehFarsi-ar";
+production = uni06CC;
 layers = (
 {
 components = (
@@ -16304,15 +16311,18 @@ width = 714;
 }
 );
 unicode = 06CC;
+script = arabic;
+category = Letter;
 },
 {
 color = 0;
-glyphname = "yehTwodotsabove-farsi";
+glyphname = "yehFarsiTwodotsabove-ar";
+production = uni063E;
 layers = (
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "twodotshorizontalabove-ar";
@@ -16325,7 +16335,7 @@ width = 599;
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "twodotshorizontalabove-ar";
@@ -16338,7 +16348,7 @@ width = 544;
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "twodotshorizontalabove-ar";
@@ -16350,15 +16360,18 @@ width = 714;
 }
 );
 unicode = 063E;
+script = arabic;
+category = Letter;
 },
 {
 color = 0;
-glyphname = "yehThreedotsabove-farsi";
+glyphname = "yehFarsiThreedotsabove-ar";
+production = uni063F;
 layers = (
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "threedotsupabove-ar";
@@ -16371,7 +16384,7 @@ width = 599;
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "threedotsupabove-ar";
@@ -16384,7 +16397,7 @@ width = 544;
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "threedotsupabove-ar";
@@ -16396,6 +16409,8 @@ width = 714;
 }
 );
 unicode = 063F;
+script = arabic;
+category = Letter;
 },
 {
 color = 0;
@@ -16404,7 +16419,7 @@ layers = (
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "tail-ar";
@@ -16417,7 +16432,7 @@ width = 599;
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "tail-ar";
@@ -16430,7 +16445,7 @@ width = 544;
 {
 components = (
 {
-name = "yeh-farsi";
+name = "yehFarsi-ar";
 },
 {
 name = "tail-ar";
@@ -18982,7 +18997,8 @@ unicode = 0669;
 },
 {
 color = 0;
-glyphname = "zero-persian";
+glyphname = "zeroFarsi-ar";
+production = uni06F0;
 layers = (
 {
 components = (
@@ -19019,7 +19035,8 @@ unicode = 06F0;
 },
 {
 color = 0;
-glyphname = "one-persian";
+glyphname = "oneFarsi-ar";
+production = uni06F1;
 layers = (
 {
 components = (
@@ -19055,7 +19072,8 @@ unicode = 06F1;
 },
 {
 color = 0;
-glyphname = "two-persian";
+glyphname = "twoFarsi-ar";
+production = uni06F2;
 layers = (
 {
 components = (
@@ -19092,7 +19110,8 @@ unicode = 06F2;
 },
 {
 color = 0;
-glyphname = "three-persian";
+glyphname = "threeFarsi-ar";
+production = uni06F3;
 layers = (
 {
 components = (
@@ -19128,7 +19147,8 @@ width = 780;
 unicode = 06F3;
 },
 {
-glyphname = "four-persian";
+glyphname = "fourFarsi-ar";
+production = uni06F4;
 layers = (
 {
 layerId = master01;
@@ -19257,7 +19277,8 @@ width = 780;
 unicode = 06F4;
 },
 {
-glyphname = "four-persian.urdu";
+glyphname = "fourFarsi-ar.urdu";
+production = uni06F4.urdu;
 layers = (
 {
 layerId = master01;
@@ -19367,7 +19388,8 @@ width = 730;
 );
 },
 {
-glyphname = "five-persian";
+glyphname = "fiveFarsi-ar";
+production = uni06F5;
 layers = (
 {
 layerId = master01;
@@ -19547,7 +19569,8 @@ width = 725;
 unicode = 06F5;
 },
 {
-glyphname = "six-persian";
+glyphname = "sixFarsi-ar";
+production = uni06F6;
 layers = (
 {
 layerId = master01;
@@ -19689,7 +19712,8 @@ unicode = 06F6;
 },
 {
 color = 0;
-glyphname = "seven-persian";
+glyphname = "sevenFarsi-ar";
+production = uni06F7;
 layers = (
 {
 components = (
@@ -19722,7 +19746,8 @@ width = 733;
 unicode = 06F7;
 },
 {
-glyphname = "seven-persian.urdu";
+glyphname = "sevenFarsi-ar.urdu";
+production = uni06F7.urdu;
 layers = (
 {
 layerId = master01;
@@ -19797,7 +19822,8 @@ width = 586.9317;
 },
 {
 color = 0;
-glyphname = "eight-persian";
+glyphname = "eightFarsi-ar";
+production = uni06F8;
 layers = (
 {
 components = (
@@ -19831,7 +19857,8 @@ unicode = 06F8;
 },
 {
 color = 0;
-glyphname = "nine-persian";
+glyphname = "nineFarsi-ar";
+production = uni06F9;
 layers = (
 {
 components = (
