@@ -36,7 +36,7 @@ def merge(ufo, args):
     """Merges Arabic and Latin fonts together, and messages the combined font a
     bit. Returns the combined font."""
 
-    latin = Font(args.latinfile)
+    latin = Font.open(args.latinfile)
 
     # Save original glyph order, used below.
     glyphOrder = ufo.glyphOrder + latin.glyphOrder
