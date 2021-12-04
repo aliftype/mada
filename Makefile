@@ -12,7 +12,7 @@ MKSAMPLE=mksample.py
 
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
-SOURCES=ExtraLight Regular Black
+SOURCES=ExtraLight Black
 INSTANCES=200 300 400 500 600 700 800 900
 
 UFO=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ufo)

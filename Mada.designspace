@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <designspace format="3">
   <axes>
-    <axis default="400" maximum="900" minimum="200" name="Weight" tag="wght" />
+    <axis default="200" maximum="900" minimum="200" name="Weight" tag="wght" />
   </axes>
   <sources>
     <source filename="Mada-ExtraLight.ufo" name="extralightup">
       <location>
         <dimension name="Weight" xvalue="200"/>
       </location>
-    </source>
-    <source filename="Mada-Regular.ufo" name="regular">
-      <location>
-        <dimension name="Weight" xvalue="400"/>
-      </location>
-      <features copy="1" />
-      <info copy="1" />
-      <lib copy="1" />
     </source>
     <source filename="Mada-Black.ufo" name="blackup">
       <location>
