@@ -19,7 +19,7 @@ UFO=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ufo)
 SVG=FontSample.svg
 SMP=$(INSTANCES:%=$(BUILDDIR)/$(NAME)-%.svg)
 
-FMOPTS = --verbose=WARNING --overlaps-backend=pathops 
+FMOPTS = --verbose=WARNING
 
 export SOURCE_DATE_EPOCH ?= 0
 
@@ -35,7 +35,7 @@ SHELL=/usr/bin/env bash
 
 $(NAME).otf: $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " VARIABLE    $(@F)"
-	@fontmake -m $< --output-path=$@ -o variable-cff2 --optimize-cff=1 $(FMOPTS)
+	@fontmake -m $< --output-path=$@ -o variable-cff2 $(FMOPTS)
 
 $(NAME).ttf: $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " VARIABLE    $(@F)"
