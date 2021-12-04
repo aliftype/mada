@@ -13,45 +13,31 @@ MKSAMPLE=mksample.py
 SAMPLE="صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
 SOURCES=ExtraLight Regular Black
-FONTS=ExtraLight Light Regular Medium SemiBold Bold ExtraBold Black
+INSTANCES=200 300 400 500 600 700 800 900
 
 UFO=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ufo)
-OTF=$(FONTS:%=$(NAME)-%.otf)
-TTF=$(FONTS:%=$(NAME)-%.ttf)
-OTV=$(NAME).otf
-TTV=$(NAME).ttf
 SVG=FontSample.svg
-SMP=$(FONTS:%=$(BUILDDIR)/$(NAME)-%.svg)
+SMP=$(INSTANCES:%=$(BUILDDIR)/$(NAME)-%.svg)
 
 FMOPTS = --verbose=WARNING --overlaps-backend=pathops 
 
 export SOURCE_DATE_EPOCH ?= 0
 
-all: otv otf doc
+all: otf doc
 
-otf: $(OTF)
-ttf: $(TTF)
-otv: $(OTV)
-ttv: $(TTV)
+otf: $(NAME).otf
+ttf: $(NAME).ttf
 doc: $(SVG)
 
 SHELL=/usr/bin/env bash
 
 .SECONDARY:
 
-$(NAME)-%.otf: $(BUILDDIR)/$(NAME).designspace $(UFO)
-	@echo " INSTANCE    $(@F)"
-	@fontmake -m $< -i ".* $*" --output-path=$@ -o otf --optimize-cff=1 $(FMOPTS) 
-
-$(NAME)-%.ttf: $(BUILDDIR)/$(NAME).designspace $(UFO)
-	@echo " INSTANCE    $(@F)"
-	@fontmake -m $< -i ".* $*" --output-path=$@ -o otf $(FMOPTS)
-
-$(OTV): $(BUILDDIR)/$(NAME).designspace $(UFO)
+$(NAME).otf: $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " VARIABLE    $(@F)"
 	@fontmake -m $< --output-path=$@ -o variable-cff2 --optimize-cff=1 $(FMOPTS)
 
-$(TTV): $(BUILDDIR)/$(NAME).designspace $(UFO)
+$(NAME).ttf: $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " VARIABLE    $(@F)"
 	@fontmake -m $< --output-path=$@ -o variable $(FMOPTS)
 
@@ -65,9 +51,9 @@ $(BUILDDIR)/$(NAME).designspace: $(NAME).designspace
 	@mkdir -p $(BUILDDIR)
 	@cp $< $@
 
-$(BUILDDIR)/$(NAME)-%.svg: $(NAME)-%.otf
+$(BUILDDIR)/$(NAME)-%.svg: $(NAME).otf
 	@echo "      GEN    $(@F)"
-	@hb-view $< $(SAMPLE) --font-size=130 --output-file=$@
+	@hb-view $< $(SAMPLE) --font-size=130 --output-file=$@ --variations="wght=$*"
 
 $(SVG): $(SMP)
 	@echo "   SAMPLE    $(@F)"
@@ -75,11 +61,9 @@ $(SVG): $(SMP)
 
 dist: otf ttf doc
 	@echo "     DIST    $(NAME)-$(VERSION)"
-	@mkdir -p $(NAME)-$(VERSION)/{ttf,vf}
-	@cp $(OTF) $(NAME)-$(VERSION)
-	@cp $(TTF) $(NAME)-$(VERSION)/ttf
-	@cp $(OTV)  $(NAME)-$(VERSION)/vf
-	@cp $(TTV)  $(NAME)-$(VERSION)/vf
+	@mkdir -p $(NAME)-$(VERSION)/ttf
+	@cp $(NAME).otf $(NAME)-$(VERSION)
+	@cp $(NAME).ttf $(NAME)-$(VERSION)/ttf
 	@cp OFL.txt $(NAME)-$(VERSION)
 	@sed -e "/^!\[Sample\].*./d" README.md > $(NAME)-$(VERSION)/README.txt
 	@@echo "     ZIP    $(NAME)-$(VERSION)"
