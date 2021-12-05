@@ -43,7 +43,7 @@ $(NAME).ttf: $(BUILDDIR)/$(NAME).glyphs
 $(BUILDDIR)/$(NAME).glyphs: $(NAME).glyphs $(PREPARE)
 	@echo "     PREP    $(@F)"
 	@mkdir -p $(BUILDDIR)
-	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $<
+	@$(PY) $(PREPARE) $< $@ $(VERSION)
 
 $(BUILDDIR)/$(NAME)-%.svg: $(NAME).otf
 	@echo "      GEN    $(@F)"

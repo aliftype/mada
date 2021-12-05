@@ -1,30 +1,18 @@
+from argparse import ArgumentParser
 from glyphsLib import GSFont
 
 
 def main():
-    from pathlib import Path
-    from argparse import ArgumentParser
-
     parser = ArgumentParser(description="Prepare Mada fonts.")
-    parser.add_argument(
-        "arabicfile", metavar="FILE", type=Path, help="input font to process"
-    )
-    parser.add_argument(
-        "--out-file",
-        metavar="FILE",
-        type=Path,
-        required=True,
-        help="output font to write",
-    )
-    parser.add_argument(
-        "--version", metavar="version", help="version number", required=True
-    )
+    parser.add_argument("file", metavar="FILE", help="input font to process")
+    parser.add_argument("outfile", metavar="FILE", help="output font to write")
+    parser.add_argument("version", metavar="version", help="version number")
 
     args = parser.parse_args()
 
-    font = GSFont(args.arabicfile)
+    font = GSFont(args.file)
     font.versionMajor, font.versionMinor = map(int, args.version.split("."))
-    font.save(args.out_file)
+    font.save(args.outfile)
 
 
 if __name__ == "__main__":
