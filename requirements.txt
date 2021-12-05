@@ -18,13 +18,12 @@ compreffor==0.5.1.post1
     # via ufo2ft
 cu2qu==1.6.7.post1
     # via ufo2ft
-fontmake[pathops]==3.0.0
+fontmake==3.0.0
     # via -r requirements.in
 fontmath==0.8.1
     # via fontmake
 fonttools[lxml,ufo,unicode]==4.28.3
     # via
-    #   -r requirements.in
     #   booleanoperations
     #   cffsubr
     #   compreffor
@@ -50,15 +49,12 @@ pytz==2021.3
     # via fs
 six==1.16.0
     # via fs
-skia-pathops==0.7.2
-    # via fontmake
 svgutils==0.3.4
     # via -r requirements.in
 ufo2ft[compreffor]==2.25.1
     # via fontmake
 ufolib2==0.12.1
     # via
-    #   -r requirements.in
     #   fontmake
     #   glyphslib
 
