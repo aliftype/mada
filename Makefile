@@ -1,6 +1,5 @@
 NAME=Mada
 VERSION=1.4
-LATIN=SourceSansPro
 
 SRCDIR=sources
 BUILDDIR=build
@@ -41,10 +40,10 @@ $(NAME).ttf: $(BUILDDIR)/$(NAME).designspace $(UFO)
 	@echo " VARIABLE    $(@F)"
 	@fontmake -m $< --output-path=$@ -o variable $(FMOPTS)
 
-$(BUILDDIR)/$(NAME)-%.ufo: $(NAME).glyphs $(LATIN)/Roman/Instances/%/font.ufo $(PREPARE)
+$(BUILDDIR)/$(NAME)-%.ufo: $(NAME).glyphs $(PREPARE)
 	@echo "     PREP    $(@F)"
 	@mkdir -p $(BUILDDIR)
-	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $< $(word 2,$+)
+	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $<
 
 $(BUILDDIR)/$(NAME).designspace: $(NAME).designspace
 	@echo "      GEN    $(@F)"
