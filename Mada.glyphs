@@ -429,11 +429,16 @@ sub nine by nine.dnom;
 tag = dnom;
 },
 {
-code = "";
+code = "pos alefMaksura-ar.fina <0 $ss01 0 0>;
+";
 labels = (
 {
-language = dflt;
-value = "";
+language = ENG;
+value = "Align final yeh with the connection";
+},
+{
+language = ARA;
+value = "حاذ الياء المنتهية مع الحرف المتصل بها";
 }
 );
 tag = ss01;
@@ -514,6 +519,9 @@ pos = -200;
 }
 );
 name = ExtraLight;
+numberValues = (
+-30
+);
 userData = {
 GSExtrudeAngle = 30;
 GSExtrudeOffset = 15;
@@ -566,6 +574,9 @@ pos = -200;
 }
 );
 name = Regular;
+numberValues = (
+-57
+);
 userData = {
 GSOffsetCapStyle = 2;
 GSOffsetHorizontal = 22;
@@ -617,6 +628,9 @@ pos = -200;
 }
 );
 name = Black;
+numberValues = (
+-60
+);
 userData = {
 GSOffsetCapStyle = 2;
 GSOffsetHorizontal = 37;
@@ -51139,7 +51153,7 @@ nodes = (
 (654,130,l),
 (654,302,l),
 (486,302,ls),
-(371.203,308.833,o),
+(371,302,o),
 (301.839,181.868,o),
 (383,83,cs),
 (438,16,l),
@@ -89541,6 +89555,11 @@ type = descender;
 },
 {
 type = "italic angle";
+}
+);
+numbers = (
+{
+name = ss01;
 }
 );
 properties = (
