@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <designspace format="3">
   <axes>
-    <axis default="200" maximum="900" minimum="200" name="Weight" tag="wght" />
+    <axis default="200.0" maximum="900.0" minimum="200.0" name="Weight" tag="wght">
+      <map input="200" output="0"/>     <!-- ExtraLight -->
+      <map input="300" output="100"/>   <!-- Light -->
+      <map input="400" output="368"/>   <!-- Regular -->
+      <map input="600" output="600"/>   <!-- Semibold -->
+      <map input="700" output="824"/>   <!-- Bold -->
+      <map input="900" output="1000"/>  <!-- Black -->
+    </axis>
   </axes>
   <sources>
     <source filename="Mada-ExtraLight.ufo" name="extralightup">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <info copy="1"/>
       <location>
-        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Weight" xvalue="0"/>
       </location>
     </source>
     <source filename="Mada-Black.ufo" name="blackup">
       <location>
-        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Weight" xvalue="1000"/>
       </location>
     </source>
   </sources>
@@ -24,7 +34,7 @@
               stylemapstylename="regular"
               >
       <location>
-        <dimension name="Weight" xvalue="200"/>
+        <dimension name="Weight" xvalue="0"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Light"
@@ -35,7 +45,7 @@
               stylemapstylename="regular"
               >
       <location>
-        <dimension name="Weight" xvalue="300"/>
+        <dimension name="Weight" xvalue="100"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Regular"
@@ -46,18 +56,7 @@
               stylemapstylename="regular"
               >
       <location>
-        <dimension name="Weight" xvalue="400"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="Medium"
-              name="Mada Medium"
-              filename="instances/Mada-Medium.ufo"
-              postscriptfontname="Mada-Medium"
-              stylemapfamilyname="Mada Medium"
-              stylemapstylename="regular"
-              >
-      <location>
-        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Weight" xvalue="368"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="SemiBold"
@@ -79,18 +78,7 @@
               stylemapstylename="bold"
               >
       <location>
-        <dimension name="Weight" xvalue="700"/>
-      </location>
-    </instance>
-    <instance familyname="Mada" stylename="ExtraBold"
-              name="Mada ExtraBold"
-              filename="instances/Mada-ExtraBold.ufo"
-              postscriptfontname="Mada-ExtraBold"
-              stylemapfamilyname="Mada ExtraBold"
-              stylemapstylename="regular"
-              >
-      <location>
-        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Weight" xvalue="824"/>
       </location>
     </instance>
     <instance familyname="Mada" stylename="Black"
@@ -101,7 +89,7 @@
               stylemapstylename="regular"
               >
       <location>
-        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Weight" xvalue="1000"/>
       </location>
     </instance>
   </instances>

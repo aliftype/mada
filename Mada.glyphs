@@ -1,5 +1,5 @@
 {
-.appVersion = "3100";
+.appVersion = "3105";
 classes = (
 {
 automatic = 1;
@@ -14,8 +14,17 @@ value = (
 );
 },
 {
-name = "Variable Font Origin";
-value = master01;
+name = "Axis Mappings";
+value = {
+wght = {
+200 = 0;
+300 = 100;
+400 = 368;
+600 = 600;
+700 = 824;
+900 = 1000;
+};
+};
 },
 {
 name = "Use Typo Metrics";
@@ -464,7 +473,7 @@ GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
 weight = Light;
-weightValue = 200;
+weightValue = 0;
 xHeight = 480;
 },
 {
@@ -497,7 +506,7 @@ GSOffsetPosition = 0;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-weightValue = 400;
+weightValue = 368;
 xHeight = 484;
 },
 {
@@ -532,7 +541,7 @@ GSOffsetPosition = 0;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-weightValue = 900;
+weightValue = 1000;
 xHeight = 500;
 }
 );
@@ -31426,7 +31435,7 @@ width = 0;
 );
 instances = (
 {
-interpolationWeight = 200;
+interpolationWeight = 0;
 instanceInterpolations = {
 "0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 1;
 };
@@ -31434,44 +31443,34 @@ name = ExtraLight;
 weightClass = ExtraLight;
 },
 {
-interpolationWeight = 300;
 instanceInterpolations = {
-"0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 0.5;
-master01 = 0.5;
+"0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 0.72826;
+master01 = 0.27174;
 };
 name = Light;
 weightClass = Light;
 },
 {
-interpolationWeight = 400;
+interpolationWeight = 368;
 instanceInterpolations = {
 master01 = 1;
 };
 name = Regular;
 },
 {
-interpolationWeight = 500;
-instanceInterpolations = {
-"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.2;
-master01 = 0.8;
-};
-name = Medium;
-weightClass = Medium;
-},
-{
 interpolationWeight = 600;
 instanceInterpolations = {
-"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.4;
-master01 = 0.6;
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.36709;
+master01 = 0.63291;
 };
 name = SemiBold;
 weightClass = SemiBold;
 },
 {
-interpolationWeight = 700;
+interpolationWeight = 824;
 instanceInterpolations = {
-"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.6;
-master01 = 0.4;
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.72152;
+master01 = 0.27848;
 };
 isBold = 1;
 linkStyle = Regular;
@@ -31479,16 +31478,7 @@ name = Bold;
 weightClass = Bold;
 },
 {
-interpolationWeight = 800;
-instanceInterpolations = {
-"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.8;
-master01 = 0.2;
-};
-name = ExtraBold;
-weightClass = ExtraBold;
-},
-{
-interpolationWeight = 900;
+interpolationWeight = 1000;
 instanceInterpolations = {
 "42B3044F-4D5A-45CA-9EB7-C1889731596B" = 1;
 };
