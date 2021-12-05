@@ -39,35 +39,14 @@ def decomposeFlippedComponents(ufo):
                 glyph.removeComponent(component)
 
 
-def setInfo(info, version):
-    """Sets various font metadata fields."""
-
-    info.versionMajor, info.versionMinor = map(int, version.split("."))
-
-    copyright = (
-        "Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name “Source”."
-        % datetime.now().year
-    )
-
-    info.copyright = copyright
-
-
-def loadUFO(args):
-    font = GSFont(args.arabicfile)
-    master = args.out_file.stem.split("-")[1]
-    builder = UFOBuilder(font, write_skipexportglyphs=True, generate_GDEF=False)
-    for ufo in builder.masters:
-        if ufo.info.styleName == master:
-            return ufo
-
-
 def build(args):
-    ufo = loadUFO(args)
-    ufo.features.text += generateStyleSets(ufo)
-    setInfo(ufo.info, args.version)
-    decomposeFlippedComponents(ufo)
+    font = GSFont(args.arabicfile)
+    #ufo.features.text += generateStyleSets(ufo)
+    font.versionMajor, font.versionMinor = map(int, args.version.split("."))
+    font.copyright = "Copyright © 2015-%s The Mada Project Authors, with Reserved Font Name “Source”."  % datetime.now().year
+    #decomposeFlippedComponents(ufo)
 
-    return ufo
+    return font
 
 
 def main():
@@ -91,8 +70,8 @@ def main():
 
     args = parser.parse_args()
 
-    ufo = build(args)
-    ufo.save(args.out_file, overwrite=True)
+    font = build(args)
+    font.save(args.out_file)
 
 
 if __name__ == "__main__":

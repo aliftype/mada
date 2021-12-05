@@ -18,7 +18,7 @@ UFO=$(SOURCES:%=$(BUILDDIR)/$(NAME)-%.ufo)
 SVG=FontSample.svg
 SMP=$(INSTANCES:%=$(BUILDDIR)/$(NAME)-%.svg)
 
-FMOPTS = --verbose=WARNING
+FMOPTS = --verbose=WARNING --master-dir="{tmp}"
 
 export SOURCE_DATE_EPOCH ?= 0
 
@@ -32,23 +32,18 @@ SHELL=/usr/bin/env bash
 
 .SECONDARY:
 
-$(NAME).otf: $(BUILDDIR)/$(NAME).designspace $(UFO)
+$(NAME).otf: $(BUILDDIR)/$(NAME).glyphs
 	@echo " VARIABLE    $(@F)"
-	@fontmake -m $< --output-path=$@ -o variable-cff2 $(FMOPTS)
+	@fontmake $< --output-path=$@ -o variable-cff2 $(FMOPTS)
 
-$(NAME).ttf: $(BUILDDIR)/$(NAME).designspace $(UFO)
+$(NAME).ttf: $(BUILDDIR)/$(NAME).glyphs
 	@echo " VARIABLE    $(@F)"
-	@fontmake -m $< --output-path=$@ -o variable $(FMOPTS)
+	@fontmake $< --output-path=$@ -o variable $(FMOPTS)
 
-$(BUILDDIR)/$(NAME)-%.ufo: $(NAME).glyphs $(PREPARE)
+$(BUILDDIR)/$(NAME).glyphs: $(NAME).glyphs $(PREPARE)
 	@echo "     PREP    $(@F)"
 	@mkdir -p $(BUILDDIR)
 	@$(PY) $(PREPARE) --version=$(VERSION) --out-file=$@ $<
-
-$(BUILDDIR)/$(NAME).designspace: $(NAME).designspace
-	@echo "      GEN    $(@F)"
-	@mkdir -p $(BUILDDIR)
-	@cp $< $@
 
 $(BUILDDIR)/$(NAME)-%.svg: $(NAME).otf
 	@echo "      GEN    $(@F)"
