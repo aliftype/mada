@@ -37,7 +37,7 @@ fs==2.4.14
     # via fonttools
 glyphslib==6.0.0
     # via fontmake
-lxml==4.6.4
+lxml==4.6.5
     # via
     #   fonttools
     #   svgutils
