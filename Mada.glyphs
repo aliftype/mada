@@ -72421,6 +72421,8 @@ layers = (
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 shapes = (
 {
+alignment = -1;
+pos = (0,264);
 ref = zero.dnom;
 },
 {
@@ -72438,6 +72440,8 @@ width = 860;
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
+alignment = -1;
+pos = (0,270);
 ref = zero.dnom;
 },
 {
