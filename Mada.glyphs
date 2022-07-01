@@ -1,5 +1,5 @@
 {
-.appVersion = "3112";
+.appVersion = "3133";
 .formatVersion = 3;
 axes = (
 {
@@ -68,14 +68,6 @@ value = 847;
 {
 name = winDescent;
 value = 362;
-},
-{
-name = underlineThickness;
-value = 50;
-},
-{
-name = underlinePosition;
-value = -300;
 },
 {
 name = "Write lastChange";
@@ -508,6 +500,14 @@ customParameters = (
 {
 name = "Master Icon Glyph Name";
 value = "heh-ar";
+},
+{
+name = underlinePosition;
+value = -260;
+},
+{
+name = underlineThickness;
+value = 32;
 }
 );
 guides = (
@@ -565,6 +565,14 @@ customParameters = (
 {
 name = "Master Icon Glyph Name";
 value = "heh-ar";
+},
+{
+name = underlinePosition;
+value = -300;
+},
+{
+name = underlineThickness;
+value = 55;
 }
 );
 guides = (
@@ -619,6 +627,14 @@ customParameters = (
 {
 name = "Master Icon Glyph Name";
 value = "heh-ar";
+},
+{
+name = underlinePosition;
+value = -360;
+},
+{
+name = underlineThickness;
+value = 94;
 }
 );
 guides = (
