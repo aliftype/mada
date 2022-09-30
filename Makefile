@@ -18,7 +18,6 @@ TTF = $(NAME).ttf
 
 SVG = FontSample.svg
 INSTANCES = 200 300 400 500 600 700 800 900
-SMP = $(INSTANCES:%=$(BUILDDIR)/$(NAME)-%.svg)
 
 FMOPTS = --verbose=WARNING --master-dir="{tmp}"
 
@@ -49,13 +48,9 @@ $(BUILDDIR)/$(NAME).glyphs: $(NAME).glyphs $(PREPARE)
 	mkdir -p $(BUILDDIR)
 	$(PY) $(PREPARE) $< $@ $(VERSION)
 
-$(BUILDDIR)/$(NAME)-%.svg: $(OTF)
-	echo "      GEN    $(@F)"
-	hb-view $< $(SAMPLE) --font-size=130 --output-file=$@ --variations="wght=$*"
-
-$(SVG): $(SMP)
+$(SVG): $(OTF)
 	echo "   SAMPLE    $(@F)"
-	$(PY) $(MKSAMPLE) -o $@ $+
+	$(PY) $(MKSAMPLE) -t $(SAMPLE) -l "$(INSTANCES)" -o $@ $<
 
 dist: otf ttf doc
 	echo "     DIST    $(DIST)"
