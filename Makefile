@@ -35,33 +35,35 @@ SHELL=/usr/bin/env bash
 .SECONDARY:
 
 $(OTF): $(BUILDDIR)/$(NAME).glyphs
-	@echo " VARIABLE    $(@F)"
+	echo " VARIABLE    $(@F)"
 	fontmake $< --output-path=$@ -o variable-cff2 $(FMOPTS)
+	python3 update-stat.py $@
 
 $(TTF): $(BUILDDIR)/$(NAME).glyphs
-	@echo " VARIABLE    $(@F)"
+	echo " VARIABLE    $(@F)"
 	fontmake $< --output-path=$@ -o variable $(FMOPTS)
+	python3 update-stat.py $@
 
 $(BUILDDIR)/$(NAME).glyphs: $(NAME).glyphs $(PREPARE)
-	@echo "     PREP    $(@F)"
+	echo "     PREP    $(@F)"
 	mkdir -p $(BUILDDIR)
 	$(PY) $(PREPARE) $< $@ $(VERSION)
 
 $(BUILDDIR)/$(NAME)-%.svg: $(OTF)
-	@echo "      GEN    $(@F)"
+	echo "      GEN    $(@F)"
 	hb-view $< $(SAMPLE) --font-size=130 --output-file=$@ --variations="wght=$*"
 
 $(SVG): $(SMP)
-	@echo "   SAMPLE    $(@F)"
+	echo "   SAMPLE    $(@F)"
 	$(PY) $(MKSAMPLE) -o $@ $+
 
 dist: otf ttf doc
-	@echo "     DIST    $(DIST)"
+	echo "     DIST    $(DIST)"
 	install -Dm644 -t $(DIST) $(OTF)
 	install -Dm644 -t $(DIST)/ttf $(TTF)
 	install -Dm644 -t $(DIST) OFL.txt
 	install -Dm644 -t $(DIST) README.md
-	@echo "     ZIP     $(DIST)"
+	echo "     ZIP     $(DIST)"
 	zip -q -r $(DIST).zip $(DIST)
 
 clean:
