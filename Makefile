@@ -37,7 +37,7 @@ SHELL=/usr/bin/env bash
 
 $(OTF): $(BUILDDIR)/$(NAME).glyphs
 	echo " VARIABLE    $(@F)"
-	fontmake $< --output-path=$@ -o variable-cff2 $(FMOPTS)
+	fontmake $< --output-path=$@ -o variable-cff2 --optimize-cff=1 $(FMOPTS)
 	python3 update-stat.py $@
 
 $(TTF): $(BUILDDIR)/$(NAME).glyphs
