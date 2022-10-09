@@ -1,5 +1,4 @@
 NAME=Mada
-VERSION=1.4
 
 MAKEFLAGS := -s -r
 
@@ -21,7 +20,10 @@ INSTANCES = 200 300 400 500 600 700 800 900
 
 FMOPTS = --verbose=WARNING --master-dir="{tmp}"
 
-export SOURCE_DATE_EPOCH ?= 0
+TAG=$(shell git describe --tags --abbrev=0)
+VERSION=$(TAG:v%=%)
+
+export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" $(NAME).glyphs)
 
 all: otf doc
 
