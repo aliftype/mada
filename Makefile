@@ -1,8 +1,5 @@
 NAME=Mada
 
-MAKEFLAGS := -s -r
-
-SRCDIR = sources
 BUILDDIR = build
 DIST = $(NAME)-$(VERSION)
 
@@ -32,6 +29,7 @@ ttf: $(TTF)
 doc: $(SVG)
 
 SHELL=/usr/bin/env bash
+MAKEFLAGS := -s -r
 
 .SECONDARY:
 
