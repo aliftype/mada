@@ -13,7 +13,6 @@ OTF = $(NAME).otf
 TTF = $(NAME).ttf
 
 SVG = FontSample.svg
-INSTANCES = 200 300 400 500 600 700 800 900
 
 FMOPTS = --verbose=WARNING --master-dir="{tmp}"
 
@@ -50,7 +49,7 @@ $(BUILDDIR)/$(NAME).glyphs: $(NAME).glyphs $(PREPARE)
 
 $(SVG): $(OTF)
 	echo "   SAMPLE    $(@F)"
-	$(PY) $(MKSAMPLE) -t $(SAMPLE) -l "$(INSTANCES)" -o $@ $<
+	$(PY) $(MKSAMPLE) -t $(SAMPLE) -o $@ $<
 
 dist: otf ttf doc
 	echo "     DIST    $(DIST)"
