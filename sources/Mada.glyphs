@@ -85649,6 +85649,17 @@ name = Regular;
 },
 {
 axesValues = (
+488
+);
+instanceInterpolations = {
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.18987;
+master01 = 0.81013;
+};
+name = Medium;
+weightClass = 500;
+},
+{
+axesValues = (
 600
 );
 instanceInterpolations = {
@@ -85670,6 +85681,17 @@ isBold = 1;
 linkStyle = Regular;
 name = Bold;
 weightClass = 700;
+},
+{
+axesValues = (
+900
+);
+instanceInterpolations = {
+"42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.84177;
+master01 = 0.15823;
+};
+name = ExtraBold;
+weightClass = 800;
 },
 {
 axesValues = (
