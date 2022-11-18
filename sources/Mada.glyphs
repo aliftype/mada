@@ -1,5 +1,5 @@
 {
-.appVersion = "3112";
+.appVersion = "3146";
 .formatVersion = 3;
 axes = (
 {
@@ -88750,13 +88750,13 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
 {
 key = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = sampleTexts;
@@ -88776,7 +88776,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright © 2015-2021 The Mada Project Authors, with Reserved Font Name “Source”.";
+value = "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\".";
 }
 );
 }
