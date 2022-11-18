@@ -49,7 +49,7 @@ value = -300;
 },
 {
 name = typoLineGap;
-value = 100;
+value = 0;
 },
 {
 name = hheaAscender;
@@ -61,7 +61,7 @@ value = -300;
 },
 {
 name = hheaLineGap;
-value = 100;
+value = 0;
 },
 {
 name = winAscent;
