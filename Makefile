@@ -1,16 +1,18 @@
 NAME=Mada
 
+SOURCEDIR = sources
+FONTDIR = fonts
+SCRIPTDIR = scripts
 BUILDDIR = build
 DIST = ${NAME}-${VERSION}
 
 PY ?= python
-PREPARE = prepare.py
-MKSAMPLE = mksample.py
 
 SAMPLE = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
 
-OTF = ${NAME}.otf
-TTF = ${NAME}.ttf
+GLYPHS = ${SOURCEDIR}/${NAME}.glyphs
+OTF = ${FONTDIR}/${NAME}.otf
+TTF = ${FONTDIR}/${NAME}.ttf
 DOTF = ${BUILDDIR}/${NAME}.otf
 DTTF = ${BUILDDIR}/${NAME}.ttf
 
@@ -21,7 +23,7 @@ FMOPTS = --verbose=WARNING --master-dir="{tmp}"
 TAG=$(shell git describe --tags --abbrev=0)
 VERSION=$(TAG:v%=%)
 
-export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" $(NAME).glyphs)
+export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" ${GLYPHS})
 
 all: otf doc
 
@@ -34,27 +36,27 @@ MAKEFLAGS := -s -r
 
 .SECONDARY:
 
-${OTF}: ${NAME}.glyphs
+${OTF}: ${GLYPHS}
 	echo " VARIABLE    $(@F)"
 	fontmake $< --output-path=$@ -o variable-cff2 --optimize-cff=1 ${FMOPTS}
 
-${TTF}: ${NAME}.glyphs
+${TTF}: ${GLYPHS}
 	echo " VARIABLE    $(@F)"
 	fontmake $< --output-path=$@ -o variable ${FMOPTS}
 
 ${DTTF}: ${TTF}
 	echo " DIST        $(@F)"
 	mkdir -p ${BUILDDIR}
-	${PY} dist.py $< $@ ${VERSION}
+	${PY} ${SCRIPTDIR}/dist.py $< $@ ${VERSION}
 
 ${DOTF}: ${OTF}
 	echo " DIST        $(@F)"
 	mkdir -p ${BUILDDIR}
-	${PY} dist.py $< $@ ${VERSION}
+	${PY} ${SCRIPTDIR}/dist.py $< $@ ${VERSION}
 
 ${SVG}: ${OTF}
 	echo "   SAMPLE    $(@F)"
-	${PY} ${MKSAMPLE} -t ${SAMPLE} -o $@ $<
+	${PY} ${SCRIPTDIR}/mksample.py -t ${SAMPLE} -o $@ $<
 
 dist: ${DTTF} ${DOTF} ${SVG}
 	echo "     DIST    ${DIST}"
