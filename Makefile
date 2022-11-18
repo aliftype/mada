@@ -55,16 +55,16 @@ ${DOTF}: ${OTF}
 	${PY} ${SCRIPTDIR}/dist.py $< $@ ${VERSION}
 
 ${SVG}: ${OTF}
-	echo "   SAMPLE    $(@F)"
+	echo " SAMPLE      $(@F)"
 	${PY} ${SCRIPTDIR}/mksample.py -t ${SAMPLE} -o $@ $<
 
 dist: ${DTTF} ${DOTF} ${SVG}
-	echo "     DIST    ${DIST}"
+	echo " DIST        ${DIST}"
 	install -Dm644 -t ${DIST} ${DOTF}
 	install -Dm644 -t ${DIST}/ttf ${DTTF}
 	install -Dm644 -t ${DIST} OFL.txt
 	install -Dm644 -t ${DIST} README.md
-	echo "     ZIP     ${DIST}"
+	echo " ZIP         ${DIST}"
 	zip -q -r ${DIST}.zip ${DIST}
 
 clean:
