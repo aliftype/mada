@@ -42,7 +42,7 @@ ${OTF}: ${GLYPHS}
 
 ${TTF}: ${GLYPHS}
 	echo " VARIABLE    $(@F)"
-	fontmake $< --output-path=$@ -o variable ${FMOPTS} --flatten-components
+	fontmake $< --output-path=$@ -o variable ${FMOPTS} --flatten-components --filter DecomposeTransformedComponentsFilter
 
 ${DTTF}: ${TTF}
 	echo " DIST        $(@F)"
