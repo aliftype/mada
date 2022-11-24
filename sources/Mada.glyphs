@@ -16,6 +16,10 @@ name = ArabicLetters;
 );
 customParameters = (
 {
+name = "Don't use Production Names";
+value = 1;
+},
+{
 name = fsType;
 value = (
 );
@@ -36727,7 +36731,6 @@ scale = (-1,1);
 width = 360;
 }
 );
-production = uni0627.fina;
 },
 {
 glyphname = "alef-ar.fina.1";
@@ -36883,7 +36886,6 @@ nodes = (
 width = 270;
 }
 );
-production = uni0627.fina.1;
 },
 {
 color = 0;
@@ -39287,7 +39289,6 @@ ref = "hah-ar";
 width = 596;
 }
 );
-production = uni062D.fina;
 },
 {
 color = (255,0,255,255);
@@ -39363,7 +39364,6 @@ ref = "hah-ar.init";
 width = 626;
 }
 );
-production = uni062D.medi;
 },
 {
 glyphname = "hah-ar.init";
@@ -39555,7 +39555,6 @@ nodes = (
 width = 686;
 }
 );
-production = uni062D.init;
 },
 {
 color = 0;
@@ -40067,7 +40066,6 @@ ref = "dal-ar";
 width = 462;
 }
 );
-production = uni062F.fina;
 },
 {
 color = 0;
@@ -40955,7 +40953,6 @@ ref = "reh-ar";
 width = 416;
 }
 );
-production = uni0631.fina;
 },
 {
 color = 0;
@@ -41969,7 +41966,6 @@ ref = "seen-ar";
 width = 1048;
 }
 );
-production = uni0633.fina;
 },
 {
 color = (255,0,255,255);
@@ -42006,7 +42002,6 @@ ref = "seen-ar.init";
 width = 763;
 }
 );
-production = uni0633.medi;
 },
 {
 glyphname = "seen-ar.init";
@@ -42237,7 +42232,6 @@ nodes = (
 width = 823;
 }
 );
-production = uni0633.init;
 },
 {
 color = 0;
@@ -42684,7 +42678,6 @@ ref = "sad-ar";
 width = 1141;
 }
 );
-production = uni0635.fina;
 },
 {
 color = (255,0,255,255);
@@ -42721,7 +42714,6 @@ ref = "sad-ar.init";
 width = 764;
 }
 );
-production = uni0635.medi;
 },
 {
 glyphname = "sad-ar.init";
@@ -42868,7 +42860,6 @@ ref = "_sad-ar.head";
 width = 824;
 }
 );
-production = uni0635.init;
 },
 {
 color = 0;
@@ -43299,7 +43290,6 @@ ref = "tah-ar";
 width = 697.21015;
 }
 );
-production = uni0637.fina;
 },
 {
 color = (255,0,255,255);
@@ -43339,7 +43329,6 @@ ref = "tah-ar";
 width = 627.21015;
 }
 );
-production = uni0637.medi;
 },
 {
 color = (255,0,255,255);
@@ -43379,7 +43368,6 @@ ref = "tah-ar";
 width = 687.21015;
 }
 );
-production = uni0637.init;
 },
 {
 color = 0;
@@ -43754,7 +43742,6 @@ ref = extender;
 width = 476;
 }
 );
-production = uni0639.fina;
 },
 {
 color = (255,0,255,255);
@@ -43806,7 +43793,6 @@ ref = extender;
 width = 488;
 }
 );
-production = uni0639.medi;
 },
 {
 glyphname = "ain-ar.init";
@@ -43989,7 +43975,6 @@ nodes = (
 width = 548;
 }
 );
-production = uni0639.init;
 },
 {
 color = 0;
@@ -45790,7 +45775,6 @@ ref = "kaf-ar.init";
 width = 598;
 }
 );
-production = uni0643.medi;
 },
 {
 glyphname = "kaf-ar.init";
@@ -46003,7 +45987,6 @@ nodes = (
 width = 657;
 }
 );
-production = uni0643.init;
 },
 {
 glyphname = "keheh-ar";
@@ -46184,7 +46167,6 @@ ref = "keheh-ar";
 width = 803;
 }
 );
-production = uni06A9.fina;
 },
 {
 color = 0;
@@ -47477,7 +47459,6 @@ ref = "lam-ar";
 width = 600;
 }
 );
-production = uni0644.fina;
 },
 {
 color = (255,0,255,255);
@@ -47514,7 +47495,6 @@ ref = "lam-ar.init";
 width = 310;
 }
 );
-production = uni0644.medi;
 },
 {
 color = (255,0,255,255);
@@ -47551,7 +47531,6 @@ ref = "lam-ar.init.1";
 width = 262;
 }
 );
-production = uni0644.medi.1;
 },
 {
 glyphname = "lam-ar.init";
@@ -47692,7 +47671,6 @@ nodes = (
 width = 370;
 }
 );
-production = uni0644.init;
 },
 {
 glyphname = "lam-ar.init.1";
@@ -47925,7 +47903,6 @@ nodes = (
 width = 320.44238;
 }
 );
-production = uni0644.init.1;
 },
 {
 color = 0;
@@ -48450,7 +48427,6 @@ width = 777;
 }
 );
 metricRight = "=meem-ar.medi";
-production = uni0645.fina;
 },
 {
 color = (255,0,255,255);
@@ -48514,7 +48490,6 @@ ref = "meem-ar.ss04";
 width = 638;
 }
 );
-production = uni0645.fina.001;
 },
 {
 color = (255,0,255,255);
@@ -48578,7 +48553,6 @@ ref = "meem-ar.init";
 width = 555;
 }
 );
-production = uni0645.medi;
 },
 {
 glyphname = "meem-ar.init";
@@ -48785,7 +48759,6 @@ nodes = (
 width = 615;
 }
 );
-production = uni0645.init;
 },
 {
 color = 0;
@@ -49106,7 +49079,6 @@ ref = "noonghunna-ar";
 width = 684;
 }
 );
-production = uni06BA.fina;
 },
 {
 color = 0;
@@ -49494,7 +49466,6 @@ ref = "heh-ar";
 width = 509;
 }
 );
-production = uni0647.fina;
 },
 {
 color = (255,0,255,255);
@@ -49531,7 +49502,6 @@ ref = "heh-ar.init";
 width = 722;
 }
 );
-production = uni0647.medi;
 },
 {
 glyphname = "heh-ar.init";
@@ -49795,7 +49765,6 @@ nodes = (
 width = 782;
 }
 );
-production = uni0647.init;
 },
 {
 color = 0;
@@ -50027,7 +49996,6 @@ nodes = (
 width = 478;
 }
 );
-production = uni06C1.fina;
 },
 {
 glyphname = "hehgoal-ar.medi";
@@ -50243,7 +50211,6 @@ nodes = (
 width = 653;
 }
 );
-production = uni06C1.medi;
 },
 {
 glyphname = "hehgoal-ar.init";
@@ -50372,7 +50339,6 @@ ref = "comma-ar";
 width = 438;
 }
 );
-production = uni06C1.init;
 },
 {
 color = 0;
@@ -50546,7 +50512,6 @@ ref = "heh-ar.medi";
 width = 782;
 }
 );
-production = uni06BE.fina;
 },
 {
 color = 0;
@@ -50976,7 +50941,6 @@ ref = "waw-ar";
 width = 559;
 }
 );
-production = uni0648.fina;
 },
 {
 color = 0;
@@ -51713,7 +51677,6 @@ ref = "alefMaksura-ar";
 width = 654;
 }
 );
-production = uni0649.fina;
 },
 {
 color = 0;
@@ -51908,7 +51871,6 @@ ref = "vinvertedabove-ar";
 width = 714;
 }
 );
-production = uni063D;
 script = arabic;
 unicode = 1597;
 },
@@ -51945,7 +51907,6 @@ ref = "alefMaksura-ar";
 width = 714;
 }
 );
-production = uni06CC;
 script = arabic;
 unicode = 1740;
 },
@@ -51994,7 +51955,6 @@ ref = "twodotshorizontalabove-ar";
 width = 714;
 }
 );
-production = uni063E;
 script = arabic;
 unicode = 1598;
 },
@@ -52043,7 +52003,6 @@ ref = "threedotsupabove-ar";
 width = 714;
 }
 );
-production = uni063F;
 script = arabic;
 unicode = 1599;
 },
@@ -53014,7 +52973,6 @@ nodes = (
 width = 571;
 }
 );
-production = uni06D2.fina;
 },
 {
 color = 0;
@@ -53534,7 +53492,6 @@ ref = "twodotsverticalabove-ar";
 width = 1108;
 }
 );
-production = uni076D;
 unicode = 1901;
 },
 {
@@ -55831,7 +55788,6 @@ scale = (0.62,0.62);
 width = 380;
 }
 );
-production = uni06F4.001.001;
 sortName = dnom.ar3139;
 sortNameKeep = ar3168.dnom;
 },
@@ -55959,7 +55915,6 @@ scale = (0.62,0.62);
 width = 380;
 }
 );
-production = uni06F5.001.001;
 sortName = dnom.ar3142;
 sortNameKeep = ar3171.dnom;
 },
@@ -56044,7 +55999,6 @@ scale = (0.62,0.62);
 width = 380;
 }
 );
-production = uni06F6.001.001;
 sortName = dnom.ar3145;
 sortNameKeep = ar3174.dnom;
 },
@@ -56441,7 +56395,6 @@ ref = "fourFarsi-ar.dnom";
 width = 380;
 }
 );
-production = uni06F4.001.001.001;
 sortName = numr.ar3139;
 sortNameKeep = ar3168.numr;
 },
@@ -56482,7 +56435,6 @@ ref = "fourFarsi-ar.urdu.dnom";
 width = 380;
 }
 );
-production = uni06F4.urdu.001.001;
 sortName = numr.ar3140;
 sortNameKeep = ar3168.urdu.numr;
 },
@@ -56561,7 +56513,6 @@ ref = "fiveFarsi-ar.dnom";
 width = 380;
 }
 );
-production = uni06F5.001.001.001;
 sortName = numr.ar3142;
 sortNameKeep = ar3171.numr;
 },
@@ -56640,7 +56591,6 @@ ref = "sixFarsi-ar.dnom";
 width = 380;
 }
 );
-production = uni06F6.001.001.001;
 sortName = numr.ar3145;
 sortNameKeep = ar3174.numr;
 },
@@ -56719,7 +56669,6 @@ ref = "sevenFarsi-ar.urdu.dnom";
 width = 380;
 }
 );
-production = uni06F7.urdu.001.001;
 sortName = numr.ar3148;
 sortNameKeep = ar3177.urdu.numr;
 },
