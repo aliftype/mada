@@ -1,5 +1,6 @@
 import argparse
 
+from fontTools import subset
 from fontTools.ttLib import TTFont
 
 from gftools.fix import fix_unhinted_font
@@ -43,9 +44,21 @@ def main():
         gen_stat_tables([font])
     fix_unhinted_font(font)
 
-    # Drop glyph names from TTF fonts.
-    if "glyf" in font:
-        font["post"].formatType = 3
+    unicodes = set(font.getBestCmap().keys())
+    options = subset.Options()
+    options.set(
+        layout_features="*",
+        layout_scripts="*",
+        name_IDs="*",
+        name_languages="*",
+        notdef_outline=True,
+        glyph_names=False,
+        recalc_average_width=True,
+        drop_tables=[],
+    )
+    subsetter = subset.Subsetter(options=options)
+    subsetter.populate(unicodes=unicodes)
+    subsetter.subset(font)
 
     font.save(args.output)
 
