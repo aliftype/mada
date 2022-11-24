@@ -33,14 +33,14 @@ def main():
             name.string = ";".join(parts)
 
     if "fvar" in font:
-        for n in font["name"].names:
-            if n.nameID == 6:
-                psname = str(n).split("-")[0]
-                n.string = psname
-            elif n.nameID == 3:
-                n.string = str(n).split("-")[0]
-            elif n.nameID == 4:
-                n.string = str(n).replace(" Regular", "")
+       #for n in font["name"].names:
+       #    if n.nameID == 6:
+       #        psname = str(n).split("-")[0]
+       #        n.string = psname
+       #    elif n.nameID == 3:
+       #        n.string = str(n).split("-")[0]
+       #    elif n.nameID == 4:
+       #        n.string = str(n).replace(" Regular", "")
         gen_stat_tables([font])
     fix_unhinted_font(font)
 
