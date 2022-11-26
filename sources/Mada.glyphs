@@ -167,6 +167,8 @@ code = "    sub yehKashmiri-ar by alefMaksura-ar ringbelow-ar;
     sub peh-ar by behDotless-ar threedotsdownbelow-ar;
     sub teheh-ar by behDotless-ar fourdotsabove-ar;
     sub beheh-ar by behDotless-ar fourdotsbelow-ar;
+	sub behMeemabove-ar by behDotless-ar dotbelow-ar meemStopabove-ar;
+	sub pehMeemabove-ar by behDotless-ar threedotsdownbelow-ar meemStopabove-ar;
     sub hahHamzaabove-ar by hah-ar hamzaabove-ar;
     sub hahTwodotsverticalabove-ar by hah-ar twodotsverticalabove-ar;
     sub dyeh-ar by hah-ar.2 twodotsverticalbelow-ar;
@@ -277,7 +279,8 @@ code = "    sub yehKashmiri-ar by alefMaksura-ar ringbelow-ar;
 
 lookup ccmp_late {
     sub u-ar by waw-ar damma-ar.alt;
-} ccmp_late;";
+} ccmp_late;
+";
 tag = ccmp;
 },
 {
@@ -47753,6 +47756,46 @@ width = 854;
 sortName = arpl0118;
 sortNameKeep = ar0254;
 unicode = 2209;
+},
+{
+color = 0;
+glyphname = "behMeemabove-ar";
+layers = (
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+width = 600;
+},
+{
+layerId = master01;
+width = 600;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+width = 600;
+}
+);
+sortName = arpl0119;
+unicode = 2230;
+},
+{
+color = 0;
+glyphname = "pehMeemabove-ar";
+layers = (
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+width = 600;
+},
+{
+layerId = master01;
+width = 600;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+width = 600;
+}
+);
+sortName = arpl0120;
+unicode = 2231;
 },
 {
 color = 0;
