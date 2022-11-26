@@ -274,11 +274,10 @@ code = "    sub yehKashmiri-ar by alefMaksura-ar ringbelow-ar;
     sub behhamzaabove-ar by behDotless-ar hamzaabove-ar dotbelow-ar;
     sub jeemTwodotsabove-ar by hah-ar dotcenter-ar twodotshorizontalabove-ar;
     sub zainVinvertedabove-ar by reh-ar dotabove-ar vinvertedabove-ar;
-";
-tag = ccmp;
-},
-{
-code = "    sub u-ar by waw-ar damma-ar.alt;";
+
+lookup ccmp_late {
+    sub u-ar by waw-ar damma-ar.alt;
+} ccmp_late;";
 tag = ccmp;
 },
 {
@@ -403,16 +402,16 @@ sub one-ar by one-ar.numr;
 sub two-ar by two-ar.numr;
 sub three-ar by three-ar.numr;
 sub four-ar by four-ar.numr;
+sub fourFarsi-ar by fourFarsi-ar.numr;
+sub fourFarsi-ar.urdu by fourFarsi-ar.urdu.numr;
 sub five-ar by five-ar.numr;
+sub fiveFarsi-ar by fiveFarsi-ar.numr;
 sub six-ar by six-ar.numr;
+sub sixFarsi-ar by sixFarsi-ar.numr;
 sub seven-ar by seven-ar.numr;
+sub sevenFarsi-ar.urdu by sevenFarsi-ar.urdu.numr;
 sub eight-ar by eight-ar.numr;
 sub nine-ar by nine-ar.numr;
-sub fourFarsi-ar by fourFarsi-ar.numr;
-sub fiveFarsi-ar by fiveFarsi-ar.numr;
-sub sixFarsi-ar by sixFarsi-ar.numr;
-sub fourFarsi-ar.urdu by fourFarsi-ar.urdu.numr;
-sub sevenFarsi-ar.urdu by sevenFarsi-ar.urdu.numr;
 sub zero by zero.numr;
 sub one by one.numr;
 sub two by two.numr;
@@ -433,16 +432,16 @@ sub one-ar by one-ar.dnom;
 sub two-ar by two-ar.dnom;
 sub three-ar by three-ar.dnom;
 sub four-ar by four-ar.dnom;
+sub fourFarsi-ar by fourFarsi-ar.dnom;
+sub fourFarsi-ar.urdu by fourFarsi-ar.urdu.dnom;
 sub five-ar by five-ar.dnom;
+sub fiveFarsi-ar by fiveFarsi-ar.dnom;
 sub six-ar by six-ar.dnom;
+sub sixFarsi-ar by sixFarsi-ar.dnom;
 sub seven-ar by seven-ar.dnom;
+sub sevenFarsi-ar.urdu by sevenFarsi-ar.urdu.dnom;
 sub eight-ar by eight-ar.dnom;
 sub nine-ar by nine-ar.dnom;
-sub fourFarsi-ar by fourFarsi-ar.dnom;
-sub fiveFarsi-ar by fiveFarsi-ar.dnom;
-sub sixFarsi-ar by sixFarsi-ar.dnom;
-sub fourFarsi-ar.urdu by fourFarsi-ar.urdu.dnom;
-sub sevenFarsi-ar.urdu by sevenFarsi-ar.urdu.dnom;
 sub zero by zero.dnom;
 sub one by one.dnom;
 sub two by two.dnom;
