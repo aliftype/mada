@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3187";
 .formatVersion = 3;
 axes = (
 {
@@ -45,11 +45,11 @@ value = 1;
 },
 {
 name = typoAscender;
-value = 900;
+value = 950;
 },
 {
 name = typoDescender;
-value = -300;
+value = -350;
 },
 {
 name = typoLineGap;
@@ -57,11 +57,11 @@ value = 0;
 },
 {
 name = hheaAscender;
-value = 900;
+value = 950;
 },
 {
 name = hheaDescender;
-value = -300;
+value = -350;
 },
 {
 name = hheaLineGap;
@@ -69,7 +69,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1100;
+value = 1185;
 },
 {
 name = winDescent;
