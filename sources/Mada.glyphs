@@ -25,21 +25,6 @@ value = (
 );
 },
 {
-name = "Axis Mappings";
-value = {
-wght = {
-200 = 0;
-300 = 100;
-400 = 368;
-500 = 488;
-600 = 600;
-700 = 824;
-800 = 900;
-900 = 1000;
-};
-};
-},
-{
 name = "Use Typo Metrics";
 value = 1;
 },
@@ -82363,6 +82348,17 @@ instances = (
 axesValues = (
 0
 );
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 200;
+}
+);
+}
+);
 instanceInterpolations = {
 "0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 1;
 };
@@ -82372,6 +82368,17 @@ weightClass = 200;
 {
 axesValues = (
 100
+);
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 300;
+}
+);
+}
 );
 instanceInterpolations = {
 "0CAB57D4-4FC4-49C3-B456-FB7666EAA712" = 0.72826;
@@ -82384,6 +82391,17 @@ weightClass = 300;
 axesValues = (
 368
 );
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 400;
+}
+);
+}
+);
 instanceInterpolations = {
 master01 = 1;
 };
@@ -82392,6 +82410,17 @@ name = Regular;
 {
 axesValues = (
 488
+);
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 500;
+}
+);
+}
 );
 instanceInterpolations = {
 "42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.18987;
@@ -82404,6 +82433,17 @@ weightClass = 500;
 axesValues = (
 600
 );
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 600;
+}
+);
+}
+);
 instanceInterpolations = {
 "42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.36709;
 master01 = 0.63291;
@@ -82414,6 +82454,17 @@ weightClass = 600;
 {
 axesValues = (
 824
+);
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 700;
+}
+);
+}
 );
 instanceInterpolations = {
 "42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.72152;
@@ -82428,6 +82479,17 @@ weightClass = 700;
 axesValues = (
 900
 );
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 800;
+}
+);
+}
+);
 instanceInterpolations = {
 "42B3044F-4D5A-45CA-9EB7-C1889731596B" = 0.84177;
 master01 = 0.15823;
@@ -82438,6 +82500,17 @@ weightClass = 800;
 {
 axesValues = (
 1000
+);
+customParameters = (
+{
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 900;
+}
+);
+}
 );
 instanceInterpolations = {
 "42B3044F-4D5A-45CA-9EB7-C1889731596B" = 1;
