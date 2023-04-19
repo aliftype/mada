@@ -548,7 +548,6 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 },
 {
 axesValues = (
@@ -602,7 +601,6 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 },
 {
 axesValues = (
@@ -657,7 +655,6 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
-visible = 1;
 }
 );
 glyphs = (
@@ -50838,6 +50835,12 @@ nodes = (
 {
 closed = 1;
 nodes = (
+(308,82,o),
+(282,91,o),
+(250,116,c),
+(217,89,o),
+(190,79,o),
+(169,84,cs),
 (121,95,o),
 (103,174,o),
 (106,247,cs),
@@ -50852,13 +50855,7 @@ nodes = (
 (396,243,cs),
 (396,169,o),
 (378,92,o),
-(328,85,cs),
-(308,82,o),
-(282,91,o),
-(250,116,c),
-(217,89,o),
-(190,79,o),
-(169,84,cs)
+(328,85,cs)
 );
 }
 );
