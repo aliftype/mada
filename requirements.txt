@@ -239,7 +239,7 @@ unicodedata2==15.0.0
     # via hyperglot
 unidecode==1.3.6
     # via gftools
-urllib3==1.26.12
+urllib3==1.26.17
     # via requests
 vharfbuzz==0.1.4
     # via gftools
