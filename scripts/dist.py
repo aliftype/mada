@@ -1,10 +1,24 @@
 import argparse
 
 from fontTools import subset
-from fontTools.ttLib import TTFont
+from fontTools.ttLib import TTFont, newTable
+from fontTools.ttLib.tables import ttProgram
 
-from gftools.fix import fix_unhinted_font
-from gftools.stat import gen_stat_tables
+
+def fix_unhinted_font(font):
+    gasp = newTable("gasp")
+    # Set GASP so all sizes are smooth
+    gasp.gaspRange = {0xFFFF: 15}
+
+    program = ttProgram.Program()
+    assembly = ["PUSHW[]", "511", "SCANCTRL[]", "PUSHB[]", "4", "SCANTYPE[]"]
+    program.fromAssembly(assembly)
+
+    prep = newTable("prep")
+    prep.program = program
+
+    font["gasp"] = gasp
+    font["prep"] = prep
 
 
 def main():
@@ -33,15 +47,9 @@ def main():
             name.string = ";".join(parts)
 
     if "fvar" in font:
-       #for n in font["name"].names:
-       #    if n.nameID == 6:
-       #        psname = str(n).split("-")[0]
-       #        n.string = psname
-       #    elif n.nameID == 3:
-       #        n.string = str(n).split("-")[0]
-       #    elif n.nameID == 4:
-       #        n.string = str(n).replace(" Regular", "")
-        gen_stat_tables([font])
+        from axisregistry import build_stat
+
+        build_stat(font, [])
     fix_unhinted_font(font)
 
     unicodes = set(font.getBestCmap().keys())
