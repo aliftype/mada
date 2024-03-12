@@ -16,8 +16,6 @@ DTTF = ${BUILDDIR}/${NAME}.ttf
 
 SVG = FontSample.svg
 
-FMOPTS = --verbose=WARNING --master-dir="{tmp}"
-
 TAG=$(shell git describe --tags --abbrev=0)
 VERSION=$(TAG:v%=%)
 
@@ -35,7 +33,12 @@ MAKEFLAGS := -s -r
 
 ${TTF}: ${GLYPHS}
 	echo " VARIABLE    $(@F)"
-	fontmake $< --output-path=$@ -o variable ${FMOPTS} --flatten-components --filter DecomposeTransformedComponentsFilter
+	fontmake $< --output-path=$@ \
+		-o variable \
+		--verbose=WARNING \
+		--master-dir="{tmp}" \
+		--flatten-components \
+		--filter DecomposeTransformedComponentsFilter
 
 ${DTTF}: ${TTF}
 	echo " DIST        $(@F)"
