@@ -30,8 +30,7 @@ requirements, run:
 
 Then to build the fonts:
 
-    make otf # CFF-flavoured fonts
-    make ttf # TTF-flavoured fonts
+    make ttf
 
 [1]: https://web.dev/variable-fonts
 [2]: https://github.com/adobe-fonts/source-sans
