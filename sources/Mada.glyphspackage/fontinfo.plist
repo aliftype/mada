@@ -69,6 +69,10 @@ name = underlinePosition;
 value = -300;
 },
 {
+name = "Variable Font Origin";
+value = master01;
+},
+{
 name = "Write lastChange";
 value = 0;
 },
