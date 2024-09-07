@@ -1,61 +1,91 @@
-NAME=Mada
+# Copyright (c) 2020-2024 Khaled Hosny
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+NAME = Mada
+
+SHELL = bash
+MAKEFLAGS := -srj
+PYTHON := venv/bin/python3
 
 SOURCEDIR = sources
 FONTDIR = fonts
 SCRIPTDIR = scripts
+TESTDIR = tests
 BUILDDIR = build
-DIST = ${NAME}-${VERSION}
 
-PY ?= python
-
-SAMPLE = "صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار"
-
-GLYPHS = ${SOURCEDIR}/${NAME}.glyphs
-TTF = ${FONTDIR}/${NAME}.ttf
-DTTF = ${BUILDDIR}/${NAME}.ttf
-
+FONT = ${FONTDIR}/${NAME}.ttf
+DFONT = ${BUILDDIR}/${NAME}.ttf
+JSON = ${TESTDIR}/shaping.json
+HTML = ${TESTDIR}/shaping.html
 SVG = FontSample.svg
+
+GLYPHSFILE = ${SOURCEDIR}/${NAME}.glyphs
+
+define SAMPLE
+صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار
+endef
+
+export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" ${GLYPHSFILE})
 
 TAG=$(shell git describe --tags --abbrev=0)
 VERSION=$(TAG:v%=%)
+DIST = ${NAME}-${VERSION}
 
-export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" ${GLYPHS})
-
-all: ttf doc
-
-ttf: ${TTF}
-doc: ${SVG}
-
-SHELL=/usr/bin/env bash
-MAKEFLAGS := -s -r
 
 .SECONDARY:
+.ONESHELL:
+.PHONY: all dist ttf test doc
 
-${TTF}: ${GLYPHS}
-	echo " VARIABLE    $(@F)"
-	fontmake $< --output-path=$@ \
+all: ttf doc
+ttf: ${FONT}
+test: ${HTML}
+expectation: ${JSON}
+doc: ${SVG}
+
+${FONT}: ${GLYPHSFILE}
+	$(info   BUILD  $(@F))
+	${PYTHON} -m fontmake $< --output-path=$@ \
 		-o variable \
 		--verbose=WARNING \
 		--master-dir="{tmp}" \
 		--flatten-components \
 		--filter DecomposeTransformedComponentsFilter
 
-${DTTF}: ${TTF}
-	echo " DIST        $(@F)"
+${DFONT}: ${FONT}
+	$(info   DIST   $(@F))
 	mkdir -p ${BUILDDIR}
-	${PY} ${SCRIPTDIR}/dist.py $< $@ ${VERSION}
+	${PYTHON} ${SCRIPTDIR}/dist.py $< $@ ${VERSION}
 
-${SVG}: ${TTF}
-	echo " SAMPLE      $(@F)"
-	${PY} ${SCRIPTDIR}/make-sample.py -t ${SAMPLE} -o $@ $<
+${TESTDIR}/%.json: ${TESTDIR}/%.toml ${FONT}
+	$(info   GEN    $(@F))
+	${PYTHON} ${SCRIPTDIR}/update-shaping-tests.py $< $@ ${FONT}
 
-dist: ${DTTF} ${SVG}
-	echo " DIST        ${DIST}"
-	install -Dm644 -t ${DIST} ${DTTF}
-	install -Dm644 -t ${DIST} OFL.txt
+${TESTDIR}/shaping.html: ${FONT} ${TESTDIR}/shaping-config.yml
+	$(info   SHAPE  $(<F))
+	${PYTHON} ${SCRIPTDIR}/check-shaping.py $< ${TESTDIR}/shaping-config.yml $@
+
+${SVG}: ${FONT}
+	$(info   SVG    $(@F))
+	${PYTHON} ${SCRIPTDIR}/make-sample.py -t "${SAMPLE}" -o $@ $<
+
+dist: ${DFONT} ${SVG}
+	$(info   DIST   ${DIST}.zip)
+	install -Dm644 -t ${DIST} ${DFONT}
 	install -Dm644 -t ${DIST} README.md
-	echo " ZIP         ${DIST}"
-	zip -q -r ${DIST}.zip ${DIST}
+	install -Dm644 -t ${DIST} OFL.txt
+	zip -rq ${DIST}.zip ${DIST}
 
 clean:
-	rm -rf ${BUILDDIR} ${TTF} ${SVG} ${DIST} ${DIST}.zip
+	rm -rf ${BUILDDIR} ${FONT} ${SVG} ${DIST} ${DIST}.zip
