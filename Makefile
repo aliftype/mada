@@ -47,7 +47,7 @@ ${DTTF}: ${TTF}
 
 ${SVG}: ${TTF}
 	echo " SAMPLE      $(@F)"
-	${PY} ${SCRIPTDIR}/mksample.py -t ${SAMPLE} -o $@ $<
+	${PY} ${SCRIPTDIR}/make-sample.py -t ${SAMPLE} -o $@ $<
 
 dist: ${DTTF} ${SVG}
 	echo " DIST        ${DIST}"
