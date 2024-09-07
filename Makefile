@@ -46,7 +46,7 @@ DIST = ${NAME}-${VERSION}
 
 .SECONDARY:
 .ONESHELL:
-.PHONY: all dist ttf test doc
+.PHONY: all dist ttf test doc ${HTML}
 
 all: ttf doc
 ttf: ${FONT}
