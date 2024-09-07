@@ -31,7 +31,7 @@ JSON = ${TESTDIR}/shaping.json
 HTML = ${TESTDIR}/shaping.html
 SVG = FontSample.svg
 
-GLYPHSFILE = ${SOURCEDIR}/${NAME}.glyphs
+GLYPHSFILE = ${SOURCEDIR}/${NAME}.glyphspackage
 
 define SAMPLE
 صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار

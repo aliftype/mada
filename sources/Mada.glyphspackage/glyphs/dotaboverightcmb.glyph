@@ -1,0 +1,53 @@
+{
+color = 3;
+glyphname = dotaboverightcmb;
+layers = (
+{
+anchors = (
+{
+name = _aboverightLC;
+pos = (0,522);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = dotaccentcmb;
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _aboverightLC;
+pos = (0,502);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = dotaccentcmb;
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _aboverightLC;
+pos = (0,509);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = dotaccentcmb;
+}
+);
+width = 0;
+}
+);
+unicode = 856;
+}

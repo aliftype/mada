@@ -1,0 +1,108 @@
+{
+glyphname = space;
+layers = (
+{
+anchors = (
+{
+name = bottom.a;
+pos = (100,-109);
+},
+{
+name = bottom.hamza;
+pos = (100,-109);
+},
+{
+name = bottom.mark;
+pos = (100,-139);
+},
+{
+name = bottom.ring;
+pos = (100,0);
+},
+{
+name = top.a;
+pos = (100,314);
+},
+{
+name = top.hamza;
+pos = (100,314);
+},
+{
+name = top.mark;
+pos = (100,352);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+width = 200;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (100,-109);
+},
+{
+name = bottom.hamza;
+pos = (100,-109);
+},
+{
+name = bottom.mark;
+pos = (100,-139);
+},
+{
+name = bottom.ring;
+pos = (100,0);
+},
+{
+name = top.a;
+pos = (100,314);
+},
+{
+name = top.hamza;
+pos = (100,314);
+},
+{
+name = top.mark;
+pos = (100,352);
+}
+);
+layerId = master01;
+width = 200;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (100,-109);
+},
+{
+name = bottom.hamza;
+pos = (100,-109);
+},
+{
+name = bottom.mark;
+pos = (100,-139);
+},
+{
+name = bottom.ring;
+pos = (100,0);
+},
+{
+name = top.a;
+pos = (100,314);
+},
+{
+name = top.hamza;
+pos = (100,314);
+},
+{
+name = top.mark;
+pos = (100,352);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+width = 200;
+}
+);
+unicode = (32,160);
+}

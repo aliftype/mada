@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = Oslashacute;
+kernLeft = O;
+kernRight = O;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = Oslash;
+},
+{
+pos = (346,0);
+ref = acutecmb.cap;
+}
+);
+width = 692;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = Oslash;
+},
+{
+pos = (320,0);
+ref = acutecmb.cap;
+}
+);
+width = 648;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = Oslash;
+},
+{
+alignment = -1;
+pos = (330,0);
+ref = acutecmb.cap;
+}
+);
+width = 664.192;
+}
+);
+unicode = 510;
+}

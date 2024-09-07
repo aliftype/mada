@@ -1,0 +1,68 @@
+{
+color = 3;
+glyphname = Ccaron;
+kernLeft = O;
+kernRight = C;
+layers = (
+{
+anchors = (
+{
+name = aboverightUC;
+pos = (620,672);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = C;
+},
+{
+pos = (350,0);
+ref = caroncmb.cap;
+}
+);
+width = 586;
+},
+{
+anchors = (
+{
+name = aboverightUC;
+pos = (520,682);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = C;
+},
+{
+pos = (320,0);
+ref = caroncmb.cap;
+}
+);
+width = 562;
+},
+{
+anchors = (
+{
+name = aboverightUC;
+pos = (557,678);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = C;
+},
+{
+alignment = -1;
+pos = (331,0);
+ref = caroncmb.cap;
+}
+);
+width = 570.832;
+}
+);
+unicode = 268;
+}

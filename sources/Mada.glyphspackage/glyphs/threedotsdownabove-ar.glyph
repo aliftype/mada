@@ -1,0 +1,76 @@
+{
+category = Mark;
+glyphname = "threedotsdownabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.a;
+},
+{
+name = top.mark;
+pos = (0,260);
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (0,113);
+ref = "twodotshorizontalabove-ar";
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _top.a;
+},
+{
+name = top.mark;
+pos = (0,237);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (0,110);
+ref = "twodotshorizontalabove-ar";
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _top.a;
+},
+{
+name = top.mark;
+pos = (0,384);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (0,170);
+ref = "twodotshorizontalabove-ar";
+}
+);
+width = 0;
+}
+);
+subCategory = Nonspacing;
+}

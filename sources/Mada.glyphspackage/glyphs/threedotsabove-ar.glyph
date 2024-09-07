@@ -1,0 +1,68 @@
+{
+category = Mark;
+glyphname = "threedotsabove-ar";
+layers = (
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+alignment = -1;
+pos = (25,649);
+ref = "dotabove-ar";
+},
+{
+pos = (95,649);
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (60,714);
+ref = "dotabove-ar";
+}
+);
+width = 120;
+},
+{
+layerId = master01;
+shapes = (
+{
+pos = (42,666);
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (170,666);
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (106,766);
+ref = "dotabove-ar";
+}
+);
+width = 212;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+pos = (86,710);
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (286,710);
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+pos = (186,880);
+ref = "dotabove-ar";
+}
+);
+width = 372;
+}
+);
+subCategory = Nonspacing;
+unicode = 1755;
+}

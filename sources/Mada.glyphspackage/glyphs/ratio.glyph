@@ -1,0 +1,38 @@
+{
+color = 3;
+glyphname = ratio;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+pos = (0,80);
+ref = colon;
+}
+);
+width = 320;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+pos = (0,100);
+ref = colon;
+}
+);
+width = 208;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+pos = (0,93);
+ref = colon;
+}
+);
+width = 249.216;
+}
+);
+unicode = 8758;
+}

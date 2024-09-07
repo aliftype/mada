@@ -1,0 +1,52 @@
+{
+color = 3;
+glyphname = macrondoublebelowcmb;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(478,-186,l),
+(478,-92,l),
+(-478,-92,l),
+(-478,-186,l)
+);
+}
+);
+width = 0;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(420,-156,l),
+(420,-128,l),
+(-420,-128,l),
+(-420,-156,l)
+);
+}
+);
+width = 0;
+},
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(441,-167,l),
+(441,-115,l),
+(-441,-115,l),
+(-441,-167,l)
+);
+}
+);
+width = 0;
+}
+);
+unicode = 863;
+}

@@ -1,0 +1,84 @@
+{
+color = 3;
+glyphname = abreve;
+kernLeft = a;
+kernRight = a;
+layers = (
+{
+anchors = (
+{
+name = belowLC;
+pos = (260,-22);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = a;
+},
+{
+pos = (280,0);
+ref = brevecmb;
+}
+);
+width = 536;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (240,-22);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = a;
+},
+{
+pos = (260,0);
+ref = brevecmb;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 486;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (247,-22);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = a;
+},
+{
+alignment = -1;
+pos = (267,0);
+ref = brevecmb;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 504.4;
+}
+);
+unicode = 259;
+}

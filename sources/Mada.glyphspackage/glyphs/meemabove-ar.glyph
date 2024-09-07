@@ -1,0 +1,44 @@
+{
+category = Mark;
+glyphname = "meemabove-ar";
+layers = (
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+alignment = -1;
+pos = (0,624);
+ref = "meem-ar";
+scale = (0.5,0.5);
+}
+);
+width = 279;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+pos = (0,624);
+ref = "meem-ar";
+scale = (0.5,0.5);
+}
+);
+width = 316;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+alignment = -1;
+pos = (0,624);
+ref = "meem-ar";
+scale = (0.5,0.5);
+}
+);
+width = 419;
+}
+);
+subCategory = Nonspacing;
+unicode = 1752;
+}

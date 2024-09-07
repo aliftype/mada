@@ -1,0 +1,63 @@
+{
+color = (255,0,255,255);
+glyphname = "meem-ar.fina.ss04";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(501,0,l),
+(501,79,l),
+(460,79,l),
+(460,0,l)
+);
+},
+{
+alignment = -1;
+ref = "meem-ar.ss04";
+}
+);
+width = 485;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(418,0,l),
+(418,32,l),
+(351,32,l),
+(351,0,l)
+);
+},
+{
+alignment = -1;
+ref = "meem-ar.ss04";
+}
+);
+width = 408;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(658,0,l),
+(658,172,l),
+(632,172,l),
+(632,0,l)
+);
+},
+{
+alignment = -1;
+ref = "meem-ar.ss04";
+}
+);
+width = 638;
+}
+);
+}

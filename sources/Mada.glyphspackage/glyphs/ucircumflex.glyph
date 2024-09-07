@@ -1,0 +1,84 @@
+{
+color = 3;
+glyphname = ucircumflex;
+kernLeft = u;
+kernRight = u;
+layers = (
+{
+anchors = (
+{
+name = belowLC;
+pos = (280,-22);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = u;
+},
+{
+pos = (290,0);
+ref = circumflexcmb;
+}
+);
+width = 578;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (270,-22);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = u;
+},
+{
+pos = (260,0);
+ref = circumflexcmb;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 524;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (274,-22);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = u;
+},
+{
+alignment = -1;
+pos = (271,0);
+ref = circumflexcmb;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 543.872;
+}
+);
+unicode = 251;
+}

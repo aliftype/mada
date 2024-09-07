@@ -1,0 +1,55 @@
+{
+category = Mark;
+glyphname = "stroke-ar";
+layers = (
+{
+anchors = (
+{
+name = _dash;
+pos = (159,0);
+}
+);
+layerId = master01;
+shapes = (
+{
+pos = (0,-43);
+ref = "fathaHorizont-ar";
+}
+);
+width = 258;
+},
+{
+anchors = (
+{
+name = _dash;
+pos = (162,0);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+pos = (0,-41);
+ref = "fathaHorizont-ar";
+}
+);
+width = 245;
+},
+{
+anchors = (
+{
+name = _dash;
+pos = (173,0);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+pos = (0,-50);
+ref = "fathaHorizont-ar";
+}
+);
+width = 288;
+}
+);
+subCategory = Nonspacing;
+}

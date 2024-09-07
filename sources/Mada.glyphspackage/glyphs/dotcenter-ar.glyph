@@ -1,0 +1,49 @@
+{
+category = Mark;
+glyphname = "dotcenter-ar";
+layers = (
+{
+anchors = (
+{
+name = _center;
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "dotabove-ar";
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _center;
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "dotabove-ar";
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _center;
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "dotabove-ar";
+}
+);
+width = 0;
+}
+);
+subCategory = Nonspacing;
+}

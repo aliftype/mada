@@ -1,0 +1,54 @@
+{
+color = (255,0,255,255);
+glyphname = "ain-ar.fina";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+pos = (0,-72);
+ref = "ain-ar";
+},
+{
+alignment = -1;
+pos = (418,0);
+ref = extender;
+}
+);
+width = 415;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+alignment = -1;
+pos = (0,-71);
+ref = "ain-ar";
+},
+{
+alignment = -1;
+pos = (386,0);
+ref = extender;
+}
+);
+width = 386;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+alignment = -1;
+pos = (0,-43);
+ref = "ain-ar";
+},
+{
+alignment = -1;
+pos = (481,0);
+ref = extender;
+}
+);
+width = 476;
+}
+);
+}

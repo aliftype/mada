@@ -1,0 +1,103 @@
+{
+category = Mark;
+glyphname = "dotabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.a;
+},
+{
+name = top.mark;
+pos = (0,140);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(24,-42,o),
+(42,-24,o),
+(42,0,cs),
+(42,24,o),
+(24,42,o),
+(0,42,cs),
+(-24,42,o),
+(-42,24,o),
+(-42,0,cs),
+(-42,-24,o),
+(-24,-42,o),
+(0,-42,cs)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _top.a;
+},
+{
+name = top.mark;
+pos = (0,127);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(14,-25,o),
+(25,-14,o),
+(25,0,cs),
+(25,14,o),
+(14,25,o),
+(0,25,cs),
+(-14,25,o),
+(-25,14,o),
+(-25,0,cs),
+(-25,-14,o),
+(-14,-25,o),
+(0,-25,cs)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _top.a;
+},
+{
+name = top.mark;
+pos = (0,214);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(47,-86,o),
+(86,-47,o),
+(86,0,cs),
+(86,47,o),
+(47,86,o),
+(0,86,cs),
+(-47,86,o),
+(-86,47,o),
+(-86,0,cs),
+(-86,-47,o),
+(-47,-86,o),
+(0,-86,cs)
+);
+}
+);
+width = 0;
+}
+);
+subCategory = Nonspacing;
+}

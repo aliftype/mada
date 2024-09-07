@@ -1,0 +1,33 @@
+{
+glyphname = "hehgoal-ar";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+ref = "heh-ar";
+}
+);
+width = 437;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "heh-ar";
+}
+);
+width = 360;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "heh-ar";
+}
+);
+width = 569;
+}
+);
+unicode = 1729;
+}

@@ -1,0 +1,51 @@
+{
+glyphname = "yehabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.mark;
+pos = (223,-50);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "yehSmall-ar";
+}
+);
+width = 443;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (231,-50);
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "yehSmall-ar";
+}
+);
+width = 460;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (250,-50);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "yehSmall-ar";
+}
+);
+width = 498;
+}
+);
+unicode = 1767;
+}

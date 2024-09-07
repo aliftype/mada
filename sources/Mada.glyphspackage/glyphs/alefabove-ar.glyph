@@ -1,0 +1,89 @@
+{
+category = Mark;
+glyphname = "alefabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.a;
+pos = (30,0);
+},
+{
+name = _top.mark;
+pos = (30,0);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(30,0,o),
+(59,24,o),
+(59,49,cs),
+(59,180,l),
+(0,180,l),
+(0,0,l)
+);
+}
+);
+width = 59;
+},
+{
+anchors = (
+{
+name = _top.a;
+pos = (16,0);
+},
+{
+name = _top.mark;
+pos = (16,0);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(21,0,o),
+(32,18,o),
+(32,32,cs),
+(32,183,l),
+(0,183,l),
+(0,0,l)
+);
+}
+);
+width = 32;
+},
+{
+anchors = (
+{
+name = _top.a;
+pos = (64,0);
+},
+{
+name = _top.mark;
+pos = (64,0);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(52,-10,o),
+(129,21,o),
+(129,98,cs),
+(129,244,l),
+(0,244,l),
+(0,-10,l)
+);
+}
+);
+width = 129;
+}
+);
+subCategory = Nonspacing;
+unicode = 1648;
+}

@@ -1,0 +1,80 @@
+{
+color = 3;
+glyphname = acutecmb.cap;
+layers = (
+{
+anchors = (
+{
+name = _aboveUC;
+pos = (0,672);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(50,700,l),
+(230,842,l),
+(220,860,l),
+(30,860,l),
+(-90,700,l)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _aboveUC;
+pos = (0,682);
+}
+);
+guides = (
+{
+pos = (30,710);
+},
+{
+pos = (-71,840);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(-34,710,l),
+(120,826,l),
+(118,830,l),
+(70,830,l),
+(-70,710,l)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _aboveUC;
+pos = (0,678);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-3,706,l),
+(160,832,l),
+(156,841,l),
+(55,841,l),
+(-77,706,l)
+);
+}
+);
+width = 0;
+}
+);
+}

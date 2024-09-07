@@ -1,0 +1,84 @@
+{
+color = 3;
+glyphname = icaron;
+kernLeft = i;
+kernRight = i;
+layers = (
+{
+anchors = (
+{
+name = belowLC;
+pos = (144,-22);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = dotlessi;
+},
+{
+pos = (144,0);
+ref = caroncmb;
+}
+);
+width = 288;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (110,-22);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = dotlessi;
+},
+{
+pos = (110,0);
+ref = caroncmb;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 222;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (123,-22);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = dotlessi;
+},
+{
+alignment = -1;
+pos = (123,0);
+ref = caroncmb;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 246.288;
+}
+);
+unicode = 464;
+}

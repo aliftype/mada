@@ -1,0 +1,94 @@
+{
+category = Mark;
+glyphname = "fathatwodots-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.mark;
+pos = (124,0);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+pos = (42,91);
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+angle = 20.00004;
+pos = (23,-36);
+ref = "fatha-ar";
+},
+{
+alignment = -1;
+pos = (187,-10);
+ref = "dotabove-ar";
+}
+);
+width = 229;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (104,0);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+alignment = -1;
+pos = (31,96);
+ref = "dotabove-ar";
+},
+{
+alignment = -1;
+angle = 20.00004;
+pos = (2,-37);
+ref = "fatha-ar";
+},
+{
+alignment = -1;
+pos = (160,-16);
+ref = "dotabove-ar";
+}
+);
+width = 194;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (162,0);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+alignment = -1;
+pos = (51,121);
+ref = "dotabove-ar";
+scale = (0.6,0.6);
+},
+{
+alignment = -1;
+angle = 20.00004;
+pos = (32,-48);
+ref = "fatha-ar";
+},
+{
+alignment = -1;
+pos = (244,-25);
+ref = "dotabove-ar";
+scale = (0.6,0.6);
+}
+);
+width = 295;
+}
+);
+subCategory = Nonspacing;
+unicode = 1630;
+}

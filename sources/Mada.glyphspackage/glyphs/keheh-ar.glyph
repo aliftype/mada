@@ -1,0 +1,144 @@
+{
+glyphname = "keheh-ar";
+layers = (
+{
+anchors = (
+{
+name = bottom.a;
+pos = (279,-149);
+},
+{
+name = bottom.mark;
+pos = (279,-170);
+},
+{
+name = bottom.ring;
+pos = (483,535);
+},
+{
+name = top.a;
+pos = (192,639);
+},
+{
+name = top.gaf;
+pos = (440,649);
+},
+{
+name = top.mark;
+pos = (243,676);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(191,0,l),
+(127,79,l),
+(46,79,l),
+(111,0,l)
+);
+},
+{
+alignment = -1;
+pos = (111,0);
+ref = "kaf-ar.medi";
+}
+);
+width = 672;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (313,-149);
+},
+{
+name = bottom.mark;
+pos = (313,-169);
+},
+{
+name = bottom.ring;
+pos = (351,533);
+},
+{
+name = top.a;
+pos = (133,619);
+},
+{
+name = top.gaf;
+pos = (321,597);
+},
+{
+name = top.mark;
+pos = (273,657);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(106,0,l),
+(82,32,l),
+(40,32,l),
+(64,0,l)
+);
+},
+{
+alignment = -1;
+pos = (64,0);
+ref = "kaf-ar.medi";
+}
+);
+width = 542;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (423,-149);
+},
+{
+name = bottom.mark;
+pos = (423,-174);
+},
+{
+name = bottom.ring;
+pos = (645,538);
+},
+{
+name = top.a;
+pos = (293,750);
+},
+{
+name = top.gaf;
+pos = (575,768);
+},
+{
+name = top.mark;
+pos = (293,798);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(366,0,l),
+(222,172,l),
+(60,172,l),
+(204,0,l)
+);
+},
+{
+alignment = -1;
+pos = (204,0);
+ref = "kaf-ar.medi";
+}
+);
+width = 861;
+}
+);
+unicode = 1705;
+}

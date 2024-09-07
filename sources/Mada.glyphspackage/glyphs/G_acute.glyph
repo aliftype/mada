@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = Gacute;
+kernLeft = O;
+kernRight = G;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = G;
+},
+{
+pos = (370,0);
+ref = acutecmb.cap;
+}
+);
+width = 646;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = G;
+},
+{
+pos = (340,0);
+ref = acutecmb.cap;
+}
+);
+width = 600;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = G;
+},
+{
+alignment = -1;
+pos = (351,0);
+ref = acutecmb.cap;
+}
+);
+width = 616.928;
+}
+);
+unicode = 500;
+}

@@ -1,0 +1,84 @@
+{
+color = 3;
+glyphname = Ocaron;
+kernLeft = O;
+kernRight = O;
+layers = (
+{
+anchors = (
+{
+name = belowLC;
+pos = (346,-22);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = O;
+},
+{
+pos = (346,0);
+ref = caroncmb.cap;
+}
+);
+width = 692;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (324,-22);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = O;
+},
+{
+pos = (324,0);
+ref = caroncmb.cap;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 648;
+},
+{
+anchors = (
+{
+name = belowLC;
+pos = (332,-22);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = O;
+},
+{
+alignment = -1;
+pos = (332,0);
+ref = caroncmb.cap;
+}
+);
+userData = {
+com.typemytype.robofont.mark = (
+0.8,
+0.8,
+0.6,
+1
+);
+};
+width = 664.192;
+}
+);
+unicode = 465;
+}

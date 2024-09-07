@@ -1,0 +1,152 @@
+{
+glyphname = "hehgoal-ar.fina";
+layers = (
+{
+anchors = (
+{
+name = bottom.a;
+pos = (193,-113);
+},
+{
+name = bottom.mark;
+pos = (193,-139);
+},
+{
+name = top.a;
+pos = (170,270);
+},
+{
+name = top.hamza;
+pos = (170,270);
+},
+{
+name = top.kaf;
+pos = (170,270);
+},
+{
+name = top.mark;
+pos = (170,308);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(160,-47,l),
+(160,47,l),
+(156.5,43.15,o),
+(153.5,39.85,o),
+(150,36,c),
+(331,36,l),
+(331,115,l),
+(174,115,ls),
+(124,115,o),
+(81,76,o),
+(81,24,cs),
+(81,-47,l)
+);
+}
+);
+width = 315;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (139,-120);
+},
+{
+name = bottom.mark;
+pos = (139,-140);
+},
+{
+name = top.a;
+pos = (109,180);
+},
+{
+name = top.hamza;
+pos = (109,180);
+},
+{
+name = top.kaf;
+pos = (109,180);
+},
+{
+name = top.mark;
+pos = (109,217);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(72,-58,l),
+(72,-5,ls),
+(72,15,o),
+(86,30,o),
+(109,30,cs),
+(218,30,l),
+(218,62,l),
+(109,62,ls),
+(70,62,o),
+(40,33,o),
+(40,-5,cs),
+(40,-58,l)
+);
+}
+);
+width = 218;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (299,-100);
+},
+{
+name = bottom.mark;
+pos = (299,-135);
+},
+{
+name = top.a;
+pos = (254,442);
+},
+{
+name = top.hamza;
+pos = (254,442);
+},
+{
+name = top.kaf;
+pos = (254,442);
+},
+{
+name = top.mark;
+pos = (254,486);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(292,-48,l),
+(292,80,l),
+(285,73,o),
+(279,67,o),
+(272,60,c),
+(498,60,l),
+(498,232,l),
+(259,232,ls),
+(183,232,o),
+(120,170,o),
+(120,94,cs),
+(120,-48,l)
+);
+}
+);
+width = 478;
+}
+);
+}

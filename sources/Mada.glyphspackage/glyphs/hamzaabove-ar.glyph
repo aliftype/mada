@@ -1,0 +1,65 @@
+{
+category = Mark;
+glyphname = "hamzaabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.hamza;
+pos = (96,0);
+},
+{
+name = top.mark;
+pos = (96,250);
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "miniKeheh-ar";
+}
+);
+width = 192;
+},
+{
+anchors = (
+{
+name = _top.hamza;
+pos = (96,0);
+},
+{
+name = top.mark;
+pos = (96,237);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "miniKeheh-ar";
+}
+);
+width = 192;
+},
+{
+anchors = (
+{
+name = _top.hamza;
+pos = (96,0);
+},
+{
+name = top.mark;
+pos = (96,304);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "miniKeheh-ar";
+}
+);
+width = 192;
+}
+);
+subCategory = Nonspacing;
+unicode = 1620;
+}

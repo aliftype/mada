@@ -1,0 +1,69 @@
+{
+category = Mark;
+glyphname = "openfathatan-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.mark;
+pos = (122,0);
+}
+);
+layerId = master01;
+shapes = (
+{
+pos = (0,-1);
+ref = "fatha-ar";
+},
+{
+alignment = -1;
+pos = (90,137);
+ref = "fatha-ar";
+}
+);
+width = 244;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (116,0);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "fatha-ar";
+},
+{
+alignment = -1;
+pos = (70,131);
+ref = "fatha-ar";
+}
+);
+width = 232;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (138,0);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "fatha-ar";
+},
+{
+alignment = -1;
+pos = (100,157);
+ref = "fatha-ar";
+}
+);
+width = 276;
+}
+);
+subCategory = Nonspacing;
+unicode = 2288;
+}

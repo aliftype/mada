@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = hdieresis;
+kernLeft = l;
+kernRight = n;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = h;
+},
+{
+pos = (320,50);
+ref = dieresiscmb.cap;
+}
+);
+width = 582;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = h;
+},
+{
+pos = (280,50);
+ref = dieresiscmb.cap;
+}
+);
+width = 522;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = h;
+},
+{
+alignment = -1;
+pos = (295,50);
+ref = dieresiscmb.cap;
+}
+);
+width = 544.08;
+}
+);
+unicode = 7719;
+}

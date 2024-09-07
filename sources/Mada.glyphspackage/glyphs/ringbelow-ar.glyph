@@ -1,0 +1,64 @@
+{
+category = Mark;
+glyphname = "ringbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _bottom.a;
+pos = (87,30);
+},
+{
+name = bottom.mark;
+pos = (87,-174);
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "ring-ar";
+}
+);
+width = 174;
+},
+{
+anchors = (
+{
+name = _bottom.a;
+pos = (57,0);
+},
+{
+name = bottom.mark;
+pos = (57,-142);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "ring-ar";
+}
+);
+width = 114;
+},
+{
+anchors = (
+{
+name = _bottom.a;
+pos = (87,-20);
+},
+{
+name = bottom.mark;
+pos = (87,-270);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "ring-ar";
+}
+);
+width = 174;
+}
+);
+subCategory = Nonspacing;
+}

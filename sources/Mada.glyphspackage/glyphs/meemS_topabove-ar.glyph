@@ -1,0 +1,56 @@
+{
+category = Mark;
+glyphname = "meemStopabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.mark;
+pos = (112,-70);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "meem-ar.ss04";
+scale = (0.5,0.5);
+}
+);
+width = 224;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (133,-70);
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "meem-ar.ss04";
+scale = (0.5,0.5);
+}
+);
+width = 266;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (175,-70);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "meem-ar.ss04";
+scale = (0.5,0.5);
+}
+);
+width = 349;
+}
+);
+subCategory = Nonspacing;
+unicode = 1762;
+}

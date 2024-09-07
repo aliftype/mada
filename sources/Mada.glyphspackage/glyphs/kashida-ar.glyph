@@ -1,0 +1,141 @@
+{
+glyphname = "kashida-ar";
+layers = (
+{
+anchors = (
+{
+name = bottom.a;
+pos = (182,-109);
+},
+{
+name = bottom.hamza;
+pos = (182,-109);
+},
+{
+name = bottom.mark;
+pos = (182,-139);
+},
+{
+name = bottom.ring;
+pos = (122,0);
+},
+{
+name = top.a;
+pos = (182,314);
+},
+{
+name = top.hamza;
+pos = (182,314);
+},
+{
+name = top.mark;
+pos = (182,352);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(269,0,l),
+(269,79,l),
+(0,79,l),
+(0,0,l)
+);
+}
+);
+width = 253;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (172,-109);
+},
+{
+name = bottom.hamza;
+pos = (172,-109);
+},
+{
+name = bottom.mark;
+pos = (172,-139);
+},
+{
+name = bottom.ring;
+pos = (122,0);
+},
+{
+name = top.a;
+pos = (172,314);
+},
+{
+name = top.hamza;
+pos = (172,314);
+},
+{
+name = top.mark;
+pos = (172,352);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(250,0,l),
+(250,32,l),
+(0,32,l),
+(0,0,l)
+);
+}
+);
+width = 240;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (172,-109);
+},
+{
+name = bottom.hamza;
+pos = (172,-109);
+},
+{
+name = bottom.mark;
+pos = (172,-139);
+},
+{
+name = bottom.ring;
+pos = (122,0);
+},
+{
+name = top.a;
+pos = (172,364);
+},
+{
+name = top.hamza;
+pos = (172,364);
+},
+{
+name = top.mark;
+pos = (172,402);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(300,0,l),
+(300,172,l),
+(0,172,l),
+(0,0,l)
+);
+}
+);
+width = 280;
+}
+);
+unicode = 1600;
+}

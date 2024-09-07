@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = Kdotbelow;
+kernLeft = H;
+kernRight = K;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = K;
+},
+{
+pos = (334,0);
+ref = dotbelowcmb;
+}
+);
+width = 628;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = K;
+},
+{
+pos = (324,0);
+ref = dotbelowcmb;
+}
+);
+width = 550;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = K;
+},
+{
+alignment = -1;
+pos = (328,0);
+ref = dotbelowcmb;
+}
+);
+width = 578.704;
+}
+);
+unicode = 7730;
+}

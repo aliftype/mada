@@ -1,0 +1,76 @@
+{
+category = Mark;
+glyphname = "shadda-ar.ss03";
+layers = (
+{
+anchors = (
+{
+name = _top.mark;
+pos = (120,-60);
+},
+{
+name = bottom.mark;
+pos = (120,0);
+},
+{
+name = top.mark;
+pos = (120,217);
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "shadda-ar";
+}
+);
+width = 241;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (114,-50);
+},
+{
+name = bottom.mark;
+pos = (114,0);
+},
+{
+name = top.mark;
+pos = (114,191);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "shadda-ar";
+}
+);
+width = 230;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (152,-80);
+},
+{
+name = bottom.mark;
+pos = (152,0);
+},
+{
+name = top.mark;
+pos = (152,251);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "shadda-ar";
+}
+);
+width = 304;
+}
+);
+subCategory = Nonspacing;
+}

@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = Zacute;
+kernLeft = Z;
+kernRight = Z;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = Z;
+},
+{
+pos = (284,0);
+ref = acutecmb.cap;
+}
+);
+width = 542;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = Z;
+},
+{
+pos = (278,0);
+ref = acutecmb.cap;
+}
+);
+width = 538;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = Z;
+},
+{
+alignment = -1;
+pos = (280,0);
+ref = acutecmb.cap;
+}
+);
+width = 539.472;
+}
+);
+unicode = 377;
+}

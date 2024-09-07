@@ -1,0 +1,35 @@
+{
+color = 3;
+glyphname = divisionslash;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = fraction;
+}
+);
+width = 100;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = fraction;
+}
+);
+width = 78;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = fraction;
+}
+);
+width = 86.096;
+}
+);
+unicode = 8725;
+}

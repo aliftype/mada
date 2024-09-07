@@ -1,0 +1,63 @@
+{
+color = (255,0,255,255);
+glyphname = "noonghunna-ar.fina";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(619,0,l),
+(619,79,l),
+(475,79,l),
+(475,0,l)
+);
+},
+{
+alignment = -1;
+ref = "noonghunna-ar";
+}
+);
+width = 603;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(584,0,l),
+(584,32,l),
+(432,32,l),
+(432,0,l)
+);
+},
+{
+alignment = -1;
+ref = "noonghunna-ar";
+}
+);
+width = 574;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(704,0,l),
+(704,172,l),
+(543,172,l),
+(543,0,l)
+);
+},
+{
+alignment = -1;
+ref = "noonghunna-ar";
+}
+);
+width = 684;
+}
+);
+}

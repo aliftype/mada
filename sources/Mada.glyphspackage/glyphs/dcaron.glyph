@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = dcaron;
+kernLeft = o;
+kernRight = lcaron;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = d;
+},
+{
+pos = (580,0);
+ref = caroncmb.a;
+}
+);
+width = 580;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = d;
+},
+{
+pos = (540,0);
+ref = caroncmb.a;
+}
+);
+width = 540;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = d;
+},
+{
+alignment = -1;
+pos = (555,0);
+ref = caroncmb.a;
+}
+);
+width = 573.12;
+}
+);
+unicode = 271;
+}

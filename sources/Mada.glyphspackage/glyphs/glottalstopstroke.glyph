@@ -1,0 +1,98 @@
+{
+color = 3;
+glyphname = glottalstopstroke;
+layers = (
+{
+anchors = (
+{
+name = aboveUC;
+pos = (230,722);
+},
+{
+name = belowLC;
+pos = (210,-22);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(406,108,l),
+(406,220,l),
+(132,220,l),
+(26,214,l),
+(26,108,l)
+);
+},
+{
+pos = (10,0);
+ref = glottalstop;
+}
+);
+width = 470;
+},
+{
+anchors = (
+{
+name = aboveUC;
+pos = (200,732);
+},
+{
+name = belowLC;
+pos = (180,-22);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(322,152,l),
+(322,180,l),
+(120,180,l),
+(44,176,l),
+(44,152,l)
+);
+},
+{
+pos = (10,0);
+ref = glottalstop;
+}
+);
+width = 402;
+},
+{
+anchors = (
+{
+name = aboveUC;
+pos = (211,728);
+},
+{
+name = belowLC;
+pos = (191,-22);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(353,136,l),
+(353,195,l),
+(124,195,l),
+(37,190,l),
+(37,136,l)
+);
+},
+{
+alignment = -1;
+pos = (10,0);
+ref = glottalstop;
+}
+);
+width = 427.024;
+}
+);
+unicode = 673;
+}

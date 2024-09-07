@@ -1,0 +1,68 @@
+{
+category = Mark;
+color = 3;
+glyphname = "tail-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.tail;
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(34,0,l),
+(-16,60,l),
+(-104,-45,l),
+(-64,-83,l)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _top.tail;
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(19,9,l),
+(-2,34,l),
+(-66,-39,l),
+(-48,-56,l)
+);
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _top.tail;
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(67,30,l),
+(-44,162,l),
+(-176,-5,l),
+(-104,-95,l)
+);
+}
+);
+width = 0;
+}
+);
+subCategory = Nonspacing;
+}

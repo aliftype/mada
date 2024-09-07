@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = Adieresis;
+kernLeft = A;
+kernRight = A;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = A;
+},
+{
+pos = (290,0);
+ref = dieresiscmb.cap;
+}
+);
+width = 584;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = A;
+},
+{
+pos = (260,0);
+ref = dieresiscmb.cap;
+}
+);
+width = 520;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = A;
+},
+{
+alignment = -1;
+pos = (271,0);
+ref = dieresiscmb.cap;
+}
+);
+width = 543.552;
+}
+);
+unicode = 196;
+}

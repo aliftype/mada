@@ -1,0 +1,38 @@
+{
+color = 3;
+glyphname = caron;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+pos = (280,0);
+ref = caroncmb;
+}
+);
+width = 560;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+pos = (266,0);
+ref = caroncmb;
+}
+);
+width = 532;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+pos = (271,0);
+ref = caroncmb;
+}
+);
+width = 542.304;
+}
+);
+unicode = 711;
+}

@@ -1,0 +1,35 @@
+{
+glyphname = "hehDoachashmee-ar";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+pos = (46,0);
+ref = "heh-ar.init";
+}
+);
+width = 748;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "heh-ar.init";
+}
+);
+width = 672;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "heh-ar.init";
+}
+);
+width = 782;
+}
+);
+unicode = 1726;
+}

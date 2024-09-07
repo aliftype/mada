@@ -1,0 +1,65 @@
+{
+color = 3;
+glyphname = overlinecmb;
+layers = (
+{
+anchors = (
+{
+name = _aboveLC;
+pos = (0,522);
+},
+{
+name = aboveLC;
+pos = (0,702);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = macroncmb;
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _aboveLC;
+pos = (0,502);
+},
+{
+name = aboveLC;
+pos = (0,642);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = macroncmb;
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _aboveLC;
+pos = (0,509);
+},
+{
+name = aboveLC;
+pos = (0,664);
+}
+);
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = macroncmb;
+}
+);
+width = 0;
+}
+);
+unicode = 773;
+}

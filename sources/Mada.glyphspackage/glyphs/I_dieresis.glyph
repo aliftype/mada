@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = Idieresis;
+kernLeft = I;
+kernRight = I;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = I;
+},
+{
+pos = (160,0);
+ref = dieresiscmb.cap;
+}
+);
+width = 316;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = I;
+},
+{
+pos = (116,0);
+ref = dieresiscmb.cap;
+}
+);
+width = 232;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = I;
+},
+{
+alignment = -1;
+pos = (132,0);
+ref = dieresiscmb.cap;
+}
+);
+width = 262.912;
+}
+);
+unicode = 207;
+}

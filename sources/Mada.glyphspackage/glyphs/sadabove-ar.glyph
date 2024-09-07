@@ -1,0 +1,56 @@
+{
+category = Mark;
+glyphname = "sadabove-ar";
+layers = (
+{
+anchors = (
+{
+name = _top.mark;
+pos = (229,-99);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "sad-ar";
+scale = (0.5,0.5);
+}
+);
+width = 458;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (252,-99);
+}
+);
+layerId = master01;
+shapes = (
+{
+ref = "sad-ar";
+scale = (0.5,0.5);
+}
+);
+width = 505;
+},
+{
+anchors = (
+{
+name = _top.mark;
+pos = (300,-109);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "sad-ar";
+scale = (0.5,0.5);
+}
+);
+width = 601;
+}
+);
+subCategory = Nonspacing;
+unicode = 2261;
+}

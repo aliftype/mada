@@ -1,0 +1,50 @@
+{
+color = 3;
+glyphname = Rcommaaccent;
+kernLeft = H;
+kernRight = R;
+layers = (
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = R;
+},
+{
+pos = (334,0);
+ref = commabelowcmb;
+}
+);
+width = 630;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = R;
+},
+{
+pos = (296,0);
+ref = commabelowcmb;
+}
+);
+width = 534;
+},
+{
+layerId = master01;
+shapes = (
+{
+alignment = -1;
+ref = R;
+},
+{
+alignment = -1;
+pos = (310,0);
+ref = commabelowcmb;
+}
+);
+width = 569.328;
+}
+);
+unicode = 342;
+}

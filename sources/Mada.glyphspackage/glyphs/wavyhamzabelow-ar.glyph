@@ -1,0 +1,65 @@
+{
+category = Mark;
+glyphname = "wavyhamzabelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _bottom.hamza;
+},
+{
+name = bottom.mark;
+pos = (0,-239);
+}
+);
+layerId = master01;
+shapes = (
+{
+pos = (0,-167);
+ref = "wavyhamzaabove-ar";
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _bottom.hamza;
+},
+{
+name = bottom.mark;
+pos = (0,-220);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+pos = (0,-143);
+ref = "wavyhamzaabove-ar";
+}
+);
+width = 0;
+},
+{
+anchors = (
+{
+name = _bottom.hamza;
+},
+{
+name = bottom.mark;
+pos = (0,-295);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+pos = (0,-211);
+ref = "wavyhamzaabove-ar";
+}
+);
+width = 0;
+}
+);
+subCategory = Nonspacing;
+unicode = 1631;
+}

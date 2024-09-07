@@ -1,0 +1,64 @@
+{
+color = (255,0,255,255);
+glyphname = "reh-ar.fina";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(377,0,l),
+(377,79,l),
+(238,79,l),
+(238,0,l)
+);
+},
+{
+alignment = -1;
+ref = "reh-ar";
+}
+);
+width = 361;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(310,0,l),
+(310,32,l),
+(179,32,l),
+(179,0,l)
+);
+},
+{
+alignment = -1;
+pos = (0,-1);
+ref = "reh-ar";
+}
+);
+width = 300;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(436,0,l),
+(436,172,l),
+(271,172,l),
+(271,0,l)
+);
+},
+{
+alignment = -1;
+ref = "reh-ar";
+}
+);
+width = 416;
+}
+);
+}

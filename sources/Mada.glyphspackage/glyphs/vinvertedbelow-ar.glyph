@@ -1,0 +1,67 @@
+{
+category = Mark;
+glyphname = "vinvertedbelow-ar";
+layers = (
+{
+anchors = (
+{
+name = _bottom.a;
+pos = (155,-90);
+},
+{
+name = bottom.mark;
+pos = (155,-239);
+}
+);
+layerId = master01;
+shapes = (
+{
+pos = (0,-171);
+ref = "vinvertedabove-ar";
+}
+);
+width = 310;
+},
+{
+anchors = (
+{
+name = _bottom.a;
+pos = (138,-100);
+},
+{
+name = bottom.mark;
+pos = (138,-220);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+pos = (0,-165);
+ref = "vinvertedabove-ar";
+}
+);
+width = 276;
+},
+{
+anchors = (
+{
+name = _bottom.a;
+pos = (194,-100);
+},
+{
+name = bottom.mark;
+pos = (194,-295);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+pos = (0,-188);
+ref = "vinvertedabove-ar";
+}
+);
+width = 388;
+}
+);
+subCategory = Nonspacing;
+}

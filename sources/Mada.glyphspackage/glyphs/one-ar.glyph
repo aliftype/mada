@@ -1,0 +1,51 @@
+{
+glyphname = "one-ar";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(288,0,l),
+(288,646,l),
+(209,646,l),
+(209,0,l)
+);
+}
+);
+width = 497;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(252,0,l),
+(252,624,l),
+(220,624,l),
+(220,0,l)
+);
+}
+);
+width = 472;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(356,0,l),
+(356,624,l),
+(184,624,l),
+(184,0,l)
+);
+}
+);
+width = 540;
+}
+);
+unicode = (1633,1777);
+}

@@ -1,0 +1,39 @@
+{
+glyphname = "thousandseparator-ar";
+layers = (
+{
+layerId = master01;
+shapes = (
+{
+angle = 180;
+pos = (300,490);
+ref = "decimalseparator-ar";
+}
+);
+width = 300;
+},
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+angle = 180;
+pos = (231,469);
+ref = "decimalseparator-ar";
+}
+);
+width = 231;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+angle = 180;
+pos = (365,490);
+ref = "decimalseparator-ar";
+}
+);
+width = 365;
+}
+);
+unicode = 1644;
+}

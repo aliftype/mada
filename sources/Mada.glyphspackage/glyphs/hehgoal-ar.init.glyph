@@ -1,0 +1,128 @@
+{
+glyphname = "hehgoal-ar.init";
+layers = (
+{
+anchors = (
+{
+name = top.a;
+pos = (112,301);
+},
+{
+name = top.hamza;
+pos = (199,301);
+},
+{
+name = top.mark;
+pos = (112,337);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(202,0,ls),
+(252,0,o),
+(294,39,o),
+(294,91,cs),
+(294,232,l),
+(216,232,l),
+(216,69,l),
+(219.5,72.5,o),
+(222.5,75.5,o),
+(226,79,c),
+(0,79,l),
+(0,0,l)
+);
+},
+{
+pos = (92,-273);
+ref = "comma-ar";
+}
+);
+width = 340;
+},
+{
+anchors = (
+{
+name = top.a;
+pos = (99,300);
+},
+{
+name = top.hamza;
+pos = (199,300);
+},
+{
+name = top.mark;
+pos = (99,338);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(189,0,ls),
+(228,0,o),
+(258,29,o),
+(258,67,cs),
+(258,190,l),
+(226,190,l),
+(226,67,ls),
+(226,47,o),
+(212,32,o),
+(189,32,cs),
+(0,32,l),
+(0,0,l)
+);
+},
+{
+pos = (98,-223);
+ref = "comma-ar";
+}
+);
+width = 298;
+},
+{
+anchors = (
+{
+name = top.a;
+pos = (184,432);
+},
+{
+name = top.hamza;
+pos = (234,432);
+},
+{
+name = top.mark;
+pos = (184,480);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(239,0,ls),
+(315,0,o),
+(378,62,o),
+(378,138,cs),
+(378,310,l),
+(206,310,l),
+(206,152,l),
+(213,159,o),
+(219,165,o),
+(226,172,c),
+(0,172,l),
+(0,0,l)
+);
+},
+{
+pos = (104,-402);
+ref = "comma-ar";
+}
+);
+width = 438;
+}
+);
+}

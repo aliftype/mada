@@ -1,0 +1,189 @@
+{
+glyphname = "behDotless-ar";
+layers = (
+{
+anchors = (
+{
+name = bottom.a;
+pos = (386,-149);
+},
+{
+name = bottom.hamza;
+pos = (386,-149);
+},
+{
+name = bottom.mark;
+pos = (386,-176);
+},
+{
+name = bottom.ring;
+pos = (386,0);
+},
+{
+name = top.a;
+pos = (366,394);
+},
+{
+name = top.hamza;
+pos = (366,431);
+},
+{
+name = top.mark;
+pos = (366,431);
+}
+);
+layerId = master01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(596,0,ls),
+(645,0,o),
+(687,42,o),
+(687,92,cs),
+(687,287,l),
+(608,287,l),
+(608,69,l),
+(611.5,72.5,o),
+(614.5,75.5,o),
+(618,79,c),
+(204,79,ls),
+(159,79,o),
+(125,112,o),
+(125,147,cs),
+(125,287,l),
+(46,287,l),
+(46,147,ls),
+(46,61,o),
+(123,0,o),
+(204,0,cs)
+);
+}
+);
+width = 733;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (357,-150);
+},
+{
+name = bottom.hamza;
+pos = (357,-150);
+},
+{
+name = bottom.mark;
+pos = (357,-170);
+},
+{
+name = bottom.ring;
+pos = (357,0);
+},
+{
+name = top.a;
+pos = (337,393);
+},
+{
+name = top.hamza;
+pos = (337,393);
+},
+{
+name = top.mark;
+pos = (337,430);
+}
+);
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+closed = 1;
+nodes = (
+(566,0,ls),
+(600,0,o),
+(634,32,o),
+(634,68,cs),
+(634,263,l),
+(602,263,l),
+(602,68,ls),
+(602,52,o),
+(582,32,o),
+(566,32,cs),
+(174,32,ls),
+(118,32,o),
+(72,73,o),
+(72,123,cs),
+(72,263,l),
+(40,263,l),
+(40,123,ls),
+(40,53,o),
+(104,0,o),
+(174,0,cs)
+);
+}
+);
+width = 674;
+},
+{
+anchors = (
+{
+name = bottom.a;
+pos = (447,-160);
+},
+{
+name = bottom.hamza;
+pos = (447,-160);
+},
+{
+name = bottom.mark;
+pos = (447,-195);
+},
+{
+name = bottom.ring;
+pos = (447,0);
+},
+{
+name = top.a;
+pos = (427,453);
+},
+{
+name = top.hamza;
+pos = (427,453);
+},
+{
+name = top.mark;
+pos = (427,497);
+}
+);
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+closed = 1;
+nodes = (
+(656,0,ls),
+(733,0,o),
+(794,61,o),
+(794,138,cs),
+(794,333,l),
+(622,333,l),
+(622,152,l),
+(629,159,o),
+(635,165,o),
+(642,172,c),
+(264,172,ls),
+(240,172,o),
+(232,189,o),
+(232,193,cs),
+(232,333,l),
+(60,333,l),
+(60,193,ls),
+(60,77,o),
+(162,0,o),
+(264,0,cs)
+);
+}
+);
+width = 854;
+}
+);
+unicode = 1646;
+}

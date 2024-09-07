@@ -1,0 +1,36 @@
+{
+glyphname = "yehSmall-ar";
+layers = (
+{
+layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+shapes = (
+{
+ref = "yehbarree-ar";
+scale = (0.5,0.5);
+}
+);
+width = 443;
+},
+{
+layerId = master01;
+shapes = (
+{
+ref = "yehbarree-ar";
+scale = (0.5,0.5);
+}
+);
+width = 460;
+},
+{
+layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+shapes = (
+{
+ref = "yehbarree-ar";
+scale = (0.5,0.5);
+}
+);
+width = 498;
+}
+);
+unicode = 1766;
+}
