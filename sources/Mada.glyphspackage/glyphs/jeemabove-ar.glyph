@@ -8,7 +8,13 @@ shapes = (
 {
 alignment = -1;
 pos = (0,724);
-ref = "jeem-ar";
+ref = "hah-ar";
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (120,707);
+ref = "dotcenter-ar";
 scale = (0.5,0.5);
 }
 );
@@ -20,7 +26,13 @@ shapes = (
 {
 alignment = -1;
 pos = (0,724);
-ref = "jeem-ar";
+ref = "hah-ar";
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (133,717);
+ref = "dotcenter-ar";
 scale = (0.5,0.5);
 }
 );
@@ -32,7 +44,13 @@ shapes = (
 {
 alignment = -1;
 pos = (0,739);
-ref = "jeem-ar";
+ref = "hah-ar";
+scale = (0.5,0.5);
+},
+{
+alignment = -1;
+pos = (175,758);
+ref = "dotcenter-ar";
 scale = (0.5,0.5);
 }
 );
