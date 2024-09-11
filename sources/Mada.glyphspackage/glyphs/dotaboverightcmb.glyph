@@ -1,4 +1,5 @@
 {
+category = Mark;
 color = 3;
 glyphname = dotaboverightcmb;
 layers = (
@@ -15,7 +16,7 @@ shapes = (
 ref = dotaccentcmb;
 }
 );
-width = 0;
+width = 94;
 },
 {
 anchors = (
@@ -30,7 +31,7 @@ shapes = (
 ref = dotaccentcmb;
 }
 );
-width = 0;
+width = 32;
 },
 {
 anchors = (
@@ -46,8 +47,10 @@ alignment = -1;
 ref = dotaccentcmb;
 }
 );
-width = 0;
+width = 55;
 }
 );
+metricRight = "=0";
+subCategory = Nonspacing;
 unicode = 856;
 }

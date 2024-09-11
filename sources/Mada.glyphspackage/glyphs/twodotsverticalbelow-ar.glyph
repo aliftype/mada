@@ -19,7 +19,7 @@ pos = (0,-182);
 ref = "twodotsverticalabove-ar";
 }
 );
-width = 0;
+width = 42;
 },
 {
 anchors = (
@@ -38,7 +38,7 @@ pos = (0,-150);
 ref = "twodotsverticalabove-ar";
 }
 );
-width = 0;
+width = 50;
 },
 {
 anchors = (
@@ -57,8 +57,9 @@ pos = (0,-200);
 ref = "twodotsverticalabove-ar";
 }
 );
-width = 0;
+width = 86;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 }

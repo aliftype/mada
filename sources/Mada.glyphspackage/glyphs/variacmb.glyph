@@ -1,4 +1,5 @@
 {
+category = Mark;
 color = 3;
 glyphname = variacmb;
 layers = (
@@ -22,7 +23,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 70;
 },
 {
 anchors = (
@@ -44,7 +45,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 30;
 },
 {
 anchors = (
@@ -66,8 +67,10 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 45;
 }
 );
+metricRight = "=0";
+subCategory = Nonspacing;
 unicode = 832;
 }

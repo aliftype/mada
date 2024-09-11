@@ -1,4 +1,5 @@
 {
+category = Mark;
 color = 3;
 glyphname = macrondoublebelowcmb;
 layers = (
@@ -15,7 +16,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 478;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -30,7 +31,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 420;
 },
 {
 layerId = master01;
@@ -45,8 +46,10 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 441;
 }
 );
+metricRight = "=0";
+subCategory = Nonspacing;
 unicode = 863;
 }

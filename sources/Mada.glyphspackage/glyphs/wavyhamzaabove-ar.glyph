@@ -67,7 +67,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 96;
 },
 {
 anchors = (
@@ -134,7 +134,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 96;
 },
 {
 anchors = (
@@ -201,8 +201,9 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 96;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 }

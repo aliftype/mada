@@ -16,7 +16,7 @@ pos = (0,-760);
 ref = macroncmb;
 }
 );
-width = 0;
+width = 154;
 },
 {
 anchors = (
@@ -32,7 +32,7 @@ pos = (0,-770);
 ref = macroncmb;
 }
 );
-width = 0;
+width = 120;
 },
 {
 anchors = (
@@ -49,8 +49,9 @@ pos = (0,-766);
 ref = macroncmb;
 }
 );
-width = 0;
+width = 133;
 }
 );
+metricRight = "=0";
 unicode = 817;
 }

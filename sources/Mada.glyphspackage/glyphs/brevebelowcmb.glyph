@@ -16,7 +16,7 @@ pos = (0,-806);
 ref = brevecmb;
 }
 );
-width = 0;
+width = 174;
 },
 {
 anchors = (
@@ -32,7 +32,7 @@ pos = (0,-800);
 ref = brevecmb;
 }
 );
-width = 0;
+width = 146;
 },
 {
 anchors = (
@@ -49,8 +49,9 @@ pos = (0,-802);
 ref = brevecmb;
 }
 );
-width = 0;
+width = 156;
 }
 );
+metricRight = "=0";
 unicode = 814;
 }

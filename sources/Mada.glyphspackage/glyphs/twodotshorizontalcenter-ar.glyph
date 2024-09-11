@@ -15,7 +15,7 @@ shapes = (
 ref = "twodotshorizontalabove-ar";
 }
 );
-width = 0;
+width = 126;
 },
 {
 anchors = (
@@ -29,7 +29,7 @@ shapes = (
 ref = "twodotshorizontalabove-ar";
 }
 );
-width = 0;
+width = 103;
 },
 {
 anchors = (
@@ -44,8 +44,9 @@ shapes = (
 ref = "twodotshorizontalabove-ar";
 }
 );
-width = 0;
+width = 186;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 }

@@ -19,7 +19,7 @@ pos = (0,-167);
 ref = "wavyhamzaabove-ar";
 }
 );
-width = 0;
+width = 96;
 },
 {
 anchors = (
@@ -38,7 +38,7 @@ pos = (0,-143);
 ref = "wavyhamzaabove-ar";
 }
 );
-width = 0;
+width = 96;
 },
 {
 anchors = (
@@ -57,9 +57,10 @@ pos = (0,-211);
 ref = "wavyhamzaabove-ar";
 }
 );
-width = 0;
+width = 96;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 unicode = 1631;
 }

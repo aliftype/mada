@@ -19,7 +19,7 @@ shapes = (
 ref = macroncmb;
 }
 );
-width = 0;
+width = 154;
 },
 {
 anchors = (
@@ -38,7 +38,7 @@ shapes = (
 ref = macroncmb;
 }
 );
-width = 0;
+width = 120;
 },
 {
 anchors = (
@@ -58,8 +58,9 @@ alignment = -1;
 ref = macroncmb;
 }
 );
-width = 0;
+width = 133;
 }
 );
+metricRight = "=0";
 unicode = 773;
 }

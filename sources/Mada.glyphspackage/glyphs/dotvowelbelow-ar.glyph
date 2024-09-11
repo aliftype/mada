@@ -21,7 +21,7 @@ shapes = (
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 42;
 },
 {
 anchors = (
@@ -42,7 +42,7 @@ shapes = (
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 25;
 },
 {
 anchors = (
@@ -63,9 +63,10 @@ shapes = (
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 86;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 unicode = 1628;
 }

@@ -16,7 +16,7 @@ pos = (0,-800);
 ref = tildecmb;
 }
 );
-width = 0;
+width = 196;
 },
 {
 anchors = (
@@ -32,7 +32,7 @@ pos = (0,-800);
 ref = tildecmb;
 }
 );
-width = 0;
+width = 160;
 },
 {
 anchors = (
@@ -49,8 +49,9 @@ pos = (0,-800);
 ref = tildecmb;
 }
 );
-width = 0;
+width = 173;
 }
 );
+metricRight = "=0";
 unicode = 816;
 }

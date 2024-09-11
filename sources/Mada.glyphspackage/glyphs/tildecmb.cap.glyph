@@ -37,7 +37,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 206;
 },
 {
 anchors = (
@@ -74,7 +74,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 160;
 },
 {
 anchors = (
@@ -111,7 +111,8 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 177;
 }
 );
+metricRight = "=0";
 }

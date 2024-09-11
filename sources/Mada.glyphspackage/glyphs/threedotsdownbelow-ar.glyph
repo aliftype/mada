@@ -19,7 +19,7 @@ pos = (0,-113);
 ref = "threedotsdownabove-ar";
 }
 );
-width = 0;
+width = 126;
 },
 {
 anchors = (
@@ -38,7 +38,7 @@ pos = (0,-110);
 ref = "threedotsdownabove-ar";
 }
 );
-width = 0;
+width = 103;
 },
 {
 anchors = (
@@ -57,8 +57,9 @@ pos = (0,-170);
 ref = "threedotsdownabove-ar";
 }
 );
-width = 0;
+width = 186;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 }

@@ -27,7 +27,7 @@ pos = (0,120);
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 126;
 },
 {
 anchors = (
@@ -54,7 +54,7 @@ pos = (0,110);
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 103;
 },
 {
 anchors = (
@@ -81,8 +81,9 @@ pos = (0,170);
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 186;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 }

@@ -14,21 +14,23 @@ shapes = (
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 42;
 },
 {
 anchors = (
 {
 name = _center;
+pos = (25,0);
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
+pos = (25,0);
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 50;
 },
 {
 anchors = (
@@ -42,8 +44,9 @@ shapes = (
 ref = "dotabove-ar";
 }
 );
-width = 0;
+width = 86;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 }

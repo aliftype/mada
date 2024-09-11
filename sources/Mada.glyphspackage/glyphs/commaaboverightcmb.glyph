@@ -15,7 +15,7 @@ shapes = (
 ref = commaabovecmb;
 }
 );
-width = 0;
+width = 94;
 },
 {
 anchors = (
@@ -30,7 +30,7 @@ shapes = (
 ref = commaabovecmb;
 }
 );
-width = 0;
+width = 46;
 },
 {
 anchors = (
@@ -46,8 +46,9 @@ alignment = -1;
 ref = commaabovecmb;
 }
 );
-width = 0;
+width = 64;
 }
 );
+metricRight = "=0";
 unicode = 789;
 }

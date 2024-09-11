@@ -36,7 +36,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 94;
 },
 {
 anchors = (
@@ -72,7 +72,7 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 42;
 },
 {
 anchors = (
@@ -108,8 +108,9 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 61;
 }
 );
+metricRight = "=0";
 unicode = 786;
 }

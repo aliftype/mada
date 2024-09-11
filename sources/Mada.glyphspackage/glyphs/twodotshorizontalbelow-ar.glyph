@@ -18,25 +18,27 @@ shapes = (
 ref = "twodotshorizontalabove-ar";
 }
 );
-width = 0;
+width = 126;
 },
 {
 anchors = (
 {
 name = _bottom.a;
+pos = (103,0);
 },
 {
 name = bottom.mark;
-pos = (0,-110);
+pos = (103,-110);
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
+pos = (103,0);
 ref = "twodotshorizontalabove-ar";
 }
 );
-width = 0;
+width = 206;
 },
 {
 anchors = (
@@ -54,8 +56,9 @@ shapes = (
 ref = "twodotshorizontalabove-ar";
 }
 );
-width = 0;
+width = 186;
 }
 );
+metricRight = "=0";
 subCategory = Nonspacing;
 }
