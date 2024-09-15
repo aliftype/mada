@@ -68,7 +68,7 @@ ${DFONT}: ${FONT}
 	mkdir -p ${BUILDDIR}
 	${PYTHON} ${SCRIPTDIR}/dist.py $< $@ ${VERSION}
 
-${TESTDIR}/%.json: ${TESTDIR}/%.toml ${FONT}
+${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONT}
 	$(info   GEN    $(@F))
 	${PYTHON} ${SCRIPTDIR}/update-shaping-tests.py $< $@ ${FONT}
 
