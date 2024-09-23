@@ -1,7 +1,4 @@
 ufo2ft >= 2.30.0
-blackrenderer
 fontmake
-fonttools
 axisregistry
-vharfbuzz
-pyyaml
+alifTools[shaping,sample] @ git+https://github.com/aliftype/tools.git@604c296c02d3015ed5d80c3970e86ec22f690a5a

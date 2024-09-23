@@ -70,15 +70,15 @@ ${DFONT}: ${FONT}
 
 ${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONT}
 	$(info   GEN    $(@F))
-	${PYTHON} ${SCRIPTDIR}/update-shaping-tests.py $< $@ ${FONT}
+	${PYTHON} -m alifTools.shaping.update $< $@ ${FONT}
 
 ${TESTDIR}/shaping.html: ${FONT} ${TESTDIR}/shaping-config.yml
 	$(info   SHAPE  $(<F))
-	${PYTHON} ${SCRIPTDIR}/check-shaping.py $< ${TESTDIR}/shaping-config.yml $@
+	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
 
 ${SVG}: ${FONT}
 	$(info   SVG    $(@F))
-	${PYTHON} ${SCRIPTDIR}/make-sample.py -t "${SAMPLE}" -o $@ $<
+	${PYTHON} -m alifTools.sample -t "${SAMPLE}" -o $@ $<
 
 dist: ${DFONT} ${SVG}
 	$(info   DIST   ${DIST}.zip)
