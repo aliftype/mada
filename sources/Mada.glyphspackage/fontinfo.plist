@@ -1,5 +1,5 @@
 {
-.appVersion = "3316";
+.appVersion = "3319";
 .formatVersion = 3;
 axes = (
 {
@@ -83,6 +83,12 @@ value = 1;
 {
 name = "Write DisplayStrings";
 value = 0;
+},
+{
+name = "gasp Table";
+value = {
+"65535" = 15;
+};
 }
 );
 date = "2015-10-10 14:55:59 +0000";
