@@ -41,10 +41,6 @@ def main():
             parts = [version] + str(name).split(";")[1:]
             name.string = ";".join(parts)
 
-    if "fvar" in font:
-        from axisregistry import build_stat
-
-        build_stat(font, [])
     fix_unhinted_font(font)
 
     unicodes = set(font.getBestCmap().keys())
