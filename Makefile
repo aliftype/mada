@@ -21,12 +21,10 @@ PYTHON := venv/bin/python3
 
 SOURCEDIR = sources
 FONTDIR = fonts
-SCRIPTDIR = scripts
 TESTDIR = tests
 BUILDDIR = build
 
 FONT = ${FONTDIR}/${NAME}.ttf
-DFONT = ${BUILDDIR}/${NAME}.ttf
 JSON = ${TESTDIR}/shaping.json
 HTML = ${TESTDIR}/shaping.html
 SVG = FontSample.svg
@@ -64,11 +62,6 @@ ${FONT}: ${GLYPHSFILE}
 		--filter DecomposeTransformedComponentsFilter \
 		--filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 
-${DFONT}: ${FONT}
-	$(info   DIST   $(@F))
-	mkdir -p ${BUILDDIR}
-	${PYTHON} ${SCRIPTDIR}/dist.py $< $@
-
 ${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONT}
 	$(info   GEN    $(@F))
 	${PYTHON} -m alifTools.shaping.update $< $@ ${FONT}
@@ -81,9 +74,9 @@ ${SVG}: ${FONT}
 	$(info   SVG    $(@F))
 	${PYTHON} -m alifTools.sample -t "${SAMPLE}" -o $@ $<
 
-dist: ${DFONT} ${SVG}
+dist: ${FONT} ${SVG}
 	$(info   DIST   ${DIST}.zip)
-	install -Dm644 -t ${DIST} ${DFONT}
+	install -Dm644 -t ${DIST} ${FONT}
 	install -Dm644 -t ${DIST} README.md
 	install -Dm644 -t ${DIST} OFL.txt
 	zip -rq ${DIST}.zip ${DIST}
