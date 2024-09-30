@@ -61,12 +61,13 @@ ${FONT}: ${GLYPHSFILE}
 		--verbose=WARNING \
 		--master-dir="{tmp}" \
 		--flatten-components \
-		--filter DecomposeTransformedComponentsFilter
+		--filter DecomposeTransformedComponentsFilter \
+		--filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 
 ${DFONT}: ${FONT}
 	$(info   DIST   $(@F))
 	mkdir -p ${BUILDDIR}
-	${PYTHON} ${SCRIPTDIR}/dist.py $< $@ ${VERSION}
+	${PYTHON} ${SCRIPTDIR}/dist.py $< $@
 
 ${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONT}
 	$(info   GEN    $(@F))

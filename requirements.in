@@ -1,3 +1,3 @@
 ufo2ft >= 2.30.0
 fontmake
-alifTools[shaping,sample] @ git+https://github.com/aliftype/tools.git@604c296c02d3015ed5d80c3970e86ec22f690a5a
+alifTools[shaping,sample,filters] @ git+https://github.com/aliftype/tools.git@2557ec7593c511e9fc5c7ada36df4105003de527
