@@ -75,6 +75,8 @@ ${SVG}: ${FONT}
 	$(info   SVG    ${@F})
 	${PYTHON} -m alifTools.sample $< \
 				      -t "${SAMPLE}" \
+				      --foreground=1F2328 \
+				      --dark-foreground=D1D7E0 \
 				      -o $@
 
 dist: ${FONT} ${SVG}
