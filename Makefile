@@ -37,14 +37,14 @@ endef
 
 export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" ${GLYPHSFILE})
 
-TAG=$(shell git describe --tags --abbrev=0)
-VERSION=$(TAG:v%=%)
+TAG = $(shell git describe --tags --abbrev=0)
+VERSION = ${TAG:v%=%}
 DIST = ${NAME}-${VERSION}
 
 
 .SECONDARY:
 .ONESHELL:
-.PHONY: all dist ttf test doc ${HTML}
+.PHONY: all clean dist ttf test doc ${HTML}
 
 all: ttf doc
 ttf: ${FONT}
@@ -53,17 +53,18 @@ expectation: ${JSON}
 doc: ${SVG}
 
 ${FONT}: ${GLYPHSFILE}
-	$(info   BUILD  $(@F))
-	${PYTHON} -m fontmake $< --output-path=$@ \
-		-o variable \
-		--verbose=WARNING \
-		--master-dir="{tmp}" \
-		--flatten-components \
-		--filter DecomposeTransformedComponentsFilter \
-		--filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
+	$(info   BUILD  ${@F})
+	${PYTHON} -m fontmake $< \
+			      --output-path=$@ \
+			      -o variable \
+			      --verbose=WARNING \
+			      --master-dir="{tmp}" \
+			      --flatten-components \
+			      --filter DecomposeTransformedComponentsFilter \
+			      --filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 
 ${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONT}
-	$(info   GEN    $(@F))
+	$(info   GEN    ${@F})
 	${PYTHON} -m alifTools.shaping.update $< $@ ${FONT}
 
 ${TESTDIR}/shaping.html: ${FONT} ${TESTDIR}/shaping-config.yml
@@ -71,8 +72,10 @@ ${TESTDIR}/shaping.html: ${FONT} ${TESTDIR}/shaping-config.yml
 	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
 
 ${SVG}: ${FONT}
-	$(info   SVG    $(@F))
-	${PYTHON} -m alifTools.sample -t "${SAMPLE}" -o $@ $<
+	$(info   SVG    ${@F})
+	${PYTHON} -m alifTools.sample $< \
+				      -t "${SAMPLE}" \
+				      -o $@
 
 dist: ${FONT} ${SVG}
 	$(info   DIST   ${DIST}.zip)
