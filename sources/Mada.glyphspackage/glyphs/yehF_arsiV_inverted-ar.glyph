@@ -1,6 +1,5 @@
 {
-category = Letter;
-color = 0;
+category = Placeholder;
 glyphname = "yehFarsiVinverted-ar";
 layers = (
 {
@@ -16,8 +15,5 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 500;
 }
 );
-script = arabic;
-sortName = arpl1702;
-sortNameKeep = ar1209.0;
 unicode = 1597;
 }

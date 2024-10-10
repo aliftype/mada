@@ -1,5 +1,5 @@
 {
-color = 0;
+category = Placeholder;
 glyphname = "noonRing-ar";
 layers = (
 {
@@ -15,7 +15,5 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 width = 500;
 }
 );
-sortName = arpl1403;
-sortNameKeep = ar0978;
 unicode = 1724;
 }
