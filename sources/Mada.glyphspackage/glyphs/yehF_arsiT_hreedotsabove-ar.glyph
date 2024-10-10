@@ -4,15 +4,45 @@ glyphname = "yehFarsiThreedotsabove-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "yehFarsi-ar";
+},
+{
+pos = (236,336);
+ref = "threedotsupabove-ar";
+}
+);
+width = 599;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "yehFarsi-ar";
+},
+{
+pos = (207,342);
+ref = "threedotsupabove-ar";
+}
+);
+width = 544;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "yehFarsi-ar";
+},
+{
+pos = (277,400);
+ref = "threedotsupabove-ar";
+}
+);
+width = 714;
 }
 );
 unicode = 1599;

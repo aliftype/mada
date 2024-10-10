@@ -4,15 +4,42 @@ glyphname = "wawDotabove-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+ref = "waw-ar";
+},
+{
+pos = (252,466);
+ref = "dotabove-ar";
+}
+);
+width = 438;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+ref = "waw-ar";
+},
+{
+pos = (233,434);
+ref = "dotabove-ar";
+}
+);
+width = 387;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+ref = "waw-ar";
+},
+{
+pos = (323,554);
+ref = "dotabove-ar";
+}
+);
+width = 556;
 }
 );
 unicode = 1743;

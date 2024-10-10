@@ -4,15 +4,45 @@ glyphname = "ghainDotbelow-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "ghain-ar";
+},
+{
+pos = (265,-22);
+ref = "dotcenter-ar";
+}
+);
+width = 461;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "ghain-ar";
+},
+{
+pos = (211,-46);
+ref = "dotcenter-ar";
+}
+);
+width = 426;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "ghain-ar";
+},
+{
+pos = (338,-52);
+ref = "dotcenter-ar";
+}
+);
+width = 536;
 }
 );
 unicode = 1788;

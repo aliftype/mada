@@ -61,6 +61,7 @@ ${FONT}: ${GLYPHSFILE}
 			      --master-dir="{tmp}" \
 			      --flatten-components \
 			      --filter DecomposeTransformedComponentsFilter \
+			      --filter "alifTools.filters::ClearPlaceholdersFilter()" \
 			      --filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
 
 ${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONT}

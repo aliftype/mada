@@ -4,15 +4,45 @@ glyphname = "behhamzaabove-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "beh-ar";
+},
+{
+pos = (270,431);
+ref = "hamzaabove-ar";
+}
+);
+width = 733;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "beh-ar";
+},
+{
+pos = (241,393);
+ref = "hamzaabove-ar";
+}
+);
+width = 674;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "beh-ar";
+},
+{
+pos = (331,453);
+ref = "hamzaabove-ar";
+}
+);
+width = 854;
 }
 );
 unicode = 2209;

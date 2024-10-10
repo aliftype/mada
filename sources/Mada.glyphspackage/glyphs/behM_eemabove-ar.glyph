@@ -4,15 +4,54 @@ glyphname = "behMeemabove-ar";
 layers = (
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+ref = "behDotless-ar";
+},
+{
+pos = (332,-150);
+ref = "dotbelow-ar";
+},
+{
+pos = (225,500);
+ref = "meemStopabove-ar";
+}
+);
+width = 674;
 },
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+ref = "behDotless-ar";
+},
+{
+pos = (386,-149);
+ref = "dotbelow-ar";
+},
+{
+pos = (233,501);
+ref = "meemStopabove-ar";
+}
+);
+width = 733;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+ref = "behDotless-ar";
+},
+{
+pos = (447,-160);
+ref = "dotbelow-ar";
+},
+{
+pos = (252,567);
+ref = "meemStopabove-ar";
+}
+);
+width = 854;
 }
 );
 unicode = 2230;

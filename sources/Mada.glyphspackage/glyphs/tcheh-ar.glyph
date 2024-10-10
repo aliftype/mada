@@ -4,15 +4,42 @@ glyphname = "tcheh-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+ref = "hah-ar.2";
+},
+{
+pos = (302,-9);
+ref = "threedotsdownbelow-ar";
+}
+);
+width = 534;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+ref = "hah-ar.2";
+},
+{
+pos = (248,-20);
+ref = "threedotsdownbelow-ar";
+}
+);
+width = 476;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+ref = "hah-ar.2";
+},
+{
+pos = (458,-3);
+ref = "threedotsdownbelow-ar";
+}
+);
+width = 656;
 }
 );
 unicode = 1670;

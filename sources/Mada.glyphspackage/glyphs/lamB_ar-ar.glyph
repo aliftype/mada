@@ -4,15 +4,42 @@ glyphname = "lamBar-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+ref = "lam-ar";
+},
+{
+pos = (291,420);
+ref = "stroke-ar";
+}
+);
+width = 539;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+ref = "lam-ar";
+},
+{
+pos = (264,450);
+ref = "stroke-ar";
+}
+);
+width = 480;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+ref = "lam-ar";
+},
+{
+pos = (337,400);
+ref = "stroke-ar";
+}
+);
+width = 660;
 }
 );
 unicode = 1898;

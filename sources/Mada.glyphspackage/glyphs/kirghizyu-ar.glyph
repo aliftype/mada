@@ -4,15 +4,42 @@ glyphname = "kirghizyu-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+ref = "waw-ar";
+},
+{
+pos = (97,425);
+ref = "vinvertedabove-ar";
+}
+);
+width = 438;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+ref = "waw-ar";
+},
+{
+pos = (95,409);
+ref = "vinvertedabove-ar";
+}
+);
+width = 387;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+ref = "waw-ar";
+},
+{
+pos = (129,469);
+ref = "vinvertedabove-ar";
+}
+);
+width = 556;
 }
 );
 unicode = 1737;

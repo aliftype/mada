@@ -4,15 +4,54 @@ glyphname = "rehDotbelowdotabove-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+ref = "reh-ar";
+},
+{
+pos = (70,0);
+ref = "dotcenter-ar";
+},
+{
+pos = (122,-312);
+ref = "dotbelow-ar";
+}
+);
+width = 301;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+ref = "reh-ar";
+},
+{
+pos = (45,0);
+ref = "dotcenter-ar";
+},
+{
+pos = (68,-280);
+ref = "dotbelow-ar";
+}
+);
+width = 227;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+ref = "reh-ar";
+},
+{
+pos = (60,60);
+ref = "dotcenter-ar";
+},
+{
+pos = (123,-380);
+ref = "dotbelow-ar";
+}
+);
+width = 387;
 }
 );
 unicode = 1686;

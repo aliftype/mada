@@ -4,15 +4,42 @@ glyphname = "highhamzaAlef-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+pos = (200,0);
+ref = "highhamza-ar";
+},
+{
+ref = "alef-ar";
+}
+);
+width = 576;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+pos = (192,0);
+ref = "highhamza-ar";
+},
+{
+ref = "alef-ar";
+}
+);
+width = 464;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+pos = (292,0);
+ref = "highhamza-ar";
+},
+{
+ref = "alef-ar";
+}
+);
+width = 743;
 }
 );
 unicode = 1653;

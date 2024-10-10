@@ -4,15 +4,54 @@ glyphname = "seenTahTwodotshorizontalabove-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+ref = "seen-ar";
+},
+{
+pos = (627,512);
+ref = "twodotshorizontalabove-ar";
+},
+{
+pos = (488,512);
+ref = "tahabove-ar";
+}
+);
+width = 900;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+ref = "seen-ar";
+},
+{
+pos = (598,512);
+ref = "twodotshorizontalabove-ar";
+},
+{
+pos = (465,512);
+ref = "tahabove-ar";
+}
+);
+width = 828;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+ref = "seen-ar";
+},
+{
+pos = (734,562);
+ref = "twodotshorizontalabove-ar";
+},
+{
+pos = (566,562);
+ref = "tahabove-ar";
+}
+);
+width = 1108;
 }
 );
 unicode = 1904;

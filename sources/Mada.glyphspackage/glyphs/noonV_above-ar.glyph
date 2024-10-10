@@ -4,15 +4,45 @@ glyphname = "noonVabove-ar";
 layers = (
 {
 layerId = master01;
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "noon-ar";
+},
+{
+pos = (118,211);
+ref = "vabove-ar";
+}
+);
+width = 535;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "noon-ar";
+},
+{
+pos = (100,277);
+ref = "vabove-ar";
+}
+);
+width = 476;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-width = 500;
+shapes = (
+{
+alignment = 1;
+ref = "noon-ar";
+},
+{
+pos = (134,247);
+ref = "vabove-ar";
+}
+);
+width = 656;
 }
 );
 unicode = 1897;
