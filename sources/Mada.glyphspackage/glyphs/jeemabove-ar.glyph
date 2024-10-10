@@ -7,13 +7,13 @@ layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
 alignment = -1;
-pos = (0,724);
+pos = (0,925);
 ref = "hah-ar";
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (120,707);
+pos = (120,908);
 ref = "dotcenter-ar";
 scale = (0.5,0.5);
 }
@@ -25,13 +25,13 @@ layerId = master01;
 shapes = (
 {
 alignment = -1;
-pos = (0,724);
+pos = (0,925);
 ref = "hah-ar";
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (133,717);
+pos = (133,918);
 ref = "dotcenter-ar";
 scale = (0.5,0.5);
 }
@@ -43,13 +43,13 @@ layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 shapes = (
 {
 alignment = -1;
-pos = (0,739);
+pos = (0,940);
 ref = "hah-ar";
 scale = (0.5,0.5);
 },
 {
 alignment = -1;
-pos = (175,758);
+pos = (175,959);
 ref = "dotcenter-ar";
 scale = (0.5,0.5);
 }

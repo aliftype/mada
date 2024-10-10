@@ -522,12 +522,19 @@ value = "heh-ar";
 );
 guides = (
 {
+locked = 1;
 name = "Base stroke";
 pos = (0,32);
 },
 {
+locked = 1;
 name = Cap;
 pos = (0,624);
+},
+{
+locked = 1;
+name = Waqf;
+pos = (0,825);
 }
 );
 iconName = Light;
@@ -584,6 +591,11 @@ pos = (0,79);
 {
 name = Cap;
 pos = (0,624);
+},
+{
+locked = 1;
+name = Waqf;
+pos = (0,825);
 }
 );
 id = master01;
@@ -637,6 +649,11 @@ pos = (0,172);
 {
 name = Cap;
 pos = (0,624);
+},
+{
+locked = 1;
+name = Waqf;
+pos = (0,825);
 }
 );
 iconName = Bold;
