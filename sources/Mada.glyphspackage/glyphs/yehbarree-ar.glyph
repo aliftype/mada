@@ -397,6 +397,9 @@ pos = (228,412);
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 name = ExtraLight;
+partSelection = {
+Weight = 1;
+};
 shapes = (
 {
 closed = 1;
@@ -527,6 +530,9 @@ pos = (316,537);
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 name = Black;
+partSelection = {
+Weight = 2;
+};
 shapes = (
 {
 closed = 1;
@@ -560,6 +566,13 @@ nodes = (
 }
 );
 width = 995;
+}
+);
+partsSettings = (
+{
+bottomValue = 0;
+name = Weight;
+topValue = 1000;
 }
 );
 unicode = 1746;

@@ -49,11 +49,11 @@ nodes = (
 (156,308,o),
 (180,370,o),
 (214,392,cs),
-(248,413,o),
-(297,412,o),
-(324,388,cs),
-(349,376,o),
-(367,351,o),
+(257,419,o),
+(315,406,o),
+(346,372,cs),
+(359,357,o),
+(367,339,o),
 (367,318,cs),
 (367,69,l),
 (370.5,72.5,o),
@@ -86,6 +86,9 @@ pos = (274,628);
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+partSelection = {
+Weight = 1;
+};
 shapes = (
 {
 closed = 1;
@@ -151,6 +154,9 @@ pos = (264,803);
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+partSelection = {
+Weight = 2;
+};
 shapes = (
 {
 closed = 1;
@@ -195,6 +201,13 @@ nodes = (
 }
 );
 width = 553;
+}
+);
+partsSettings = (
+{
+bottomValue = 0;
+name = Weight;
+topValue = 1000;
 }
 );
 }

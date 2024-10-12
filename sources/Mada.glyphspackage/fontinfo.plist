@@ -585,10 +585,12 @@ value = "heh-ar";
 );
 guides = (
 {
+locked = 1;
 name = "Base stroke";
 pos = (0,79);
 },
 {
+locked = 1;
 name = Cap;
 pos = (0,624);
 },
@@ -643,10 +645,12 @@ value = "heh-ar";
 );
 guides = (
 {
+locked = 1;
 name = "Base stroke";
 pos = (0,172);
 },
 {
+locked = 1;
 name = Cap;
 pos = (0,624);
 },

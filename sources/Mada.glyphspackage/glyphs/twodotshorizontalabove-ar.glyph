@@ -45,6 +45,9 @@ pos = (0,127);
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+partSelection = {
+Weight = 1;
+};
 shapes = (
 {
 pos = (-78,0);
@@ -73,6 +76,9 @@ pos = (0,214);
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+partSelection = {
+Weight = 2;
+};
 shapes = (
 {
 pos = (-100,0);
@@ -88,5 +94,12 @@ width = 186;
 }
 );
 metricRight = "=0";
+partsSettings = (
+{
+bottomValue = 0;
+name = Weight;
+topValue = 1000;
+}
+);
 subCategory = Nonspacing;
 }
