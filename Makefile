@@ -60,6 +60,7 @@ ${FONT}: ${GLYPHSFILE}
 			      --verbose=WARNING \
 			      --master-dir="{tmp}" \
 			      --flatten-components \
+			      --filter ... \
 			      --filter DecomposeTransformedComponentsFilter \
 			      --filter "alifTools.filters::ClearPlaceholdersFilter()" \
 			      --filter "alifTools.filters::FontVersionFilter(fontVersion=${VERSION})"
