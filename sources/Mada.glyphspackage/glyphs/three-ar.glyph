@@ -52,6 +52,9 @@ width = 497;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
+partSelection = {
+Weight = 1;
+};
 shapes = (
 {
 closed = 1;
@@ -101,6 +104,9 @@ width = 472;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
+partSelection = {
+Weight = 2;
+};
 shapes = (
 {
 closed = 1;
@@ -147,6 +153,13 @@ nodes = (
 }
 );
 width = 540;
+}
+);
+partsSettings = (
+{
+bottomValue = 0;
+name = Weight;
+topValue = 1000;
 }
 );
 unicode = (1635,1779);
