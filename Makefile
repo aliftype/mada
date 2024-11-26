@@ -22,7 +22,6 @@ PYTHON := venv/bin/python3
 SOURCEDIR = sources
 FONTDIR = fonts
 TESTDIR = tests
-BUILDDIR = build
 
 FONT = ${FONTDIR}/${NAME}.ttf
 JSON = ${TESTDIR}/shaping.json
@@ -89,4 +88,4 @@ dist: ${FONT} ${SVG}
 	zip -rq ${DIST}.zip ${DIST}
 
 clean:
-	rm -rf ${BUILDDIR} ${FONT} ${SVG} ${DIST} ${DIST}.zip
+	rm -rf ${FONT} ${SVG} ${DIST} ${DIST}.zip
