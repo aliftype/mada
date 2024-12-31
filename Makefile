@@ -55,9 +55,8 @@ ${FONT}: ${GLYPHSFILE}
 	$(info   BUILD  ${@F})
 	${PYTHON} -m fontmake $< \
 			      --output-path=$@ \
-			      -o variable \
+			      --output=variable \
 			      --verbose=WARNING \
-			      --master-dir="{tmp}" \
 			      --flatten-components \
 			      --filter ... \
 			      --filter DecomposeTransformedComponentsFilter \
