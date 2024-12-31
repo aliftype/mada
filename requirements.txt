@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-aliftools[filters,sample,shaping] @ git+https://github.com/aliftype/tools.git@d0e8c6099e013b72ad01f1f74d919148f4b84c08
+aliftools[filters,sample,shaping] @ git+https://github.com/aliftype/tools.git@c80341be4cc707bd88803820cf946f0e43a03fc6
     # via
     #   -r requirements.in
     #   aliftools
