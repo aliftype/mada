@@ -4,10 +4,8 @@
 #
 #    pip-compile requirements.in
 #
-aliftools[filters,sample,shaping] @ git+https://github.com/aliftype/tools.git@c80341be4cc707bd88803820cf946f0e43a03fc6
-    # via
-    #   -r requirements.in
-    #   aliftools
+aliftools[filters,sample,shaping]==0.1.0
+    # via -r requirements.in
 appdirs==1.4.4
     # via fs
 attrs==24.3.0
@@ -51,9 +49,8 @@ pyyaml==6.0.2
     # via aliftools
 six==1.17.0
     # via fs
-ufo2ft[compreffor]==3.3.1
+ufo2ft[compreffor]==3.4.0
     # via
-    #   -r requirements.in
     #   aliftools
     #   fontmake
 ufolib2==0.17.0
