@@ -30,10 +30,6 @@ SVG = FontSample.svg
 
 GLYPHSFILE = ${SOURCEDIR}/${NAME}.glyphspackage
 
-define SAMPLE
-صف خلق خود كمثل ٱلشمس إذ بزغت يحظى ٱلضجيع بها نجلاء معطار
-endef
-
 export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" ${GLYPHSFILE})
 
 TAG = $(shell git describe --tags --abbrev=0)
@@ -74,7 +70,6 @@ ${TESTDIR}/shaping.html: ${FONT} ${TESTDIR}/shaping-config.yml
 ${SVG}: ${FONT}
 	$(info   SVG    ${@F})
 	${PYTHON} -m alifTools.sample $< \
-				      -t "${SAMPLE}" \
 				      --foreground=1F2328 \
 				      --dark-foreground=D1D7E0 \
 				      -o $@
