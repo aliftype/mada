@@ -7,8 +7,6 @@ layerId = master01;
 shapes = (
 {
 alignment = -1;
-piece = {
-};
 ref = "lam-ar.init";
 }
 );

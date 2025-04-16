@@ -14,7 +14,7 @@ shapes = (
 ref = "dotabove-ar";
 }
 );
-width = 42;
+width = 55;
 },
 {
 anchors = (
@@ -33,7 +33,7 @@ pos = (25,0);
 ref = "dotabove-ar";
 }
 );
-width = 50;
+width = 57;
 },
 {
 anchors = (
@@ -50,7 +50,7 @@ shapes = (
 ref = "dotabove-ar";
 }
 );
-width = 86;
+width = 94;
 }
 );
 metricRight = "=0";

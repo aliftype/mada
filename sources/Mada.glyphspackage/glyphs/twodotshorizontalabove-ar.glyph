@@ -19,12 +19,12 @@ pos = (0,140);
 layerId = master01;
 shapes = (
 {
-pos = (-84,0);
+pos = (-71,0);
 ref = "dotabove-ar";
 },
 {
 alignment = -1;
-pos = (84,0);
+pos = (71,0);
 ref = "dotabove-ar";
 }
 );
@@ -50,12 +50,12 @@ Weight = 1;
 };
 shapes = (
 {
-pos = (-78,0);
+pos = (-71,0);
 ref = "dotabove-ar";
 },
 {
 alignment = -1;
-pos = (78,0);
+pos = (71,0);
 ref = "dotabove-ar";
 }
 );
@@ -65,7 +65,7 @@ width = 103;
 anchors = (
 {
 name = _dotAboveGaf;
-pos = (210,0);
+pos = (218,0);
 },
 {
 name = _top.a;
@@ -81,16 +81,16 @@ Weight = 2;
 };
 shapes = (
 {
-pos = (-100,0);
+pos = (-108,0);
 ref = "dotabove-ar";
 },
 {
 alignment = -1;
-pos = (100,0);
+pos = (108,0);
 ref = "dotabove-ar";
 }
 );
-width = 186;
+width = 202;
 }
 );
 metricRight = "=0";

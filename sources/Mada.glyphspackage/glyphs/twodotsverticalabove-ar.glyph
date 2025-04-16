@@ -23,7 +23,7 @@ pos = (0,134);
 ref = "dotabove-ar";
 }
 );
-width = 42;
+width = 55;
 },
 {
 anchors = (
@@ -48,7 +48,7 @@ pos = (25,110);
 ref = "dotabove-ar";
 }
 );
-width = 50;
+width = 57;
 },
 {
 anchors = (
@@ -71,7 +71,7 @@ pos = (0,200);
 ref = "dotabove-ar";
 }
 );
-width = 86;
+width = 94;
 }
 );
 metricRight = "=0";

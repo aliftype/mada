@@ -19,7 +19,7 @@ pos = (0,-182);
 ref = "twodotsverticalabove-ar";
 }
 );
-width = 42;
+width = 55;
 },
 {
 anchors = (
@@ -38,7 +38,7 @@ pos = (0,-150);
 ref = "twodotsverticalabove-ar";
 }
 );
-width = 50;
+width = 57;
 },
 {
 anchors = (
@@ -57,7 +57,7 @@ pos = (0,-200);
 ref = "twodotsverticalabove-ar";
 }
 );
-width = 86;
+width = 94;
 }
 );
 metricRight = "=0";
