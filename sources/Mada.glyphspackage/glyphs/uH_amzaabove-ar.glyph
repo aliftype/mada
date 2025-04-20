@@ -6,52 +6,52 @@ layers = (
 layerId = master01;
 shapes = (
 {
+pos = (438,0);
+ref = "highhamza-ar";
+},
+{
 ref = "waw-ar";
 },
 {
-pos = (156,466);
-ref = "hamzaabove-ar";
-},
-{
-pos = (131,716);
-ref = "damma-ar";
+pos = (205,466);
+ref = "damma-ar.alt";
 }
 );
-width = 438;
+width = 814;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
+pos = (387,0);
+ref = "highhamza-ar";
+},
+{
 ref = "waw-ar";
 },
 {
-pos = (137,434);
-ref = "hamzaabove-ar";
-},
-{
-pos = (109,671);
-ref = "damma-ar";
+pos = (191,434);
+ref = "damma-ar.alt";
 }
 );
-width = 387;
+width = 659;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 shapes = (
 {
+pos = (556,0);
+ref = "highhamza-ar";
+},
+{
 ref = "waw-ar";
 },
 {
-pos = (227,554);
-ref = "hamzaabove-ar";
-},
-{
-pos = (175,858);
-ref = "damma-ar";
+pos = (263,554);
+ref = "damma-ar.alt";
 }
 );
-width = 556;
+width = 1007;
 }
 );
 unicode = 1655;
