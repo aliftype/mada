@@ -1,5 +1,5 @@
 {
-.appVersion = "3343";
+.appVersion = "3402";
 .formatVersion = 3;
 axes = (
 {
@@ -564,7 +564,6 @@ numberValues = (
 userData = {
 GSExtrudeAngle = 30;
 GSExtrudeOffset = 15;
-GSOffsetCapStyle = 1;
 GSOffsetHorizontal = 16;
 GSOffsetKeepCompatible = 1;
 GSOffsetMakeStroke = 1;
@@ -624,7 +623,6 @@ numberValues = (
 -57
 );
 userData = {
-GSOffsetCapStyle = 1;
 GSOffsetHorizontal = 22.5;
 GSOffsetKeepCompatible = 1;
 GSOffsetMakeStroke = 1;
@@ -685,8 +683,7 @@ numberValues = (
 -60
 );
 userData = {
-GSOffsetCapStyle = 1;
-GSOffsetHorizontal = 54;
+GSOffsetHorizontal = 37.8;
 GSOffsetKeepCompatible = 1;
 GSOffsetMakeStroke = 1;
 GSOffsetPosition = 1;
