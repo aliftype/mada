@@ -5,8 +5,8 @@ layers = (
 layerId = master01;
 shapes = (
 {
-alignment = -1;
-pos = (-1,270);
+alignment = 1;
+pos = (0,270);
 ref = "sevenFarsi-ar.urdu.dnom";
 }
 );
@@ -16,7 +16,7 @@ width = 367;
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
-alignment = -1;
+alignment = 1;
 pos = (0,270);
 ref = "sevenFarsi-ar.urdu.dnom";
 }
@@ -27,7 +27,7 @@ width = 360;
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 shapes = (
 {
-alignment = -1;
+alignment = 1;
 pos = (0,270);
 ref = "sevenFarsi-ar.urdu.dnom";
 }
