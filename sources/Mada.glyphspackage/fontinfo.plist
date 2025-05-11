@@ -623,13 +623,14 @@ numberValues = (
 -57
 );
 userData = {
-GSOffsetHorizontal = 22.5;
+GSOffsetHorizontal = 28.5;
 GSOffsetKeepCompatible = 1;
 GSOffsetMakeStroke = 1;
 GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
+visible = 1;
 },
 {
 axesValues = (
@@ -683,7 +684,7 @@ numberValues = (
 -60
 );
 userData = {
-GSOffsetHorizontal = 37.8;
+GSOffsetHorizontal = 43;
 GSOffsetKeepCompatible = 1;
 GSOffsetMakeStroke = 1;
 GSOffsetPosition = 1;
