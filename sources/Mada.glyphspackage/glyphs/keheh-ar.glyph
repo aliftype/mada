@@ -5,47 +5,55 @@ layers = (
 anchors = (
 {
 name = bottom.a;
-pos = (279,-149);
+pos = (370,-149);
 },
 {
 name = bottom.mark;
-pos = (279,-170);
+pos = (370,-170);
 },
 {
 name = bottom.ring;
-pos = (483,535);
+pos = (574,535);
 },
 {
 name = top.a;
-pos = (192,639);
+pos = (283,639);
 },
 {
 name = top.gaf;
-pos = (440,649);
+pos = (531,649);
 },
 {
 name = top.mark;
-pos = (243,676);
+pos = (334,676);
 }
 );
 layerId = master01;
 shapes = (
 {
-closed = 1;
-nodes = (
-(191,0,l),
-(127,79,l),
-(46,79,l),
-(111,0,l)
-);
+alignment = -1;
+pos = (202,0);
+ref = "kaf-ar.medi";
 },
 {
-alignment = -1;
-pos = (111,0);
-ref = "kaf-ar.medi";
+closed = 1;
+nodes = (
+(432,0,l),
+(432,79,l),
+(204,79,ls),
+(159,79,o),
+(125,112,o),
+(125,147,cs),
+(125,287,l),
+(46,287,l),
+(46,147,ls),
+(46,61,o),
+(123,0,o),
+(204,0,cs)
+);
 }
 );
-width = 672;
+width = 763;
 },
 {
 anchors = (
@@ -59,86 +67,103 @@ pos = (313,-169);
 },
 {
 name = bottom.ring;
-pos = (351,533);
+pos = (461,533);
 },
 {
 name = top.a;
-pos = (133,619);
+pos = (243,619);
 },
 {
 name = top.gaf;
-pos = (321,597);
+pos = (431,597);
 },
 {
 name = top.mark;
-pos = (273,657);
+pos = (383,657);
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
-closed = 1;
-nodes = (
-(106,0,l),
-(82,32,l),
-(40,32,l),
-(64,0,l)
-);
+alignment = -1;
+pos = (174,0);
+ref = "kaf-ar.medi";
 },
 {
-alignment = -1;
-pos = (64,0);
-ref = "kaf-ar.medi";
+closed = 1;
+nodes = (
+(266,0,l),
+(266,32,l),
+(174,32,ls),
+(118,32,o),
+(72,73,o),
+(72,123,cs),
+(72,263,l),
+(40,263,l),
+(40,123,ls),
+(40,53,o),
+(104,0,o),
+(174,0,cs)
+);
 }
 );
-width = 542;
+width = 652;
 },
 {
 anchors = (
 {
 name = bottom.a;
-pos = (423,-149);
+pos = (482,-149);
 },
 {
 name = bottom.mark;
-pos = (423,-174);
+pos = (482,-174);
 },
 {
 name = bottom.ring;
-pos = (645,538);
+pos = (704,538);
 },
 {
 name = top.a;
-pos = (293,750);
+pos = (352,750);
 },
 {
 name = top.gaf;
-pos = (575,768);
+pos = (634,768);
 },
 {
 name = top.mark;
-pos = (293,798);
+pos = (352,798);
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 shapes = (
 {
-closed = 1;
-nodes = (
-(366,0,l),
-(222,172,l),
-(60,172,l),
-(204,0,l)
-);
+alignment = -1;
+pos = (263,0);
+ref = "kaf-ar.medi";
 },
 {
-alignment = -1;
-pos = (204,0);
-ref = "kaf-ar.medi";
+closed = 1;
+nodes = (
+(459,0,l),
+(459,172,l),
+(263,172,ls),
+(239,172,o),
+(231,189,o),
+(231,193,cs),
+(231,333,l),
+(59,333,l),
+(59,193,ls),
+(59,77,o),
+(161,0,o),
+(263,0,cs)
+);
 }
 );
-width = 861;
+width = 920;
 }
 );
+metricRight = "=kaf-ar.init";
 unicode = 1705;
 }

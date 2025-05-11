@@ -9,15 +9,15 @@ shapes = (
 ref = "keheh-ar";
 },
 {
-pos = (260,649);
+pos = (351,649);
 ref = "gafsarkashabove-ar";
 },
 {
-pos = (396,493);
+pos = (487,493);
 ref = "ring-ar";
 }
 );
-width = 672;
+width = 763;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -26,15 +26,15 @@ shapes = (
 ref = "keheh-ar";
 },
 {
-pos = (145,597);
+pos = (255,597);
 ref = "gafsarkashabove-ar";
 },
 {
-pos = (294,508);
+pos = (404,508);
 ref = "ring-ar";
 }
 );
-width = 542;
+width = 652;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
@@ -43,15 +43,15 @@ shapes = (
 ref = "keheh-ar";
 },
 {
-pos = (389,768);
+pos = (448,768);
 ref = "gafsarkashabove-ar";
 },
 {
-pos = (558,496);
+pos = (617,496);
 ref = "ring-ar";
 }
 );
-width = 861;
+width = 920;
 }
 );
 unicode = 1712;
