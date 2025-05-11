@@ -2,6 +2,26 @@
 glyphname = "endofayah-ar";
 layers = (
 {
+anchors = (
+{
+name = "*digits.2";
+pos = (288,0);
+userData = {
+GPOS_Context = "* & &";
+};
+},
+{
+name = "*digits.3";
+pos = (88,0);
+userData = {
+GPOS_Context = "* & & &";
+};
+},
+{
+name = digits;
+pos = (448,0);
+}
+);
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
@@ -202,6 +222,26 @@ nodes = (
 width = 1258;
 },
 {
+anchors = (
+{
+name = "*digits.2";
+pos = (267,0);
+userData = {
+GPOS_Context = "* & &";
+};
+},
+{
+name = "*digits.3";
+pos = (83,0);
+userData = {
+GPOS_Context = "* & & &";
+};
+},
+{
+name = digits;
+pos = (450,0);
+}
+);
 layerId = master01;
 shapes = (
 {
@@ -402,6 +442,26 @@ nodes = (
 width = 1276;
 },
 {
+anchors = (
+{
+name = "*digits.2";
+pos = (267,0);
+userData = {
+GPOS_Context = "* & &";
+};
+},
+{
+name = "*digits.3";
+pos = (77,0);
+userData = {
+GPOS_Context = "* & & &";
+};
+},
+{
+name = digits;
+pos = (457,0);
+}
+);
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 shapes = (
 {
