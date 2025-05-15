@@ -4,6 +4,18 @@ layers = (
 {
 anchors = (
 {
+name = bottom.a;
+pos = (141,-322);
+},
+{
+name = bottom.hamza;
+pos = (141,-322);
+},
+{
+name = bottom.mark;
+pos = (141,-342);
+},
+{
 name = top.a;
 pos = (112,301);
 },
@@ -45,6 +57,18 @@ width = 340;
 {
 anchors = (
 {
+name = bottom.a;
+pos = (111,-282);
+},
+{
+name = bottom.hamza;
+pos = (111,-282);
+},
+{
+name = bottom.mark;
+pos = (111,-302);
+},
+{
 name = top.a;
 pos = (99,300);
 },
@@ -85,6 +109,18 @@ width = 298;
 },
 {
 anchors = (
+{
+name = bottom.a;
+pos = (191,-472);
+},
+{
+name = bottom.hamza;
+pos = (191,-472);
+},
+{
+name = bottom.mark;
+pos = (191,-492);
+},
 {
 name = top.a;
 pos = (184,432);

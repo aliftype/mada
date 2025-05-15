@@ -12,6 +12,10 @@ pos = (146,0);
 name = _top.a;
 },
 {
+name = top.hamza;
+pos = (0,260);
+},
+{
 name = top.mark;
 pos = (0,260);
 }
@@ -39,6 +43,10 @@ pos = (120,0);
 name = _top.a;
 },
 {
+name = top.hamza;
+pos = (0,237);
+},
+{
 name = top.mark;
 pos = (0,237);
 }
@@ -64,6 +72,10 @@ pos = (210,0);
 },
 {
 name = _top.a;
+},
+{
+name = top.hamza;
+pos = (0,384);
 },
 {
 name = top.mark;

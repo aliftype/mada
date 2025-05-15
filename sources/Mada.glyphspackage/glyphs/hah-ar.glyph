@@ -4,6 +4,10 @@ layers = (
 {
 anchors = (
 {
+name = bottom.hamza;
+pos = (264,-243);
+},
+{
 name = bottom.mark;
 pos = (264,-243);
 },
@@ -72,6 +76,10 @@ width = 535;
 },
 {
 anchors = (
+{
+name = bottom.hamza;
+pos = (248,-240);
+},
 {
 name = bottom.mark;
 pos = (248,-240);
@@ -144,6 +152,10 @@ width = 476;
 },
 {
 anchors = (
+{
+name = bottom.hamza;
+pos = (338,-279);
+},
 {
 name = bottom.mark;
 pos = (338,-279);

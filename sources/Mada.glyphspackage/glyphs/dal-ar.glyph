@@ -8,6 +8,10 @@ name = bottom.a;
 pos = (204,-149);
 },
 {
+name = bottom.hamza;
+pos = (204,-149);
+},
+{
 name = bottom.mark;
 pos = (204,-176);
 },
@@ -17,6 +21,10 @@ pos = (204,0);
 },
 {
 name = top.a;
+pos = (195,444);
+},
+{
+name = top.hamza;
 pos = (195,444);
 },
 {
@@ -57,6 +65,10 @@ name = bottom.a;
 pos = (194,-150);
 },
 {
+name = bottom.hamza;
+pos = (194,-150);
+},
+{
 name = bottom.mark;
 pos = (194,-170);
 },
@@ -66,6 +78,10 @@ pos = (194,0);
 },
 {
 name = top.a;
+pos = (198,380);
+},
+{
+name = top.hamza;
 pos = (198,380);
 },
 {
@@ -106,6 +122,10 @@ name = bottom.a;
 pos = (214,-160);
 },
 {
+name = bottom.hamza;
+pos = (214,-160);
+},
+{
 name = bottom.mark;
 pos = (214,-195);
 },
@@ -115,6 +135,10 @@ pos = (214,0);
 },
 {
 name = top.a;
+pos = (198,600);
+},
+{
+name = top.hamza;
 pos = (198,600);
 },
 {

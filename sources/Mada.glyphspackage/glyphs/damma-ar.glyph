@@ -7,6 +7,10 @@ anchors = (
 {
 name = _top.mark;
 pos = (121,0);
+},
+{
+name = top.mark;
+pos = (121,208);
 }
 );
 layerId = master01;
@@ -53,6 +57,10 @@ anchors = (
 {
 name = _top.mark;
 pos = (124,0);
+},
+{
+name = top.mark;
+pos = (124,208);
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
@@ -99,6 +107,10 @@ anchors = (
 {
 name = _top.mark;
 pos = (148,0);
+},
+{
+name = top.mark;
+pos = (148,258);
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";

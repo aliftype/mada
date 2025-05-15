@@ -8,6 +8,10 @@ anchors = (
 name = _top.a;
 },
 {
+name = top.hamza;
+pos = (0,378);
+},
+{
 name = top.mark;
 pos = (0,378);
 }
@@ -32,6 +36,10 @@ name = _top.a;
 pos = (25,0);
 },
 {
+name = top.hamza;
+pos = (25,314);
+},
+{
 name = top.mark;
 pos = (25,314);
 }
@@ -54,6 +62,10 @@ width = 57;
 anchors = (
 {
 name = _top.a;
+},
+{
+name = top.hamza;
+pos = (0,414);
 },
 {
 name = top.mark;

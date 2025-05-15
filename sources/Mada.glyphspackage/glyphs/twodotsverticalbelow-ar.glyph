@@ -8,6 +8,10 @@ anchors = (
 name = _bottom.a;
 },
 {
+name = bottom.hamza;
+pos = (0,-352);
+},
+{
 name = bottom.mark;
 pos = (0,-352);
 }
@@ -27,6 +31,10 @@ anchors = (
 name = _bottom.a;
 },
 {
+name = bottom.hamza;
+pos = (0,-275);
+},
+{
 name = bottom.mark;
 pos = (0,-275);
 }
@@ -44,6 +52,10 @@ width = 57;
 anchors = (
 {
 name = _bottom.a;
+},
+{
+name = bottom.hamza;
+pos = (0,-395);
 },
 {
 name = bottom.mark;
