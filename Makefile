@@ -65,7 +65,7 @@ ${TESTDIR}/%.json: ${TESTDIR}/%.yaml ${FONT}
 	${PYTHON} -m alifTools.shaping.update $< $@ ${FONT}
 
 ${TESTDIR}/shaping.html: ${FONT} ${TESTDIR}/shaping-config.yml
-	$(info   SHAPE  $(<F))
+	$(info   SHAPE  ${<F})
 	${PYTHON} -m alifTools.shaping.check $< ${TESTDIR}/shaping-config.yml $@
 
 ${SVG}: ${FONT}
@@ -83,4 +83,4 @@ dist: ${FONT}
 	zip -rq ${DIST}.zip ${DIST}
 
 clean:
-	rm -rf ${FONT} ${SVG} ${DIST} ${DIST}.zip
+	rm -rf ${FONT} ${HTML} ${SVG} ${DIST} ${DIST}.zip
