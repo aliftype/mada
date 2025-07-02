@@ -16,7 +16,7 @@
 NAME = Mada
 
 SHELL = bash
-MAKEFLAGS := -srj
+MAKEFLAGS := -sr
 PYTHON := venv/bin/python3
 
 SOURCEDIR = sources
@@ -75,7 +75,7 @@ ${SVG}: ${FONT}
 				      --dark-foreground=D1D7E0 \
 				      -o $@
 
-dist: ${FONT} ${SVG}
+dist: ${FONT}
 	$(info   DIST   ${DIST}.zip)
 	install -Dm644 -t ${DIST} ${FONT}
 	install -Dm644 -t ${DIST} README.md
