@@ -1,4 +1,4 @@
-# Copyright (c) 2020-2024 Khaled Hosny
+# Copyright (c) 2020-2025 Khaled Hosny
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -31,7 +31,6 @@ SVG = FontSample.svg
 GLYPHSFILE = ${SOURCEDIR}/${NAME}.glyphspackage
 
 export SOURCE_DATE_EPOCH ?= $(shell stat -c "%Y" ${GLYPHSFILE})
-export PYTHONWARNINGS ?= ignore
 
 TAG = $(shell git describe --tags --abbrev=0)
 VERSION = ${TAG:v%=%}
