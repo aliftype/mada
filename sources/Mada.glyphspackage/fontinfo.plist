@@ -1,5 +1,5 @@
 {
-.appVersion = "3402";
+.appVersion = "3428";
 .formatVersion = 3;
 axes = (
 {
@@ -4016,8 +4016,16 @@ values = (
 {
 language = dflt;
 value = "Khaled Hosny";
+},
+{
+language = ARA;
+value = "خالد حسني";
 }
 );
+},
+{
+key = designerURL;
+value = "https://khaledhosny.com";
 },
 {
 key = licenses;
@@ -4031,6 +4039,23 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 {
 key = licenseURL;
 value = "https://scripts.sil.org/OFL";
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = "Alif Type";
+},
+{
+language = ARA;
+value = "حروف ألف";
+}
+);
+},
+{
+key = manufacturerURL;
+value = "https://aliftype.com";
 },
 {
 key = sampleTexts;
