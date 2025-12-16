@@ -162,18 +162,18 @@ languagesystem arab SND;
 name = Languagesystems;
 },
 {
-code = "lookup LamAlef {
+code = "lookup lam_alef_single {
   sub lam-ar.init by lam-ar.init.1;
   sub lam-ar.medi by lam-ar.medi.1;
   sub alef-ar.fina by alef-ar.fina.1;
-} LamAlef;
+} lam_alef_single;
 
 #
 # subtending signs
 #
-lookup digit2small {
+lookup small_digits {
     sub @Digits by @Digits.small;
-} digit2small;
+} small_digits;
 ";
 name = Lookups;
 },
@@ -456,25 +456,29 @@ code = "    sub alef-ar by alef-ar.fina;
 tag = fina;
 },
 {
-code = "  lookupflag IgnoreMarks;
-    sub [lam-ar.init lam-ar.medi]' lookup LamAlef alef-ar.fina' lookup LamAlef;
+code = "lookup lam_alef {
+  lookupflag IgnoreMarks;
+    sub [lam-ar.init lam-ar.medi]' lookup lam_alef_single alef-ar.fina' lookup lam_alef_single;
+} lam_alef;
 
+lookup isolated_heh {
   @hehMarks = [twodotshorizontalabove-ar hamzaabove-ar];
   lookupflag UseMarkFilteringSet @hehMarks;
     ignore sub @ArabicLetters heh-ar';
     ignore sub @hehMarks heh-ar';
     ignore sub heh-ar' @hehMarks;
     sub heh-ar' by hehDoachashmee-ar;
-
+} isolated_heh;
 
 # first we replace any sequence of digits (up to two, three or four places)
 # following a subtending sign by smaller alternates
-lookup rlig_2 {
+lookup end_of_ayah {
 	lookupflag 0;
-    sub [endofayah-ar] @Digits' lookup digit2small @Digits' lookup digit2small @Digits' lookup digit2small;
-    sub [endofayah-ar] @Digits' lookup digit2small @Digits' lookup digit2small;
-    sub [endofayah-ar] @Digits' lookup digit2small;
-} rlig_2;";
+    sub endofayah-ar @Digits' lookup small_digits @Digits' lookup small_digits @Digits' lookup small_digits;
+    sub endofayah-ar @Digits' lookup small_digits @Digits' lookup small_digits;
+    sub endofayah-ar @Digits' lookup small_digits;
+} end_of_ayah;
+";
 tag = rlig;
 },
 {
