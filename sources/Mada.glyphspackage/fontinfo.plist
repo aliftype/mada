@@ -175,7 +175,7 @@ lookup digit2small {
     sub @Digits by @Digits.small;
 } digit2small;
 ";
-name = Prefix;
+name = Lookups;
 },
 {
 code = "table STAT {
