@@ -355,20 +355,19 @@ lookup ccmp_late {
 tag = ccmp;
 },
 {
-code = " lookupflag IgnoreMarks;
-  script arab;
+code = "script arab;
 
-  language URD  exclude_dflt;
+  language URD;
     sub fourFarsi-ar by fourFarsi-ar.urdu;
     sub sixFarsi-ar by six-ar;
     sub seven-ar by sevenFarsi-ar.urdu;
 
-  language KSH  exclude_dflt;
+  language KSH;
     sub fourFarsi-ar by fourFarsi-ar.urdu;
     sub sixFarsi-ar by six-ar;
     sub seven-ar by sevenFarsi-ar.urdu;
 
-  language SND  exclude_dflt;
+  language SND;
     sub sixFarsi-ar by six-ar;
     sub seven-ar by sevenFarsi-ar.urdu;
 ";
