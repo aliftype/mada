@@ -6,14 +6,14 @@ layers = (
 anchors = (
 {
 name = _bottom.mark;
-pos = (207,171);
+pos = (223,171);
 }
 );
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
 shapes = (
 {
 alignment = -1;
-pos = (0,-1111);
+pos = (0,-933);
 ref = "seenabove-ar";
 }
 );
@@ -23,13 +23,14 @@ width = 414;
 anchors = (
 {
 name = _bottom.mark;
-pos = (207,171);
+pos = (248,171);
 }
 );
 layerId = master01;
 shapes = (
 {
-alignment = 1;
+alignment = -1;
+pos = (0,-950);
 ref = "seenabove-ar";
 }
 );
@@ -39,13 +40,14 @@ width = 450;
 anchors = (
 {
 name = _bottom.mark;
-pos = (207,171);
+pos = (277,171);
 }
 );
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
 shapes = (
 {
-alignment = 1;
+alignment = -1;
+pos = (0,-971);
 ref = "seenabove-ar";
 }
 );
