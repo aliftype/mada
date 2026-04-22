@@ -36,7 +36,7 @@ fonttools[lxml,ufo,unicode]==4.61.0
     #   ufolib2
 glyphslib==6.12.5
     # via fontmake
-lxml==6.0.2
+lxml==6.1.0
     # via fonttools
 openstep-plist==0.5.1
     # via glyphslib
