@@ -5,7 +5,7 @@ layers = (
 anchors = (
 {
 name = "*digits.2";
-pos = (288,0);
+pos = (268,0);
 userData = {
 GPOS_Context = "* & &";
 };

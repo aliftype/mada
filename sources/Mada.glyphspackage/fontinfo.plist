@@ -1,5 +1,5 @@
 {
-.appVersion = "3436";
+.appVersion = "3530";
 .formatVersion = 3;
 axes = (
 {
@@ -474,9 +474,10 @@ lookup isolated_heh {
 # following a subtending sign by smaller alternates
 lookup end_of_ayah {
 	lookupflag 0;
-    sub endofayah-ar @Digits' lookup small_digits @Digits' lookup small_digits @Digits' lookup small_digits;
-    sub endofayah-ar @Digits' lookup small_digits @Digits' lookup small_digits;
-    sub endofayah-ar @Digits' lookup small_digits;
+    sub [             year-ar] @Digits' lookup small_digits @Digits' lookup small_digits @Digits' lookup small_digits @Digits' lookup small_digits;
+    sub [endofayah-ar year-ar] @Digits' lookup small_digits @Digits' lookup small_digits @Digits' lookup small_digits;
+    sub [endofayah-ar year-ar] @Digits' lookup small_digits @Digits' lookup small_digits;
+    sub [endofayah-ar year-ar] @Digits' lookup small_digits;
 } end_of_ayah;
 ";
 tag = rlig;
@@ -652,6 +653,7 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
+visible = 1;
 },
 {
 axesValues = (
@@ -772,6 +774,7 @@ GSOffsetPosition = 1;
 GSOffsetProportional = 1;
 GSOffsetVertical = 10;
 };
+visible = 1;
 }
 );
 instances = (

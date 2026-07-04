@@ -3,8 +3,6 @@ glyphname = "wawSmall-ar";
 layers = (
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-partSelection = {
-};
 shapes = (
 {
 closed = 1;
@@ -91,8 +89,6 @@ width = 243;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-partSelection = {
-};
 shapes = (
 {
 closed = 1;
