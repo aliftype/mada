@@ -14,9 +14,6 @@ width = 211;
 },
 {
 layerId = "0CAB57D4-4FC4-49C3-B456-FB7666EAA712";
-partSelection = {
-Weight = 1;
-};
 shapes = (
 {
 alignment = -1;
@@ -27,9 +24,6 @@ width = 156;
 },
 {
 layerId = "42B3044F-4D5A-45CA-9EB7-C1889731596B";
-partSelection = {
-Weight = 2;
-};
 shapes = (
 {
 alignment = -1;
@@ -37,13 +31,6 @@ ref = "lam-ar.init";
 }
 );
 width = 310;
-}
-);
-partsSettings = (
-{
-bottomValue = 0;
-name = Weight;
-topValue = 1000;
 }
 );
 }
