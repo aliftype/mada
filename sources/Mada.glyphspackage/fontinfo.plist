@@ -158,6 +158,8 @@ languagesystem arab dflt;
 languagesystem arab URD;
 languagesystem arab KSH;
 languagesystem arab SND;
+
+languagesystem latn dflt;
 ";
 name = Languagesystems;
 },
