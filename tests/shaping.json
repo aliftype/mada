@@ -1,4 +1,9 @@
 {
+  "harfbuzz": "15.0.0",
+  "uharfbuzz": "0.57.0",
+  "fonts": {
+    "Mada.ttf": "155df2f70fd932f401f62066b2bee7344b37ce3d"
+  },
   "tests": [
     {
       "only": "Mada.ttf",
